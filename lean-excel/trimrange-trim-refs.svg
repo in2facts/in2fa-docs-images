@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 680" width="1400" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>Trim references on A1:C10 with data in B3:B7: A1.:C10 trims leading, A1:.C10 trims trailing and A1.:.C10 trims both</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <rect width="1400" height="680" fill="#F6F6F6"/>
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#141421">Trim references<tspan fill="#F39454">_</tspan></text>
+  <text x="60" y="118" font-size="20" fill="#70706F">The short notation: a dot next to the colon trims empty cells on that side</text>
+  <rect x="60" y="150" width="400" height="490" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="84" y="174" width="48" height="48" fill="#141421"/>
+  <text x="108" y="207" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+  <text x="148" y="202" font-size="26" font-weight="700" fill="#141421" font-family="Consolas, 'Courier New', monospace">A1<tspan fill='#F39454' font-weight='700'>.</tspan>:C10</text>
+  <text x="148" y="224" font-size="16" fill="#70706F">Trim leading → B3:C10</text>
+  <rect x="84" y="280" width="280" height="28" fill="#F6F6F6"/>
+  <text x="164" y="299" font-size="14" fill="#70706F" text-anchor="middle">A</text>
+  <text x="244" y="299" font-size="14" fill="#70706F" text-anchor="middle">B</text>
+  <text x="324" y="299" font-size="14" fill="#70706F" text-anchor="middle">C</text>
+  <rect x="84" y="308" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="104" y="327" font-size="14" fill="#70706F" text-anchor="middle">1</text>
+  <rect x="124" y="308" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="204" y="308" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="284" y="308" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="84" y="336" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="104" y="355" font-size="14" fill="#70706F" text-anchor="middle">2</text>
+  <rect x="124" y="336" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="204" y="336" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="284" y="336" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="84" y="364" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="104" y="383" font-size="14" fill="#70706F" text-anchor="middle">3</text>
+  <rect x="124" y="364" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="204" y="364" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="284" y="364" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="214" y="383" font-size="15" fill="#141421" font-weight="700">Region</text>
+  <rect x="84" y="392" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="104" y="411" font-size="14" fill="#70706F" text-anchor="middle">4</text>
+  <rect x="124" y="392" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="204" y="392" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="284" y="392" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="214" y="411" font-size="15" fill="#141421">North</text>
+  <rect x="84" y="420" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="104" y="439" font-size="14" fill="#70706F" text-anchor="middle">5</text>
+  <rect x="124" y="420" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="204" y="420" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="284" y="420" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="214" y="439" font-size="15" fill="#141421">South</text>
+  <rect x="84" y="448" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="104" y="467" font-size="14" fill="#70706F" text-anchor="middle">6</text>
+  <rect x="124" y="448" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="204" y="448" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="284" y="448" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="214" y="467" font-size="15" fill="#141421">East</text>
+  <rect x="84" y="476" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="104" y="495" font-size="14" fill="#70706F" text-anchor="middle">7</text>
+  <rect x="124" y="476" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="204" y="476" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="284" y="476" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="214" y="495" font-size="15" fill="#141421">West</text>
+  <rect x="84" y="504" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="104" y="523" font-size="14" fill="#70706F" text-anchor="middle">8</text>
+  <rect x="124" y="504" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="204" y="504" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="284" y="504" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="84" y="532" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="104" y="551" font-size="14" fill="#70706F" text-anchor="middle">9</text>
+  <rect x="124" y="532" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="204" y="532" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="284" y="532" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="84" y="560" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="104" y="579" font-size="14" fill="#70706F" text-anchor="middle">10</text>
+  <rect x="124" y="560" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="204" y="560" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="284" y="560" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="204" y="364" width="160" height="224" fill="none" stroke="#F39454" stroke-width="3.5"/>
+  <path d="M130 274 V268 H198 V274" fill="none" stroke="#70706F" stroke-width="2"/>
+  <text x="164" y="262" font-size="15" font-style="italic" fill="#70706F" text-anchor="middle">trimmed</text>
+  <path d="M378 312 H386 V360 H378" fill="none" stroke="#70706F" stroke-width="2"/>
+  <text x="392" y="342" font-size="15" font-style="italic" fill="#70706F">trimmed</text>
+  <text x="84" y="618" font-size="15" fill="#70706F">Same as <tspan font-family="Consolas, 'Courier New', monospace" fill="#141421">=TRIMRANGE(A1:C10,1,1)</tspan></text>
+  <rect x="500" y="150" width="400" height="490" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="524" y="174" width="48" height="48" fill="#141421"/>
+  <text x="548" y="207" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+  <text x="588" y="202" font-size="26" font-weight="700" fill="#141421" font-family="Consolas, 'Courier New', monospace">A1:<tspan fill='#F39454' font-weight='700'>.</tspan>C10</text>
+  <text x="588" y="224" font-size="16" fill="#70706F">Trim trailing → A1:B7</text>
+  <rect x="524" y="280" width="280" height="28" fill="#F6F6F6"/>
+  <text x="604" y="299" font-size="14" fill="#70706F" text-anchor="middle">A</text>
+  <text x="684" y="299" font-size="14" fill="#70706F" text-anchor="middle">B</text>
+  <text x="764" y="299" font-size="14" fill="#70706F" text-anchor="middle">C</text>
+  <rect x="524" y="308" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="544" y="327" font-size="14" fill="#70706F" text-anchor="middle">1</text>
+  <rect x="564" y="308" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="644" y="308" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="724" y="308" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="524" y="336" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="544" y="355" font-size="14" fill="#70706F" text-anchor="middle">2</text>
+  <rect x="564" y="336" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="644" y="336" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="724" y="336" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="524" y="364" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="544" y="383" font-size="14" fill="#70706F" text-anchor="middle">3</text>
+  <rect x="564" y="364" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="644" y="364" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="724" y="364" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="654" y="383" font-size="15" fill="#141421" font-weight="700">Region</text>
+  <rect x="524" y="392" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="544" y="411" font-size="14" fill="#70706F" text-anchor="middle">4</text>
+  <rect x="564" y="392" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="644" y="392" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="724" y="392" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="654" y="411" font-size="15" fill="#141421">North</text>
+  <rect x="524" y="420" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="544" y="439" font-size="14" fill="#70706F" text-anchor="middle">5</text>
+  <rect x="564" y="420" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="644" y="420" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="724" y="420" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="654" y="439" font-size="15" fill="#141421">South</text>
+  <rect x="524" y="448" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="544" y="467" font-size="14" fill="#70706F" text-anchor="middle">6</text>
+  <rect x="564" y="448" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="644" y="448" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="724" y="448" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="654" y="467" font-size="15" fill="#141421">East</text>
+  <rect x="524" y="476" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="544" y="495" font-size="14" fill="#70706F" text-anchor="middle">7</text>
+  <rect x="564" y="476" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="644" y="476" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="724" y="476" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="654" y="495" font-size="15" fill="#141421">West</text>
+  <rect x="524" y="504" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="544" y="523" font-size="14" fill="#70706F" text-anchor="middle">8</text>
+  <rect x="564" y="504" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="644" y="504" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="724" y="504" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="524" y="532" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="544" y="551" font-size="14" fill="#70706F" text-anchor="middle">9</text>
+  <rect x="564" y="532" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="644" y="532" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="724" y="532" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="524" y="560" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="544" y="579" font-size="14" fill="#70706F" text-anchor="middle">10</text>
+  <rect x="564" y="560" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="644" y="560" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="724" y="560" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="564" y="308" width="160" height="196" fill="none" stroke="#F39454" stroke-width="3.5"/>
+  <path d="M730 274 V268 H798 V274" fill="none" stroke="#70706F" stroke-width="2"/>
+  <text x="764" y="262" font-size="15" font-style="italic" fill="#70706F" text-anchor="middle">trimmed</text>
+  <path d="M818 508 H826 V584 H818" fill="none" stroke="#70706F" stroke-width="2"/>
+  <text x="832" y="552" font-size="15" font-style="italic" fill="#70706F">trimmed</text>
+  <text x="524" y="618" font-size="15" fill="#70706F">Same as <tspan font-family="Consolas, 'Courier New', monospace" fill="#141421">=TRIMRANGE(A1:C10,2,2)</tspan></text>
+  <rect x="940" y="150" width="400" height="490" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="964" y="174" width="48" height="48" fill="#F39454"/>
+  <text x="988" y="207" font-size="24" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="1028" y="202" font-size="26" font-weight="700" fill="#141421" font-family="Consolas, 'Courier New', monospace">A1<tspan fill='#F39454' font-weight='700'>.</tspan>:<tspan fill='#F39454' font-weight='700'>.</tspan>C10</text>
+  <text x="1028" y="224" font-size="16" fill="#70706F">Trim both sides → B3:B7</text>
+  <rect x="964" y="280" width="280" height="28" fill="#F6F6F6"/>
+  <text x="1044" y="299" font-size="14" fill="#70706F" text-anchor="middle">A</text>
+  <text x="1124" y="299" font-size="14" fill="#70706F" text-anchor="middle">B</text>
+  <text x="1204" y="299" font-size="14" fill="#70706F" text-anchor="middle">C</text>
+  <rect x="964" y="308" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="984" y="327" font-size="14" fill="#70706F" text-anchor="middle">1</text>
+  <rect x="1004" y="308" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1084" y="308" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1164" y="308" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="964" y="336" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="984" y="355" font-size="14" fill="#70706F" text-anchor="middle">2</text>
+  <rect x="1004" y="336" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1084" y="336" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1164" y="336" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="964" y="364" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="984" y="383" font-size="14" fill="#70706F" text-anchor="middle">3</text>
+  <rect x="1004" y="364" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1084" y="364" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1164" y="364" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1094" y="383" font-size="15" fill="#141421" font-weight="700">Region</text>
+  <rect x="964" y="392" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="984" y="411" font-size="14" fill="#70706F" text-anchor="middle">4</text>
+  <rect x="1004" y="392" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1084" y="392" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1164" y="392" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1094" y="411" font-size="15" fill="#141421">North</text>
+  <rect x="964" y="420" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="984" y="439" font-size="14" fill="#70706F" text-anchor="middle">5</text>
+  <rect x="1004" y="420" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1084" y="420" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1164" y="420" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1094" y="439" font-size="15" fill="#141421">South</text>
+  <rect x="964" y="448" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="984" y="467" font-size="14" fill="#70706F" text-anchor="middle">6</text>
+  <rect x="1004" y="448" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1084" y="448" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1164" y="448" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1094" y="467" font-size="15" fill="#141421">East</text>
+  <rect x="964" y="476" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="984" y="495" font-size="14" fill="#70706F" text-anchor="middle">7</text>
+  <rect x="1004" y="476" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1084" y="476" width="80" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1164" y="476" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1094" y="495" font-size="15" fill="#141421">West</text>
+  <rect x="964" y="504" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="984" y="523" font-size="14" fill="#70706F" text-anchor="middle">8</text>
+  <rect x="1004" y="504" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1084" y="504" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1164" y="504" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="964" y="532" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="984" y="551" font-size="14" fill="#70706F" text-anchor="middle">9</text>
+  <rect x="1004" y="532" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1084" y="532" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1164" y="532" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="964" y="560" width="40" height="28" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="984" y="579" font-size="14" fill="#70706F" text-anchor="middle">10</text>
+  <rect x="1004" y="560" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1084" y="560" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1164" y="560" width="80" height="28" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1084" y="364" width="80" height="140" fill="none" stroke="#F39454" stroke-width="3.5"/>
+  <path d="M1010 274 V268 H1078 V274" fill="none" stroke="#70706F" stroke-width="2"/>
+  <text x="1044" y="262" font-size="15" font-style="italic" fill="#70706F" text-anchor="middle">trimmed</text>
+  <path d="M1170 274 V268 H1238 V274" fill="none" stroke="#70706F" stroke-width="2"/>
+  <text x="1204" y="262" font-size="15" font-style="italic" fill="#70706F" text-anchor="middle">trimmed</text>
+  <path d="M1258 312 H1266 V360 H1258" fill="none" stroke="#70706F" stroke-width="2"/>
+  <text x="1272" y="342" font-size="15" font-style="italic" fill="#70706F">trimmed</text>
+  <path d="M1258 508 H1266 V584 H1258" fill="none" stroke="#70706F" stroke-width="2"/>
+  <text x="1272" y="552" font-size="15" font-style="italic" fill="#70706F">trimmed</text>
+  <text x="964" y="618" font-size="15" fill="#70706F">Same as <tspan font-family="Consolas, 'Courier New', monospace" fill="#141421">=TRIMRANGE(A1:C10,3,3)</tspan></text>
+</svg>

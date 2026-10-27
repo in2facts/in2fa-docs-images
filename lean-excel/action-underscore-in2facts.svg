@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 720" width="1400" height="720" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>Formatting action 1: underscore plus one character creates a space as wide as that character</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <rect width="1400" height="720" fill="#F6F6F6"/>
+
+  <!-- Title -->
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#141421">Formatting action 1<tspan fill="#F39454">_</tspan></text>
+  <text x="60" y="118" font-size="20" fill="#70706F">Underscore + 1 character creates a space as wide as that character</text>
+
+  <!-- ============ Left card: the code ============ -->
+  <g transform="translate(60,160)">
+    <rect x="0" y="0" width="500" height="500" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="52" height="52" fill="#F39454"/>
+    <text x="50" y="59" font-size="28" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">Action 1</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">Underscore + 1 character</text>
+
+    <!-- Mock: _ + ) -->
+    <rect x="24" y="104" width="452" height="236" rx="8" fill="#F6F6F6"/>
+    <rect x="96" y="262" width="100" height="18" fill="#F39454"/>
+    <text x="146" y="320" font-size="18" fill="#70706F" text-anchor="middle">underscore</text>
+    <text x="240" y="250" font-size="48" fill="#70706F" text-anchor="middle">+</text>
+    <rect x="290" y="128" width="120" height="164" fill="#FFFFFF" stroke="#141421" stroke-width="2" stroke-dasharray="6 6"/>
+    <text x="350" y="262" font-size="130" fill="#141421" text-anchor="middle">)</text>
+    <text x="350" y="320" font-size="18" fill="#70706F" text-anchor="middle">1 character</text>
+
+    <!-- Statement -->
+    <text x="24" y="382" font-size="24" font-weight="700" fill="#141421">Creates a space as wide as</text>
+    <text x="24" y="412" font-size="24" font-weight="700" fill="#141421">the width of the character</text>
+
+    <!-- Note -->
+    <path d="M38 432 L54 460 H22 Z" fill="#F39454"/>
+    <text x="38" y="456" font-size="18" font-weight="700" fill="#141421" text-anchor="middle">!</text>
+    <text x="68" y="450" font-size="18" fill="#141421">Can be repeated multiple times</text>
+    <text x="68" y="474" font-size="16" fill="#70706F">e.g. <tspan font-family="Consolas, 'Courier New', monospace" font-size="18" fill="#141421">_)_)</tspan> leaves two spaces</text>
+  </g>
+
+  <!-- ============ Right card: in the cell ============ -->
+  <g transform="translate(600,160)">
+    <rect x="0" y="0" width="740" height="500" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="52" height="52" fill="#141421"/>
+    <g fill="none" stroke="#FFFFFF" stroke-width="3">
+      <rect x="36" y="36" width="28" height="28"/>
+      <path d="M36 46 H64 M36 55 H64 M46 36 V64"/>
+    </g>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">In the cell</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">The invisible character reserves its width</text>
+
+    <!-- Mock: worksheet -->
+    <rect x="40" y="110" width="50" height="246" fill="#F6F6F6"/>
+    <rect x="90" y="110" width="310" height="36" fill="#F6F6F6"/>
+    <rect x="90" y="146" width="310" height="210" fill="#FFFFFF"/>
+    <path d="M40 146 H400 M40 216 H400 M40 286 H400 M90 110 V356" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="40" y="110" width="360" height="246" fill="none" stroke="#D7D8D8" stroke-width="2"/>
+    <text x="245" y="134" font-size="18" font-weight="700" fill="#70706F" text-anchor="middle">A</text>
+    <g font-size="18" fill="#70706F" text-anchor="middle">
+      <text x="65" y="188">1</text><text x="65" y="258">2</text><text x="65" y="328">3</text>
+    </g>
+    <!-- Values (right edge of cell = 390) -->
+    <g font-size="40" font-weight="700" fill="#141421" text-anchor="end">
+      <text x="390" y="196">123</text>
+      <text x="390" y="266">123<tspan fill-opacity="0">)</tspan></text>
+      <text x="390" y="336">(123)</text>
+    </g>
+    <text x="390" y="266" font-size="40" font-weight="700" fill="#F39454" fill-opacity="0.35" text-anchor="end">)</text>
+
+    <!-- Format codes -->
+    <text x="440" y="134" font-size="14" font-weight="700" fill="#70706F" letter-spacing="1">FORMAT CODE</text>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="24" fill="#141421">
+      <text x="440" y="182">#.##0</text>
+      <text x="440" y="252">#.##0<tspan fill="#F39454" font-weight="700">_)</tspan></text>
+      <text x="440" y="322">#.##0<tspan fill="#F39454" font-weight="700">_)</tspan>;(#.##0)</text>
+    </g>
+    <g font-size="16" fill="#70706F">
+      <text x="440" y="206">No space: 3 touches the edge</text>
+      <text x="440" y="276">Space as wide as )</text>
+      <text x="440" y="346">Negative value -123</text>
+    </g>
+
+    <!-- Callout -->
+    <rect x="40" y="396" width="660" height="72" rx="8" fill="#F6F6F6"/>
+    <rect x="40" y="396" width="8" height="72" fill="#F39454"/>
+    <text x="68" y="426" font-size="19" font-weight="700" fill="#141421">Typical use</text>
+    <text x="68" y="452" font-size="18" fill="#141421">Positive numbers line up with negatives shown as (123)</text>
+  </g>
+</svg>

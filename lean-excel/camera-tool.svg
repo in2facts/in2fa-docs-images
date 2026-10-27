@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 690" width="1400" height="690" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>Camera Tool: film an Excel range and show it live as a linked picture on a dashboard</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <rect width="1400" height="690" fill="#F6F6F6"/>
+
+  <!-- Title -->
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#141421">Camera Tool<tspan fill="#F39454">_</tspan></text>
+  <text x="60" y="118" font-size="20" fill="#70706F">Film a range once, show it live anywhere in the workbook</text>
+
+  <!-- ============ Source range card ============ -->
+  <g transform="translate(60,160)">
+    <rect x="0" y="0" width="410" height="370" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="20" y="20" width="44" height="44" fill="#141421"/>
+    <g fill="none" stroke="#FFFFFF" stroke-width="3">
+      <rect x="31" y="31" width="22" height="22"/>
+      <path d="M31 39 H53 M31 46 H53 M39 31 V53"/>
+    </g>
+    <text x="78" y="42" font-size="22" font-weight="700" fill="#141421">Source range</text>
+    <text x="78" y="62" font-size="15" fill="#70706F">Sheet Data · A1:C5</text>
+  </g>
+  <!-- Worksheet mock (absolute coordinates) -->
+  <rect x="80" y="230" width="370" height="32" fill="#F6F6F6"/>
+  <rect x="80" y="262" width="40" height="240" fill="#F6F6F6"/>
+  <g font-size="15" fill="#70706F" text-anchor="middle">
+    <text x="185" y="252">A</text><text x="300" y="252">B</text><text x="400" y="252">C</text>
+    <text x="100" y="288">1</text><text x="100" y="328">2</text><text x="100" y="368">3</text>
+    <text x="100" y="408">4</text><text x="100" y="448">5</text><text x="100" y="488">6</text>
+  </g>
+  <path d="M80 262 H450 M80 302 H450 M80 342 H450 M80 382 H450 M80 422 H450 M80 462 H450 M120 230 V502 M250 230 V502 M350 230 V502" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="80" y="230" width="370" height="272" fill="none" stroke="#D7D8D8" stroke-width="2"/>
+  <g font-size="16" fill="#141421">
+    <text x="130" y="288" font-weight="700">Item</text>
+    <text x="130" y="328">Revenue</text><text x="130" y="368">COGS</text><text x="130" y="408">Opex</text>
+    <text x="130" y="448" font-weight="700">EBIT</text>
+  </g>
+  <g font-size="16" fill="#141421" text-anchor="end">
+    <text x="340" y="288" font-weight="700">Actual</text><text x="440" y="288" font-weight="700">Budget</text>
+    <text x="340" y="328">1.250</text><text x="440" y="328">1.200</text>
+    <text x="340" y="368">-540</text><text x="440" y="368">-500</text>
+    <text x="340" y="408">-420</text><text x="440" y="408">-450</text>
+    <text x="340" y="448" font-weight="700">290</text><text x="440" y="448" font-weight="700">250</text>
+  </g>
+  <text x="130" y="488" font-size="15" font-style="italic" fill="#70706F">Notes…</text>
+  <!-- Copied range: marching ants -->
+  <rect x="120" y="262" width="330" height="200" fill="none" stroke="#F39454" stroke-width="3" stroke-dasharray="8 6"/>
+
+  <!-- ============ Camera beam ============ -->
+  <path d="M536 312 L450 262 V462 L536 326 Z" fill="#F39454" fill-opacity="0.18"/>
+
+  <!-- ============ Persona with video camera ============ -->
+  <path d="M590 526 H740" stroke="#D7D8D8" stroke-width="3"/>
+  <!-- legs + feet -->
+  <g fill="#141421">
+    <rect x="642" y="410" width="22" height="108"/>
+    <rect x="674" y="410" width="22" height="108"/>
+    <rect x="628" y="512" width="36" height="12" rx="4"/>
+    <rect x="660" y="512" width="36" height="12" rx="4"/>
+  </g>
+  <!-- torso -->
+  <rect x="636" y="302" width="66" height="120" rx="22" fill="#F39454"/>
+  <!-- head -->
+  <circle cx="670" cy="268" r="26" fill="#FFFFFF" stroke="#141421" stroke-width="3"/>
+  <!-- camera -->
+  <rect x="580" y="287" width="32" height="12" rx="3" fill="#141421"/>
+  <rect x="560" y="297" width="72" height="44" rx="6" fill="#141421"/>
+  <rect x="540" y="305" width="22" height="28" fill="#141421"/>
+  <ellipse cx="538" cy="319" rx="5" ry="14" fill="#C9DCE7"/>
+  <circle cx="620" cy="308" r="5" fill="#F39454"/>
+  <!-- arms -->
+  <g stroke="#F39454" stroke-width="14" stroke-linecap="round" fill="none">
+    <path d="M652 322 L612 342"/>
+    <path d="M690 324 L640 348 L622 336"/>
+  </g>
+
+  <!-- ============ Live link to the screen ============ -->
+  <path d="M600 284 C 630 200, 720 196, 790 236" fill="none" stroke="#F39454" stroke-width="3" stroke-dasharray="8 6"/>
+  <path d="M800 242 L784 244 L792 230 Z" fill="#F39454"/>
+  <text x="700" y="196" font-size="14" font-weight="700" fill="#F39454" text-anchor="middle" letter-spacing="1">LINKED</text>
+
+  <!-- ============ Screen ============ -->
+  <rect x="800" y="160" width="540" height="380" rx="14" fill="#141421"/>
+  <rect x="816" y="176" width="508" height="348" fill="#FFFFFF"/>
+  <path d="M1050 540 H1090 L1096 580 H1044 Z" fill="#141421"/>
+  <rect x="990" y="578" width="160" height="12" rx="6" fill="#141421"/>
+  <!-- top bar -->
+  <rect x="816" y="176" width="508" height="38" fill="#F6F6F6"/>
+  <text x="832" y="201" font-size="16" font-weight="700" fill="#141421">Sheet Dashboard</text>
+  <rect x="1240" y="184" width="70" height="22" rx="11" fill="#F39454"/>
+  <circle cx="1255" cy="195" r="4" fill="#FFFFFF"/>
+  <text x="1266" y="200" font-size="13" font-weight="700" fill="#141421">LIVE</text>
+  <!-- formula bar -->
+  <rect x="832" y="224" width="476" height="32" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="833" y="225" width="34" height="30" fill="#F6F6F6"/>
+  <path d="M867 224 V256" stroke="#D7D8D8" stroke-width="2"/>
+  <text x="850" y="246" font-size="15" font-style="italic" fill="#70706F" text-anchor="middle">fx</text>
+  <text x="878" y="246" font-family="Consolas, 'Courier New', monospace" font-size="16" fill="#141421">=Data!$A$1:$C$5</text>
+  <!-- linked picture -->
+  <rect x="905" y="272" width="330" height="200" fill="#FFFFFF"/>
+  <path d="M905 312 H1235 M905 352 H1235 M905 392 H1235 M905 432 H1235 M1035 272 V472 M1135 272 V472" stroke="#D7D8D8" stroke-width="1"/>
+  <g font-size="16" fill="#141421">
+    <text x="915" y="298" font-weight="700">Item</text>
+    <text x="915" y="338">Revenue</text><text x="915" y="378">COGS</text><text x="915" y="418">Opex</text>
+    <text x="915" y="458" font-weight="700">EBIT</text>
+  </g>
+  <g font-size="16" fill="#141421" text-anchor="end">
+    <text x="1125" y="298" font-weight="700">Actual</text><text x="1225" y="298" font-weight="700">Budget</text>
+    <text x="1125" y="338">1.250</text><text x="1225" y="338">1.200</text>
+    <text x="1125" y="378">-540</text><text x="1225" y="378">-500</text>
+    <text x="1125" y="418">-420</text><text x="1225" y="418">-450</text>
+    <text x="1125" y="458" font-weight="700">290</text><text x="1225" y="458" font-weight="700">250</text>
+  </g>
+  <rect x="905" y="272" width="330" height="200" fill="none" stroke="#70706F" stroke-width="1.5"/>
+  <g fill="#FFFFFF" stroke="#70706F" stroke-width="1.5">
+    <circle cx="905" cy="272" r="5"/><circle cx="1070" cy="272" r="5"/><circle cx="1235" cy="272" r="5"/>
+    <circle cx="905" cy="372" r="5"/><circle cx="1235" cy="372" r="5"/>
+    <circle cx="905" cy="472" r="5"/><circle cx="1070" cy="472" r="5"/><circle cx="1235" cy="472" r="5"/>
+  </g>
+  <text x="1070" y="508" font-size="14" fill="#70706F" text-anchor="middle">Linked picture · updates automatically</text>
+
+  <!-- ============ Steps ============ -->
+  <g font-size="17" fill="#141421">
+    <rect x="100" y="616" width="380" height="44" rx="22" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <circle cx="126" cy="638" r="15" fill="#141421"/>
+    <text x="126" y="644" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="152" y="644">Select the range</text>
+
+    <rect x="510" y="616" width="380" height="44" rx="22" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <circle cx="536" cy="638" r="15" fill="#F39454"/>
+    <text x="536" y="644" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+    <text x="562" y="644">Click <tspan font-weight="700">Camera</tspan> in the QAT</text>
+
+    <rect x="920" y="616" width="380" height="44" rx="22" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <circle cx="946" cy="638" r="15" fill="#141421"/>
+    <text x="946" y="644" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="972" y="644">Click where the picture goes</text>
+  </g>
+</svg>

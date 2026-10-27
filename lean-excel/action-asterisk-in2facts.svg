@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 720" width="1400" height="720" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>Formatting action 2: asterisk plus one character fills the rest of the cell with that character</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <rect width="1400" height="720" fill="#F6F6F6"/>
+
+  <!-- Title -->
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#141421">Formatting action 2<tspan fill="#F39454">_</tspan></text>
+  <text x="60" y="118" font-size="20" fill="#70706F">Asterisk + 1 character fills the rest of the cell with that character</text>
+
+  <!-- ============ Left card: the code ============ -->
+  <g transform="translate(60,160)">
+    <rect x="0" y="0" width="500" height="500" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="52" height="52" fill="#F39454"/>
+    <text x="50" y="59" font-size="28" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">Action 2</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">Asterisk + 1 character</text>
+
+    <!-- Mock: * + . -->
+    <rect x="24" y="104" width="452" height="236" rx="8" fill="#F6F6F6"/>
+    <g transform="translate(146,212)" stroke="#F39454" stroke-width="16" stroke-linecap="butt">
+      <path d="M0 -50 V50"/>
+      <path d="M-43.3 -25 L43.3 25"/>
+      <path d="M-43.3 25 L43.3 -25"/>
+    </g>
+    <text x="146" y="320" font-size="18" fill="#70706F" text-anchor="middle">asterisk</text>
+    <text x="240" y="230" font-size="48" fill="#70706F" text-anchor="middle">+</text>
+    <rect x="290" y="128" width="120" height="164" fill="#FFFFFF" stroke="#141421" stroke-width="2" stroke-dasharray="6 6"/>
+    <rect x="340" y="246" width="20" height="20" fill="#141421"/>
+    <text x="350" y="320" font-size="18" fill="#70706F" text-anchor="middle">1 character</text>
+
+    <!-- Statement -->
+    <text x="24" y="382" font-size="24" font-weight="700" fill="#141421">Fills the rest of the cell</text>
+    <text x="24" y="412" font-size="24" font-weight="700" fill="#141421">with the character provided</text>
+
+    <!-- Note -->
+    <g fill="none" stroke="#F39454" stroke-width="3">
+      <path d="M22 446 H54 M22 446 L30 438 M22 446 L30 454 M54 446 L46 438 M54 446 L46 454"/>
+    </g>
+    <text x="68" y="450" font-size="18" fill="#141421">Adapts to the column width</text>
+    <text x="68" y="474" font-size="16" fill="#70706F">Resize the column and the fill follows</text>
+  </g>
+
+  <!-- ============ Right card: in the cell ============ -->
+  <g transform="translate(600,160)">
+    <rect x="0" y="0" width="740" height="500" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="52" height="52" fill="#141421"/>
+    <g fill="none" stroke="#FFFFFF" stroke-width="3">
+      <rect x="36" y="36" width="28" height="28"/>
+      <path d="M36 46 H64 M36 55 H64 M46 36 V64"/>
+    </g>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">In the cell</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">The character repeats up to the cell edge</text>
+
+    <!-- Mock: worksheet -->
+    <rect x="40" y="110" width="50" height="246" fill="#F6F6F6"/>
+    <rect x="90" y="110" width="310" height="36" fill="#F6F6F6"/>
+    <rect x="90" y="146" width="310" height="210" fill="#FFFFFF"/>
+    <path d="M40 146 H400 M40 216 H400 M40 286 H400 M90 110 V356" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="40" y="110" width="360" height="246" fill="none" stroke="#D7D8D8" stroke-width="2"/>
+    <text x="245" y="134" font-size="18" font-weight="700" fill="#70706F" text-anchor="middle">A</text>
+    <g font-size="18" fill="#70706F" text-anchor="middle">
+      <text x="65" y="188">1</text><text x="65" y="258">2</text><text x="65" y="328">3</text>
+    </g>
+    <!-- Values -->
+    <g font-size="40" font-weight="700" fill="#141421">
+      <text x="100" y="196" textLength="96" lengthAdjust="spacingAndGlyphs">EBIT</text>
+      <text x="100" y="266" textLength="96" lengthAdjust="spacingAndGlyphs">EBIT</text>
+      <text x="116" y="336" textLength="96" lengthAdjust="spacingAndGlyphs">EBIT</text>
+    </g>
+    <text x="100" y="336" font-size="40" font-weight="700" fill="#F39454" fill-opacity="0.35">(</text>
+    <g fill="#F39454">
+      <rect x="206" y="261" width="5" height="5"/><rect x="220" y="261" width="5" height="5"/><rect x="234" y="261" width="5" height="5"/><rect x="248" y="261" width="5" height="5"/><rect x="262" y="261" width="5" height="5"/><rect x="276" y="261" width="5" height="5"/><rect x="290" y="261" width="5" height="5"/><rect x="304" y="261" width="5" height="5"/><rect x="318" y="261" width="5" height="5"/><rect x="332" y="261" width="5" height="5"/><rect x="346" y="261" width="5" height="5"/><rect x="360" y="261" width="5" height="5"/><rect x="374" y="261" width="5" height="5"/><rect x="388" y="261" width="5" height="5"/>
+      <rect x="222" y="331" width="5" height="5"/><rect x="236" y="331" width="5" height="5"/><rect x="250" y="331" width="5" height="5"/><rect x="264" y="331" width="5" height="5"/><rect x="278" y="331" width="5" height="5"/><rect x="292" y="331" width="5" height="5"/><rect x="306" y="331" width="5" height="5"/><rect x="320" y="331" width="5" height="5"/><rect x="334" y="331" width="5" height="5"/><rect x="348" y="331" width="5" height="5"/><rect x="362" y="331" width="5" height="5"/><rect x="376" y="331" width="5" height="5"/><rect x="390" y="331" width="5" height="5"/>
+    </g>
+
+    <!-- Format codes -->
+    <text x="440" y="134" font-size="14" font-weight="700" fill="#70706F" letter-spacing="1">FORMAT CODE</text>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="24" fill="#141421">
+      <text x="440" y="182">@</text>
+      <text x="440" y="252">@<tspan fill="#F39454" font-weight="700">*.</tspan></text>
+      <text x="440" y="322">;;;_(@<tspan fill="#F39454" font-weight="700">*.</tspan></text>
+    </g>
+    <g font-size="16" fill="#70706F">
+      <text x="440" y="206">Text as-is, no fill</text>
+      <text x="440" y="276">Dots up to the edge</text>
+      <text x="440" y="346">Indent with _( (action 1) + fill</text>
+    </g>
+
+    <!-- Callout -->
+    <rect x="40" y="396" width="660" height="72" rx="8" fill="#F6F6F6"/>
+    <rect x="40" y="396" width="8" height="72" fill="#F39454"/>
+    <text x="68" y="426" font-size="19" font-weight="700" fill="#141421">Typical use</text>
+    <text x="68" y="452" font-size="18" fill="#141421">Dotted leader lines in reports, like a table of contents</text>
+  </g>
+</svg>

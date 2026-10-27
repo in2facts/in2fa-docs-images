@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 52" width="152" height="52" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>Ctrl + +</title>
+  <rect x="2" y="5" width="74" height="44" rx="7" fill="#D7D8D8"/><rect x="2" y="2" width="74" height="44" rx="7" fill="#FFFFFF" stroke="#141421" stroke-width="2"/><text x="39" y="30" font-size="18" font-weight="700" fill="#141421" text-anchor="middle">Ctrl</text>
+  <text x="89" y="32" font-size="22" font-weight="700" fill="#F39454" text-anchor="middle">+</text>
+  <rect x="106" y="5" width="44" height="44" rx="7" fill="#D7D8D8"/><rect x="106" y="2" width="44" height="44" rx="7" fill="#FFFFFF" stroke="#141421" stroke-width="2"/><text x="128" y="30" font-size="18" font-weight="700" fill="#141421" text-anchor="middle">+</text>
+</svg>

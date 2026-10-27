@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 690" width="1400" height="690" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>TRIMRANGE trims the empty outer rows and columns of A1:F10 to the data block B3:D7</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <rect width="1400" height="690" fill="#F6F6F6"/>
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#141421">TRIMRANGE<tspan fill="#F39454">_</tspan></text>
+  <text x="60" y="118" font-size="20" fill="#70706F">Removes empty rows and columns from the outer edges of a range</text>
+  <rect x="60" y="150" width="600" height="500" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="84" y="174" width="48" height="48" fill="#141421"/>
+  <text x="108" y="207" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+  <text x="148" y="202" font-size="26" font-weight="700" fill="#141421">Input range</text>
+  <text x="148" y="224" font-size="16" fill="#70706F">A1:F10, data surrounded by empty cells</text>
+  <rect x="100" y="250" width="520" height="30" fill="#F6F6F6"/>
+  <rect x="100" y="280" width="40" height="300" fill="#F6F6F6"/>
+  <rect x="140" y="280" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="220" y="280" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="300" y="280" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="380" y="280" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="460" y="280" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="540" y="280" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="140" y="310" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="220" y="310" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="300" y="310" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="380" y="310" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="460" y="310" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="540" y="310" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="140" y="340" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="220" y="340" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="300" y="340" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="380" y="340" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="460" y="340" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="540" y="340" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="140" y="370" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="220" y="370" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="300" y="370" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="380" y="370" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="460" y="370" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="540" y="370" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="140" y="400" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="220" y="400" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="300" y="400" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="380" y="400" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="460" y="400" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="540" y="400" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="140" y="430" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="220" y="430" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="300" y="430" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="380" y="430" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="460" y="430" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="540" y="430" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="140" y="460" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="220" y="460" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="300" y="460" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="380" y="460" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="460" y="460" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="540" y="460" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="140" y="490" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="220" y="490" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="300" y="490" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="380" y="490" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="460" y="490" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="540" y="490" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="140" y="520" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="220" y="520" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="300" y="520" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="380" y="520" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="460" y="520" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="540" y="520" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="140" y="550" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="220" y="550" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="300" y="550" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="380" y="550" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="460" y="550" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="540" y="550" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="180" y="271" font-size="14" fill="#70706F" text-anchor="middle">A</text>
+  <text x="260" y="271" font-size="14" fill="#70706F" text-anchor="middle">B</text>
+  <text x="340" y="271" font-size="14" fill="#70706F" text-anchor="middle">C</text>
+  <text x="420" y="271" font-size="14" fill="#70706F" text-anchor="middle">D</text>
+  <text x="500" y="271" font-size="14" fill="#70706F" text-anchor="middle">E</text>
+  <text x="580" y="271" font-size="14" fill="#70706F" text-anchor="middle">F</text>
+  <text x="120" y="301" font-size="14" fill="#70706F" text-anchor="middle">1</text>
+  <text x="120" y="331" font-size="14" fill="#70706F" text-anchor="middle">2</text>
+  <text x="120" y="361" font-size="14" fill="#70706F" text-anchor="middle">3</text>
+  <text x="120" y="391" font-size="14" fill="#70706F" text-anchor="middle">4</text>
+  <text x="120" y="421" font-size="14" fill="#70706F" text-anchor="middle">5</text>
+  <text x="120" y="451" font-size="14" fill="#70706F" text-anchor="middle">6</text>
+  <text x="120" y="481" font-size="14" fill="#70706F" text-anchor="middle">7</text>
+  <text x="120" y="511" font-size="14" fill="#70706F" text-anchor="middle">8</text>
+  <text x="120" y="541" font-size="14" fill="#70706F" text-anchor="middle">9</text>
+  <text x="120" y="571" font-size="14" fill="#70706F" text-anchor="middle">10</text>
+  <text x="230" y="361" font-size="15" fill="#141421" font-weight="700">Region</text>
+  <text x="310" y="361" font-size="15" fill="#141421" font-weight="700">Q1</text>
+  <text x="390" y="361" font-size="15" fill="#141421" font-weight="700">Q2</text>
+  <text x="230" y="391" font-size="15" fill="#141421">North</text>
+  <text x="370" y="391" font-size="15" fill="#141421" text-anchor="end">120</text>
+  <text x="450" y="391" font-size="15" fill="#141421" text-anchor="end">135</text>
+  <text x="230" y="421" font-size="15" fill="#141421">South</text>
+  <text x="370" y="421" font-size="15" fill="#141421" text-anchor="end">95</text>
+  <text x="450" y="421" font-size="15" fill="#141421" text-anchor="end">110</text>
+  <text x="230" y="451" font-size="15" fill="#141421">East</text>
+  <text x="370" y="451" font-size="15" fill="#141421" text-anchor="end">140</text>
+  <text x="450" y="451" font-size="15" fill="#141421" text-anchor="end">150</text>
+  <text x="230" y="481" font-size="15" fill="#141421">West</text>
+  <text x="370" y="481" font-size="15" fill="#141421" text-anchor="end">80</text>
+  <text x="450" y="481" font-size="15" fill="#141421" text-anchor="end">90</text>
+  <rect x="140" y="280" width="480" height="300" fill="none" stroke="#F39454" stroke-width="3" stroke-dasharray="8 6"/>
+  <text x="100" y="620" font-size="17" fill="#141421"><tspan font-weight="700">10 rows × 6 columns</tspan> · blanks count along</text>
+  <path d="M672 420 H716" stroke="#141421" stroke-width="3"/>
+  <path d="M728 420 L714 411 V429 Z" fill="#141421"/>
+  <text x="700" y="400" font-size="14" font-weight="700" fill="#F39454" text-anchor="middle" letter-spacing="1">TRIM</text>
+  <rect x="740" y="150" width="600" height="500" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="764" y="174" width="48" height="48" fill="#F39454"/>
+  <text x="788" y="207" font-size="24" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="828" y="202" font-size="26" font-weight="700" fill="#141421">Result</text>
+  <text x="828" y="224" font-size="16" fill="#70706F"></text>
+  <text x="828" y="224" font-family="Consolas, 'Courier New', monospace" font-size="16" fill="#141421">=TRIMRANGE(A1:F10) → B3:D7</text>
+  <rect x="780" y="250" width="520" height="30" fill="#F6F6F6"/>
+  <rect x="780" y="280" width="40" height="300" fill="#F6F6F6"/>
+  <rect x="820" y="280" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="900" y="280" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="980" y="280" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1060" y="280" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1140" y="280" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1220" y="280" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="820" y="310" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="900" y="310" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="980" y="310" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1060" y="310" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1140" y="310" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1220" y="310" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="820" y="340" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="900" y="340" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="980" y="340" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1060" y="340" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1140" y="340" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1220" y="340" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="820" y="370" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="900" y="370" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="980" y="370" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1060" y="370" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1140" y="370" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1220" y="370" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="820" y="400" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="900" y="400" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="980" y="400" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1060" y="400" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1140" y="400" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1220" y="400" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="820" y="430" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="900" y="430" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="980" y="430" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1060" y="430" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1140" y="430" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1220" y="430" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="820" y="460" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="900" y="460" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="980" y="460" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1060" y="460" width="80" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1140" y="460" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1220" y="460" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="820" y="490" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="900" y="490" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="980" y="490" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1060" y="490" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1140" y="490" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1220" y="490" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="820" y="520" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="900" y="520" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="980" y="520" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1060" y="520" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1140" y="520" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1220" y="520" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="820" y="550" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="900" y="550" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="980" y="550" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1060" y="550" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1140" y="550" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1220" y="550" width="80" height="30" fill="#EDEDED" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="860" y="271" font-size="14" fill="#70706F" text-anchor="middle">A</text>
+  <text x="940" y="271" font-size="14" fill="#70706F" text-anchor="middle" font-weight="700">B</text>
+  <text x="1020" y="271" font-size="14" fill="#70706F" text-anchor="middle" font-weight="700">C</text>
+  <text x="1100" y="271" font-size="14" fill="#70706F" text-anchor="middle" font-weight="700">D</text>
+  <text x="1180" y="271" font-size="14" fill="#70706F" text-anchor="middle">E</text>
+  <text x="1260" y="271" font-size="14" fill="#70706F" text-anchor="middle">F</text>
+  <text x="800" y="301" font-size="14" fill="#70706F" text-anchor="middle">1</text>
+  <text x="800" y="331" font-size="14" fill="#70706F" text-anchor="middle">2</text>
+  <text x="800" y="361" font-size="14" fill="#70706F" text-anchor="middle">3</text>
+  <text x="800" y="391" font-size="14" fill="#70706F" text-anchor="middle">4</text>
+  <text x="800" y="421" font-size="14" fill="#70706F" text-anchor="middle">5</text>
+  <text x="800" y="451" font-size="14" fill="#70706F" text-anchor="middle">6</text>
+  <text x="800" y="481" font-size="14" fill="#70706F" text-anchor="middle">7</text>
+  <text x="800" y="511" font-size="14" fill="#70706F" text-anchor="middle">8</text>
+  <text x="800" y="541" font-size="14" fill="#70706F" text-anchor="middle">9</text>
+  <text x="800" y="571" font-size="14" fill="#70706F" text-anchor="middle">10</text>
+  <text x="910" y="361" font-size="15" fill="#141421" font-weight="700">Region</text>
+  <text x="990" y="361" font-size="15" fill="#141421" font-weight="700">Q1</text>
+  <text x="1070" y="361" font-size="15" fill="#141421" font-weight="700">Q2</text>
+  <text x="910" y="391" font-size="15" fill="#141421">North</text>
+  <text x="1050" y="391" font-size="15" fill="#141421" text-anchor="end">120</text>
+  <text x="1130" y="391" font-size="15" fill="#141421" text-anchor="end">135</text>
+  <text x="910" y="421" font-size="15" fill="#141421">South</text>
+  <text x="1050" y="421" font-size="15" fill="#141421" text-anchor="end">95</text>
+  <text x="1130" y="421" font-size="15" fill="#141421" text-anchor="end">110</text>
+  <text x="910" y="451" font-size="15" fill="#141421">East</text>
+  <text x="1050" y="451" font-size="15" fill="#141421" text-anchor="end">140</text>
+  <text x="1130" y="451" font-size="15" fill="#141421" text-anchor="end">150</text>
+  <text x="910" y="481" font-size="15" fill="#141421">West</text>
+  <text x="1050" y="481" font-size="15" fill="#141421" text-anchor="end">80</text>
+  <text x="1130" y="481" font-size="15" fill="#141421" text-anchor="end">90</text>
+  <rect x="900" y="340" width="240" height="150" fill="none" stroke="#F39454" stroke-width="3.5"/>
+  <text x="780" y="620" font-size="17" fill="#141421"><tspan font-weight="700">5 rows × 3 columns</tspan> · only the data block</text>
+</svg>

@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 860" width="1400" height="860" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>From input to output: .xlsx feeds Power Query, the data is loaded into a database, and reports are built in .xlsb</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <rect width="1400" height="860" fill="#F6F6F6"/>
+
+  <!-- Title -->
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#141421">From input to output<tspan fill="#F39454">_</tspan></text>
+  <text x="60" y="118" font-size="20" fill="#70706F">Feed Power Query with .xlsx, build your reports in .xlsb</text>
+
+  <!-- ============ Card 1: .xlsx input ============ -->
+  <g transform="translate(60,170)">
+    <rect x="0" y="0" width="250" height="580" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <!-- Badge + heading -->
+    <rect x="24" y="24" width="52" height="52" fill="#141421"/>
+    <g fill="none" stroke="#FFFFFF" stroke-width="3">
+      <path d="M38 34 H56 L64 42 V66 H38 Z"/>
+      <path d="M44 50 H58 M44 57 H58"/>
+    </g>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">.xlsx</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">Input workbook</text>
+
+    <!-- Mock: workbook = ZIP of XML parts -->
+    <rect x="20" y="104" width="210" height="300" rx="8" fill="#F6F6F6"/>
+    <path d="M36 120 H68 L80 132 V176 H36 Z" fill="#FFFFFF" stroke="#141421" stroke-width="2.5"/>
+    <path d="M68 120 V132 H80" fill="none" stroke="#141421" stroke-width="2.5"/>
+    <text x="58" y="161" font-size="20" font-weight="700" fill="#141421" text-anchor="middle">X</text>
+    <text x="94" y="144" font-size="17" font-weight="700" fill="#141421">Book1.xlsx</text>
+    <text x="94" y="166" font-size="15" fill="#70706F">= ZIP archive</text>
+
+    <path d="M58 180 V342 M58 222 H76 M58 282 H76 M58 342 H76" fill="none" stroke="#70706F" stroke-width="2"/>
+    <g fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2">
+      <rect x="76" y="202" width="142" height="40" rx="4"/>
+      <rect x="76" y="262" width="142" height="40" rx="4"/>
+      <rect x="76" y="322" width="142" height="40" rx="4"/>
+    </g>
+    <g fill="#C9DCE7">
+      <rect x="84" y="211" width="40" height="22"/>
+      <rect x="84" y="271" width="40" height="22"/>
+      <rect x="84" y="331" width="40" height="22"/>
+    </g>
+    <g font-size="12" font-weight="700" fill="#141421" text-anchor="middle">
+      <text x="104" y="227">XML</text><text x="104" y="287">XML</text><text x="104" y="347">XML</text>
+    </g>
+    <g font-size="15" fill="#141421">
+      <text x="132" y="228">sheet1</text>
+      <text x="132" y="288">chart1</text>
+      <text x="132" y="348">pivotCache1</text>
+    </g>
+
+    <!-- Bullets -->
+    <g fill="#F39454"><rect x="24" y="440" width="10" height="10"/><rect x="24" y="506" width="10" height="10"/></g>
+    <g font-size="17" fill="#141421">
+      <text x="44" y="450">Open XML: a ZIP</text>
+      <text x="44" y="474">of XML parts</text>
+      <text x="44" y="516">Easy to read for</text>
+      <text x="44" y="540">Power Query</text>
+    </g>
+  </g>
+
+  <!-- ============ Card 2: Power Query ============ -->
+  <g transform="translate(403,170)">
+    <rect x="0" y="0" width="250" height="580" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <!-- Badge + heading -->
+    <rect x="24" y="24" width="52" height="52" fill="#F39454"/>
+    <g fill="none" stroke="#141421" stroke-width="3">
+      <rect x="36" y="34" width="24" height="28"/>
+      <path d="M36 43 H60 M36 52 H60 M46 34 V62"/>
+    </g>
+    <path d="M56 68 L70 46" stroke="#141421" stroke-width="6"/>
+    <text x="92" y="54" font-size="24" font-weight="700" fill="#141421">Power Query</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">Transform</text>
+
+    <!-- Mock: applied steps -->
+    <rect x="20" y="104" width="210" height="300" rx="8" fill="#F6F6F6"/>
+    <text x="36" y="134" font-size="13" font-weight="700" fill="#70706F" letter-spacing="1">APPLIED STEPS</text>
+    <g fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2">
+      <rect x="36" y="148" width="178" height="40" rx="4"/>
+      <rect x="36" y="198" width="178" height="40" rx="4"/>
+    </g>
+    <rect x="36" y="248" width="178" height="40" rx="4" fill="#FFFFFF" stroke="#F39454" stroke-width="2.5"/>
+    <circle cx="58" cy="168" r="11" fill="#141421"/>
+    <circle cx="58" cy="218" r="11" fill="#141421"/>
+    <circle cx="58" cy="268" r="11" fill="#F39454"/>
+    <g font-size="13" font-weight="700" text-anchor="middle">
+      <text x="58" y="173" fill="#FFFFFF">1</text>
+      <text x="58" y="223" fill="#FFFFFF">2</text>
+      <text x="58" y="273" fill="#141421">3</text>
+    </g>
+    <g font-size="16" fill="#141421">
+      <text x="78" y="174">Source</text>
+      <text x="78" y="224">Navigation</text>
+      <text x="78" y="274">Promoted Headers</text>
+    </g>
+    <!-- Table preview -->
+    <rect x="36" y="308" width="178" height="24" fill="#141421"/>
+    <g font-size="12" font-weight="700" fill="#FFFFFF">
+      <text x="44" y="325">Date</text><text x="100" y="325">Region</text><text x="162" y="325">Sales</text>
+    </g>
+    <rect x="36" y="332" width="178" height="44" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <path d="M36 354 H214 M92 308 V376 M154 308 V376" stroke="#D7D8D8" stroke-width="1"/>
+    <g fill="#D7D8D8">
+      <rect x="44" y="339" width="38" height="8" rx="4"/><rect x="100" y="339" width="44" height="8" rx="4"/><rect x="170" y="339" width="34" height="8" rx="4"/>
+      <rect x="44" y="361" width="38" height="8" rx="4"/><rect x="100" y="361" width="32" height="8" rx="4"/><rect x="176" y="361" width="28" height="8" rx="4"/>
+    </g>
+
+    <!-- Bullets -->
+    <g fill="#F39454"><rect x="24" y="440" width="10" height="10"/><rect x="24" y="506" width="10" height="10"/></g>
+    <g font-size="17" fill="#141421">
+      <text x="44" y="450">Every step recorded</text>
+      <text x="44" y="474">and repeatable</text>
+      <text x="44" y="516">Refresh in one click</text>
+    </g>
+  </g>
+
+  <!-- ============ Card 3: Database ============ -->
+  <g transform="translate(747,170)">
+    <rect x="0" y="0" width="250" height="580" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <!-- Badge + heading -->
+    <rect x="24" y="24" width="52" height="52" fill="#141421"/>
+    <g fill="none" stroke="#FFFFFF" stroke-width="3">
+      <ellipse cx="50" cy="38" rx="12" ry="4"/>
+      <path d="M38 38 V62 A12 4 0 0 0 62 62 V38"/>
+      <path d="M38 50 A12 4 0 0 0 62 50"/>
+    </g>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">Database</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">Load &amp; store</text>
+
+    <!-- Mock: SQL cylinder + tables -->
+    <rect x="20" y="104" width="210" height="300" rx="8" fill="#F6F6F6"/>
+    <rect x="63" y="150" width="124" height="150" fill="#141421"/>
+    <ellipse cx="125" cy="300" rx="62" ry="16" fill="#141421"/>
+    <ellipse cx="125" cy="150" rx="62" ry="16" fill="#C9DCE7"/>
+    <g fill="none" stroke="#70706F" stroke-width="2">
+      <path d="M63 190 A62 16 0 0 0 187 190"/>
+      <path d="M63 266 A62 16 0 0 0 187 266"/>
+    </g>
+    <text x="125" y="243" font-size="30" font-weight="700" fill="#FFFFFF" text-anchor="middle">SQL</text>
+    <g fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2">
+      <rect x="42" y="338" width="50" height="40"/>
+      <rect x="100" y="338" width="50" height="40"/>
+      <rect x="158" y="338" width="50" height="40"/>
+    </g>
+    <g fill="#C9DCE7">
+      <rect x="43" y="339" width="48" height="9"/>
+      <rect x="101" y="339" width="48" height="9"/>
+      <rect x="159" y="339" width="48" height="9"/>
+    </g>
+    <g fill="#D7D8D8">
+      <rect x="50" y="356" width="34" height="6" rx="3"/><rect x="50" y="367" width="24" height="6" rx="3"/>
+      <rect x="108" y="356" width="34" height="6" rx="3"/><rect x="108" y="367" width="28" height="6" rx="3"/>
+      <rect x="166" y="356" width="34" height="6" rx="3"/><rect x="166" y="367" width="20" height="6" rx="3"/>
+    </g>
+
+    <!-- Bullets -->
+    <g fill="#F39454"><rect x="24" y="440" width="10" height="10"/><rect x="24" y="506" width="10" height="10"/></g>
+    <g font-size="17" fill="#141421">
+      <text x="44" y="450">Clean data, loaded</text>
+      <text x="44" y="474">once</text>
+      <text x="44" y="516">Shared by all reports</text>
+    </g>
+  </g>
+
+  <!-- ============ Card 4: .xlsb output ============ -->
+  <g transform="translate(1090,170)">
+    <rect x="0" y="0" width="250" height="580" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <!-- Badge + heading -->
+    <rect x="24" y="24" width="52" height="52" fill="#F39454"/>
+    <g fill="#141421">
+      <rect x="38" y="52" width="6" height="14"/>
+      <rect x="47" y="44" width="6" height="22"/>
+      <rect x="56" y="36" width="6" height="30"/>
+    </g>
+    <path d="M34 68 H66" stroke="#141421" stroke-width="3"/>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">.xlsb</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">Output report</text>
+
+    <!-- Mock: report -->
+    <rect x="20" y="104" width="210" height="300" rx="8" fill="#F6F6F6"/>
+    <rect x="36" y="120" width="178" height="28" fill="#141421"/>
+    <text x="46" y="139" font-size="14" font-weight="700" fill="#FFFFFF">Report.xlsb</text>
+    <g fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2">
+      <rect x="36" y="158" width="86" height="50"/>
+      <rect x="128" y="158" width="86" height="50"/>
+      <rect x="36" y="218" width="178" height="150"/>
+    </g>
+    <g fill="#D7D8D8">
+      <rect x="44" y="166" width="40" height="6" rx="3"/>
+      <rect x="136" y="166" width="40" height="6" rx="3"/>
+    </g>
+    <text x="44" y="199" font-size="18" font-weight="700" fill="#141421">€1.2M</text>
+    <text x="136" y="199" font-size="18" font-weight="700" fill="#F39454">+8%</text>
+    <rect x="52" y="292" width="22" height="60" fill="#141421"/>
+    <rect x="82" y="262" width="22" height="90" fill="#70706F"/>
+    <rect x="112" y="307" width="22" height="45" fill="#D7D8D8"/>
+    <rect x="142" y="242" width="22" height="110" fill="#F39454"/>
+    <rect x="172" y="277" width="22" height="75" fill="#C9DCE7"/>
+    <path d="M46 352 H204" stroke="#D7D8D8" stroke-width="2"/>
+
+    <!-- Bullets -->
+    <g fill="#F39454"><rect x="24" y="440" width="10" height="10"/><rect x="24" y="506" width="10" height="10"/></g>
+    <g font-size="17" fill="#141421">
+      <text x="44" y="450">Binary: smallest</text>
+      <text x="44" y="474">and fastest</text>
+      <text x="44" y="516">Default for reports</text>
+      <text x="44" y="540">and analyses</text>
+    </g>
+  </g>
+
+  <!-- ============ Flow arrows ============ -->
+  <g stroke="#141421" stroke-width="3" fill="none">
+    <path d="M320 424 H384"/>
+    <path d="M663 424 H728"/>
+    <path d="M1007 424 H1071"/>
+  </g>
+  <g fill="#141421">
+    <path d="M394 424 L382 416 V432 Z"/>
+    <path d="M738 424 L726 416 V432 Z"/>
+    <path d="M1081 424 L1069 416 V432 Z"/>
+  </g>
+  <g font-size="14" font-weight="700" fill="#F39454" text-anchor="middle" letter-spacing="1">
+    <text x="356" y="406">EXTRACT</text>
+    <text x="700" y="406">LOAD</text>
+    <text x="1043" y="406">CONNECT</text>
+  </g>
+
+  <!-- ============ Input / process / output ============ -->
+  <g stroke-width="3">
+    <path d="M60 774 H310" stroke="#C9DCE7"/>
+    <path d="M403 774 H997" stroke="#D7D8D8"/>
+    <path d="M1090 774 H1340" stroke="#F39454"/>
+  </g>
+  <rect x="85" y="790" width="200" height="40" fill="#C9DCE7"/>
+  <rect x="580" y="790" width="240" height="40" fill="#D7D8D8"/>
+  <rect x="1115" y="790" width="200" height="40" fill="#F39454"/>
+  <g font-size="17" fill="#141421" text-anchor="middle">
+    <text x="185" y="816"><tspan font-weight="700">INPUT</tspan> · .xlsx / .xlsm</text>
+    <text x="700" y="816"><tspan font-weight="700">PROCESS</tspan> · ETL</text>
+    <text x="1215" y="816"><tspan font-weight="700">OUTPUT</tspan> · .xlsb</text>
+  </g>
+</svg>

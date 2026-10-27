@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 720" width="1400" height="720" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>Formatting action 3: each thousand separator at the end of a format code divides the displayed value by 1.000</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <rect width="1400" height="720" fill="#F6F6F6"/>
+
+  <!-- Title -->
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#141421">Formatting action 3<tspan fill="#F39454">_</tspan></text>
+  <text x="60" y="118" font-size="20" fill="#70706F">A thousand separator at the end divides the displayed value by 1.000</text>
+
+  <!-- ============ Left card: the code ============ -->
+  <g transform="translate(60,160)">
+    <rect x="0" y="0" width="500" height="500" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="52" height="52" fill="#F39454"/>
+    <text x="50" y="59" font-size="28" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">Action 3</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">Thousand separator at the end</text>
+
+    <!-- Mock: #.##0,0. -> / 1.000 -->
+    <rect x="24" y="104" width="452" height="236" rx="8" fill="#F6F6F6"/>
+    <text x="250" y="182" font-family="Consolas, 'Courier New', monospace" font-size="48" fill="#141421" text-anchor="middle">#.##0,0<tspan fill="#F39454" font-weight="700">.</tspan></text>
+    <circle cx="341" cy="177" r="16" fill="none" stroke="#F39454" stroke-width="3"/>
+    <text x="250" y="222" font-size="16" fill="#70706F" text-anchor="middle">trailing thousand separator</text>
+    <path d="M250 234 V262" stroke="#141421" stroke-width="3"/>
+    <path d="M250 274 L242 260 H258 Z" fill="#141421"/>
+    <text x="250" y="320" font-size="40" font-weight="700" fill="#141421" text-anchor="middle">÷ 1.000</text>
+
+    <!-- Statement -->
+    <text x="24" y="382" font-size="24" font-weight="700" fill="#141421">Each separator at the end</text>
+    <text x="24" y="412" font-size="24" font-weight="700" fill="#141421">divides the value by 1.000</text>
+
+    <!-- Note -->
+    <path d="M38 432 L54 460 H22 Z" fill="#F39454"/>
+    <text x="38" y="456" font-size="18" font-weight="700" fill="#141421" text-anchor="middle">!</text>
+    <text x="68" y="450" font-size="18" fill="#141421">Can be repeated: two separators ÷ 1.000.000</text>
+    <text x="68" y="474" font-size="16" fill="#70706F">Layer 1 keeps the full value</text>
+  </g>
+
+  <!-- ============ Right card: in the cell ============ -->
+  <g transform="translate(600,160)">
+    <rect x="0" y="0" width="740" height="500" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="52" height="52" fill="#141421"/>
+    <g fill="none" stroke="#FFFFFF" stroke-width="3">
+      <rect x="36" y="36" width="28" height="28"/>
+      <path d="M36 46 H64 M36 55 H64 M46 36 V64"/>
+    </g>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">In the cell</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">Layer 1 value: 12345,678</text>
+
+    <!-- Mock: worksheet -->
+    <rect x="40" y="110" width="50" height="246" fill="#F6F6F6"/>
+    <rect x="90" y="110" width="310" height="36" fill="#F6F6F6"/>
+    <rect x="90" y="146" width="310" height="210" fill="#FFFFFF"/>
+    <path d="M40 146 H400 M40 216 H400 M40 286 H400 M90 110 V356" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="40" y="110" width="360" height="246" fill="none" stroke="#D7D8D8" stroke-width="2"/>
+    <text x="245" y="134" font-size="18" font-weight="700" fill="#70706F" text-anchor="middle">A</text>
+    <g font-size="18" fill="#70706F" text-anchor="middle">
+      <text x="65" y="188">1</text><text x="65" y="258">2</text><text x="65" y="328">3</text>
+    </g>
+    <g font-size="40" font-weight="700" fill="#141421" text-anchor="end">
+      <text x="390" y="196">12.345,7</text>
+      <text x="390" y="266">12,3</text>
+      <text x="390" y="336">k€ 12,3</text>
+    </g>
+
+    <!-- Format codes -->
+    <text x="440" y="134" font-size="14" font-weight="700" fill="#70706F" letter-spacing="1">FORMAT CODE</text>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="24" fill="#141421">
+      <text x="440" y="182">#.##0,0</text>
+      <text x="440" y="252">#.##0,0<tspan fill="#F39454" font-weight="700">.</tspan></text>
+      <text x="440" y="322">"k€" #.##0,0<tspan fill="#F39454" font-weight="700">.</tspan></text>
+    </g>
+    <g font-size="16" fill="#70706F">
+      <text x="440" y="206">Full value, 1 decimal</text>
+      <text x="440" y="276">Divided by 1.000</text>
+      <text x="440" y="346">With a "k€" label in front</text>
+    </g>
+
+    <!-- Callout -->
+    <rect x="40" y="396" width="660" height="72" rx="8" fill="#F6F6F6"/>
+    <rect x="40" y="396" width="8" height="72" fill="#F39454"/>
+    <text x="68" y="426" font-size="19" font-weight="700" fill="#141421">Typical use</text>
+    <text x="68" y="452" font-size="18" fill="#141421">Reports in k€ or M€ without dividing the data on layer 1</text>
+  </g>
+</svg>

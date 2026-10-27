@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 640" width="1400" height="640" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>Error checking options: Select Obstructing Cells selects the cells that block the spill range</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <rect width="1400" height="640" fill="#F6F6F6"/>
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#141421">Find what blocks the spill<tspan fill="#F39454">_</tspan></text>
+  <text x="60" y="118" font-size="20" fill="#70706F">Use the error checking options of the #SPILL! cell</text>
+  <rect x="60" y="150" width="620" height="450" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="84" y="174" width="48" height="48" fill="#141421"/>
+  <text x="108" y="207" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+  <text x="148" y="202" font-size="26" font-weight="700" fill="#141421">Error checking options</text>
+  <text x="148" y="224" font-size="16" fill="#70706F">Click the warning icon next to the #SPILL! cell</text>
+  <rect x="140" y="250" width="432" height="26" fill="#F6F6F6"/>
+  <text x="222" y="268" font-size="13" fill="#70706F" text-anchor="middle">E</text>
+  <text x="322" y="268" font-size="13" fill="#70706F" text-anchor="middle">F</text>
+  <text x="422" y="268" font-size="13" fill="#70706F" text-anchor="middle">G</text>
+  <text x="522" y="268" font-size="13" fill="#70706F" text-anchor="middle">H</text>
+  <rect x="140" y="276" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="156" y="296" font-size="13" fill="#70706F" text-anchor="middle">1</text>
+  <rect x="172" y="276" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="272" y="276" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="372" y="276" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="472" y="276" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="140" y="306" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="156" y="326" font-size="13" fill="#70706F" text-anchor="middle">2</text>
+  <rect x="172" y="306" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="272" y="306" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="372" y="306" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="472" y="306" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="140" y="336" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="156" y="356" font-size="13" fill="#70706F" text-anchor="middle">3</text>
+  <rect x="172" y="336" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="272" y="336" width="100" height="30" fill="#F39454" fill-opacity="0.3" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="372" y="336" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="472" y="336" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="140" y="366" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="156" y="386" font-size="13" fill="#70706F" text-anchor="middle">4</text>
+  <rect x="172" y="366" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="272" y="366" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="372" y="366" width="100" height="30" fill="#F39454" fill-opacity="0.3" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="472" y="366" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="180" y="326" font-family="Consolas, 'Courier New', monospace" font-size="14" font-weight="700" fill="#F39454">#SPILL!</text>
+  <text x="280" y="356" font-size="14" fill="#141421">x</text>
+  <text x="380" y="386" font-size="14" fill="#141421">y</text>
+  <rect x="172" y="306" width="300" height="90" fill="none" stroke="#4A90C2" stroke-width="2" stroke-dasharray="5 4"/>
+  <rect x="142" y="308" width="26" height="26" rx="3" fill="#FFFFFF" stroke="#141421" stroke-width="1.5"/>
+  <path d="M155 313 L164 328 H146 Z" fill="#F39454"/>
+  <text x="155" y="327" font-size="11" font-weight="700" fill="#141421" text-anchor="middle">!</text>
+  <rect x="154" y="366" width="300" height="200" fill="#D7D8D8"/>
+  <rect x="150" y="362" width="300" height="200" fill="#FFFFFF" stroke="#70706F" stroke-width="1.5"/>
+  <text x="166" y="387" font-size="15" fill="#70706F" font-weight="700">Spill range isn't blank</text>
+  <path d="M158 398 H442" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="166" y="419" font-size="15" fill="#141421">Help on this Error</text>
+  <rect x="154" y="430" width="292" height="32" fill="#F39454"/>
+  <text x="166" y="451" font-size="15" fill="#141421" font-weight="700">Select Obstructing Cells</text>
+  <text x="166" y="483" font-size="15" fill="#141421">Ignore Error</text>
+  <text x="166" y="515" font-size="15" fill="#141421">Edit in Formula Bar</text>
+  <text x="166" y="547" font-size="15" fill="#141421">Error Checking Options…</text>
+  <path d="M692 400 H736" stroke="#141421" stroke-width="3"/>
+  <path d="M748 400 L734 391 V409 Z" fill="#141421"/>
+  <rect x="760" y="150" width="580" height="450" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="784" y="174" width="48" height="48" fill="#F39454"/>
+  <text x="808" y="207" font-size="24" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="848" y="202" font-size="26" font-weight="700" fill="#141421">Obstructing cells selected</text>
+  <text x="848" y="224" font-size="16" fill="#70706F">Excel selects every cell that blocks the spill</text>
+  <rect x="800" y="250" width="432" height="26" fill="#F6F6F6"/>
+  <text x="882" y="268" font-size="13" fill="#70706F" text-anchor="middle">E</text>
+  <text x="982" y="268" font-size="13" fill="#70706F" text-anchor="middle">F</text>
+  <text x="1082" y="268" font-size="13" fill="#70706F" text-anchor="middle">G</text>
+  <text x="1182" y="268" font-size="13" fill="#70706F" text-anchor="middle">H</text>
+  <rect x="800" y="276" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="816" y="296" font-size="13" fill="#70706F" text-anchor="middle">1</text>
+  <rect x="832" y="276" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="932" y="276" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1032" y="276" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1132" y="276" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="800" y="306" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="816" y="326" font-size="13" fill="#70706F" text-anchor="middle">2</text>
+  <rect x="832" y="306" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="932" y="306" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1032" y="306" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1132" y="306" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="800" y="336" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="816" y="356" font-size="13" fill="#70706F" text-anchor="middle">3</text>
+  <rect x="832" y="336" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="932" y="336" width="100" height="30" fill="#F39454" fill-opacity="0.3" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1032" y="336" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1132" y="336" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="800" y="366" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="816" y="386" font-size="13" fill="#70706F" text-anchor="middle">4</text>
+  <rect x="832" y="366" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="932" y="366" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1032" y="366" width="100" height="30" fill="#F39454" fill-opacity="0.3" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="1132" y="366" width="100" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="840" y="326" font-family="Consolas, 'Courier New', monospace" font-size="14" font-weight="700" fill="#F39454">#SPILL!</text>
+  <text x="940" y="356" font-size="14" fill="#141421">x</text>
+  <text x="1040" y="386" font-size="14" fill="#141421">y</text>
+  <rect x="832" y="306" width="300" height="90" fill="none" stroke="#4A90C2" stroke-width="2" stroke-dasharray="5 4"/>
+  <rect x="932" y="336" width="100" height="30" fill="none" stroke="#141421" stroke-width="3"/>
+  <rect x="1032" y="366" width="100" height="30" fill="none" stroke="#141421" stroke-width="3"/>
+  <text x="800" y="436" font-size="17" fill="#141421"><tspan font-weight="700">F3</tspan> and <tspan font-weight="700">G4</tspan> are selected</text>
+  <rect x="800" y="464" width="500" height="110" rx="8" fill="#F6F6F6"/>
+  <rect x="800" y="464" width="8" height="110" fill="#F39454"/>
+  <text x="826" y="496" font-size="17" font-weight="700" fill="#141421">Then</text>
+  <text x="826" y="522" font-size="16" fill="#141421">Press <tspan font-weight="700">Delete</tspan> to clear them, or move them elsewhere.</text>
+  <text x="826" y="546" font-size="16" fill="#141421">The formula in E2 spills immediately.</text>
+</svg>

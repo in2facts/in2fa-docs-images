@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 151 52" width="151" height="52" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>Alt + F5</title>
+  <rect x="2" y="5" width="64" height="44" rx="7" fill="#D7D8D8"/><rect x="2" y="2" width="64" height="44" rx="7" fill="#FFFFFF" stroke="#141421" stroke-width="2"/><text x="34" y="30" font-size="18" font-weight="700" fill="#141421" text-anchor="middle">Alt</text>
+  <text x="79" y="32" font-size="22" font-weight="700" fill="#F39454" text-anchor="middle">+</text>
+  <rect x="96" y="5" width="53" height="44" rx="7" fill="#D7D8D8"/><rect x="96" y="2" width="53" height="44" rx="7" fill="#FFFFFF" stroke="#141421" stroke-width="2"/><text x="122" y="30" font-size="18" font-weight="700" fill="#141421" text-anchor="middle">F5</text>
+</svg>

@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 810" width="1400" height="810" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>Spill errors: #SPILL!, #CALC!, #VALUE! and #REF! with their cause and fix</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <rect width="1400" height="810" fill="#F6F6F6"/>
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#141421">Spill errors<tspan fill="#F39454">_</tspan></text>
+  <text x="60" y="118" font-size="20" fill="#70706F">What they mean and how to fix them</text>
+  <rect x="60" y="150" width="630" height="300" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <path d="M108 174 L134 220 H82 Z" fill="#F39454"/>
+  <text x="108" y="214" font-size="24" font-weight="700" fill="#141421" text-anchor="middle">!</text>
+  <text x="152" y="202" font-family="Consolas, 'Courier New', monospace" font-size="26" font-weight="700" fill="#141421">#SPILL!</text>
+  <text x="152" y="224" font-size="16" fill="#70706F">The spill range is blocked</text>
+  <rect x="84" y="246" width="582" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="85" y="247" width="32" height="28" fill="#F6F6F6"/>
+  <text x="101" y="266" font-size="14" font-style="italic" fill="#70706F" text-anchor="middle">fx</text>
+  <text x="126" y="266" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#141421">=FILTER(A2:C9, A2:A9="North")</text>
+  <rect x="84" y="290" width="302" height="26" fill="#F6F6F6"/>
+  <text x="161" y="308" font-size="13" fill="#70706F" text-anchor="middle">E</text>
+  <text x="251" y="308" font-size="13" fill="#70706F" text-anchor="middle">F</text>
+  <text x="341" y="308" font-size="13" fill="#70706F" text-anchor="middle">G</text>
+  <rect x="84" y="316" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="100" y="336" font-size="13" fill="#70706F" text-anchor="middle">1</text>
+  <rect x="116" y="316" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="206" y="316" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="296" y="316" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="84" y="346" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="100" y="366" font-size="13" fill="#70706F" text-anchor="middle">2</text>
+  <rect x="116" y="346" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="206" y="346" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="296" y="346" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="84" y="376" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="100" y="396" font-size="13" fill="#70706F" text-anchor="middle">3</text>
+  <rect x="116" y="376" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="206" y="376" width="90" height="30" fill="#F39454" fill-opacity="0.3" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="296" y="376" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="84" y="406" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="100" y="426" font-size="13" fill="#70706F" text-anchor="middle">4</text>
+  <rect x="116" y="406" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="206" y="406" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="296" y="406" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="124" y="366" font-family="Consolas, 'Courier New', monospace" font-size="14" font-weight="700" fill="#F39454">#SPILL!</text>
+  <text x="214" y="396" font-size="14" fill="#141421">x</text>
+  <rect x="116" y="346" width="270" height="90" fill="none" stroke="#4A90C2" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="410" y="300" font-size="13" font-weight="700" fill="#70706F" letter-spacing="1">CAUSE</text>
+  <text x="410" y="322" font-size="15" fill="#141421">A cell in the spill range</text>
+  <text x="410" y="342" font-size="15" fill="#141421">is not empty (F3)</text>
+  <text x="410" y="376" font-size="13" font-weight="700" fill="#F39454" letter-spacing="1">FIX</text>
+  <text x="410" y="398" font-size="15" fill="#141421">Clear or move the</text>
+  <text x="410" y="418" font-size="15" fill="#141421">blocking cell</text>
+  <rect x="710" y="150" width="630" height="300" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <path d="M758 174 L784 220 H732 Z" fill="#F39454"/>
+  <text x="758" y="214" font-size="24" font-weight="700" fill="#141421" text-anchor="middle">!</text>
+  <text x="802" y="202" font-family="Consolas, 'Courier New', monospace" font-size="26" font-weight="700" fill="#141421">#CALC!</text>
+  <text x="802" y="224" font-size="16" fill="#70706F">The result is empty</text>
+  <rect x="734" y="246" width="582" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="735" y="247" width="32" height="28" fill="#F6F6F6"/>
+  <text x="751" y="266" font-size="14" font-style="italic" fill="#70706F" text-anchor="middle">fx</text>
+  <text x="776" y="266" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#141421">=FILTER(A2:C9, A2:A9="Central")</text>
+  <rect x="734" y="290" width="302" height="26" fill="#F6F6F6"/>
+  <text x="811" y="308" font-size="13" fill="#70706F" text-anchor="middle">E</text>
+  <text x="901" y="308" font-size="13" fill="#70706F" text-anchor="middle">F</text>
+  <text x="991" y="308" font-size="13" fill="#70706F" text-anchor="middle">G</text>
+  <rect x="734" y="316" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="750" y="336" font-size="13" fill="#70706F" text-anchor="middle">1</text>
+  <rect x="766" y="316" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="856" y="316" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="946" y="316" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="734" y="346" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="750" y="366" font-size="13" fill="#70706F" text-anchor="middle">2</text>
+  <rect x="766" y="346" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="856" y="346" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="946" y="346" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="734" y="376" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="750" y="396" font-size="13" fill="#70706F" text-anchor="middle">3</text>
+  <rect x="766" y="376" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="856" y="376" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="946" y="376" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="734" y="406" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="750" y="426" font-size="13" fill="#70706F" text-anchor="middle">4</text>
+  <rect x="766" y="406" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="856" y="406" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="946" y="406" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="774" y="366" font-family="Consolas, 'Courier New', monospace" font-size="14" font-weight="700" fill="#F39454">#CALC!</text>
+  <text x="1060" y="300" font-size="13" font-weight="700" fill="#70706F" letter-spacing="1">CAUSE</text>
+  <text x="1060" y="322" font-size="15" fill="#141421">No row meets the condition</text>
+  <text x="1060" y="356" font-size="13" font-weight="700" fill="#F39454" letter-spacing="1">FIX</text>
+  <text x="1060" y="378" font-size="15" fill="#141421">Add the if_empty argument:</text>
+  <text x="1060" y="398" font-size="15" fill="#141421"><tspan font-family="Consolas, 'Courier New', monospace" font-size="14">…, "No results")</tspan></text>
+  <rect x="60" y="470" width="630" height="300" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <path d="M108 494 L134 540 H82 Z" fill="#F39454"/>
+  <text x="108" y="534" font-size="24" font-weight="700" fill="#141421" text-anchor="middle">!</text>
+  <text x="152" y="522" font-family="Consolas, 'Courier New', monospace" font-size="26" font-weight="700" fill="#141421">#VALUE!</text>
+  <text x="152" y="544" font-size="16" fill="#70706F">Array and include differ in size</text>
+  <rect x="84" y="566" width="582" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="85" y="567" width="32" height="28" fill="#F6F6F6"/>
+  <text x="101" y="586" font-size="14" font-style="italic" fill="#70706F" text-anchor="middle">fx</text>
+  <text x="126" y="586" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#141421">=FILTER(A2:C<tspan fill="#F39454" font-weight="700">9</tspan>, A2:A<tspan fill="#F39454" font-weight="700">8</tspan>="North")</text>
+  <text x="100" y="622" font-size="13" font-weight="700" fill="#70706F">array · 8 rows</text>
+  <rect x="100" y="630" width="110" height="15" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="100" y="645" width="110" height="15" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="100" y="660" width="110" height="15" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="100" y="675" width="110" height="15" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="100" y="690" width="110" height="15" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="100" y="705" width="110" height="15" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="100" y="720" width="110" height="15" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="100" y="735" width="110" height="15" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="250" y="622" font-size="13" font-weight="700" fill="#70706F">include · 7 rows</text>
+  <rect x="250" y="630" width="110" height="15" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="250" y="645" width="110" height="15" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="250" y="660" width="110" height="15" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="250" y="675" width="110" height="15" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="250" y="690" width="110" height="15" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="250" y="705" width="110" height="15" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="250" y="720" width="110" height="15" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="250" y="735" width="110" height="15" fill="none" stroke="#F39454" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="370" y="747" font-size="13" font-weight="700" fill="#F39454">missing</text>
+  <text x="410" y="620" font-size="13" font-weight="700" fill="#70706F" letter-spacing="1">CAUSE</text>
+  <text x="410" y="642" font-size="15" fill="#141421">Both ranges must have</text>
+  <text x="410" y="662" font-size="15" fill="#141421">the same number of rows</text>
+  <text x="410" y="696" font-size="13" font-weight="700" fill="#F39454" letter-spacing="1">FIX</text>
+  <text x="410" y="718" font-size="15" fill="#141421">Use the same start and</text>
+  <text x="410" y="738" font-size="15" fill="#141421">end row in both ranges</text>
+  <rect x="710" y="470" width="630" height="300" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <path d="M758 494 L784 540 H732 Z" fill="#F39454"/>
+  <text x="758" y="534" font-size="24" font-weight="700" fill="#141421" text-anchor="middle">!</text>
+  <text x="802" y="522" font-family="Consolas, 'Courier New', monospace" font-size="26" font-weight="700" fill="#141421">#REF!</text>
+  <text x="802" y="544" font-size="16" fill="#70706F">The # reference points to a cell that does not spill</text>
+  <rect x="734" y="566" width="582" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="735" y="567" width="32" height="28" fill="#F6F6F6"/>
+  <text x="751" y="586" font-size="14" font-style="italic" fill="#70706F" text-anchor="middle">fx</text>
+  <text x="776" y="586" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#141421">=SUM(E2#)</text>
+  <rect x="734" y="610" width="302" height="26" fill="#F6F6F6"/>
+  <text x="811" y="628" font-size="13" fill="#70706F" text-anchor="middle">E</text>
+  <text x="901" y="628" font-size="13" fill="#70706F" text-anchor="middle">F</text>
+  <text x="991" y="628" font-size="13" fill="#70706F" text-anchor="middle">G</text>
+  <rect x="734" y="636" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="750" y="656" font-size="13" fill="#70706F" text-anchor="middle">1</text>
+  <rect x="766" y="636" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="856" y="636" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="946" y="636" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="734" y="666" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="750" y="686" font-size="13" fill="#70706F" text-anchor="middle">2</text>
+  <rect x="766" y="666" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="856" y="666" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="946" y="666" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="734" y="696" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="750" y="716" font-size="13" fill="#70706F" text-anchor="middle">3</text>
+  <rect x="766" y="696" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="856" y="696" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="946" y="696" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="734" y="726" width="32" height="30" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="750" y="746" font-size="13" fill="#70706F" text-anchor="middle">4</text>
+  <rect x="766" y="726" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="856" y="726" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="946" y="726" width="90" height="30" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="848" y="686" font-size="14" fill="#141421" text-anchor="end">120</text>
+  <text x="954" y="686" font-family="Consolas, 'Courier New', monospace" font-size="14" font-weight="700" fill="#F39454">#REF!</text>
+  <text x="1060" y="620" font-size="13" font-weight="700" fill="#70706F" letter-spacing="1">CAUSE</text>
+  <text x="1060" y="642" font-size="15" fill="#141421">E2 holds a single value,</text>
+  <text x="1060" y="662" font-size="15" fill="#141421">not a spilling formula</text>
+  <text x="1060" y="696" font-size="13" font-weight="700" fill="#F39454" letter-spacing="1">FIX</text>
+  <text x="1060" y="718" font-size="15" fill="#141421">Use # only on the</text>
+  <text x="1060" y="738" font-size="15" fill="#141421">anchor cell of a spill</text>
+</svg>

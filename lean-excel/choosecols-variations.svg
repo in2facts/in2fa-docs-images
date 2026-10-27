@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 640" width="1400" height="640" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>CHOOSECOLS variations: reorder columns, count from the right with negative numbers, combine with FILTER</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <rect width="1400" height="640" fill="#F6F6F6"/>
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#141421">Pick, reorder, combine<tspan fill="#F39454">_</tspan></text>
+  <text x="60" y="118" font-size="20" fill="#70706F">Column numbers decide which columns come back, and in which order</text>
+  <rect x="60" y="150" width="400" height="450" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="84" y="174" width="48" height="48" fill="#141421"/>
+  <text x="108" y="207" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+  <text x="148" y="202" font-size="26" font-weight="700" fill="#141421">Reorder</text>
+  <text x="148" y="224" font-size="16" font-family="Consolas, 'Courier New', monospace" fill="#141421">=CHOOSECOLS(A1:D9,4,1)</text>
+  <rect x="86" y="280" width="84" height="32" fill="#F39454" stroke="#F39454" stroke-width="1.5"/>
+  <text x="128.0" y="301" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">Region</text>
+  <text x="128.0" y="270" font-size="14" font-weight="700" fill="#70706F" text-anchor="middle">1</text>
+  <rect x="174" y="280" width="84" height="32" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1.5"/>
+  <text x="216.0" y="301" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">Product</text>
+  <text x="216.0" y="270" font-size="14" font-weight="700" fill="#70706F" text-anchor="middle">2</text>
+  <rect x="262" y="280" width="84" height="32" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1.5"/>
+  <text x="304.0" y="301" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">Units</text>
+  <text x="304.0" y="270" font-size="14" font-weight="700" fill="#70706F" text-anchor="middle">3</text>
+  <rect x="350" y="280" width="84" height="32" fill="#F39454" stroke="#F39454" stroke-width="1.5"/>
+  <text x="392.0" y="301" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">Sales</text>
+  <text x="392.0" y="270" font-size="14" font-weight="700" fill="#70706F" text-anchor="middle">4</text>
+  <path d="M260 330 V356" stroke="#141421" stroke-width="3"/>
+  <path d="M260 368 L251 354 H269 Z" fill="#141421"/>
+  <rect x="86" y="410" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="96" y="429" font-size="14" fill="#141421" font-weight="700">Sales</text>
+  <rect x="206" y="410" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="216" y="429" font-size="14" fill="#141421" font-weight="700">Region</text>
+  <rect x="86" y="438" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="196" y="457" font-size="14" fill="#141421" text-anchor="end">1.250</text>
+  <rect x="206" y="438" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="216" y="457" font-size="14" fill="#141421">North</text>
+  <rect x="86" y="466" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="196" y="485" font-size="14" fill="#141421" text-anchor="end">830</text>
+  <rect x="206" y="466" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="216" y="485" font-size="14" fill="#141421">South</text>
+  <rect x="86" y="494" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="196" y="513" font-size="14" fill="#141421" text-anchor="end">760</text>
+  <rect x="206" y="494" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="216" y="513" font-size="14" fill="#141421">North</text>
+  <rect x="86" y="410" width="240" height="112" fill="none" stroke="#4A90C2" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="86" y="576" font-size="15" fill="#70706F">The order of the numbers is the new column order</text>
+  <rect x="500" y="150" width="400" height="450" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="524" y="174" width="48" height="48" fill="#141421"/>
+  <text x="548" y="207" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+  <text x="588" y="202" font-size="26" font-weight="700" fill="#141421">From the right</text>
+  <text x="588" y="224" font-size="16" font-family="Consolas, 'Courier New', monospace" fill="#141421">=CHOOSECOLS(A1:D9,-1)</text>
+  <rect x="526" y="280" width="84" height="32" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1.5"/>
+  <text x="568.0" y="301" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">Region</text>
+  <text x="568.0" y="270" font-size="14" font-weight="700" fill="#70706F" text-anchor="middle">1</text>
+  <text x="568.0" y="334" font-size="14" font-weight="700" fill="#70706F" text-anchor="middle">-4</text>
+  <rect x="614" y="280" width="84" height="32" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1.5"/>
+  <text x="656.0" y="301" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">Product</text>
+  <text x="656.0" y="270" font-size="14" font-weight="700" fill="#70706F" text-anchor="middle">2</text>
+  <text x="656.0" y="334" font-size="14" font-weight="700" fill="#70706F" text-anchor="middle">-3</text>
+  <rect x="702" y="280" width="84" height="32" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1.5"/>
+  <text x="744.0" y="301" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">Units</text>
+  <text x="744.0" y="270" font-size="14" font-weight="700" fill="#70706F" text-anchor="middle">3</text>
+  <text x="744.0" y="334" font-size="14" font-weight="700" fill="#70706F" text-anchor="middle">-2</text>
+  <rect x="790" y="280" width="84" height="32" fill="#F39454" stroke="#F39454" stroke-width="1.5"/>
+  <text x="832.0" y="301" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">Sales</text>
+  <text x="832.0" y="270" font-size="14" font-weight="700" fill="#70706F" text-anchor="middle">4</text>
+  <text x="832.0" y="334" font-size="14" font-weight="700" fill="#F39454" text-anchor="middle">-1</text>
+  <path d="M700 350 V376" stroke="#141421" stroke-width="3"/>
+  <path d="M700 388 L691 374 H709 Z" fill="#141421"/>
+  <rect x="526" y="410" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="536" y="429" font-size="14" fill="#141421" font-weight="700">Sales</text>
+  <rect x="526" y="438" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="636" y="457" font-size="14" fill="#141421" text-anchor="end">1.250</text>
+  <rect x="526" y="466" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="636" y="485" font-size="14" fill="#141421" text-anchor="end">830</text>
+  <rect x="526" y="494" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="636" y="513" font-size="14" fill="#141421" text-anchor="end">760</text>
+  <rect x="526" y="410" width="120" height="112" fill="none" stroke="#4A90C2" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="526" y="576" font-size="15" fill="#70706F">-1 is always the last column, however wide</text>
+  <rect x="940" y="150" width="400" height="450" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="964" y="174" width="48" height="48" fill="#F39454"/>
+  <text x="988" y="207" font-size="24" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="1028" y="202" font-size="26" font-weight="700" fill="#141421">Combine</text>
+  <text x="1028" y="224" font-size="16" font-family="Consolas, 'Courier New', monospace" fill="#141421">=CHOOSECOLS(FILTER(…),2,4)</text>
+  <rect x="966" y="280" width="84" height="32" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1.5"/>
+  <text x="1008.0" y="301" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">Region</text>
+  <text x="1008.0" y="270" font-size="14" font-weight="700" fill="#70706F" text-anchor="middle">1</text>
+  <rect x="1054" y="280" width="84" height="32" fill="#F39454" stroke="#F39454" stroke-width="1.5"/>
+  <text x="1096.0" y="301" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">Product</text>
+  <text x="1096.0" y="270" font-size="14" font-weight="700" fill="#70706F" text-anchor="middle">2</text>
+  <rect x="1142" y="280" width="84" height="32" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="1.5"/>
+  <text x="1184.0" y="301" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">Units</text>
+  <text x="1184.0" y="270" font-size="14" font-weight="700" fill="#70706F" text-anchor="middle">3</text>
+  <rect x="1230" y="280" width="84" height="32" fill="#F39454" stroke="#F39454" stroke-width="1.5"/>
+  <text x="1272.0" y="301" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">Sales</text>
+  <text x="1272.0" y="270" font-size="14" font-weight="700" fill="#70706F" text-anchor="middle">4</text>
+  <path d="M1140 330 V356" stroke="#141421" stroke-width="3"/>
+  <path d="M1140 368 L1131 354 H1149 Z" fill="#141421"/>
+  <rect x="966" y="410" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="976" y="429" font-size="14" fill="#141421">Laptop</text>
+  <rect x="1086" y="410" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1196" y="429" font-size="14" fill="#141421" text-anchor="end">1.250</text>
+  <rect x="966" y="438" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="976" y="457" font-size="14" fill="#141421">Phone</text>
+  <rect x="1086" y="438" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1196" y="457" font-size="14" fill="#141421" text-anchor="end">760</text>
+  <rect x="966" y="466" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="976" y="485" font-size="14" fill="#141421">Tablet</text>
+  <rect x="1086" y="466" width="120" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1196" y="485" font-size="14" fill="#141421" text-anchor="end">590</text>
+  <rect x="966" y="410" width="240" height="84" fill="none" stroke="#4A90C2" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="966" y="554" font-size="15" fill="#70706F">FILTER(A2:D9, A2:A9="North") picks the rows,</text>
+  <text x="966" y="576" font-size="15" fill="#70706F">CHOOSECOLS picks columns 2 and 4</text>
+</svg>

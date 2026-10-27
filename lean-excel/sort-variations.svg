@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 650" width="1400" height="650" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>SORT variations: multiple sort levels, SORTBY and the top 3 with TAKE</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <rect width="1400" height="650" fill="#F6F6F6"/>
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#141421">More ways to sort<tspan fill="#F39454">_</tspan></text>
+  <text x="60" y="118" font-size="20" fill="#70706F">Several levels, a sort key you don't return, or only the top rows</text>
+  <rect x="60" y="150" width="400" height="460" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="84" y="174" width="48" height="48" fill="#141421"/>
+  <text x="108" y="207" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+  <text x="148" y="202" font-size="26" font-weight="700" fill="#141421">Several levels</text>
+  <text x="148" y="224" font-size="16" font-family="Consolas, 'Courier New', monospace" fill="#141421">=SORT(A2:D9,{1,4},{1,-1})</text>
+  <text x="86" y="262" font-size="15" fill="#141421"><tspan font-weight="700">1st</tspan> Region A → Z, <tspan font-weight="700">then</tspan> Sales high → low</text>
+  <rect x="86" y="290" width="80" height="26" fill="#141421" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="94" y="308" font-size="14" fill="#FFFFFF" font-weight="700">Region</text>
+  <rect x="166" y="290" width="90" height="26" fill="#141421" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="174" y="308" font-size="14" fill="#FFFFFF" font-weight="700">Product</text>
+  <rect x="256" y="290" width="70" height="26" fill="#141421" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="264" y="308" font-size="14" fill="#FFFFFF" font-weight="700">Units</text>
+  <rect x="326" y="290" width="108" height="26" fill="#141421" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="334" y="308" font-size="14" fill="#FFFFFF" font-weight="700">Sales</text>
+  <rect x="86" y="316" width="80" height="26" fill="#C9DCE7" fill-opacity="0.6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="94" y="334" font-size="14" fill="#141421">East</text>
+  <rect x="166" y="316" width="90" height="26" fill="#C9DCE7" fill-opacity="0.6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="174" y="334" font-size="14" fill="#141421">Tablet</text>
+  <rect x="256" y="316" width="70" height="26" fill="#C9DCE7" fill-opacity="0.6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="318" y="334" font-size="14" fill="#141421" text-anchor="end">4</text>
+  <rect x="326" y="316" width="108" height="26" fill="#C9DCE7" fill-opacity="0.6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="426" y="334" font-size="14" fill="#141421" text-anchor="end">640</text>
+  <rect x="86" y="342" width="80" height="26" fill="#C9DCE7" fill-opacity="0.6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="94" y="360" font-size="14" fill="#141421">East</text>
+  <rect x="166" y="342" width="90" height="26" fill="#C9DCE7" fill-opacity="0.6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="174" y="360" font-size="14" fill="#141421">Phone</text>
+  <rect x="256" y="342" width="70" height="26" fill="#C9DCE7" fill-opacity="0.6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="318" y="360" font-size="14" fill="#141421" text-anchor="end">5</text>
+  <rect x="326" y="342" width="108" height="26" fill="#C9DCE7" fill-opacity="0.6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="426" y="360" font-size="14" fill="#141421" text-anchor="end">450</text>
+  <rect x="86" y="368" width="80" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="94" y="386" font-size="14" fill="#141421">North</text>
+  <rect x="166" y="368" width="90" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="174" y="386" font-size="14" fill="#141421">Laptop</text>
+  <rect x="256" y="368" width="70" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="318" y="386" font-size="14" fill="#141421" text-anchor="end">5</text>
+  <rect x="326" y="368" width="108" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="426" y="386" font-size="14" fill="#141421" text-anchor="end">1.250</text>
+  <rect x="86" y="394" width="80" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="94" y="412" font-size="14" fill="#141421">North</text>
+  <rect x="166" y="394" width="90" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="174" y="412" font-size="14" fill="#141421">Phone</text>
+  <rect x="256" y="394" width="70" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="318" y="412" font-size="14" fill="#141421" text-anchor="end">6</text>
+  <rect x="326" y="394" width="108" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="426" y="412" font-size="14" fill="#141421" text-anchor="end">760</text>
+  <rect x="86" y="420" width="80" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="94" y="438" font-size="14" fill="#141421">North</text>
+  <rect x="166" y="420" width="90" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="174" y="438" font-size="14" fill="#141421">Tablet</text>
+  <rect x="256" y="420" width="70" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="318" y="438" font-size="14" fill="#141421" text-anchor="end">3</text>
+  <rect x="326" y="420" width="108" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="426" y="438" font-size="14" fill="#141421" text-anchor="end">590</text>
+  <rect x="86" y="446" width="80" height="26" fill="#C9DCE7" fill-opacity="0.6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="94" y="464" font-size="14" fill="#141421">South</text>
+  <rect x="166" y="446" width="90" height="26" fill="#C9DCE7" fill-opacity="0.6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="174" y="464" font-size="14" fill="#141421">Laptop</text>
+  <rect x="256" y="446" width="70" height="26" fill="#C9DCE7" fill-opacity="0.6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="318" y="464" font-size="14" fill="#141421" text-anchor="end">4</text>
+  <rect x="326" y="446" width="108" height="26" fill="#C9DCE7" fill-opacity="0.6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="426" y="464" font-size="14" fill="#141421" text-anchor="end">980</text>
+  <rect x="86" y="472" width="80" height="26" fill="#C9DCE7" fill-opacity="0.6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="94" y="490" font-size="14" fill="#141421">South</text>
+  <rect x="166" y="472" width="90" height="26" fill="#C9DCE7" fill-opacity="0.6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="174" y="490" font-size="14" fill="#141421">Phone</text>
+  <rect x="256" y="472" width="70" height="26" fill="#C9DCE7" fill-opacity="0.6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="318" y="490" font-size="14" fill="#141421" text-anchor="end">7</text>
+  <rect x="326" y="472" width="108" height="26" fill="#C9DCE7" fill-opacity="0.6" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="426" y="490" font-size="14" fill="#141421" text-anchor="end">830</text>
+  <rect x="86" y="498" width="80" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="94" y="516" font-size="14" fill="#141421">West</text>
+  <rect x="166" y="498" width="90" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="174" y="516" font-size="14" fill="#141421">Laptop</text>
+  <rect x="256" y="498" width="70" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="318" y="516" font-size="14" fill="#141421" text-anchor="end">6</text>
+  <rect x="326" y="498" width="108" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="426" y="516" font-size="14" fill="#141421" text-anchor="end">1.410</text>
+  <text x="86" y="586" font-size="15" fill="#70706F">Arrays in braces: one value per level</text>
+  <rect x="500" y="150" width="400" height="460" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="524" y="174" width="48" height="48" fill="#141421"/>
+  <text x="548" y="207" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+  <text x="588" y="202" font-size="26" font-weight="700" fill="#141421">SORTBY</text>
+  <text x="588" y="224" font-size="16" font-family="Consolas, 'Courier New', monospace" fill="#141421">=SORTBY(B2:B9,D2:D9,-1)</text>
+  <text x="526" y="262" font-size="15" fill="#141421">Return <tspan font-weight="700">Product</tspan>, sorted by <tspan font-weight="700">Sales</tspan></text>
+  <rect x="526" y="290" width="150" height="26" fill="#141421" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="534" y="308" font-size="14" fill="#FFFFFF" font-weight="700">Product</text>
+  <rect x="526" y="316" width="150" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="534" y="334" font-size="14" fill="#141421">Laptop</text>
+  <rect x="526" y="342" width="150" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="534" y="360" font-size="14" fill="#141421">Laptop</text>
+  <rect x="526" y="368" width="150" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="534" y="386" font-size="14" fill="#141421">Laptop</text>
+  <rect x="526" y="394" width="150" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="534" y="412" font-size="14" fill="#141421">Phone</text>
+  <rect x="526" y="420" width="150" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="534" y="438" font-size="14" fill="#141421">Phone</text>
+  <rect x="526" y="446" width="150" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="534" y="464" font-size="14" fill="#141421">Tablet</text>
+  <rect x="526" y="472" width="150" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="534" y="490" font-size="14" fill="#141421">Tablet</text>
+  <rect x="526" y="498" width="150" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="534" y="516" font-size="14" fill="#141421">Phone</text>
+  <rect x="684" y="290" width="110" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="692" y="308" font-size="14" font-style="italic" fill="#70706F">Sales</text>
+  <rect x="684" y="316" width="110" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="786" y="334" font-size="14" font-style="italic" fill="#70706F" text-anchor="end">1.410</text>
+  <rect x="684" y="342" width="110" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="786" y="360" font-size="14" font-style="italic" fill="#70706F" text-anchor="end">1.250</text>
+  <rect x="684" y="368" width="110" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="786" y="386" font-size="14" font-style="italic" fill="#70706F" text-anchor="end">980</text>
+  <rect x="684" y="394" width="110" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="786" y="412" font-size="14" font-style="italic" fill="#70706F" text-anchor="end">830</text>
+  <rect x="684" y="420" width="110" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="786" y="438" font-size="14" font-style="italic" fill="#70706F" text-anchor="end">760</text>
+  <rect x="684" y="446" width="110" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="786" y="464" font-size="14" font-style="italic" fill="#70706F" text-anchor="end">640</text>
+  <rect x="684" y="472" width="110" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="786" y="490" font-size="14" font-style="italic" fill="#70706F" text-anchor="end">590</text>
+  <rect x="684" y="498" width="110" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="786" y="516" font-size="14" font-style="italic" fill="#70706F" text-anchor="end">450</text>
+  <text x="739" y="548" font-size="13" fill="#70706F" text-anchor="middle">not returned</text>
+  <text x="526" y="586" font-size="15" fill="#70706F">The sort key does not have to be returned</text>
+  <rect x="940" y="150" width="400" height="460" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+  <rect x="964" y="174" width="48" height="48" fill="#F39454"/>
+  <text x="988" y="207" font-size="24" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="1028" y="202" font-size="26" font-weight="700" fill="#141421">Top 3</text>
+  <text x="1028" y="224" font-size="16" font-family="Consolas, 'Courier New', monospace" fill="#141421">=TAKE(SORT(A2:D9,4,-1),3)</text>
+  <text x="966" y="262" font-size="15" fill="#141421">Sort high → low, then <tspan font-weight="700">take</tspan> 3 rows</text>
+  <rect x="966" y="290" width="80" height="26" fill="#141421" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="974" y="308" font-size="14" fill="#FFFFFF" font-weight="700">Region</text>
+  <rect x="1046" y="290" width="90" height="26" fill="#141421" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1054" y="308" font-size="14" fill="#FFFFFF" font-weight="700">Product</text>
+  <rect x="1136" y="290" width="70" height="26" fill="#141421" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1144" y="308" font-size="14" fill="#FFFFFF" font-weight="700">Units</text>
+  <rect x="1206" y="290" width="108" height="26" fill="#141421" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1214" y="308" font-size="14" fill="#FFFFFF" font-weight="700">Sales</text>
+  <rect x="966" y="316" width="80" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="974" y="334" font-size="14" fill="#141421">West</text>
+  <rect x="1046" y="316" width="90" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1054" y="334" font-size="14" fill="#141421">Laptop</text>
+  <rect x="1136" y="316" width="70" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1198" y="334" font-size="14" fill="#141421" text-anchor="end">6</text>
+  <rect x="1206" y="316" width="108" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1306" y="334" font-size="14" fill="#141421" text-anchor="end">1.410</text>
+  <rect x="966" y="342" width="80" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="974" y="360" font-size="14" fill="#141421">North</text>
+  <rect x="1046" y="342" width="90" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1054" y="360" font-size="14" fill="#141421">Laptop</text>
+  <rect x="1136" y="342" width="70" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1198" y="360" font-size="14" fill="#141421" text-anchor="end">5</text>
+  <rect x="1206" y="342" width="108" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1306" y="360" font-size="14" fill="#141421" text-anchor="end">1.250</text>
+  <rect x="966" y="368" width="80" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="974" y="386" font-size="14" fill="#141421">South</text>
+  <rect x="1046" y="368" width="90" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1054" y="386" font-size="14" fill="#141421">Laptop</text>
+  <rect x="1136" y="368" width="70" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1198" y="386" font-size="14" fill="#141421" text-anchor="end">4</text>
+  <rect x="1206" y="368" width="108" height="26" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="1306" y="386" font-size="14" fill="#141421" text-anchor="end">980</text>
+  <text x="966" y="586" font-size="15" fill="#70706F">A live top 3 that updates with the data</text>
+</svg>

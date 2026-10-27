@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 520" width="1400" height="520" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>The four sections of a number format code: positive; negative; zeros; text</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <rect width="1400" height="520" fill="#F6F6F6"/>
+
+  <!-- Title -->
+  <text x="85" y="80" font-size="40" font-weight="700" fill="#141421">Four sections of a format code<tspan fill="#F39454">_</tspan></text>
+  <text x="85" y="118" font-size="20" fill="#70706F">Separated by semicolons, applied in this order</text>
+
+  <!-- ============ Card 1: Positive ============ -->
+  <g transform="translate(85,160)">
+    <rect x="0" y="0" width="270" height="320" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="48" height="48" fill="#141421"/>
+    <text x="48" y="57" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="88" y="58" font-size="28" font-weight="700" fill="#141421">Positive</text>
+    <rect x="24" y="100" width="222" height="70" rx="8" fill="#F6F6F6"/>
+    <text x="135" y="147" font-family="Consolas, 'Courier New', monospace" font-size="34" fill="#141421" text-anchor="middle">#.##0</text>
+    <text x="24" y="218" font-size="16" font-weight="700" fill="#70706F" letter-spacing="1">EXAMPLE</text>
+    <path d="M24 232 H246" stroke="#D7D8D8" stroke-width="2"/>
+    <text x="24" y="282" font-size="28" fill="#70706F">1234</text>
+    <text x="135" y="282" font-size="28" fill="#F39454" text-anchor="middle">→</text>
+    <text x="246" y="282" font-size="28" font-weight="700" fill="#141421" text-anchor="end">1.234</text>
+  </g>
+
+  <!-- ============ Card 2: Negative ============ -->
+  <g transform="translate(405,160)">
+    <rect x="0" y="0" width="270" height="320" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="48" height="48" fill="#F39454"/>
+    <text x="48" y="57" font-size="26" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+    <text x="88" y="58" font-size="28" font-weight="700" fill="#141421">Negative</text>
+    <rect x="24" y="100" width="222" height="70" rx="8" fill="#F6F6F6"/>
+    <text x="135" y="147" font-family="Consolas, 'Courier New', monospace" font-size="34" fill="#141421" text-anchor="middle">-#.##0</text>
+    <text x="24" y="218" font-size="16" font-weight="700" fill="#70706F" letter-spacing="1">EXAMPLE</text>
+    <path d="M24 232 H246" stroke="#D7D8D8" stroke-width="2"/>
+    <text x="24" y="282" font-size="28" fill="#70706F">-1234</text>
+    <text x="135" y="282" font-size="28" fill="#F39454" text-anchor="middle">→</text>
+    <text x="246" y="282" font-size="28" font-weight="700" fill="#141421" text-anchor="end">-1.234</text>
+  </g>
+
+  <!-- ============ Card 3: Zeros ============ -->
+  <g transform="translate(725,160)">
+    <rect x="0" y="0" width="270" height="320" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="48" height="48" fill="#C9DCE7"/>
+    <text x="48" y="57" font-size="26" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+    <text x="88" y="58" font-size="28" font-weight="700" fill="#141421">Zeros</text>
+    <rect x="24" y="100" width="222" height="70" rx="8" fill="#F6F6F6"/>
+    <text x="135" y="147" font-family="Consolas, 'Courier New', monospace" font-size="34" fill="#141421" text-anchor="middle">"–"</text>
+    <text x="24" y="218" font-size="16" font-weight="700" fill="#70706F" letter-spacing="1">EXAMPLE</text>
+    <path d="M24 232 H246" stroke="#D7D8D8" stroke-width="2"/>
+    <text x="24" y="282" font-size="28" fill="#70706F">0</text>
+    <text x="135" y="282" font-size="28" fill="#F39454" text-anchor="middle">→</text>
+    <text x="246" y="282" font-size="28" font-weight="700" fill="#141421" text-anchor="end">–</text>
+  </g>
+
+  <!-- ============ Card 4: Text ============ -->
+  <g transform="translate(1045,160)">
+    <rect x="0" y="0" width="270" height="320" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="48" height="48" fill="#70706F"/>
+    <text x="48" y="57" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="88" y="58" font-size="28" font-weight="700" fill="#141421">Text</text>
+    <rect x="24" y="100" width="222" height="70" rx="8" fill="#F6F6F6"/>
+    <text x="135" y="147" font-family="Consolas, 'Courier New', monospace" font-size="34" fill="#141421" text-anchor="middle">@</text>
+    <text x="24" y="218" font-size="16" font-weight="700" fill="#70706F" letter-spacing="1">EXAMPLE</text>
+    <path d="M24 232 H246" stroke="#D7D8D8" stroke-width="2"/>
+    <text x="24" y="282" font-size="28" fill="#70706F">abc</text>
+    <text x="135" y="282" font-size="28" fill="#F39454" text-anchor="middle">→</text>
+    <text x="246" y="282" font-size="28" font-weight="700" fill="#141421" text-anchor="end">abc</text>
+  </g>
+
+  <!-- ============ Semicolons ============ -->
+  <g font-family="Consolas, 'Courier New', monospace" font-size="64" font-weight="700" fill="#F39454" text-anchor="middle">
+    <text x="380" y="330">;</text>
+    <text x="700" y="330">;</text>
+    <text x="1020" y="330">;</text>
+  </g>
+</svg>

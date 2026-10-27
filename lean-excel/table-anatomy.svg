@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 630" width="1400" height="630" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>Anatomy of an Excel Table: header row, filter dropdowns, data body, banded rows and total row</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <rect width="1400" height="630" fill="#F6F6F6"/>
+
+  <!-- Title -->
+  <text x="40" y="70" font-size="40" font-weight="700" fill="#141421">Anatomy of a Table<tspan fill="#F39454">_</tspan></text>
+  <text x="40" y="106" font-size="20" fill="#70706F">One structured, self-aware object</text>
+
+  <!-- ============ Table mock ============ -->
+  <!-- Table name -->
+  <rect x="330" y="150" width="96" height="32" rx="4" fill="#F39454"/>
+  <text x="378" y="172" font-size="17" font-weight="700" fill="#141421" text-anchor="middle">T_Sales</text>
+  <text x="440" y="172" font-size="16" fill="#70706F">Table name</text>
+
+  <!-- Header row -->
+  <rect x="330" y="200" width="660" height="50" fill="#141421"/>
+  <g font-size="17" font-weight="700" fill="#FFFFFF">
+    <text x="344" y="231">Date</text><text x="509" y="231">Region</text><text x="674" y="231">Product</text><text x="839" y="231">Sales</text>
+  </g>
+  <g fill="#FFFFFF">
+    <rect x="463" y="214" width="22" height="22" rx="3"/><rect x="628" y="214" width="22" height="22" rx="3"/>
+    <rect x="793" y="214" width="22" height="22" rx="3"/><rect x="958" y="214" width="22" height="22" rx="3" stroke="#F39454" stroke-width="3"/>
+  </g>
+  <g fill="#141421">
+    <path d="M468 222 H480 L474 229 Z"/><path d="M633 222 H645 L639 229 Z"/>
+    <path d="M798 222 H810 L804 229 Z"/><path d="M963 222 H975 L969 229 Z"/>
+  </g>
+
+  <!-- Data body: banded rows -->
+  <rect x="330" y="250" width="660" height="264" fill="#FFFFFF"/>
+  <g fill="#C9DCE7" fill-opacity="0.55">
+    <rect x="330" y="294" width="660" height="44"/>
+    <rect x="330" y="382" width="660" height="44"/>
+    <rect x="330" y="470" width="660" height="44"/>
+  </g>
+  <g font-size="17" fill="#141421">
+    <text x="344" y="278">05/01/2026</text><text x="509" y="278">North</text><text x="674" y="278">Laptop</text>
+    <text x="344" y="322">12/01/2026</text><text x="509" y="322">South</text><text x="674" y="322">Phone</text>
+    <text x="344" y="366">19/01/2026</text><text x="509" y="366">East</text><text x="674" y="366">Tablet</text>
+    <text x="344" y="410">26/01/2026</text><text x="509" y="410">West</text><text x="674" y="410">Laptop</text>
+    <text x="344" y="454">02/02/2026</text><text x="509" y="454">North</text><text x="674" y="454">Phone</text>
+    <text x="344" y="498">09/02/2026</text><text x="509" y="498">South</text><text x="674" y="498">Tablet</text>
+  </g>
+  <g font-size="17" fill="#141421" text-anchor="end">
+    <text x="976" y="278">1.250</text><text x="976" y="322">830</text><text x="976" y="366">640</text>
+    <text x="976" y="410">1.410</text><text x="976" y="454">760</text><text x="976" y="498">590</text>
+  </g>
+
+  <!-- Total row -->
+  <rect x="330" y="514" width="660" height="50" fill="#FFFFFF"/>
+  <path d="M330 515 H990 M330 520 H990" stroke="#141421" stroke-width="2"/>
+  <text x="344" y="546" font-size="17" font-weight="700" fill="#141421">Total</text>
+  <text x="976" y="546" font-size="17" font-weight="700" fill="#141421" text-anchor="end">5.480</text>
+
+  <!-- Grid + border + resize handle -->
+  <path d="M495 250 V564 M660 250 V564 M825 250 V564" stroke="#D7D8D8" stroke-width="1"/>
+  <rect x="330" y="200" width="660" height="364" fill="none" stroke="#D7D8D8" stroke-width="2"/>
+  <path d="M990 552 V564 H978 Z" fill="#141421"/>
+
+  <!-- ============ Connectors ============ -->
+  <g stroke="#141421" stroke-width="2" fill="none">
+    <path d="M290 225 H330"/>
+    <path d="M290 404 H330"/>
+    <path d="M982 225 H1070"/>
+    <path d="M1006 256 H1014 V508 H1006 M1014 382 H1070"/>
+    <path d="M990 539 H1070"/>
+  </g>
+  <g fill="#141421">
+    <circle cx="330" cy="225" r="5"/><circle cx="330" cy="404" r="5"/>
+    <circle cx="982" cy="225" r="5"/><circle cx="990" cy="539" r="5"/>
+  </g>
+
+  <!-- ============ Callouts: left ============ -->
+  <g transform="translate(40,175)">
+    <rect width="250" height="100" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="16" y="16" width="36" height="36" fill="#141421"/>
+    <text x="34" y="41" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="64" y="41" font-size="19" font-weight="700" fill="#141421">Header row</text>
+    <text x="16" y="72" font-size="15" fill="#70706F">Fixed column names —</text>
+    <text x="16" y="90" font-size="15" fill="#70706F">never scroll out of view</text>
+  </g>
+  <g transform="translate(40,354)">
+    <rect width="250" height="100" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="16" y="16" width="36" height="36" fill="#C9DCE7"/>
+    <text x="34" y="41" font-size="20" font-weight="700" fill="#141421" text-anchor="middle">4</text>
+    <text x="64" y="41" font-size="19" font-weight="700" fill="#141421">Banded rows</text>
+    <text x="16" y="72" font-size="15" fill="#70706F">Alternating fill colors</text>
+    <text x="16" y="90" font-size="15" fill="#70706F">for readability (automatic)</text>
+  </g>
+
+  <!-- ============ Callouts: right ============ -->
+  <g transform="translate(1070,175)">
+    <rect width="290" height="100" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="16" y="16" width="36" height="36" fill="#F39454"/>
+    <text x="34" y="41" font-size="20" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+    <text x="64" y="41" font-size="19" font-weight="700" fill="#141421">Filter dropdowns</text>
+    <text x="16" y="72" font-size="15" fill="#70706F">Auto-filter on every header,</text>
+    <text x="16" y="90" font-size="15" fill="#70706F">active by default</text>
+  </g>
+  <g transform="translate(1070,332)">
+    <rect width="290" height="100" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="16" y="16" width="36" height="36" fill="#141421"/>
+    <text x="34" y="41" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="64" y="41" font-size="19" font-weight="700" fill="#141421">Data body</text>
+    <text x="16" y="72" font-size="15" fill="#70706F">The rows of data; expands</text>
+    <text x="16" y="90" font-size="15" fill="#70706F">automatically as you type</text>
+  </g>
+  <g transform="translate(1070,489)">
+    <rect width="290" height="100" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="16" y="16" width="36" height="36" fill="#70706F"/>
+    <text x="34" y="41" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+    <text x="64" y="41" font-size="19" font-weight="700" fill="#141421">Total row</text>
+    <text x="16" y="72" font-size="15" fill="#70706F">Optional SUM, AVERAGE,</text>
+    <text x="16" y="90" font-size="15" fill="#70706F">COUNT, … (respects filters)</text>
+  </g>
+</svg>
