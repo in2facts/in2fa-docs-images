@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="606" viewBox="0 0 980 606" font-family="Segoe UI, Arial, sans-serif">
+<rect width="980" height="606" fill="#FFFFFF"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0F4C81"/></marker></defs>
+<text x="30" y="38" font-size="22" font-weight="700" fill="#1F2937">Double unary <tspan font-family="Consolas, 'Courier New', monospace" fill="#0F4C81">--( )</tspan>: from TRUE/FALSE to 1/0</text>
+<text x="30" y="64" font-size="14" fill="#6B7280" font-family="Consolas, 'Courier New', monospace">= SUMPRODUCT( --(T_Sales[BU] = "BU1"); T_Sales[Sales] )</text>
+<rect x="30" y="92" width="118" height="58" rx="6" fill="#F3F4F6" stroke="#D1D5DB"/>
+<text x="89.0" y="116" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2937">T_Sales[BU]</text>
+<text x="89.0" y="135" text-anchor="middle" font-size="11.5" fill="#6B7280" font-family="Segoe UI, Arial, sans-serif">source column</text>
+<rect x="194" y="92" width="118" height="58" rx="6" fill="#E6EEF7" stroke="#D1D5DB"/>
+<text x="253.0" y="116" text-anchor="middle" font-size="13" font-weight="700" fill="#0F4C81">① compare</text>
+<text x="253.0" y="135" text-anchor="middle" font-size="11.5" fill="#6B7280" font-family="Consolas, 'Courier New', monospace">BU = &quot;BU1&quot;</text>
+<rect x="358" y="92" width="118" height="58" rx="6" fill="#E6EEF7" stroke="#D1D5DB"/>
+<text x="417.0" y="116" text-anchor="middle" font-size="13" font-weight="700" fill="#0F4C81">② first minus</text>
+<text x="417.0" y="135" text-anchor="middle" font-size="11.5" fill="#6B7280" font-family="Consolas, 'Courier New', monospace">-( TRUE/FALSE )</text>
+<rect x="522" y="92" width="118" height="58" rx="6" fill="#E6EEF7" stroke="#D1D5DB"/>
+<text x="581.0" y="116" text-anchor="middle" font-size="13" font-weight="700" fill="#0F4C81">③ second minus</text>
+<text x="581.0" y="135" text-anchor="middle" font-size="11.5" fill="#6B7280" font-family="Consolas, 'Courier New', monospace">--( TRUE/FALSE )</text>
+<rect x="686" y="92" width="118" height="58" rx="6" fill="#F3F4F6" stroke="#D1D5DB"/>
+<text x="745.0" y="116" text-anchor="middle" font-size="13" font-weight="700" fill="#1F2937">T_Sales[Sales]</text>
+<text x="745.0" y="135" text-anchor="middle" font-size="11.5" fill="#6B7280" font-family="Segoe UI, Arial, sans-serif">source column</text>
+<rect x="850" y="92" width="118" height="58" rx="6" fill="#E6EEF7" stroke="#D1D5DB"/>
+<text x="909.0" y="116" text-anchor="middle" font-size="13" font-weight="700" fill="#0F4C81">④ multiply</text>
+<text x="909.0" y="135" text-anchor="middle" font-size="11.5" fill="#6B7280" font-family="Consolas, 'Courier New', monospace">--(…) × Sales</text>
+<line x1="154" y1="121.0" x2="188" y2="121.0" stroke="#0F4C81" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="318" y1="121.0" x2="352" y2="121.0" stroke="#0F4C81" stroke-width="2" marker-end="url(#ah)"/>
+<line x1="482" y1="121.0" x2="516" y2="121.0" stroke="#0F4C81" stroke-width="2" marker-end="url(#ah)"/>
+<text x="663.0" y="129.0" text-anchor="middle" font-size="24" font-weight="700" fill="#0F4C81">×</text>
+<text x="827.0" y="129.0" text-anchor="middle" font-size="24" font-weight="700" fill="#0F4C81">=</text>
+<rect x="22" y="157" width="954" height="23" rx="4" fill="#E7F4EC"/>
+<text x="89.0" y="173.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">BU1</text>
+<text x="253.0" y="173.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#1D4ED8">TRUE</text>
+<text x="417.0" y="173.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#C2410C">-1</text>
+<text x="581.0" y="173.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#15803D">1</text>
+<text x="745.0" y="173.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">320</text>
+<text x="909.0" y="173.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#15803D">320</text>
+<line x1="22" y1="181" x2="976" y2="181" stroke="#EEF0F3"/>
+<text x="89.0" y="198.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">BU2</text>
+<text x="253.0" y="198.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">FALSE</text>
+<text x="417.0" y="198.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<text x="581.0" y="198.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<text x="745.0" y="198.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">150</text>
+<text x="909.0" y="198.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<line x1="22" y1="206" x2="976" y2="206" stroke="#EEF0F3"/>
+<rect x="22" y="207" width="954" height="23" rx="4" fill="#E7F4EC"/>
+<text x="89.0" y="223.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">BU1</text>
+<text x="253.0" y="223.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#1D4ED8">TRUE</text>
+<text x="417.0" y="223.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#C2410C">-1</text>
+<text x="581.0" y="223.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#15803D">1</text>
+<text x="745.0" y="223.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">480</text>
+<text x="909.0" y="223.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#15803D">480</text>
+<line x1="22" y1="231" x2="976" y2="231" stroke="#EEF0F3"/>
+<text x="89.0" y="248.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">BU2</text>
+<text x="253.0" y="248.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">FALSE</text>
+<text x="417.0" y="248.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<text x="581.0" y="248.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<text x="745.0" y="248.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">210</text>
+<text x="909.0" y="248.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<line x1="22" y1="256" x2="976" y2="256" stroke="#EEF0F3"/>
+<rect x="22" y="257" width="954" height="23" rx="4" fill="#E7F4EC"/>
+<text x="89.0" y="273.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">BU1</text>
+<text x="253.0" y="273.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#1D4ED8">TRUE</text>
+<text x="417.0" y="273.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#C2410C">-1</text>
+<text x="581.0" y="273.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#15803D">1</text>
+<text x="745.0" y="273.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">390</text>
+<text x="909.0" y="273.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#15803D">390</text>
+<line x1="22" y1="281" x2="976" y2="281" stroke="#EEF0F3"/>
+<text x="89.0" y="298.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">BU2</text>
+<text x="253.0" y="298.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">FALSE</text>
+<text x="417.0" y="298.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<text x="581.0" y="298.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<text x="745.0" y="298.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">275</text>
+<text x="909.0" y="298.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<line x1="22" y1="306" x2="976" y2="306" stroke="#EEF0F3"/>
+<rect x="22" y="307" width="954" height="23" rx="4" fill="#E7F4EC"/>
+<text x="89.0" y="323.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">BU1</text>
+<text x="253.0" y="323.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#1D4ED8">TRUE</text>
+<text x="417.0" y="323.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#C2410C">-1</text>
+<text x="581.0" y="323.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#15803D">1</text>
+<text x="745.0" y="323.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">430</text>
+<text x="909.0" y="323.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#15803D">430</text>
+<line x1="22" y1="331" x2="976" y2="331" stroke="#EEF0F3"/>
+<text x="89.0" y="348.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">BU2</text>
+<text x="253.0" y="348.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">FALSE</text>
+<text x="417.0" y="348.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<text x="581.0" y="348.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<text x="745.0" y="348.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">185</text>
+<text x="909.0" y="348.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<line x1="22" y1="356" x2="976" y2="356" stroke="#EEF0F3"/>
+<rect x="22" y="357" width="954" height="23" rx="4" fill="#E7F4EC"/>
+<text x="89.0" y="373.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">BU1</text>
+<text x="253.0" y="373.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#1D4ED8">TRUE</text>
+<text x="417.0" y="373.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#C2410C">-1</text>
+<text x="581.0" y="373.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#15803D">1</text>
+<text x="745.0" y="373.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">345</text>
+<text x="909.0" y="373.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#15803D">345</text>
+<line x1="22" y1="381" x2="976" y2="381" stroke="#EEF0F3"/>
+<text x="89.0" y="398.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">BU2</text>
+<text x="253.0" y="398.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">FALSE</text>
+<text x="417.0" y="398.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<text x="581.0" y="398.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<text x="745.0" y="398.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">460</text>
+<text x="909.0" y="398.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<line x1="22" y1="406" x2="976" y2="406" stroke="#EEF0F3"/>
+<rect x="22" y="407" width="954" height="23" rx="4" fill="#E7F4EC"/>
+<text x="89.0" y="423.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">BU1</text>
+<text x="253.0" y="423.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#1D4ED8">TRUE</text>
+<text x="417.0" y="423.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#C2410C">-1</text>
+<text x="581.0" y="423.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#15803D">1</text>
+<text x="745.0" y="423.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">195</text>
+<text x="909.0" y="423.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#15803D">195</text>
+<line x1="22" y1="431" x2="976" y2="431" stroke="#EEF0F3"/>
+<text x="89.0" y="448.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">BU2</text>
+<text x="253.0" y="448.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">FALSE</text>
+<text x="417.0" y="448.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<text x="581.0" y="448.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<text x="745.0" y="448.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#1F2937">370</text>
+<text x="909.0" y="448.5" text-anchor="middle" font-size="13.5" font-family="Consolas, 'Courier New', monospace" font-weight="400" fill="#9CA3AF">0</text>
+<line x1="22" y1="456" x2="976" y2="456" stroke="#EEF0F3"/>
+<rect x="30" y="152" width="118" height="308" rx="6" fill="none" stroke="#D1D5DB"/>
+<rect x="194" y="152" width="118" height="308" rx="6" fill="none" stroke="#D1D5DB"/>
+<rect x="358" y="152" width="118" height="308" rx="6" fill="none" stroke="#D1D5DB"/>
+<rect x="522" y="152" width="118" height="308" rx="6" fill="none" stroke="#D1D5DB"/>
+<rect x="686" y="152" width="118" height="308" rx="6" fill="none" stroke="#D1D5DB"/>
+<rect x="850" y="152" width="118" height="308" rx="6" fill="none" stroke="#D1D5DB"/>
+<line x1="909.0" y1="460" x2="909.0" y2="472" stroke="#0F4C81" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="820" y="474" width="148" height="52" rx="8" fill="#0F4C81"/>
+<text x="894.0" y="494" text-anchor="middle" font-size="12" fill="#DCE8F5">⑤ SUM</text>
+<text x="894.0" y="516" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF" font-family="Consolas, 'Courier New', monospace">2.160</text>
+<text x="30" y="486" font-size="13.5" font-weight="700" fill="#1F2937">Why two minus signs?</text>
+<text x="30" y="510" font-size="13" fill="#1F2937">The first <tspan font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#C2410C">-</tspan> forces Excel to treat the Boolean as a number (<tspan font-family="Consolas, 'Courier New', monospace" fill="#1D4ED8">TRUE</tspan> → <tspan font-family="Consolas, 'Courier New', monospace" fill="#C2410C">-1</tspan>, <tspan font-family="Consolas, 'Courier New', monospace" fill="#9CA3AF">FALSE</tspan> → <tspan font-family="Consolas, 'Courier New', monospace">0</tspan>).</text>
+<text x="30" y="532" font-size="13" fill="#1F2937">The second <tspan font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#15803D">-</tspan> flips the sign back, leaving a clean <tspan font-weight="700" fill="#15803D">1/0</tspan> column.</text>
+<text x="30" y="554" font-size="12" fill="#6B7280">Same result: <tspan font-family="Consolas, 'Courier New', monospace">(cond)*1</tspan> · <tspan font-family="Consolas, 'Courier New', monospace">(cond)+0</tspan> · <tspan font-family="Consolas, 'Courier New', monospace">N(cond)</tspan> (single value only)</text>
+</svg>

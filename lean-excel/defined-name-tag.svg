@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" font-family="Segoe UI, Arial, sans-serif">
+<rect width="900" height="380" fill="#FFFFFF"/>
+<rect x="30" y="28" width="112" height="28" rx="3" fill="#FFFFFF" stroke="#217346" stroke-width="2"/>
+<text x="40" y="47" font-size="14" font-weight="700" fill="#1F2937">Sales</text><path d="M126,39 l5,6 l5,-6 z" fill="#6B7280"/>
+<text x="30" y="20" font-size="11" font-weight="700" letter-spacing="1" fill="#217346">NAME BOX</text>
+<text x="156" y="47" font-size="14" font-style="italic" fill="#6B7280">fx</text>
+<rect x="178" y="28" width="288" height="28" rx="3" fill="#FFFFFF" stroke="#D4D4D4"/><text x="188" y="47" font-size="14" fill="#1F2937">1250</text>
+<rect x="30" y="74" width="36" height="26" fill="#F3F4F6" stroke="#D4D4D4"/>
+<rect x="66" y="74" width="107" height="26" fill="#F3F4F6" stroke="#D4D4D4"/>
+<text x="119.5" y="92" text-anchor="middle" font-size="12.5" font-weight="400" fill="#6B7280">A</text>
+<rect x="173" y="74" width="107" height="26" fill="#F3F4F6" stroke="#D4D4D4"/>
+<text x="226.5" y="92" text-anchor="middle" font-size="12.5" font-weight="400" fill="#6B7280">B</text>
+<rect x="280" y="74" width="107" height="26" fill="#D3E8DA" stroke="#D4D4D4"/>
+<text x="333.5" y="92" text-anchor="middle" font-size="12.5" font-weight="700" fill="#217346">C</text>
+<rect x="387" y="74" width="107" height="26" fill="#F3F4F6" stroke="#D4D4D4"/>
+<text x="440.5" y="92" text-anchor="middle" font-size="12.5" font-weight="400" fill="#6B7280">D</text>
+<rect x="30" y="100" width="36" height="26" fill="#F3F4F6" stroke="#D4D4D4"/>
+<text x="48.0" y="118" text-anchor="middle" font-size="12.5" fill="#6B7280">1</text>
+<rect x="66" y="100" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="74" y="118" text-anchor="start" font-size="13" font-weight="700" fill="#1F2937">Month</text>
+<rect x="173" y="100" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="181" y="118" text-anchor="start" font-size="13" font-weight="700" fill="#1F2937">BU</text>
+<rect x="280" y="100" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="288" y="118" text-anchor="start" font-size="13" font-weight="700" fill="#1F2937">Sales</text>
+<rect x="387" y="100" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="395" y="118" text-anchor="start" font-size="13" font-weight="700" fill="#1F2937">Cost</text>
+<rect x="30" y="126" width="36" height="26" fill="#D3E8DA" stroke="#D4D4D4"/>
+<text x="48.0" y="144" text-anchor="middle" font-size="12.5" fill="#217346">2</text>
+<rect x="66" y="126" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="74" y="144" text-anchor="start" font-size="13" font-weight="400" fill="#1F2937">Jan</text>
+<rect x="173" y="126" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="181" y="144" text-anchor="start" font-size="13" font-weight="400" fill="#1F2937">BU1</text>
+<rect x="280" y="126" width="107" height="26" fill="#E6F2EA" stroke="#D4D4D4"/>
+<text x="379" y="144" text-anchor="end" font-size="13" font-weight="400" fill="#1F2937">1250</text>
+<rect x="387" y="126" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="486" y="144" text-anchor="end" font-size="13" font-weight="400" fill="#1F2937">830</text>
+<rect x="30" y="152" width="36" height="26" fill="#D3E8DA" stroke="#D4D4D4"/>
+<text x="48.0" y="170" text-anchor="middle" font-size="12.5" fill="#217346">3</text>
+<rect x="66" y="152" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="74" y="170" text-anchor="start" font-size="13" font-weight="400" fill="#1F2937">Feb</text>
+<rect x="173" y="152" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="181" y="170" text-anchor="start" font-size="13" font-weight="400" fill="#1F2937">BU2</text>
+<rect x="280" y="152" width="107" height="26" fill="#E6F2EA" stroke="#D4D4D4"/>
+<text x="379" y="170" text-anchor="end" font-size="13" font-weight="400" fill="#1F2937">980</text>
+<rect x="387" y="152" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="486" y="170" text-anchor="end" font-size="13" font-weight="400" fill="#1F2937">640</text>
+<rect x="30" y="178" width="36" height="26" fill="#D3E8DA" stroke="#D4D4D4"/>
+<text x="48.0" y="196" text-anchor="middle" font-size="12.5" fill="#217346">4</text>
+<rect x="66" y="178" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="74" y="196" text-anchor="start" font-size="13" font-weight="400" fill="#1F2937">Mar</text>
+<rect x="173" y="178" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="181" y="196" text-anchor="start" font-size="13" font-weight="400" fill="#1F2937">BU1</text>
+<rect x="280" y="178" width="107" height="26" fill="#E6F2EA" stroke="#D4D4D4"/>
+<text x="379" y="196" text-anchor="end" font-size="13" font-weight="400" fill="#1F2937">1410</text>
+<rect x="387" y="178" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="486" y="196" text-anchor="end" font-size="13" font-weight="400" fill="#1F2937">910</text>
+<rect x="30" y="204" width="36" height="26" fill="#D3E8DA" stroke="#D4D4D4"/>
+<text x="48.0" y="222" text-anchor="middle" font-size="12.5" fill="#217346">5</text>
+<rect x="66" y="204" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="74" y="222" text-anchor="start" font-size="13" font-weight="400" fill="#1F2937">Apr</text>
+<rect x="173" y="204" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="181" y="222" text-anchor="start" font-size="13" font-weight="400" fill="#1F2937">BU2</text>
+<rect x="280" y="204" width="107" height="26" fill="#E6F2EA" stroke="#D4D4D4"/>
+<text x="379" y="222" text-anchor="end" font-size="13" font-weight="400" fill="#1F2937">1120</text>
+<rect x="387" y="204" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="486" y="222" text-anchor="end" font-size="13" font-weight="400" fill="#1F2937">770</text>
+<rect x="30" y="230" width="36" height="26" fill="#D3E8DA" stroke="#D4D4D4"/>
+<text x="48.0" y="248" text-anchor="middle" font-size="12.5" fill="#217346">6</text>
+<rect x="66" y="230" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="74" y="248" text-anchor="start" font-size="13" font-weight="400" fill="#1F2937">May</text>
+<rect x="173" y="230" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="181" y="248" text-anchor="start" font-size="13" font-weight="400" fill="#1F2937">BU1</text>
+<rect x="280" y="230" width="107" height="26" fill="#E6F2EA" stroke="#D4D4D4"/>
+<text x="379" y="248" text-anchor="end" font-size="13" font-weight="400" fill="#1F2937">1330</text>
+<rect x="387" y="230" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="486" y="248" text-anchor="end" font-size="13" font-weight="400" fill="#1F2937">860</text>
+<rect x="30" y="256" width="36" height="26" fill="#D3E8DA" stroke="#D4D4D4"/>
+<text x="48.0" y="274" text-anchor="middle" font-size="12.5" fill="#217346">7</text>
+<rect x="66" y="256" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="74" y="274" text-anchor="start" font-size="13" font-weight="400" fill="#1F2937">Jun</text>
+<rect x="173" y="256" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="181" y="274" text-anchor="start" font-size="13" font-weight="400" fill="#1F2937">BU2</text>
+<rect x="280" y="256" width="107" height="26" fill="#E6F2EA" stroke="#D4D4D4"/>
+<text x="379" y="274" text-anchor="end" font-size="13" font-weight="400" fill="#1F2937">1075</text>
+<rect x="387" y="256" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="486" y="274" text-anchor="end" font-size="13" font-weight="400" fill="#1F2937">700</text>
+<rect x="30" y="282" width="36" height="26" fill="#D3E8DA" stroke="#D4D4D4"/>
+<text x="48.0" y="300" text-anchor="middle" font-size="12.5" fill="#217346">8</text>
+<rect x="66" y="282" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="74" y="300" text-anchor="start" font-size="13" font-weight="400" fill="#1F2937">Jul</text>
+<rect x="173" y="282" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="181" y="300" text-anchor="start" font-size="13" font-weight="400" fill="#1F2937">BU1</text>
+<rect x="280" y="282" width="107" height="26" fill="#E6F2EA" stroke="#D4D4D4"/>
+<text x="379" y="300" text-anchor="end" font-size="13" font-weight="400" fill="#1F2937">1290</text>
+<rect x="387" y="282" width="107" height="26" fill="#FFFFFF" stroke="#D4D4D4"/>
+<text x="486" y="300" text-anchor="end" font-size="13" font-weight="400" fill="#1F2937">820</text>
+<rect x="280" y="126" width="107" height="182" fill="none" stroke="#217346" stroke-width="2.5"/>
+<rect x="383.5" y="304.5" width="7" height="7" fill="#217346" stroke="#FFFFFF"/>
+<path d="M387,126 C457,66 494.48597907217527,261.4442423554716 614.4859790721753,191.4442423554716" fill="none" stroke="#7A4E2D" stroke-width="2.6" stroke-linecap="round"/>
+<circle cx="387" cy="126" r="4.5" fill="#7A4E2D"/>
+<g transform="translate(572,108) rotate(-7)">
+<path d="M24,0 H286 a8,8 0 0 1 8,8 V168 a8,8 0 0 1 -8,8 H24 L0,152 V24 z" fill="#F3E3C3" stroke="#A57B45" stroke-width="2"/>
+<path d="M24,6 H284 a4,4 0 0 1 4,4 V166 a4,4 0 0 1 -4,4 H26 L6,150 V26 z" fill="none" stroke="#A57B45" stroke-width="1" stroke-dasharray="4 3" opacity=".6"/>
+<circle cx="32" cy="88" r="14" fill="#E2C99A" stroke="#A57B45" stroke-width="2"/><circle cx="32" cy="88" r="7" fill="#FFFFFF" stroke="#A57B45" stroke-width="1.5"/>
+<text x="64" y="34" font-size="11" font-weight="700" letter-spacing="2" fill="#A57B45">DEFINED NAME</text>
+<text x="64" y="76" font-size="36" font-weight="800" fill="#1F2937">Sales</text>
+<line x1="64" y1="92" x2="272" y2="92" stroke="#A57B45" stroke-width="1.2"/>
+<text x="64" y="114" font-size="11.5" fill="#6B7280">Refers to</text>
+<text x="64" y="134" font-size="15" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#217346">=Data!$C$2:$C$8</text>
+<text x="64" y="160" font-size="11.5" fill="#6B7280">Scope  <tspan font-size="13" font-weight="700" fill="#1F2937">Workbook</tspan></text>
+</g>
+<circle cx="614.4859790721753" cy="191.4442423554716" r="5" fill="none" stroke="#7A4E2D" stroke-width="2.6"/>
+<text x="30" y="356" font-size="13.5" fill="#1F2937">Select <tspan font-weight="700">C2:C8</tspan>, type <tspan font-weight="700">Sales</tspan> in the Name Box and press Enter: the range now carries a name tag — use <tspan font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#217346">=SUM(Sales)</tspan> anywhere.</text>
+</svg>
