@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <g id="brand-arrow">
+      <path d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/>
+      <rect x="15" y="3" width="2.5" height="13" fill="#F39454"/>
+    </g>
+    <path id="funnel" d="M0 0 H14 L9 6 V13 L5 11 V6 Z"/>
+    <g id="step-arrow"><path d="M0 -14 H36 V-26 L62 0 L36 26 V14 H0 Z" fill="#70706F"/></g>
+  </defs>
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Calculate – RESPECT + ADD</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling · 1/3</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Respect + add: VALUES as a table</text>
+  <rect x="630" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">VALUES respects the filter, removes the duplicates and adds a blank row.</text>
+  <g font-size="15" font-weight="700" fill="#141421">
+    <text x="60" y="186">The column</text>
+    <text x="300" y="186">After the filter</text>
+    <text x="560" y="186">VALUES result</text>
+  </g>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#70706F">
+    <text x="60" y="208">Products[Color]</text>
+    <text x="300" y="208">filter context</text>
+    <text x="560" y="208"><tspan fill="#F39454">VALUES</tspan> ( Products[Color] )</text>
+  </g>
+  <rect x="60" y="230" width="140" height="26" fill="#141421"/>
+  <text x="72" y="248" font-size="14" font-weight="700" fill="#F6F6F6">Color</text>
+  <rect x="60" y="256" width="140" height="320" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="188" y="271" font-size="14" fill="#141421" text-anchor="end">1</text>
+  <line x1="60" y1="276" x2="200" y2="276" stroke="#D7D8D8"/>
+  <text x="188" y="291" font-size="14" fill="#141421" text-anchor="end">1</text>
+  <line x1="60" y1="296" x2="200" y2="296" stroke="#D7D8D8"/>
+  <text x="188" y="311" font-size="14" fill="#141421" text-anchor="end">2</text>
+  <line x1="60" y1="316" x2="200" y2="316" stroke="#D7D8D8"/>
+  <text x="188" y="331" font-size="14" fill="#141421" text-anchor="end">3</text>
+  <line x1="60" y1="336" x2="200" y2="336" stroke="#D7D8D8"/>
+  <text x="188" y="351" font-size="14" fill="#141421" text-anchor="end">3</text>
+  <line x1="60" y1="356" x2="200" y2="356" stroke="#D7D8D8"/>
+  <text x="188" y="371" font-size="14" fill="#141421" text-anchor="end">4</text>
+  <line x1="60" y1="376" x2="200" y2="376" stroke="#D7D8D8"/>
+  <text x="188" y="391" font-size="14" fill="#141421" text-anchor="end">5</text>
+  <line x1="60" y1="396" x2="200" y2="396" stroke="#D7D8D8"/>
+  <text x="188" y="411" font-size="14" fill="#141421" text-anchor="end">6</text>
+  <line x1="60" y1="416" x2="200" y2="416" stroke="#D7D8D8"/>
+  <text x="188" y="431" font-size="14" fill="#141421" text-anchor="end">7</text>
+  <line x1="60" y1="436" x2="200" y2="436" stroke="#D7D8D8"/>
+  <text x="188" y="451" font-size="14" fill="#141421" text-anchor="end">7</text>
+  <line x1="60" y1="456" x2="200" y2="456" stroke="#D7D8D8"/>
+  <text x="188" y="471" font-size="14" fill="#141421" text-anchor="end">7</text>
+  <line x1="60" y1="476" x2="200" y2="476" stroke="#D7D8D8"/>
+  <text x="188" y="491" font-size="14" fill="#141421" text-anchor="end">8</text>
+  <line x1="60" y1="496" x2="200" y2="496" stroke="#D7D8D8"/>
+  <text x="188" y="511" font-size="14" fill="#141421" text-anchor="end">9</text>
+  <line x1="60" y1="516" x2="200" y2="516" stroke="#D7D8D8"/>
+  <text x="188" y="531" font-size="14" fill="#141421" text-anchor="end">9</text>
+  <line x1="60" y1="536" x2="200" y2="536" stroke="#D7D8D8"/>
+  <text x="188" y="551" font-size="14" fill="#141421" text-anchor="end">10</text>
+  <line x1="60" y1="556" x2="200" y2="556" stroke="#D7D8D8"/>
+  <text x="188" y="571" font-size="14" fill="#141421" text-anchor="end">10</text>
+  <use href="#step-arrow" x="222" y="400"/>
+  <text x="253" y="446" font-size="12" font-weight="700" fill="#141421" text-anchor="middle">Filter</text>
+  <text x="253" y="462" font-size="12" fill="#70706F" text-anchor="middle">set by the report</text>
+  <rect x="300" y="230" width="140" height="26" fill="#141421"/>
+  <text x="312" y="248" font-size="14" font-weight="700" fill="#F6F6F6">Color</text>
+  <use href="#funnel" x="416" y="237" fill="#F39454"/>
+  <rect x="300" y="256" width="140" height="140" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="428" y="271" font-size="14" fill="#141421" text-anchor="end">1</text>
+  <line x1="300" y1="276" x2="440" y2="276" stroke="#D7D8D8"/>
+  <text x="428" y="291" font-size="14" fill="#141421" text-anchor="end">1</text>
+  <line x1="300" y1="296" x2="440" y2="296" stroke="#D7D8D8"/>
+  <text x="428" y="311" font-size="14" fill="#141421" text-anchor="end">7</text>
+  <line x1="300" y1="316" x2="440" y2="316" stroke="#D7D8D8"/>
+  <text x="428" y="331" font-size="14" fill="#141421" text-anchor="end">7</text>
+  <line x1="300" y1="336" x2="440" y2="336" stroke="#D7D8D8"/>
+  <text x="428" y="351" font-size="14" fill="#141421" text-anchor="end">7</text>
+  <line x1="300" y1="356" x2="440" y2="356" stroke="#D7D8D8"/>
+  <text x="428" y="371" font-size="14" fill="#141421" text-anchor="end">10</text>
+  <line x1="300" y1="376" x2="440" y2="376" stroke="#D7D8D8"/>
+  <text x="428" y="391" font-size="14" fill="#141421" text-anchor="end">10</text>
+  <use href="#step-arrow" x="462" y="400"/>
+  <text x="486" y="406" font-size="16" font-weight="700" fill="#F6F6F6">1</text>
+  <text x="493" y="446" font-size="12" font-weight="700" fill="#141421" text-anchor="middle">VALUES</text>
+  <text x="493" y="462" font-size="12" fill="#70706F" text-anchor="middle">unique + blank</text>
+  <rect x="560" y="230" width="140" height="26" fill="#141421"/>
+  <text x="572" y="248" font-size="14" font-weight="700" fill="#F6F6F6">Color</text>
+  <use href="#funnel" x="676" y="237" fill="#F39454"/>
+  <rect x="560" y="256" width="140" height="80" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="688" y="271" font-size="14" fill="#141421" text-anchor="end">1</text>
+  <line x1="560" y1="276" x2="700" y2="276" stroke="#D7D8D8"/>
+  <text x="688" y="291" font-size="14" fill="#141421" text-anchor="end">7</text>
+  <line x1="560" y1="296" x2="700" y2="296" stroke="#D7D8D8"/>
+  <text x="688" y="311" font-size="14" fill="#141421" text-anchor="end">10</text>
+  <line x1="560" y1="316" x2="700" y2="316" stroke="#D7D8D8"/>
+  <rect x="560" y="316" width="140" height="20" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="688" y="331" font-size="14" font-style="italic" font-weight="700" fill="#141421" text-anchor="end">(blank)</text>
+  <rect x="570" y="360" width="120" height="40" rx="20" fill="#FFFFFF" stroke="#141421" stroke-width="2"/>
+  <text x="630" y="387" font-size="18" font-weight="700" fill="#141421" text-anchor="middle">TABLE</text>
+  <rect x="760" y="170" width="380" height="406" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <use href="#brand-arrow" x="780" y="190"/>
+  <text x="806" y="206" font-size="17" font-weight="700" fill="#141421">A single column</text>
+  <g font-size="14" fill="#141421">
+    <text x="780" y="236"><tspan fill="#F39454">✓</tspan>  a single-column table of <tspan font-weight="700">unique</tspan> values</text>
+    <text x="780" y="260"><tspan fill="#F39454">✓</tspan>  <tspan font-weight="700">respects</tspan> the filter on that column</text>
+    <text x="780" y="284"><tspan fill="#F39454">✓</tspan>  adds a <tspan font-weight="700">blank row</tspan> for orphan records</text>
+    <text x="800" y="302" font-size="12" fill="#70706F">violation of referential integrity</text>
+  </g>
+  <line x1="780" y1="330" x2="1120" y2="330" stroke="#D7D8D8"/>
+  <use href="#brand-arrow" x="780" y="346"/>
+  <text x="806" y="362" font-size="17" font-weight="700" fill="#141421">A table</text>
+  <g font-size="14" fill="#141421">
+    <text x="780" y="392"><tspan fill="#F39454">✓</tspan>  the same columns, <tspan font-weight="700">duplicate rows</tspan> kept</text>
+    <text x="780" y="416"><tspan fill="#F39454">✓</tspan>  filters are <tspan font-weight="700">respected</tspan></text>
+    <text x="780" y="440"><tspan fill="#F39454">✓</tspan>  adds a <tspan font-weight="700">blank row</tspan> for orphan records</text>
+  </g>
+  <text x="780" y="490" font-size="13" fill="#70706F">Compare: ALL ignores the filter,</text>
+  <text x="780" y="508" font-size="13" fill="#70706F">VALUES keeps it.</text>
+  <line x1="60" y1="616" x2="1140" y2="616" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="652" font-size="20" fill="#141421">VALUES <tspan font-weight="700">respects</tspan> the filter and returns a <tspan font-weight="700">table</tspan>.</text>
+  <text x="1140" y="651" font-size="14" fill="#70706F" text-anchor="end">Next: VALUES as a scalar</text>
+</svg>

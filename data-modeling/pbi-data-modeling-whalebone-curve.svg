@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <g id="brand-arrow">
+      <path d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/>
+      <rect x="15" y="3" width="2.5" height="13" fill="#F39454"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Whalebone curve</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Whalebone curve</text>
+  <rect x="352" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Pareto analysis (80/20): a few items generate most of the impact, the many others hardly matter.</text>
+
+  <!-- ==================== Headline ==================== -->
+  <rect x="60" y="158" width="890" height="38" fill="#C9DCE7"/>
+  <text x="76" y="183" font-size="17" fill="#141421"><tspan font-weight="700">2</tspan> <tspan font-size="13" fill="#F39454" font-weight="700">①</tspan> of <tspan font-weight="700">17</tspan> <tspan font-size="13" fill="#F39454" font-weight="700">②</tspan> Product Subcategories, representing <tspan font-weight="700">12%</tspan> <tspan font-size="13" fill="#F39454" font-weight="700">③</tspan>, are generating at least 80% of revenue. <tspan font-size="13" fill="#F39454" font-weight="700">⑤</tspan></text>
+
+  <!-- ==================== Chart ==================== -->
+  <!-- grid -->
+  <g stroke="#D7D8D8" stroke-width="1">
+    <line x1="118" y1="230" x2="900" y2="230"/><line x1="118" y1="290" x2="900" y2="290"/>
+    <line x1="118" y1="350" x2="900" y2="350"/><line x1="118" y1="410" x2="900" y2="410"/>
+  </g>
+  <line x1="118" y1="470" x2="900" y2="470" stroke="#70706F" stroke-width="1"/>
+
+  <!-- left axis: revenue -->
+  <g font-size="11" fill="#70706F" text-anchor="end">
+    <text x="108" y="234">4M</text><text x="108" y="294">3M</text><text x="108" y="354">2M</text>
+    <text x="108" y="414">1M</text><text x="108" y="474">0M</text>
+  </g>
+  <!-- right axis: cumulative % -->
+  <g font-size="11" fill="#70706F">
+    <text x="910" y="234">100%</text><text x="910" y="330">60%</text>
+    <text x="910" y="378">40%</text><text x="910" y="426">20%</text><text x="910" y="474">0%</text>
+  </g>
+  <text x="910" y="282" font-size="12" font-weight="700" fill="#141421">80%</text>
+
+  <!-- bars: vital few -->
+  <rect x="125" y="230" width="32" height="240" fill="#F39454"/>
+  <rect x="171" y="232.4" width="32" height="237.6" fill="#F39454"/>
+  <!-- bars: trivial many -->
+  <g fill="#D7D8D8">
+    <rect x="217" y="386.6" width="32" height="83.4"/>
+    <rect x="263" y="464" width="32" height="6"/>
+    <rect x="309" y="464.6" width="32" height="5.4"/>
+    <rect x="355" y="465.8" width="32" height="4.2"/>
+    <rect x="401" y="467.6" width="32" height="2.4"/>
+    <rect x="447" y="468.2" width="32" height="1.8"/>
+    <rect x="493" y="468.8" width="32" height="1.2"/>
+    <rect x="539" y="468.8" width="32" height="1.2"/>
+    <rect x="585" y="468.8" width="32" height="1.2"/>
+    <rect x="631" y="468.8" width="32" height="1.2"/>
+    <rect x="677" y="468.8" width="32" height="1.2"/>
+    <rect x="723" y="469" width="32" height="1"/>
+    <rect x="769" y="469" width="32" height="1"/>
+    <rect x="815" y="469" width="32" height="1"/>
+    <rect x="861" y="469" width="32" height="1"/>
+  </g>
+
+  <!-- 80% target -->
+  <line x1="118" y1="278" x2="900" y2="278" stroke="#70706F" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- cumulative % line -->
+  <polyline points="141,372.1 187,275.4 233,241.3 279,238.9 325,236.7 371,235 417,234.1 463,233.4 509,232.9 555,232.4 601,231.9 647,231.4 693,231 739,230.5 785,230.2 831,230.1 877,230" fill="none" stroke="#141421" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- intersection -->
+  <line x1="187" y1="280" x2="187" y2="470" stroke="#141421" stroke-width="1" stroke-dasharray="3 3"/>
+  <circle cx="187" cy="275.4" r="5.5" fill="#141421" stroke="#FFFFFF" stroke-width="2"/>
+  <rect x="160" y="288" width="54" height="22" rx="11" fill="#FFFFFF" stroke="#141421" stroke-width="1.5"/>
+  <text x="187" y="304" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">81.1%</text>
+
+  <!-- x labels -->
+  <g font-size="11" fill="#70706F" text-anchor="middle">
+    <text x="141" y="487">Mountain</text><text x="141" y="500">Bikes</text>
+    <text x="187" y="487">Road</text><text x="187" y="500">Bikes</text>
+    <text x="233" y="487">Touring</text><text x="233" y="500">Bikes</text>
+    <text x="279" y="487">Tires and</text><text x="279" y="500">Tubes</text>
+    <text x="325" y="487">Helmets</text>
+    <text x="371" y="487">Jerseys</text>
+    <text x="417" y="487">Shorts</text>
+    <text x="463" y="487">Bottles</text><text x="463" y="500">&amp; Cages</text>
+    <text x="509" y="487">Fenders</text>
+    <text x="555" y="487">Bike</text><text x="555" y="500">Stands</text>
+    <text x="601" y="487">Hydration</text><text x="601" y="500">Packs</text>
+    <text x="647" y="487">Bike</text><text x="647" y="500">Racks</text>
+    <text x="693" y="487">Gloves</text>
+    <text x="739" y="487">Vests</text>
+    <text x="785" y="487">Caps</text>
+    <text x="831" y="487">Cleaners</text>
+    <text x="877" y="487">Socks</text>
+  </g>
+
+  <!-- chart callouts -->
+  <g font-size="12" font-weight="700" fill="#F6F6F6" text-anchor="middle">
+    <circle cx="850" cy="214" r="10" fill="#141421"/><text x="850" y="218">4</text>
+    <circle cx="228" cy="299" r="10" fill="#141421"/><text x="228" y="303">6</text>
+    <circle cx="141" cy="420" r="10" fill="#141421"/><text x="141" y="424">7</text>
+    <circle cx="268" cy="404" r="10" fill="#141421"/><text x="268" y="408">8</text>
+    <circle cx="952" cy="278" r="10" fill="#141421"/><text x="952" y="282">9</text>
+  </g>
+  <text x="164" y="222" font-size="12" font-weight="700" fill="#F39454" text-anchor="middle">vital few</text>
+  <text x="560" y="440" font-size="12" font-weight="700" fill="#70706F" text-anchor="middle">trivial many</text>
+
+  <!-- ==================== Measures ==================== -->
+  <text x="980" y="228" font-size="14" font-weight="700" fill="#141421">Measures</text>
+  <line x1="980" y1="238" x2="1140" y2="238" stroke="#D7D8D8"/>
+  <g font-size="13" fill="#141421">
+    <circle cx="990" cy="258" r="10" fill="#141421"/><text x="1006" y="263">Pareto 20 pct (#)</text>
+    <circle cx="990" cy="286" r="10" fill="#141421"/><text x="1006" y="291">Pareto All (#)</text>
+    <circle cx="990" cy="314" r="10" fill="#141421"/><text x="1006" y="319">Pareto 20 pct (%)</text>
+    <circle cx="990" cy="342" r="10" fill="#141421"/><text x="1006" y="347">Revenue Cusum (%)</text>
+    <circle cx="990" cy="370" r="10" fill="#141421"/><text x="1006" y="375">Pareto Analysis</text>
+    <circle cx="990" cy="398" r="10" fill="#141421"/><text x="1006" y="403">Pareto Intersection</text>
+    <circle cx="990" cy="426" r="10" fill="#141421"/><text x="1006" y="431">Revenue</text>
+    <circle cx="990" cy="454" r="10" fill="#141421"/><text x="1006" y="459">Pareto Column Color</text>
+    <circle cx="990" cy="482" r="10" fill="#141421"/><text x="1006" y="487">Pareto Target</text>
+  </g>
+  <g font-size="12" font-weight="700" fill="#F6F6F6" text-anchor="middle">
+    <text x="990" y="262">1</text><text x="990" y="290">2</text><text x="990" y="318">3</text>
+    <text x="990" y="346">4</text><text x="990" y="374">5</text><text x="990" y="402">6</text>
+    <text x="990" y="430">7</text><text x="990" y="458">8</text><text x="990" y="486">9</text>
+  </g>
+
+  <!-- ==================== How to read ==================== -->
+  <line x1="60" y1="520" x2="1140" y2="520" stroke="#D7D8D8" stroke-width="1"/>
+
+  <use href="#brand-arrow" x="60" y="534"/>
+  <text x="86" y="550" font-size="16" font-weight="700" fill="#141421">Ranked left to right</text>
+  <text x="60" y="574" font-size="14" fill="#141421">Bars show each item's revenue,</text>
+  <text x="60" y="592" font-size="14" fill="#141421">from highest to lowest.</text>
+
+  <use href="#brand-arrow" x="420" y="534"/>
+  <text x="446" y="550" font-size="16" font-weight="700" fill="#141421">Cumulative % climbs to 100%</text>
+  <text x="420" y="574" font-size="14" fill="#141421">Steep at first, then flat: the</text>
+  <text x="420" y="592" font-size="14" fill="#141421">elbow gives the curve its shape.</text>
+
+  <use href="#brand-arrow" x="780" y="534"/>
+  <text x="806" y="550" font-size="16" font-weight="700" fill="#141421">Left of the 80% line</text>
+  <text x="780" y="574" font-size="14" fill="#141421">Everything up to the intersection</text>
+  <text x="780" y="592" font-size="14" fill="#141421">is the vital few.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="616" x2="1140" y2="616" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="652" font-size="20" fill="#141421">12% of the items, <tspan font-weight="700">80% of the revenue</tspan>.</text>
+  <text x="1140" y="651" font-size="14" fill="#70706F" text-anchor="end">Built with RANKX and a running total as % of the grand total</text>
+</svg>

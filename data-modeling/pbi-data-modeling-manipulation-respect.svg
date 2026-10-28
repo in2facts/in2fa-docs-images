@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <g id="brand-arrow">
+      <path d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/>
+      <rect x="15" y="3" width="2.5" height="13" fill="#F39454"/>
+    </g>
+    <marker id="arrow-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <path id="funnel" d="M0 0 H14 L9 6 V13 L5 11 V6 Z"/>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Manipulation – RESPECT</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Manipulation – RESPECT</text>
+  <rect x="500" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">VALUES respects the active filter context: it returns exactly the values the filter allows.</text>
+
+  <!-- ==================== LEFT: initial filter context ==================== -->
+  <text x="60" y="190" font-size="20" font-weight="700" fill="#141421">Initial filter context <tspan font-size="14" font-weight="400" fill="#70706F">set by the report</tspan></text>
+
+  <rect x="60" y="206" width="380" height="28" fill="#FFFFFF" stroke="#F39454" stroke-width="2"/>
+  <use href="#funnel" x="72" y="213" fill="#F39454"/>
+  <text x="94" y="225" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421">'Categories'[SubcategoryName] = "Mountain Bikes"</text>
+
+  <rect x="60" y="250" width="380" height="36" fill="#141421"/>
+  <g font-size="14" font-weight="700" fill="#F6F6F6">
+    <text x="76" y="273">Category</text>
+    <text x="210" y="273">SubcategoryName</text>
+  </g>
+  <rect x="60" y="286" width="380" height="170" fill="#FFFFFF"/>
+  <rect x="60" y="286" width="380" height="34" fill="#F39454" fill-opacity="0.18"/>
+  <g stroke="#D7D8D8" stroke-width="1">
+    <line x1="60" y1="320" x2="440" y2="320"/><line x1="60" y1="354" x2="440" y2="354"/>
+    <line x1="60" y1="388" x2="440" y2="388"/><line x1="60" y1="422" x2="440" y2="422"/>
+  </g>
+  <g font-size="15" fill="#141421">
+    <text x="76" y="308" font-weight="700">Bikes</text><text x="210" y="308" font-weight="700">Mountain Bikes</text>
+  </g>
+  <g font-size="15" fill="#141421" fill-opacity="0.3">
+    <text x="76" y="342">Bikes</text><text x="210" y="342">Road Bikes</text>
+    <text x="76" y="376">Bikes</text><text x="210" y="376">Touring Bikes</text>
+    <text x="76" y="410">Accessories</text><text x="210" y="410">Helmets</text>
+    <text x="76" y="444">Clothing</text><text x="210" y="444">Gloves</text>
+  </g>
+  <rect x="200" y="286" width="240" height="34" fill="none" stroke="#F39454" stroke-width="2"/>
+  <text x="60" y="478" font-size="13" fill="#70706F">Only one subcategory is visible</text>
+
+  <!-- ==================== MIDDLE: VALUES ==================== -->
+  <line x1="442" y1="303" x2="488" y2="303" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+  <text x="600" y="248" font-size="18" font-weight="700" fill="#F39454" text-anchor="middle">RESPECT</text>
+  <rect x="490" y="262" width="220" height="82" fill="#141421"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#F6F6F6">
+    <text x="508" y="286"><tspan fill="#F39454">VALUES</tspan> (</text>
+    <text x="526" y="308" font-size="13" fill="#C9DCE7">'Categories'</text>
+    <text x="526" y="326" font-size="13" fill="#C9DCE7">[SubcategoryName] <tspan fill="#F6F6F6">)</tspan></text>
+  </g>
+  <text x="600" y="366" font-size="13" fill="#70706F" text-anchor="middle">reads the column through the filter</text>
+  <line x1="712" y1="303" x2="758" y2="303" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+
+  <!-- ==================== RIGHT: result ==================== -->
+  <text x="760" y="190" font-size="20" font-weight="700" fill="#141421">Result <tspan font-size="14" font-weight="400" fill="#70706F">a table with the visible values</tspan></text>
+
+  <rect x="760" y="206" width="380" height="28" fill="#FFFFFF" stroke="#F39454" stroke-width="2"/>
+  <use href="#funnel" x="772" y="213" fill="#F39454"/>
+  <text x="794" y="225" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421">filter respected</text>
+
+  <rect x="760" y="250" width="380" height="36" fill="#141421"/>
+  <text x="776" y="273" font-size="14" font-weight="700" fill="#F6F6F6">SubcategoryName</text>
+  <rect x="760" y="286" width="380" height="34" fill="#F39454" fill-opacity="0.18"/>
+  <text x="776" y="308" font-size="15" font-weight="700" fill="#141421">Mountain Bikes</text>
+  <rect x="760" y="250" width="380" height="70" fill="none" stroke="#F39454" stroke-width="2"/>
+  <text x="1124" y="308" font-size="13" fill="#70706F" text-anchor="end">1 row</text>
+
+  <!-- compare with NEGLECT -->
+  <rect x="760" y="346" width="380" height="110" fill="none" stroke="#70706F" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="776" y="372" font-size="14" font-weight="700" fill="#70706F">Compare with NEGLECT</text>
+  <text x="776" y="396" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#70706F">ALL ( 'Categories'[SubcategoryName] )</text>
+  <text x="776" y="420" font-size="14" fill="#70706F">Mountain Bikes, Road Bikes, Touring Bikes,</text>
+  <text x="776" y="440" font-size="14" fill="#70706F">Helmets, Gloves: 5 rows, filter ignored</text>
+  <text x="1140" y="478" font-size="13" fill="#70706F" text-anchor="end">VALUES returns exactly what the filter allows</text>
+
+  <!-- ==================== Code ==================== -->
+  <rect x="60" y="494" width="1080" height="40" fill="#141421"/>
+  <text x="80" y="520" font-family="Consolas, 'Courier New', monospace" font-size="16" fill="#F6F6F6"># Subcategories = <tspan fill="#F39454">COUNTROWS</tspan> ( <tspan fill="#F39454">VALUES</tspan> ( <tspan fill="#C9DCE7">'Categories'[SubcategoryName]</tspan> ) )   <tspan fill="#70706F">-- returns 1</tspan></text>
+
+  <!-- ==================== Explanation ==================== -->
+  <use href="#brand-arrow" x="60" y="548"/>
+  <text x="86" y="564" font-size="17" font-weight="700" fill="#141421">The filter is respected</text>
+  <text x="60" y="588" font-size="14" fill="#141421">VALUES returns the distinct values of a column that are</text>
+  <text x="60" y="606" font-size="14" fill="#141421">visible in the current filter context. Nothing is removed.</text>
+
+  <use href="#brand-arrow" x="650" y="548"/>
+  <text x="676" y="564" font-size="17" font-weight="700" fill="#141421">A table, not a scalar</text>
+  <text x="650" y="588" font-size="14" fill="#141421">Wrap it in COUNTROWS or CONCATENATEX, or use it as</text>
+  <text x="650" y="606" font-size="14" fill="#141421">a filter argument in CALCULATE.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="622" x2="1140" y2="622" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="656" font-size="20" fill="#141421">VALUES <tspan font-weight="700">respects</tspan> the filter: you get exactly what it allows.</text>
+  <text x="1140" y="655" font-size="14" fill="#70706F" text-anchor="end">Next: RESPECT &amp; ADD</text>
+</svg>

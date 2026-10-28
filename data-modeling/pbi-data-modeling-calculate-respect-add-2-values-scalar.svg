@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <g id="brand-arrow">
+      <path d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/>
+      <rect x="15" y="3" width="2.5" height="13" fill="#F39454"/>
+    </g>
+    <path id="funnel" d="M0 0 H14 L9 6 V13 L5 11 V6 Z"/>
+    <g id="step-arrow"><path d="M0 -14 H36 V-26 L62 0 L36 26 V14 H0 Z" fill="#70706F"/></g>
+  </defs>
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Calculate – RESPECT + ADD</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling · 2/3</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Respect + add: VALUES as a scalar</text>
+  <rect x="658" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">When exactly one value is left, VALUES returns that value instead of a table.</text>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="20" font-weight="700" fill="#141421">
+    <text x="60" y="210"><tspan fill="#F39454">✓</tspan> SINGLE-HEADER</text>
+    <text x="60" y="242"><tspan fill="#F39454">✓</tspan> SINGLE-COLUMN</text>
+    <text x="60" y="274"><tspan fill="#F39454">✓</tspan> SINGLE-ROW</text>
+    <text x="60" y="306"><tspan fill="#F39454">✓</tspan> SINGLE VALUE</text>
+  </g>
+  <rect x="60" y="350" width="200" height="26" fill="#141421"/>
+  <text x="72" y="368" font-size="14" font-weight="700" fill="#F6F6F6">Color</text>
+  <use href="#funnel" x="236" y="357" fill="#F39454"/>
+  <rect x="60" y="376" width="200" height="30" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="248" y="391" font-size="14" fill="#141421" text-anchor="end">1</text>
+  <use href="#step-arrow" x="300" y="380"/>
+  <text x="331" y="426" font-size="12" font-weight="700" fill="#141421" text-anchor="middle">one value left</text>
+  <text x="331" y="442" font-size="12" fill="#70706F" text-anchor="middle"></text>
+  <rect x="400" y="170" width="740" height="250" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="770" y="222" font-family="Consolas, 'Courier New', monospace" font-size="22" fill="#141421" text-anchor="middle"><tspan fill="#F39454">VALUES</tspan> ( Products[Color] )</text>
+  <rect x="710" y="264" width="120" height="44" fill="#F6F6F6" stroke="#D7D8D8"/>
+  <text x="770" y="295" font-size="24" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <rect x="700" y="330" width="140" height="44" rx="22" fill="#FFFFFF" stroke="#F39454" stroke-width="2.5"/>
+  <text x="770" y="359" font-size="20" font-weight="700" fill="#141421" text-anchor="middle">SCALAR</text>
+  <text x="430" y="292" font-size="13" fill="#70706F">no table object any more,</text>
+  <text x="430" y="310" font-size="13" fill="#70706F">but the value itself</text>
+
+  <use href="#brand-arrow" x="400" y="446"/>
+  <text x="426" y="462" font-size="17" font-weight="700" fill="#141421">Usable as a value</text>
+  <text x="400" y="488" font-size="14" fill="#141421">Compare it, show it or use it in a calculation,</text>
+  <text x="400" y="508" font-size="14" fill="#141421">as long as the filter context guarantees one row.</text>
+
+  <use href="#brand-arrow" x="790" y="446"/>
+  <text x="816" y="462" font-size="17" font-weight="700" fill="#141421">More than one row?</text>
+  <text x="790" y="488" font-size="14" fill="#141421">A table cannot be used as a value: error.</text>
+  <text x="790" y="508" font-size="14" fill="#141421">Safer: <tspan font-family="Consolas, 'Courier New', monospace" font-size="13">SELECTEDVALUE ( Products[Color] )</tspan></text>
+  <line x1="60" y1="616" x2="1140" y2="616" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="652" font-size="20" fill="#141421">One value left: VALUES returns a <tspan font-weight="700">scalar</tspan>.</text>
+  <text x="1140" y="651" font-size="14" fill="#70706F" text-anchor="end">Next: Revenue Red Road Bikes</text>
+</svg>

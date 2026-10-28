@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arrow-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <rect id="cell" width="120" height="22" fill="#FFFFFF" stroke="#D7D8D8"/>
+    <rect id="cell-hi" width="120" height="22" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="1.5"/>
+    <rect id="card" width="340" height="200" fill="#FFFFFF" stroke="#D7D8D8"/>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">VALUES</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">VALUES</text>
+  <rect x="208" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Pass VALUES a column and it does five things in one go.</text>
+
+  <!-- ==================== 1. Removes duplicates ==================== -->
+  <g transform="translate(60,170)">
+    <use href="#card"/>
+    <circle cx="30" cy="28" r="11" fill="#F39454"/><text x="30" y="33" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+    <text x="50" y="34" font-size="16" font-weight="700" fill="#141421">Removes duplicates</text>
+    <text x="20" y="58" font-size="13" fill="#70706F">Every value appears only once</text>
+    <g font-size="13" fill="#141421">
+      <use href="#cell" x="20" y="74"/><text x="30" y="89">Black</text>
+      <use href="#cell" x="20" y="96"/><text x="30" y="111">Red</text>
+      <g opacity="0.3">
+        <use href="#cell" x="20" y="118"/><text x="30" y="133">Black</text>
+        <use href="#cell" x="20" y="140"/><text x="30" y="155">Red</text>
+      </g>
+      <use href="#cell" x="20" y="162"/><text x="30" y="177">Silver</text>
+    </g>
+    <line x1="148" y1="129" x2="186" y2="129" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+    <g font-size="13" fill="#141421">
+      <use href="#cell-hi" x="196" y="74"/><text x="206" y="89">Black</text>
+      <use href="#cell-hi" x="196" y="96"/><text x="206" y="111">Red</text>
+      <use href="#cell-hi" x="196" y="118"/><text x="206" y="133">Silver</text>
+    </g>
+  </g>
+
+  <!-- ==================== 2. Respects the filter context ==================== -->
+  <g transform="translate(430,170)">
+    <use href="#card"/>
+    <circle cx="30" cy="28" r="11" fill="#F39454"/><text x="30" y="33" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+    <text x="50" y="34" font-size="16" font-weight="700" fill="#141421">Respects the filter context</text>
+    <text x="20" y="58" font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#70706F">Filter: 'Products'[Category] = "Bikes"</text>
+    <g font-size="13" fill="#141421">
+      <use href="#cell" x="20" y="74"/><text x="30" y="89">Black</text>
+      <use href="#cell" x="20" y="96"/><text x="30" y="111">Red</text>
+      <g opacity="0.3">
+        <use href="#cell" x="20" y="118"/><text x="30" y="133">Silver</text>
+        <use href="#cell" x="20" y="140"/><text x="30" y="155">Blue</text>
+      </g>
+    </g>
+    <line x1="148" y1="118" x2="186" y2="118" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+    <g font-size="13" fill="#141421">
+      <use href="#cell-hi" x="196" y="74"/><text x="206" y="89">Black</text>
+      <use href="#cell-hi" x="196" y="96"/><text x="206" y="111">Red</text>
+    </g>
+    <text x="196" y="140" font-size="12" fill="#70706F">Only bike colors</text>
+  </g>
+
+  <!-- ==================== 3. Adds a blank member ==================== -->
+  <g transform="translate(800,170)">
+    <use href="#card"/>
+    <circle cx="30" cy="28" r="11" fill="#F39454"/><text x="30" y="33" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+    <text x="50" y="34" font-size="16" font-weight="700" fill="#141421">Adds a blank member</text>
+    <text x="20" y="58" font-size="13" fill="#70706F">Sales rows without a match in Products</text>
+    <g font-size="13" fill="#141421">
+      <use href="#cell" x="20" y="74"/><text x="30" y="89">Black</text>
+      <use href="#cell" x="20" y="96"/><text x="30" y="111">Red</text>
+      <use href="#cell" x="20" y="118"/><text x="30" y="133">Silver</text>
+      <use href="#cell" x="20" y="140"/><text x="30" y="155">Blue</text>
+    </g>
+    <line x1="148" y1="129" x2="186" y2="129" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+    <g font-size="13" fill="#141421">
+      <use href="#cell" x="196" y="74"/><text x="206" y="89">Black</text>
+      <use href="#cell" x="196" y="96"/><text x="206" y="111">Red</text>
+      <use href="#cell" x="196" y="118"/><text x="206" y="133">Silver</text>
+      <use href="#cell" x="196" y="140"/><text x="206" y="155">Blue</text>
+      <rect x="196" y="162" width="120" height="22" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <text x="206" y="177" font-style="italic" font-weight="700">(Blank)</text>
+    </g>
+  </g>
+
+  <!-- ==================== 4. Converts the column into a table ==================== -->
+  <g transform="translate(60,390)">
+    <use href="#card"/>
+    <circle cx="30" cy="28" r="11" fill="#F39454"/><text x="30" y="33" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">4</text>
+    <text x="50" y="34" font-size="16" font-weight="700" fill="#141421">Returns a one-column table</text>
+    <text x="20" y="58" font-size="13" fill="#70706F">Usable wherever a table is expected</text>
+    <rect x="20" y="96" width="140" height="30" fill="#141421"/>
+    <text x="90" y="115" font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#C9DCE7" text-anchor="middle">'Products'[Color]</text>
+    <text x="90" y="144" font-size="12" fill="#70706F" text-anchor="middle">a column reference</text>
+    <line x1="168" y1="111" x2="202" y2="111" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+    <rect x="210" y="74" width="110" height="22" fill="#141421"/>
+    <text x="220" y="89" font-size="13" font-weight="700" fill="#F6F6F6">Color</text>
+    <g font-size="13" fill="#141421">
+      <rect x="210" y="96" width="110" height="22" fill="#FFFFFF" stroke="#D7D8D8"/><text x="220" y="111">Black</text>
+      <rect x="210" y="118" width="110" height="22" fill="#FFFFFF" stroke="#D7D8D8"/><text x="220" y="133">Red</text>
+      <rect x="210" y="140" width="110" height="22" fill="#FFFFFF" stroke="#D7D8D8"/><text x="220" y="155">Silver</text>
+    </g>
+    <rect x="210" y="74" width="110" height="88" fill="none" stroke="#F39454" stroke-width="2"/>
+    <text x="20" y="186" font-size="12" fill="#70706F">e.g. COUNTROWS, FILTER, CALCULATE arguments</text>
+  </g>
+
+  <!-- ==================== 5. Extracts a scalar value ==================== -->
+  <g transform="translate(430,390)">
+    <use href="#card"/>
+    <circle cx="30" cy="28" r="11" fill="#F39454"/><text x="30" y="33" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">5</text>
+    <text x="50" y="34" font-size="16" font-weight="700" fill="#141421">Extracts a scalar value</text>
+    <text x="20" y="58" font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#70706F">Filter: 'Products'[Color] = "Red"</text>
+    <rect x="20" y="88" width="120" height="22" fill="#141421"/>
+    <text x="30" y="103" font-size="13" font-weight="700" fill="#F6F6F6">Color</text>
+    <use href="#cell-hi" x="20" y="110"/><text x="30" y="125" font-size="13" fill="#141421">Red</text>
+    <text x="20" y="148" font-size="12" fill="#70706F">exactly one row left</text>
+    <line x1="148" y1="111" x2="186" y2="111" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+    <text x="256" y="84" font-size="12" fill="#70706F" text-anchor="middle">scalar value</text>
+    <rect x="196" y="92" width="120" height="38" rx="19" fill="#FFFFFF" stroke="#F39454" stroke-width="2"/>
+    <text x="256" y="118" font-size="20" font-weight="700" fill="#141421" text-anchor="middle">"Red"</text>
+    <text x="20" y="186" font-size="12" fill="#70706F">More rows left? Error. Safer: SELECTEDVALUE</text>
+  </g>
+
+  <!-- ==================== Summary ==================== -->
+  <g transform="translate(800,390)">
+    <rect width="340" height="200" fill="#141421"/>
+    <text x="24" y="40" font-family="Consolas, 'Courier New', monospace" font-size="17" fill="#F6F6F6"><tspan fill="#F39454">VALUES</tspan> ( <tspan fill="#C9DCE7">'Products'[Color]</tspan> )</text>
+    <line x1="24" y1="58" x2="316" y2="58" stroke="#70706F"/>
+    <g font-size="14" fill="#F6F6F6">
+      <text x="24" y="86"><tspan fill="#F39454" font-weight="700">✓</tspan>  removes duplicates</text>
+      <text x="24" y="110"><tspan fill="#F39454" font-weight="700">✓</tspan>  respects the filter context</text>
+      <text x="24" y="134"><tspan fill="#F39454" font-weight="700">✓</tspan>  adds the blank member</text>
+      <text x="24" y="158"><tspan fill="#F39454" font-weight="700">✓</tspan>  returns a one-column table</text>
+      <text x="24" y="182"><tspan fill="#F39454" font-weight="700">✓</tspan>  becomes a scalar when one row is left</text>
+    </g>
+  </g>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="616" x2="1140" y2="616" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="652" font-size="20" fill="#141421">One function, <tspan font-weight="700">five behaviors</tspan>.</text>
+  <text x="1140" y="651" font-size="14" fill="#70706F" text-anchor="end">Next: Orphans</text>
+</svg>

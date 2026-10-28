@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arrow-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Iteration measures</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Iteration measures</text>
+  <rect x="360" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Multiple aggregations on multiple columns: a better name is aggregation after iteration measures.</text>
+
+  <line x1="600" y1="170" x2="600" y2="580" stroke="#D7D8D8" stroke-width="1"/>
+
+  <!-- ==================== LEFT: calculated column + SUM ==================== -->
+  <text x="60" y="190" font-size="20" font-weight="700" fill="#141421">Calculated column + SUM <tspan font-size="14" font-weight="400" fill="#70706F">not a best practice</tspan></text>
+
+  <rect x="60" y="210" width="490" height="36" fill="#141421"/>
+  <rect x="380" y="210" width="170" height="36" fill="#70706F"/>
+  <g font-size="14" font-weight="700" fill="#F6F6F6" text-anchor="end">
+    <text x="220" y="233">Order Quantity</text>
+    <text x="350" y="233">Unit Price</text>
+    <text x="534" y="233">Line Total</text>
+  </g>
+  <rect x="60" y="246" width="490" height="102" fill="#FFFFFF"/>
+  <rect x="380" y="246" width="170" height="102" fill="#C9DCE7" fill-opacity="0.6"/>
+  <g stroke="#D7D8D8"><line x1="60" y1="280" x2="550" y2="280"/><line x1="60" y1="314" x2="550" y2="314"/></g>
+  <g font-size="15" fill="#141421" text-anchor="end">
+    <text x="220" y="268">100</text><text x="350" y="268">12</text><text x="534" y="268">1,200</text>
+    <text x="220" y="302">200</text><text x="350" y="302">8</text><text x="534" y="302">1,600</text>
+    <text x="220" y="336">300</text><text x="350" y="336">3</text><text x="534" y="336">900</text>
+  </g>
+  <rect x="380" y="348" width="170" height="34" fill="#141421"/>
+  <text x="396" y="370" font-size="15" font-weight="700" fill="#F39454">SUM</text>
+  <text x="534" y="370" font-size="16" font-weight="700" fill="#F6F6F6" text-anchor="end">3,700</text>
+  <text x="60" y="404" font-size="13" fill="#70706F">Line Total is stored for every row, at refresh time</text>
+
+  <rect x="60" y="420" width="490" height="96" fill="#141421"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6">
+    <text x="80" y="442" fill="#70706F">-- calculated column</text>
+    <text x="80" y="460">Line Total = <tspan fill="#C9DCE7">Sales[OrderQuantity]</tspan> * <tspan fill="#C9DCE7">Sales[UnitPrice]</tspan></text>
+    <text x="80" y="484" fill="#70706F">-- measure</text>
+    <text x="80" y="502">Sales (€) = <tspan fill="#F39454">SUM</tspan> ( <tspan fill="#C9DCE7">Sales[Line Total]</tspan> )</text>
+  </g>
+
+  <g font-size="14" fill="#141421">
+    <text x="60" y="546"><tspan fill="#F39454" font-weight="700">✗</tspan>  Every row is stored: extra strain on RAM</text>
+    <text x="60" y="568"><tspan fill="#F39454" font-weight="700">✗</tspan>  Two objects to create and maintain</text>
+  </g>
+
+  <!-- ==================== RIGHT: SUMX ==================== -->
+  <text x="650" y="190" font-size="20" font-weight="700" fill="#141421">Iteration measure <tspan font-size="14" font-weight="400" fill="#70706F">best practice</tspan></text>
+
+  <rect x="650" y="210" width="490" height="36" fill="#141421"/>
+  <g font-size="14" font-weight="700" fill="#F6F6F6" text-anchor="end">
+    <text x="810" y="233">Order Quantity</text>
+    <text x="940" y="233">Unit Price</text>
+  </g>
+  <text x="1124" y="233" font-size="14" font-weight="700" fill="#D7D8D8" text-anchor="end">temp column</text>
+  <rect x="650" y="246" width="490" height="102" fill="#FFFFFF"/>
+  <g stroke="#D7D8D8"><line x1="650" y1="280" x2="1140" y2="280"/><line x1="650" y1="314" x2="1140" y2="314"/></g>
+  <g font-size="15" fill="#141421" text-anchor="end">
+    <text x="810" y="268">100</text><text x="940" y="268">12</text>
+    <text x="810" y="302">200</text><text x="940" y="302">8</text>
+    <text x="810" y="336">300</text><text x="940" y="336">3</text>
+  </g>
+  <g font-size="12" fill="#70706F">
+    <text x="980" y="267">100 × 12</text>
+    <text x="980" y="301">200 × 8</text>
+    <text x="980" y="335">300 × 3</text>
+  </g>
+  <g font-size="15" font-weight="700" fill="#141421" text-anchor="end">
+    <text x="1124" y="268">1,200</text>
+    <text x="1124" y="302">1,600</text>
+    <text x="1124" y="336">900</text>
+  </g>
+  <rect x="970" y="210" width="170" height="138" fill="none" stroke="#F39454" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="970" y="348" width="170" height="34" fill="#141421"/>
+  <text x="986" y="370" font-size="15" font-weight="700" fill="#F39454">SUM</text>
+  <text x="1124" y="370" font-size="16" font-weight="700" fill="#F6F6F6" text-anchor="end">3,700</text>
+
+  <!-- iteration: row pointer -->
+  <line x1="636" y1="254" x2="636" y2="340" stroke="#F39454" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow-head)"/>
+  <path d="M628 255 L642 263 L628 271 Z" fill="#F39454"/>
+  <text x="650" y="404" font-size="13" fill="#70706F">Row by row into a temporary column, discarded after the query</text>
+
+  <rect x="650" y="420" width="490" height="96" fill="#141421"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6">
+    <text x="670" y="440">Sales (€) (BP) =</text>
+    <text x="670" y="457"><tspan fill="#F39454">SUMX</tspan> (</text>
+    <text x="820" y="457" fill="#70706F">-- X = iterate, SUM = aggregate</text>
+    <text x="698" y="474">Sales,</text>
+    <text x="820" y="474" fill="#70706F">-- the table to iterate</text>
+    <text x="698" y="491"><tspan fill="#C9DCE7">Sales[OrderQuantity]</tspan> * <tspan fill="#C9DCE7">Sales[UnitPrice]</tspan></text>
+    <text x="670" y="508">)</text>
+  </g>
+
+  <g font-size="14" fill="#141421">
+    <text x="650" y="546"><tspan fill="#F39454" font-weight="700">✓</tspan>  Nothing stored: calculated at query time</text>
+    <text x="650" y="568"><tspan fill="#F39454" font-weight="700">✓</tspan>  One measure, multiple columns</text>
+  </g>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="596" x2="1140" y2="596" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="634" font-size="20" fill="#141421">SUM<tspan font-weight="700" fill="#F39454">X</tspan>: <tspan font-weight="700">X</tspan> iterates, <tspan font-weight="700">SUM</tspan> aggregates after the iteration.</text>
+  <text x="60" y="658" font-size="13" fill="#70706F">Like SUMPRODUCT in Excel.</text>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">
+    <rect x="770" y="618" width="58" height="26" rx="13" fill="#FFFFFF" stroke="#D7D8D8"/><text x="799" y="635">SUMX</text>
+    <rect x="836" y="618" width="88" height="26" rx="13" fill="#FFFFFF" stroke="#D7D8D8"/><text x="880" y="635">AVERAGEX</text>
+    <rect x="932" y="618" width="58" height="26" rx="13" fill="#FFFFFF" stroke="#D7D8D8"/><text x="961" y="635">MINX</text>
+    <rect x="998" y="618" width="58" height="26" rx="13" fill="#FFFFFF" stroke="#D7D8D8"/><text x="1027" y="635">MAXX</text>
+    <rect x="1064" y="618" width="76" height="26" rx="13" fill="#FFFFFF" stroke="#D7D8D8"/><text x="1102" y="635">RANKX</text>
+  </g>
+</svg>

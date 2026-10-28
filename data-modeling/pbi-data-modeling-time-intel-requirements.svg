@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <g id="brand-arrow">
+      <path d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/>
+      <rect x="15" y="3" width="2.5" height="13" fill="#F39454"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Time intelligence</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Time intelligence requirements</text>
+  <rect x="585" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Time intelligence is built in, but only works once a well-formed calendar table is marked as a date table.</text>
+
+  <!-- ==================== Mark as date table dialog ==================== -->
+  <rect x="60" y="170" width="320" height="250" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="80" y="204" font-size="16" font-weight="700" fill="#141421">Mark as a date table</text>
+  <rect x="80" y="220" width="48" height="26" rx="13" fill="#F39454"/>
+  <circle cx="115" cy="233" r="9" fill="#FFFFFF"/>
+  <text x="140" y="238" font-size="15" fill="#141421">On</text>
+  <text x="80" y="284" font-size="14" font-weight="700" fill="#141421">Choose a date column</text>
+  <rect x="80" y="296" width="280" height="36" fill="#FFFFFF" stroke="#70706F"/>
+  <text x="94" y="319" font-size="15" fill="#141421">FullDate</text>
+  <path d="M336 310 L342 316 L348 310" fill="none" stroke="#141421" stroke-width="1.5"/>
+  <circle cx="87" cy="355" r="7" fill="#F39454"/>
+  <path d="M83.5 355 L86 357.5 L90.5 352.5" fill="none" stroke="#141421" stroke-width="1.6"/>
+  <text x="100" y="360" font-size="13" fill="#70706F">Validated successfully</text>
+  <text x="80" y="400" font-size="12" fill="#70706F">Table tools › Calendars › Mark as date table</text>
+
+  <!-- ==================== Requirements ==================== -->
+  <text x="420" y="190" font-size="20" font-weight="700" fill="#141421">Requirements</text>
+  <g font-size="12" font-weight="700" fill="#141421" text-anchor="middle">
+    <circle cx="431" cy="216" r="11" fill="#F39454"/><text x="431" y="220">1</text>
+    <circle cx="431" cy="260" r="11" fill="#F39454"/><text x="431" y="264">2</text>
+    <circle cx="431" cy="304" r="11" fill="#F39454"/><text x="431" y="308">3</text>
+    <circle cx="431" cy="348" r="11" fill="#F39454"/><text x="431" y="352">4</text>
+    <circle cx="431" cy="392" r="11" fill="#F39454"/><text x="431" y="396">5</text>
+  </g>
+  <g font-size="16" font-weight="700" fill="#141421">
+    <text x="452" y="216">A calendar table with a date column</text>
+    <text x="452" y="260">Exhaustive: 1 January till 31 December</text>
+    <text x="452" y="304">Unique values</text>
+    <text x="452" y="348">Real dates</text>
+    <text x="452" y="392">Marked as a date table</text>
+  </g>
+  <g font-size="13" fill="#70706F">
+    <text x="452" y="234">e.g. a Calendar or OrderDate table</text>
+    <text x="452" y="278">every single day, no holes allowed</text>
+    <text x="452" y="322">one row per date</text>
+    <text x="452" y="366">Date type, or DateTime with midnight (12:00 am) only</text>
+    <text x="452" y="410">the switch that activates time intelligence</text>
+  </g>
+
+  <!-- ==================== FullDate column ==================== -->
+  <rect x="900" y="170" width="240" height="28" fill="#141421"/>
+  <text x="914" y="189" font-size="14" font-weight="700" fill="#F6F6F6">FullDate</text>
+  <text x="1126" y="189" font-size="13" fill="#D7D8D8" text-anchor="end">↑</text>
+  <rect x="900" y="198" width="240" height="242" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <rect x="900" y="198" width="240" height="22" fill="#F39454" fill-opacity="0.18"/>
+  <g stroke="#D7D8D8">
+    <line x1="900" y1="220" x2="1140" y2="220"/><line x1="900" y1="242" x2="1140" y2="242"/><line x1="900" y1="264" x2="1140" y2="264"/>
+    <line x1="900" y1="286" x2="1140" y2="286"/><line x1="900" y1="308" x2="1140" y2="308"/><line x1="900" y1="330" x2="1140" y2="330"/>
+    <line x1="900" y1="352" x2="1140" y2="352"/><line x1="900" y1="374" x2="1140" y2="374"/><line x1="900" y1="396" x2="1140" y2="396"/>
+    <line x1="900" y1="418" x2="1140" y2="418"/>
+  </g>
+  <g font-size="14" fill="#141421" text-anchor="end">
+    <text x="1126" y="214" font-weight="700">01-Jan-2005</text>
+    <text x="1126" y="236">02-Jan-2005</text>
+    <text x="1126" y="258">03-Jan-2005</text>
+    <text x="1126" y="280">04-Jan-2005</text>
+    <text x="1126" y="302">05-Jan-2005</text>
+    <text x="1126" y="324">06-Jan-2005</text>
+    <text x="1126" y="346">07-Jan-2005</text>
+    <text x="1126" y="368">08-Jan-2005</text>
+    <text x="1126" y="390">09-Jan-2005</text>
+    <text x="1126" y="412" fill="#70706F">⋮</text>
+  </g>
+  <rect x="900" y="418" width="240" height="22" fill="#F39454" fill-opacity="0.18"/>
+  <text x="1126" y="434" font-size="14" font-weight="700" fill="#141421" text-anchor="end">31-Dec-2010</text>
+  <g font-size="12" font-weight="700" fill="#F39454">
+    <text x="914" y="214">first: 1 Jan</text>
+    <text x="914" y="434">last: 31 Dec</text>
+  </g>
+  <text x="1140" y="462" font-size="13" fill="#70706F" text-anchor="end">Every day once, 1 January to 31 December</text>
+
+  <!-- ==================== Once activated ==================== -->
+  <line x1="60" y1="484" x2="1140" y2="484" stroke="#D7D8D8" stroke-width="1"/>
+  <use href="#brand-arrow" x="60" y="496"/>
+  <text x="86" y="512" font-size="17" font-weight="700" fill="#141421">Once activated</text>
+  <g>
+    <rect x="60" y="526" width="264" height="74" fill="#FFFFFF" stroke="#D7D8D8"/>
+    <text x="76" y="552" font-size="15" font-weight="700" fill="#141421"><tspan fill="#F39454" font-style="italic">fx</tspan>  Functions</text>
+    <text x="76" y="576" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421">TOTALMTD / QTD / YTD</text>
+    <text x="76" y="592" font-size="12" fill="#70706F">totalize a measure</text>
+
+    <rect x="332" y="526" width="264" height="74" fill="#FFFFFF" stroke="#D7D8D8"/>
+    <text x="348" y="552" font-size="15" font-weight="700" fill="#141421">Filters</text>
+    <text x="348" y="576" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421">DATESYTD, DATESBETWEEN, …</text>
+    <text x="348" y="592" font-size="12" fill="#70706F">only filter the calendar table</text>
+
+    <rect x="604" y="526" width="264" height="74" fill="#FFFFFF" stroke="#D7D8D8"/>
+    <text x="620" y="552" font-size="15" font-weight="700" fill="#141421">Offsets</text>
+    <text x="620" y="576" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421">DATEADD, PARALLELPERIOD, …</text>
+    <text x="620" y="592" font-size="12" fill="#70706F">shift the dates</text>
+
+    <rect x="876" y="526" width="264" height="74" fill="#FFFFFF" stroke="#70706F" stroke-dasharray="5 4"/>
+    <text x="892" y="552" font-size="15" font-weight="700" fill="#70706F">No time intelligence</text>
+    <text x="892" y="576" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#70706F">CALCULATE ( … )</text>
+    <text x="892" y="592" font-size="12" fill="#70706F">handwritten date logic</text>
+  </g>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="616" x2="1140" y2="616" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="652" font-size="20" fill="#141421">No well-formed calendar table, <tspan font-weight="700">no time intelligence</tspan>.</text>
+  <text x="1140" y="651" font-size="14" fill="#70706F" text-anchor="end">Next: Time intelligence functions</text>
+</svg>

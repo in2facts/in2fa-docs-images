@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <g id="brand-arrow">
+      <path d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/>
+      <rect x="15" y="3" width="2.5" height="13" fill="#F39454"/>
+    </g>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="arrow-grey" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">SWITCH function</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">SWITCH function</text>
+  <rect x="342" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">SWITCH evaluates its tests from top to bottom and returns the result of the first match.</text>
+
+  <line x1="600" y1="170" x2="600" y2="610" stroke="#D7D8D8" stroke-width="1"/>
+
+  <!-- ==================== LEFT: value matching ==================== -->
+  <text x="60" y="190" font-size="20" font-weight="700" fill="#141421">Value matching <tspan font-size="14" font-weight="400" fill="#70706F">SWITCH ( expression, … )</tspan></text>
+
+  <!-- input -->
+  <rect x="80" y="210" width="300" height="32" fill="#141421"/>
+  <text x="96" y="231" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#F6F6F6">'Date'[Month Number] = 2</text>
+  <path d="M80 226 H68 V302 H78" fill="none" stroke="#F39454" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow-orange)"/>
+
+  <!-- row 1: tested, no match -->
+  <rect x="80" y="254" width="160" height="28" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="96" y="273" font-size="15" fill="#141421">= 1</text>
+  <line x1="244" y1="268" x2="276" y2="268" stroke="#70706F" stroke-width="1.5" marker-end="url(#arrow-grey)"/>
+  <rect x="280" y="254" width="100" height="28" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="296" y="273" font-size="15" fill="#141421">"Jan"</text>
+  <text x="394" y="273" font-size="13" fill="#70706F">✗ no match</text>
+
+  <!-- row 2: match -->
+  <rect x="80" y="288" width="160" height="28" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="2"/>
+  <text x="96" y="307" font-size="15" font-weight="700" fill="#141421">= 2</text>
+  <line x1="244" y1="302" x2="276" y2="302" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-orange)"/>
+  <rect x="280" y="288" width="100" height="28" fill="#F39454" stroke="#F39454" stroke-width="2"/>
+  <text x="296" y="307" font-size="15" font-weight="700" fill="#141421">"Feb"</text>
+  <text x="394" y="307" font-size="13" font-weight="700" fill="#141421">✓ match: returned</text>
+
+  <!-- rows 3-4: not evaluated -->
+  <g opacity="0.35">
+    <rect x="80" y="322" width="160" height="28" fill="#FFFFFF" stroke="#D7D8D8"/>
+    <text x="96" y="341" font-size="15" fill="#141421">= 3</text>
+    <line x1="244" y1="336" x2="276" y2="336" stroke="#70706F" stroke-width="1.5" marker-end="url(#arrow-grey)"/>
+    <rect x="280" y="322" width="100" height="28" fill="#FFFFFF" stroke="#D7D8D8"/>
+    <text x="296" y="341" font-size="15" fill="#141421">"Mar"</text>
+    <text x="394" y="341" font-size="13" fill="#70706F">not evaluated</text>
+
+    <rect x="80" y="356" width="160" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-dasharray="4 3"/>
+    <text x="96" y="375" font-size="15" fill="#141421">else</text>
+    <line x1="244" y1="370" x2="276" y2="370" stroke="#70706F" stroke-width="1.5" marker-end="url(#arrow-grey)"/>
+    <rect x="280" y="356" width="100" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-dasharray="4 3"/>
+    <text x="296" y="375" font-size="15" fill="#141421">"Other"</text>
+    <text x="394" y="375" font-size="13" fill="#70706F">not evaluated</text>
+  </g>
+
+  <!-- code -->
+  <rect x="60" y="400" width="490" height="168" fill="#141421"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#F6F6F6">
+    <text x="80" y="424">Month Name =</text>
+    <text x="80" y="442"><tspan fill="#F39454">SWITCH</tspan> (</text>
+    <text x="108" y="460">'Date'[Month Number],</text>
+    <text x="108" y="478">1, <tspan fill="#C9DCE7">"Jan"</tspan>,</text>
+    <text x="108" y="496">2, <tspan fill="#C9DCE7">"Feb"</tspan>,</text>
+    <text x="108" y="514">3, <tspan fill="#C9DCE7">"Mar"</tspan>,</text>
+    <text x="108" y="532"><tspan fill="#C9DCE7">"Other"</tspan></text>
+    <text x="80" y="550">)</text>
+  </g>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#70706F">
+    <text x="530" y="460" text-anchor="end">expression</text>
+    <text x="530" y="496" text-anchor="end">value, result</text>
+    <text x="530" y="532" text-anchor="end">else (optional)</text>
+  </g>
+
+  <use href="#brand-arrow" x="60" y="576"/>
+  <text x="86" y="592" font-size="17" font-weight="700" fill="#141421">Compares one value to a list</text>
+  <text x="60" y="614" font-size="14" fill="#141421">Exact match (=) only; a clean alternative to nested IF statements.</text>
+
+  <!-- ==================== RIGHT: condition matching ==================== -->
+  <text x="650" y="190" font-size="20" font-weight="700" fill="#141421">Condition matching <tspan font-size="14" font-weight="400" fill="#70706F">SWITCH ( TRUE (), … )</tspan></text>
+
+  <!-- input -->
+  <rect x="670" y="210" width="300" height="32" fill="#141421"/>
+  <text x="686" y="231" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#F6F6F6">[Sales Amount] = 175</text>
+  <path d="M670 226 H658 V302 H668" fill="none" stroke="#F39454" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow-orange)"/>
+
+  <!-- row 1: false -->
+  <rect x="670" y="254" width="160" height="28" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="686" y="273" font-size="15" fill="#141421">&gt;= 1000</text>
+  <line x1="834" y1="268" x2="866" y2="268" stroke="#70706F" stroke-width="1.5" marker-end="url(#arrow-grey)"/>
+  <rect x="870" y="254" width="100" height="28" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="886" y="273" font-size="15" fill="#141421">"High"</text>
+  <text x="984" y="273" font-size="13" fill="#70706F">✗ false</text>
+
+  <!-- row 2: first true -->
+  <rect x="670" y="288" width="160" height="28" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="2"/>
+  <text x="686" y="307" font-size="15" font-weight="700" fill="#141421">&gt;= 100</text>
+  <line x1="834" y1="302" x2="866" y2="302" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-orange)"/>
+  <rect x="870" y="288" width="100" height="28" fill="#F39454" stroke="#F39454" stroke-width="2"/>
+  <text x="886" y="307" font-size="15" font-weight="700" fill="#141421">"Medium"</text>
+  <text x="984" y="307" font-size="13" font-weight="700" fill="#141421">✓ first true: returned</text>
+
+  <!-- rows 3-4: never reached -->
+  <g opacity="0.35">
+    <rect x="670" y="322" width="160" height="28" fill="#FFFFFF" stroke="#D7D8D8"/>
+    <text x="686" y="341" font-size="15" fill="#141421">&gt;= 1</text>
+    <line x1="834" y1="336" x2="866" y2="336" stroke="#70706F" stroke-width="1.5" marker-end="url(#arrow-grey)"/>
+    <rect x="870" y="322" width="100" height="28" fill="#FFFFFF" stroke="#D7D8D8"/>
+    <text x="886" y="341" font-size="15" fill="#141421">"Low"</text>
+
+    <rect x="670" y="356" width="160" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-dasharray="4 3"/>
+    <text x="686" y="375" font-size="15" fill="#141421">else</text>
+    <line x1="834" y1="370" x2="866" y2="370" stroke="#70706F" stroke-width="1.5" marker-end="url(#arrow-grey)"/>
+    <rect x="870" y="356" width="100" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-dasharray="4 3"/>
+    <text x="886" y="375" font-size="15" fill="#141421">"No sales"</text>
+    <text x="984" y="375" font-size="13" fill="#70706F">not evaluated</text>
+  </g>
+  <text x="984" y="341" font-size="13" fill="#F39454" font-weight="700">also true, never reached</text>
+
+  <!-- code -->
+  <rect x="650" y="400" width="490" height="168" fill="#141421"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#F6F6F6">
+    <text x="670" y="424">Sales Band =</text>
+    <text x="670" y="442"><tspan fill="#F39454">SWITCH</tspan> (</text>
+    <text x="698" y="460"><tspan fill="#F39454">TRUE</tspan> (),</text>
+    <text x="698" y="478">[Sales Amount] &gt;= 1000, <tspan fill="#C9DCE7">"High"</tspan>,</text>
+    <text x="698" y="496">[Sales Amount] &gt;= 100, <tspan fill="#C9DCE7">"Medium"</tspan>,</text>
+    <text x="698" y="514">[Sales Amount] &gt;= 1, <tspan fill="#C9DCE7">"Low"</tspan>,</text>
+    <text x="698" y="532"><tspan fill="#C9DCE7">"No sales"</tspan></text>
+    <text x="670" y="550">)</text>
+  </g>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#70706F">
+    <text x="1120" y="460" text-anchor="end">compare to TRUE</text>
+    <text x="1120" y="532" text-anchor="end">else (optional)</text>
+  </g>
+
+  <use href="#brand-arrow" x="650" y="576"/>
+  <text x="676" y="592" font-size="17" font-weight="700" fill="#141421">The first TRUE condition wins</text>
+  <text x="650" y="614" font-size="14" fill="#141421">Order matters: put the most restrictive condition first.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="636" x2="1140" y2="636" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="672" font-size="20" fill="#141421">Top to bottom. <tspan font-weight="700">First match wins.</tspan></text>
+  <text x="1140" y="671" font-size="14" fill="#70706F" text-anchor="end">No match and no else value? SWITCH returns BLANK ().</text>
+</svg>

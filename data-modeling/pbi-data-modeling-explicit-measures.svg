@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arrow-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Explicit measures</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Explicit measures</text>
+  <rect x="346" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">The developer types the summarization formula. The result is calculated at query time, never stored.</text>
+
+  <line x1="600" y1="170" x2="600" y2="490" stroke="#D7D8D8" stroke-width="1"/>
+
+  <!-- ==================== LEFT: anatomy ==================== -->
+  <text x="60" y="190" font-size="20" font-weight="700" fill="#141421">Anatomy <tspan font-size="14" font-weight="400" fill="#70706F">an aggregation measure</tspan></text>
+
+  <rect x="60" y="210" width="490" height="96" fill="#141421"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="18" fill="#F6F6F6">
+    <text x="80" y="246">Revenue (€) =</text>
+    <text x="108" y="280"><tspan fill="#F39454">SUM</tspan> ( <tspan fill="#C9DCE7">Sales[Revenue]</tspan> )</text>
+  </g>
+  <g font-size="11" font-weight="700" fill="#141421" text-anchor="middle">
+    <circle cx="135" cy="222" r="9" fill="#F39454"/><text x="135" y="226">1</text>
+    <circle cx="123" cy="296" r="9" fill="#F39454"/><text x="123" y="300">2</text>
+    <circle cx="236" cy="296" r="9" fill="#F39454"/><text x="236" y="300">3</text>
+    <circle cx="372" cy="275" r="9" fill="#F39454"/><text x="372" y="279">4</text>
+  </g>
+
+  <g font-size="14" fill="#141421">
+    <g font-size="11" font-weight="700" text-anchor="middle">
+      <circle cx="69" cy="330" r="9" fill="#F39454"/><text x="69" y="334">1</text>
+      <circle cx="69" cy="356" r="9" fill="#F39454"/><text x="69" y="360">2</text>
+      <circle cx="69" cy="382" r="9" fill="#F39454"/><text x="69" y="386">3</text>
+      <circle cx="69" cy="408" r="9" fill="#F39454"/><text x="69" y="412">4</text>
+    </g>
+    <text x="88" y="335"><tspan font-weight="700">Measure name</tspan>, referenced unqualified: <tspan font-family="Consolas, 'Courier New', monospace" font-size="13">[Revenue (€)]</tspan></text>
+    <text x="88" y="361"><tspan font-weight="700">One type of aggregation</tspan>: SUM, AVERAGE, COUNT, …</text>
+    <text x="88" y="387"><tspan font-weight="700">One single column</tspan>, fully qualified: <tspan font-family="Consolas, 'Courier New', monospace" font-size="13">Sales[Revenue]</tspan></text>
+    <text x="88" y="413"><tspan font-weight="700">Returns a scalar value</tspan></text>
+  </g>
+
+  <!-- aggregation functions -->
+  <g font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">
+    <rect x="60" y="440" width="58" height="26" rx="13" fill="#FFFFFF" stroke="#D7D8D8"/><text x="89" y="457">SUM</text>
+    <rect x="126" y="440" width="82" height="26" rx="13" fill="#FFFFFF" stroke="#D7D8D8"/><text x="167" y="457">AVERAGE</text>
+    <rect x="216" y="440" width="58" height="26" rx="13" fill="#FFFFFF" stroke="#D7D8D8"/><text x="245" y="457">MIN</text>
+    <rect x="282" y="440" width="58" height="26" rx="13" fill="#FFFFFF" stroke="#D7D8D8"/><text x="311" y="457">MAX</text>
+    <rect x="348" y="440" width="66" height="26" rx="13" fill="#FFFFFF" stroke="#D7D8D8"/><text x="381" y="457">COUNT</text>
+    <rect x="422" y="440" width="128" height="26" rx="13" fill="#FFFFFF" stroke="#D7D8D8"/><text x="486" y="457">DISTINCTCOUNT</text>
+  </g>
+  <text x="60" y="486" font-size="13" fill="#70706F">The fastest way of aggregating.</text>
+
+  <!-- ==================== RIGHT: query time ==================== -->
+  <text x="650" y="190" font-size="20" font-weight="700" fill="#141421">At query time <tspan font-size="14" font-weight="400" fill="#70706F">calculated, not stored</tspan></text>
+
+  <!-- report -->
+  <rect x="650" y="210" width="210" height="36" fill="#141421"/>
+  <g font-size="14" font-weight="700" fill="#F6F6F6">
+    <text x="664" y="233">Category</text>
+    <text x="848" y="233" text-anchor="end">Revenue (€)</text>
+  </g>
+  <rect x="650" y="246" width="210" height="102" fill="#FFFFFF"/>
+  <rect x="650" y="280" width="210" height="34" fill="#F39454" fill-opacity="0.18"/>
+  <g stroke="#D7D8D8"><line x1="650" y1="280" x2="860" y2="280"/><line x1="650" y1="314" x2="860" y2="314"/></g>
+  <g font-size="15" fill="#141421">
+    <text x="664" y="268">Bikes</text><text x="848" y="268" text-anchor="end">1,600</text>
+    <text x="664" y="302" font-weight="700">Accessories</text>
+    <text x="664" y="336">Clothing</text><text x="848" y="336" text-anchor="end">150</text>
+  </g>
+  <rect x="780" y="280" width="80" height="34" fill="none" stroke="#F39454" stroke-width="2"/>
+  <text x="848" y="303" font-size="17" font-weight="700" fill="#141421" text-anchor="end">250</text>
+
+  <!-- query -->
+  <path d="M862 297 C895 297, 900 280, 938 280" fill="none" stroke="#F39454" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow-head)"/>
+  <text x="900" y="270" font-size="12" font-weight="700" fill="#F39454" text-anchor="middle">query</text>
+
+  <!-- Sales[Revenue] -->
+  <rect x="940" y="210" width="200" height="36" fill="#141421"/>
+  <text x="956" y="233" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6">Sales[Revenue]</text>
+  <rect x="940" y="246" width="200" height="150" fill="#FFFFFF"/>
+  <rect x="940" y="276" width="200" height="30" fill="#F39454" fill-opacity="0.18"/>
+  <rect x="940" y="336" width="200" height="60" fill="#F39454" fill-opacity="0.18"/>
+  <g stroke="#D7D8D8">
+    <line x1="940" y1="276" x2="1140" y2="276"/><line x1="940" y1="306" x2="1140" y2="306"/>
+    <line x1="940" y1="336" x2="1140" y2="336"/><line x1="940" y1="366" x2="1140" y2="366"/>
+  </g>
+  <g font-size="14" fill="#141421" fill-opacity="0.3" text-anchor="end">
+    <text x="1128" y="266">1,600</text>
+    <text x="1128" y="326">150</text>
+  </g>
+  <g font-size="14" font-weight="700" fill="#141421" text-anchor="end">
+    <text x="1128" y="296">120</text>
+    <text x="1128" y="356">80</text>
+    <text x="1128" y="386">50</text>
+  </g>
+  <g font-size="12" fill="#70706F">
+    <text x="956" y="296">Helmet</text><text x="956" y="356">Lights</text><text x="956" y="386">Bottle</text>
+  </g>
+  <text x="1140" y="416" font-size="13" fill="#70706F" text-anchor="end">SUM over the visible rows: 120 + 80 + 50 = 250</text>
+
+  <!-- properties -->
+  <rect x="650" y="434" width="235" height="52" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="664" y="456" font-size="14" font-weight="700" fill="#141421">Calculated at query time</text>
+  <text x="664" y="474" font-size="12" fill="#70706F">on demand, for every cell of a visual</text>
+  <rect x="905" y="434" width="235" height="52" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="919" y="456" font-size="14" font-weight="700" fill="#141421">No storage needed</text>
+  <text x="919" y="474" font-size="12" fill="#70706F">but processing power at query time</text>
+
+  <!-- ==================== Types of explicit measures ==================== -->
+  <line x1="60" y1="504" x2="1140" y2="504" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="528" font-size="14" font-weight="700" fill="#141421">Types of explicit measures</text>
+  <g font-size="15" font-weight="700" fill="#141421">
+    <rect x="60" y="540" width="264" height="44" fill="#F39454"/>
+    <text x="76" y="567">1  Aggregation <tspan font-size="12" font-weight="400">this page · fastest</tspan></text>
+    <rect x="332" y="540" width="264" height="44" fill="#FFFFFF" stroke="#D7D8D8"/>
+    <text x="348" y="567">2  Iteration</text>
+    <rect x="604" y="540" width="264" height="44" fill="#FFFFFF" stroke="#D7D8D8"/>
+    <text x="620" y="567">3  CALCULATE</text>
+    <rect x="876" y="540" width="264" height="44" fill="#FFFFFF" stroke="#D7D8D8"/>
+    <text x="892" y="567">4  Time intelligence</text>
+  </g>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="616" x2="1140" y2="616" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="652" font-size="20" fill="#141421">Explicit measures are <tspan font-weight="700">calculated at query time</tspan>, never stored.</text>
+  <text x="1140" y="651" font-size="14" fill="#70706F" text-anchor="end">Next: Iteration measures</text>
+</svg>

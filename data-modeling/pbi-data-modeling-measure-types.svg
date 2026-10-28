@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arrow-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Types of measures</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Types of measures</text>
+  <rect x="352" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">DAX is used in two scenarios: calculated columns and measures. Measures come in several types.</text>
+
+  <!-- ==================== Calculated columns ==================== -->
+  <rect x="60" y="168" width="120" height="304" fill="#C9DCE7"/>
+  <g text-anchor="middle">
+    <text x="120" y="306" font-size="15" font-weight="700" fill="#141421">Calculated</text>
+    <text x="120" y="326" font-size="15" font-weight="700" fill="#141421">columns</text>
+    <text x="120" y="354" font-size="12" fill="#70706F">row context,</text>
+    <text x="120" y="370" font-size="12" fill="#70706F">stored in the model</text>
+  </g>
+
+  <!-- ==================== Implicit ==================== -->
+  <rect x="200" y="168" width="160" height="36" fill="#70706F"/>
+  <text x="280" y="191" font-size="15" font-weight="700" fill="#F6F6F6" text-anchor="middle">Implicit</text>
+  <rect x="200" y="214" width="160" height="258" fill="#D7D8D8"/>
+  <g font-size="14" font-weight="700" fill="#141421" text-anchor="middle">
+    <text x="280" y="306">Sum of …</text>
+    <text x="280" y="328">Average of …</text>
+    <text x="280" y="350">Max of …</text>
+  </g>
+  <text x="280" y="378" font-size="12" fill="#70706F" text-anchor="middle">drag &amp; drop a column</text>
+  <rect x="216" y="414" width="128" height="26" rx="13" fill="#FFFFFF" stroke="#F39454" stroke-width="2"/>
+  <text x="280" y="432" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">✗ Not recommended</text>
+
+  <!-- ==================== Explicit ==================== -->
+  <rect x="380" y="168" width="760" height="36" fill="#141421"/>
+  <text x="760" y="191" font-size="15" font-weight="700" fill="#F6F6F6" text-anchor="middle">Explicit <tspan font-weight="400" fill="#D7D8D8">  recommended</tspan></text>
+  <rect x="380" y="214" width="760" height="258" fill="#FFFFFF" stroke="#D7D8D8"/>
+
+  <!-- card 1: Aggregation -->
+  <rect x="392" y="226" width="175" height="34" fill="#F39454"/>
+  <text x="479.5" y="248" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">Σ  Aggregation</text>
+  <rect x="392" y="260" width="175" height="200" fill="#F6F6F6"/>
+  <text x="406" y="288" font-size="14" font-weight="700" fill="#141421">1 aggregation</text>
+  <text x="406" y="306" font-size="14" font-weight="700" fill="#141421">1 column</text>
+  <rect x="400" y="322" width="159" height="28" fill="#141421"/>
+  <text x="410" y="341" font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#F6F6F6"><tspan fill="#F39454">SUM</tspan> ( ColumnName )</text>
+  <text x="406" y="378" font-size="13" fill="#141421">One function on</text>
+  <text x="406" y="396" font-size="13" fill="#141421">one column.</text>
+
+  <!-- card 2: Iteration -->
+  <rect x="579" y="226" width="175" height="34" fill="#F39454"/>
+  <text x="666.5" y="248" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">↻  Iteration</text>
+  <rect x="579" y="260" width="175" height="200" fill="#F6F6F6"/>
+  <text x="593" y="288" font-size="14" font-weight="700" fill="#141421"># aggregations</text>
+  <text x="593" y="306" font-size="14" font-weight="700" fill="#141421"># columns</text>
+  <rect x="587" y="322" width="159" height="76" fill="#141421"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#F6F6F6">
+    <text x="597" y="341"><tspan fill="#F39454">SUMX</tspan> (</text>
+    <text x="611" y="357">Table,</text>
+    <text x="611" y="373">Expression</text>
+    <text x="597" y="389">)</text>
+  </g>
+  <text x="593" y="420" font-size="13" fill="#141421">Iterates row by row,</text>
+  <text x="593" y="436" font-size="13" fill="#141421">stores subresults,</text>
+  <text x="593" y="452" font-size="13" fill="#141421">aggregates after.</text>
+
+  <!-- card 3: CALCULATE -->
+  <rect x="766" y="226" width="175" height="34" fill="#F39454"/>
+  <text x="853.5" y="248" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">fx  CALCULATE</text>
+  <rect x="766" y="260" width="175" height="200" fill="#F6F6F6"/>
+  <rect x="774" y="272" width="159" height="92" fill="#141421"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#F6F6F6">
+    <text x="784" y="291"><tspan fill="#F39454">CALCULATE</tspan> (</text>
+    <text x="798" y="307">Expression,</text>
+    <text x="798" y="323">[Filter1],</text>
+    <text x="798" y="339">…</text>
+    <text x="784" y="355">)</text>
+  </g>
+  <text x="780" y="388" font-size="13" fill="#141421">Manipulates the</text>
+  <text x="780" y="404" font-size="13" fill="#141421">initial filters set by</text>
+  <text x="780" y="420" font-size="13" fill="#141421">the report before</text>
+  <text x="780" y="436" font-size="13" fill="#141421">calculating.</text>
+
+  <!-- card 4: Time intelligence -->
+  <rect x="953" y="226" width="175" height="34" fill="#F39454"/>
+  <text x="1040.5" y="248" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">Time intelligence</text>
+  <rect x="953" y="260" width="175" height="200" fill="#F6F6F6"/>
+  <g font-size="13" font-weight="700" fill="#141421">
+    <text x="967" y="286">Functions</text>
+    <text x="967" y="330">Filters</text>
+    <text x="967" y="374">Offsets</text>
+    <text x="967" y="432">Hand written</text>
+  </g>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#70706F">
+    <text x="967" y="303">TOTALYTD ( … )</text>
+    <text x="967" y="347">DATESYTD, DATESxxx</text>
+    <text x="967" y="391">DATEADD,</text>
+    <text x="967" y="407">PARALLELPERIOD</text>
+    <text x="967" y="449">CALCULATE ( … )</text>
+  </g>
+
+  <!-- ==================== Characteristics ==================== -->
+  <g font-size="13" font-weight="700" fill="#141421" text-anchor="middle">
+    <line x1="479.5" y1="474" x2="479.5" y2="488" stroke="#F39454" stroke-width="2"/>
+    <rect x="424.5" y="488" width="110" height="26" rx="13" fill="#FFFFFF" stroke="#F39454" stroke-width="2"/>
+    <text x="479.5" y="506">fastest</text>
+    <line x1="666.5" y1="474" x2="666.5" y2="488" stroke="#F39454" stroke-width="2"/>
+    <rect x="611.5" y="488" width="110" height="26" rx="13" fill="#FFFFFF" stroke="#F39454" stroke-width="2"/>
+    <text x="666.5" y="506">slowest</text>
+    <line x1="853.5" y1="474" x2="853.5" y2="488" stroke="#F39454" stroke-width="2"/>
+    <rect x="798.5" y="488" width="110" height="26" rx="13" fill="#FFFFFF" stroke="#F39454" stroke-width="2"/>
+    <text x="853.5" y="506">manipulation</text>
+    <line x1="1040.5" y1="474" x2="1040.5" y2="488" stroke="#F39454" stroke-width="2"/>
+    <rect x="985.5" y="488" width="110" height="26" rx="13" fill="#FFFFFF" stroke="#F39454" stroke-width="2"/>
+    <text x="1040.5" y="506">time-based</text>
+  </g>
+  <g font-size="13" fill="#70706F" text-anchor="middle">
+    <text x="479.5" y="538">Aggregation functions</text>
+    <text x="479.5" y="556">1 Σ · 1 column</text>
+    <text x="666.5" y="538">Aggregation after iteration</text>
+    <text x="666.5" y="556"># Σ · # columns</text>
+    <text x="853.5" y="538">Neglect</text>
+    <text x="853.5" y="556">Neglect + Replace</text>
+    <text x="853.5" y="574">Respect + Add</text>
+    <text x="1040.5" y="538">Functions</text>
+    <text x="1040.5" y="556">Filters</text>
+    <text x="1040.5" y="574">Offsets</text>
+  </g>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="616" x2="1140" y2="616" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="652" font-size="20" fill="#141421">Always write <tspan font-weight="700">explicit</tspan> measures, and know which type you are writing.</text>
+  <text x="1140" y="651" font-size="14" fill="#70706F" text-anchor="end">Implicit measures: discouraged for the entire model</text>
+</svg>

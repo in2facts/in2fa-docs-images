@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <g id="brand-arrow">
+      <path d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/>
+      <rect x="15" y="3" width="2.5" height="13" fill="#F39454"/>
+    </g>
+    <path id="funnel" d="M0 0 H14 L9 6 V13 L5 11 V6 Z"/>
+    <g id="step-arrow">
+      <path d="M0 -14 H36 V-26 L62 0 L36 26 V14 H0 Z" fill="#70706F"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Calculate – NEGLECT + REPLACE</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling · 1/2</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Neglect + replace: FILTER</text>
+  <rect x="532" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">FILTER ( ALL ( Products[Color] ), Products[Color] = "Red" ) replaces the selected color in three steps.</text>
+
+  <!-- ==================== Stage headings ==================== -->
+  <g font-size="15" font-weight="700" fill="#141421">
+    <text x="60" y="186">Initial filter</text>
+    <text x="300" y="186">TABLE</text>
+    <text x="580" y="186">FilterExpression</text>
+    <text x="940" y="186">FILTER result</text>
+  </g>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#70706F">
+    <text x="60" y="208">set by the report</text>
+    <text x="300" y="208"><tspan fill="#F39454">ALL</tspan> ( Products[Color] )</text>
+    <text x="580" y="208">Products[Color] = "Red"</text>
+    <text x="940" y="208"><tspan fill="#F39454">FILTER</tspan> ( … )</text>
+  </g>
+
+  <!-- ==================== A. initial filter ==================== -->
+  <rect x="60" y="230" width="150" height="30" fill="#141421"/>
+  <text x="74" y="250" font-size="14" font-weight="700" fill="#F6F6F6">Color</text>
+  <use href="#funnel" x="184" y="238" fill="#F39454"/>
+  <rect x="60" y="260" width="150" height="24" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="74" y="277" font-size="14" fill="#141421">Black</text>
+
+  <!-- step 1 -->
+  <use href="#step-arrow" x="222" y="365"/>
+  <text x="246" y="370" font-size="16" font-weight="700" fill="#F6F6F6">1</text>
+  <text x="250" y="410" font-size="12" font-weight="700" fill="#141421" text-anchor="middle">Neglect:</text>
+  <text x="250" y="426" font-size="12" fill="#70706F" text-anchor="middle">clear the filter</text>
+
+  <!-- ==================== B. ALL ==================== -->
+  <rect x="300" y="230" width="180" height="30" fill="#141421"/>
+  <text x="314" y="250" font-size="14" font-weight="700" fill="#F6F6F6">Color</text>
+  <rect x="300" y="260" width="180" height="240" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <g stroke="#D7D8D8">
+    <line x1="300" y1="284" x2="480" y2="284"/><line x1="300" y1="308" x2="480" y2="308"/><line x1="300" y1="332" x2="480" y2="332"/>
+    <line x1="300" y1="356" x2="480" y2="356"/><line x1="300" y1="380" x2="480" y2="380"/><line x1="300" y1="404" x2="480" y2="404"/>
+    <line x1="300" y1="428" x2="480" y2="428"/><line x1="300" y1="452" x2="480" y2="452"/><line x1="300" y1="476" x2="480" y2="476"/>
+  </g>
+  <g font-size="14" fill="#141421">
+    <text x="314" y="277">NA</text><text x="314" y="301">Black</text><text x="314" y="325">Silver</text>
+    <text x="314" y="349">Red</text><text x="314" y="373">Multi</text><text x="314" y="397">Yellow</text>
+    <text x="314" y="421">Silver/Black</text><text x="314" y="445">Blue</text><text x="314" y="469">White</text>
+    <text x="314" y="493">Grey</text>
+  </g>
+
+  <!-- step 2 -->
+  <use href="#step-arrow" x="497" y="365"/>
+  <text x="521" y="370" font-size="16" font-weight="700" fill="#F6F6F6">2</text>
+  <text x="530" y="410" font-size="12" font-weight="700" fill="#141421" text-anchor="middle">Iterate:</text>
+  <text x="530" y="426" font-size="12" fill="#70706F" text-anchor="middle">ask row by row</text>
+
+  <!-- ==================== C. FilterExpression ==================== -->
+  <rect x="580" y="230" width="280" height="30" fill="#141421"/>
+  <g font-size="14" font-weight="700" fill="#F6F6F6">
+    <text x="594" y="250">Color</text>
+    <text x="846" y="250" text-anchor="end">FilterExpression</text>
+  </g>
+  <rect x="580" y="260" width="280" height="240" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <rect x="580" y="332" width="280" height="24" fill="#F39454" fill-opacity="0.18"/>
+  <g stroke="#D7D8D8">
+    <line x1="580" y1="284" x2="860" y2="284"/><line x1="580" y1="308" x2="860" y2="308"/><line x1="580" y1="332" x2="860" y2="332"/>
+    <line x1="580" y1="356" x2="860" y2="356"/><line x1="580" y1="380" x2="860" y2="380"/><line x1="580" y1="404" x2="860" y2="404"/>
+    <line x1="580" y1="428" x2="860" y2="428"/><line x1="580" y1="452" x2="860" y2="452"/><line x1="580" y1="476" x2="860" y2="476"/>
+    <line x1="720" y1="260" x2="720" y2="500"/>
+  </g>
+  <g font-size="14" fill="#141421">
+    <text x="594" y="277">NA</text><text x="594" y="301">Black</text><text x="594" y="325">Silver</text>
+    <text x="594" y="349" font-weight="700">Red</text><text x="594" y="373">Multi</text><text x="594" y="397">Yellow</text>
+    <text x="594" y="421">Silver/Black</text><text x="594" y="445">Blue</text><text x="594" y="469">White</text>
+    <text x="594" y="493">Grey</text>
+  </g>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#70706F" text-anchor="end">
+    <text x="846" y="277">FALSE</text><text x="846" y="301">FALSE</text><text x="846" y="325">FALSE</text>
+    <text x="846" y="349" font-weight="700" fill="#F39454">TRUE</text><text x="846" y="373">FALSE</text><text x="846" y="397">FALSE</text>
+    <text x="846" y="421">FALSE</text><text x="846" y="445">FALSE</text><text x="846" y="469">FALSE</text>
+    <text x="846" y="493">FALSE</text>
+  </g>
+  <rect x="580" y="332" width="280" height="24" fill="none" stroke="#F39454" stroke-width="2"/>
+
+  <!-- step 3 -->
+  <use href="#step-arrow" x="871" y="365"/>
+  <text x="895" y="370" font-size="16" font-weight="700" fill="#F6F6F6">3</text>
+  <text x="904" y="410" font-size="12" font-weight="700" fill="#141421" text-anchor="middle">Filter:</text>
+  <text x="904" y="426" font-size="12" fill="#70706F" text-anchor="middle">keep TRUE</text>
+
+  <!-- ==================== D. result ==================== -->
+  <rect x="940" y="230" width="200" height="30" fill="#141421"/>
+  <g font-size="13" font-weight="700" fill="#F6F6F6">
+    <text x="952" y="250">Color</text>
+    <text x="1128" y="250" text-anchor="end">FilterExpression</text>
+  </g>
+  <use href="#funnel" x="1006" y="238" fill="#F39454"/>
+  <rect x="940" y="260" width="200" height="24" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="2"/>
+  <text x="952" y="277" font-size="14" font-weight="700" fill="#141421">Red</text>
+  <text x="1128" y="277" font-family="Consolas, 'Courier New', monospace" font-size="13" font-weight="700" fill="#F39454" text-anchor="end">TRUE</text>
+  <text x="940" y="310" font-size="13" fill="#70706F">A table with only the</text>
+  <text x="940" y="328" font-size="13" fill="#70706F">rows that returned TRUE</text>
+
+  <!-- ==================== Code ==================== -->
+  <rect x="60" y="522" width="580" height="78" fill="#141421"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6">
+    <text x="80" y="546">Revenue Red = <tspan fill="#F39454">CALCULATE</tspan> ( [Revenue],</text>
+    <text x="108" y="566"><tspan fill="#F39454">FILTER</tspan> ( <tspan fill="#F39454">ALL</tspan> ( <tspan fill="#C9DCE7">Products[Color]</tspan> ),</text>
+    <text x="173" y="586"><tspan fill="#C9DCE7">Products[Color] = "Red"</tspan> ) )</text>
+  </g>
+
+  <use href="#brand-arrow" x="670" y="522"/>
+  <text x="696" y="538" font-size="17" font-weight="700" fill="#141421">CALCULATE propagates the new filter</text>
+  <text x="670" y="564" font-size="14" fill="#141421">Red replaces Black, only during this calculation.</text>
+  <text x="670" y="584" font-size="14" fill="#141421">Then [Revenue] is evaluated on the sales of red products.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="616" x2="1140" y2="616" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="652" font-size="20" fill="#141421">Neglect the old filter, <tspan font-weight="700">replace</tspan> it with a new one.</text>
+  <text x="1140" y="651" font-size="14" fill="#70706F" text-anchor="end">Next: the result in the report</text>
+</svg>

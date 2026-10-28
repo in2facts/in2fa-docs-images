@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arrow-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <!-- 12 month cells, 78px each -->
+    <g id="months">
+      <rect x="0" y="0" width="936" height="36" fill="#FFFFFF"/>
+      <g stroke="#D7D8D8" stroke-width="1">
+        <line x1="78" y1="0" x2="78" y2="36"/><line x1="156" y1="0" x2="156" y2="36"/><line x1="234" y1="0" x2="234" y2="36"/>
+        <line x1="312" y1="0" x2="312" y2="36"/><line x1="390" y1="0" x2="390" y2="36"/><line x1="468" y1="0" x2="468" y2="36"/>
+        <line x1="546" y1="0" x2="546" y2="36"/><line x1="624" y1="0" x2="624" y2="36"/><line x1="702" y1="0" x2="702" y2="36"/>
+        <line x1="780" y1="0" x2="780" y2="36"/><line x1="858" y1="0" x2="858" y2="36"/>
+      </g>
+      <rect x="0" y="0" width="936" height="36" fill="none" stroke="#D7D8D8"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Date offsets</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Date offsets</text>
+  <rect x="266" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Both functions shift the dates back one year, but they handle a partial period differently.</text>
+
+  <!-- ==================== Month labels ==================== -->
+  <g font-size="12" fill="#70706F" text-anchor="middle">
+    <text x="243" y="190">Jan</text><text x="321" y="190">Feb</text><text x="399" y="190">Mar</text>
+    <text x="477" y="190">Apr</text><text x="555" y="190">May</text><text x="633" y="190">Jun</text>
+    <text x="711" y="190">Jul</text><text x="789" y="190">Aug</text><text x="867" y="190">Sep</text>
+    <text x="945" y="190">Oct</text><text x="1023" y="190">Nov</text><text x="1101" y="190">Dec</text>
+  </g>
+
+  <!-- ==================== Row 1: current filter ==================== -->
+  <text x="60" y="216" font-size="15" font-weight="700" fill="#141421">Current filter</text>
+  <text x="60" y="233" font-size="13" fill="#70706F">2026</text>
+  <use href="#months" x="204" y="200"/>
+  <rect x="204" y="200" width="194" height="36" fill="#F39454"/>
+  <text x="216" y="223" font-size="13" font-weight="700" fill="#141421">Jan 1 – Mar 15</text>
+  <text x="420" y="223" font-size="13" fill="#70706F">year to date, a partial year</text>
+
+  <!-- Mar 15 guide -->
+  <line x1="398" y1="196" x2="398" y2="380" stroke="#F39454" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- shift arrows -->
+  <path d="M230 238 C230 256, 230 256, 230 266" fill="none" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+  <text x="240" y="258" font-size="12" font-weight="700" fill="#F39454">−1 YEAR</text>
+
+  <!-- ==================== Row 2: DATEADD ==================== -->
+  <text x="60" y="286" font-size="15" font-weight="700" fill="#141421">DATEADD</text>
+  <text x="60" y="303" font-size="13" fill="#70706F">2025</text>
+  <use href="#months" x="204" y="270"/>
+  <rect x="204" y="270" width="194" height="36" fill="#141421"/>
+  <text x="216" y="293" font-size="13" font-weight="700" fill="#F6F6F6">Jan 1 – Mar 15</text>
+  <text x="420" y="293" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#70706F">DATEADD ( Dates[Date], -1, YEAR )</text>
+  <text x="1128" y="293" font-size="13" font-weight="700" fill="#141421" text-anchor="end">same slice</text>
+
+  <!-- ==================== Row 3: PARALLELPERIOD ==================== -->
+  <text x="60" y="356" font-size="15" font-weight="700" fill="#141421">PARALLELPERIOD</text>
+  <text x="60" y="373" font-size="13" fill="#70706F">2025</text>
+  <use href="#months" x="204" y="340"/>
+  <rect x="204" y="340" width="194" height="36" fill="#141421"/>
+  <rect x="398" y="340" width="742" height="36" fill="#70706F"/>
+  <text x="216" y="363" font-size="13" font-weight="700" fill="#F6F6F6">Jan 1 – Dec 31</text>
+  <text x="420" y="363" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6">PARALLELPERIOD ( Dates[Date], -1, YEAR )</text>
+  <text x="1128" y="363" font-size="13" font-weight="700" fill="#F6F6F6" text-anchor="end">expanded to full year</text>
+
+  <text x="204" y="400" font-size="13" fill="#70706F">DATEADD keeps the same number of days. PARALLELPERIOD completes the partial period up to the full year.</text>
+
+  <!-- ==================== Comparison table ==================== -->
+  <rect x="60" y="420" width="1080" height="32" fill="#141421"/>
+  <g font-size="14" font-weight="700" fill="#F6F6F6">
+    <text x="376" y="441">DATEADD</text>
+    <text x="766" y="441">PARALLELPERIOD</text>
+  </g>
+  <rect x="60" y="452" width="1080" height="136" fill="#FFFFFF"/>
+  <g stroke="#D7D8D8" stroke-width="1">
+    <line x1="60" y1="486" x2="1140" y2="486"/><line x1="60" y1="520" x2="1140" y2="520"/><line x1="60" y1="554" x2="1140" y2="554"/>
+    <line x1="360" y1="420" x2="360" y2="588"/><line x1="750" y1="420" x2="750" y2="588"/>
+  </g>
+  <g font-size="14" fill="#141421">
+    <text x="76" y="474" font-weight="700">Partial periods</text>
+    <text x="376" y="474">Preserved: the same slice</text>
+    <text x="766" y="474">Expanded to the full period</text>
+    <text x="76" y="508" font-weight="700">DAY interval</text>
+    <text x="376" y="508">Supported</text>
+    <text x="766" y="508">Not supported: MONTH, QUARTER, YEAR only</text>
+    <text x="76" y="542" font-weight="700">Typical use</text>
+    <text x="376" y="542">Like-for-like, running totals, YTD</text>
+    <text x="766" y="542">Compare with a complete prior period</text>
+    <text x="76" y="576" font-weight="700">YTD vs full year</text>
+    <text x="376" y="576">Returns YTD of the prior year</text>
+    <text x="766" y="576">Returns the full prior year</text>
+  </g>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="610" x2="1140" y2="610" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="646" font-size="20" fill="#141421">DATEADD shifts the <tspan font-weight="700">slice</tspan>. PARALLELPERIOD returns the <tspan font-weight="700">whole period</tspan>.</text>
+  <text x="1140" y="645" font-size="14" fill="#70706F" text-anchor="end">Next: Whalebone curve</text>
+</svg>

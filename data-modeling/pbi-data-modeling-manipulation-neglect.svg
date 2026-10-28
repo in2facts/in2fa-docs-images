@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <g id="brand-arrow">
+      <path d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/>
+      <rect x="15" y="3" width="2.5" height="13" fill="#F39454"/>
+    </g>
+    <marker id="arrow-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <path id="funnel" d="M0 0 H14 L9 6 V13 L5 11 V6 Z"/>
+    <g id="products-header">
+      <rect x="0" y="0" width="380" height="36" fill="#141421"/>
+      <text x="16" y="23" font-size="14" font-weight="700" fill="#F6F6F6">Product</text>
+      <text x="170" y="23" font-size="14" font-weight="700" fill="#F6F6F6">Color</text>
+      <text x="364" y="23" font-size="14" font-weight="700" fill="#F6F6F6" text-anchor="end">Revenue</text>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Manipulation – NEGLECT</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Manipulation – NEGLECT</text>
+  <rect x="500" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">ALL ignores the filter on a column: all its values are visible again, as if the filter was never there.</text>
+
+  <!-- ==================== LEFT: initial filter context ==================== -->
+  <text x="60" y="190" font-size="20" font-weight="700" fill="#141421">Initial filter context <tspan font-size="14" font-weight="400" fill="#70706F">set by the report</tspan></text>
+
+  <rect x="60" y="206" width="250" height="28" fill="#FFFFFF" stroke="#F39454" stroke-width="2"/>
+  <use href="#funnel" x="72" y="213" fill="#F39454"/>
+  <text x="94" y="225" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421">'Products'[Color] = "Black"</text>
+
+  <use href="#products-header" x="60" y="250"/>
+  <rect x="60" y="286" width="380" height="170" fill="#FFFFFF"/>
+  <rect x="60" y="286" width="380" height="34" fill="#F39454" fill-opacity="0.18"/>
+  <rect x="60" y="354" width="380" height="34" fill="#F39454" fill-opacity="0.18"/>
+  <g stroke="#D7D8D8" stroke-width="1">
+    <line x1="60" y1="320" x2="440" y2="320"/><line x1="60" y1="354" x2="440" y2="354"/>
+    <line x1="60" y1="388" x2="440" y2="388"/><line x1="60" y1="422" x2="440" y2="422"/>
+  </g>
+  <g font-size="15" fill="#141421">
+    <text x="76" y="308">Bike</text><text x="230" y="308">Black</text><text x="424" y="308" text-anchor="end" font-weight="700">1,600</text>
+    <text x="76" y="376">Gloves</text><text x="230" y="376">Black</text><text x="424" y="376" text-anchor="end" font-weight="700">150</text>
+  </g>
+  <g font-size="15" fill="#141421" fill-opacity="0.3">
+    <text x="76" y="342">Helmet</text><text x="230" y="342">Red</text><text x="424" y="342" text-anchor="end">120</text>
+    <text x="76" y="410">Lights</text><text x="230" y="410">Silver</text><text x="424" y="410" text-anchor="end">80</text>
+    <text x="76" y="444">Bottle</text><text x="230" y="444">Blue</text><text x="424" y="444" text-anchor="end">50</text>
+  </g>
+  <text x="60" y="478" font-size="13" fill="#70706F">Only black products: Revenue = 1,750</text>
+
+  <!-- ==================== MIDDLE: ALL ==================== -->
+  <line x1="442" y1="371" x2="488" y2="371" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+  <text x="600" y="316" font-size="18" font-weight="700" fill="#F39454" text-anchor="middle">NEGLECT</text>
+  <rect x="490" y="330" width="220" height="82" fill="#141421"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#F6F6F6">
+    <text x="508" y="354"><tspan fill="#F39454">ALL</tspan> (</text>
+    <text x="526" y="376" fill="#C9DCE7">'Products'[Color]</text>
+    <text x="508" y="398">)</text>
+  </g>
+  <text x="600" y="434" font-size="13" fill="#70706F" text-anchor="middle">removes the filter on Color</text>
+  <line x1="712" y1="371" x2="758" y2="371" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+
+  <!-- ==================== RIGHT: new filter context ==================== -->
+  <text x="760" y="190" font-size="20" font-weight="700" fill="#141421">After ALL <tspan font-size="14" font-weight="400" fill="#70706F">filter neglected</tspan></text>
+
+  <g opacity="0.4">
+    <rect x="760" y="206" width="250" height="28" fill="#FFFFFF" stroke="#70706F" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <use href="#funnel" x="772" y="213" fill="#70706F"/>
+    <text x="794" y="225" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421">'Products'[Color] = "Black"</text>
+  </g>
+  <line x1="764" y1="220" x2="1006" y2="220" stroke="#F39454" stroke-width="2"/>
+  <text x="1140" y="225" font-size="13" font-weight="700" fill="#F39454" text-anchor="end">ignored</text>
+
+  <use href="#products-header" x="760" y="250"/>
+  <rect x="760" y="286" width="380" height="170" fill="#FFFFFF"/>
+  <g stroke="#D7D8D8" stroke-width="1">
+    <line x1="760" y1="320" x2="1140" y2="320"/><line x1="760" y1="354" x2="1140" y2="354"/>
+    <line x1="760" y1="388" x2="1140" y2="388"/><line x1="760" y1="422" x2="1140" y2="422"/>
+  </g>
+  <g font-size="15" fill="#141421">
+    <text x="776" y="308">Bike</text><text x="930" y="308">Black</text><text x="1124" y="308" text-anchor="end" font-weight="700">1,600</text>
+    <text x="776" y="342">Helmet</text><text x="930" y="342">Red</text><text x="1124" y="342" text-anchor="end" font-weight="700">120</text>
+    <text x="776" y="376">Gloves</text><text x="930" y="376">Black</text><text x="1124" y="376" text-anchor="end" font-weight="700">150</text>
+    <text x="776" y="410">Lights</text><text x="930" y="410">Silver</text><text x="1124" y="410" text-anchor="end" font-weight="700">80</text>
+    <text x="776" y="444">Bottle</text><text x="930" y="444">Blue</text><text x="1124" y="444" text-anchor="end" font-weight="700">50</text>
+  </g>
+  <rect x="760" y="250" width="380" height="206" fill="none" stroke="#F39454" stroke-width="2"/>
+  <text x="1140" y="478" font-size="13" fill="#70706F" text-anchor="end">All colors visible again: Revenue = 2,000</text>
+
+  <!-- ==================== Code ==================== -->
+  <rect x="60" y="494" width="1080" height="40" fill="#141421"/>
+  <text x="80" y="520" font-family="Consolas, 'Courier New', monospace" font-size="16" fill="#F6F6F6">Revenue All Colors = <tspan fill="#F39454">CALCULATE</tspan> ( [Revenue], <tspan fill="#F39454">ALL</tspan> ( <tspan fill="#C9DCE7">'Products'[Color]</tspan> ) )</text>
+
+  <!-- ==================== Explanation ==================== -->
+  <use href="#brand-arrow" x="60" y="548"/>
+  <text x="86" y="564" font-size="17" font-weight="700" fill="#141421">The filter is neglected</text>
+  <text x="60" y="588" font-size="14" fill="#141421">ALL removes every filter on 'Products'[Color]; nothing</text>
+  <text x="60" y="606" font-size="14" fill="#141421">is added in its place.</text>
+
+  <use href="#brand-arrow" x="650" y="548"/>
+  <text x="676" y="564" font-size="17" font-weight="700" fill="#141421">Only this column</text>
+  <text x="650" y="588" font-size="14" fill="#141421">Filters on other columns stay active.</text>
+  <text x="650" y="606" font-size="14" fill="#141421">REMOVEFILTERS ( 'Products'[Color] ) does the same in CALCULATE.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="622" x2="1140" y2="622" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="656" font-size="20" fill="#141421">ALL <tspan font-weight="700">neglects</tspan> the filter: as if it was never there.</text>
+  <text x="1140" y="655" font-size="14" fill="#70706F" text-anchor="end">Next: NEGLECT &amp; REPLACE</text>
+</svg>

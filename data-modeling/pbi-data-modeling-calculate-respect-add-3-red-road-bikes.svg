@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <g id="brand-arrow">
+      <path d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/>
+      <rect x="15" y="3" width="2.5" height="13" fill="#F39454"/>
+    </g>
+    <path id="funnel" d="M0 0 H14 L9 6 V13 L5 11 V6 Z"/>
+    <g id="step-arrow"><path d="M0 -14 H36 V-26 L62 0 L36 26 V14 H0 Z" fill="#70706F"/></g>
+  </defs>
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Calculate – RESPECT + ADD</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling · 3/3</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Respect + add: Red Road Bikes</text>
+  <rect x="573" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Respect the subcategory on the row, and add a second condition: it must also be Road Bikes.</text>
+  <rect x="60" y="170" width="580" height="314" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <rect x="60" y="170" width="580" height="44" fill="#C9DCE7"/>
+  <text x="76" y="190" font-size="16" font-weight="700" fill="#141421">Respect + Add</text>
+  <text x="76" y="207" font-size="12" fill="#70706F">Manipulation 3</text>
+  <rect x="520" y="184" width="12" height="12" fill="#141421"/>
+  <text x="540" y="195" font-size="13" fill="#141421">Color: <tspan font-weight="700">Black</tspan></text>
+  <g font-size="14" font-weight="700" fill="#141421">
+    <text x="76" y="234">Product Category</text>
+    <text x="76" y="251" font-weight="400" font-size="13">↪ Subcategory</text>
+    <text x="456" y="242" text-anchor="end">Revenue</text>
+    <text x="624" y="234" text-anchor="end">Revenue</text>
+    <text x="624" y="251" text-anchor="end" font-weight="400" font-size="13">Red Road Bikes</text>
+  </g>
+  <line x1="60" y1="258" x2="640" y2="258" stroke="#141421"/>
+  <text x="76" y="275" font-size="14" fill="#141421" font-weight="700">Accessories</text>
+  <text x="456" y="275" font-size="14" fill="#141421" text-anchor="end" font-weight="700">72,954</text>
+  <line x1="60" y1="282" x2="640" y2="282" stroke="#D7D8D8"/>
+  <text x="96" y="299" font-size="14" fill="#141421">Helmets</text>
+  <text x="456" y="299" font-size="14" fill="#141421" text-anchor="end">72,954</text>
+  <line x1="60" y1="306" x2="640" y2="306" stroke="#D7D8D8"/>
+  <text x="76" y="323" font-size="14" fill="#141421" font-weight="700">Bikes</text>
+  <text x="456" y="323" font-size="14" fill="#141421" text-anchor="end" font-weight="700">8,659,117</text>
+  <text x="624" y="323" font-size="14" font-weight="700" fill="#141421" text-anchor="end">7,646,303</text>
+  <line x1="60" y1="330" x2="640" y2="330" stroke="#D7D8D8"/>
+  <text x="96" y="347" font-size="14" fill="#141421">Mountain Bikes</text>
+  <text x="456" y="347" font-size="14" fill="#141421" text-anchor="end">4,879,678</text>
+  <rect x="60" y="354" width="580" height="24" fill="#F39454" fill-opacity="0.18"/>
+  <line x1="60" y1="354" x2="640" y2="354" stroke="#D7D8D8"/>
+  <text x="96" y="371" font-size="14" fill="#141421" font-weight="700">Road Bikes</text>
+  <text x="456" y="371" font-size="14" fill="#141421" text-anchor="end" font-weight="700">3,779,439</text>
+  <text x="624" y="371" font-size="14" font-weight="700" fill="#141421" text-anchor="end">7,646,303</text>
+  <line x1="60" y1="378" x2="640" y2="378" stroke="#D7D8D8"/>
+  <text x="76" y="395" font-size="14" fill="#141421" font-weight="700">Clothing</text>
+  <text x="456" y="395" font-size="14" fill="#141421" text-anchor="end" font-weight="700">106,341</text>
+  <line x1="60" y1="402" x2="640" y2="402" stroke="#D7D8D8"/>
+  <text x="96" y="419" font-size="14" fill="#141421">Gloves</text>
+  <text x="456" y="419" font-size="14" fill="#141421" text-anchor="end">35,021</text>
+  <line x1="60" y1="426" x2="640" y2="426" stroke="#D7D8D8"/>
+  <text x="96" y="443" font-size="14" fill="#141421">Shorts</text>
+  <text x="456" y="443" font-size="14" fill="#141421" text-anchor="end">71,320</text>
+  <line x1="60" y1="450" x2="640" y2="450" stroke="#141421"/>
+  <text x="76" y="467" font-size="14" fill="#141421" font-weight="700">Total</text>
+  <text x="456" y="467" font-size="14" fill="#141421" text-anchor="end" font-weight="700">8,838,412</text>
+  <text x="624" y="467" font-size="14" font-weight="700" fill="#141421" text-anchor="end">7,646,303</text>
+  <line x1="472" y1="214" x2="472" y2="474" stroke="#D7D8D8"/>
+  <rect x="472" y="214" width="168" height="260" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <rect x="472" y="354" width="168" height="24" fill="none" stroke="#F39454" stroke-width="2"/>
+  <text x="670" y="190" font-size="20" font-weight="700" fill="#141421">Truth table <tspan font-size="14" font-weight="400" fill="#70706F">both filters in AND</tspan></text>
+  <rect x="670" y="214" width="470" height="44" fill="#141421"/>
+  <g font-size="13" font-weight="700" fill="#F6F6F6">
+    <text x="684" y="241">Row value</text>
+    <text x="860" y="234" text-anchor="middle">respect</text>
+    <text x="860" y="250" text-anchor="middle" font-weight="400" font-size="11">= row value</text>
+    <text x="990" y="234" text-anchor="middle">add</text>
+    <text x="990" y="250" text-anchor="middle" font-weight="400" font-size="11">= "Road Bikes"</text>
+    <text x="1090" y="241" text-anchor="middle">AND</text>
+  </g>
+  <rect x="670" y="258" width="470" height="150" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="684" y="278" font-size="14" fill="#141421">Helmets</text>
+  <text x="860" y="278" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">true</text>
+  <text x="990" y="278" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#70706F" text-anchor="middle">false</text>
+  <text x="1090" y="278" font-family="Consolas, 'Courier New', monospace" font-size="13" font-weight="700" fill="#70706F" text-anchor="middle">false</text>
+  <line x1="670" y1="288" x2="1140" y2="288" stroke="#D7D8D8"/>
+  <text x="684" y="308" font-size="14" fill="#141421">Mountain Bikes</text>
+  <text x="860" y="308" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">true</text>
+  <text x="990" y="308" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#70706F" text-anchor="middle">false</text>
+  <text x="1090" y="308" font-family="Consolas, 'Courier New', monospace" font-size="13" font-weight="700" fill="#70706F" text-anchor="middle">false</text>
+  <rect x="670" y="318" width="470" height="30" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="2"/>
+  <text x="684" y="338" font-size="14" fill="#141421" font-weight="700">Road Bikes</text>
+  <text x="860" y="338" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">true</text>
+  <text x="990" y="338" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle" font-weight="700">true</text>
+  <text x="1090" y="338" font-family="Consolas, 'Courier New', monospace" font-size="13" font-weight="700" fill="#F39454" text-anchor="middle">TRUE</text>
+  <line x1="670" y1="348" x2="1140" y2="348" stroke="#D7D8D8"/>
+  <text x="684" y="368" font-size="14" fill="#141421">Gloves</text>
+  <text x="860" y="368" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">true</text>
+  <text x="990" y="368" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#70706F" text-anchor="middle">false</text>
+  <text x="1090" y="368" font-family="Consolas, 'Courier New', monospace" font-size="13" font-weight="700" fill="#70706F" text-anchor="middle">false</text>
+  <line x1="670" y1="378" x2="1140" y2="378" stroke="#D7D8D8"/>
+  <text x="684" y="398" font-size="14" fill="#141421">Shorts</text>
+  <text x="860" y="398" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">true</text>
+  <text x="990" y="398" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#70706F" text-anchor="middle">false</text>
+  <text x="1090" y="398" font-family="Consolas, 'Courier New', monospace" font-size="13" font-weight="700" fill="#70706F" text-anchor="middle">false</text>
+  <text x="670" y="432" font-size="13" fill="#141421">Only for Road Bikes both conditions are true.</text>
+  <text x="670" y="450" font-size="13" fill="#70706F">The subtotal Bikes and the Total contain Road Bikes,</text>
+  <text x="670" y="468" font-size="13" fill="#70706F">so they show the value as well.</text>
+  <rect x="60" y="500" width="580" height="100" fill="#141421"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#F6F6F6">
+    <text x="78" y="522">Revenue Red Road Bikes =</text>
+    <text x="78" y="540"><tspan fill="#F39454">CALCULATE</tspan> ( [Revenue Red],</text>
+    <text x="104" y="558"><tspan fill="#F39454">FILTER</tspan> ( <tspan fill="#F39454">VALUES</tspan> ( <tspan fill="#C9DCE7">Categories[ProductSubcategoryName]</tspan> ),</text>
+    <text x="163" y="576"><tspan fill="#C9DCE7">Categories[ProductSubcategoryName] = "Road Bikes"</tspan> ) )</text>
+  </g>
+  <use href="#brand-arrow" x="670" y="500"/>
+  <text x="696" y="516" font-size="17" font-weight="700" fill="#141421">Faster shortcut: KEEPFILTERS</text>
+  <text x="670" y="542" font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#141421"><tspan fill="#F39454">CALCULATE</tspan> ( [Revenue Red],</text>
+  <text x="696" y="560" font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#141421"><tspan fill="#F39454">KEEPFILTERS</tspan> ( Categories[ProductSubcategoryName]</text>
+  <text x="696" y="578" font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#141421">= "Road Bikes" ) )</text>
+  <text x="670" y="598" font-size="12" fill="#70706F">Same result, better performance than FILTER ( VALUES ( … ) ).</text>
+  <line x1="60" y1="616" x2="1140" y2="616" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="652" font-size="20" fill="#141421"><tspan font-weight="700">Respect</tspan> the row filter and <tspan font-weight="700">add</tspan> Road Bikes: both must be true.</text>
+  <text x="1140" y="651" font-size="14" fill="#70706F" text-anchor="end">Next: Time intelligence</text>
+</svg>

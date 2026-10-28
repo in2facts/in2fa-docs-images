@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <g id="brand-arrow">
+      <path d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/>
+      <rect x="15" y="3" width="2.5" height="13" fill="#F39454"/>
+    </g>
+    <marker id="arrow-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <path id="funnel" d="M0 0 H14 L9 6 V13 L5 11 V6 Z"/>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Calculate – NEGLECT + REPLACE</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling · 2/2</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Neglect + replace: Revenue Red</text>
+  <rect x="596" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Whatever color is selected in the report, Revenue Red always calculates the revenue of red products.</text>
+
+  <!-- ==================== Report: matrix ==================== -->
+  <rect x="60" y="170" width="580" height="300" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <rect x="60" y="170" width="580" height="44" fill="#C9DCE7"/>
+  <text x="76" y="190" font-size="16" font-weight="700" fill="#141421">Neglect + Replace</text>
+  <text x="76" y="207" font-size="12" fill="#70706F">Manipulation 2</text>
+
+  <line x1="60" y1="258" x2="640" y2="258" stroke="#141421"/>
+  <g font-size="14" font-weight="700" fill="#141421">
+    <text x="76" y="242">Product Category</text>
+    <text x="436" y="242" text-anchor="end">Revenue</text>
+    <text x="624" y="242" text-anchor="end">Revenue Red</text>
+  </g>
+  <g stroke="#D7D8D8"><line x1="60" y1="288" x2="640" y2="288"/><line x1="60" y1="318" x2="640" y2="318"/></g>
+  <line x1="60" y1="348" x2="640" y2="348" stroke="#141421"/>
+  <g font-size="15" fill="#141421">
+    <text x="76" y="278">Accessories</text><text x="436" y="278" text-anchor="end">31,176</text><text x="624" y="278" text-anchor="end" font-weight="700">31,421</text>
+    <text x="76" y="308">Bikes</text><text x="436" y="308" text-anchor="end">3,775,240</text><text x="624" y="308" text-anchor="end" font-weight="700">921,782</text>
+    <text x="76" y="338">Clothing</text><text x="436" y="338" text-anchor="end">44,674</text>
+    <text x="76" y="368" font-weight="700">Total</text><text x="436" y="368" text-anchor="end" font-weight="700">3,851,091</text><text x="624" y="368" text-anchor="end" font-weight="700">953,203</text>
+  </g>
+  <line x1="280" y1="258" x2="280" y2="378" stroke="#D7D8D8"/>
+  <line x1="452" y1="214" x2="452" y2="378" stroke="#D7D8D8"/>
+  <rect x="452" y="214" width="188" height="164" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="76" y="404" font-size="13" fill="#70706F">Revenue: black products · Revenue Red: red products</text>
+  <text x="76" y="424" font-size="13" fill="#70706F">Clothing has no red products, so the cell stays blank.</text>
+
+  <!-- ==================== Slicer: Color ==================== -->
+  <rect x="670" y="170" width="220" height="300" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <rect x="670" y="170" width="220" height="44" fill="#C9DCE7"/>
+  <text x="686" y="192" font-size="16" font-weight="700" fill="#141421">Products</text>
+  <text x="686" y="208" font-size="12" fill="#70706F">Color</text>
+  <g font-size="14" fill="#141421">
+    <rect x="686" y="230" width="12" height="12" fill="#141421" stroke="#70706F"/><text x="708" y="241" font-weight="700">Black</text>
+    <rect x="686" y="252" width="12" height="12" fill="#FFFFFF" stroke="#70706F"/><text x="708" y="263">Blue</text>
+    <rect x="686" y="274" width="12" height="12" fill="#FFFFFF" stroke="#70706F"/><text x="708" y="285">Grey</text>
+    <rect x="686" y="296" width="12" height="12" fill="#FFFFFF" stroke="#70706F"/><text x="708" y="307">Multi</text>
+    <rect x="686" y="318" width="12" height="12" fill="#FFFFFF" stroke="#70706F"/><text x="708" y="329">NA</text>
+    <rect x="686" y="340" width="12" height="12" fill="#FFFFFF" stroke="#70706F"/><text x="708" y="351">Red</text>
+    <rect x="686" y="362" width="12" height="12" fill="#FFFFFF" stroke="#70706F"/><text x="708" y="373">Silver</text>
+    <rect x="686" y="384" width="12" height="12" fill="#FFFFFF" stroke="#70706F"/><text x="708" y="395">Silver/Black</text>
+    <rect x="686" y="406" width="12" height="12" fill="#FFFFFF" stroke="#70706F"/><text x="708" y="417">White</text>
+    <rect x="686" y="428" width="12" height="12" fill="#FFFFFF" stroke="#70706F"/><text x="708" y="439">Yellow</text>
+  </g>
+
+  <!-- ==================== Inside Revenue Red ==================== -->
+  <rect x="920" y="170" width="220" height="300" fill="#FFFFFF" stroke="#F39454" stroke-width="2"/>
+  <text x="936" y="198" font-size="15" font-weight="700" fill="#141421">Inside Revenue Red</text>
+  <rect x="936" y="216" width="188" height="28" fill="#FFFFFF" stroke="#70706F" stroke-dasharray="5 4"/>
+  <use href="#funnel" x="946" y="223" fill="#70706F"/>
+  <text x="968" y="235" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#70706F">Color = "Black"</text>
+  <line x1="940" y1="230" x2="1120" y2="230" stroke="#F39454" stroke-width="2"/>
+  <text x="1030" y="264" font-size="12" font-weight="700" fill="#F39454" text-anchor="middle">neglect</text>
+  <line x1="1030" y1="270" x2="1030" y2="292" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+  <text x="1046" y="286" font-size="12" font-weight="700" fill="#F39454">replace</text>
+  <rect x="936" y="296" width="188" height="28" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="2"/>
+  <use href="#funnel" x="946" y="303" fill="#F39454"/>
+  <text x="968" y="315" font-family="Consolas, 'Courier New', monospace" font-size="13" font-weight="700" fill="#141421">Color = "Red"</text>
+  <text x="936" y="356" font-size="13" fill="#141421">The slicer still says Black,</text>
+  <text x="936" y="374" font-size="13" fill="#141421">but only for the duration of</text>
+  <text x="936" y="392" font-size="13" fill="#141421">this calculation the filter</text>
+  <text x="936" y="410" font-size="13" fill="#141421">becomes Red.</text>
+
+  <!-- ==================== Code ==================== -->
+  <rect x="60" y="490" width="580" height="104" fill="#141421"/>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6">
+    <text x="80" y="511" fill="#70706F">-- full syntax</text>
+    <text x="80" y="528"><tspan fill="#F39454">CALCULATE</tspan> ( [Revenue], <tspan fill="#F39454">FILTER</tspan> ( <tspan fill="#F39454">ALL</tspan> ( <tspan fill="#C9DCE7">Products[Color]</tspan> ),</text>
+    <text x="301" y="545"><tspan fill="#C9DCE7">Products[Color] = "Red"</tspan> ) )</text>
+    <text x="80" y="566" fill="#70706F">-- 1st shortcut</text>
+    <text x="216" y="566"><tspan fill="#F39454">CALCULATE</tspan> ( [Revenue], <tspan fill="#C9DCE7">Products[Color] = "Red"</tspan> )</text>
+    <text x="80" y="584" fill="#70706F">-- 2nd shortcut</text>
+    <text x="216" y="584">[Revenue] ( <tspan fill="#C9DCE7">Products[Color] = "Red"</tspan> )</text>
+  </g>
+
+  <use href="#brand-arrow" x="670" y="490"/>
+  <text x="696" y="506" font-size="17" font-weight="700" fill="#141421">Three notations, one execution</text>
+  <text x="670" y="532" font-size="14" fill="#141421">The shortcuts are rewritten to the full syntax:</text>
+  <text x="670" y="552" font-size="14" fill="#141421">FILTER over ALL ( Products[Color] ), keeping Red.</text>
+  <text x="670" y="572" font-size="14" fill="#141421">Identical result, identical performance.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="616" x2="1140" y2="616" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="652" font-size="20" fill="#141421">The selected color is ignored: <tspan font-weight="700">Red is always calculated</tspan>.</text>
+  <text x="1140" y="651" font-size="14" fill="#70706F" text-anchor="end">Next: Calculate – RESPECT + ADD</text>
+</svg>

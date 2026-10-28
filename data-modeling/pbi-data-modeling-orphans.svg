@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#70706F"/>
+    </marker>
+    <g id="brand-arrow">
+      <path d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/>
+      <rect x="15" y="3" width="2.5" height="13" fill="#F39454"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="640" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Orphans</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Orphans</text>
+  <rect x="210" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Fact rows without a matching dimension row are grouped under one virtual (blank) member.</text>
+
+  <!-- ============ Product dimension ============ -->
+  <text x="60" y="186" font-size="20" font-weight="700" fill="#141421">Product <tspan font-size="14" font-weight="400" fill="#70706F">dimension</tspan></text>
+  <rect x="60" y="200" width="220" height="36" fill="#141421"/>
+  <text x="76" y="223" font-size="14" font-weight="700" fill="#F6F6F6">Product</text>
+  <text x="160" y="223" font-size="14" font-weight="700" fill="#F6F6F6">Brand</text>
+
+  <rect x="60" y="236" width="220" height="102" fill="#FFFFFF"/>
+  <g font-size="15" fill="#141421">
+    <text x="76" y="258">A</text><text x="160" y="258">Contoso</text>
+    <text x="76" y="292">B</text><text x="160" y="292">Fabrikam</text>
+    <text x="76" y="326">C</text><text x="160" y="326">Litware</text>
+  </g>
+  <g stroke="#D7D8D8" stroke-width="1">
+    <line x1="60" y1="270" x2="280" y2="270"/>
+    <line x1="60" y1="304" x2="280" y2="304"/>
+  </g>
+
+  <!-- (blank) member -->
+  <rect x="60" y="338" width="220" height="34" fill="#F39454" fill-opacity="0.14" stroke="#F39454" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="76" y="360" font-size="15" font-weight="700" fill="#141421">(blank)</text>
+  <text x="160" y="360" font-size="15" fill="#70706F">(blank)</text>
+  <text x="60" y="394" font-size="13" fill="#70706F">Virtual row, added by the engine</text>
+
+  <!-- Relationship header line -->
+  <line x1="280" y1="218" x2="440" y2="218" stroke="#141421" stroke-width="1.5"/>
+  <text x="290" y="210" font-size="14" font-weight="700" fill="#141421">1</text>
+  <text x="422" y="214" font-size="14" font-weight="700" fill="#141421">∞</text>
+
+  <!-- Row mappings: fact row -> dimension row -->
+  <g fill="none" stroke="#70706F" stroke-width="1.25" stroke-opacity="0.7">
+    <path d="M280 253 C360 253, 360 253, 440 253"/>
+    <path d="M280 287 C360 287, 360 287, 440 287"/>
+    <path d="M280 253 C360 253, 360 321, 440 321"/>
+    <path d="M280 321 C360 321, 360 355, 440 355"/>
+    <path d="M280 287 C360 287, 360 423, 440 423"/>
+  </g>
+  <g fill="none" stroke="#F39454" stroke-width="2" stroke-dasharray="6 4">
+    <path d="M280 355 C360 355, 360 389, 440 389"/>
+    <path d="M280 355 C360 355, 360 457, 440 457"/>
+  </g>
+  <g fill="#70706F">
+    <circle cx="280" cy="253" r="3"/><circle cx="280" cy="287" r="3"/><circle cx="280" cy="321" r="3"/>
+  </g>
+  <circle cx="280" cy="355" r="3.5" fill="#F39454"/>
+
+  <!-- ============ Sales fact ============ -->
+  <text x="440" y="186" font-size="20" font-weight="700" fill="#141421">Sales <tspan font-size="14" font-weight="400" fill="#70706F">fact</tspan></text>
+  <rect x="440" y="200" width="260" height="36" fill="#141421"/>
+  <text x="456" y="223" font-size="14" font-weight="700" fill="#F6F6F6">Product</text>
+  <text x="684" y="223" font-size="14" font-weight="700" fill="#F6F6F6" text-anchor="end">Amount</text>
+
+  <rect x="440" y="236" width="260" height="238" fill="#FFFFFF"/>
+  <!-- orphan rows -->
+  <rect x="440" y="372" width="260" height="34" fill="#F39454" fill-opacity="0.18"/>
+  <rect x="440" y="440" width="260" height="34" fill="#F39454" fill-opacity="0.18"/>
+  <rect x="440" y="372" width="4" height="34" fill="#F39454"/>
+  <rect x="440" y="440" width="4" height="34" fill="#F39454"/>
+
+  <g stroke="#D7D8D8" stroke-width="1">
+    <line x1="440" y1="270" x2="700" y2="270"/>
+    <line x1="440" y1="304" x2="700" y2="304"/>
+    <line x1="440" y1="338" x2="700" y2="338"/>
+    <line x1="440" y1="372" x2="700" y2="372"/>
+    <line x1="440" y1="406" x2="700" y2="406"/>
+    <line x1="440" y1="440" x2="700" y2="440"/>
+  </g>
+  <g font-size="15" fill="#141421">
+    <text x="456" y="258">A</text><text x="684" y="258" text-anchor="end">100</text>
+    <text x="456" y="292">B</text><text x="684" y="292" text-anchor="end">200</text>
+    <text x="456" y="326">A</text><text x="684" y="326" text-anchor="end">50</text>
+    <text x="456" y="360">C</text><text x="684" y="360" text-anchor="end">120</text>
+    <text x="456" y="394" font-weight="700">D</text><text x="684" y="394" text-anchor="end">80</text>
+    <text x="456" y="428">B</text><text x="684" y="428" text-anchor="end">30</text>
+    <text x="456" y="462" font-weight="700">E</text><text x="684" y="462" text-anchor="end">70</text>
+  </g>
+  <rect x="440" y="490" width="10" height="10" fill="#F39454"/>
+  <text x="458" y="500" font-size="13" fill="#70706F">D and E do not exist in Product: orphans</text>
+
+  <!-- Arrow fact -> report -->
+  <text x="760" y="290" font-size="13" fill="#70706F" text-anchor="middle">summarize</text>
+  <line x1="718" y1="304" x2="802" y2="304" stroke="#70706F" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ============ Report ============ -->
+  <text x="820" y="186" font-size="20" font-weight="700" fill="#141421">Report <tspan font-size="14" font-weight="400" fill="#70706F">matrix</tspan></text>
+  <rect x="820" y="200" width="320" height="36" fill="#141421"/>
+  <text x="836" y="223" font-size="14" font-weight="700" fill="#F6F6F6">Product</text>
+  <text x="1124" y="223" font-size="14" font-weight="700" fill="#F6F6F6" text-anchor="end">Sales Amount</text>
+
+  <rect x="820" y="236" width="320" height="170" fill="#FFFFFF"/>
+  <rect x="820" y="338" width="320" height="34" fill="#F39454" fill-opacity="0.18"/>
+  <rect x="820" y="338" width="4" height="34" fill="#F39454"/>
+  <g stroke="#D7D8D8" stroke-width="1">
+    <line x1="820" y1="270" x2="1140" y2="270"/>
+    <line x1="820" y1="304" x2="1140" y2="304"/>
+    <line x1="820" y1="338" x2="1140" y2="338"/>
+  </g>
+  <line x1="820" y1="372" x2="1140" y2="372" stroke="#141421" stroke-width="2"/>
+  <g font-size="15" fill="#141421">
+    <text x="836" y="258">A</text><text x="1124" y="258" text-anchor="end">150</text>
+    <text x="836" y="292">B</text><text x="1124" y="292" text-anchor="end">230</text>
+    <text x="836" y="326">C</text><text x="1124" y="326" text-anchor="end">120</text>
+    <text x="836" y="360" font-weight="700">(blank)</text><text x="1124" y="360" text-anchor="end" font-weight="700">150</text>
+    <text x="836" y="394" font-weight="700">Total</text><text x="1124" y="394" text-anchor="end" font-weight="700">650</text>
+  </g>
+  <text x="820" y="428" font-size="13" fill="#70706F">80 (D) + 70 (E) = 150 under (blank)</text>
+
+  <!-- ============ Takeaways ============ -->
+  <line x1="60" y1="530" x2="1140" y2="530" stroke="#D7D8D8" stroke-width="1"/>
+
+  <use href="#brand-arrow" x="60" y="550"/>
+  <text x="86" y="566" font-size="17" font-weight="700" fill="#141421">Orphan</text>
+  <text x="60" y="592" font-size="14" fill="#141421">A fact row whose key has no matching</text>
+  <text x="60" y="612" font-size="14" fill="#141421">row in the dimension table.</text>
+
+  <use href="#brand-arrow" x="440" y="550"/>
+  <text x="466" y="566" font-size="17" font-weight="700" fill="#141421">(blank) member</text>
+  <text x="440" y="592" font-size="14" fill="#141421">One virtual row on the one-side of the</text>
+  <text x="440" y="612" font-size="14" fill="#141421">relationship that collects all orphans.</text>
+
+  <use href="#brand-arrow" x="820" y="550"/>
+  <text x="846" y="566" font-size="17" font-weight="700" fill="#141421">Reconciled bottom line</text>
+  <text x="820" y="592" font-size="14" fill="#141421">The total still matches the fact table:</text>
+  <text x="820" y="612" font-size="14" fill="#141421">150 + 230 + 120 + 150 = 650.</text>
+</svg>

@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <g id="brand-arrow">
+      <path d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/>
+      <rect x="15" y="3" width="2.5" height="13" fill="#F39454"/>
+    </g>
+    <marker id="arrow-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <path id="funnel" d="M0 0 H14 L9 6 V13 L5 11 V6 Z"/>
+    <g id="categories-grid">
+      <rect x="0" y="0" width="300" height="170" fill="#FFFFFF"/>
+      <g stroke="#D7D8D8" stroke-width="1">
+        <line x1="0" y1="34" x2="300" y2="34"/><line x1="0" y1="68" x2="300" y2="68"/>
+        <line x1="0" y1="102" x2="300" y2="102"/><line x1="0" y1="136" x2="300" y2="136"/>
+      </g>
+    </g>
+    <g id="categories-header">
+      <rect x="0" y="0" width="300" height="36" fill="#141421"/>
+      <text x="14" y="23" font-size="13" font-weight="700" fill="#F6F6F6">Category</text>
+      <text x="110" y="23" font-size="13" font-weight="700" fill="#F6F6F6">SubcategoryName</text>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Manipulation – RESPECT &amp; ADD</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Manipulation – RESPECT &amp; ADD</text>
+  <rect x="620" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">CALCULATE keeps the existing filter and adds a new one on top of it: both must be true (AND).</text>
+
+  <!-- ==================== Step labels ==================== -->
+  <g font-size="15" font-weight="700" fill="#141421">
+    <circle cx="71" cy="185" r="11" fill="#F39454"/><text x="71" y="190" font-size="13" text-anchor="middle">1</text>
+    <text x="90" y="190">Initial filter <tspan font-size="13" font-weight="400" fill="#70706F">set by the report</tspan></text>
+    <circle cx="461" cy="185" r="11" fill="#F39454"/><text x="461" y="190" font-size="13" text-anchor="middle">2</text>
+    <text x="480" y="190">RESPECT <tspan font-size="13" font-weight="400" fill="#70706F">VALUES keeps it</tspan></text>
+    <circle cx="851" cy="185" r="11" fill="#F39454"/><text x="851" y="190" font-size="13" text-anchor="middle">3</text>
+    <text x="870" y="190">ADD <tspan font-size="13" font-weight="400" fill="#70706F">FILTER adds a second one</tspan></text>
+  </g>
+
+  <!-- ==================== 1. Initial filter ==================== -->
+  <rect x="60" y="206" width="270" height="28" fill="#FFFFFF" stroke="#F39454" stroke-width="2"/>
+  <use href="#funnel" x="72" y="213" fill="#F39454"/>
+  <text x="94" y="225" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421">SubcategoryName = "Mountain Bikes"</text>
+
+  <use href="#categories-header" x="60" y="250"/>
+  <text x="348" y="273" font-size="13" font-weight="700" fill="#F6F6F6" text-anchor="end">Revenue</text>
+  <use href="#categories-grid" x="60" y="286"/>
+  <rect x="60" y="286" width="300" height="34" fill="#F39454" fill-opacity="0.18"/>
+  <g font-size="14" fill="#141421">
+    <text x="74" y="308" font-weight="700">Bikes</text><text x="170" y="308" font-weight="700">Mountain Bikes</text><text x="348" y="308" text-anchor="end" font-weight="700">1,000</text>
+  </g>
+  <g font-size="14" fill="#141421" fill-opacity="0.3">
+    <text x="74" y="342">Bikes</text><text x="170" y="342">Road Bikes</text><text x="348" y="342" text-anchor="end">400</text>
+    <text x="74" y="376">Bikes</text><text x="170" y="376">Touring Bikes</text><text x="348" y="376" text-anchor="end">200</text>
+    <text x="74" y="410">Accessories</text><text x="170" y="410">Helmets</text><text x="348" y="410" text-anchor="end">250</text>
+    <text x="74" y="444">Clothing</text><text x="170" y="444">Gloves</text><text x="348" y="444" text-anchor="end">150</text>
+  </g>
+  <rect x="60" y="286" width="300" height="34" fill="none" stroke="#F39454" stroke-width="2"/>
+  <text x="60" y="478" font-size="13" fill="#70706F">Only Mountain Bikes: Revenue = 1,000</text>
+
+  <!-- arrow 1 -> 2 -->
+  <text x="405" y="292" font-size="15" font-weight="700" fill="#F39454" text-anchor="middle">VALUES</text>
+  <line x1="364" y1="303" x2="446" y2="303" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+
+  <!-- ==================== 2. RESPECT ==================== -->
+  <rect x="450" y="206" width="270" height="28" fill="#FFFFFF" stroke="#F39454" stroke-width="2"/>
+  <use href="#funnel" x="462" y="213" fill="#F39454"/>
+  <text x="484" y="225" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421">SubcategoryName = "Mountain Bikes"</text>
+  <text x="750" y="225" font-size="13" font-weight="700" fill="#F39454" text-anchor="end">kept</text>
+
+  <use href="#categories-header" x="450" y="250"/>
+  <use href="#categories-grid" x="450" y="286"/>
+  <rect x="450" y="286" width="300" height="34" fill="#F39454" fill-opacity="0.18"/>
+  <g font-size="14" fill="#141421">
+    <text x="464" y="308" font-weight="700">Bikes</text><text x="560" y="308" font-weight="700">Mountain Bikes</text>
+  </g>
+  <g font-size="14" fill="#141421" fill-opacity="0.3">
+    <text x="464" y="342">Bikes</text><text x="560" y="342">Road Bikes</text>
+    <text x="464" y="376">Bikes</text><text x="560" y="376">Touring Bikes</text>
+    <text x="464" y="410">Accessories</text><text x="560" y="410">Helmets</text>
+    <text x="464" y="444">Clothing</text><text x="560" y="444">Gloves</text>
+  </g>
+  <rect x="450" y="286" width="300" height="34" fill="none" stroke="#F39454" stroke-width="2"/>
+  <text x="450" y="478" font-size="13" fill="#70706F">The existing filter is respected</text>
+
+  <!-- arrow 2 -> 3 -->
+  <text x="795" y="292" font-size="15" font-weight="700" fill="#F39454" text-anchor="middle">FILTER</text>
+  <line x1="754" y1="303" x2="836" y2="303" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+
+  <!-- ==================== 3. ADD ==================== -->
+  <rect x="840" y="206" width="128" height="28" fill="#FFFFFF" stroke="#F39454" stroke-width="2"/>
+  <use href="#funnel" x="850" y="213" fill="#F39454"/>
+  <text x="870" y="225" font-size="13" fill="#141421">Mountain Bikes</text>
+  <text x="992" y="225" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">AND</text>
+  <rect x="1016" y="206" width="124" height="28" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="2"/>
+  <use href="#funnel" x="1026" y="213" fill="#F39454"/>
+  <text x="1046" y="225" font-size="13" font-weight="700" fill="#141421">Road Bikes</text>
+
+  <use href="#categories-header" x="840" y="250"/>
+  <text x="1128" y="273" font-size="13" font-weight="700" fill="#F6F6F6" text-anchor="end">Test</text>
+  <use href="#categories-grid" x="840" y="286"/>
+  <g font-size="14" fill="#141421" fill-opacity="0.3">
+    <text x="854" y="308">Bikes</text><text x="950" y="308">Mountain Bikes</text>
+    <text x="854" y="342">Bikes</text><text x="950" y="342">Road Bikes</text>
+    <text x="854" y="376">Bikes</text><text x="950" y="376">Touring Bikes</text>
+    <text x="854" y="410">Accessories</text><text x="950" y="410">Helmets</text>
+    <text x="854" y="444">Clothing</text><text x="950" y="444">Gloves</text>
+  </g>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#70706F" text-anchor="end">
+    <text x="1128" y="308" font-weight="700" fill="#F39454">FALSE</text>
+    <text x="1128" y="342">not visible</text>
+    <text x="1128" y="376">not visible</text>
+    <text x="1128" y="410">not visible</text>
+    <text x="1128" y="444">not visible</text>
+  </g>
+  <rect x="840" y="250" width="300" height="206" fill="none" stroke="#70706F" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="1140" y="478" font-size="13" fill="#70706F" text-anchor="end">No row left: Revenue = <tspan font-weight="700" fill="#141421">BLANK</tspan></text>
+
+  <!-- ==================== Code ==================== -->
+  <rect x="60" y="494" width="1080" height="40" fill="#141421"/>
+  <text x="80" y="519" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#F6F6F6">Revenue Road Bikes = <tspan fill="#F39454">CALCULATE</tspan> ( [Revenue], <tspan fill="#F39454">FILTER</tspan> ( <tspan fill="#F39454">VALUES</tspan> ( <tspan fill="#C9DCE7">'Categories'[SubcategoryName]</tspan> ), <tspan fill="#C9DCE7">'Categories'[SubcategoryName] = "Road Bikes"</tspan> ) )</text>
+
+  <!-- ==================== Explanation ==================== -->
+  <use href="#brand-arrow" x="60" y="548"/>
+  <text x="86" y="564" font-size="17" font-weight="700" fill="#141421">Respect, then add</text>
+  <text x="60" y="588" font-size="14" fill="#141421">VALUES keeps "Mountain Bikes"; FILTER adds a second condition</text>
+  <text x="60" y="606" font-size="14" fill="#141421">on top of it. Both filters apply at the same time (AND).</text>
+
+  <use href="#brand-arrow" x="650" y="548"/>
+  <text x="676" y="564" font-size="17" font-weight="700" fill="#141421">Contradicting filters</text>
+  <text x="650" y="588" font-size="14" fill="#141421">A row cannot be Mountain Bikes AND Road Bikes at once:</text>
+  <text x="650" y="606" font-size="14" fill="#141421">no rows remain, so the result is BLANK.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="622" x2="1140" y2="622" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="656" font-size="20" fill="#141421">Filters add up with <tspan font-weight="700">AND</tspan>: no match returns <tspan font-weight="700">BLANK</tspan>.</text>
+  <text x="1140" y="655" font-size="14" fill="#70706F" text-anchor="end">Shorthand: KEEPFILTERS ( 'Categories'[SubcategoryName] = "Road Bikes" )</text>
+</svg>

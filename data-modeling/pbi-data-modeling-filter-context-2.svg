@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <g id="brand-arrow">
+      <path d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/>
+      <rect x="15" y="3" width="2.5" height="13" fill="#F39454"/>
+    </g>
+    <marker id="arrow-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="arrow-grey" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <path id="funnel" d="M0 0 H14 L9 6 V13 L5 11 V6 Z"/>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Filter context 2</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Filter context 2</text>
+  <rect x="328" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">The report filters one table. The relationships carry that filter down the chain to every table on the many side.</text>
+
+  <!-- ==================== Step labels ==================== -->
+  <g font-size="15" font-weight="700" fill="#141421">
+    <circle cx="71" cy="190" r="11" fill="#F39454"/><text x="71" y="195" font-size="13" text-anchor="middle">1</text>
+    <text x="90" y="195">Report</text>
+    <circle cx="371" cy="190" r="11" fill="#F39454"/><text x="371" y="195" font-size="13" text-anchor="middle">2</text>
+    <text x="390" y="195">Categories</text>
+    <circle cx="611" cy="190" r="11" fill="#F39454"/><text x="611" y="195" font-size="13" text-anchor="middle">3</text>
+    <text x="630" y="195">Products</text>
+    <circle cx="901" cy="190" r="11" fill="#F39454"/><text x="901" y="195" font-size="13" text-anchor="middle">4</text>
+    <text x="920" y="195">Sales</text>
+  </g>
+
+  <!-- ==================== 1. Report ==================== -->
+  <rect x="60" y="210" width="240" height="36" fill="#141421"/>
+  <g font-size="14" font-weight="700" fill="#F6F6F6">
+    <text x="76" y="233">Category</text>
+    <text x="288" y="233" text-anchor="end">fx</text>
+  </g>
+  <rect x="60" y="246" width="240" height="136" fill="#FFFFFF"/>
+  <rect x="60" y="280" width="240" height="34" fill="#F39454" fill-opacity="0.18"/>
+  <g stroke="#D7D8D8" stroke-width="1">
+    <line x1="60" y1="280" x2="300" y2="280"/><line x1="60" y1="314" x2="300" y2="314"/>
+  </g>
+  <line x1="60" y1="348" x2="300" y2="348" stroke="#141421" stroke-width="1"/>
+  <g font-size="15" fill="#141421">
+    <text x="76" y="268">Bikes</text><text x="288" y="268" text-anchor="end">1,600</text>
+    <text x="76" y="302" font-weight="700">Accessories</text><text x="288" y="302" text-anchor="end" font-weight="700">250</text>
+    <text x="76" y="336">Clothing</text><text x="288" y="336" text-anchor="end">150</text>
+    <text x="76" y="370" font-weight="700">Total</text><text x="288" y="370" text-anchor="end" font-weight="700">2,000</text>
+  </g>
+  <rect x="60" y="280" width="240" height="34" fill="none" stroke="#F39454" stroke-width="2"/>
+  <text x="60" y="426" font-size="13" fill="#70706F">The filter is set here</text>
+
+  <!-- report row to Categories -->
+  <path d="M302 297 C330 297, 330 291, 358 291" fill="none" stroke="#F39454" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow-head)"/>
+
+  <!-- ==================== 2. Categories ==================== -->
+  <rect x="360" y="210" width="170" height="36" fill="#141421"/>
+  <text x="376" y="233" font-size="14" font-weight="700" fill="#F6F6F6">Categories</text>
+  <rect x="360" y="246" width="170" height="90" fill="#FFFFFF"/>
+  <rect x="360" y="276" width="170" height="30" fill="#F39454" fill-opacity="0.18"/>
+  <g stroke="#D7D8D8" stroke-width="1">
+    <line x1="360" y1="276" x2="530" y2="276"/><line x1="360" y1="306" x2="530" y2="306"/>
+  </g>
+  <g font-size="14" fill="#141421" fill-opacity="0.3">
+    <text x="376" y="266">Bikes</text>
+    <text x="376" y="326">Clothing</text>
+  </g>
+  <text x="376" y="296" font-size="14" font-weight="700" fill="#141421">Accessories</text>
+  <rect x="360" y="350" width="170" height="28" fill="#FFFFFF" stroke="#F39454" stroke-width="2"/>
+  <use href="#funnel" x="370" y="357" fill="#F39454"/>
+  <text x="390" y="369" font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#141421">= "Accessories"</text>
+  <text x="360" y="426" font-size="13" fill="#70706F">Filtered by the report</text>
+
+  <!-- relationship Categories 1 -> * Products -->
+  <line x1="532" y1="228" x2="596" y2="228" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+  <text x="538" y="220" font-size="14" font-weight="700" fill="#141421">1</text>
+  <text x="588" y="222" font-size="16" font-weight="700" fill="#141421">*</text>
+
+  <!-- ==================== 3. Products ==================== -->
+  <rect x="600" y="210" width="220" height="36" fill="#141421"/>
+  <text x="616" y="233" font-size="14" font-weight="700" fill="#F6F6F6">Products</text>
+  <rect x="600" y="246" width="220" height="150" fill="#FFFFFF"/>
+  <rect x="600" y="276" width="220" height="30" fill="#F39454" fill-opacity="0.18"/>
+  <rect x="600" y="336" width="220" height="60" fill="#F39454" fill-opacity="0.18"/>
+  <g stroke="#D7D8D8" stroke-width="1">
+    <line x1="600" y1="276" x2="820" y2="276"/><line x1="600" y1="306" x2="820" y2="306"/>
+    <line x1="600" y1="336" x2="820" y2="336"/><line x1="600" y1="366" x2="820" y2="366"/>
+  </g>
+  <g font-size="14" fill="#141421" fill-opacity="0.3">
+    <text x="616" y="266">Bike</text><text x="808" y="266" font-size="12" text-anchor="end">Bikes</text>
+    <text x="616" y="326">Gloves</text><text x="808" y="326" font-size="12" text-anchor="end">Clothing</text>
+  </g>
+  <g font-size="14" fill="#141421">
+    <text x="616" y="296">Helmet</text><text x="808" y="296" font-size="12" fill="#70706F" text-anchor="end">Accessories</text>
+    <text x="616" y="356">Lights</text><text x="808" y="356" font-size="12" fill="#70706F" text-anchor="end">Accessories</text>
+    <text x="616" y="386">Bottle</text><text x="808" y="386" font-size="12" fill="#70706F" text-anchor="end">Accessories</text>
+  </g>
+  <text x="600" y="426" font-size="13" fill="#70706F">Filtered by propagation</text>
+
+  <!-- relationship Products 1 -> * Sales -->
+  <line x1="822" y1="228" x2="886" y2="228" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+  <text x="828" y="220" font-size="14" font-weight="700" fill="#141421">1</text>
+  <text x="878" y="222" font-size="16" font-weight="700" fill="#141421">*</text>
+
+  <!-- ==================== 4. Sales ==================== -->
+  <rect x="890" y="210" width="250" height="36" fill="#141421"/>
+  <text x="906" y="233" font-size="14" font-weight="700" fill="#F6F6F6">Sales</text>
+  <text x="1128" y="233" font-size="12" fill="#D7D8D8" text-anchor="end">Revenue</text>
+  <rect x="890" y="246" width="250" height="150" fill="#FFFFFF"/>
+  <rect x="890" y="276" width="250" height="30" fill="#F39454" fill-opacity="0.18"/>
+  <rect x="890" y="336" width="250" height="60" fill="#F39454" fill-opacity="0.18"/>
+  <g stroke="#D7D8D8" stroke-width="1">
+    <line x1="890" y1="276" x2="1140" y2="276"/><line x1="890" y1="306" x2="1140" y2="306"/>
+    <line x1="890" y1="336" x2="1140" y2="336"/><line x1="890" y1="366" x2="1140" y2="366"/>
+  </g>
+  <g font-size="14" fill="#141421" fill-opacity="0.3">
+    <text x="906" y="266">Bike</text><text x="1128" y="266" text-anchor="end">1,600</text>
+    <text x="906" y="326">Gloves</text><text x="1128" y="326" text-anchor="end">150</text>
+  </g>
+  <g font-size="14" fill="#141421">
+    <text x="906" y="296">Helmet</text><text x="1128" y="296" text-anchor="end" font-weight="700">120</text>
+    <text x="906" y="356">Lights</text><text x="1128" y="356" text-anchor="end" font-weight="700">80</text>
+    <text x="906" y="386">Bottle</text><text x="1128" y="386" text-anchor="end" font-weight="700">50</text>
+  </g>
+  <text x="890" y="426" font-size="13" fill="#70706F">Filtered by propagation, never directly</text>
+
+  <line x1="60" y1="446" x2="1140" y2="446" stroke="#D7D8D8" stroke-width="1"/>
+
+  <!-- ==================== Evaluation of fx ==================== -->
+  <rect x="60" y="466" width="540" height="72" fill="#141421"/>
+  <text x="80" y="494" font-family="Consolas, 'Courier New', monospace" font-size="16" fill="#F6F6F6">fx = <tspan fill="#F39454">SUM</tspan> ( <tspan fill="#C9DCE7">Sales[Revenue]</tspan> )</text>
+  <text x="80" y="524" font-size="14" fill="#D7D8D8">Evaluated on the filtered Sales table: 120 + 80 + 50 = <tspan font-weight="700" fill="#F39454">250</tspan></text>
+
+  <!-- ==================== Direction ==================== -->
+  <g font-size="14" font-weight="700" fill="#141421" text-anchor="middle">
+    <rect x="650" y="468" width="28" height="28" fill="#FFFFFF" stroke="#141421" stroke-width="1.5"/><text x="664" y="487">1</text>
+    <rect x="740" y="468" width="28" height="28" fill="#FFFFFF" stroke="#141421" stroke-width="1.5"/><text x="754" y="489" font-size="16">*</text>
+    <rect x="650" y="508" width="28" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1.5"/><text x="664" y="527" fill="#70706F">1</text>
+    <rect x="740" y="508" width="28" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1.5"/><text x="754" y="529" font-size="16" fill="#70706F">*</text>
+  </g>
+  <line x1="682" y1="482" x2="736" y2="482" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+  <line x1="738" y1="522" x2="684" y2="522" stroke="#70706F" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow-grey)"/>
+  <path d="M703 516 L715 528 M715 516 L703 528" stroke="#F39454" stroke-width="2"/>
+  <text x="784" y="487" font-size="14" fill="#141421">Filters flow from the one side to the many side</text>
+  <text x="784" y="527" font-size="14" fill="#70706F">Not back up (single cross-filter direction)</text>
+
+  <!-- ==================== Explanation ==================== -->
+  <use href="#brand-arrow" x="60" y="548"/>
+  <text x="86" y="564" font-size="17" font-weight="700" fill="#141421">The report did not filter Sales</text>
+  <text x="60" y="588" font-size="14" fill="#141421">It filtered Categories; the model did the rest. By the time</text>
+  <text x="60" y="606" font-size="14" fill="#141421">fx is evaluated, Sales only holds Accessories rows.</text>
+
+  <use href="#brand-arrow" x="650" y="548"/>
+  <text x="676" y="564" font-size="17" font-weight="700" fill="#141421">Filter propagation</text>
+  <text x="650" y="588" font-size="14" fill="#141421">One filter on the one side automatically restricts every</text>
+  <text x="650" y="606" font-size="14" fill="#141421">table on the many side, all the way down the chain.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="622" x2="1140" y2="622" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="656" font-size="20" fill="#141421">Filter <tspan font-weight="700">one table</tspan>, and the relationships filter <tspan font-weight="700">the rest</tspan>.</text>
+  <text x="1140" y="655" font-size="14" fill="#70706F" text-anchor="end">Next: Dynamic banding</text>
+</svg>
