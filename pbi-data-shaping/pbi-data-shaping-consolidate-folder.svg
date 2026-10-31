@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <marker id="head-grey" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#A9AAAA"/>
+    </marker>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">International Sales</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data shaping</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="345" lengthAdjust="spacing">Consolidate a folder</text>
+  <rect x="413" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">The wizard builds the cleansing steps once on a sample file, then repeats them for every file in the folder.</text>
+
+  <!-- ==================== Source ==================== -->
+  <text x="60" y="200" font-size="16" font-weight="700" fill="#141421">SOURCE</text>
+  <rect x="60" y="214" width="120" height="386" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="214" width="120" height="36" fill="#141421"/>
+  <text x="74" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Folder</text>
+  <path d="M72 264 h10 l4 4 h14 v16 h-28 z" fill="#F39454"/>
+  <text x="72" y="304" font-size="12" font-weight="700" fill="#141421">InternationalSales</text>
+  <line x1="60" y1="318" x2="180" y2="318" stroke="#D7D8D8"/>
+  <g transform="translate(74,448) scale(0.8)"><path d="M0 0 h11 l5 5 v15 h-16 z" fill="#FFFFFF" stroke="#70706F" stroke-width="1.5" stroke-linejoin="round"/><path d="M11 0 v5 h5" fill="none" stroke="#70706F" stroke-width="1.5" stroke-linejoin="round"/></g>
+  <text x="94" y="461" font-size="12" fill="#141421">Australia.csv</text>
+  <g transform="translate(74,472) scale(0.8)"><path d="M0 0 h11 l5 5 v15 h-16 z" fill="#FFFFFF" stroke="#70706F" stroke-width="1.5" stroke-linejoin="round"/><path d="M11 0 v5 h5" fill="none" stroke="#70706F" stroke-width="1.5" stroke-linejoin="round"/></g>
+  <text x="94" y="485" font-size="12" fill="#141421">Canada.csv</text>
+  <g transform="translate(74,496) scale(0.8)"><path d="M0 0 h11 l5 5 v15 h-16 z" fill="#FFFFFF" stroke="#70706F" stroke-width="1.5" stroke-linejoin="round"/><path d="M11 0 v5 h5" fill="none" stroke="#70706F" stroke-width="1.5" stroke-linejoin="round"/></g>
+  <text x="94" y="509" font-size="12" fill="#141421">Germany.csv</text>
+  <g transform="translate(74,520) scale(0.8)"><path d="M0 0 h11 l5 5 v15 h-16 z" fill="#FFFFFF" stroke="#70706F" stroke-width="1.5" stroke-linejoin="round"/><path d="M11 0 v5 h5" fill="none" stroke="#70706F" stroke-width="1.5" stroke-linejoin="round"/></g>
+  <text x="94" y="533" font-size="12" fill="#141421">Japan.csv</text>
+  <g transform="translate(74,544) scale(0.8)"><path d="M0 0 h11 l5 5 v15 h-16 z" fill="#FFFFFF" stroke="#70706F" stroke-width="1.5" stroke-linejoin="round"/><path d="M11 0 v5 h5" fill="none" stroke="#70706F" stroke-width="1.5" stroke-linejoin="round"/></g>
+  <text x="94" y="557" font-size="12" fill="#141421">Mexico.csv</text>
+  <g transform="translate(74,568) scale(0.8)"><path d="M0 0 h11 l5 5 v15 h-16 z" fill="#FFFFFF" stroke="#70706F" stroke-width="1.5" stroke-linejoin="round"/><path d="M11 0 v5 h5" fill="none" stroke="#70706F" stroke-width="1.5" stroke-linejoin="round"/></g>
+  <text x="94" y="581" font-size="12" fill="#141421">Nigeria.csv</text>
+  <text x="74" y="350" font-size="12" fill="#70706F">6 CSV files</text>
+  <text x="74" y="368" font-size="12" fill="#70706F">same columns,</text>
+  <text x="74" y="386" font-size="12" fill="#70706F">one per country</text>
+  <path d="M184 268 L228 268" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="206" y="260" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">1st file</text>
+  <path d="M184 516 L228 516" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="206" y="508" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">all files</text>
+
+  <!-- ==================== 1 · Build once ==================== -->
+  <circle cx="244" cy="194" r="12" fill="#F39454"/><text x="244" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="264" y="200" font-size="16" font-weight="700" fill="#141421">BUILD ONCE <tspan font-size="13" font-weight="400" fill="#70706F">· on a sample file</tspan></text>
+  <rect x="232" y="214" width="200" height="72" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="232" y="214" width="200" height="36" fill="#141421"/>
+  <text x="246" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Sample File</text>
+  <g transform="translate(246,259)"><path d="M0 0 h11 l5 5 v15 h-16 z" fill="#FFFFFF" stroke="#70706F" stroke-width="1.5" stroke-linejoin="round"/><path d="M11 0 v5 h5" fill="none" stroke="#70706F" stroke-width="1.5" stroke-linejoin="round"/></g>
+  <text x="276" y="273" font-size="13" font-style="italic" fill="#70706F">first file of the folder</text>
+
+  <rect x="468" y="214" width="200" height="72" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="468" y="214" width="200" height="36" fill="#141421"/>
+  <text x="482" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Parameter1</text>
+  <g transform="translate(482,259)"><rect x="0" y="0" width="18" height="5" fill="none" stroke="#70706F" stroke-width="1.5"/><rect x="1.5" y="5" width="15" height="13" fill="none" stroke="#70706F" stroke-width="1.5"/><line x1="6" y1="9" x2="12" y2="9" stroke="#70706F" stroke-width="1.5"/></g>
+  <text x="512" y="273" font-size="13" font-style="italic" fill="#70706F">holds the sample file</text>
+
+  <rect x="704" y="214" width="200" height="72" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="704" y="214" width="200" height="36" fill="#141421"/>
+  <text x="718" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Transform Sample File</text>
+  <g transform="translate(718,259)"><circle cx="2" cy="3" r="1.8" fill="#70706F"/><line x1="6" y1="3" x2="15" y2="3" stroke="#70706F" stroke-width="1.5"/><circle cx="2" cy="9" r="1.8" fill="#70706F"/><line x1="6" y1="9" x2="15" y2="9" stroke="#70706F" stroke-width="1.5"/><circle cx="2" cy="15" r="1.8" fill="#70706F"/><line x1="6" y1="15" x2="11" y2="15" stroke="#70706F" stroke-width="1.5"/></g>
+  <text x="748" y="273" font-size="13" font-style="italic" fill="#70706F">your cleansing steps</text>
+
+  <rect x="940" y="214" width="200" height="72" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <rect x="940" y="214" width="200" height="36" fill="#141421"/>
+  <text x="954" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Transform File</text>
+  <g transform="translate(954,259)"><text x="0" y="15" font-size="17" font-weight="700" font-style="italic" fill="#F39454">fx</text></g>
+  <text x="984" y="273" font-size="13" font-style="italic" fill="#70706F">function (Parameter1)</text>
+
+  <path d="M436 268 L464 268" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="450.0" y="260" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">into</text>
+
+  <path d="M672 268 L700 268" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="686.0" y="260" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">feeds</text>
+
+  <path d="M908 268 L936 268" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="922.0" y="260" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">copied</text>
+  <text x="232" y="314" font-size="13" fill="#70706F">Helper queries created by the wizard: you only edit <tspan fill="#141421" font-weight="700">Transform Sample File</tspan>, the function follows automatically.</text>
+
+  <!-- ==================== 2 · Run for each file ==================== -->
+  <circle cx="244" cy="354" r="12" fill="#F39454"/><text x="244" y="359" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="264" y="360" font-size="16" font-weight="700" fill="#141421">RUN FOR EACH FILE <tspan font-size="13" font-weight="400" fill="#70706F">· invoke the function</tspan></text>
+  <rect x="232" y="374" width="368" height="226" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="232" y="374" width="368" height="36" fill="#141421"/>
+  <text x="246" y="398" font-size="15" font-weight="700" fill="#F6F6F6">cnn<tspan fill="#A9AAAA"> | </tspan>folder<tspan fill="#A9AAAA"> | </tspan>sales-is</text>
+  <text x="586" y="398" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="end">META DATA</text>
+  <rect x="248" y="418" width="336" height="26" fill="#F6F6F6"/>
+  <line x1="248" y1="444" x2="584" y2="444" stroke="#141421" stroke-width="1.5"/>
+  <g font-size="13" font-weight="700" fill="#141421"><text x="256" y="436">Content</text><text x="334" y="436">Name</text><text x="576" y="436" text-anchor="end">Date modified</text></g>
+  <text x="256" y="461" font-size="13" font-weight="700" fill="#F39454">Binary</text>
+  <text x="334" y="461" font-size="13" fill="#141421">Australia.csv</text>
+  <text x="576" y="461" font-size="13" fill="#70706F" text-anchor="end">22/09/2018 10:52</text>
+  <line x1="248" y1="468" x2="584" y2="468" stroke="#D7D8D8"/>
+  <text x="256" y="485" font-size="13" font-weight="700" fill="#F39454">Binary</text>
+  <text x="334" y="485" font-size="13" fill="#141421">Canada.csv</text>
+  <text x="576" y="485" font-size="13" fill="#70706F" text-anchor="end">22/09/2018 10:52</text>
+  <line x1="248" y1="492" x2="584" y2="492" stroke="#D7D8D8"/>
+  <text x="256" y="509" font-size="13" font-weight="700" fill="#F39454">Binary</text>
+  <text x="334" y="509" font-size="13" fill="#141421">Germany.csv</text>
+  <text x="576" y="509" font-size="13" fill="#70706F" text-anchor="end">22/09/2018 10:52</text>
+  <line x1="248" y1="516" x2="584" y2="516" stroke="#D7D8D8"/>
+  <text x="256" y="533" font-size="13" font-weight="700" fill="#F39454">Binary</text>
+  <text x="334" y="533" font-size="13" fill="#141421">Japan.csv</text>
+  <text x="576" y="533" font-size="13" fill="#70706F" text-anchor="end">22/09/2018 10:52</text>
+  <line x1="248" y1="540" x2="584" y2="540" stroke="#D7D8D8"/>
+  <text x="256" y="557" font-size="13" font-weight="700" fill="#F39454">Binary</text>
+  <text x="334" y="557" font-size="13" fill="#141421">Mexico.csv</text>
+  <text x="576" y="557" font-size="13" fill="#70706F" text-anchor="end">22/09/2018 10:52</text>
+  <line x1="248" y1="564" x2="584" y2="564" stroke="#D7D8D8"/>
+  <text x="256" y="581" font-size="13" font-weight="700" fill="#F39454">Binary</text>
+  <text x="334" y="581" font-size="13" fill="#141421">Nigeria.csv</text>
+  <text x="576" y="581" font-size="13" fill="#70706F" text-anchor="end">22/09/2018 10:52</text>
+
+  <rect x="636" y="374" width="150" height="226" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <rect x="636" y="374" width="150" height="36" fill="#141421"/>
+  <text x="650" y="398" font-size="15" font-weight="700" fill="#F6F6F6">Invoke</text>
+  <text x="711.0" y="436" font-size="12" font-style="italic" fill="#70706F" text-anchor="middle">Transform File([Content])</text>
+  <path d="M604 456 L666 456" fill="none" stroke="#A9AAAA" stroke-width="1.5" marker-end="url(#head-grey)"/>
+  <rect x="670" y="447" width="40" height="18" rx="9" fill="#F39454"/><text x="690" y="461" font-size="13" font-weight="700" font-style="italic" fill="#141421" text-anchor="middle">fx</text>
+  <path d="M714 456 L814 456" fill="none" stroke="#A9AAAA" stroke-width="1.5" marker-end="url(#head-grey)"/>
+  <g transform="translate(820,448)"><rect x="0" y="0" width="28" height="16" fill="#FFFFFF" stroke="#141421" stroke-width="1.2"/><rect x="0" y="0" width="28" height="4" fill="#141421"/><line x1="0" y1="10" x2="28" y2="10" stroke="#141421" stroke-width="0.8"/><line x1="9.3" y1="4" x2="9.3" y2="16" stroke="#141421" stroke-width="0.8"/><line x1="18.6" y1="4" x2="18.6" y2="16" stroke="#141421" stroke-width="0.8"/></g>
+  <path d="M604 480 L666 480" fill="none" stroke="#A9AAAA" stroke-width="1.5" marker-end="url(#head-grey)"/>
+  <rect x="670" y="471" width="40" height="18" rx="9" fill="#F39454"/><text x="690" y="485" font-size="13" font-weight="700" font-style="italic" fill="#141421" text-anchor="middle">fx</text>
+  <path d="M714 480 L814 480" fill="none" stroke="#A9AAAA" stroke-width="1.5" marker-end="url(#head-grey)"/>
+  <g transform="translate(820,472)"><rect x="0" y="0" width="28" height="16" fill="#FFFFFF" stroke="#141421" stroke-width="1.2"/><rect x="0" y="0" width="28" height="4" fill="#141421"/><line x1="0" y1="10" x2="28" y2="10" stroke="#141421" stroke-width="0.8"/><line x1="9.3" y1="4" x2="9.3" y2="16" stroke="#141421" stroke-width="0.8"/><line x1="18.6" y1="4" x2="18.6" y2="16" stroke="#141421" stroke-width="0.8"/></g>
+  <path d="M604 504 L666 504" fill="none" stroke="#A9AAAA" stroke-width="1.5" marker-end="url(#head-grey)"/>
+  <rect x="670" y="495" width="40" height="18" rx="9" fill="#F39454"/><text x="690" y="509" font-size="13" font-weight="700" font-style="italic" fill="#141421" text-anchor="middle">fx</text>
+  <path d="M714 504 L814 504" fill="none" stroke="#A9AAAA" stroke-width="1.5" marker-end="url(#head-grey)"/>
+  <g transform="translate(820,496)"><rect x="0" y="0" width="28" height="16" fill="#FFFFFF" stroke="#141421" stroke-width="1.2"/><rect x="0" y="0" width="28" height="4" fill="#141421"/><line x1="0" y1="10" x2="28" y2="10" stroke="#141421" stroke-width="0.8"/><line x1="9.3" y1="4" x2="9.3" y2="16" stroke="#141421" stroke-width="0.8"/><line x1="18.6" y1="4" x2="18.6" y2="16" stroke="#141421" stroke-width="0.8"/></g>
+  <path d="M604 528 L666 528" fill="none" stroke="#A9AAAA" stroke-width="1.5" marker-end="url(#head-grey)"/>
+  <rect x="670" y="519" width="40" height="18" rx="9" fill="#F39454"/><text x="690" y="533" font-size="13" font-weight="700" font-style="italic" fill="#141421" text-anchor="middle">fx</text>
+  <path d="M714 528 L814 528" fill="none" stroke="#A9AAAA" stroke-width="1.5" marker-end="url(#head-grey)"/>
+  <g transform="translate(820,520)"><rect x="0" y="0" width="28" height="16" fill="#FFFFFF" stroke="#141421" stroke-width="1.2"/><rect x="0" y="0" width="28" height="4" fill="#141421"/><line x1="0" y1="10" x2="28" y2="10" stroke="#141421" stroke-width="0.8"/><line x1="9.3" y1="4" x2="9.3" y2="16" stroke="#141421" stroke-width="0.8"/><line x1="18.6" y1="4" x2="18.6" y2="16" stroke="#141421" stroke-width="0.8"/></g>
+  <path d="M604 552 L666 552" fill="none" stroke="#A9AAAA" stroke-width="1.5" marker-end="url(#head-grey)"/>
+  <rect x="670" y="543" width="40" height="18" rx="9" fill="#F39454"/><text x="690" y="557" font-size="13" font-weight="700" font-style="italic" fill="#141421" text-anchor="middle">fx</text>
+  <path d="M714 552 L814 552" fill="none" stroke="#A9AAAA" stroke-width="1.5" marker-end="url(#head-grey)"/>
+  <g transform="translate(820,544)"><rect x="0" y="0" width="28" height="16" fill="#FFFFFF" stroke="#141421" stroke-width="1.2"/><rect x="0" y="0" width="28" height="4" fill="#141421"/><line x1="0" y1="10" x2="28" y2="10" stroke="#141421" stroke-width="0.8"/><line x1="9.3" y1="4" x2="9.3" y2="16" stroke="#141421" stroke-width="0.8"/><line x1="18.6" y1="4" x2="18.6" y2="16" stroke="#141421" stroke-width="0.8"/></g>
+  <path d="M604 576 L666 576" fill="none" stroke="#A9AAAA" stroke-width="1.5" marker-end="url(#head-grey)"/>
+  <rect x="670" y="567" width="40" height="18" rx="9" fill="#F39454"/><text x="690" y="581" font-size="13" font-weight="700" font-style="italic" fill="#141421" text-anchor="middle">fx</text>
+  <path d="M714 576 L814 576" fill="none" stroke="#A9AAAA" stroke-width="1.5" marker-end="url(#head-grey)"/>
+  <g transform="translate(820,568)"><rect x="0" y="0" width="28" height="16" fill="#FFFFFF" stroke="#141421" stroke-width="1.2"/><rect x="0" y="0" width="28" height="4" fill="#141421"/><line x1="0" y1="10" x2="28" y2="10" stroke="#141421" stroke-width="0.8"/><line x1="9.3" y1="4" x2="9.3" y2="16" stroke="#141421" stroke-width="0.8"/><line x1="18.6" y1="4" x2="18.6" y2="16" stroke="#141421" stroke-width="0.8"/></g>
+
+  <!-- function from step 1 is invoked in step 2 -->
+  <path d="M1040.0 290 V336 H711.0 V370" fill="none" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="1032.0" y="330" font-size="11" font-weight="700" fill="#F39454" text-anchor="end">invoke per row</text>
+
+  <!-- append -->
+  <path d="M854 448 h10 V584 h-10" fill="none" stroke="#70706F" stroke-width="1.5"/>
+  <path d="M864 516 L926 516" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="897.0" y="508" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">append</text>
+
+  <!-- result query -->
+  <rect x="930" y="476" width="210" height="80" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="930" y="476" width="210" height="36" fill="#141421"/>
+  <text x="944" y="500" font-size="15" font-weight="700" fill="#F6F6F6">InternationalSales</text>
+  <g transform="translate(944,522)"><circle cx="2" cy="3" r="1.8" fill="#70706F"/><line x1="6" y1="3" x2="15" y2="3" stroke="#70706F" stroke-width="1.5"/><circle cx="2" cy="9" r="1.8" fill="#70706F"/><line x1="6" y1="9" x2="15" y2="9" stroke="#70706F" stroke-width="1.5"/><circle cx="2" cy="15" r="1.8" fill="#70706F"/><line x1="6" y1="15" x2="11" y2="15" stroke="#70706F" stroke-width="1.5"/></g>
+  <text x="968" y="537" font-size="13" font-style="italic" fill="#70706F">6 files appended</text>
+
+  <!-- ==================== Captions ==================== -->
+  <text x="60" y="630" font-size="13" fill="#141421"><tspan font-weight="700">6 files</tspan>, 1 folder.</text>
+  <text x="232" y="630" font-size="13" fill="#141421"><tspan font-weight="700">1 row per file</tspan>, its data sits in the binary [Content].</text>
+  <text x="636" y="630" font-size="13" fill="#141421"><tspan font-weight="700">1 call per row</tspan>, 1 table per file.</text>
+  <text x="930" y="630" font-size="13" fill="#141421"><tspan font-weight="700">1 table</tspan> with all files.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="660" x2="1140" y2="660" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="698" font-size="20" fill="#141421">Cleanse <tspan font-weight="700">one sample file</tspan>, the function repeats it for <tspan font-weight="700">every file</tspan>.</text>
+  <text x="1140" y="697" font-size="14" fill="#70706F" text-anchor="end">From Folder ❭ Combine &amp; Transform Data</text>
+</svg>

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 690" width="1200" height="690" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="690" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Currency type</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data shaping</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="245" lengthAdjust="spacing">Fixed decimals</text>
+  <rect x="313" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Currency.Type stores a value × 10 000 as a whole number: exact to 4 digits after the decimal separator.</text>
+
+  <!-- ==================== Headings ==================== -->
+  <circle cx="72" cy="194" r="12" fill="#F39454"/><text x="72" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="92" y="200" font-size="16" font-weight="700" fill="#141421">SOURCE <tspan font-size="13" font-weight="400" fill="#70706F">· CSV</tspan></text>
+  <circle cx="272" cy="194" r="12" fill="#F39454"/><text x="272" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="292" y="200" font-size="16" font-weight="700" fill="#141421">ETL <tspan font-size="13" font-weight="400" fill="#70706F">· Power Query</tspan></text>
+  <circle cx="552" cy="194" r="12" fill="#F39454"/><text x="552" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="572" y="200" font-size="16" font-weight="700" fill="#141421">DATABASE <tspan font-size="13" font-weight="400" fill="#70706F">· data type</tspan></text>
+  <circle cx="862" cy="194" r="12" fill="#F39454"/><text x="862" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">4</text>
+  <text x="882" y="200" font-size="16" font-weight="700" fill="#141421">REPORT <tspan font-size="13" font-weight="400" fill="#70706F">· cosmetics</tspan></text>
+
+  <!-- ==================== Source ==================== -->
+  <rect x="60" y="214" width="160" height="250" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="214" width="160" height="36" fill="#141421"/>
+  <text x="74" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Sales.csv</text>
+  <text x="206" y="238" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="end">TEXT</text>
+  <path d="M74 270 h22 l10 10 v32 h-32 z" fill="#FFFFFF" stroke="#70706F" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M96 270 v10 h10" fill="none" stroke="#70706F" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="90" y="304" font-size="9" font-weight="700" fill="#70706F" text-anchor="middle">CSV</text>
+  <text x="74" y="392" font-size="28" font-weight="300" font-style="italic" fill="#70706F">"1.3"</text>
+  <text x="74" y="418" font-size="13" fill="#70706F">just characters,</text>
+  <text x="74" y="436" font-size="13" fill="#70706F">no data type yet</text>
+  <path d="M224 278 L256 278" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="240.0" y="270" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle"></text>
+  <path d="M224 418 L256 418" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="240.0" y="410" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle"></text>
+
+  <!-- ==================== Row A · decimal number ==================== -->
+  <rect x="260" y="214" width="240" height="110" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="260" y="214" width="240" height="36" fill="#141421"/>
+  <text x="274" y="238" font-size="15" font-weight="700" fill="#F6F6F6">type number</text>
+  <text x="486" y="238" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="end">DECIMAL</text>
+  <text x="274" y="290" font-size="28" font-weight="300" fill="#141421">1.3</text>
+  <text x="274" y="312" font-size="13" fill="#70706F">floating point precision</text>
+  <path d="M504 278 L536 278" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="520.0" y="270" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">load</text>
+
+  <rect x="540" y="214" width="270" height="110" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="540" y="214" width="270" height="36" fill="#141421"/>
+  <text x="554" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Decimal number</text>
+  <text x="796" y="238" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="end">APPROXIMATION</text>
+  <text x="554" y="290" font-size="28" font-weight="300" fill="#141421">1.3<tspan fill="#F39454">0000007152557</tspan></text>
+  <text x="554" y="312" font-size="13" fill="#70706F">binary cannot hold 1.3 exactly</text>
+  <path d="M814 278 L846 278" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="830.0" y="270" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">risk</text>
+
+  <rect x="850" y="214" width="290" height="110" fill="none" stroke="#A9AAAA" stroke-width="1" stroke-dasharray="5 4"/>
+  <rect x="850" y="214" width="290" height="36" fill="#D7D8D8"/>
+  <text x="864" y="238" font-size="15" font-weight="700" fill="#70706F">Rounding errors</text>
+  <text x="864" y="282" font-size="13" fill="#70706F">errors grow when values are summed,</text>
+  <text x="864" y="302" font-size="13" fill="#70706F">or multiplied by thousands or millions</text>
+
+  <!-- ==================== Row B · fixed decimal ==================== -->
+  <rect x="260" y="354" width="240" height="110" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <rect x="260" y="354" width="240" height="36" fill="#141421"/>
+  <text x="274" y="378" font-size="15" font-weight="700" fill="#F6F6F6">Currency.Type</text>
+  <text x="486" y="378" font-size="11" font-weight="700" fill="#F39454" text-anchor="end">FIXED DECIMAL</text>
+  <text x="274" y="430" font-size="28" font-weight="300" fill="#141421">1.3</text>
+  <text x="274" y="452" font-size="13" fill="#70706F">4 digits after the separator</text>
+  <path d="M504 418 L536 418" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="520.0" y="410" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">load</text>
+
+  <rect x="540" y="354" width="270" height="110" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="540" y="354" width="270" height="36" fill="#141421"/>
+  <text x="554" y="378" font-size="15" font-weight="700" fill="#F6F6F6">Fixed decimal</text>
+  <text x="796" y="378" font-size="11" font-weight="700" fill="#F39454" text-anchor="end">EXACT</text>
+  <text x="554" y="430" font-size="28" font-weight="300" fill="#141421">13 000 <tspan font-size="16" font-weight="400" fill="#70706F">= 1.3 × 10 000</tspan></text>
+  <text x="554" y="452" font-size="13" fill="#70706F">read back ÷ 10 000 as <tspan fill="#141421" font-weight="700">1.3000</tspan></text>
+  <path d="M814 418 L846 418" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="830.0" y="410" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">format</text>
+
+  <rect x="850" y="354" width="290" height="110" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="850" y="354" width="290" height="36" fill="#141421"/>
+  <text x="864" y="378" font-size="15" font-weight="700" fill="#F6F6F6">Format string</text>
+  <text x="1126" y="378" font-size="11" font-weight="700" fill="#F39454" text-anchor="end">ANY UNIT</text>
+  <rect x="864" y="406" width="66" height="26" rx="13" fill="#F39454"/><text x="897" y="424" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">1.30 €</text>
+  <rect x="933" y="406" width="66" height="26" rx="13" fill="#F39454"/><text x="966" y="424" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">1.30 kg</text>
+  <rect x="1002" y="406" width="66" height="26" rx="13" fill="#F39454"/><text x="1035" y="424" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">1.30 m²</text>
+  <rect x="1071" y="406" width="66" height="26" rx="13" fill="#F39454"/><text x="1104" y="424" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">1.30 liter</text>
+  <text x="864" y="452" font-size="13" fill="#70706F">same stored value, the unit is cosmetics</text>
+
+  <!-- ==================== Rules ==================== -->
+  <rect x="60" y="500" width="530" height="76" fill="#FFFFFF"/>
+  <rect x="60" y="500" width="4" height="76" fill="#141421"/>
+  <text x="90" y="530" font-size="18" font-weight="700" fill="#141421">Not a currency <tspan font-size="13" font-weight="400" fill="#70706F">· despite the $ icon</tspan></text>
+  <text x="90" y="556" font-size="13" fill="#70706F">Use it for amounts, weights, distances, quantities: any fixed decimal value.</text>
+  <rect x="610" y="500" width="530" height="76" fill="#FFFFFF"/>
+  <rect x="610" y="500" width="4" height="76" fill="#F39454"/>
+  <text x="640" y="530" font-size="18" font-weight="700" fill="#141421">Unit in Power BI <tspan font-size="13" font-weight="400" fill="#70706F">· format string</tspan></text>
+  <text x="640" y="556" font-size="13" fill="#70706F">€, kg, m², liter, #: the report shows the unit, the database keeps the value.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="606" x2="1140" y2="606" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="644" font-size="20" fill="#141421">Store with <tspan font-weight="700">Currency.Type</tspan>, show the unit with a <tspan font-weight="700">format</tspan> in the report.</text>
+  <text x="1140" y="643" font-size="14" fill="#70706F" text-anchor="end">Data Type ❭ Fixed decimal number</text>
+</svg>

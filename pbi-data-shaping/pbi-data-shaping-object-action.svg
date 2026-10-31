@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 770" width="1200" height="770" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="770" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Calendar</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data shaping</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="262" lengthAdjust="spacing">Object . Action</text>
+  <rect x="330" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Every Power Query function names the object first, then the action, separated by a dot.</text>
+
+  <!-- ==================== Anatomy ==================== -->
+  <rect x="60" y="200" width="340" height="80" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="200" width="4" height="80" fill="#141421"/>
+  <text x="230.0" y="255" font-size="44" font-weight="300" fill="#141421" text-anchor="middle">Date</text>
+  <text x="230.0" y="312" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">OBJECT</text>
+  <text x="230.0" y="330" font-size="13" fill="#70706F" text-anchor="middle">what you want to obtain</text>
+  <circle cx="450.0" cy="240" r="28" fill="#F39454"/>
+  <circle cx="450.0" cy="240" r="6" fill="#141421"/>
+  <text x="450.0" y="312" font-size="13" font-weight="700" fill="#F39454" text-anchor="middle">DOT</text>
+  <text x="450.0" y="330" font-size="13" fill="#70706F" text-anchor="middle">separator</text>
+  <rect x="500" y="200" width="400" height="80" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="500" y="200" width="4" height="80" fill="#F39454"/>
+  <text x="700.0" y="255" font-size="44" font-weight="300" fill="#141421" text-anchor="middle">EndOfYear</text>
+  <text x="700.0" y="312" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">ACTION</text>
+  <text x="700.0" y="330" font-size="13" fill="#70706F" text-anchor="middle">what to do with the object</text>
+  <rect x="920" y="200" width="220" height="80" fill="none" stroke="#A9AAAA" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="1030.0" y="255" font-size="40" font-weight="300" fill="#70706F" text-anchor="middle">( date )</text>
+  <text x="1030.0" y="312" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">ARGUMENTS</text>
+  <text x="1030.0" y="330" font-size="13" fill="#70706F" text-anchor="middle">input between brackets</text>
+
+  <!-- ==================== Examples ==================== -->
+  <text x="60" y="378" font-size="16" font-weight="700" fill="#141421">EXAMPLES <tspan font-size="13" font-weight="400" fill="#70706F">· used in the calendar table</tspan></text>
+  <rect x="60" y="396" width="340" height="70" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="76" y="428" font-size="20" fill="#141421"><tspan font-weight="700">DateTime</tspan><tspan font-weight="700" fill="#F39454">.</tspan>LocalNow<tspan fill="#70706F">( )</tspan></text>
+  <text x="76" y="450" font-size="13" fill="#70706F">the current local date and time</text>
+  <rect x="430" y="396" width="340" height="70" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="446" y="428" font-size="20" fill="#141421"><tspan font-weight="700">Date</tspan><tspan font-weight="700" fill="#F39454">.</tspan>From<tspan fill="#70706F">( )</tspan></text>
+  <text x="446" y="450" font-size="13" fill="#70706F">a date from a value</text>
+  <rect x="800" y="396" width="340" height="70" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="816" y="428" font-size="20" fill="#141421"><tspan font-weight="700">Date</tspan><tspan font-weight="700" fill="#F39454">.</tspan>EndOfYear<tspan fill="#70706F">( )</tspan></text>
+  <text x="816" y="450" font-size="13" fill="#70706F">the last day of the year</text>
+  <rect x="60" y="482" width="340" height="70" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="76" y="514" font-size="20" fill="#141421"><tspan font-weight="700">Number</tspan><tspan font-weight="700" fill="#F39454">.</tspan>From<tspan fill="#70706F">( )</tspan></text>
+  <text x="76" y="536" font-size="13" fill="#70706F">a number from a value</text>
+  <rect x="430" y="482" width="340" height="70" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="446" y="514" font-size="20" fill="#141421"><tspan font-weight="700">List</tspan><tspan font-weight="700" fill="#F39454">.</tspan>Dates<tspan fill="#70706F">( )</tspan></text>
+  <text x="446" y="536" font-size="13" fill="#70706F">a list of consecutive dates</text>
+  <rect x="800" y="482" width="340" height="70" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="816" y="514" font-size="20" fill="#141421"><tspan font-weight="700">Text</tspan><tspan font-weight="700" fill="#F39454">.</tspan>From<tspan fill="#70706F">( )</tspan></text>
+  <text x="816" y="536" font-size="13" fill="#70706F">a text from a value</text>
+
+  <!-- ==================== Tip ==================== -->
+  <rect x="60" y="580" width="1080" height="80" fill="#FFFFFF"/>
+  <rect x="60" y="580" width="4" height="80" fill="#F39454"/>
+  <text x="90" y="612" font-size="18" font-weight="700" fill="#141421">Tip <tspan font-size="13" font-weight="400" fill="#70706F">· let IntelliSense write it</tspan></text>
+  <text x="90" y="638" font-size="13" fill="#70706F">Type object and action in lower case, without the dot, then press Tab.</text>
+  <rect x="610" y="603" width="190" height="34" fill="#F6F6F6" stroke="#A9AAAA" stroke-width="1"/>
+  <text x="624" y="626" font-size="16" font-style="italic" fill="#70706F">dateendofyear</text>
+  <line x1="728" y1="610" x2="728" y2="630" stroke="#141421" stroke-width="1.5"/>
+  <path d="M808 620 L846 620" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <rect x="852" y="605" width="56" height="30" rx="4" fill="#FFFFFF" stroke="#141421" stroke-width="1.5"/>
+  <text x="880" y="625" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">Tab</text>
+  <path d="M916 620 L954 620" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="962" y="627" font-size="20" fill="#141421"><tspan font-weight="700">Date</tspan><tspan font-weight="700" fill="#F39454">.</tspan>EndOfYear</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="690" x2="1140" y2="690" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="728" font-size="20" fill="#141421">First the <tspan font-weight="700">object</tspan>, then a <tspan font-weight="700" fill="#F39454">dot</tspan>, then the <tspan font-weight="700">action</tspan>.</text>
+  <text x="1140" y="727" font-size="14" fill="#70706F" text-anchor="end">Object . Action ( arguments )</text>
+</svg>

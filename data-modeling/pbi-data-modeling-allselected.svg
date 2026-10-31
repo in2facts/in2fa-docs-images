@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 730" width="1200" height="730" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="730" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">ALLSELECTED</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="262" lengthAdjust="spacing">% of the parent</text>
+  <rect x="330" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">ALLSELECTED removes the filter of the visual, but keeps what the user selected in slicers and filters.</text>
+
+  <!-- ==================== Slicer ==================== -->
+  <rect x="60" y="200" width="160" height="36" fill="#C9DCE7"/>
+  <text x="74" y="223" font-size="14" font-weight="700" fill="#141421">Slicer: Category</text>
+  <rect x="60" y="236" width="160" height="140" fill="#FFFFFF"/>
+  <rect x="74" y="250" width="16" height="16" fill="#F39454"/><path d="M77 258 l4 4 l7 -8" fill="none" stroke="#141421" stroke-width="2"/>
+  <text x="100" y="263" font-size="14" fill="#141421" font-weight="700">Bikes</text>
+  <rect x="74" y="282" width="16" height="16" fill="#F39454"/><path d="M77 290 l4 4 l7 -8" fill="none" stroke="#141421" stroke-width="2"/>
+  <text x="100" y="295" font-size="14" fill="#141421" font-weight="700">Accessories</text>
+  <rect x="74" y="314" width="16" height="16" fill="none" stroke="#A9AAAA" stroke-width="1.5"/>
+  <text x="100" y="327" font-size="14" fill="#A9AAAA">Clothing</text>
+  <rect x="74" y="346" width="16" height="16" fill="none" stroke="#A9AAAA" stroke-width="1.5"/>
+  <text x="100" y="359" font-size="14" fill="#A9AAAA">Components</text>
+  <text x="60" y="400" font-size="13" fill="#70706F">Outer filter context:</text>
+  <text x="60" y="418" font-size="13" fill="#70706F">kept by ALLSELECTED</text>
+  <path d="M224 218 H242" stroke="#F39454" stroke-width="2"/><path d="M242 212 L250 218 L242 224 Z" fill="#F39454"/>
+
+  <!-- ==================== Matrix ==================== -->
+  <rect x="250" y="200" width="590" height="52" fill="#141421"/>
+  <text x="264" y="222" font-size="13" font-weight="700" fill="#F6F6F6">Category</text><text x="264" y="240" font-size="13" font-weight="700" fill="#F6F6F6">Subcategory</text>
+  <text x="526" y="222" font-size="13" font-weight="700" fill="#F6F6F6" text-anchor="end">Revenue</text><text x="526" y="240" font-size="13" font-weight="700" fill="#F6F6F6" text-anchor="end"></text>
+  <text x="626" y="222" font-size="13" font-weight="700" fill="#F39454" text-anchor="end">% of</text><text x="626" y="240" font-size="13" font-weight="700" fill="#F39454" text-anchor="end">Category</text>
+  <text x="726" y="222" font-size="13" font-weight="700" fill="#F6F6F6" text-anchor="end">% of</text><text x="726" y="240" font-size="13" font-weight="700" fill="#F6F6F6" text-anchor="end">Visible</text>
+  <text x="826" y="222" font-size="13" font-weight="700" fill="#A9AAAA" text-anchor="end">% with</text><text x="826" y="240" font-size="13" font-weight="700" fill="#A9AAAA" text-anchor="end">ALL</text>
+  <rect x="250" y="252" width="590" height="224" fill="#FFFFFF"/>
+  <text x="264" y="273" font-size="14" fill="#141421" font-weight="700">Bikes</text>
+  <text x="526" y="273" font-size="14" fill="#141421" font-weight="700" text-anchor="end">900</text>
+  <text x="626" y="273" font-size="14" fill="#141421" font-weight="700" text-anchor="end">100%</text>
+  <text x="726" y="273" font-size="14" fill="#141421" font-weight="700" text-anchor="end">90%</text>
+  <text x="826" y="273" font-size="14" fill="#A9AAAA" font-weight="700" text-anchor="end">60%</text>
+  <rect x="250" y="284" width="590" height="32" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="2"/>
+  <line x1="250" y1="284" x2="840" y2="284" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="284" y="305" font-size="14" fill="#141421" font-weight="700">Mountain</text>
+  <text x="526" y="305" font-size="14" fill="#141421" font-weight="700" text-anchor="end">500</text>
+  <text x="626" y="305" font-size="14" fill="#141421" font-weight="700" text-anchor="end">55.6%</text>
+  <text x="726" y="305" font-size="14" fill="#141421" font-weight="700" text-anchor="end">50%</text>
+  <text x="826" y="305" font-size="14" fill="#A9AAAA" font-weight="700" text-anchor="end">33.3%</text>
+  <line x1="250" y1="316" x2="840" y2="316" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="284" y="337" font-size="14" fill="#141421">Road</text>
+  <text x="526" y="337" font-size="14" fill="#141421" text-anchor="end">400</text>
+  <text x="626" y="337" font-size="14" fill="#141421" text-anchor="end">44.4%</text>
+  <text x="726" y="337" font-size="14" fill="#141421" text-anchor="end">40%</text>
+  <text x="826" y="337" font-size="14" fill="#A9AAAA" text-anchor="end">26.7%</text>
+  <line x1="250" y1="348" x2="840" y2="348" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="264" y="369" font-size="14" fill="#141421" font-weight="700">Accessories</text>
+  <text x="526" y="369" font-size="14" fill="#141421" font-weight="700" text-anchor="end">100</text>
+  <text x="626" y="369" font-size="14" fill="#141421" font-weight="700" text-anchor="end">100%</text>
+  <text x="726" y="369" font-size="14" fill="#141421" font-weight="700" text-anchor="end">10%</text>
+  <text x="826" y="369" font-size="14" fill="#A9AAAA" font-weight="700" text-anchor="end">6.7%</text>
+  <line x1="250" y1="380" x2="840" y2="380" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="284" y="401" font-size="14" fill="#141421">Helmets</text>
+  <text x="526" y="401" font-size="14" fill="#141421" text-anchor="end">60</text>
+  <text x="626" y="401" font-size="14" fill="#141421" text-anchor="end">60%</text>
+  <text x="726" y="401" font-size="14" fill="#141421" text-anchor="end">6%</text>
+  <text x="826" y="401" font-size="14" fill="#A9AAAA" text-anchor="end">4%</text>
+  <line x1="250" y1="412" x2="840" y2="412" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="284" y="433" font-size="14" fill="#141421">Bottles</text>
+  <text x="526" y="433" font-size="14" fill="#141421" text-anchor="end">40</text>
+  <text x="626" y="433" font-size="14" fill="#141421" text-anchor="end">40%</text>
+  <text x="726" y="433" font-size="14" fill="#141421" text-anchor="end">4%</text>
+  <text x="826" y="433" font-size="14" fill="#A9AAAA" text-anchor="end">2.7%</text>
+  <line x1="250" y1="444" x2="840" y2="444" stroke="#141421" stroke-width="1.5"/>
+  <text x="264" y="465" font-size="14" fill="#141421" font-weight="700">Total</text>
+  <text x="526" y="465" font-size="14" fill="#141421" font-weight="700" text-anchor="end">1,000</text>
+  <text x="626" y="465" font-size="14" fill="#141421" font-weight="700" text-anchor="end">100%</text>
+  <text x="726" y="465" font-size="14" fill="#141421" font-weight="700" text-anchor="end">100%</text>
+  <text x="826" y="465" font-size="14" fill="#A9AAAA" font-weight="700" text-anchor="end">66.7%</text>
+  <text x="250" y="498" font-size="13" fill="#70706F">Totals of “% with ALL” stay below 100%: the unselected categories still count.</text>
+
+  <!-- ==================== Denominators ==================== -->
+  <text x="880" y="214" font-size="15" font-weight="700" fill="#141421">Denominator for Mountain</text>
+  <text x="880" y="234" font-size="13" fill="#70706F">Revenue Mountain = 500</text>
+  <text x="880" y="264" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421">ALLSELECTED ( Subcategory )</text>
+  <rect x="880" y="274" width="156.0" height="28" fill="#F39454"/>
+  <rect x="880" y="274" width="86.7" height="28" fill="none" stroke="#F6F6F6" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="890" y="293" font-size="14" font-weight="700" fill="#141421">900</text>
+  <text x="880" y="318" font-size="12" fill="#70706F">Bikes subtotal</text>
+  <text x="1140" y="264" font-size="13" font-weight="700" fill="#141421" text-anchor="end">55.6%</text>
+  <text x="880" y="348" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421">ALLSELECTED ( )</text>
+  <rect x="880" y="358" width="173.3" height="28" fill="#141421"/>
+  <rect x="880" y="358" width="86.7" height="28" fill="none" stroke="#F6F6F6" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="890" y="377" font-size="14" font-weight="700" fill="#F6F6F6">1,000</text>
+  <text x="880" y="402" font-size="12" fill="#70706F">visible total</text>
+  <text x="1140" y="348" font-size="13" font-weight="700" fill="#141421" text-anchor="end">50%</text>
+  <text x="880" y="432" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421">ALL ( Categories )</text>
+  <rect x="880" y="442" width="260.0" height="28" fill="#D7D8D8"/>
+  <rect x="880" y="442" width="86.7" height="28" fill="none" stroke="#F6F6F6" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="890" y="461" font-size="14" font-weight="700" fill="#70706F">1,500</text>
+  <text x="880" y="486" font-size="12" fill="#70706F">incl. unselected</text>
+  <text x="1140" y="432" font-size="13" font-weight="700" fill="#141421" text-anchor="end">33.3%</text>
+
+  <!-- ==================== Code ==================== -->
+  <rect x="60" y="520" width="1080" height="44" fill="#141421"/>
+  <text x="76" y="548" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#F6F6F6" xml:space="preserve">Revenue % of Category = DIVIDE ( [Revenue], CALCULATE ( [Revenue], <tspan fill="#F39454">ALLSELECTED</tspan> ( 'Categories'[ProductSubcategoryName] ) ) )</text>
+
+  <!-- ==================== Explanation ==================== -->
+  <path transform="translate(60 574)" d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/><rect x="75" y="577" width="2.5" height="13" fill="#F39454"/>
+  <text x="86" y="590" font-size="17" font-weight="700" fill="#141421">ALLSELECTED ( column )</text>
+  <text x="60" y="614" font-size="14" fill="#141421">Removes only the child column's filter:</text>
+  <text x="60" y="632" font-size="14" fill="#141421">the parent filter stays, so you get the</text>
+  <text x="60" y="650" font-size="14" fill="#141421">parent subtotal.</text>
+  <path transform="translate(430 574)" d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/><rect x="445" y="577" width="2.5" height="13" fill="#F39454"/>
+  <text x="456" y="590" font-size="17" font-weight="700" fill="#141421">ALLSELECTED ( )</text>
+  <text x="430" y="614" font-size="14" fill="#141421">Removes every filter of the visual:</text>
+  <text x="430" y="632" font-size="14" fill="#141421">the denominator is the visible total,</text>
+  <text x="430" y="650" font-size="14" fill="#141421">slicers still respected.</text>
+  <path transform="translate(800 574)" d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/><rect x="815" y="577" width="2.5" height="13" fill="#F39454"/>
+  <text x="826" y="590" font-size="17" font-weight="700" fill="#141421">ALL</text>
+  <text x="800" y="614" font-size="14" fill="#141421">Ignores the slicer too: percentages</text>
+  <text x="800" y="632" font-size="14" fill="#141421">no longer add up to 100% once the</text>
+  <text x="800" y="650" font-size="14" fill="#141421">user filters.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="672" x2="1140" y2="672" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="708" font-size="20" fill="#141421">Target the child column: <tspan font-weight="700">ALLSELECTED returns the parent subtotal.</tspan></text>
+  <text x="1140" y="707" font-size="14" fill="#70706F" text-anchor="end">Illustrative figures</text>
+</svg>

@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 710" width="1200" height="710" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="710" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Relationships</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="296" lengthAdjust="spacing">Filter propagation</text>
+  <rect x="364" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">A filter on a dimension flows to the fact table (1 → <tspan font-family="Arial, sans-serif">*</tspan>), but never back to another dimension (<tspan font-family="Arial, sans-serif">*</tspan> → 1).</text>
+
+  <!-- ==================== Tables ==================== -->
+  <text x="60" y="200" font-size="13" fill="#70706F"><tspan font-weight="700" fill="#141421">Dimension · master table</tspan></text>
+  <rect x="60" y="214" width="220" height="172" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="214" width="220" height="36" fill="#141421"/>
+  <text x="74" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Customer</text>
+  <rect x="60" y="250" width="220" height="136" fill="#FFFFFF"/>
+  <text x="74" y="272" font-size="12" font-weight="700" fill="#70706F">Id<tspan dx="5" font-size="10" fill="#F39454">PK</tspan></text><text x="124" y="272" font-size="12" font-weight="700" fill="#70706F">Name</text><text x="184" y="272" font-size="12" font-weight="700" fill="#70706F">City</text>
+  <line x1="60" y1="284" x2="280" y2="284" stroke="#D7D8D8"/>
+  <text x="74" y="306" font-size="14" fill="#141421">1</text><text x="124" y="306" font-size="14" fill="#141421">Paul</text><text x="184" y="306" font-size="14" fill="#141421">Brussels</text>
+  <line x1="60" y1="318" x2="280" y2="318" stroke="#D7D8D8"/>
+  <text x="74" y="340" font-size="14" fill="#141421">2</text><text x="124" y="340" font-size="14" fill="#141421">Mark</text><text x="184" y="340" font-size="14" fill="#141421">Ghent</text>
+  <line x1="60" y1="352" x2="280" y2="352" stroke="#D7D8D8"/>
+  <text x="74" y="374" font-size="14" fill="#141421">3</text><text x="124" y="374" font-size="14" fill="#141421">Luke</text><text x="184" y="374" font-size="14" fill="#141421">Antwerp</text>
+  <text x="420" y="200" font-size="13" fill="#70706F"><tspan font-weight="700" fill="#141421">Fact · transactional table</tspan></text>
+  <rect x="420" y="214" width="340" height="206" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="420" y="214" width="340" height="36" fill="#141421"/>
+  <text x="434" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Sales</text>
+  <rect x="420" y="250" width="340" height="170" fill="#FFFFFF"/>
+  <text x="434" y="272" font-size="12" font-weight="700" fill="#70706F">Date</text><text x="514" y="272" font-size="12" font-weight="700" fill="#70706F">Cust Id<tspan dx="5" font-size="10" fill="#70706F">FK</tspan></text><text x="598" y="272" font-size="12" font-weight="700" fill="#70706F">Prod Id<tspan dx="5" font-size="10" fill="#70706F">FK</tspan></text><text x="746" y="272" font-size="12" font-weight="700" fill="#70706F" text-anchor="end">Amount</text>
+  <line x1="420" y1="284" x2="760" y2="284" stroke="#D7D8D8"/>
+  <rect x="420" y="284" width="340" height="34" fill="#F39454" fill-opacity="0.2" stroke="#F39454" stroke-width="2"/>
+  <text x="434" y="306" font-size="14" fill="#141421" font-weight="700">1/1/2026</text><text x="514" y="306" font-size="14" fill="#141421" font-weight="700">1</text><text x="598" y="306" font-size="14" fill="#141421" font-weight="700">1</text><text x="746" y="306" font-size="14" fill="#141421" font-weight="700" text-anchor="end">100</text>
+  <line x1="420" y1="318" x2="760" y2="318" stroke="#D7D8D8"/>
+  <text x="434" y="340" font-size="14" fill="#A9AAAA">2/1/2026</text><text x="514" y="340" font-size="14" fill="#A9AAAA">2</text><text x="598" y="340" font-size="14" fill="#A9AAAA">2</text><text x="746" y="340" font-size="14" fill="#A9AAAA" text-anchor="end">30</text>
+  <line x1="420" y1="352" x2="760" y2="352" stroke="#D7D8D8"/>
+  <text x="434" y="374" font-size="14" fill="#A9AAAA">3/1/2026</text><text x="514" y="374" font-size="14" fill="#A9AAAA">1</text><text x="598" y="374" font-size="14" fill="#A9AAAA">3</text><text x="746" y="374" font-size="14" fill="#A9AAAA" text-anchor="end">10</text>
+  <line x1="420" y1="386" x2="760" y2="386" stroke="#D7D8D8"/>
+  <rect x="420" y="386" width="340" height="34" fill="#F39454" fill-opacity="0.2" stroke="#F39454" stroke-width="2"/>
+  <text x="434" y="408" font-size="14" fill="#141421" font-weight="700">4/1/2026</text><text x="514" y="408" font-size="14" fill="#141421" font-weight="700">3</text><text x="598" y="408" font-size="14" fill="#141421" font-weight="700">1</text><text x="746" y="408" font-size="14" fill="#141421" font-weight="700" text-anchor="end">200</text>
+  <text x="900" y="200" font-size="13" fill="#70706F"><tspan font-weight="700" fill="#141421">Dimension · master table</tspan></text>
+  <rect x="900" y="214" width="240" height="172" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="900" y="214" width="240" height="36" fill="#141421"/>
+  <text x="914" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Product</text>
+  <path d="M1110 225 h16 l-6 7 v7 l-4 -2 v-5 z" fill="#F39454"/>
+  <rect x="900" y="250" width="240" height="136" fill="#FFFFFF"/>
+  <text x="914" y="272" font-size="12" font-weight="700" fill="#70706F">Id<tspan dx="5" font-size="10" fill="#F39454">PK</tspan></text><text x="964" y="272" font-size="12" font-weight="700" fill="#70706F">Name</text><text x="1034" y="272" font-size="12" font-weight="700" fill="#70706F">Category</text>
+  <line x1="900" y1="284" x2="1140" y2="284" stroke="#D7D8D8"/>
+  <rect x="900" y="284" width="240" height="34" fill="#F39454" fill-opacity="0.2" stroke="#F39454" stroke-width="2"/>
+  <text x="914" y="306" font-size="14" fill="#141421" font-weight="700">1</text><text x="964" y="306" font-size="14" fill="#141421" font-weight="700">Bike</text><text x="1034" y="306" font-size="14" fill="#141421" font-weight="700">Bikes</text>
+  <line x1="900" y1="318" x2="1140" y2="318" stroke="#D7D8D8"/>
+  <text x="914" y="340" font-size="14" fill="#A9AAAA">2</text><text x="964" y="340" font-size="14" fill="#A9AAAA">Helmet</text><text x="1034" y="340" font-size="14" fill="#A9AAAA">Accessories</text>
+  <line x1="900" y1="352" x2="1140" y2="352" stroke="#D7D8D8"/>
+  <text x="914" y="374" font-size="14" fill="#A9AAAA">3</text><text x="964" y="374" font-size="14" fill="#A9AAAA">Gloves</text><text x="1034" y="374" font-size="14" fill="#A9AAAA">Clothing</text>
+
+  <!-- ==================== Relationships ==================== -->
+  <line x1="896" y1="232" x2="766" y2="232" stroke="#F39454" stroke-width="3" marker-end="url(#head-mango)"/>
+  <text x="888" y="222" font-size="16" font-weight="700" fill="#141421" text-anchor="end">1</text>
+  <text x="772" y="230" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421">*</text>
+  <circle cx="830.0" cy="258" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M825.0 258 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <line x1="284" y1="232" x2="414" y2="232" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="292" y="222" font-size="16" font-weight="700" fill="#141421">1</text>
+  <text x="408" y="230" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="end">*</text>
+  <path d="M414 352 C370 352 330 352 288 352" fill="none" stroke="#F39454" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#head-mango)"/>
+  <circle cx="350.0" cy="352" r="11" fill="#F6F6F6" stroke="#141421" stroke-width="2"/><path d="M345.5 347.5 l9 9 m0 -9 l-9 9" stroke="#141421" stroke-width="2.5"/>
+
+  <!-- ==================== Steps ==================== -->
+  <circle cx="912" cy="452" r="12" fill="#F39454"/><text x="912" y="457" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="932" y="458" font-size="16" font-weight="700" fill="#141421">Filter context</text>
+  <text x="900" y="484" font-size="13" fill="#141421">The slicer sets Product = Bike</text>
+  <text x="900" y="503" font-size="13" fill="#141421">on the dimension.</text>
+  <circle cx="432" cy="452" r="12" fill="#F39454"/><text x="432" y="457" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="452" y="458" font-size="16" font-weight="700" fill="#141421">Propagated 1 → <tspan font-family="Arial, sans-serif">*</tspan></text>
+  <text x="420" y="484" font-size="13" fill="#141421">Only rows with Prod Id 1 (Bike) remain:</text>
+  <text x="420" y="503" font-size="13" fill="#141421">2 of 4 rows.</text>
+  <circle cx="72" cy="452" r="12" fill="#F39454"/><text x="72" y="457" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="92" y="458" font-size="16" font-weight="700" fill="#141421">Not propagated <tspan font-family="Arial, sans-serif">*</tspan> → 1</text>
+  <text x="60" y="484" font-size="13" fill="#141421">All 3 customers stay visible,</text>
+  <text x="60" y="503" font-size="13" fill="#141421">even Mark (Id 2), who bought no bike.</text>
+
+  <!-- ==================== Rules ==================== -->
+  <rect x="60" y="530" width="530" height="76" fill="#FFFFFF"/>
+  <rect x="60" y="530" width="4" height="76" fill="#F39454"/>
+  <circle cx="94" cy="568" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M89 568 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="120" y="560" font-size="18" font-weight="700" fill="#141421">Only from 1 → <tspan font-family="Arial, sans-serif">*</tspan></text>
+  <text x="120" y="586" font-size="13" fill="#70706F">From the one-side (dimension) to the many-side (fact).</text>
+  <rect x="610" y="530" width="530" height="76" fill="#FFFFFF"/>
+  <rect x="610" y="530" width="4" height="76" fill="#141421"/>
+  <circle cx="644" cy="568" r="11" fill="#F6F6F6" stroke="#141421" stroke-width="2"/><path d="M639.5 563.5 l9 9 m0 -9 l-9 9" stroke="#141421" stroke-width="2.5"/>
+  <text x="670" y="560" font-size="18" font-weight="700" fill="#141421">Never from <tspan font-family="Arial, sans-serif">*</tspan> → 1</text>
+  <text x="670" y="586" font-size="13" fill="#70706F">Unless the relationship is bi-directional, or CROSSFILTER is used.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="636" x2="1140" y2="636" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="672" font-size="20" fill="#141421">Filters flow <tspan font-weight="700">from the one-side to the many-side.</tspan></text>
+  <text x="1140" y="671" font-size="14" fill="#70706F" text-anchor="end">The other way? CROSSFILTER ( …, BOTH )</text>
+</svg>

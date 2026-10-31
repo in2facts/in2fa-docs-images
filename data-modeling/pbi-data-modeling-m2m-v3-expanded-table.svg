@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Many-to-many: M2M v3 (expanded tables)</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="292" lengthAdjust="spacing">Expanded tables</text>
+  <rect x="360" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Through its many-to-one relationships, the bridge also contains every column of Dim_Account and Dim_Customer.</text>
+
+  <text x="60" y="190" font-size="13" font-weight="700" fill="#70706F">Expanded table: Bridge_Account_Customer</text>
+
+  <!-- Bridge_Account_Customer -->
+  <rect x="60" y="208" width="300" height="36" fill="#141421"/>
+  <text x="76" y="231" font-size="15" font-weight="700" fill="#F6F6F6">Bridge_Account_Customer <tspan font-size="12" font-weight="400">native columns</tspan></text>
+  <rect x="60" y="244" width="300" height="32" fill="#FFFFFF"/>
+  <line x1="60" y1="276" x2="360" y2="276" stroke="#141421" stroke-width="1.5"/>
+  <rect x="60" y="276" width="300" height="256" fill="#FFFFFF"/>
+  <rect x="60" y="404" width="300" height="32" fill="#F39454" fill-opacity="0.18"/>
+  <rect x="60" y="436" width="300" height="32" fill="#F39454" fill-opacity="0.18"/>
+  <line x1="60" y1="308" x2="360" y2="308" stroke="#D7D8D8"/>
+  <line x1="60" y1="340" x2="360" y2="340" stroke="#D7D8D8"/>
+  <line x1="60" y1="372" x2="360" y2="372" stroke="#D7D8D8"/>
+  <line x1="60" y1="404" x2="360" y2="404" stroke="#D7D8D8"/>
+  <line x1="60" y1="436" x2="360" y2="436" stroke="#D7D8D8"/>
+  <line x1="60" y1="468" x2="360" y2="468" stroke="#D7D8D8"/>
+  <line x1="60" y1="500" x2="360" y2="500" stroke="#D7D8D8"/>
+  <text x="194" y="265" font-size="13" font-weight="700" fill="#141421" text-anchor="end">ID_Account</text>
+  <text x="344" y="265" font-size="13" font-weight="700" fill="#141421" text-anchor="end">ID_Customer</text>
+  <text x="194" y="297" font-size="15" fill="#A9AAAA" text-anchor="end">1</text><text x="344" y="297" font-size="15" fill="#A9AAAA" text-anchor="end">1</text>
+  <text x="194" y="329" font-size="15" fill="#A9AAAA" text-anchor="end">2</text><text x="344" y="329" font-size="15" fill="#A9AAAA" text-anchor="end">2</text>
+  <text x="194" y="361" font-size="15" fill="#A9AAAA" text-anchor="end">3</text><text x="344" y="361" font-size="15" fill="#A9AAAA" text-anchor="end">2</text>
+  <text x="194" y="393" font-size="15" fill="#A9AAAA" text-anchor="end">4</text><text x="344" y="393" font-size="15" fill="#A9AAAA" text-anchor="end">2</text>
+  <text x="194" y="425" font-size="15" fill="#141421" font-weight="700" text-anchor="end">3</text><text x="344" y="425" font-size="15" fill="#141421" font-weight="700" text-anchor="end">3</text>
+  <text x="194" y="457" font-size="15" fill="#141421" font-weight="700" text-anchor="end">5</text><text x="344" y="457" font-size="15" fill="#141421" font-weight="700" text-anchor="end">3</text>
+  <text x="194" y="489" font-size="15" fill="#A9AAAA" text-anchor="end">4</text><text x="344" y="489" font-size="15" fill="#A9AAAA" text-anchor="end">4</text>
+  <text x="194" y="521" font-size="15" fill="#A9AAAA" text-anchor="end">6</text><text x="344" y="521" font-size="15" fill="#A9AAAA" text-anchor="end">4</text>
+  <rect x="60" y="208" width="300" height="324" fill="none" stroke="#141421" stroke-width="1.5"/>
+
+  <!-- Dim_Account -->
+  <rect x="380" y="208" width="370" height="36" fill="#70706F"/>
+  <text x="396" y="231" font-size="15" font-weight="700" fill="#F6F6F6">Dim_Account <tspan font-size="12" font-weight="400">via ID_Account</tspan></text>
+  <rect x="380" y="244" width="370" height="32" fill="#FFFFFF"/>
+  <line x1="380" y1="276" x2="750" y2="276" stroke="#70706F" stroke-width="1.5"/>
+  <rect x="380" y="276" width="370" height="256" fill="#FFFFFF"/>
+  <rect x="380" y="404" width="370" height="32" fill="#F39454" fill-opacity="0.18"/>
+  <rect x="380" y="436" width="370" height="32" fill="#F39454" fill-opacity="0.18"/>
+  <line x1="380" y1="308" x2="750" y2="308" stroke="#D7D8D8"/>
+  <line x1="380" y1="340" x2="750" y2="340" stroke="#D7D8D8"/>
+  <line x1="380" y1="372" x2="750" y2="372" stroke="#D7D8D8"/>
+  <line x1="380" y1="404" x2="750" y2="404" stroke="#D7D8D8"/>
+  <line x1="380" y1="436" x2="750" y2="436" stroke="#D7D8D8"/>
+  <line x1="380" y1="468" x2="750" y2="468" stroke="#D7D8D8"/>
+  <line x1="380" y1="500" x2="750" y2="500" stroke="#D7D8D8"/>
+  <text x="494" y="265" font-size="13" font-weight="700" fill="#141421" text-anchor="end">ID_Account</text>
+  <text x="526" y="265" font-size="13" font-weight="700" fill="#141421">Account</text>
+  <text x="494" y="297" font-size="15" fill="#A9AAAA" text-anchor="end">1</text><text x="526" y="297" font-size="15" fill="#A9AAAA">Luke</text>
+  <text x="494" y="329" font-size="15" fill="#A9AAAA" text-anchor="end">2</text><text x="526" y="329" font-size="15" fill="#A9AAAA">Mark</text>
+  <text x="494" y="361" font-size="15" fill="#A9AAAA" text-anchor="end">3</text><text x="526" y="361" font-size="15" fill="#A9AAAA">Mark - Paul</text>
+  <text x="494" y="393" font-size="15" fill="#A9AAAA" text-anchor="end">4</text><text x="526" y="393" font-size="15" fill="#A9AAAA">Mark - Robert</text>
+  <text x="494" y="425" font-size="15" fill="#141421" font-weight="700" text-anchor="end">3</text><text x="526" y="425" font-size="15" fill="#141421" font-weight="700">Mark - Paul</text>
+  <text x="494" y="457" font-size="15" fill="#141421" font-weight="700" text-anchor="end">5</text><text x="526" y="457" font-size="15" fill="#141421" font-weight="700">Paul</text>
+  <text x="494" y="489" font-size="15" fill="#A9AAAA" text-anchor="end">4</text><text x="526" y="489" font-size="15" fill="#A9AAAA">Mark - Robert</text>
+  <text x="494" y="521" font-size="15" fill="#A9AAAA" text-anchor="end">6</text><text x="526" y="521" font-size="15" fill="#A9AAAA">Robert</text>
+  <rect x="380" y="208" width="370" height="324" fill="none" stroke="#70706F" stroke-width="1.5"/>
+
+  <!-- Dim_Customer -->
+  <rect x="770" y="208" width="370" height="36" fill="#C9DCE7"/>
+  <text x="786" y="231" font-size="15" font-weight="700" fill="#141421">Dim_Customer <tspan font-size="12" font-weight="400">via ID_Customer</tspan></text>
+  <rect x="770" y="244" width="370" height="32" fill="#FFFFFF"/>
+  <line x1="770" y1="276" x2="1140" y2="276" stroke="#70706F" stroke-width="1.5"/>
+  <rect x="770" y="276" width="370" height="256" fill="#FFFFFF"/>
+  <rect x="770" y="404" width="370" height="32" fill="#F39454" fill-opacity="0.18"/>
+  <rect x="770" y="436" width="370" height="32" fill="#F39454" fill-opacity="0.18"/>
+  <line x1="770" y1="308" x2="1140" y2="308" stroke="#D7D8D8"/>
+  <line x1="770" y1="340" x2="1140" y2="340" stroke="#D7D8D8"/>
+  <line x1="770" y1="372" x2="1140" y2="372" stroke="#D7D8D8"/>
+  <line x1="770" y1="404" x2="1140" y2="404" stroke="#D7D8D8"/>
+  <line x1="770" y1="436" x2="1140" y2="436" stroke="#D7D8D8"/>
+  <line x1="770" y1="468" x2="1140" y2="468" stroke="#D7D8D8"/>
+  <line x1="770" y1="500" x2="1140" y2="500" stroke="#D7D8D8"/>
+  <text x="884" y="265" font-size="13" font-weight="700" fill="#141421" text-anchor="end">ID_Customer</text>
+  <text x="916" y="265" font-size="13" font-weight="700" fill="#141421">CustomerName</text>
+  <text x="884" y="297" font-size="15" fill="#A9AAAA" text-anchor="end">1</text><text x="916" y="297" font-size="15" fill="#A9AAAA">Luke</text>
+  <text x="884" y="329" font-size="15" fill="#A9AAAA" text-anchor="end">2</text><text x="916" y="329" font-size="15" fill="#A9AAAA">Mark</text>
+  <text x="884" y="361" font-size="15" fill="#A9AAAA" text-anchor="end">2</text><text x="916" y="361" font-size="15" fill="#A9AAAA">Mark</text>
+  <text x="884" y="393" font-size="15" fill="#A9AAAA" text-anchor="end">2</text><text x="916" y="393" font-size="15" fill="#A9AAAA">Mark</text>
+  <text x="884" y="425" font-size="15" fill="#141421" font-weight="700" text-anchor="end">3</text><text x="916" y="425" font-size="15" fill="#141421" font-weight="700">Paul</text>
+  <text x="884" y="457" font-size="15" fill="#141421" font-weight="700" text-anchor="end">3</text><text x="916" y="457" font-size="15" fill="#141421" font-weight="700">Paul</text>
+  <text x="884" y="489" font-size="15" fill="#A9AAAA" text-anchor="end">4</text><text x="916" y="489" font-size="15" fill="#A9AAAA">Robert</text>
+  <text x="884" y="521" font-size="15" fill="#A9AAAA" text-anchor="end">4</text><text x="916" y="521" font-size="15" fill="#A9AAAA">Robert</text>
+  <rect x="770" y="208" width="370" height="324" fill="none" stroke="#70706F" stroke-width="1.5"/>
+  <rect x="58" y="404" width="1084" height="32" fill="none" stroke="#F39454" stroke-width="2"/>
+  <rect x="58" y="436" width="1084" height="32" fill="none" stroke="#F39454" stroke-width="2"/>
+  <path d="M1106 253 h16 l-6 7 v7 l-4 -2 v-5 z" fill="#F39454"/>
+
+  <!-- steps -->
+  <circle cx="1126" cy="190" r="11" fill="#F39454"/><text x="1126" y="195" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="1108" y="195" font-size="13" font-weight="700" fill="#141421" text-anchor="end">Report filter: CustomerName = Paul</text>
+  <circle cx="44" cy="436.0" r="11" fill="#F39454"/><text x="44" y="441.0" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <circle cx="394" cy="556" r="11" fill="#F39454"/><text x="394" y="561" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="412" y="561" font-size="13" font-weight="700" fill="#141421">Dim_Account filtered in one go: Mark - Paul, Paul</text>
+  <text x="60" y="561" font-size="13" fill="#70706F">2 of 8 bridge rows remain</text>
+
+  <!-- ==================== Code ==================== -->
+  <rect x="60" y="582" width="1080" height="44" fill="#141421"/>
+  <text x="80" y="610" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#F6F6F6" xml:space="preserve">M2M v3 = CALCULATE ( [TransactionAmount], <tspan fill="#F39454">Bridge_Account_Customer</tspan> )</text>
+
+  <!-- ==================== Explanation ==================== -->
+  <circle cx="71" cy="654" r="11" fill="#F39454"/><text x="71" y="659" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="90" y="660" font-size="17" font-weight="700" fill="#141421">Report filter</text>
+  <text x="60" y="686" font-size="14" fill="#141421">CustomerName = Paul keeps only</text>
+  <text x="60" y="705" font-size="14" fill="#141421">2 rows of the expanded bridge.</text>
+  <circle cx="441" cy="654" r="11" fill="#F39454"/><text x="441" y="659" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="460" y="660" font-size="17" font-weight="700" fill="#141421">Expanded table</text>
+  <text x="430" y="686" font-size="14" fill="#141421">The bridge contains the columns of</text>
+  <text x="430" y="705" font-size="14" fill="#141421">Dim_Account and Dim_Customer.</text>
+  <circle cx="811" cy="654" r="11" fill="#F39454"/><text x="811" y="659" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="830" y="660" font-size="17" font-weight="700" fill="#141421">Filter in one go</text>
+  <text x="800" y="686" font-size="14" fill="#141421">Used as a CALCULATE filter, the bridge</text>
+  <text x="800" y="705" font-size="14" fill="#141421">filters Dim_Account at once.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="738" x2="1140" y2="738" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="774" font-size="20" fill="#141421">Filter the bridge, <tspan font-weight="700">and every table it expands to is filtered too.</tspan></text>
+  <text x="1140" y="773" font-size="14" fill="#70706F" text-anchor="end">Result: Paul = 7,308 + 150 = 7,458</text>
+</svg>

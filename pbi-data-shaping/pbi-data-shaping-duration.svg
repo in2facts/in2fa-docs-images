@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 690" width="1200" height="690" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="690" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Calendar</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data shaping</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="196" lengthAdjust="spacing">#duration()</text>
+  <rect x="266" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">A box with four switches, set to 1 or 0. They define the step between two values in a list.</text>
+
+  <!-- ==================== M code ==================== -->
+  <g font-family="Consolas, 'Courier New', monospace" font-size="28" font-weight="700" fill="#141421">
+    <text x="508" y="212" text-anchor="end">#duration(</text>
+    <text x="528" y="212" text-anchor="middle" fill="#F39454">1</text>
+    <text x="541" y="212" text-anchor="middle">,</text>
+    <text x="588" y="212" text-anchor="middle" fill="#A9AAAA">0</text>
+    <text x="601" y="212" text-anchor="middle">,</text>
+    <text x="648" y="212" text-anchor="middle" fill="#A9AAAA">0</text>
+    <text x="661" y="212" text-anchor="middle">,</text>
+    <text x="708" y="212" text-anchor="middle" fill="#A9AAAA">0</text>
+    <text x="722" y="212">)</text>
+  </g>
+
+  <!-- Connectors: argument -> switch -->
+  <path d="M528 222 C528 250 188 240 188 264" fill="none" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <path d="M588 222 C588 250 463 240 463 264" fill="none" stroke="#70706F" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#head-sand)"/>
+  <path d="M648 222 C648 250 738 240 738 264" fill="none" stroke="#70706F" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#head-sand)"/>
+  <path d="M708 222 C708 250 1013 240 1013 264" fill="none" stroke="#70706F" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#head-sand)"/>
+
+  <!-- ==================== Switches ==================== -->
+  <!-- Day: ON -->
+  <rect x="60" y="270" width="255" height="200" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="270" width="255" height="36" fill="#141421"/>
+  <text x="74" y="294" font-size="15" font-weight="700" fill="#F6F6F6">Day</text>
+  <text x="301" y="294" font-size="12" font-weight="700" fill="#F39454" text-anchor="end">ON</text>
+  <text x="148" y="350" font-size="14" font-weight="700" fill="#141421" text-anchor="end">1</text>
+  <text x="148" y="410" font-size="14" fill="#A9AAAA" text-anchor="end">0</text>
+  <rect x="164" y="320" width="48" height="110" rx="24" fill="#F39454" fill-opacity="0.2" stroke="#F39454" stroke-width="2"/>
+  <circle cx="188" cy="345" r="17" fill="#F39454"/>
+  <text x="188" y="456" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">+ 1 day</text>
+
+  <!-- Hour: OFF -->
+  <rect x="335" y="270" width="255" height="200" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="335" y="270" width="255" height="36" fill="#141421"/>
+  <text x="349" y="294" font-size="15" font-weight="700" fill="#F6F6F6">Hour</text>
+  <text x="576" y="294" font-size="12" font-weight="700" fill="#A9AAAA" text-anchor="end">OFF</text>
+  <text x="423" y="350" font-size="14" fill="#A9AAAA" text-anchor="end">1</text>
+  <text x="423" y="410" font-size="14" font-weight="700" fill="#141421" text-anchor="end">0</text>
+  <rect x="439" y="320" width="48" height="110" rx="24" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="2"/>
+  <circle cx="463" cy="405" r="17" fill="#A9AAAA"/>
+  <text x="463" y="456" font-size="14" fill="#A9AAAA" text-anchor="middle">+ 0 hours</text>
+
+  <!-- Minute: OFF -->
+  <rect x="610" y="270" width="255" height="200" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="610" y="270" width="255" height="36" fill="#141421"/>
+  <text x="624" y="294" font-size="15" font-weight="700" fill="#F6F6F6">Minute</text>
+  <text x="851" y="294" font-size="12" font-weight="700" fill="#A9AAAA" text-anchor="end">OFF</text>
+  <text x="698" y="350" font-size="14" fill="#A9AAAA" text-anchor="end">1</text>
+  <text x="698" y="410" font-size="14" font-weight="700" fill="#141421" text-anchor="end">0</text>
+  <rect x="714" y="320" width="48" height="110" rx="24" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="2"/>
+  <circle cx="738" cy="405" r="17" fill="#A9AAAA"/>
+  <text x="738" y="456" font-size="14" fill="#A9AAAA" text-anchor="middle">+ 0 minutes</text>
+
+  <!-- Second: OFF -->
+  <rect x="885" y="270" width="255" height="200" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="885" y="270" width="255" height="36" fill="#141421"/>
+  <text x="899" y="294" font-size="15" font-weight="700" fill="#F6F6F6">Second</text>
+  <text x="1126" y="294" font-size="12" font-weight="700" fill="#A9AAAA" text-anchor="end">OFF</text>
+  <text x="973" y="350" font-size="14" fill="#A9AAAA" text-anchor="end">1</text>
+  <text x="973" y="410" font-size="14" font-weight="700" fill="#141421" text-anchor="end">0</text>
+  <rect x="989" y="320" width="48" height="110" rx="24" fill="#F6F6F6" stroke="#D7D8D8" stroke-width="2"/>
+  <circle cx="1013" cy="405" r="17" fill="#A9AAAA"/>
+  <text x="1013" y="456" font-size="14" fill="#A9AAAA" text-anchor="middle">+ 0 seconds</text>
+
+  <!-- ==================== Result ==================== -->
+  <text x="60" y="516" font-size="13" fill="#70706F"><tspan font-weight="700" fill="#141421">Result</tspan> · List.Dates( StartDate, Count, #duration(1, 0, 0, 0) )</text>
+  <g font-size="14">
+    <rect x="60" y="530" width="150" height="40" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+    <text x="135" y="555" fill="#141421" font-weight="700" text-anchor="middle">1/1/2026</text>
+    <rect x="282" y="530" width="150" height="40" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+    <text x="357" y="555" fill="#141421" font-weight="700" text-anchor="middle">2/1/2026</text>
+    <rect x="504" y="530" width="150" height="40" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+    <text x="579" y="555" fill="#141421" font-weight="700" text-anchor="middle">3/1/2026</text>
+    <rect x="726" y="530" width="150" height="40" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+    <text x="801" y="555" fill="#141421" font-weight="700" text-anchor="middle">4/1/2026</text>
+    <text x="948" y="556" fill="#70706F" font-size="20">…</text>
+  </g>
+  <g font-size="12" font-weight="700" fill="#F39454" text-anchor="middle">
+    <line x1="216" y1="550" x2="274" y2="550" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/><text x="246" y="542">+1 day</text>
+    <line x1="438" y1="550" x2="496" y2="550" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/><text x="468" y="542">+1 day</text>
+    <line x1="660" y1="550" x2="718" y2="550" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/><text x="690" y="542">+1 day</text>
+    <line x1="882" y1="550" x2="940" y2="550" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/><text x="912" y="542">+1 day</text>
+  </g>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="606" x2="1140" y2="606" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="644" font-size="20" fill="#141421">Switch on <tspan font-weight="700">Day = 1</tspan> for consecutive dates <tspan font-weight="700">without gaps.</tspan></text>
+  <text x="1140" y="643" font-size="14" fill="#70706F" text-anchor="end">#duration( day, hour, minute, second )</text>
+</svg>

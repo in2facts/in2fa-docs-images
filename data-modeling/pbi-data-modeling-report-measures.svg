@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 608" width="600" height="608" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="608" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Measure table</text>
+  <text x="540" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="272" lengthAdjust="spacing">Report measures</text>
+  <rect x="340" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Stored in the measure table Sales.</text>
+
+  <!-- ==================== Measure table ==================== -->
+  <rect x="60" y="190" width="480" height="308" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="190" width="480" height="36" fill="#141421"/>
+  <text x="75" y="215" font-size="17" font-weight="700" fill="#F6F6F6">∑</text>
+  <text x="100" y="214" font-size="15" font-weight="700" fill="#F6F6F6">Sales</text>
+  <text x="526" y="214" font-size="11" font-weight="700" fill="#F39454" text-anchor="end">8 MEASURES</text>
+  <rect x="76" y="236" width="13" height="13" fill="none" stroke="#A9AAAA" stroke-width="1.2"/><text x="102" y="248" font-family="Cambria, Times New Roman, serif" font-size="16" font-style="italic" font-weight="700" fill="#70706F">fx</text><text x="126" y="248" font-size="14" fill="#141421">Dummy</text>
+  <line x1="60" y1="260" x2="540" y2="260" stroke="#D7D8D8"/>
+  <rect x="76" y="270" width="13" height="13" fill="none" stroke="#A9AAAA" stroke-width="1.2"/><text x="102" y="282" font-family="Cambria, Times New Roman, serif" font-size="16" font-style="italic" font-weight="700" fill="#70706F">fx</text><text x="126" y="282" font-size="14" fill="#141421">Revenue (€) (CY)</text>
+  <line x1="60" y1="294" x2="540" y2="294" stroke="#D7D8D8"/>
+  <rect x="76" y="304" width="13" height="13" fill="none" stroke="#A9AAAA" stroke-width="1.2"/><text x="102" y="316" font-family="Cambria, Times New Roman, serif" font-size="16" font-style="italic" font-weight="700" fill="#70706F">fx</text><text x="126" y="316" font-size="14" fill="#141421">RevenueTotal (€)</text>
+  <line x1="60" y1="328" x2="540" y2="328" stroke="#D7D8D8"/>
+  <rect x="76" y="338" width="13" height="13" fill="none" stroke="#A9AAAA" stroke-width="1.2"/><text x="102" y="350" font-family="Cambria, Times New Roman, serif" font-size="16" font-style="italic" font-weight="700" fill="#70706F">fx</text><text x="126" y="350" font-size="14" fill="#141421">Revenue (€) as % of Total</text>
+  <line x1="60" y1="362" x2="540" y2="362" stroke="#D7D8D8"/>
+  <rect x="76" y="372" width="13" height="13" fill="none" stroke="#A9AAAA" stroke-width="1.2"/><text x="102" y="384" font-family="Cambria, Times New Roman, serif" font-size="16" font-style="italic" font-weight="700" fill="#70706F">fx</text><text x="126" y="384" font-size="14" fill="#141421">Van Arsdel Revenue (€)</text>
+  <line x1="60" y1="396" x2="540" y2="396" stroke="#D7D8D8"/>
+  <rect x="76" y="406" width="13" height="13" fill="none" stroke="#A9AAAA" stroke-width="1.2"/><text x="102" y="418" font-family="Cambria, Times New Roman, serif" font-size="16" font-style="italic" font-weight="700" fill="#70706F">fx</text><text x="126" y="418" font-size="14" fill="#141421">Revenue Competitors (€)</text>
+  <line x1="60" y1="430" x2="540" y2="430" stroke="#D7D8D8"/>
+  <rect x="76" y="440" width="13" height="13" fill="none" stroke="#A9AAAA" stroke-width="1.2"/><text x="102" y="452" font-family="Cambria, Times New Roman, serif" font-size="16" font-style="italic" font-weight="700" fill="#70706F">fx</text><text x="126" y="452" font-size="14" fill="#141421">Market Share (%)</text>
+  <line x1="60" y1="464" x2="540" y2="464" stroke="#D7D8D8"/>
+  <rect x="76" y="474" width="13" height="13" fill="none" stroke="#A9AAAA" stroke-width="1.2"/><text x="102" y="486" font-family="Cambria, Times New Roman, serif" font-size="16" font-style="italic" font-weight="700" fill="#70706F">fx</text><text x="126" y="486" font-size="14" fill="#141421">Revenue (€) (Bar)</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="538" x2="540" y2="538" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="576" font-size="20" fill="#141421"><tspan font-weight="700">8 measures</tspan> in one measure table.</text>
+</svg>

@@ -12,8 +12,8 @@
   <!-- Header -->
   <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">CALCULATE measures</text>
   <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
-  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">CALCULATE measures</text>
-  <rect x="436" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="395" lengthAdjust="spacing">CALCULATE measures</text>
+  <rect x="463" y="106" width="22" height="6" fill="#F39454"/>
   <text x="60" y="140" font-size="16" fill="#70706F">The report filters the model before a measure calculates. CALCULATE lets you change those initial filters.</text>
 
   <!-- ==================== Step labels ==================== -->
@@ -89,8 +89,8 @@
   <text x="820" y="420" font-size="13" fill="#141421">it is calculating Bikes.</text>
 
   <!-- 3 -> 1 : result back in the cell -->
-  <path d="M1100 426 V436 H200 V392" fill="none" stroke="#F39454" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow-head)"/>
-  <text x="620" y="430" font-size="12" font-weight="700" fill="#F39454" text-anchor="middle">result shown in the cell</text>
+  <path d="M956 352 H1120 V436 H200 V392" fill="none" stroke="#F39454" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow-head)"/>
+  <text x="620" y="428" font-size="12" font-weight="700" fill="#F39454" text-anchor="middle">result shown in the cell</text>
 
   <!-- ==================== Manipulate? ==================== -->
   <rect x="60" y="452" width="250" height="148" fill="#141421"/>

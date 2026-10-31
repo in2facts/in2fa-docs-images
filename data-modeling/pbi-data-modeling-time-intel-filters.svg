@@ -8,8 +8,8 @@
   <rect width="1200" height="680" fill="#F6F6F6"/>
   <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Time intelligence</text>
   <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
-  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Time intel filters</text>
-  <rect x="344" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="281" lengthAdjust="spacing">Time intel filters</text>
+  <rect x="349" y="106" width="22" height="6" fill="#F39454"/>
   <text x="60" y="140" font-size="16" fill="#70706F">They do not calculate: they only filter the calendar table, based on the period selected in the report.</text>
   <g font-size="13" font-weight="700" fill="#70706F">
     <text x="60" y="190">Filter</text>

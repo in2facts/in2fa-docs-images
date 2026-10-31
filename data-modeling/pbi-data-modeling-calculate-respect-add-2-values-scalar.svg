@@ -10,8 +10,8 @@
   <rect width="1200" height="680" fill="#F6F6F6"/>
   <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Calculate – RESPECT + ADD</text>
   <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling · 2/3</text>
-  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Respect + add: VALUES as a scalar</text>
-  <rect x="658" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="593" lengthAdjust="spacing">Respect + add: VALUES as a scalar</text>
+  <rect x="661" y="106" width="22" height="6" fill="#F39454"/>
   <text x="60" y="140" font-size="16" fill="#70706F">When exactly one value is left, VALUES returns that value instead of a table.</text>
   <g font-family="Consolas, 'Courier New', monospace" font-size="20" font-weight="700" fill="#141421">
     <text x="60" y="210"><tspan fill="#F39454">✓</tspan> SINGLE-HEADER</text>

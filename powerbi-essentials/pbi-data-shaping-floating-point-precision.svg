@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 862" width="1200" height="862" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="862" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">How computers store decimal numbers</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data shaping</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="428" lengthAdjust="spacing">Floating point precision</text>
+  <rect x="496" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">A Decimal Number is stored in binary, in 64 bits. Most numbers with decimals, like 3.14, cannot be stored exactly.</text>
+
+  <!-- ==================== 64 bits ==================== -->
+  <circle cx="72" cy="186" r="12" fill="#F39454"/><text x="72" y="191" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="92" y="192" font-size="16" font-weight="700" fill="#141421">The number 3.14 as a 64-bit double <tspan font-weight="400" fill="#70706F" font-size="14">(IEEE 754)</tspan></text>
+  <rect x="60.00" y="214" width="16.88" height="34" fill="#F39454" stroke="#D7D8D8" stroke-width="0.8"/><text x="68.44" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="76.88" y="214" width="16.88" height="34" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="0.8"/><text x="85.31" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="93.75" y="214" width="16.88" height="34" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="0.8"/><text x="102.19" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="110.62" y="214" width="16.88" height="34" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="0.8"/><text x="119.06" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="127.50" y="214" width="16.88" height="34" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="0.8"/><text x="135.94" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="144.38" y="214" width="16.88" height="34" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="0.8"/><text x="152.81" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="161.25" y="214" width="16.88" height="34" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="0.8"/><text x="169.69" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="178.12" y="214" width="16.88" height="34" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="0.8"/><text x="186.56" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="195.00" y="214" width="16.88" height="34" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="0.8"/><text x="203.44" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="211.88" y="214" width="16.88" height="34" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="0.8"/><text x="220.31" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="228.75" y="214" width="16.88" height="34" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="0.8"/><text x="237.19" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="245.62" y="214" width="16.88" height="34" fill="#C9DCE7" stroke="#D7D8D8" stroke-width="0.8"/><text x="254.06" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="262.50" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="270.94" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="279.38" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="287.81" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="296.25" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="304.69" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="313.12" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="321.56" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="330.00" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="338.44" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="346.88" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="355.31" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="363.75" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="372.19" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="380.62" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="389.06" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="397.50" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="405.94" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="414.38" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="422.81" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="431.25" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="439.69" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="448.12" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="456.56" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="465.00" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="473.44" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="481.88" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="490.31" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="498.75" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="507.19" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="515.62" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="524.06" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="532.50" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="540.94" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="549.38" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="557.81" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="566.25" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="574.69" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="583.12" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="591.56" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="600.00" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="608.44" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="616.88" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="625.31" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="633.75" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="642.19" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="650.62" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="659.06" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="667.50" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="675.94" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="684.38" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="692.81" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="701.25" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="709.69" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="718.12" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="726.56" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="735.00" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="743.44" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="751.88" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="760.31" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="768.75" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="777.19" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="785.62" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="794.06" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="802.50" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="810.94" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="819.38" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="827.81" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="836.25" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="844.69" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="853.12" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="861.56" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="870.00" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="878.44" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="886.88" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="895.31" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="903.75" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="912.19" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="920.62" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="929.06" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="937.50" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="945.94" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="954.38" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="962.81" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="971.25" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="979.69" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="988.12" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="996.56" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="1005.00" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="1013.44" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="1021.88" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="1030.31" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="1038.75" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="1047.19" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">0</text>
+  <rect x="1055.62" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="1064.06" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="1072.50" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="1080.94" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="1089.38" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="1097.81" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="1106.25" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="1114.69" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="1123.12" y="214" width="16.88" height="34" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="0.8"/><text x="1131.56" y="236" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" text-anchor="middle">1</text>
+  <rect x="60" y="214" width="1080" height="34" fill="none" stroke="#141421" stroke-width="1.5"/>
+  <path d="M62.0 256 v6 H74.9 v-6" fill="none" stroke="#70706F" stroke-width="1.5"/>
+  <text x="62.0" y="282" font-size="14" font-weight="700" fill="#141421">Sign</text>
+  <text x="62.0" y="300" font-size="12.5" fill="#70706F">1 bit</text>
+  <text x="62.0" y="316" font-size="12.5" fill="#70706F">0 = +</text>
+  <path d="M78.9 256 v6 H260.5 v-6" fill="none" stroke="#70706F" stroke-width="1.5"/>
+  <text x="122.9" y="282" font-size="14" font-weight="700" fill="#141421">Exponent</text>
+  <text x="122.9" y="300" font-size="12.5" fill="#70706F">11 bits</text>
+  <text x="122.9" y="316" font-size="12.5" fill="#70706F">1024 − 1023 = 1</text>
+  <path d="M264.5 256 v6 H1138.0 v-6" fill="none" stroke="#70706F" stroke-width="1.5"/>
+  <text x="264.5" y="282" font-size="14" font-weight="700" fill="#141421">Fraction (mantissa)</text>
+  <text x="264.5" y="300" font-size="12.5" fill="#70706F">52 bits: about 15 to 17 significant digits</text>
+  <rect x="700" y="270" width="440" height="36" fill="#141421"/>
+  <text x="920" y="293" font-size="14" fill="#F6F6F6" text-anchor="middle">value = (−1)<tspan dy="-6" font-size="10">sign</tspan><tspan dy="6"> × 1.fraction × 2</tspan><tspan dy="-6" font-size="10">exponent − 1023</tspan></text>
+
+  <!-- ==================== Why 0.1 is not exact ==================== -->
+  <circle cx="72" cy="344" r="12" fill="#F39454"/><text x="72" y="349" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="92" y="350" font-size="16" font-weight="700" fill="#141421">Why 3.14 cannot be stored exactly</text>
+  <rect x="60" y="368" width="346" height="188" fill="#FFFFFF"/>
+  <rect x="60" y="368" width="4" height="188" fill="#C9DCE7"/>
+  <text x="80" y="396" font-size="16" font-weight="700" fill="#141421">Same problem in decimal</text>
+  <text x="80" y="426" font-size="14" fill="#141421">1/3 = 0.333333…  never ends.</text>
+  <text x="80" y="448" font-size="14" fill="#141421">You must stop somewhere:</text>
+  <text x="80" y="470" font-size="14" fill="#141421">0.3333 × 3 = 0.9999 instead of 1.</text>
+  <text x="80" y="542" font-size="12.5" fill="#70706F">Base 10 cannot write 1/3 exactly.</text>
+  <rect x="427" y="368" width="346" height="188" fill="#FFFFFF"/>
+  <rect x="427" y="368" width="4" height="188" fill="#F39454"/>
+  <text x="447" y="396" font-size="16" font-weight="700" fill="#141421">3.14 in binary</text>
+  <text x="447" y="426" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#141421" xml:space="preserve">11.0<tspan fill="#F39454" font-weight="700">0100 0111 1010 1110 0001</tspan>…₂</text>
+  <text x="447" y="448" font-size="14" fill="#141421">The 20-bit pattern repeats forever,</text>
+  <text x="447" y="468" font-size="14" fill="#141421">so it is cut off after 52 bits. Stored:</text>
+  <text x="447" y="494" font-family="Consolas, 'Courier New', monospace" font-size="12.5" fill="#141421" xml:space="preserve">3.140000000000000124</text>
+  <text x="447" y="512" font-family="Consolas, 'Courier New', monospace" font-size="12.5" fill="#141421" xml:space="preserve">344978758017532527…</text>
+  <text x="447" y="542" font-size="12.5" fill="#70706F">3 is exact, but .14 is not in base 2.</text>
+  <rect x="794" y="368" width="346" height="188" fill="#FFFFFF"/>
+  <rect x="794" y="368" width="4" height="188" fill="#F39454"/>
+  <text x="814" y="396" font-size="16" font-weight="700" fill="#141421">Rounding errors add up</text>
+  <text x="814" y="428" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#141421" xml:space="preserve">3.14 − 3</text>
+  <text x="814" y="452" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#141421" xml:space="preserve">= <tspan fill="#F39454" font-weight="700">0.14000000000000012</tspan></text>
+  <text x="814" y="484" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#141421" xml:space="preserve">3.14 − 3 = 0.14  →  <tspan font-weight="700">false</tspan></text>
+  <text x="814" y="524" font-size="12.5" fill="#70706F">Tiny differences break equality tests,</text>
+  <text x="814" y="542" font-size="12.5" fill="#70706F">and grow when millions of rows are summed.</text>
+
+  <!-- ==================== Decimal vs fixed decimal ==================== -->
+  <circle cx="72" cy="594" r="12" fill="#F39454"/><text x="72" y="599" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="92" y="600" font-size="16" font-weight="700" fill="#141421">Two ways to store decimals in Power Query</text>
+  <rect x="60" y="618" width="530" height="150" fill="#FFFFFF"/>
+  <rect x="60" y="618" width="4" height="150" fill="#C9DCE7"/>
+  <rect x="80" y="634" width="40" height="34" rx="4" fill="#C9DCE7"/><text x="100" y="658" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">1.2</text>
+  <text x="134" y="650" font-size="17" font-weight="700" fill="#141421">Decimal Number</text>
+  <text x="134" y="668" font-family="Consolas, 'Courier New', monospace" font-size="12.5" fill="#70706F">type number</text>
+  <text x="80" y="700" font-size="14" fill="#141421">Floating point, 64 bits: huge range, about 15</text>
+  <text x="80" y="720" font-size="14" fill="#141421">significant digits, tiny rounding errors.</text>
+  <text x="80" y="740" font-size="14" fill="#141421">Fine for measurements, ratios and statistics.</text>
+  <rect x="610" y="618" width="530" height="150" fill="#FFFFFF" stroke="#F39454" stroke-width="2"/>
+  <rect x="610" y="618" width="4" height="150" fill="#F39454"/>
+  <rect x="630" y="634" width="40" height="34" rx="4" fill="#F39454"/><text x="650" y="658" font-size="20" font-weight="700" fill="#141421" text-anchor="middle">$</text>
+  <text x="684" y="650" font-size="17" font-weight="700" fill="#141421">Fixed decimal number</text>
+  <text x="684" y="668" font-family="Consolas, 'Courier New', monospace" font-size="12.5" fill="#70706F">Currency.Type</text>
+  <text x="630" y="700" font-size="14" fill="#141421">Stored as a whole number × 10,000:</text>
+  <text x="630" y="720" font-size="14" fill="#141421">3.14 is stored as 31400, exactly.</text>
+  <text x="630" y="740" font-size="14" fill="#141421">Max. 922,337,203,685,477.5807 · 4 decimals.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="800" x2="1140" y2="800" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="836" font-size="20" fill="#141421">Binary cannot store 3.14 exactly: <tspan font-weight="700">use Fixed decimal when exact decimals matter.</tspan></text>
+  <text x="1140" y="835" font-size="14" fill="#70706F" text-anchor="end">IEEE 754 · 64-bit double</text>
+</svg>

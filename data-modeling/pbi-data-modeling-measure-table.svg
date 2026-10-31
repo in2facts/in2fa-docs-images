@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Measure table</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="344" lengthAdjust="spacing">Fact to measure table</text>
+  <rect x="412" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Hide the columns of the fact table Sales and store the measures in it.</text>
+
+  <!-- ==================== Step 1: fact table ==================== -->
+  <circle cx="72" cy="194" r="12" fill="#F39454"/><text x="72" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="92" y="200" font-size="16" font-weight="700" fill="#141421">FACT TABLE <tspan font-size="13" font-weight="400" fill="#70706F">· columns visible</tspan></text>
+  <rect x="60" y="214" width="320" height="186" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="214" width="320" height="36" fill="#141421"/>
+  <rect x="74" y="227" width="16" height="13" fill="none" stroke="#F6F6F6" stroke-width="1.5"/><line x1="74" y1="231" x2="90" y2="231" stroke="#F6F6F6" stroke-width="1.5"/><line x1="80" y1="231" x2="80" y2="240" stroke="#F6F6F6" stroke-width="1"/><text x="100" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Sales</text>
+  <text x="366" y="238" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="end">5 COLUMNS</text>
+  <rect x="76" y="259" width="10" height="12" fill="none" stroke="#70706F" stroke-width="1.5"/><line x1="76" y1="263" x2="86" y2="263" stroke="#70706F" stroke-width="1.5"/><text x="98" y="270" font-size="14" fill="#141421">ProductID</text>
+  <line x1="60" y1="280" x2="380" y2="280" stroke="#D7D8D8"/>
+  <rect x="76" y="289" width="10" height="12" fill="none" stroke="#70706F" stroke-width="1.5"/><line x1="76" y1="293" x2="86" y2="293" stroke="#70706F" stroke-width="1.5"/><text x="98" y="300" font-size="14" fill="#141421">Date</text>
+  <line x1="60" y1="310" x2="380" y2="310" stroke="#D7D8D8"/>
+  <rect x="76" y="319" width="10" height="12" fill="none" stroke="#70706F" stroke-width="1.5"/><line x1="76" y1="323" x2="86" y2="323" stroke="#70706F" stroke-width="1.5"/><text x="98" y="330" font-size="14" fill="#141421">ZIP - Country</text>
+  <line x1="60" y1="340" x2="380" y2="340" stroke="#D7D8D8"/>
+  <rect x="76" y="349" width="10" height="12" fill="none" stroke="#70706F" stroke-width="1.5"/><line x1="76" y1="353" x2="86" y2="353" stroke="#70706F" stroke-width="1.5"/><text x="98" y="360" font-size="14" fill="#141421">Units</text>
+  <line x1="60" y1="370" x2="380" y2="370" stroke="#D7D8D8"/>
+  <rect x="76" y="379" width="10" height="12" fill="none" stroke="#70706F" stroke-width="1.5"/><line x1="76" y1="383" x2="86" y2="383" stroke="#70706F" stroke-width="1.5"/><text x="98" y="390" font-size="14" fill="#141421">Revenue</text>
+  <!-- ==================== Step 2: hide columns ==================== -->
+  <circle cx="452" cy="194" r="12" fill="#F39454"/><text x="452" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="472" y="200" font-size="16" font-weight="700" fill="#141421">HIDE COLUMNS <tspan font-size="13" font-weight="400" fill="#70706F">· hide from client</tspan></text>
+  <rect x="440" y="214" width="320" height="186" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="440" y="214" width="320" height="36" fill="#141421"/>
+  <rect x="454" y="227" width="16" height="13" fill="none" stroke="#F6F6F6" stroke-width="1.5"/><line x1="454" y1="231" x2="470" y2="231" stroke="#F6F6F6" stroke-width="1.5"/><line x1="460" y1="231" x2="460" y2="240" stroke="#F6F6F6" stroke-width="1"/><text x="480" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Sales</text>
+  <text x="746" y="238" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="end">HIDDEN</text>
+  <path d="M454 265 Q461 257 468 265 Q461 273 454 265 z" fill="none" stroke="#A9AAAA" stroke-width="1.5"/><circle cx="461" cy="265" r="2" fill="#A9AAAA"/><line x1="455" y1="271" x2="467" y2="259" stroke="#A9AAAA" stroke-width="1.5"/><text x="478" y="270" font-size="14" fill="#A9AAAA" font-style="italic">ProductID</text>
+  <line x1="440" y1="280" x2="760" y2="280" stroke="#D7D8D8"/>
+  <path d="M454 295 Q461 287 468 295 Q461 303 454 295 z" fill="none" stroke="#A9AAAA" stroke-width="1.5"/><circle cx="461" cy="295" r="2" fill="#A9AAAA"/><line x1="455" y1="301" x2="467" y2="289" stroke="#A9AAAA" stroke-width="1.5"/><text x="478" y="300" font-size="14" fill="#A9AAAA" font-style="italic">Date</text>
+  <line x1="440" y1="310" x2="760" y2="310" stroke="#D7D8D8"/>
+  <path d="M454 325 Q461 317 468 325 Q461 333 454 325 z" fill="none" stroke="#A9AAAA" stroke-width="1.5"/><circle cx="461" cy="325" r="2" fill="#A9AAAA"/><line x1="455" y1="331" x2="467" y2="319" stroke="#A9AAAA" stroke-width="1.5"/><text x="478" y="330" font-size="14" fill="#A9AAAA" font-style="italic">ZIP - Country</text>
+  <line x1="440" y1="340" x2="760" y2="340" stroke="#D7D8D8"/>
+  <path d="M454 355 Q461 347 468 355 Q461 363 454 355 z" fill="none" stroke="#A9AAAA" stroke-width="1.5"/><circle cx="461" cy="355" r="2" fill="#A9AAAA"/><line x1="455" y1="361" x2="467" y2="349" stroke="#A9AAAA" stroke-width="1.5"/><text x="478" y="360" font-size="14" fill="#A9AAAA" font-style="italic">Units</text>
+  <line x1="440" y1="370" x2="760" y2="370" stroke="#D7D8D8"/>
+  <path d="M454 385 Q461 377 468 385 Q461 393 454 385 z" fill="none" stroke="#A9AAAA" stroke-width="1.5"/><circle cx="461" cy="385" r="2" fill="#A9AAAA"/><line x1="455" y1="391" x2="467" y2="379" stroke="#A9AAAA" stroke-width="1.5"/><text x="478" y="390" font-size="14" fill="#A9AAAA" font-style="italic">Revenue</text>
+  <!-- ==================== Step 3: measure table ==================== -->
+  <circle cx="832" cy="194" r="12" fill="#F39454"/><text x="832" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="852" y="200" font-size="16" font-weight="700" fill="#141421">MEASURE TABLE <tspan font-size="13" font-weight="400" fill="#70706F">· ∑ in the field list</tspan></text>
+  <rect x="820" y="214" width="320" height="216" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="820" y="214" width="320" height="36" fill="#141421"/>
+  <text x="835" y="239" font-size="17" font-weight="700" fill="#F6F6F6">∑</text><text x="860" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Sales</text>
+  <text x="1126" y="238" font-size="11" font-weight="700" fill="#F39454" text-anchor="end">6 MEASURES</text>
+  <text x="834" y="270" font-family="Cambria, Times New Roman, serif" font-size="16" font-style="italic" font-weight="700" fill="#70706F">fx</text><text x="858" y="270" font-size="14" fill="#141421">Dummy</text>
+  <line x1="820" y1="280" x2="1140" y2="280" stroke="#D7D8D8"/>
+  <text x="834" y="300" font-family="Cambria, Times New Roman, serif" font-size="16" font-style="italic" font-weight="700" fill="#70706F">fx</text><text x="858" y="300" font-size="14" fill="#141421">∑ Revenue (€)</text>
+  <line x1="820" y1="310" x2="1140" y2="310" stroke="#D7D8D8"/>
+  <text x="834" y="330" font-family="Cambria, Times New Roman, serif" font-size="16" font-style="italic" font-weight="700" fill="#70706F">fx</text><text x="858" y="330" font-size="14" fill="#141421">Van Arsdel Revenue</text>
+  <line x1="820" y1="340" x2="1140" y2="340" stroke="#D7D8D8"/>
+  <text x="834" y="360" font-family="Cambria, Times New Roman, serif" font-size="16" font-style="italic" font-weight="700" fill="#70706F">fx</text><text x="858" y="360" font-size="14" fill="#141421">Van Arsdel Market Share</text>
+  <line x1="820" y1="370" x2="1140" y2="370" stroke="#D7D8D8"/>
+  <text x="834" y="390" font-family="Cambria, Times New Roman, serif" font-size="16" font-style="italic" font-weight="700" fill="#70706F">fx</text><text x="858" y="390" font-size="14" fill="#141421">Revenue (€) (PY)</text>
+  <line x1="820" y1="400" x2="1140" y2="400" stroke="#D7D8D8"/>
+  <text x="834" y="420" font-family="Cambria, Times New Roman, serif" font-size="16" font-style="italic" font-weight="700" fill="#70706F">fx</text><text x="858" y="420" font-size="14" fill="#141421">Revenue Growth (%)</text>
+  <!-- ==================== Flow ==================== -->
+  <line x1="384" y1="325" x2="436" y2="325" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="410.0" y="317" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">hide</text>
+  <line x1="764" y1="325" x2="816" y2="325" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="790.0" y="317" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">add</text>
+
+  <!-- ==================== Rules ==================== -->
+  <rect x="60" y="436" width="320" height="114" fill="#FFFFFF"/>
+  <rect x="60" y="436" width="4" height="114" fill="#141421"/>
+  <text x="84" y="466" font-size="18" font-weight="700" fill="#141421">Hide, do not delete</text>
+  <text x="84" y="492" font-size="13" fill="#70706F">Measures and relationships still</text>
+  <text x="84" y="511" font-size="13" fill="#70706F">read the hidden columns.</text>
+  <text x="84" y="530" font-size="13" fill="#70706F">Deleting them breaks the model.</text>
+  <rect x="440" y="436" width="320" height="114" fill="#FFFFFF"/>
+  <rect x="440" y="436" width="4" height="114" fill="#F39454"/>
+  <text x="464" y="466" font-size="18" font-weight="700" fill="#141421">∑ marks the measure table</text>
+  <text x="464" y="492" font-size="13" fill="#70706F">In the PivotTable Fields list, Sales</text>
+  <text x="464" y="511" font-size="13" fill="#70706F">moves to the top with a <tspan font-weight="700" fill="#141421">∑</tspan> icon, above</text>
+  <text x="464" y="530" font-size="13" fill="#70706F">the dimensions Calendar, Geography, …</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="606" x2="1140" y2="606" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="644" font-size="20" fill="#141421">Hide the columns, keep the measures: <tspan font-weight="700">the fact table becomes the measure table.</tspan></text>
+  <text x="1140" y="643" font-size="14" fill="#70706F" text-anchor="end">Right-click ❭ Hide from Client Tools</text>
+</svg>

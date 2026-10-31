@@ -16,8 +16,8 @@
   <!-- Header -->
   <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Calculate – NEGLECT + REPLACE</text>
   <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling · 2/2</text>
-  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Neglect + replace: Revenue Red</text>
-  <rect x="596" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="549" lengthAdjust="spacing">Neglect + replace: Revenue Red</text>
+  <rect x="617" y="106" width="22" height="6" fill="#F39454"/>
   <text x="60" y="140" font-size="16" fill="#70706F">Whatever color is selected in the report, Revenue Red always calculates the revenue of red products.</text>
 
   <!-- ==================== Report: matrix ==================== -->

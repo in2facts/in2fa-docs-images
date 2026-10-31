@@ -11,8 +11,8 @@
   <!-- Header -->
   <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Types of measures</text>
   <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
-  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Types of measures</text>
-  <rect x="352" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="313" lengthAdjust="spacing">Types of measures</text>
+  <rect x="381" y="106" width="22" height="6" fill="#F39454"/>
   <text x="60" y="140" font-size="16" fill="#70706F">DAX is used in two scenarios: calculated columns and measures. Measures come in several types.</text>
 
   <!-- ==================== Calculated columns ==================== -->

@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 730" width="1200" height="730" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <g id="brand-arrow">
+      <path d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/>
+      <rect x="15" y="3" width="2.5" height="13" fill="#F39454"/>
+    </g>
+    <marker id="arrow-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="730" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Dynamic banding</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="372" lengthAdjust="spacing">Grand Total with SUMX</text>
+  <rect x="440" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">SUMX iterates the bands one by one, sets each result aside in RAM, and sums them for the Grand Total.</text>
+
+  <!-- ==================== Step labels ==================== -->
+  <g font-size="15" font-weight="700" fill="#141421">
+    <circle cx="71" cy="195" r="11" fill="#F39454"/><text x="71" y="200" font-size="13" text-anchor="middle">1</text>
+    <text x="90" y="200">Iterate the bands</text>
+    <circle cx="581" cy="195" r="11" fill="#F39454"/><text x="581" y="200" font-size="13" text-anchor="middle">2</text>
+    <text x="600" y="200">Evaluate</text>
+    <circle cx="711" cy="195" r="11" fill="#F39454"/><text x="711" y="200" font-size="13" text-anchor="middle">3</text>
+    <text x="730" y="200">Store in RAM</text>
+    <circle cx="931" cy="195" r="11" fill="#F39454"/><text x="931" y="200" font-size="13" text-anchor="middle">4</text>
+    <text x="950" y="200">Sum for the Grand Total</text>
+  </g>
+
+  <!-- ==================== 1. Matrix ==================== -->
+  <rect x="60" y="220" width="490" height="36" fill="#141421"/>
+  <g font-size="14" font-weight="700" fill="#F6F6F6">
+    <text x="76" y="243">Band</text>
+    <g text-anchor="end"><text x="298" y="243">2005</text><text x="378" y="243">2006</text><text x="458" y="243">2007</text><text x="538" y="243">2008</text></g>
+  </g>
+  <rect x="60" y="256" width="490" height="206" fill="#FFFFFF"/>
+  <!-- 2005 column highlight -->
+  <rect x="230" y="256" width="80" height="170" fill="#F39454" fill-opacity="0.18"/>
+  <g stroke="#D7D8D8" stroke-width="1">
+    <line x1="60" y1="290" x2="550" y2="290"/><line x1="60" y1="324" x2="550" y2="324"/>
+    <line x1="60" y1="358" x2="550" y2="358"/><line x1="60" y1="392" x2="550" y2="392"/>
+  </g>
+  <line x1="60" y1="426" x2="550" y2="426" stroke="#141421" stroke-width="1.5"/>
+  <g font-size="15" fill="#141421">
+    <text x="76" y="278">VERY LOW</text>
+    <text x="76" y="312">LOW</text>
+    <text x="76" y="346">MEDIUM</text>
+    <text x="76" y="380">HIGH</text>
+    <text x="76" y="414">VERY HIGH</text>
+    <text x="76" y="450" font-weight="700">Total</text>
+  </g>
+  <g font-size="15" fill="#141421" text-anchor="end">
+    <text x="298" y="312" font-weight="700">113</text>
+    <text x="298" y="414" font-weight="700">900</text>
+  </g>
+  <g font-size="15" fill="#70706F" text-anchor="end">
+    <text x="458" y="278">4,425</text><text x="538" y="278">5,906</text>
+    <text x="378" y="312">401</text><text x="458" y="312">1,190</text><text x="538" y="312">1,673</text>
+    <text x="378" y="346">146</text><text x="458" y="346">888</text><text x="538" y="346">1,396</text>
+    <text x="378" y="380">1,083</text><text x="458" y="380">2,305</text><text x="538" y="380">2,086</text>
+    <text x="378" y="414">1,047</text><text x="458" y="414">501</text><text x="538" y="414">316</text>
+  </g>
+  <g font-size="15" font-weight="700" fill="#141421" text-anchor="end">
+    <text x="298" y="450">1,013</text><text x="378" y="450">2,677</text><text x="458" y="450">9,309</text><text x="538" y="450">11,377</text>
+  </g>
+  <rect x="230" y="256" width="80" height="170" fill="none" stroke="#F39454" stroke-width="2"/>
+  <rect x="230" y="428" width="80" height="34" fill="none" stroke="#F39454" stroke-width="2.5"/>
+
+  <!-- row pointer walking down the bands -->
+  <line x1="46" y1="264" x2="46" y2="414" stroke="#F39454" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrow-head)"/>
+  <path d="M40 299 L54 307 L40 315 Z" fill="#F39454"/>
+
+  <!-- ==================== 2. Evaluate per band ==================== -->
+  <g stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)">
+    <line x1="556" y1="273" x2="696" y2="273" stroke-opacity="0.45"/>
+    <line x1="556" y1="307" x2="696" y2="307"/>
+    <line x1="556" y1="341" x2="696" y2="341" stroke-opacity="0.45"/>
+    <line x1="556" y1="375" x2="696" y2="375" stroke-opacity="0.45"/>
+    <line x1="556" y1="409" x2="696" y2="409"/>
+  </g>
+  <text x="626" y="240" font-size="12" fill="#70706F" text-anchor="middle">[Customers (#)</text>
+  <text x="626" y="254" font-size="12" fill="#70706F" text-anchor="middle">(internal)]</text>
+
+  <!-- ==================== 3. Temporary column ==================== -->
+  <rect x="700" y="220" width="160" height="36" fill="#C9DCE7"/>
+  <text x="716" y="243" font-size="14" font-weight="700" fill="#141421">2005 (RAM)</text>
+  <rect x="700" y="256" width="160" height="170" fill="#C9DCE7" fill-opacity="0.35"/>
+  <g stroke="#D7D8D8" stroke-width="1">
+    <line x1="700" y1="290" x2="860" y2="290"/><line x1="700" y1="324" x2="860" y2="324"/>
+    <line x1="700" y1="358" x2="860" y2="358"/><line x1="700" y1="392" x2="860" y2="392"/>
+  </g>
+  <g font-size="15" text-anchor="end">
+    <text x="844" y="278" font-size="13" fill="#70706F">(blank)</text>
+    <text x="844" y="312" font-weight="700" fill="#141421">113</text>
+    <text x="844" y="346" font-size="13" fill="#70706F">(blank)</text>
+    <text x="844" y="380" font-size="13" fill="#70706F">(blank)</text>
+    <text x="844" y="414" font-weight="700" fill="#141421">900</text>
+  </g>
+  <rect x="700" y="220" width="160" height="206" fill="none" stroke="#70706F" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- ==================== 4. Sum ==================== -->
+  <path d="M866 258 H878 V424 H866" fill="none" stroke="#F39454" stroke-width="2"/>
+  <line x1="878" y1="341" x2="918" y2="341" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+  <rect x="920" y="296" width="220" height="90" fill="#141421"/>
+  <text x="940" y="324" font-size="13" font-weight="700" fill="#F39454">SUM</text>
+  <text x="940" y="368" font-size="36" font-weight="700" fill="#F6F6F6">1,013</text>
+
+  <!-- back into the Grand Total cell -->
+  <path d="M1030 386 V480 H270 V468" fill="none" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
+
+  <!-- captions -->
+  <g font-size="13" fill="#70706F">
+    <text x="60" y="506">VALUES( SalesBand[Band] ): one band per row</text>
+    <text x="626" y="506" text-anchor="middle">One band selected</text>
+    <text x="780" y="506" text-anchor="middle">Temporary column</text>
+    <text x="1140" y="506" text-anchor="end">113 + 900 = 1,013</text>
+  </g>
+
+  <!-- ==================== Code ==================== -->
+  <rect x="60" y="526" width="1080" height="44" fill="#141421"/>
+  <text x="80" y="554" font-family="Consolas, 'Courier New', monospace" font-size="16" fill="#F6F6F6">Customers (#) = <tspan fill="#F39454">SUMX</tspan> ( VALUES ( SalesBand[Band] ), [Customers (#) (internal)] )</text>
+
+  <!-- ==================== Explanation ==================== -->
+  <use href="#brand-arrow" x="60" y="588"/>
+  <text x="86" y="604" font-size="17" font-weight="700" fill="#141421">The problem <tspan font-size="14" font-weight="400" fill="#70706F">internal measure</tspan></text>
+  <text x="60" y="630" font-size="14" fill="#141421">At the Grand Total all bands are selected, so HASONEVALUE</text>
+  <text x="60" y="650" font-size="14" fill="#141421">returns FALSE and the internal measure returns blank.</text>
+
+  <use href="#brand-arrow" x="650" y="588"/>
+  <text x="676" y="604" font-size="17" font-weight="700" fill="#141421">The fix <tspan font-size="14" font-weight="400" fill="#70706F">SUMX</tspan></text>
+  <text x="650" y="630" font-size="14" fill="#141421">Each iteration puts exactly one band in the filter context,</text>
+  <text x="650" y="650" font-size="14" fill="#141421">so every row works. The results are summed afterwards.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="672" x2="1140" y2="672" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="708" font-size="20" fill="#141421">Iterate the bands, <tspan font-weight="700">then sum: the Grand Total is back.</tspan></text>
+  <text x="1140" y="707" font-size="14" fill="#70706F" text-anchor="end">Report cells are calculated on the fly, not stored.</text>
+</svg>

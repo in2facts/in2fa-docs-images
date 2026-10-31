@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 730" width="1200" height="730" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="730" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Collation</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="420" lengthAdjust="spacing">One query, four results</text>
+  <rect x="488" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">The collation decides whether upper/lower case (C) and accents (A) matter when text is compared.</text>
+
+  <!-- ==================== Data ==================== -->
+  <text x="60" y="196" font-size="13" font-weight="700" fill="#70706F">Table Cities: one city, written five ways</text>
+  <rect x="60" y="208" width="380" height="34" fill="#141421"/>
+  <text x="76" y="230" font-size="14" font-weight="700" fill="#F6F6F6">City</text>
+  <rect x="60" y="242" width="380" height="180" fill="#FFFFFF"/>
+  <text x="76" y="266" font-size="17" font-weight="700" fill="#141421">Liège</text>
+  <text x="210" y="265" font-size="13" fill="#70706F">capital, accent</text>
+  <line x1="60" y1="278" x2="440" y2="278" stroke="#D7D8D8"/>
+  <text x="76" y="302" font-size="17" font-weight="700" fill="#141421">Liege</text>
+  <text x="210" y="301" font-size="13" fill="#70706F">capital, no accent</text>
+  <line x1="60" y1="314" x2="440" y2="314" stroke="#D7D8D8"/>
+  <text x="76" y="338" font-size="17" font-weight="700" fill="#141421">LIÈGE</text>
+  <text x="210" y="337" font-size="13" fill="#70706F">upper case, accent</text>
+  <line x1="60" y1="350" x2="440" y2="350" stroke="#D7D8D8"/>
+  <text x="76" y="374" font-size="17" font-weight="700" fill="#141421">liège</text>
+  <text x="210" y="373" font-size="13" fill="#70706F">lower case, accent</text>
+  <line x1="60" y1="386" x2="440" y2="386" stroke="#D7D8D8"/>
+  <text x="76" y="410" font-size="17" font-weight="700" fill="#141421">liege</text>
+  <text x="210" y="409" font-size="13" fill="#70706F">lower case, no accent</text>
+  <text x="60" y="452" font-size="13" fill="#141421"><tspan font-weight="700">C</tspan> = case, <tspan font-weight="700">A</tspan> = accent</text>
+  <text x="60" y="472" font-size="13" fill="#141421"><tspan font-weight="700">S</tspan> = sensitive: must be identical</text>
+  <text x="60" y="492" font-size="13" fill="#141421"><tspan font-weight="700">I</tspan> = insensitive: is ignored</text>
+
+  <!-- ==================== Query ==================== -->
+  <rect x="480" y="186" width="660" height="40" fill="#141421"/>
+  <text x="496" y="212" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#F6F6F6" xml:space="preserve">SELECT COUNT(*) FROM Cities WHERE City = <tspan fill="#F39454">'liège'</tspan></text>
+
+  <!-- ==================== Collation matrix ==================== -->
+  <rect x="600" y="242" width="270" height="36" fill="#C9DCE7"/>
+  <text x="735.0" y="265" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">Accent-Sensitive (AS)</text>
+  <rect x="870" y="242" width="270" height="36" fill="#C9DCE7"/>
+  <text x="1005.0" y="265" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">Accent-Insensitive (AI)</text>
+  <rect x="480" y="278" width="120" height="112" fill="#C9DCE7"/>
+  <text x="492" y="330.0" font-size="14" font-weight="700" fill="#141421">Case-</text>
+  <text x="492" y="348.0" font-size="14" font-weight="700" fill="#141421">Insensitive (CI)</text>
+  <rect x="600" y="278" width="270" height="112" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="616" y="308" font-size="19" font-weight="700" fill="#141421">CI_AS</text>
+  <rect x="684" y="292" width="62" height="22" rx="11" fill="#F39454"/><text x="715" y="308" font-size="12" font-weight="700" fill="#141421" text-anchor="middle">default</text>
+  <text x="854" y="322" font-size="38" font-weight="700" fill="#F39454" text-anchor="end">3</text>
+  <text x="854" y="340" font-size="12" fill="#70706F" text-anchor="end">rows</text>
+  <text x="616" y="362" font-size="13" fill="#141421">Liège, LIÈGE, liège</text>
+  <rect x="600" y="278" width="270" height="112" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <rect x="870" y="278" width="270" height="112" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="886" y="308" font-size="19" font-weight="700" fill="#141421">CI_AI</text>
+  <text x="1124" y="322" font-size="38" font-weight="700" fill="#141421" text-anchor="end">5</text>
+  <text x="1124" y="340" font-size="12" fill="#70706F" text-anchor="end">rows</text>
+  <text x="886" y="362" font-size="13" fill="#141421">Liège, Liege, LIÈGE,</text>
+  <text x="886" y="380" font-size="13" fill="#141421">liège, liege</text>
+  <rect x="480" y="390" width="120" height="112" fill="#C9DCE7"/>
+  <text x="492" y="442.0" font-size="14" font-weight="700" fill="#141421">Case-</text>
+  <text x="492" y="460.0" font-size="14" font-weight="700" fill="#141421">Sensitive (CS)</text>
+  <rect x="600" y="390" width="270" height="112" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="616" y="420" font-size="19" font-weight="700" fill="#141421">CS_AS</text>
+  <text x="854" y="434" font-size="38" font-weight="700" fill="#141421" text-anchor="end">1</text>
+  <text x="854" y="452" font-size="12" fill="#70706F" text-anchor="end">row</text>
+  <text x="616" y="474" font-size="13" fill="#141421">liège</text>
+  <rect x="870" y="390" width="270" height="112" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="886" y="420" font-size="19" font-weight="700" fill="#141421">CS_AI</text>
+  <text x="1124" y="434" font-size="38" font-weight="700" fill="#141421" text-anchor="end">2</text>
+  <text x="1124" y="452" font-size="12" fill="#70706F" text-anchor="end">rows</text>
+  <text x="886" y="474" font-size="13" fill="#141421">liège, liege</text>
+
+  <!-- ==================== Cards ==================== -->
+  <rect x="60" y="532" width="530" height="104" fill="#FFFFFF"/>
+  <rect x="60" y="532" width="4" height="104" fill="#F39454"/>
+  <path transform="translate(80 546)" d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/><rect x="95" y="549" width="2.5" height="13" fill="#F39454"/>
+  <text x="106" y="562" font-size="16" font-weight="700" fill="#141421">Same letters, different words</text>
+  <text x="80" y="588" font-size="14" fill="#141421"><tspan font-weight="700">côte</tspan> coast · <tspan font-weight="700">cote</tspan> rating · <tspan font-weight="700">côté</tspan> side · <tspan font-weight="700">coté</tspan> rated</text>
+  <text x="80" y="607" font-size="13" fill="#141421">Accent-insensitive (AI): these four French words</text>
+  <text x="80" y="626" font-size="13" fill="#141421">are treated as one and the same value.</text>
+  <rect x="610" y="532" width="530" height="104" fill="#FFFFFF"/>
+  <rect x="610" y="532" width="4" height="104" fill="#F39454"/>
+  <path transform="translate(630 546)" d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/><rect x="645" y="549" width="2.5" height="13" fill="#F39454"/>
+  <text x="656" y="562" font-size="16" font-weight="700" fill="#141421">Power BI</text>
+  <text x="630" y="588" font-size="13" fill="#141421">Power Query (M) is case-sensitive, the semantic model</text>
+  <text x="630" y="607" font-size="13" fill="#141421">is case-insensitive: “Liège” and “LIÈGE” can become</text>
+  <text x="630" y="626" font-size="13" fill="#141421">one value in the model, and duplicate keys can appear.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="664" x2="1140" y2="664" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="700" font-size="20" fill="#141421">Choose the collation consciously: <tspan font-weight="700">the same question returns 1 to 5 rows.</tspan></text>
+  <text x="1140" y="699" font-size="14" fill="#70706F" text-anchor="end">SQL Server default: CI_AS</text>
+</svg>

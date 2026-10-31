@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 880" width="1200" height="880" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#141421" stroke-width="2" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="880" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">CUBE formulas</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data visualization</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="190" lengthAdjust="spacing">OLAP cube</text>
+  <rect x="258" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">The data model behaves as a cube: a member expression points from table to column to one member.</text>
+
+  <!-- ==================== Cube ==================== -->
+  <polygon points="250.0,230.0 302.0,260.0 250.0,290.0 198.0,260.0" fill="#FFFFFF" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="198.0,260.0 250.0,290.0 198.0,320.0 146.0,290.0" fill="#FFFFFF" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="146.0,290.0 198.0,320.0 146.0,350.0 94.0,320.0" fill="#C9DCE7" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="302.0,260.0 354.0,290.0 302.0,320.0 250.0,290.0" fill="#FFFFFF" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="250.0,290.0 302.0,320.0 250.0,350.0 198.0,320.0" fill="#FFFFFF" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="198.0,320.0 250.0,350.0 198.0,380.0 146.0,350.0" fill="#C9DCE7" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="354.0,290.0 406.0,320.0 354.0,350.0 302.0,320.0" fill="#FFFFFF" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="302.0,320.0 354.0,350.0 302.0,380.0 250.0,350.0" fill="#FFFFFF" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="250.0,350.0 302.0,380.0 250.0,410.0 198.0,380.0" fill="#F39454" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="94.0,500.0 146.0,530.0 146.0,470.0 94.0,440.0" fill="#C9DCE7" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="94.0,440.0 146.0,470.0 146.0,410.0 94.0,380.0" fill="#C9DCE7" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="94.0,380.0 146.0,410.0 146.0,350.0 94.0,320.0" fill="#C9DCE7" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="146.0,530.0 198.0,560.0 198.0,500.0 146.0,470.0" fill="#C9DCE7" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="146.0,470.0 198.0,500.0 198.0,440.0 146.0,410.0" fill="#C9DCE7" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="146.0,410.0 198.0,440.0 198.0,380.0 146.0,350.0" fill="#C9DCE7" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="198.0,560.0 250.0,590.0 250.0,530.0 198.0,500.0" fill="#F9C9A9" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="198.0,500.0 250.0,530.0 250.0,470.0 198.0,440.0" fill="#F9C9A9" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="198.0,440.0 250.0,470.0 250.0,410.0 198.0,380.0" fill="#F39454" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="406.0,500.0 354.0,530.0 354.0,470.0 406.0,440.0" fill="#FFFFFF" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="406.0,440.0 354.0,470.0 354.0,410.0 406.0,380.0" fill="#FFFFFF" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="406.0,380.0 354.0,410.0 354.0,350.0 406.0,320.0" fill="#FFFFFF" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="354.0,530.0 302.0,560.0 302.0,500.0 354.0,470.0" fill="#FFFFFF" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="354.0,470.0 302.0,500.0 302.0,440.0 354.0,410.0" fill="#FFFFFF" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="354.0,410.0 302.0,440.0 302.0,380.0 354.0,350.0" fill="#FFFFFF" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="302.0,560.0 250.0,590.0 250.0,530.0 302.0,500.0" fill="#F9C9A9" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="302.0,500.0 250.0,530.0 250.0,470.0 302.0,440.0" fill="#F9C9A9" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="302.0,440.0 250.0,470.0 250.0,410.0 302.0,380.0" fill="#F39454" stroke="#141421" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="94.0,500.0 146.0,530.0 146.0,470.0 94.0,440.0" fill="url(#hatch)"/>
+  <polygon points="146.0,530.0 198.0,560.0 198.0,500.0 146.0,470.0" fill="url(#hatch)"/>
+  <polygon points="198.0,560.0 250.0,590.0 250.0,530.0 198.0,500.0" fill="url(#hatch)"/>
+  <polygon points="406.0,500.0 354.0,530.0 354.0,470.0 406.0,440.0" fill="url(#hatch)"/>
+  <polygon points="354.0,530.0 302.0,560.0 302.0,500.0 354.0,470.0" fill="url(#hatch)"/>
+  <polygon points="302.0,560.0 250.0,590.0 250.0,530.0 302.0,500.0" fill="url(#hatch)"/>
+  <path d="M416 440 h8 V500 h-8" fill="none" stroke="#141421" stroke-width="1.5"/>
+  <text x="432" y="470.0" font-size="16" font-weight="700" fill="#141421">[All]</text>
+  <text x="432" y="488.0" font-size="12" fill="#70706F">grand total</text>
+
+  <!-- ==================== Levels ==================== -->
+  <rect x="520" y="214" width="36" height="36" fill="#C9DCE7" stroke="#141421" stroke-width="2"/>
+  <text x="538" y="238" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="572" y="234" font-size="18" font-weight="700" fill="#141421">Table</text>
+  <text x="572" y="254" font-size="13" fill="#70706F">the dimension, e.g. Calendar</text>
+  <rect x="520" y="284" width="36" height="36" fill="#F9C9A9" stroke="#141421" stroke-width="2"/>
+  <text x="538" y="308" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="572" y="304" font-size="18" font-weight="700" fill="#141421">Column</text>
+  <text x="572" y="324" font-size="13" fill="#70706F">an attribute of the table, e.g. Year</text>
+  <rect x="520" y="354" width="36" height="36" fill="#F39454" stroke="#141421" stroke-width="2"/>
+  <text x="538" y="378" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="572" y="374" font-size="18" font-weight="700" fill="#141421">Row</text>
+  <text x="572" y="394" font-size="13" fill="#70706F">one member of the column, e.g. 2016</text>
+
+  <!-- ==================== Member expression ==================== -->
+  <text x="520" y="452" font-size="16" font-weight="700" fill="#141421">MEMBER EXPRESSION <tspan font-size="13" font-weight="400" fill="#70706F">· the address of a member</tspan></text>
+  <rect x="520" y="478" width="200" height="52" fill="#C9DCE7"/>
+  <text x="620.0" y="512" font-size="22" fill="#141421" text-anchor="middle">[Calendar]</text>
+  <text x="620.0" y="552" font-size="13" fill="#70706F" text-anchor="middle">table</text>
+  <rect x="742" y="478" width="150" height="52" fill="#F9C9A9"/>
+  <text x="817.0" y="512" font-size="22" fill="#141421" text-anchor="middle">[Year]</text>
+  <text x="817.0" y="552" font-size="13" fill="#70706F" text-anchor="middle">column</text>
+  <rect x="914" y="478" width="180" height="52" fill="#F39454"/>
+  <text x="1004.0" y="512" font-size="22" fill="#141421" text-anchor="middle">&amp;[2016]</text>
+  <text x="1004.0" y="552" font-size="13" fill="#70706F" text-anchor="middle">member</text>
+  <text x="731" y="514" font-size="26" font-weight="700" fill="#141421" text-anchor="middle">.</text>
+  <text x="903" y="514" font-size="26" font-weight="700" fill="#141421" text-anchor="middle">.</text>
+
+  <!-- ==================== Syntax ==================== -->
+  <text x="60" y="636" font-size="16" font-weight="700" fill="#141421">SYNTAX <tspan font-size="13" font-weight="400" fill="#70706F">· one member, all members or the grand total</tspan></text>
+  <rect x="60" y="656" width="120" height="30" fill="#C9DCE7"/>
+  <text x="120.0" y="677" font-size="15" fill="#141421" text-anchor="middle">[Calendar]</text>
+  <rect x="192" y="656" width="80" height="30" fill="#F9C9A9"/>
+  <text x="232.0" y="677" font-size="15" fill="#141421" text-anchor="middle">[Year]</text>
+  <rect x="284" y="656" width="110" height="30" fill="#F39454"/>
+  <text x="339.0" y="677" font-size="15" fill="#141421" text-anchor="middle">&amp;[2016]</text>
+  <text x="186" y="678" font-size="18" font-weight="700" fill="#141421" text-anchor="middle">.</text>
+  <text x="278" y="678" font-size="18" font-weight="700" fill="#141421" text-anchor="middle">.</text>
+  <text x="410" y="677" font-size="14" fill="#70706F">one member: 2016</text>
+  <rect x="620" y="656" width="120" height="30" fill="#C9DCE7"/>
+  <text x="680.0" y="677" font-size="15" fill="#141421" text-anchor="middle">[Calendar]</text>
+  <rect x="752" y="656" width="80" height="30" fill="#F9C9A9"/>
+  <text x="792.0" y="677" font-size="15" fill="#141421" text-anchor="middle">[Year]</text>
+  <rect x="844" y="656" width="110" height="30" fill="#F39454"/>
+  <text x="899.0" y="677" font-size="15" fill="#141421" text-anchor="middle">Children</text>
+  <text x="746" y="678" font-size="18" font-weight="700" fill="#141421" text-anchor="middle">.</text>
+  <text x="838" y="678" font-size="18" font-weight="700" fill="#141421" text-anchor="middle">.</text>
+  <text x="970" y="677" font-size="14" fill="#70706F">all members, excluding All</text>
+  <rect x="60" y="732" width="120" height="30" fill="#C9DCE7"/>
+  <text x="120.0" y="753" font-size="15" fill="#141421" text-anchor="middle">[Calendar]</text>
+  <rect x="192" y="732" width="80" height="30" fill="#F9C9A9"/>
+  <text x="232.0" y="753" font-size="15" fill="#141421" text-anchor="middle">[Year]</text>
+  <rect x="284" y="732" width="110" height="30" fill="#F39454"/>
+  <text x="339.0" y="753" font-size="15" fill="#141421" text-anchor="middle">Members</text>
+  <text x="186" y="754" font-size="18" font-weight="700" fill="#141421" text-anchor="middle">.</text>
+  <text x="278" y="754" font-size="18" font-weight="700" fill="#141421" text-anchor="middle">.</text>
+  <text x="410" y="753" font-size="14" fill="#70706F">all members, including All</text>
+  <rect x="620" y="732" width="120" height="30" fill="#C9DCE7"/>
+  <text x="680.0" y="753" font-size="15" fill="#141421" text-anchor="middle">[Calendar]</text>
+  <rect x="752" y="732" width="80" height="30" fill="#F9C9A9"/>
+  <text x="792.0" y="753" font-size="15" fill="#141421" text-anchor="middle">[Year]</text>
+  <rect x="844" y="732" width="110" height="30" fill="#F39454"/>
+  <rect x="844" y="732" width="110" height="30" fill="url(#hatch)"/>
+  <text x="899.0" y="753" font-size="15" fill="#141421" text-anchor="middle">[All]</text>
+  <text x="746" y="754" font-size="18" font-weight="700" fill="#141421" text-anchor="middle">.</text>
+  <text x="838" y="754" font-size="18" font-weight="700" fill="#141421" text-anchor="middle">.</text>
+  <text x="970" y="753" font-size="14" fill="#70706F">All: the grand total</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="804" x2="1140" y2="804" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="842" font-size="20" fill="#141421">Each CUBE formula reads <tspan font-weight="700">one cell</tspan> of the cube into <tspan font-weight="700">one cell</tspan> of Excel.</text>
+  <text x="1140" y="841" font-size="14" fill="#70706F" text-anchor="end">= CUBEVALUE( connection; member_expression; … )</text>
+</svg>

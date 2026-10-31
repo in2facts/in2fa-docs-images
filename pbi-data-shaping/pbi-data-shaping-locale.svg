@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 740" width="1200" height="740" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="740" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Product</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data shaping</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="270" lengthAdjust="spacing">Locale of origin</text>
+  <rect x="338" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Tell Power Query how the source writes dates and numbers, it translates them to the settings of the client.</text>
+
+  <!-- ==================== Headings ==================== -->
+  <circle cx="72" cy="194" r="12" fill="#F39454"/><text x="72" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="92" y="200" font-size="16" font-weight="700" fill="#141421">EXTERNAL DATA <tspan font-size="13" font-weight="400" fill="#70706F">· locale of origin</tspan></text>
+  <circle cx="512" cy="194" r="12" fill="#F39454"/><text x="512" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="532" y="200" font-size="16" font-weight="700" fill="#141421">POWER QUERY <tspan font-size="13" font-weight="400" fill="#70706F">· translate</tspan></text>
+  <circle cx="772" cy="194" r="12" fill="#F39454"/><text x="772" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="792" y="200" font-size="16" font-weight="700" fill="#141421">CLIENT <tspan font-size="13" font-weight="400" fill="#70706F">· locale of destination</tspan></text>
+
+  <!-- ==================== External data ==================== -->
+  <rect x="60" y="214" width="380" height="266" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="214" width="380" height="36" fill="#141421"/>
+  <text x="74" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Source</text>
+  <text x="426" y="238" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="end">TEXT</text>
+  <rect x="76" y="262" width="348" height="26" fill="#F6F6F6"/>
+  <line x1="246" y1="262" x2="246" y2="408" stroke="#D7D8D8"/>
+  <line x1="76" y1="288" x2="424" y2="288" stroke="#141421" stroke-width="1.5"/>
+  <text x="84" y="280" font-size="13" font-weight="700" fill="#141421"><tspan font-size="10"><tspan fill="#70706F">ABC</tspan></tspan>  Date</text>
+  <text x="254" y="280" font-size="13" font-weight="700" fill="#141421"><tspan font-size="10"><tspan fill="#70706F">ABC</tspan></tspan>  Revenue</text>
+  <text x="84" y="308" font-size="14" font-style="italic" fill="#70706F">2015-07-01</text>
+  <text x="254" y="308" font-size="14" font-style="italic" fill="#70706F">403.987500</text>
+  <line x1="76" y1="318" x2="424" y2="318" stroke="#D7D8D8"/>
+  <text x="84" y="338" font-size="14" font-style="italic" fill="#70706F">2015-07-01</text>
+  <text x="254" y="338" font-size="14" font-style="italic" fill="#70706F">403.987500</text>
+  <line x1="76" y1="348" x2="424" y2="348" stroke="#D7D8D8"/>
+  <text x="84" y="368" font-size="14" font-style="italic" fill="#70706F">2015-08-01</text>
+  <text x="254" y="368" font-size="14" font-style="italic" fill="#70706F">403.987500</text>
+  <line x1="76" y1="378" x2="424" y2="378" stroke="#D7D8D8"/>
+  <text x="84" y="398" font-size="14" font-style="italic" fill="#70706F">2015-08-01</text>
+  <text x="254" y="398" font-size="14" font-style="italic" fill="#70706F">403.987500</text>
+  <line x1="60" y1="424" x2="440" y2="424" stroke="#D7D8D8"/>
+  <circle cx="86" cy="450" r="9" fill="none" stroke="#70706F" stroke-width="1.5"/><ellipse cx="86" cy="450" rx="4" ry="9" fill="none" stroke="#70706F" stroke-width="1"/><line x1="77" y1="450" x2="95" y2="450" stroke="#70706F" stroke-width="1"/>
+  <text x="104" y="455" font-size="13" fill="#70706F">Region and Language Settings</text>
+  <rect x="350" y="437" width="76" height="26" rx="13" fill="#F39454"/>
+  <text x="388" y="455" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">en-US</text>
+
+  <!-- ==================== Power Query ==================== -->
+  <rect x="500" y="214" width="200" height="266" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="500" y="214" width="200" height="36" fill="#141421"/>
+  <text x="514" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Changed Type</text>
+  <rect x="574" y="270" width="52" height="42" fill="none" stroke="#141421" stroke-width="1.5"/>
+  <rect x="574" y="270" width="52" height="9" fill="#141421"/>
+  <line x1="574" y1="290" x2="626" y2="290" stroke="#141421" stroke-width="1"/><line x1="574" y1="301" x2="626" y2="301" stroke="#141421" stroke-width="1"/>
+  <line x1="591" y1="279" x2="591" y2="312" stroke="#141421" stroke-width="1"/><line x1="609" y1="279" x2="609" y2="312" stroke="#141421" stroke-width="1"/>
+  <path d="M612 318 l3 -9 l20 -20 l6 6 l-20 20 z" fill="#F39454" stroke="#141421" stroke-width="1.2" stroke-linejoin="round"/>
+  <text x="600" y="346" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">using locale</text>
+  <line x1="516" y1="362" x2="684" y2="362" stroke="#D7D8D8"/>
+  <g font-size="13" fill="#70706F">
+    <text x="516" y="386"><tspan fill="#141421">Date</tspan> ❭ <tspan font-style="italic">type date</tspan></text>
+    <text x="516" y="408"><tspan fill="#141421">Revenue</tspan> ❭ <tspan font-style="italic">Currency.Type</tspan></text>
+  </g>
+  <line x1="500" y1="424" x2="700" y2="424" stroke="#D7D8D8"/>
+  <text x="516" y="455" font-size="13" fill="#70706F">culture</text>
+  <rect x="610" y="437" width="76" height="26" rx="13" fill="#F39454"/>
+  <text x="648" y="455" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">en-US</text>
+
+  <!-- ==================== Client ==================== -->
+  <rect x="760" y="214" width="380" height="266" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="760" y="214" width="380" height="36" fill="#141421"/>
+  <text x="774" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Client</text>
+  <text x="1126" y="238" font-size="11" font-weight="700" fill="#F39454" text-anchor="end">TYPED</text>
+  <rect x="776" y="262" width="348" height="26" fill="#F6F6F6"/>
+  <line x1="946" y1="262" x2="946" y2="408" stroke="#D7D8D8"/>
+  <line x1="776" y1="288" x2="1124" y2="288" stroke="#141421" stroke-width="1.5"/>
+  <text x="784" y="280" font-size="13" font-weight="700" fill="#141421"><tspan font-size="10"><tspan fill="#F39454">DATE</tspan></tspan>  Date</text>
+  <text x="954" y="280" font-size="13" font-weight="700" fill="#141421"><tspan font-size="10"><tspan fill="#F39454">$</tspan></tspan>  Revenue</text>
+  <text x="938" y="308" font-size="14" fill="#141421" text-anchor="end">1/07/2015</text>
+  <text x="1116" y="308" font-size="14" fill="#141421" text-anchor="end">403,9875</text>
+  <line x1="776" y1="318" x2="1124" y2="318" stroke="#D7D8D8"/>
+  <text x="938" y="338" font-size="14" fill="#141421" text-anchor="end">1/07/2015</text>
+  <text x="1116" y="338" font-size="14" fill="#141421" text-anchor="end">403,9875</text>
+  <line x1="776" y1="348" x2="1124" y2="348" stroke="#D7D8D8"/>
+  <text x="938" y="368" font-size="14" fill="#141421" text-anchor="end">1/08/2015</text>
+  <text x="1116" y="368" font-size="14" fill="#141421" text-anchor="end">403,9875</text>
+  <line x1="776" y1="378" x2="1124" y2="378" stroke="#D7D8D8"/>
+  <text x="938" y="398" font-size="14" fill="#141421" text-anchor="end">1/08/2015</text>
+  <text x="1116" y="398" font-size="14" fill="#141421" text-anchor="end">403,9875</text>
+  <line x1="760" y1="424" x2="1140" y2="424" stroke="#D7D8D8"/>
+  <circle cx="786" cy="450" r="9" fill="none" stroke="#70706F" stroke-width="1.5"/><ellipse cx="786" cy="450" rx="4" ry="9" fill="none" stroke="#70706F" stroke-width="1"/><line x1="777" y1="450" x2="795" y2="450" stroke="#70706F" stroke-width="1"/>
+  <text x="804" y="455" font-size="13" fill="#70706F">Region and Language Settings</text>
+  <rect x="1050" y="437" width="76" height="26" rx="13" fill="#F39454"/>
+  <text x="1088" y="455" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">nl-BE</text>
+
+  <!-- ==================== Flow ==================== -->
+  <path d="M444 348 L496 348" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="470" y="340" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">read</text>
+  <path d="M704 348 L756 348" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="730" y="340" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">show</text>
+
+  <!-- ==================== Captions ==================== -->
+  <text x="60" y="512" font-size="13" fill="#141421"><tspan font-weight="700">Text only</tspan>: the source has no data types.</text>
+  <text x="500" y="512" font-size="13" fill="#141421"><tspan font-weight="700">Culture</tspan> of the source.</text>
+  <text x="760" y="512" font-size="13" fill="#141421"><tspan font-weight="700">Typed values</tspan> in the settings of the client.</text>
+
+  <!-- ==================== Rules ==================== -->
+  <rect x="60" y="544" width="530" height="76" fill="#FFFFFF"/>
+  <rect x="60" y="544" width="4" height="76" fill="#141421"/>
+  <text x="90" y="574" font-size="18" font-weight="700" fill="#141421">Without locale <tspan font-size="13" font-weight="400" fill="#70706F">· read as nl-BE</tspan></text>
+  <text x="90" y="600" font-size="13" fill="#70706F"><tspan font-style="italic">403.987500</tspan> becomes <tspan fill="#141421" font-weight="700">403.987.500</tspan>: the dot is a thousands separator.</text>
+  <rect x="610" y="544" width="530" height="76" fill="#FFFFFF"/>
+  <rect x="610" y="544" width="4" height="76" fill="#F39454"/>
+  <text x="640" y="574" font-size="18" font-weight="700" fill="#141421">With locale <tspan font-size="13" font-weight="400" fill="#70706F">· read as en-US</tspan></text>
+  <text x="640" y="600" font-size="13" fill="#70706F"><tspan font-style="italic">403.987500</tspan> becomes <tspan fill="#141421" font-weight="700">403,9875</tspan>: the dot is the decimal separator.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="650" x2="1140" y2="650" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="688" font-size="20" fill="#141421">Provide the <tspan font-weight="700">locale of origin</tspan>, Power Query translates to the client.</text>
+  <text x="1140" y="687" font-size="14" fill="#70706F" text-anchor="end">Change Type ❭ Using Locale...</text>
+</svg>

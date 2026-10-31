@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 890" width="1200" height="890" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#141421"/>
+    </marker>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="890" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Dimension and fact tables</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="206" lengthAdjust="spacing">Star schema</text>
+  <rect x="274" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Dimensions are the master tables; facts are the transactions that are aggregated by those dimensions.</text>
+
+  <!-- ==================== Star schema ==================== -->
+  <text x="60" y="190" font-size="15" font-weight="700" fill="#141421">Dimensions <tspan font-weight="400" fill="#70706F">= master tables, one-side (1), primary key</tspan></text>
+  <line x1="169.6" y1="298.8" x2="251.7" y2="375.1" stroke="#141421" stroke-width="2" marker-end="url(#head)"/>
+  <text x="170.3" y="323.5" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="233.4" y="390.0" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="middle">*</text>
+  <line x1="430.4" y1="298.8" x2="348.3" y2="375.1" stroke="#141421" stroke-width="2" marker-end="url(#head)"/>
+  <text x="410.7" y="303.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="344.8" y="366.5" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="middle">*</text>
+  <line x1="169.6" y1="541.2" x2="251.7" y2="464.9" stroke="#141421" stroke-width="2" marker-end="url(#head)"/>
+  <text x="189.3" y="547.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="255.2" y="493.5" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="middle">*</text>
+  <line x1="430.4" y1="541.2" x2="348.3" y2="464.9" stroke="#141421" stroke-width="2" marker-end="url(#head)"/>
+  <text x="429.7" y="526.5" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="366.6" y="470.0" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="middle">*</text>
+  <circle cx="130" cy="262" r="50" fill="#F39454"/>
+  <text x="130" y="262" font-size="17" font-weight="700" fill="#141421" text-anchor="middle">Cust</text>
+  <text x="130" y="282" font-size="12" fill="#141421" text-anchor="middle">per customer</text>
+  <circle cx="470" cy="262" r="50" fill="#F39454"/>
+  <text x="470" y="262" font-size="17" font-weight="700" fill="#141421" text-anchor="middle">BU</text>
+  <text x="470" y="282" font-size="12" fill="#141421" text-anchor="middle">per BU</text>
+  <circle cx="130" cy="578" r="50" fill="#F39454"/>
+  <text x="130" y="578" font-size="17" font-weight="700" fill="#141421" text-anchor="middle">Prod</text>
+  <text x="130" y="598" font-size="12" fill="#141421" text-anchor="middle">per product</text>
+  <circle cx="470" cy="578" r="50" fill="#F39454"/>
+  <text x="470" y="578" font-size="17" font-weight="700" fill="#141421" text-anchor="middle">Calendar</text>
+  <text x="470" y="598" font-size="12" fill="#141421" text-anchor="middle">per month</text>
+  <circle cx="300" cy="420" r="60" fill="#C9DCE7" stroke="#141421" stroke-width="2"/>
+  <text x="300" y="412" font-size="30" font-weight="700" fill="#F39454" text-anchor="middle">∑</text>
+  <text x="300" y="438" font-size="19" font-weight="700" fill="#141421" text-anchor="middle">Fact</text>
+  <text x="300" y="456" font-size="11" fill="#70706F" text-anchor="middle">foreign keys</text>
+  <text x="60" y="660" font-size="15" font-weight="700" fill="#141421">Facts <tspan font-weight="400" fill="#70706F">= transactions, many-side (*), foreign keys</tspan></text>
+  <text x="60" y="682" font-size="13" fill="#70706F">Arrows show the filter direction: from dimension (1) to fact (*).</text>
+
+  <!-- ==================== Fact table ==================== -->
+  <text x="620" y="190" font-size="15" font-weight="700" fill="#141421">Fact <tspan font-weight="400" fill="#70706F">→ measure table</tspan></text>
+  <g transform="translate(772 170) scale(0.6)"><rect width="28" height="36" rx="4" fill="#141421"/><rect x="4" y="4" width="20" height="8" rx="1.5" fill="#F39454"/><rect x="4.0" y="16.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="11.3" y="16.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="18.6" y="16.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="4.0" y="22.5" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="11.3" y="22.5" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="18.6" y="22.5" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="4.0" y="29.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="11.3" y="29.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="18.6" y="29.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/></g>
+  <rect x="620" y="214" width="520" height="36" fill="#141421"/>
+  <rect x="620" y="250" width="520" height="68" fill="#FFFFFF"/>
+  <line x1="620" y1="284" x2="1140" y2="284" stroke="#D7D8D8"/>
+  <text x="632" y="206" font-size="11" font-weight="700" fill="#F39454">PK</text>
+  <text x="632" y="237" font-size="14" font-weight="700" fill="#F6F6F6">Id</text>
+  <text x="692" y="206" font-size="11" font-weight="700" fill="#70706F">FK</text>
+  <text x="692" y="237" font-size="14" font-weight="700" fill="#F6F6F6">Date</text>
+  <text x="802" y="206" font-size="11" font-weight="700" fill="#70706F">FK</text>
+  <text x="802" y="237" font-size="14" font-weight="700" fill="#F6F6F6">Prod Id</text>
+  <text x="892" y="206" font-size="11" font-weight="700" fill="#70706F">FK</text>
+  <text x="892" y="237" font-size="14" font-weight="700" fill="#F6F6F6">Cust Id</text>
+  <text x="982" y="206" font-size="11" font-weight="700" fill="#70706F">FK</text>
+  <text x="982" y="237" font-size="14" font-weight="700" fill="#F6F6F6">BU Id</text>
+  <text x="1128" y="237" font-size="14" font-weight="700" fill="#F6F6F6" text-anchor="end">Amount</text>
+  <text x="632" y="272" font-size="14" fill="#141421">1</text>
+  <text x="692" y="272" font-size="14" fill="#141421">1/1/2023</text>
+  <rect x="790" y="250" width="90" height="34" fill="#F39454" fill-opacity="0.25" stroke="#F39454" stroke-width="2"/>
+  <text x="802" y="272" font-size="14" fill="#141421" font-weight="700">4</text>
+  <text x="892" y="272" font-size="14" fill="#141421">1</text>
+  <text x="982" y="272" font-size="14" fill="#141421">2</text>
+  <text x="1128" y="272" font-size="14" fill="#141421" text-anchor="end">100</text>
+  <text x="632" y="306" font-size="14" fill="#141421">2</text>
+  <text x="692" y="306" font-size="14" fill="#141421">2/1/2023</text>
+  <text x="802" y="306" font-size="14" fill="#141421">1</text>
+  <text x="892" y="306" font-size="14" fill="#141421">2</text>
+  <text x="982" y="306" font-size="14" fill="#141421">1</text>
+  <text x="1128" y="306" font-size="14" fill="#141421" text-anchor="end">200</text>
+
+  <!-- ==================== Prod dimension ==================== -->
+  <text x="620" y="396" font-size="15" font-weight="700" fill="#141421">Prod</text>
+  <text x="632" y="412" font-size="11" font-weight="700" fill="#F39454">PK</text>
+  <rect x="620" y="420" width="260" height="36" fill="#141421"/>
+  <rect x="620" y="456" width="260" height="136" fill="#FFFFFF"/>
+  <g font-size="14" font-weight="700" fill="#F6F6F6"><text x="632" y="443">Id</text><text x="712" y="443">Name</text></g>
+  <rect x="620" y="456" width="260" height="34" fill="#C9DCE7"/>
+  <text x="632" y="478" font-size="14" fill="#141421">-1</text><text x="712" y="478" font-size="14" fill="#141421">Not Available</text>
+  <line x1="620" y1="490" x2="880" y2="490" stroke="#D7D8D8"/>
+  <text x="632" y="512" font-size="14" fill="#141421">1</text><text x="712" y="512" font-size="14" fill="#141421">Prod A</text>
+  <line x1="620" y1="524" x2="880" y2="524" stroke="#D7D8D8"/>
+  <text x="632" y="546" font-size="14" fill="#141421">2</text><text x="712" y="546" font-size="14" fill="#141421">Prod B</text>
+  <line x1="620" y1="558" x2="880" y2="558" stroke="#D7D8D8"/>
+  <text x="632" y="580" font-size="14" fill="#141421">3</text><text x="712" y="580" font-size="14" fill="#141421">Prod C</text>
+
+  <!-- orphan: Prod Id 4 has no matching row in Prod -->
+  <line x1="835.0" y1="288" x2="835.0" y2="380" stroke="#F39454" stroke-width="2" stroke-dasharray="6 4"/>
+  <circle cx="835.0" cy="342.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/>
+  <path d="M830.0 337.0 l10 10 M840.0 337.0 l-10 10" stroke="#F39454" stroke-width="2"/>
+  <text x="855.0" y="347.0" font-size="13" font-weight="700" fill="#141421">Prod Id 4 does not exist in Prod</text>
+
+  <rect x="920" y="420" width="220" height="136" fill="#FFFFFF" stroke="#F39454" stroke-width="1.5"/>
+  <text x="936" y="448" font-size="15" font-weight="700" fill="#141421">Orphan</text>
+  <text x="936" y="472" font-size="13" fill="#141421">A foreign key without a</text>
+  <text x="936" y="490" font-size="13" fill="#141421">matching primary key.</text>
+  <text x="936" y="518" font-size="13" fill="#141421">Fix: map unknown keys to</text>
+  <text x="936" y="536" font-size="13" font-weight="700" fill="#141421">-1 Not Available</text>
+  <path d="M916 530 C900 530 904 473.0 886 473.0" fill="none" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="620" y="614" font-size="13" fill="#70706F">Every FK value in the fact must exist as PK here.</text>
+
+  <!-- ==================== Cards: per / aggregate / measure table ==================== -->
+  <rect x="60" y="712" width="346" height="104" fill="#FFFFFF"/>
+  <rect x="60" y="712" width="4" height="104" fill="#F39454"/>
+  <rect x="80" y="730" width="48" height="26" rx="13" fill="#F39454"/><text x="104" y="748" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">per</text>
+  <text x="144" y="742" font-size="16" font-weight="700" fill="#141421">Dimension: “per …”</text>
+  <text x="144" y="766" font-size="13" fill="#141421">Use a dimension whenever you say</text>
+  <text x="144" y="784" font-size="13" fill="#141421">“per”: revenue per customer, per</text>
+  <text x="144" y="802" font-size="13" fill="#141421">product, per month.</text>
+  <rect x="427" y="712" width="346" height="104" fill="#FFFFFF"/>
+  <rect x="427" y="712" width="4" height="104" fill="#F39454"/>
+  <rect x="447" y="728" width="48" height="36" rx="6" fill="#C9DCE7"/><text x="471" y="757" font-size="30" font-weight="700" fill="#141421" text-anchor="middle">∑</text>
+  <text x="511" y="742" font-size="16" font-weight="700" fill="#141421">Fact: aggregate</text>
+  <text x="511" y="766" font-size="13" fill="#141421">Facts are aggregated: SUM, COUNT,</text>
+  <text x="511" y="784" font-size="13" fill="#141421">AVERAGE, ...  e.g. ∑ Amount = 300</text>
+  <text x="511" y="802" font-size="13" fill="#141421">for all transactions.</text>
+  <rect x="794" y="712" width="346" height="104" fill="#FFFFFF"/>
+  <rect x="794" y="712" width="4" height="104" fill="#F39454"/>
+  <g transform="translate(824 728) scale(1.0)"><rect width="28" height="36" rx="4" fill="#141421"/><rect x="4" y="4" width="20" height="8" rx="1.5" fill="#F39454"/><rect x="4.0" y="16.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="11.3" y="16.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="18.6" y="16.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="4.0" y="22.5" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="11.3" y="22.5" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="18.6" y="22.5" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="4.0" y="29.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="11.3" y="29.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="18.6" y="29.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/></g>
+  <text x="878" y="742" font-size="16" font-weight="700" fill="#141421">Fact table = measure table</text>
+  <text x="878" y="766" font-size="13" fill="#141421">Hide the fact columns and store</text>
+  <text x="878" y="784" font-size="13" fill="#141421">the explicit measures in the fact</text>
+  <text x="878" y="802" font-size="13" fill="#141421">table: it becomes the measure table.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="838" x2="1140" y2="838" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="874" font-size="20" fill="#141421">Slice <tspan font-weight="700">per</tspan> dimension, <tspan font-weight="700">∑</tspan> aggregate the facts.</text>
+  <text x="1140" y="873" font-size="14" fill="#70706F" text-anchor="end">Filters flow from 1 to *</text>
+</svg>

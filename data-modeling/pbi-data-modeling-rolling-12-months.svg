@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 740" width="1200" height="740" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <g id="brand-arrow">
+      <path d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/>
+      <rect x="15" y="3" width="2.5" height="13" fill="#F39454"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="740" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Rolling 12 months</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="330" lengthAdjust="spacing">Rolling 12 months</text>
+  <rect x="398" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Every month, the last 12 months of sales are summed: seasonality cancels out, the real trend stands out.</text>
+
+  <!-- ==================== Legend ==================== -->
+  <g font-size="13" fill="#141421">
+    <rect x="60" y="164" width="12" height="12" fill="#70706F"/><text x="78" y="175">Sales (right axis)</text>
+    <rect x="210" y="164" width="12" height="12" fill="#D7D8D8"/><text x="228" y="175">Fcst Next Month (right axis)</text>
+    <rect x="440" y="168" width="22" height="4" fill="#141421"/><text x="468" y="175">Fcst Year End = Revenue R12m (left axis)</text>
+  </g>
+
+  <!-- ==================== Chart ==================== -->
+  <g stroke="#D7D8D8" stroke-width="1">
+    <line x1="110" y1="443.0" x2="1090" y2="443.0"/>
+    <line x1="110" y1="366.0" x2="1090" y2="366.0"/>
+    <line x1="110" y1="289.0" x2="1090" y2="289.0"/>
+    <line x1="110" y1="212.0" x2="1090" y2="212.0"/>
+  </g>
+  <g font-size="11" fill="#70706F" text-anchor="end">
+    <text x="100" y="524.0">0M</text>
+    <text x="100" y="447.0">5M</text>
+    <text x="100" y="370.0">10M</text>
+    <text x="100" y="293.0">15M</text>
+    <text x="100" y="216.0">20M</text>
+  </g>
+  <path d="M124.0 512.3 C128.7 511.0 142.7 507.2 152.0 504.6 C161.3 502.0 170.7 499.5 180.0 496.9 C189.3 494.3 198.7 491.8 208.0 489.2 C217.3 486.6 226.7 484.8 236.0 481.5 C245.3 478.2 254.7 472.8 264.0 469.2 C273.3 465.6 282.7 463.0 292.0 459.9 C301.3 456.9 310.7 454.0 320.0 450.7 C329.3 447.4 338.7 443.5 348.0 439.9 C357.3 436.3 366.7 432.7 376.0 429.1 C385.3 425.5 394.7 421.4 404.0 418.4 C413.3 415.3 422.7 411.9 432.0 410.7 C441.3 409.4 450.7 410.8 460.0 410.7 C469.3 410.5 478.7 409.6 488.0 409.9 C497.3 410.1 506.7 411.6 516.0 412.2 C525.3 412.8 534.7 413.0 544.0 413.7 C553.3 414.5 562.7 415.8 572.0 416.8 C581.3 417.8 590.7 419.0 600.0 419.9 C609.3 420.8 618.7 421.7 628.0 422.2 C637.3 422.7 646.7 422.5 656.0 423.0 C665.3 423.5 674.7 424.5 684.0 425.3 C693.3 426.1 702.7 427.0 712.0 427.6 C721.3 428.2 730.7 428.6 740.0 429.1 C749.3 429.7 758.7 431.2 768.0 430.7 C777.3 430.2 786.7 427.9 796.0 426.1 C805.3 424.3 814.7 422.7 824.0 419.9 C833.3 417.1 842.7 412.7 852.0 409.1 C861.3 405.5 870.7 402.4 880.0 398.3 C889.3 394.2 898.7 389.9 908.0 384.5 C917.3 379.1 926.7 371.6 936.0 366.0 C945.3 360.4 954.7 355.7 964.0 350.6 C973.3 345.5 982.7 340.6 992.0 335.2 C1001.3 329.8 1010.7 324.2 1020.0 318.3 C1029.3 312.4 1038.7 306.7 1048.0 299.8 C1057.3 292.8 1071.3 280.5 1076.0 276.7 L1076.0 520 L124.0 520 Z" fill="#C9DCE7" fill-opacity="0.45"/>
+  <!-- bar panel: Sales / Fcst Next Month (own scale) -->
+  <g font-size="11" fill="#70706F"><text x="1100" y="524.0">0M</text><text x="1100" y="447.0">1M</text><text x="1100" y="370.0">2M</text><text x="1100" y="293.0">3M</text><text x="1100" y="216.0">4M</text></g>
+  <text x="100" y="200" font-size="11" font-weight="700" fill="#141421" text-anchor="end">R12m</text>
+  <text x="1100" y="200" font-size="11" font-weight="700" fill="#70706F">Sales / Fcst</text>
+  <rect x="111.0" y="481.5" width="12" height="38.5" fill="#70706F"/><rect x="125.0" y="481.5" width="12" height="38.5" fill="#D7D8D8"/>
+  <rect x="139.0" y="481.5" width="12" height="38.5" fill="#70706F"/><rect x="153.0" y="481.5" width="12" height="38.5" fill="#D7D8D8"/>
+  <rect x="167.0" y="485.4" width="12" height="34.6" fill="#70706F"/><rect x="181.0" y="481.5" width="12" height="38.5" fill="#D7D8D8"/>
+  <rect x="195.0" y="481.5" width="12" height="38.5" fill="#70706F"/><rect x="209.0" y="481.5" width="12" height="38.5" fill="#D7D8D8"/>
+  <rect x="223.0" y="477.6" width="12" height="42.4" fill="#70706F"/><rect x="237.0" y="481.5" width="12" height="38.5" fill="#D7D8D8"/>
+  <rect x="251.0" y="462.2" width="12" height="57.8" fill="#70706F"/><rect x="265.0" y="477.6" width="12" height="42.4" fill="#D7D8D8"/>
+  <rect x="279.0" y="473.8" width="12" height="46.2" fill="#70706F"/><rect x="293.0" y="477.1" width="12" height="42.9" fill="#D7D8D8"/>
+  <rect x="307.0" y="477.6" width="12" height="42.4" fill="#70706F"/><rect x="321.0" y="476.7" width="12" height="43.3" fill="#D7D8D8"/>
+  <rect x="335.0" y="469.9" width="12" height="50.1" fill="#70706F"/><rect x="349.0" y="475.5" width="12" height="44.5" fill="#D7D8D8"/>
+  <rect x="363.0" y="469.9" width="12" height="50.1" fill="#70706F"/><rect x="377.0" y="474.6" width="12" height="45.4" fill="#D7D8D8"/>
+  <rect x="391.0" y="469.9" width="12" height="50.1" fill="#70706F"/><rect x="405.0" y="473.8" width="12" height="46.2" fill="#D7D8D8"/>
+  <rect x="419.0" y="469.9" width="12" height="50.1" fill="#70706F"/><rect x="433.0" y="474.4" width="12" height="45.6" fill="#D7D8D8"/>
+  <rect x="447.0" y="481.5" width="12" height="38.5" fill="#70706F"/><rect x="461.0" y="474.4" width="12" height="45.6" fill="#D7D8D8"/>
+  <rect x="475.0" y="477.6" width="12" height="42.4" fill="#70706F"/><rect x="489.0" y="474.1" width="12" height="45.9" fill="#D7D8D8"/>
+  <rect x="503.0" y="493.1" width="12" height="26.9" fill="#70706F"/><rect x="517.0" y="475.1" width="12" height="44.9" fill="#D7D8D8"/>
+  <rect x="531.0" y="489.2" width="12" height="30.8" fill="#70706F"/><rect x="545.0" y="475.7" width="12" height="44.3" fill="#D7D8D8"/>
+  <rect x="559.0" y="493.1" width="12" height="26.9" fill="#70706F"/><rect x="573.0" y="477.0" width="12" height="43.0" fill="#D7D8D8"/>
+  <rect x="587.0" y="477.6" width="12" height="42.4" fill="#70706F"/><rect x="601.0" y="478.3" width="12" height="41.7" fill="#D7D8D8"/>
+  <rect x="615.0" y="485.4" width="12" height="34.6" fill="#70706F"/><rect x="629.0" y="479.3" width="12" height="40.7" fill="#D7D8D8"/>
+  <rect x="643.0" y="481.5" width="12" height="38.5" fill="#70706F"/><rect x="657.0" y="479.6" width="12" height="40.4" fill="#D7D8D8"/>
+  <rect x="671.0" y="481.5" width="12" height="38.5" fill="#70706F"/><rect x="685.0" y="480.5" width="12" height="39.5" fill="#D7D8D8"/>
+  <rect x="699.0" y="481.5" width="12" height="38.5" fill="#70706F"/><rect x="713.0" y="481.5" width="12" height="38.5" fill="#D7D8D8"/>
+  <rect x="727.0" y="477.6" width="12" height="42.4" fill="#70706F"/><rect x="741.0" y="482.1" width="12" height="37.9" fill="#D7D8D8"/>
+  <rect x="755.0" y="477.6" width="12" height="42.4" fill="#70706F"/><rect x="769.0" y="482.8" width="12" height="37.2" fill="#D7D8D8"/>
+  <rect x="783.0" y="450.7" width="12" height="69.3" fill="#70706F"/><rect x="797.0" y="480.9" width="12" height="39.1" fill="#D7D8D8"/>
+  <rect x="811.0" y="454.6" width="12" height="65.4" fill="#70706F"/><rect x="825.0" y="478.3" width="12" height="41.7" fill="#D7D8D8"/>
+  <rect x="839.0" y="443.0" width="12" height="77.0" fill="#70706F"/><rect x="853.0" y="473.8" width="12" height="46.2" fill="#D7D8D8"/>
+  <rect x="867.0" y="435.3" width="12" height="84.7" fill="#70706F"/><rect x="881.0" y="469.3" width="12" height="50.7" fill="#D7D8D8"/>
+  <rect x="895.0" y="427.6" width="12" height="92.4" fill="#70706F"/><rect x="909.0" y="463.5" width="12" height="56.5" fill="#D7D8D8"/>
+  <rect x="923.0" y="385.2" width="12" height="134.8" fill="#70706F"/><rect x="937.0" y="455.8" width="12" height="64.2" fill="#D7D8D8"/>
+  <rect x="951.0" y="416.1" width="12" height="103.9" fill="#70706F"/><rect x="965.0" y="449.4" width="12" height="70.6" fill="#D7D8D8"/>
+  <rect x="979.0" y="408.4" width="12" height="111.6" fill="#70706F"/><rect x="993.0" y="443.0" width="12" height="77.0" fill="#D7D8D8"/>
+  <rect x="1007.0" y="404.5" width="12" height="115.5" fill="#70706F"/><rect x="1021.0" y="435.9" width="12" height="84.1" fill="#D7D8D8"/>
+  <rect x="1035.0" y="396.8" width="12" height="123.2" fill="#70706F"/><rect x="1049.0" y="428.2" width="12" height="91.8" fill="#D7D8D8"/>
+  <rect x="1063.0" y="373.7" width="12" height="146.3" fill="#70706F"/><rect x="1077.0" y="418.6" width="12" height="101.4" fill="#D7D8D8"/>
+  <line x1="110" y1="520" x2="1090" y2="520" stroke="#70706F" stroke-width="1"/>
+  <!-- R12m line -->
+  <path d="M124.0 512.3 C128.7 511.0 142.7 507.2 152.0 504.6 C161.3 502.0 170.7 499.5 180.0 496.9 C189.3 494.3 198.7 491.8 208.0 489.2 C217.3 486.6 226.7 484.8 236.0 481.5 C245.3 478.2 254.7 472.8 264.0 469.2 C273.3 465.6 282.7 463.0 292.0 459.9 C301.3 456.9 310.7 454.0 320.0 450.7 C329.3 447.4 338.7 443.5 348.0 439.9 C357.3 436.3 366.7 432.7 376.0 429.1 C385.3 425.5 394.7 421.4 404.0 418.4 C413.3 415.3 422.7 411.9 432.0 410.7 C441.3 409.4 450.7 410.8 460.0 410.7 C469.3 410.5 478.7 409.6 488.0 409.9 C497.3 410.1 506.7 411.6 516.0 412.2 C525.3 412.8 534.7 413.0 544.0 413.7 C553.3 414.5 562.7 415.8 572.0 416.8 C581.3 417.8 590.7 419.0 600.0 419.9 C609.3 420.8 618.7 421.7 628.0 422.2 C637.3 422.7 646.7 422.5 656.0 423.0 C665.3 423.5 674.7 424.5 684.0 425.3 C693.3 426.1 702.7 427.0 712.0 427.6 C721.3 428.2 730.7 428.6 740.0 429.1 C749.3 429.7 758.7 431.2 768.0 430.7 C777.3 430.2 786.7 427.9 796.0 426.1 C805.3 424.3 814.7 422.7 824.0 419.9 C833.3 417.1 842.7 412.7 852.0 409.1 C861.3 405.5 870.7 402.4 880.0 398.3 C889.3 394.2 898.7 389.9 908.0 384.5 C917.3 379.1 926.7 371.6 936.0 366.0 C945.3 360.4 954.7 355.7 964.0 350.6 C973.3 345.5 982.7 340.6 992.0 335.2 C1001.3 329.8 1010.7 324.2 1020.0 318.3 C1029.3 312.4 1038.7 306.7 1048.0 299.8 C1057.3 292.8 1071.3 280.5 1076.0 276.7" fill="none" stroke="#141421" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="1076.0" cy="276.7" r="5.5" fill="#141421" stroke="#FFFFFF" stroke-width="2"/>
+  <rect x="1002.0" y="288.7" width="58" height="22" rx="11" fill="#FFFFFF" stroke="#141421" stroke-width="1.5"/>
+  <text x="1031.0" y="304.7" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">15.8M</text>
+  <!-- x labels -->
+  <g font-size="11" fill="#70706F" text-anchor="middle">
+    <text x="124.0" y="536">J</text><text x="152.0" y="536">A</text><text x="180.0" y="536">S</text><text x="208.0" y="536">O</text><text x="236.0" y="536">N</text><text x="264.0" y="536">D</text><text x="292.0" y="536">J</text><text x="320.0" y="536">F</text><text x="348.0" y="536">M</text><text x="376.0" y="536">A</text><text x="404.0" y="536">M</text><text x="432.0" y="536">J</text><text x="460.0" y="536">J</text><text x="488.0" y="536">A</text><text x="516.0" y="536">S</text><text x="544.0" y="536">O</text><text x="572.0" y="536">N</text><text x="600.0" y="536">D</text><text x="628.0" y="536">J</text><text x="656.0" y="536">F</text><text x="684.0" y="536">M</text><text x="712.0" y="536">A</text><text x="740.0" y="536">M</text><text x="768.0" y="536">J</text><text x="796.0" y="536">J</text><text x="824.0" y="536">A</text><text x="852.0" y="536">S</text><text x="880.0" y="536">O</text><text x="908.0" y="536">N</text><text x="936.0" y="536">D</text><text x="964.0" y="536">J</text><text x="992.0" y="536">F</text><text x="1020.0" y="536">M</text><text x="1048.0" y="536">A</text><text x="1076.0" y="536">M</text>
+  </g>
+  <g font-size="12" font-weight="700" fill="#141421" text-anchor="middle">
+    <text x="194.0" y="556">2005</text>
+    <text x="446.0" y="556">2006</text>
+    <text x="782.0" y="556">2007</text>
+    <text x="1020.0" y="556">2008</text>
+  </g>
+  <g stroke="#D7D8D8" stroke-width="1">
+    <line x1="278.0" y1="520" x2="278.0" y2="560"/>
+    <line x1="614.0" y1="520" x2="614.0" y2="560"/>
+    <line x1="950.0" y1="520" x2="950.0" y2="560"/>
+  </g>
+  <!-- phases -->
+  <line x1="138.0" y1="480.0" x2="376.8" y2="395.3" stroke="#70706F" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
+  <polygon points="390.0,390.6 379.1,401.9 374.5,388.7" fill="#70706F"/>
+  <g transform="translate(259.3 422.1) rotate(-19.5)"><circle cx="-4" cy="-5" r="9" fill="#70706F"/><text x="0" y="4" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle" transform="translate(-4 -5) rotate(19.5)">1</text><text x="10" y="0" font-size="14" fill="#141421">building up R12m</text></g>
+
+  <line x1="418.0" y1="381.4" x2="490.8" y2="381.4" stroke="#141421" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
+  <polygon points="504.8,381.4 490.8,388.4 490.8,374.4" fill="#141421"/>
+  <g transform="translate(431.0 367.4) rotate(0.0)"><circle cx="-4" cy="-5" r="9" fill="#141421"/><text x="0" y="4" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle" transform="translate(-4 -5) rotate(-0.0)">2</text><text x="10" y="0" font-size="14" fill="#141421">stable</text></g>
+
+  <line x1="527.2" y1="381.4" x2="754.1" y2="404.6" stroke="#F39454" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
+  <polygon points="768.0,406.0 753.4,411.6 754.8,397.7" fill="#F39454"/>
+  <g transform="translate(557.5 370.4) rotate(5.8)"><circle cx="-4" cy="-5" r="9" fill="#F39454"/><text x="0" y="4" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle" transform="translate(-4 -5) rotate(-5.8)">3</text><text x="10" y="0" font-size="14" fill="#141421">something fundamentally changing</text></g>
+
+  <line x1="790.4" y1="396.8" x2="1024.7" y2="262.1" stroke="#141421" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>
+  <polygon points="1036.8,255.1 1028.2,268.2 1021.2,256.0" fill="#141421"/>
+  <g transform="translate(832.7 356.3) rotate(-29.9)"><circle cx="-4" cy="-5" r="9" fill="#141421"/><text x="0" y="4" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle" transform="translate(-4 -5) rotate(29.9)">4</text><text x="10" y="0" font-size="14" fill="#141421">root cause found and improving</text></g>
+
+  <!-- ==================== How to read ==================== -->
+  <line x1="60" y1="586" x2="1140" y2="586" stroke="#D7D8D8" stroke-width="1"/>
+
+  <circle cx="69" cy="610" r="9" fill="#70706F"/><text x="69" y="614" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle">1</text>
+  <text x="86" y="616" font-size="16" font-weight="700" fill="#141421">Building up</text>
+  <text x="60" y="640" font-size="14" fill="#141421">The first 11 months hold less</text>
+  <text x="60" y="658" font-size="14" fill="#141421">than a full year of history.</text>
+  <circle cx="344" cy="610" r="9" fill="#141421"/><text x="344" y="614" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle">2</text>
+  <text x="361" y="616" font-size="16" font-weight="700" fill="#141421">Stable</text>
+  <text x="335" y="640" font-size="14" fill="#141421">A flat line: the business runs</text>
+  <text x="335" y="658" font-size="14" fill="#141421">the same way as last year.</text>
+  <circle cx="619" cy="610" r="9" fill="#F39454"/><text x="619" y="614" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle">3</text>
+  <text x="636" y="616" font-size="16" font-weight="700" fill="#141421">Fundamentally changing</text>
+  <text x="610" y="640" font-size="14" fill="#141421">A drop is no seasonal dip:</text>
+  <text x="610" y="658" font-size="14" fill="#141421">launch a project to find the cause.</text>
+  <circle cx="894" cy="610" r="9" fill="#141421"/><text x="894" y="614" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle">4</text>
+  <text x="911" y="616" font-size="16" font-weight="700" fill="#141421">Improving</text>
+  <text x="885" y="640" font-size="14" fill="#141421">Actions take effect and the</text>
+  <text x="885" y="658" font-size="14" fill="#141421">trend turns upward again.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="680" x2="1140" y2="680" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="714" font-size="20" fill="#141421">Always a full year: <tspan font-weight="700">a change in direction is a real change</tspan>.</text>
+  <text x="1140" y="713" font-size="14" fill="#70706F" text-anchor="end">Built with DATESBETWEEN over the last 12 months</text>
+</svg>

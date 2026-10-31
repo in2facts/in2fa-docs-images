@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="750" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Many-to-many: M2M v4 (cross filter)</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="410" lengthAdjust="spacing">Cross filter on demand</text>
+  <rect x="478" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">CROSSFILTER makes the bridge-to-account relationship bi-directional, only for the duration of the calculation.</text>
+
+  <!-- ==================== Default: single direction ==================== -->
+  <text x="60" y="188" font-size="17" font-weight="700" fill="#141421">Default <tspan font-size="14" font-weight="400" fill="#70706F">single-direction relationship: the bridge cannot filter Dim_Account</tspan></text>
+  <rect x="60" y="202" width="200" height="32" fill="#141421"/>
+  <text x="74" y="223" font-size="14" font-weight="700" fill="#F6F6F6">Dim_Customer</text>
+  <rect x="60" y="234" width="200" height="84" fill="#FFFFFF"/>
+  <rect x="68" y="242" width="184" height="28" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="1.5"/>
+  <text x="78" y="261" font-size="14" fill="#141421" font-weight="700">Paul</text>
+  <rect x="340" y="202" width="200" height="32" fill="#141421"/>
+  <text x="354" y="223" font-size="14" font-weight="700" fill="#F6F6F6">Bridge</text>
+  <rect x="340" y="234" width="200" height="84" fill="#FFFFFF"/>
+  <rect x="348" y="242" width="184" height="28" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="1.5"/>
+  <text x="358" y="261" font-size="14" fill="#141421" font-weight="700">Paul · Paul</text>
+  <rect x="348" y="276" width="184" height="28" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="1.5"/>
+  <text x="358" y="295" font-size="14" fill="#141421" font-weight="700">Paul · Mark - Paul</text>
+  <rect x="620" y="202" width="200" height="32" fill="#141421"/>
+  <text x="634" y="223" font-size="14" font-weight="700" fill="#F6F6F6">Dim_Account</text>
+  <rect x="620" y="234" width="200" height="84" fill="#FFFFFF"/>
+  <text x="638" y="261" font-size="14" fill="#A9AAAA">all 6 accounts</text>
+  <rect x="900" y="202" width="200" height="32" fill="#141421"/>
+  <text x="914" y="223" font-size="14" font-weight="700" fill="#F6F6F6">Fact_Transaction</text>
+  <rect x="900" y="234" width="200" height="84" fill="#FFFFFF"/>
+  <text x="914" y="256" font-size="12" font-weight="700" fill="#A9AAAA">[TransactionAmount]</text>
+  <text x="914" y="292" font-size="30" font-weight="700" fill="#A9AAAA">17,813</text>
+  <line x1="264" y1="276.0" x2="336" y2="276.0" stroke="#F39454" stroke-width="2"/>
+  <text x="268" y="268.0" font-size="15" font-weight="700" fill="#141421">1</text>
+  <text x="332" y="277.0" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="end">*</text>
+  <path d="M295.0 269.0 L307.0 276.0 L295.0 283.0 Z" fill="#F39454"/>
+  <line x1="544" y1="276.0" x2="616" y2="276.0" stroke="#A9AAAA" stroke-width="2"/>
+  <text x="548" y="277.0" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421">*</text>
+  <text x="612" y="268.0" font-size="15" font-weight="700" fill="#141421" text-anchor="end">1</text>
+  <path d="M585.0 269.0 L573.0 276.0 L585.0 283.0 Z" fill="#A9AAAA"/>
+  <circle cx="580.0" cy="298.0" r="9" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M576.0 294.0 L584.0 302.0 M584.0 294.0 L576.0 302.0" stroke="#F39454" stroke-width="2"/>
+  <line x1="824" y1="276.0" x2="896" y2="276.0" stroke="#A9AAAA" stroke-width="2"/>
+  <text x="828" y="268.0" font-size="15" font-weight="700" fill="#141421">1</text>
+  <text x="892" y="277.0" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="end">*</text>
+  <path d="M855.0 269.0 L867.0 276.0 L855.0 283.0 Z" fill="#A9AAAA"/>
+  <text x="580" y="342" font-size="12" fill="#70706F" text-anchor="middle">filter blocked</text>
+  <text x="900" y="342" font-size="12" fill="#70706F">same total for every customer</text>
+
+  <!-- ==================== CROSSFILTER BOTH ==================== -->
+  <line x1="60" y1="352" x2="1140" y2="352" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="384" font-size="17" font-weight="700" fill="#141421">CROSSFILTER ( …, BOTH ) <tspan font-size="14" font-weight="400" fill="#70706F">inside CALCULATE: the filter flows from the bridge to Dim_Account</tspan></text>
+  <rect x="60" y="398" width="200" height="32" fill="#141421"/>
+  <text x="74" y="419" font-size="14" font-weight="700" fill="#F6F6F6">Dim_Customer</text>
+  <rect x="60" y="430" width="200" height="84" fill="#FFFFFF"/>
+  <rect x="68" y="438" width="184" height="28" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="1.5"/>
+  <text x="78" y="457" font-size="14" fill="#141421" font-weight="700">Paul</text>
+  <rect x="340" y="398" width="200" height="32" fill="#141421"/>
+  <text x="354" y="419" font-size="14" font-weight="700" fill="#F6F6F6">Bridge</text>
+  <rect x="340" y="430" width="200" height="84" fill="#FFFFFF"/>
+  <rect x="348" y="438" width="184" height="28" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="1.5"/>
+  <text x="358" y="457" font-size="14" fill="#141421" font-weight="700">Paul · Paul</text>
+  <rect x="348" y="472" width="184" height="28" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="1.5"/>
+  <text x="358" y="491" font-size="14" fill="#141421" font-weight="700">Paul · Mark - Paul</text>
+  <rect x="620" y="398" width="200" height="32" fill="#141421"/>
+  <text x="634" y="419" font-size="14" font-weight="700" fill="#F6F6F6">Dim_Account</text>
+  <rect x="620" y="430" width="200" height="84" fill="#FFFFFF"/>
+  <rect x="628" y="438" width="184" height="28" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="1.5"/>
+  <text x="638" y="457" font-size="14" fill="#141421" font-weight="700">Paul</text>
+  <rect x="628" y="472" width="184" height="28" fill="#F39454" fill-opacity="0.18" stroke="#F39454" stroke-width="1.5"/>
+  <text x="638" y="491" font-size="14" fill="#141421" font-weight="700">Mark - Paul</text>
+  <rect x="900" y="398" width="200" height="32" fill="#141421"/>
+  <text x="914" y="419" font-size="14" font-weight="700" fill="#F6F6F6">Fact_Transaction</text>
+  <rect x="900" y="430" width="200" height="84" fill="#FFFFFF"/>
+  <text x="914" y="452" font-size="12" font-weight="700" fill="#F39454">[TransactionAmount]</text>
+  <text x="914" y="488" font-size="30" font-weight="700" fill="#141421">7,458</text>
+  <rect x="900" y="430" width="200" height="84" fill="none" stroke="#F39454" stroke-width="2"/>
+  <line x1="264" y1="472.0" x2="336" y2="472.0" stroke="#F39454" stroke-width="2"/>
+  <text x="268" y="464.0" font-size="15" font-weight="700" fill="#141421">1</text>
+  <text x="332" y="473.0" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="end">*</text>
+  <path d="M295.0 465.0 L307.0 472.0 L295.0 479.0 Z" fill="#F39454"/>
+  <line x1="544" y1="472.0" x2="616" y2="472.0" stroke="#F39454" stroke-width="2.5"/>
+  <text x="548" y="473.0" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421">*</text>
+  <text x="612" y="464.0" font-size="15" font-weight="700" fill="#141421" text-anchor="end">1</text>
+  <path d="M581.0 465.0 L593.0 472.0 L581.0 479.0 Z" fill="#F39454"/><path d="M579.0 465.0 L567.0 472.0 L579.0 479.0 Z" fill="#F39454"/>
+  <text x="580.0" y="496.0" font-size="12" font-weight="700" fill="#F39454" text-anchor="middle">BOTH</text>
+  <line x1="824" y1="472.0" x2="896" y2="472.0" stroke="#F39454" stroke-width="2"/>
+  <text x="828" y="464.0" font-size="15" font-weight="700" fill="#141421">1</text>
+  <text x="892" y="473.0" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="end">*</text>
+  <path d="M855.0 465.0 L867.0 472.0 L855.0 479.0 Z" fill="#F39454"/>
+  <text x="900" y="538" font-size="12" fill="#70706F">Paul = 7,308 + 150</text>
+
+  <!-- ==================== Code ==================== -->
+  <rect x="60" y="560" width="1080" height="44" fill="#141421"/>
+  <text x="76" y="588" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#F6F6F6" xml:space="preserve">M2M v4 = CALCULATE ( [TransactionAmount], <tspan fill="#F39454">CROSSFILTER</tspan> ( Bridge_Account_Customer[ID_Account], Dim_Account[ID_Account], BOTH ) )</text>
+
+  <!-- ==================== Explanation ==================== -->
+  <path transform="translate(60 614)" d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/><rect x="75" y="617" width="2.5" height="13" fill="#F39454"/>
+  <text x="86" y="630" font-size="17" font-weight="700" fill="#141421">Single direction</text>
+  <text x="60" y="654" font-size="14" fill="#141421">Filters flow from the one-side to the</text>
+  <text x="60" y="672" font-size="14" fill="#141421">many-side: the bridge cannot reach</text>
+  <text x="60" y="690" font-size="14" fill="#141421">Dim_Account.</text>
+  <path transform="translate(430 614)" d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/><rect x="445" y="617" width="2.5" height="13" fill="#F39454"/>
+  <text x="456" y="630" font-size="17" font-weight="700" fill="#141421">CROSSFILTER BOTH</text>
+  <text x="430" y="654" font-size="14" fill="#141421">Inside CALCULATE the relationship</text>
+  <text x="430" y="672" font-size="14" fill="#141421">filters both ways, so the bridge</text>
+  <text x="430" y="690" font-size="14" fill="#141421">filters Dim_Account.</text>
+  <path transform="translate(800 614)" d="M1 15 L12 4 M4 4 H12 V12" fill="none" stroke="#F39454" stroke-width="2.5"/><rect x="815" y="617" width="2.5" height="13" fill="#F39454"/>
+  <text x="826" y="630" font-size="17" font-weight="700" fill="#141421">Only during the calculation</text>
+  <text x="800" y="654" font-size="14" fill="#141421">The model itself stays single-</text>
+  <text x="800" y="672" font-size="14" fill="#141421">direction: no unpredictable filters</text>
+  <text x="800" y="690" font-size="14" fill="#141421">anywhere else.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="708" x2="1140" y2="708" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="740" font-size="20" fill="#141421">Bi-directional only where it is needed: <tspan font-weight="700">inside the measure.</tspan></text>
+  <text x="1140" y="739" font-size="14" fill="#70706F" text-anchor="end">Result: Paul = 7,308 + 150 = 7,458</text>
+</svg>

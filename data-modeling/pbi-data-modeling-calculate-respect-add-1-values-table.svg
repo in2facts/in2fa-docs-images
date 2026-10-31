@@ -10,8 +10,8 @@
   <rect width="1200" height="680" fill="#F6F6F6"/>
   <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Calculate – RESPECT + ADD</text>
   <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling · 1/3</text>
-  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Respect + add: VALUES as a table</text>
-  <rect x="630" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="580" lengthAdjust="spacing">Respect + add: VALUES as a table</text>
+  <rect x="648" y="106" width="22" height="6" fill="#F39454"/>
   <text x="60" y="140" font-size="16" fill="#70706F">VALUES respects the filter, removes the duplicates and adds a blank row.</text>
   <g font-size="15" font-weight="700" fill="#141421">
     <text x="60" y="186">The column</text>

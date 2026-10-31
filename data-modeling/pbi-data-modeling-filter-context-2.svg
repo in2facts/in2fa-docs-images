@@ -19,7 +19,7 @@
   <!-- Header -->
   <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Filter context 2</text>
   <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
-  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Filter context 2</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="260" lengthAdjust="spacing">Filter context 2</text>
   <rect x="328" y="106" width="22" height="6" fill="#F39454"/>
   <text x="60" y="140" font-size="16" fill="#70706F">The report filters one table. The relationships carry that filter down the chain to every table on the many side.</text>
 

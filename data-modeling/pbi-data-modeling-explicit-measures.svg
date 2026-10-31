@@ -11,8 +11,8 @@
   <!-- Header -->
   <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Explicit measures</text>
   <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
-  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Explicit measures</text>
-  <rect x="346" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="302" lengthAdjust="spacing">Explicit measures</text>
+  <rect x="370" y="106" width="22" height="6" fill="#F39454"/>
   <text x="60" y="140" font-size="16" fill="#70706F">The developer types the summarization formula. The result is calculated at query time, never stored.</text>
 
   <line x1="600" y1="170" x2="600" y2="490" stroke="#D7D8D8" stroke-width="1"/>

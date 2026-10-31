@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 856" width="1200" height="856" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-mirage" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#141421"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="856" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Power Query</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data shaping</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="356" lengthAdjust="spacing">Zero-based indexing</text>
+  <rect x="424" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Power Query counts from 0: the first row, list item or character sits at position 0, not 1.</text>
+
+  <!-- ==================== Query: Source ==================== -->
+  <text x="60" y="192" font-size="13" font-weight="700" fill="#70706F">Query: Source (4 rows)</text>
+  <rect x="60" y="206" width="328" height="36" fill="#141421"/>
+  <text x="224" y="229" font-size="13" font-weight="700" fill="#F39454" text-anchor="end">Index (from 0)</text>
+  <text x="252" y="229" font-size="13" font-weight="700" fill="#F6F6F6">Name</text>
+  <rect x="60" y="242" width="328" height="160" fill="#FFFFFF"/>
+  <rect x="60" y="242" width="48" height="160" fill="#D7D8D8" fill-opacity="0.5"/>
+  <rect x="108" y="242" width="130" height="160" fill="#F39454" fill-opacity="0.15"/>
+  <text x="84" y="268" font-size="14" fill="#70706F" text-anchor="middle">1</text>
+  <text x="224" y="268" font-size="16" font-weight="700" fill="#141421" text-anchor="end">0</text>
+  <text x="252" y="268" font-size="15" fill="#141421">ABC</text>
+  <line x1="60" y1="282" x2="388" y2="282" stroke="#D7D8D8"/>
+  <text x="84" y="308" font-size="14" fill="#70706F" text-anchor="middle">2</text>
+  <text x="224" y="308" font-size="16" font-weight="700" fill="#141421" text-anchor="end">1</text>
+  <text x="252" y="308" font-size="15" fill="#141421">DEF</text>
+  <line x1="60" y1="322" x2="388" y2="322" stroke="#D7D8D8"/>
+  <text x="84" y="348" font-size="14" fill="#70706F" text-anchor="middle">3</text>
+  <text x="224" y="348" font-size="16" font-weight="700" fill="#141421" text-anchor="end">2</text>
+  <text x="252" y="348" font-size="15" fill="#141421">GHI</text>
+  <line x1="60" y1="362" x2="388" y2="362" stroke="#D7D8D8"/>
+  <text x="84" y="388" font-size="14" fill="#70706F" text-anchor="middle">4</text>
+  <text x="224" y="388" font-size="16" font-weight="700" fill="#141421" text-anchor="end">3</text>
+  <text x="252" y="388" font-size="15" fill="#141421">JKL</text>
+  <rect x="60" y="408" width="328" height="34" fill="none" stroke="#70706F" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="224.0" y="431" font-size="13" fill="#70706F" text-anchor="middle">position 4: no row</text>
+  <text x="60" y="472" font-size="13" fill="#70706F" xml:space="preserve"><tspan font-weight="700" fill="#141421">1  2  3  4</tspan> row numbers shown in the preview</text>
+  <text x="60" y="492" font-size="13" fill="#70706F" xml:space="preserve"><tspan font-weight="700" fill="#F39454">0  1  2  3</tspan> positions used by M</text>
+
+  <!-- ==================== M expressions ==================== -->
+  <text x="480" y="192" font-size="13" font-weight="700" fill="#70706F">M expression</text>
+  <text x="1140" y="192" font-size="13" font-weight="700" fill="#70706F" text-anchor="end">Result</text>
+  <rect x="480" y="246" width="660" height="32" fill="#141421"/>
+  <text x="494" y="267" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#F6F6F6" xml:space="preserve">Source{<tspan fill="#F39454" font-weight="700">0</tspan>}[Name]</text>
+  <text x="1126" y="267" font-size="14" fill="#F6F6F6" text-anchor="end"><tspan fill="#D7D8D8" font-size="12">first row  </tspan><tspan font-weight="700">ABC</tspan></text>
+  <line x1="474" y1="262.0" x2="396" y2="262.0" stroke="#F39454" stroke-width="1.5" marker-end="url(#head-mango)"/>
+  <rect x="480" y="286" width="660" height="32" fill="#141421"/>
+  <text x="494" y="307" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#F6F6F6" xml:space="preserve">Source{<tspan fill="#F39454" font-weight="700">1</tspan>}[Name]</text>
+  <text x="1126" y="307" font-size="14" fill="#F6F6F6" text-anchor="end"><tspan fill="#D7D8D8" font-size="12">second row  </tspan><tspan font-weight="700">DEF</tspan></text>
+  <line x1="474" y1="302.0" x2="396" y2="302.0" stroke="#F39454" stroke-width="1.5" marker-end="url(#head-mango)"/>
+  <rect x="480" y="326" width="660" height="32" fill="#141421"/>
+  <text x="494" y="347" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#F6F6F6" xml:space="preserve">Source{<tspan fill="#F39454" font-weight="700">2</tspan>}[Name]</text>
+  <text x="1126" y="347" font-size="14" fill="#F6F6F6" text-anchor="end"><tspan fill="#D7D8D8" font-size="12">third row  </tspan><tspan font-weight="700">GHI</tspan></text>
+  <line x1="474" y1="342.0" x2="396" y2="342.0" stroke="#F39454" stroke-width="1.5" marker-end="url(#head-mango)"/>
+  <rect x="480" y="366" width="660" height="32" fill="#141421"/>
+  <text x="494" y="387" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#F6F6F6" xml:space="preserve">Source{<tspan fill="#F39454" font-weight="700">Table.RowCount(Source) - 1</tspan>}[Name]</text>
+  <text x="1126" y="387" font-size="14" fill="#F6F6F6" text-anchor="end"><tspan fill="#D7D8D8" font-size="12">last row: 4 − 1 = 3  </tspan><tspan font-weight="700">JKL</tspan></text>
+  <line x1="474" y1="382.0" x2="396" y2="382.0" stroke="#F39454" stroke-width="1.5" marker-end="url(#head-mango)"/>
+  <rect x="480" y="406" width="660" height="32" fill="#FFFFFF" stroke="#141421" stroke-width="1.5"/>
+  <text x="494" y="427" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#141421" xml:space="preserve">Source{<tspan fill="#F39454" font-weight="700">4</tspan>}[Name]</text>
+  <text x="1126" y="427" font-size="14" fill="#141421" text-anchor="end"><tspan fill="#70706F" font-size="12">not enough elements  </tspan><tspan font-weight="700">Expression.Error</tspan></text>
+  <line x1="474" y1="422.0" x2="396" y2="422.0" stroke="#141421" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#head-mirage)"/>
+
+  <!-- ==================== Translate: Power Query <-> preview ==================== -->
+  <rect x="60" y="520" width="530" height="112" fill="#FFFFFF"/>
+  <rect x="60" y="520" width="4" height="112" fill="#F39454"/>
+  <text x="80" y="548" font-size="16" font-weight="700" fill="#141421">Power Query → you</text>
+  <rect x="80" y="564" width="200" height="52" fill="#F6F6F6" stroke="#D7D8D8"/>
+  <text x="94" y="585" font-size="12" fill="#70706F">Power Query says</text>
+  <text x="94" y="605" font-size="15" font-weight="700" fill="#141421">error in row 3</text>
+  <line x1="286" y1="590" x2="360" y2="590" stroke="#F39454" stroke-width="2.5" marker-end="url(#head-mango)"/>
+  <circle cx="322" cy="590" r="17" fill="#F39454"/><text x="322" y="596" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">+1</text>
+  <rect x="368" y="564" width="202" height="52" fill="#141421"/>
+  <text x="382" y="585" font-size="12" fill="#D7D8D8">look at preview row</text>
+  <text x="382" y="605" font-size="15" font-weight="700" fill="#F6F6F6">4 (JKL)</text>
+  <rect x="610" y="520" width="530" height="112" fill="#FFFFFF"/>
+  <rect x="610" y="520" width="4" height="112" fill="#F39454"/>
+  <text x="630" y="548" font-size="16" font-weight="700" fill="#141421">You → Power Query</text>
+  <rect x="630" y="564" width="200" height="52" fill="#F6F6F6" stroke="#D7D8D8"/>
+  <text x="644" y="585" font-size="12" fill="#70706F">you want preview</text>
+  <text x="644" y="605" font-size="15" font-weight="700" fill="#141421">row 4 (JKL)</text>
+  <line x1="836" y1="590" x2="910" y2="590" stroke="#F39454" stroke-width="2.5" marker-end="url(#head-mango)"/>
+  <circle cx="872" cy="590" r="17" fill="#F39454"/><text x="872" y="596" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">−1</text>
+  <rect x="918" y="564" width="202" height="52" fill="#141421"/>
+  <text x="932" y="585" font-size="12" fill="#D7D8D8">write in M</text>
+  <text x="932" y="605" font-size="15" font-weight="700" fill="#F6F6F6" font-family="Consolas, 'Courier New', monospace">Source{<tspan fill="#F39454">3</tspan>}</text>
+
+  <!-- ==================== Impact ==================== -->
+  <rect x="60" y="652" width="346" height="118" fill="#FFFFFF"/>
+  <rect x="60" y="652" width="4" height="118" fill="#F39454"/>
+  <circle cx="88" cy="678" r="12" fill="#F39454"/><text x="88" y="683" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="108" y="684" font-size="16" font-weight="700" fill="#141421">Off by one</text>
+  <text x="80" y="712" font-size="13" fill="#141421" xml:space="preserve">4 rows, but the last position is 3.</text>
+  <text x="80" y="731" font-size="13" fill="#141421" xml:space="preserve">Last row: <tspan font-family="Consolas, 'Courier New', monospace">{Table.RowCount(t) - 1}</tspan></text>
+  <text x="80" y="750" font-size="13" fill="#141421" xml:space="preserve">Position 4 raises an error.</text>
+  <rect x="427" y="652" width="346" height="118" fill="#FFFFFF"/>
+  <rect x="427" y="652" width="4" height="118" fill="#F39454"/>
+  <circle cx="455" cy="678" r="12" fill="#F39454"/><text x="455" y="683" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="475" y="684" font-size="16" font-weight="700" fill="#141421">Text positions</text>
+  <text x="447" y="712" font-size="13" fill="#141421" xml:space="preserve"><tspan font-family="Consolas, 'Courier New', monospace">Text.Middle("ABCDEF", 2, 2)</tspan> = CD</text>
+  <text x="447" y="731" font-size="13" fill="#141421" xml:space="preserve">DAX &amp; Excel are 1-based:</text>
+  <text x="447" y="750" font-size="13" fill="#141421" xml:space="preserve"><tspan font-family="Consolas, 'Courier New', monospace">MID("ABCDEF", 3, 2)</tspan> = CD</text>
+  <rect x="794" y="652" width="346" height="118" fill="#FFFFFF"/>
+  <rect x="794" y="652" width="4" height="118" fill="#F39454"/>
+  <circle cx="822" cy="678" r="12" fill="#F39454"/><text x="822" y="683" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="842" y="684" font-size="16" font-weight="700" fill="#141421">Index column</text>
+  <text x="814" y="712" font-size="13" fill="#141421" xml:space="preserve">Add Column › Index Column</text>
+  <text x="814" y="731" font-size="13" fill="#141421" xml:space="preserve">offers From 0 or From 1. Use From 1</text>
+  <text x="814" y="750" font-size="13" fill="#141421" xml:space="preserve">when users see the number.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="796" x2="1140" y2="796" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="832" font-size="20" fill="#141421">Preview row = position <tspan font-weight="700">+ 1</tspan>, position = preview row <tspan font-weight="700">− 1</tspan>.</text>
+  <text x="1140" y="831" font-size="14" fill="#70706F" text-anchor="end">M: 0-based · DAX &amp; Excel: 1-based</text>
+</svg>

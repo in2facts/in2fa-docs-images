@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="780" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Dashboard</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data visualization</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="312" lengthAdjust="spacing">Dashboard widgets</text>
+  <rect x="380" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Four Excel techniques build the dashboard: one slicer drives every chart, value and picture.</text>
+
+  <!-- ==================== Legend ==================== -->
+  <rect x="60.0" y="166.0" width="50" height="20" rx="10" fill="#C9DCE7"/><text x="85.0" y="180.0" font-size="11" font-weight="700" fill="#141421" text-anchor="middle">Slicer</text>
+  <text x="118" y="180" font-size="12" fill="#70706F">filters every widget</text>
+  <rect x="330.0" y="166.0" width="70" height="20" rx="10" fill="#F39454"/><text x="365.0" y="180.0" font-size="11" font-weight="700" fill="#141421" text-anchor="middle">PivotChart</text>
+  <text x="408" y="180" font-size="12" fill="#70706F">chart on Power Pivot</text>
+  <rect x="600.0" y="166.0" width="84" height="20" rx="10" fill="#141421"/><text x="642.0" y="180.0" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle">CUBE Formula</text>
+  <text x="692" y="180" font-size="12" fill="#70706F">one value in a cell</text>
+  <rect x="870.0" y="166.0" width="80" height="20" rx="10" fill="#D7D8D8"/><text x="910.0" y="180.0" font-size="11" font-weight="700" fill="#141421" text-anchor="middle">Camera Tool</text>
+  <text x="958" y="180" font-size="12" fill="#70706F">live picture of a range</text>
+
+  <!-- ==================== Slicer bar ==================== -->
+  <rect x="60.0" y="204.0" width="1079.4" height="35.6" fill="#141421"/>
+  <text x="74.0" y="228.0" font-size="15" font-weight="700" fill="#F6F6F6">VanArsdel</text>
+  <rect x="228.8" y="210.0" width="78" height="23.6" fill="#C9DCE7"/><text x="236.8" y="227.0" font-size="12" font-weight="400" fill="#141421">2014</text>
+  <rect x="312.8" y="210.0" width="78" height="23.6" fill="#C9DCE7"/><text x="320.8" y="227.0" font-size="12" font-weight="400" fill="#141421">2015</text>
+  <rect x="396.8" y="210.0" width="78" height="23.6" fill="#F39454"/><text x="404.8" y="227.0" font-size="12" font-weight="700" fill="#141421">2016</text>
+  <rect x="480.8" y="210.0" width="78" height="23.6" fill="#C9DCE7"/><text x="488.8" y="227.0" font-size="12" font-weight="400" fill="#141421">2017</text>
+  <rect x="564.8" y="210.0" width="78" height="23.6" fill="#C9DCE7"/><text x="572.8" y="227.0" font-size="12" font-weight="400" fill="#141421">2018</text>
+  <rect x="648.8" y="210.0" width="78" height="23.6" fill="#C9DCE7"/><text x="656.8" y="227.0" font-size="12" font-weight="400" fill="#141421">2019</text>
+  <rect x="732.8" y="210.0" width="78" height="23.6" fill="#C9DCE7"/><text x="740.8" y="227.0" font-size="12" font-weight="400" fill="#141421">2020</text>
+  <rect x="816.8" y="210.0" width="78" height="23.6" fill="#C9DCE7"/><text x="824.8" y="227.0" font-size="12" font-weight="400" fill="#141421">2021</text>
+  <rect x="949.2" y="212.0" width="50" height="20" rx="10" fill="#C9DCE7"/><text x="974.2" y="226.0" font-size="11" font-weight="700" fill="#141421" text-anchor="middle">Slicer</text>
+  <text x="1007.2" y="226.0" font-size="12" fill="#F6F6F6">year filter</text>
+
+  <!-- ==================== Widgets ==================== -->
+  <rect x="68.2" y="254.6" width="135.4" height="210.7" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="80.2" y="266.6" width="70" height="20" rx="10" fill="#F39454"/><text x="115.2" y="280.6" font-size="11" font-weight="700" fill="#141421" text-anchor="middle">PivotChart</text>
+  <rect x="80.2" y="292.6" width="84" height="20" rx="10" fill="#141421"/><text x="122.2" y="306.6" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle">CUBE Formula</text>
+  <rect x="80.2" y="318.6" width="80" height="20" rx="10" fill="#D7D8D8"/><text x="120.2" y="332.6" font-size="11" font-weight="700" fill="#141421" text-anchor="middle">Camera Tool</text>
+  <text x="80.2" y="366.6" font-size="15" font-weight="700" fill="#141421">Market</text>
+  <text x="80.2" y="384.6" font-size="15" font-weight="700" fill="#141421">Share %</text>
+  <text x="80.2" y="404.6" font-size="12" fill="#70706F">doughnut + value</text>
+  <circle cx="135.9" cy="435.3" r="18" fill="none" stroke="#D7D8D8" stroke-width="7"/><path d="M135.9 417.3 A18 18 0 0 1 146.4 449.9" fill="none" stroke="#F39454" stroke-width="7"/><text x="163.9" y="440.3" font-size="14" font-weight="300" fill="#70706F">40.1%</text>
+
+  <rect x="222.8" y="254.6" width="331.1" height="210.7" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="234.8" y="266.6" width="70" height="20" rx="10" fill="#F39454"/><text x="269.8" y="280.6" font-size="11" font-weight="700" fill="#141421" text-anchor="middle">PivotChart</text>
+  <text x="234.8" y="314.6" font-size="15" font-weight="700" fill="#141421">Revenue by</text>
+  <text x="234.8" y="332.6" font-size="15" font-weight="700" fill="#141421">manufacturer</text>
+  <text x="234.8" y="352.6" font-size="12" fill="#70706F">clustered bar</text>
+  <rect x="362.8" y="272.6" width="171.0" height="14" fill="#F39454"/><rect x="362.8" y="294.6" width="91.0" height="14" fill="#D7D8D8"/><rect x="362.8" y="316.6" width="52.0" height="14" fill="#D7D8D8"/><rect x="362.8" y="338.6" width="36.0" height="14" fill="#D7D8D8"/><rect x="362.8" y="360.6" width="30.0" height="14" fill="#D7D8D8"/><rect x="362.8" y="382.6" width="10.0" height="14" fill="#D7D8D8"/><rect x="362.8" y="404.6" width="6.0" height="14" fill="#D7D8D8"/><rect x="362.8" y="426.6" width="4.0" height="14" fill="#D7D8D8"/>
+
+  <rect x="600.4" y="254.6" width="330.4" height="210.7" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="612.4" y="266.6" width="84" height="20" rx="10" fill="#141421"/><text x="654.4" y="280.6" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle">CUBE Formula</text>
+  <rect x="702.4" y="266.6" width="80" height="20" rx="10" fill="#D7D8D8"/><text x="742.4" y="280.6" font-size="11" font-weight="700" fill="#141421" text-anchor="middle">Camera Tool</text>
+  <text x="612.4" y="314.6" font-size="15" font-weight="700" fill="#141421">Revenue by</text>
+  <text x="612.4" y="332.6" font-size="15" font-weight="700" fill="#141421">country</text>
+  <text x="612.4" y="352.6" font-size="12" fill="#70706F">cube formulas,</text>
+  <text x="612.4" y="368.6" font-size="12" fill="#70706F">pictured by the</text>
+  <text x="612.4" y="384.6" font-size="12" fill="#70706F">camera tool</text>
+  <rect x="770.4" y="300.6" width="34" height="22" fill="#D7D8D8"/><text x="770.4" y="340.6" font-size="11" fill="#70706F">USA</text><text x="770.4" y="358.6" font-size="14" font-weight="300" fill="#141421">185.8M</text><rect x="860.4" y="300.6" width="34" height="22" fill="#D7D8D8"/><text x="860.4" y="340.6" font-size="11" fill="#70706F">Canada</text><text x="860.4" y="358.6" font-size="14" font-weight="300" fill="#141421">2.2M</text><rect x="770.4" y="378.6" width="34" height="22" fill="#D7D8D8"/><text x="770.4" y="418.6" font-size="11" fill="#70706F">Australia</text><text x="770.4" y="436.6" font-size="14" font-weight="300" fill="#141421">86.8M</text><rect x="860.4" y="378.6" width="34" height="22" fill="#D7D8D8"/><text x="860.4" y="418.6" font-size="11" fill="#70706F">Japan</text><text x="860.4" y="436.6" font-size="14" font-weight="300" fill="#141421">26.0M</text>
+
+  <rect x="950.6" y="254.6" width="188.8" height="437.1" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="962.6" y="266.6" width="80" height="20" rx="10" fill="#D7D8D8"/><text x="1002.6" y="280.6" font-size="11" font-weight="700" fill="#141421" text-anchor="middle">Camera Tool</text>
+  <text x="962.6" y="314.6" font-size="15" font-weight="700" fill="#141421">Analysis</text>
+  <text x="962.6" y="334.6" font-size="12" fill="#70706F">commentary text</text>
+  <rect x="962.6" y="384.6" width="164.8" height="6" fill="#D7D8D8"/><rect x="962.6" y="400.6" width="164.8" height="6" fill="#D7D8D8"/><rect x="962.6" y="416.6" width="164.8" height="6" fill="#D7D8D8"/><rect x="962.6" y="432.6" width="164.8" height="6" fill="#D7D8D8"/><rect x="962.6" y="448.6" width="98.9" height="6" fill="#D7D8D8"/><rect x="962.6" y="464.6" width="164.8" height="6" fill="#D7D8D8"/><rect x="962.6" y="480.6" width="164.8" height="6" fill="#D7D8D8"/><rect x="962.6" y="496.6" width="164.8" height="6" fill="#D7D8D8"/><rect x="962.6" y="512.6" width="164.8" height="6" fill="#D7D8D8"/><rect x="962.6" y="528.6" width="98.9" height="6" fill="#D7D8D8"/>
+
+  <rect x="68.2" y="480.3" width="135.4" height="211.4" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="80.2" y="492.3" width="84" height="20" rx="10" fill="#141421"/><text x="122.2" y="506.3" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle">CUBE Formula</text>
+  <rect x="80.2" y="518.3" width="80" height="20" rx="10" fill="#D7D8D8"/><text x="120.2" y="532.3" font-size="11" font-weight="700" fill="#141421" text-anchor="middle">Camera Tool</text>
+  <text x="80.2" y="566.3" font-size="15" font-weight="700" fill="#141421">Annual</text>
+  <text x="80.2" y="584.3" font-size="15" font-weight="700" fill="#141421">growth %</text>
+  <text x="80.2" y="604.3" font-size="12" fill="#70706F">single value</text>
+  <text x="135.9" y="661.7" font-size="34" font-weight="300" fill="#70706F" text-anchor="middle">21.0%</text>
+
+  <rect x="222.8" y="480.3" width="707.9" height="211.4" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="234.8" y="492.3" width="70" height="20" rx="10" fill="#F39454"/><text x="269.8" y="506.3" font-size="11" font-weight="700" fill="#141421" text-anchor="middle">PivotChart</text>
+  <text x="234.8" y="540.3" font-size="15" font-weight="700" fill="#141421">Revenue evolution</text>
+  <text x="234.8" y="558.3" font-size="15" font-weight="700" fill="#141421">by year</text>
+  <text x="234.8" y="578.3" font-size="12" fill="#70706F">clustered column,</text>
+  <text x="234.8" y="594.3" font-size="12" fill="#70706F">current versus</text>
+  <text x="234.8" y="610.3" font-size="12" fill="#70706F">previous year</text>
+  <rect x="540.8" y="610.3" width="16" height="59.4" fill="#F39454"/><text x="539.8" y="683.7" font-size="10" fill="#70706F" text-anchor="middle">2014</text><rect x="572.8" y="610.3" width="16" height="59.4" fill="#D7D8D8"/><rect x="590.8" y="594.9" width="16" height="74.8" fill="#F39454"/><text x="589.8" y="683.7" font-size="10" fill="#70706F" text-anchor="middle">2015</text><rect x="622.8" y="594.9" width="16" height="74.8" fill="#D7D8D8"/><rect x="640.8" y="579.5" width="16" height="90.2" fill="#F39454"/><text x="639.8" y="683.7" font-size="10" fill="#70706F" text-anchor="middle">2016</text><rect x="672.8" y="579.5" width="16" height="90.2" fill="#D7D8D8"/><rect x="690.8" y="568.5" width="16" height="101.2" fill="#F39454"/><text x="689.8" y="683.7" font-size="10" fill="#70706F" text-anchor="middle">2017</text><rect x="722.8" y="568.5" width="16" height="101.2" fill="#D7D8D8"/><rect x="740.8" y="560.8" width="16" height="108.9" fill="#F39454"/><text x="739.8" y="683.7" font-size="10" fill="#70706F" text-anchor="middle">2018</text><rect x="772.8" y="560.8" width="16" height="108.9" fill="#D7D8D8"/><rect x="790.8" y="553.1" width="16" height="116.6" fill="#F39454"/><text x="789.8" y="683.7" font-size="10" fill="#70706F" text-anchor="middle">2019</text><rect x="822.8" y="553.1" width="16" height="116.6" fill="#D7D8D8"/><rect x="840.8" y="546.5" width="16" height="123.2" fill="#F39454"/><text x="839.8" y="683.7" font-size="10" fill="#70706F" text-anchor="middle">2020</text><rect x="872.8" y="546.5" width="16" height="123.2" fill="#D7D8D8"/><rect x="890.8" y="535.5" width="16" height="134.2" fill="#F39454"/><text x="889.8" y="683.7" font-size="10" fill="#70706F" text-anchor="middle">2021</text><line x1="512.8" y1="669.7" x2="916.7" y2="669.7" stroke="#A9AAAA"/>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="704" x2="1140" y2="704" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="742" font-size="20" fill="#141421">Every widget can be <tspan font-weight="700">moved</tspan> and <tspan font-weight="700">re-arranged</tspan>, like visuals in Power BI.</text>
+  <text x="1140" y="741" font-size="14" fill="#70706F" text-anchor="end">Insert ❭ PivotChart · Slicer · Camera</text>
+</svg>

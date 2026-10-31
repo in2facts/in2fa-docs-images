@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#141421"/>
+    </marker>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="720" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Relationships</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="318" lengthAdjust="spacing">The semantic model</text>
+  <rect x="386" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Four dimensions filter the Sales fact table, Manufacturer only does so through Product.</text>
+
+  <!-- ==================== Star schema ==================== -->
+  <polygon points="410,172 498.3,412.3 740,622 410.0,520.0 80,622 321.7,412.3" fill="#C9DCE7" fill-opacity="0.35" stroke="#C9DCE7" stroke-width="3" stroke-linejoin="round"/>
+  <text x="410" y="614" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">STAR SCHEMA</text>
+
+  <!-- ==================== Snowflake branch ==================== -->
+  <rect x="46" y="200" width="468" height="124" fill="none" stroke="#F39454" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="46" y="192" font-size="11" font-weight="700" fill="#F39454">SNOWFLAKE BRANCH</text>
+
+  <!-- ==================== Relationships ==================== -->
+  <path d="M244 265.0 H280 V295.0 H316" fill="none" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="252" y="259.0" font-size="16" font-weight="700" fill="#F39454" text-anchor="start">1</text>
+  <text x="304" y="289.0" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#F39454" text-anchor="middle">*</text>
+  <path d="M410.0 314 V370" fill="none" stroke="#141421" stroke-width="2" marker-end="url(#head)"/>
+  <text x="420.0" y="330" font-size="16" font-weight="700" fill="#141421" text-anchor="start">1</text>
+  <text x="424.0" y="372" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="middle">*</text>
+  <path d="M150.0 530 V425.0 H316" fill="none" stroke="#141421" stroke-width="2" marker-end="url(#head)"/>
+  <text x="160.0" y="522" font-size="16" font-weight="700" fill="#141421" text-anchor="start">1</text>
+  <text x="304" y="425.0" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="middle">*</text>
+  <path d="M670.0 530 V485.0 H504" fill="none" stroke="#141421" stroke-width="2" marker-end="url(#head)"/>
+  <text x="680.0" y="522" font-size="16" font-weight="700" fill="#141421" text-anchor="start">1</text>
+  <text x="516" y="485.0" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="middle">*</text>
+
+  <!-- ==================== Tables ==================== -->
+  <rect x="60" y="214" width="180" height="66" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="214" width="180" height="36" fill="#141421"/>
+  <text x="74" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Manufacturer</text>
+  <text x="226" y="238" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="end">DIM</text>
+  <text x="74" y="270" font-size="10" font-weight="700" fill="#F39454">PK</text>
+  <text x="100" y="270" font-size="14" fill="#141421">ManufacturerID</text>
+
+  <rect x="320" y="214" width="180" height="96" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="320" y="214" width="180" height="36" fill="#141421"/>
+  <text x="334" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Product</text>
+  <text x="486" y="238" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="end">DIM</text>
+  <text x="334" y="270" font-size="10" font-weight="700" fill="#F39454">PK</text>
+  <text x="360" y="270" font-size="14" fill="#141421">ProductID</text>
+  <line x1="320" y1="280" x2="500" y2="280" stroke="#D7D8D8"/>
+  <text x="334" y="300" font-size="10" font-weight="700" fill="#70706F">FK</text>
+  <text x="360" y="300" font-size="14" fill="#141421">ManufacturerID</text>
+
+  <rect x="320" y="374" width="180" height="126" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <rect x="320" y="374" width="180" height="36" fill="#141421"/>
+  <text x="334" y="398" font-size="15" font-weight="700" fill="#F6F6F6">Sales</text>
+  <text x="486" y="398" font-size="11" font-weight="700" fill="#F39454" text-anchor="end">FACT</text>
+  <text x="334" y="430" font-size="10" font-weight="700" fill="#70706F">FK</text>
+  <text x="360" y="430" font-size="14" fill="#141421">Date</text>
+  <line x1="320" y1="440" x2="500" y2="440" stroke="#D7D8D8"/>
+  <text x="334" y="460" font-size="10" font-weight="700" fill="#70706F">FK</text>
+  <text x="360" y="460" font-size="14" fill="#141421">ProductID</text>
+  <line x1="320" y1="470" x2="500" y2="470" stroke="#D7D8D8"/>
+  <text x="334" y="490" font-size="10" font-weight="700" fill="#70706F">FK</text>
+  <text x="360" y="490" font-size="14" fill="#141421">ZIP - Country</text>
+
+  <rect x="60" y="534" width="180" height="66" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="534" width="180" height="36" fill="#141421"/>
+  <text x="74" y="558" font-size="15" font-weight="700" fill="#F6F6F6">Calendar</text>
+  <text x="226" y="558" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="end">DIM</text>
+  <text x="74" y="590" font-size="10" font-weight="700" fill="#F39454">PK</text>
+  <text x="100" y="590" font-size="14" fill="#141421">Date</text>
+
+  <rect x="580" y="534" width="180" height="66" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="580" y="534" width="180" height="36" fill="#141421"/>
+  <text x="594" y="558" font-size="15" font-weight="700" fill="#F6F6F6">Geography</text>
+  <text x="746" y="558" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="end">DIM</text>
+  <text x="594" y="590" font-size="10" font-weight="700" fill="#F39454">PK</text>
+  <text x="620" y="590" font-size="14" fill="#141421">ZIP - Country</text>
+
+  <!-- ==================== Rules ==================== -->
+  <rect x="820" y="200" width="320" height="116" fill="#FFFFFF"/>
+  <rect x="820" y="200" width="4" height="116" fill="#141421"/>
+  <text x="846" y="230" font-size="18" font-weight="700" fill="#141421">Star <tspan font-size="13" font-weight="400" fill="#70706F">· preferred</tspan></text>
+  <text x="846" y="256" font-size="13" fill="#70706F">Every dimension relates directly</text>
+  <text x="846" y="276" font-size="13" fill="#70706F">to the fact table: simple measures</text>
+  <text x="846" y="296" font-size="13" fill="#70706F">and simple reports.</text>
+
+  <rect x="820" y="336" width="320" height="116" fill="#FFFFFF"/>
+  <rect x="820" y="336" width="4" height="116" fill="#F39454"/>
+  <text x="846" y="366" font-size="18" font-weight="700" fill="#141421">Snowflake <tspan font-size="13" font-weight="400" fill="#70706F">· Manufacturer</tspan></text>
+  <text x="846" y="392" font-size="13" fill="#70706F">Manufacturer reaches Sales only</text>
+  <text x="846" y="412" font-size="13" fill="#70706F">through Product: one extra hop</text>
+  <text x="846" y="432" font-size="13" fill="#70706F">between dimension and fact.</text>
+
+  <rect x="820" y="472" width="320" height="116" fill="#FFFFFF"/>
+  <rect x="820" y="472" width="4" height="116" fill="#A9AAAA"/>
+  <text x="846" y="502" font-size="18" font-weight="700" fill="#141421">1 → * <tspan font-size="13" font-weight="400" fill="#70706F">· filter direction</tspan></text>
+  <text x="846" y="528" font-size="13" fill="#70706F">Filters flow from the one-side</text>
+  <text x="846" y="548" font-size="13" fill="#70706F">(dimension, primary key) to the</text>
+  <text x="846" y="568" font-size="13" fill="#70706F">many-side (fact, foreign key).</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="640" x2="1140" y2="640" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="678" font-size="20" fill="#141421">Without Manufacturer a <tspan font-weight="700">star</tspan>, with Manufacturer a <tspan font-weight="700" fill="#F39454">snowflake</tspan>.</text>
+  <text x="1140" y="677" font-size="14" fill="#70706F" text-anchor="end">Power Pivot ❭ Manage ❭ Diagram View</text>
+</svg>

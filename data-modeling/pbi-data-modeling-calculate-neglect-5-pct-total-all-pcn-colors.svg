@@ -8,8 +8,8 @@
   <rect width="1200" height="680" fill="#F6F6F6"/>
   <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Calculate – NEGLECT</text>
   <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling · 5/5</text>
-  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421">Neglect: % of Total (all colors)</text>
-  <rect x="564" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="522" lengthAdjust="spacing">Neglect: % of Total (all colors)</text>
+  <rect x="590" y="106" width="22" height="6" fill="#F39454"/>
   <text x="60" y="140" font-size="16" fill="#70706F">Divide the revenue by the total of all product categories and all colors.</text>
   <rect x="60" y="170" width="580" height="300" fill="#FFFFFF" stroke="#D7D8D8"/>
   <rect x="60" y="170" width="580" height="44" fill="#C9DCE7"/>

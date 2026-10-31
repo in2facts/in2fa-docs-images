@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#141421"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="720" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Power BI skill sets</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="262" lengthAdjust="spacing">Three skill sets</text>
+  <rect x="330" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">From external data to report pages: shape the data, model it, then visualize it.</text>
+
+  <!-- flow band behind the panels -->
+  <path d="M60 330 H1090 V300 L1150 380 L1090 460 V430 H60 Z" fill="#C9DCE7" fill-opacity="0.55"/>
+
+
+  <!-- External data -->
+  <rect x="60" y="190" width="200" height="380" fill="none" stroke="#70706F" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="60" y="190" width="200" height="38" fill="#D7D8D8"/>
+  <text x="76" y="215" font-size="16" font-weight="700" fill="#141421">External data</text>
+
+  <!-- Data shaping -->
+  <rect x="290" y="190" width="270" height="380" fill="none" stroke="#D7D8D8" stroke-width="1.5"/>
+  <rect x="290" y="190" width="270" height="38" fill="#141421"/>
+  <text x="336" y="215" font-size="16" font-weight="700" fill="#F6F6F6">Data shaping</text>
+  <circle cx="313" cy="209.0" r="13" fill="#F39454"/><text x="313" y="214.0" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+
+  <!-- Data modeling -->
+  <rect x="590" y="190" width="270" height="380" fill="none" stroke="#D7D8D8" stroke-width="1.5"/>
+  <rect x="590" y="190" width="270" height="38" fill="#141421"/>
+  <text x="636" y="215" font-size="16" font-weight="700" fill="#F6F6F6">Data modeling</text>
+  <circle cx="613" cy="209.0" r="13" fill="#F39454"/><text x="613" y="214.0" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+
+  <!-- Data visualization -->
+  <rect x="890" y="190" width="250" height="380" fill="none" stroke="#D7D8D8" stroke-width="1.5"/>
+  <rect x="890" y="190" width="250" height="38" fill="#141421"/>
+  <text x="936" y="215" font-size="16" font-weight="700" fill="#F6F6F6">Data visualization</text>
+  <circle cx="913" cy="209.0" r="13" fill="#F39454"/><text x="913" y="214.0" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <path d="M90 250 h24 l12 12 v34 h-36 z" fill="#FFFFFF" stroke="#141421" stroke-width="2" stroke-linejoin="round"/><path d="M114 250 v12 h12" fill="none" stroke="#141421" stroke-width="2" stroke-linejoin="round"/><rect x="84" y="274" width="36" height="14" fill="#F39454"/><text x="102" y="285" font-size="10" font-weight="700" fill="#141421" text-anchor="middle">XLSX</text>
+  <text x="142" y="280" font-size="14" fill="#141421">Excel</text>
+  <path d="M90 320 h24 l12 12 v34 h-36 z" fill="#FFFFFF" stroke="#141421" stroke-width="2" stroke-linejoin="round"/><path d="M114 320 v12 h12" fill="none" stroke="#141421" stroke-width="2" stroke-linejoin="round"/><rect x="84" y="344" width="36" height="14" fill="#F39454"/><text x="102" y="355" font-size="10" font-weight="700" fill="#141421" text-anchor="middle">CSV</text>
+  <text x="142" y="350" font-size="14" fill="#141421">CSV</text>
+  <path d="M90 390 h24 l12 12 v34 h-36 z" fill="#FFFFFF" stroke="#141421" stroke-width="2" stroke-linejoin="round"/><path d="M114 390 v12 h12" fill="none" stroke="#141421" stroke-width="2" stroke-linejoin="round"/><rect x="84" y="414" width="36" height="14" fill="#F39454"/><text x="102" y="425" font-size="10" font-weight="700" fill="#141421" text-anchor="middle">TXT</text>
+  <text x="142" y="420" font-size="14" fill="#141421">Text</text>
+  <path d="M90 469 v32 a18 7 0 0 0 36 0 v-32" fill="#FFFFFF" stroke="#141421" stroke-width="2"/><ellipse cx="108" cy="469" rx="18" ry="7" fill="#C9DCE7" stroke="#141421" stroke-width="2"/><rect x="84" y="484" width="36" height="14" fill="#F39454"/><text x="102" y="495" font-size="10" font-weight="700" fill="#141421" text-anchor="middle">SQL</text>
+  <text x="142" y="492" font-size="14" fill="#141421">SQL database</text>
+  <rect x="391" y="246" width="60" height="50" fill="#FFFFFF" stroke="#141421" stroke-width="2"/><rect x="391" y="246" width="60" height="11" fill="#70706F"/><line x1="391" y1="270" x2="451" y2="270" stroke="#141421" stroke-width="1.5"/><line x1="391" y1="283" x2="451" y2="283" stroke="#141421" stroke-width="1.5"/><line x1="411" y1="257" x2="411" y2="296" stroke="#141421" stroke-width="1.5"/><line x1="431" y1="257" x2="431" y2="296" stroke="#141421" stroke-width="1.5"/>
+  <path d="M435 304 l26 -26 l8 8 l-26 26 l-11 3 z" fill="#F39454" stroke="#141421" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="425" y="328" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">Power Query</text>
+  <text x="312" y="392" font-size="20" fill="#141421" text-anchor="start" letter-spacing="1"><tspan font-weight="700" fill="#F39454" text-decoration="underline">E</tspan>xtract</text>
+  <text x="400" y="458" font-size="20" fill="#141421" text-anchor="start" letter-spacing="1"><tspan font-weight="700" fill="#F39454" text-decoration="underline">T</tspan>ransform</text>
+  <path d="M184 276 C250 276 260 386 304 386" fill="none" stroke="#70706F" stroke-width="1.5" marker-end="url(#head)"/>
+  <path d="M178 346 C250 346 260 386 304 386" fill="none" stroke="#70706F" stroke-width="1.5" marker-end="url(#head)"/>
+  <path d="M178 416 C250 416 260 386 304 386" fill="none" stroke="#70706F" stroke-width="1.5" marker-end="url(#head)"/>
+  <path d="M234 488 C250 488 260 386 304 386" fill="none" stroke="#70706F" stroke-width="1.5" marker-end="url(#head)"/>
+  <path d="M392 400 C410 420 400 436 420 438" fill="none" stroke="#141421" stroke-width="1.5" marker-end="url(#head)"/>
+  <rect x="375.5" y="494" width="99.0" height="26" rx="13" fill="#141421"/><text x="425" y="512" font-size="13" font-weight="700" fill="#F6F6F6" text-anchor="middle">M language</text>
+  <text x="425" y="546" font-size="13" fill="#70706F" text-anchor="middle">connect · clean · reshape</text>
+  <rect x="665" y="244" width="40" height="28" fill="#FFFFFF" stroke="#141421" stroke-width="2"/><rect x="665" y="244" width="40" height="8" fill="#C9DCE7"/>
+  <rect x="745" y="256" width="40" height="28" fill="#FFFFFF" stroke="#141421" stroke-width="2"/><rect x="745" y="256" width="40" height="8" fill="#C9DCE7"/>
+  <rect x="685" y="290" width="40" height="28" fill="#FFFFFF" stroke="#141421" stroke-width="2"/><rect x="685" y="290" width="40" height="8" fill="#C9DCE7"/>
+  <path d="M685 272 L705 290 M705 258 L745 270 M725 304 L755 284" stroke="#F39454" stroke-width="2.5"/>
+  <text x="725" y="340" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">Semantic model</text>
+  <text x="695" y="392" font-size="20" fill="#141421" text-anchor="start" letter-spacing="1"><tspan font-weight="700" fill="#F39454" text-decoration="underline">L</tspan>oad</text>
+  <path d="M512 452 C580 450 640 420 689 388" fill="none" stroke="#141421" stroke-width="1.5" marker-end="url(#head)"/>
+  <g transform="translate(671 420) scale(1.3)"><rect width="28" height="36" rx="4" fill="#141421"/><rect x="4" y="4" width="20" height="8" rx="1.5" fill="#F39454"/><rect x="4.0" y="16.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="11.3" y="16.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="18.6" y="16.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="4.0" y="22.5" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="11.3" y="22.5" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="18.6" y="22.5" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="4.0" y="29.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="11.3" y="29.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/><rect x="18.6" y="29.0" width="5" height="4.5" rx="1" fill="#F6F6F6"/></g>
+  <text x="729" y="462" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-style="italic" fill="#141421">f<tspan font-size="28">x</tspan></text>
+  <rect x="705.25" y="494" width="39.5" height="26" rx="13" fill="#141421"/><text x="725" y="512" font-size="13" font-weight="700" fill="#F6F6F6" text-anchor="middle">DAX</text>
+  <text x="725" y="546" font-size="13" fill="#70706F" text-anchor="middle">relationships · measures</text>
+  <rect x="975" y="270" width="18" height="30" fill="#FFFFFF" stroke="#141421" stroke-width="2"/>
+  <rect x="999" y="242" width="18" height="58" fill="#F39454" stroke="#141421" stroke-width="2"/>
+  <rect x="1023" y="258" width="18" height="42" fill="#FFFFFF" stroke="#141421" stroke-width="2"/>
+  <path d="M1049 304 l26 -26 l8 8 l-26 26 l-11 3 z" fill="#F39454" stroke="#141421" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="1015" y="328" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">Report pages</text>
+  <path d="M755 386 C820 386 900 386 950 386" fill="none" stroke="#141421" stroke-width="1.5" marker-end="url(#head)"/>
+  <text x="958" y="392" font-size="20" fill="#141421" letter-spacing="1">Visualize</text>
+  <rect x="978.25" y="494" width="73.5" height="26" rx="13" fill="#141421"/><text x="1015" y="512" font-size="13" font-weight="700" fill="#F6F6F6" text-anchor="middle">Visuals</text>
+  <text x="1015" y="546" font-size="13" fill="#70706F" text-anchor="middle">layout · storytelling</text>
+
+  <!-- ==================== Time spent ==================== -->
+  <rect x="290" y="588" width="570" height="30" fill="#141421"/>
+  <text x="575" y="608" font-size="15" fill="#F6F6F6" text-anchor="middle"><tspan font-weight="700">85%</tspan> of the time</text>
+  <rect x="890" y="588" width="250" height="30" fill="#F39454"/>
+  <text x="1015" y="608" font-size="15" fill="#141421" text-anchor="middle"><tspan font-weight="700">15%</tspan> of the time</text>
+  <text x="275" y="608" font-size="13" fill="#70706F" text-anchor="end">Time spent</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="644" x2="1140" y2="644" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="680" font-size="20" fill="#141421">Most of the work happens <tspan font-weight="700">before the first visual.</tspan></text>
+  <text x="1140" y="679" font-size="14" fill="#70706F" text-anchor="end">ETL: Extract, Transform, Load</text>
+</svg>

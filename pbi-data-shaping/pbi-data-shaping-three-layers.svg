@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 710" width="1200" height="710" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="710" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Wrap-up</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data shaping</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="200" lengthAdjust="spacing">Three layers</text>
+  <rect x="268" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">From the external data sources to business-ready tables: only the curated layer is loaded into the model.</text>
+
+  <!-- ==================== Layers ==================== -->
+  <circle cx="72" cy="194" r="12" fill="#F39454"/><text x="72" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="92" y="200" font-size="16" font-weight="700" fill="#141421">RAW <tspan font-size="13" font-weight="400" fill="#70706F">· connections</tspan></text>
+  <rect x="60" y="214" width="320" height="138" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="214" width="320" height="36" fill="#141421"/>
+  <text x="74" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Connections [3]</text>
+  <text x="366" y="238" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="end">NOT LOADED</text>
+  <line x1="78" y1="259" x2="78" y2="263" stroke="#70706F" stroke-width="1.5"/><line x1="84" y1="259" x2="84" y2="263" stroke="#70706F" stroke-width="1.5"/><path d="M75 263 h12 v4 a6 6 0 0 1 -12 0 z" fill="none" stroke="#70706F" stroke-width="1.5"/><line x1="81" y1="273" x2="81" y2="276" stroke="#70706F" stroke-width="1.5"/><text x="98" y="272" font-size="14"><tspan fill="#70706F" font-style="italic">cnn<tspan fill="#A9AAAA"> | </tspan>csv<tspan fill="#A9AAAA"> | </tspan>sales-us</tspan></text>
+  <line x1="60" y1="284" x2="380" y2="284" stroke="#D7D8D8"/>
+  <line x1="78" y1="293" x2="78" y2="297" stroke="#70706F" stroke-width="1.5"/><line x1="84" y1="293" x2="84" y2="297" stroke="#70706F" stroke-width="1.5"/><path d="M75 297 h12 v4 a6 6 0 0 1 -12 0 z" fill="none" stroke="#70706F" stroke-width="1.5"/><line x1="81" y1="307" x2="81" y2="310" stroke="#70706F" stroke-width="1.5"/><text x="98" y="306" font-size="14"><tspan fill="#70706F" font-style="italic">cnn<tspan fill="#A9AAAA"> | </tspan>folder<tspan fill="#A9AAAA"> | </tspan>sales-is</tspan></text>
+  <line x1="60" y1="318" x2="380" y2="318" stroke="#D7D8D8"/>
+  <line x1="78" y1="327" x2="78" y2="331" stroke="#70706F" stroke-width="1.5"/><line x1="84" y1="327" x2="84" y2="331" stroke="#70706F" stroke-width="1.5"/><path d="M75 331 h12 v4 a6 6 0 0 1 -12 0 z" fill="none" stroke="#70706F" stroke-width="1.5"/><line x1="81" y1="341" x2="81" y2="344" stroke="#70706F" stroke-width="1.5"/><text x="98" y="340" font-size="14"><tspan fill="#70706F" font-style="italic">cnn<tspan fill="#A9AAAA"> | </tspan>xlsx<tspan fill="#A9AAAA"> | </tspan>dimensions</tspan></text>
+  <rect x="60" y="370" width="320" height="70" fill="none" stroke="#A9AAAA" stroke-width="1" stroke-dasharray="5 4"/>
+  <rect x="60" y="370" width="320" height="36" fill="#D7D8D8"/>
+  <text x="74" y="394" font-size="15" font-weight="700" fill="#70706F">Helper queries</text>
+  <text x="366" y="394" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="end">NOT LOADED</text>
+  <rect x="74" y="417" width="14" height="12" fill="none" stroke="#70706F" stroke-width="1.5"/><line x1="74" y1="421" x2="88" y2="421" stroke="#70706F" stroke-width="1.5"/><line x1="79" y1="421" x2="79" y2="429" stroke="#70706F" stroke-width="1"/><text x="98" y="428" font-size="14"><tspan fill="#70706F" font-style="italic">Functions [1] · Parameters [1] · Samples [1]</tspan></text>
+  <circle cx="452" cy="194" r="12" fill="#F39454"/><text x="452" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="472" y="200" font-size="16" font-weight="700" fill="#141421">STANDARDIZED <tspan font-size="13" font-weight="400" fill="#70706F">· stagings</tspan></text>
+  <rect x="440" y="214" width="320" height="240" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="440" y="214" width="320" height="36" fill="#141421"/>
+  <text x="454" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Stagings [6]</text>
+  <text x="746" y="238" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="end">NOT LOADED</text>
+  <circle cx="456" cy="261" r="1.8" fill="#70706F"/><line x1="460" y1="261" x2="469" y2="261" stroke="#70706F" stroke-width="1.5"/><circle cx="456" cy="266" r="1.8" fill="#70706F"/><line x1="460" y1="266" x2="469" y2="266" stroke="#70706F" stroke-width="1.5"/><circle cx="456" cy="271" r="1.8" fill="#70706F"/><line x1="460" y1="271" x2="465" y2="271" stroke="#70706F" stroke-width="1.5"/><text x="478" y="272" font-size="14"><tspan fill="#70706F" font-style="italic">stg<tspan fill="#A9AAAA"> | </tspan>dimensions<tspan fill="#A9AAAA"> | </tspan>geography</tspan></text>
+  <line x1="440" y1="284" x2="760" y2="284" stroke="#D7D8D8"/>
+  <circle cx="456" cy="295" r="1.8" fill="#70706F"/><line x1="460" y1="295" x2="469" y2="295" stroke="#70706F" stroke-width="1.5"/><circle cx="456" cy="300" r="1.8" fill="#70706F"/><line x1="460" y1="300" x2="469" y2="300" stroke="#70706F" stroke-width="1.5"/><circle cx="456" cy="305" r="1.8" fill="#70706F"/><line x1="460" y1="305" x2="465" y2="305" stroke="#70706F" stroke-width="1.5"/><text x="478" y="306" font-size="14"><tspan fill="#70706F" font-style="italic">stg<tspan fill="#A9AAAA"> | </tspan>dimensions<tspan fill="#A9AAAA"> | </tspan>manufacturer</tspan></text>
+  <line x1="440" y1="318" x2="760" y2="318" stroke="#D7D8D8"/>
+  <circle cx="456" cy="329" r="1.8" fill="#70706F"/><line x1="460" y1="329" x2="469" y2="329" stroke="#70706F" stroke-width="1.5"/><circle cx="456" cy="334" r="1.8" fill="#70706F"/><line x1="460" y1="334" x2="469" y2="334" stroke="#70706F" stroke-width="1.5"/><circle cx="456" cy="339" r="1.8" fill="#70706F"/><line x1="460" y1="339" x2="465" y2="339" stroke="#70706F" stroke-width="1.5"/><text x="478" y="340" font-size="14"><tspan fill="#70706F" font-style="italic">stg<tspan fill="#A9AAAA"> | </tspan>dimensions<tspan fill="#A9AAAA"> | </tspan>product</tspan></text>
+  <line x1="440" y1="352" x2="760" y2="352" stroke="#D7D8D8"/>
+  <circle cx="456" cy="363" r="1.8" fill="#70706F"/><line x1="460" y1="363" x2="469" y2="363" stroke="#70706F" stroke-width="1.5"/><circle cx="456" cy="368" r="1.8" fill="#70706F"/><line x1="460" y1="368" x2="469" y2="368" stroke="#70706F" stroke-width="1.5"/><circle cx="456" cy="373" r="1.8" fill="#70706F"/><line x1="460" y1="373" x2="465" y2="373" stroke="#70706F" stroke-width="1.5"/><text x="478" y="374" font-size="14"><tspan fill="#70706F" font-style="italic">stg<tspan fill="#A9AAAA"> | </tspan>facts<tspan fill="#A9AAAA"> | </tspan>sales-is</tspan></text>
+  <line x1="440" y1="386" x2="760" y2="386" stroke="#D7D8D8"/>
+  <circle cx="456" cy="397" r="1.8" fill="#70706F"/><line x1="460" y1="397" x2="469" y2="397" stroke="#70706F" stroke-width="1.5"/><circle cx="456" cy="402" r="1.8" fill="#70706F"/><line x1="460" y1="402" x2="469" y2="402" stroke="#70706F" stroke-width="1.5"/><circle cx="456" cy="407" r="1.8" fill="#70706F"/><line x1="460" y1="407" x2="465" y2="407" stroke="#70706F" stroke-width="1.5"/><text x="478" y="408" font-size="14"><tspan fill="#70706F" font-style="italic">stg<tspan fill="#A9AAAA"> | </tspan>facts<tspan fill="#A9AAAA"> | </tspan>sales-is-sample</tspan></text>
+  <line x1="440" y1="420" x2="760" y2="420" stroke="#D7D8D8"/>
+  <circle cx="456" cy="431" r="1.8" fill="#70706F"/><line x1="460" y1="431" x2="469" y2="431" stroke="#70706F" stroke-width="1.5"/><circle cx="456" cy="436" r="1.8" fill="#70706F"/><line x1="460" y1="436" x2="469" y2="436" stroke="#70706F" stroke-width="1.5"/><circle cx="456" cy="441" r="1.8" fill="#70706F"/><line x1="460" y1="441" x2="465" y2="441" stroke="#70706F" stroke-width="1.5"/><text x="478" y="442" font-size="14"><tspan fill="#70706F" font-style="italic">stg<tspan fill="#A9AAAA"> | </tspan>facts<tspan fill="#A9AAAA"> | </tspan>sales-us</tspan></text>
+  <circle cx="832" cy="194" r="12" fill="#F39454"/><text x="832" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="852" y="200" font-size="16" font-weight="700" fill="#141421">CURATED <tspan font-size="13" font-weight="400" fill="#70706F">· business tables</tspan></text>
+  <rect x="820" y="214" width="320" height="138" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="820" y="214" width="320" height="36" fill="#141421"/>
+  <text x="834" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Dimensions [3]</text>
+  <text x="1126" y="238" font-size="11" font-weight="700" fill="#F39454" text-anchor="end">LOADED</text>
+  <line x1="841" y1="258" x2="841" y2="265" stroke="#F39454" stroke-width="1.5"/><path d="M838 262.5 l3 3 l3 -3" fill="none" stroke="#F39454" stroke-width="1.5"/><rect x="834" y="267" width="14" height="7" fill="none" stroke="#F39454" stroke-width="1.5"/><line x1="834" y1="270" x2="848" y2="270" stroke="#F39454" stroke-width="1"/><text x="858" y="272" font-size="14"><tspan fill="#141421">Geography</tspan></text>
+  <line x1="820" y1="284" x2="1140" y2="284" stroke="#D7D8D8"/>
+  <line x1="841" y1="292" x2="841" y2="299" stroke="#F39454" stroke-width="1.5"/><path d="M838 296.5 l3 3 l3 -3" fill="none" stroke="#F39454" stroke-width="1.5"/><rect x="834" y="301" width="14" height="7" fill="none" stroke="#F39454" stroke-width="1.5"/><line x1="834" y1="304" x2="848" y2="304" stroke="#F39454" stroke-width="1"/><text x="858" y="306" font-size="14"><tspan fill="#141421">Manufacturer</tspan></text>
+  <line x1="820" y1="318" x2="1140" y2="318" stroke="#D7D8D8"/>
+  <line x1="841" y1="326" x2="841" y2="333" stroke="#F39454" stroke-width="1.5"/><path d="M838 330.5 l3 3 l3 -3" fill="none" stroke="#F39454" stroke-width="1.5"/><rect x="834" y="335" width="14" height="7" fill="none" stroke="#F39454" stroke-width="1.5"/><line x1="834" y1="338" x2="848" y2="338" stroke="#F39454" stroke-width="1"/><text x="858" y="340" font-size="14"><tspan fill="#141421">Product</tspan></text>
+  <rect x="820" y="370" width="320" height="70" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="820" y="370" width="320" height="36" fill="#141421"/>
+  <text x="834" y="394" font-size="15" font-weight="700" fill="#F6F6F6">Facts [1]</text>
+  <text x="1126" y="394" font-size="11" font-weight="700" fill="#F39454" text-anchor="end">LOADED</text>
+  <line x1="841" y1="414" x2="841" y2="421" stroke="#F39454" stroke-width="1.5"/><path d="M838 418.5 l3 3 l3 -3" fill="none" stroke="#F39454" stroke-width="1.5"/><rect x="834" y="423" width="14" height="7" fill="none" stroke="#F39454" stroke-width="1.5"/><line x1="834" y1="426" x2="848" y2="426" stroke="#F39454" stroke-width="1"/><text x="858" y="428" font-size="14"><tspan fill="#141421">Sales</tspan></text>
+  <!-- ==================== Flow ==================== -->
+  <path d="M384 283 C410.0 283 410.0 283 436 283" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="410.0" y="275" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">cleanse</text>
+  <path d="M764 317 C790.0 317 790.0 283 816 283" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="790.0" y="275" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">shape</text>
+  <path d="M764 419 C790.0 419 790.0 421 816 421" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="790.0" y="411" font-size="11" font-weight="700" fill="#70706F" text-anchor="middle">shape</text>
+  <!-- ==================== Captions ==================== -->
+  <text x="60" y="496" font-size="13" fill="#141421"><tspan font-weight="700">3 connections</tspan> to the external data sources.</text>
+  <text x="440" y="496" font-size="13" fill="#141421"><tspan font-weight="700">6 staging queries</tspan> with the scripts to cleanse the data.</text>
+  <text x="820" y="496" font-size="13" fill="#141421"><tspan font-weight="700">3 dimensions and 1 fact table</tspan> ready for the business.</text>
+
+  <!-- ==================== Rules ==================== -->
+  <rect x="60" y="530" width="530" height="76" fill="#FFFFFF"/>
+  <rect x="60" y="530" width="4" height="76" fill="#141421"/>
+  <text x="90" y="560" font-size="18" font-weight="700" fill="#141421">Not loaded <tspan font-size="13" font-weight="400" fill="#70706F">· RAW and STANDARDIZED</tspan></text>
+  <text x="90" y="586" font-size="13" fill="#70706F">Load is disabled: these queries are shown in <tspan font-style="italic">italics</tspan>.</text>
+  <rect x="610" y="530" width="530" height="76" fill="#FFFFFF"/>
+  <rect x="610" y="530" width="4" height="76" fill="#F39454"/>
+  <text x="640" y="560" font-size="18" font-weight="700" fill="#141421">Loaded <tspan font-size="13" font-weight="400" fill="#70706F">· CURATED</tspan></text>
+  <text x="640" y="586" font-size="13" fill="#70706F">Only the business dimensions and facts reach the data model.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="636" x2="1140" y2="636" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="672" font-size="20" fill="#141421">Only the <tspan font-weight="700">curated layer</tspan> is loaded into the model.</text>
+  <text x="1140" y="671" font-size="14" fill="#70706F" text-anchor="end">Home ❭ Close &amp; Apply</text>
+</svg>
