@@ -105,7 +105,7 @@
 
   <rect x="820" y="472" width="320" height="116" fill="#FFFFFF"/>
   <rect x="820" y="472" width="4" height="116" fill="#A9AAAA"/>
-  <text x="846" y="502" font-size="18" font-weight="700" fill="#141421">1 → * <tspan font-size="13" font-weight="400" fill="#70706F">· filter direction</tspan></text>
+  <text x="846" y="502" font-size="18" font-weight="700" fill="#141421">1 → <tspan font-family="Consolas, 'Courier New', monospace">*</tspan> <tspan font-size="13" font-weight="400" fill="#70706F">· filter direction</tspan></text>
   <text x="846" y="528" font-size="13" fill="#70706F">Filters flow from the one-side</text>
   <text x="846" y="548" font-size="13" fill="#70706F">(dimension, primary key) to the</text>
   <text x="846" y="568" font-size="13" fill="#70706F">many-side (fact, foreign key).</text>

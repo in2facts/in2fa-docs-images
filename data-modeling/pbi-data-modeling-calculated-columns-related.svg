@@ -44,7 +44,7 @@
   <!-- relationship 1 -> * -->
   <line x1="402" y1="248" x2="538" y2="248" stroke="#70706F" stroke-width="1.5"/>
   <text x="410" y="240" font-size="14" font-weight="700" fill="#141421">1</text>
-  <text x="526" y="242" font-size="16" font-weight="700" fill="#141421">*</text>
+  <text x="526" y="242" font-size="16" font-weight="700" fill="#141421"><tspan font-family="Consolas, 'Courier New', monospace">*</tspan></text>
 
   <!-- RELATED lookup: many -> one -->
   <path d="M538 317 C470 317, 470 351, 404 351" fill="none" stroke="#F39454" stroke-width="2.5" marker-end="url(#arrow-head)"/>

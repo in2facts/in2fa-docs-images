@@ -72,7 +72,7 @@
   <!-- relationship Categories 1 -> * Products -->
   <line x1="622" y1="228" x2="686" y2="228" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
   <text x="628" y="220" font-size="14" font-weight="700" fill="#141421">1</text>
-  <text x="678" y="222" font-size="16" font-weight="700" fill="#141421">*</text>
+  <text x="678" y="222" font-size="16" font-weight="700" fill="#141421"><tspan font-family="Consolas, 'Courier New', monospace">*</tspan></text>
 
   <!-- ==================== Model: Products ==================== -->
   <rect x="690" y="210" width="190" height="36" fill="#141421"/>
@@ -98,7 +98,7 @@
   <!-- relationship Products 1 -> * Sales -->
   <line x1="882" y1="228" x2="946" y2="228" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
   <text x="888" y="220" font-size="14" font-weight="700" fill="#141421">1</text>
-  <text x="938" y="222" font-size="16" font-weight="700" fill="#141421">*</text>
+  <text x="938" y="222" font-size="16" font-weight="700" fill="#141421"><tspan font-family="Consolas, 'Courier New', monospace">*</tspan></text>
 
   <!-- ==================== Model: Sales ==================== -->
   <rect x="950" y="210" width="190" height="36" fill="#141421"/>

@@ -48,8 +48,8 @@
   <text x="300" y="412" font-size="30" font-weight="700" fill="#F39454" text-anchor="middle">∑</text>
   <text x="300" y="438" font-size="19" font-weight="700" fill="#141421" text-anchor="middle">Fact</text>
   <text x="300" y="456" font-size="11" fill="#70706F" text-anchor="middle">foreign keys</text>
-  <text x="60" y="660" font-size="15" font-weight="700" fill="#141421">Facts <tspan font-weight="400" fill="#70706F">= transactions, many-side (*), foreign keys</tspan></text>
-  <text x="60" y="682" font-size="13" fill="#70706F">Arrows show the filter direction: from dimension (1) to fact (*).</text>
+  <text x="60" y="660" font-size="15" font-weight="700" fill="#141421">Facts <tspan font-weight="400" fill="#70706F">= transactions, many-side (<tspan font-family="Consolas, 'Courier New', monospace">*</tspan>), foreign keys</tspan></text>
+  <text x="60" y="682" font-size="13" fill="#70706F">Arrows show the filter direction: from dimension (1) to fact (<tspan font-family="Consolas, 'Courier New', monospace">*</tspan>).</text>
 
   <!-- ==================== Fact table ==================== -->
   <text x="620" y="190" font-size="15" font-weight="700" fill="#141421">Fact <tspan font-weight="400" fill="#70706F">→ measure table</tspan></text>
@@ -138,5 +138,5 @@
   <!-- ==================== Key message ==================== -->
   <line x1="60" y1="838" x2="1140" y2="838" stroke="#D7D8D8" stroke-width="1"/>
   <text x="60" y="874" font-size="20" fill="#141421">Slice <tspan font-weight="700">per</tspan> dimension, <tspan font-weight="700">∑</tspan> aggregate the facts.</text>
-  <text x="1140" y="873" font-size="14" fill="#70706F" text-anchor="end">Filters flow from 1 to *</text>
+  <text x="1140" y="873" font-size="14" fill="#70706F" text-anchor="end">Filters flow from 1 to <tspan font-family="Consolas, 'Courier New', monospace">*</tspan></text>
 </svg>

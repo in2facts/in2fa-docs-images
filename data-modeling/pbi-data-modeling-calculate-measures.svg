@@ -64,10 +64,10 @@
 
   <path d="M430 254 V309 H496" fill="none" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
   <text x="436" y="270" font-size="13" font-weight="700" fill="#141421">1</text>
-  <text x="484" y="303" font-size="15" font-weight="700" fill="#141421">*</text>
+  <text x="484" y="303" font-size="15" font-weight="700" fill="#141421"><tspan font-family="Consolas, 'Courier New', monospace">*</tspan></text>
   <path d="M530 330 V385 H596" fill="none" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
   <text x="536" y="346" font-size="13" font-weight="700" fill="#141421">1</text>
-  <text x="584" y="379" font-size="15" font-weight="700" fill="#141421">*</text>
+  <text x="584" y="379" font-size="15" font-weight="700" fill="#141421"><tspan font-family="Consolas, 'Courier New', monospace">*</tspan></text>
   <text x="560" y="358" font-size="12" fill="#70706F">only Bikes rows left</text>
 
   <!-- 2 -> 3 -->

@@ -56,10 +56,10 @@
   <!-- relationships -->
   <line x1="192" y1="228" x2="236" y2="228" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
   <text x="196" y="221" font-size="13" font-weight="700" fill="#141421">1</text>
-  <text x="228" y="222" font-size="15" font-weight="700" fill="#141421">*</text>
+  <text x="228" y="222" font-size="15" font-weight="700" fill="#141421"><tspan font-family="Consolas, 'Courier New', monospace">*</tspan></text>
   <line x1="192" y1="348" x2="236" y2="300" stroke="#141421" stroke-width="1.5"/>
   <text x="196" y="366" font-size="13" font-weight="700" fill="#141421">1</text>
-  <text x="226" y="322" font-size="15" font-weight="700" fill="#141421">*</text>
+  <text x="226" y="322" font-size="15" font-weight="700" fill="#141421"><tspan font-family="Consolas, 'Courier New', monospace">*</tspan></text>
 
   <!-- no relationship -->
   <line x1="372" y1="285" x2="418" y2="285" stroke="#70706F" stroke-width="1.5" stroke-dasharray="4 3"/>

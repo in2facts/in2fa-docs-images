@@ -80,7 +80,7 @@
   <!-- relationship Categories 1 -> * Products -->
   <line x1="532" y1="228" x2="596" y2="228" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
   <text x="538" y="220" font-size="14" font-weight="700" fill="#141421">1</text>
-  <text x="588" y="222" font-size="16" font-weight="700" fill="#141421">*</text>
+  <text x="588" y="222" font-size="16" font-weight="700" fill="#141421"><tspan font-family="Consolas, 'Courier New', monospace">*</tspan></text>
 
   <!-- ==================== 3. Products ==================== -->
   <rect x="600" y="210" width="220" height="36" fill="#141421"/>
@@ -106,7 +106,7 @@
   <!-- relationship Products 1 -> * Sales -->
   <line x1="822" y1="228" x2="886" y2="228" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
   <text x="828" y="220" font-size="14" font-weight="700" fill="#141421">1</text>
-  <text x="878" y="222" font-size="16" font-weight="700" fill="#141421">*</text>
+  <text x="878" y="222" font-size="16" font-weight="700" fill="#141421"><tspan font-family="Consolas, 'Courier New', monospace">*</tspan></text>
 
   <!-- ==================== 4. Sales ==================== -->
   <rect x="890" y="210" width="250" height="36" fill="#141421"/>
@@ -140,9 +140,9 @@
   <!-- ==================== Direction ==================== -->
   <g font-size="14" font-weight="700" fill="#141421" text-anchor="middle">
     <rect x="650" y="468" width="28" height="28" fill="#FFFFFF" stroke="#141421" stroke-width="1.5"/><text x="664" y="487">1</text>
-    <rect x="740" y="468" width="28" height="28" fill="#FFFFFF" stroke="#141421" stroke-width="1.5"/><text x="754" y="489" font-size="16">*</text>
+    <rect x="740" y="468" width="28" height="28" fill="#FFFFFF" stroke="#141421" stroke-width="1.5"/><text x="754" y="489" font-size="16"><tspan font-family="Consolas, 'Courier New', monospace">*</tspan></text>
     <rect x="650" y="508" width="28" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1.5"/><text x="664" y="527" fill="#70706F">1</text>
-    <rect x="740" y="508" width="28" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1.5"/><text x="754" y="529" font-size="16" fill="#70706F">*</text>
+    <rect x="740" y="508" width="28" height="28" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1.5"/><text x="754" y="529" font-size="16" fill="#70706F"><tspan font-family="Consolas, 'Courier New', monospace">*</tspan></text>
   </g>
   <line x1="682" y1="482" x2="736" y2="482" stroke="#F39454" stroke-width="2" marker-end="url(#arrow-head)"/>
   <line x1="738" y1="522" x2="684" y2="522" stroke="#70706F" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow-grey)"/>
