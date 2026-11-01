@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="760" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Storage modes</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="204" lengthAdjust="spacing">DirectQuery</text>
+  <rect x="272" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">The model only stores metadata. Every visual query is translated and sent to the source.</text>
+  <rect x="90" y="180" width="220" height="48" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="200.0" y="210.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Visual</text>
+  <line x1="200" y1="232" x2="200" y2="540" stroke="#A9AAAA" stroke-width="2" stroke-dasharray="4 5"/>
+  <rect x="490" y="180" width="220" height="48" fill="#141421" stroke="#141421" stroke-width="1" filter="url(#card)"/>
+  <text x="600.0" y="210.0" font-size="16" font-weight="700" fill="#F6F6F6" text-anchor="middle">Semantic model</text>
+  <line x1="600" y1="232" x2="600" y2="540" stroke="#A9AAAA" stroke-width="2" stroke-dasharray="4 5"/>
+  <rect x="890" y="180" width="220" height="48" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="1000.0" y="210.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">SQL source</text>
+  <line x1="1000" y1="232" x2="1000" y2="540" stroke="#A9AAAA" stroke-width="2" stroke-dasharray="4 5"/>
+  <line x1="200" y1="290" x2="594" y2="290" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <circle cx="342.0" cy="272" r="12" fill="#F39454"/><text x="342.0" y="277" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="364.0" y="278" font-size="15" fill="#141421" font-weight="700" text-anchor="start">DAX query</text>
+  <line x1="600" y1="350" x2="994" y2="350" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <circle cx="742.0" cy="332" r="12" fill="#F39454"/><text x="742.0" y="337" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="764.0" y="338" font-size="15" fill="#141421" font-weight="700" text-anchor="start">SQL query</text>
+  <line x1="1000" y1="430" x2="606" y2="430" stroke="#70706F" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#head-sand)"/>
+  <circle cx="734.0" cy="412" r="12" fill="#F39454"/><text x="734.0" y="417" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="756.0" y="418" font-size="15" fill="#141421" font-weight="700" text-anchor="start">result rows</text>
+  <line x1="600" y1="490" x2="206" y2="490" stroke="#70706F" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#head-sand)"/>
+  <circle cx="354.0" cy="472" r="12" fill="#F39454"/><text x="354.0" y="477" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">4</text>
+  <text x="376.0" y="478" font-size="15" fill="#141421" font-weight="700" text-anchor="start">result</text>
+  <rect x="60" y="570" width="520" height="70" fill="#FFFFFF"/>
+  <rect x="60" y="570" width="4" height="70" fill="#F39454"/>
+  <circle cx="94" cy="605.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M89 605.0 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="120" y="599.0" font-size="17" font-weight="700" fill="#141421">Always fresh data</text>
+  <text x="120" y="623.0" font-size="13" fill="#70706F">No import refresh needed.</text>
+  <rect x="620" y="570" width="520" height="70" fill="#FFFFFF"/>
+  <rect x="620" y="570" width="4" height="70" fill="#141421"/>
+  <circle cx="654" cy="605.0" r="11" fill="#F6F6F6" stroke="#141421" stroke-width="2"/><path d="M649.5 600.5 l9 9 m0 -9 l-9 9" stroke="#141421" stroke-width="2.5"/>
+  <text x="680" y="599.0" font-size="17" font-weight="700" fill="#141421">Speed depends on the source</text>
+  <text x="680" y="623.0" font-size="13" fill="#70706F">Every click queries the database.</text>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="686" x2="1140" y2="686" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="722" font-size="20" fill="#141421">Every interaction becomes <tspan font-weight="700">a query on the source.</tspan></text>
+  <text x="1140" y="721" font-size="14" fill="#70706F" text-anchor="end">Max 1 million rows per source query</text>
+</svg>

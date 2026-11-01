@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="780" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Schemas</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="330" lengthAdjust="spacing">Snowflake schema</text>
+  <rect x="398" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">A star schema where some dimensions are normalized into sub-dimensions (highlighted).</text>
+  <rect x="60" y="200" width="180" height="56" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <text x="150.0" y="225.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Category</text>
+  <text x="150.0" y="246.0" font-size="13" fill="#70706F" text-anchor="middle">sub-dimension</text>
+  <rect x="300" y="200" width="180" height="56" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <text x="390.0" y="225.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Subcategory</text>
+  <text x="390.0" y="246.0" font-size="13" fill="#70706F" text-anchor="middle">sub-dimension</text>
+  <rect x="540" y="200" width="180" height="56" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="630.0" y="225.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Product</text>
+  <text x="630.0" y="246.0" font-size="13" fill="#70706F" text-anchor="middle">dimension</text>
+  <rect x="60" y="330" width="180" height="56" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <text x="150.0" y="355.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Geography</text>
+  <text x="150.0" y="376.0" font-size="13" fill="#70706F" text-anchor="middle">sub-dimension</text>
+  <rect x="300" y="330" width="180" height="56" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="390.0" y="355.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Customer</text>
+  <text x="390.0" y="376.0" font-size="13" fill="#70706F" text-anchor="middle">dimension</text>
+  <rect x="540" y="460" width="180" height="56" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="630.0" y="485.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Date</text>
+  <text x="630.0" y="506.0" font-size="13" fill="#70706F" text-anchor="middle">dimension</text>
+  <rect x="820" y="320" width="200" height="76" fill="#141421" stroke="#141421" stroke-width="1" filter="url(#card)"/>
+  <text x="920.0" y="355.0" font-size="16" font-weight="700" fill="#F6F6F6" text-anchor="middle">Sales</text>
+  <text x="920.0" y="376.0" font-size="13" fill="#A9AAAA" text-anchor="middle">fact table</text>
+  <line x1="244" y1="228" x2="294" y2="228" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <line x1="484" y1="228" x2="534" y2="228" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <line x1="244" y1="358" x2="294" y2="358" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <line x1="724" y1="236" x2="814" y2="330" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <line x1="484" y1="358" x2="814" y2="358" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <line x1="724" y1="488" x2="814" y2="384" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="60" y="570" font-size="13" fill="#141421" font-weight="700" text-anchor="start">Use a snowflake when</text>
+  <rect x="60" y="586" width="520" height="70" fill="#FFFFFF"/>
+  <rect x="60" y="586" width="4" height="70" fill="#F39454"/>
+  <circle cx="94" cy="621.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M89 621.0 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="120" y="615.0" font-size="17" font-weight="700" fill="#141421">A group of attributes repeats</text>
+  <text x="120" y="639.0" font-size="13" fill="#70706F">Postal code → city, state, country, demographics.</text>
+  <rect x="620" y="586" width="520" height="70" fill="#FFFFFF"/>
+  <rect x="620" y="586" width="4" height="70" fill="#141421"/>
+  <circle cx="654" cy="621.0" r="11" fill="#F6F6F6" stroke="#141421" stroke-width="2"/><path d="M649.5 616.5 l9 9 m0 -9 l-9 9" stroke="#141421" stroke-width="2.5"/>
+  <text x="680" y="615.0" font-size="17" font-weight="700" fill="#141421">Flatten in Power Query otherwise</text>
+  <text x="680" y="639.0" font-size="13" fill="#70706F">Hierarchies only work within one table.</text>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="706" x2="1140" y2="706" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="742" font-size="20" fill="#141421">Flatten snowflakes <tspan font-weight="700">in Power Query when possible.</tspan></text>
+  <text x="1140" y="741" font-size="14" fill="#70706F" text-anchor="end">More tables = more relationships to travel</text>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Model features · Aggregations</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="498" lengthAdjust="spacing">What is an aggregated table?</text>
+  <rect x="566" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">A smaller copy of a fact table, grouped on the keys of the dimensions that reports use most.</text>
+  <rect x="60" y="180" width="480" height="76" fill="#FFFFFF"/>
+  <rect x="60" y="180" width="4" height="76" fill="#F39454"/>
+  <circle cx="94" cy="218.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M89 218.0 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="120" y="212.0" font-size="17" font-weight="700" fill="#141421">A grouped table</text>
+  <text x="120" y="236.0" font-size="13" fill="#70706F">Grouped by specific fields of a fact table.</text>
+  <rect x="60" y="270" width="480" height="76" fill="#FFFFFF"/>
+  <rect x="60" y="270" width="4" height="76" fill="#F39454"/>
+  <circle cx="94" cy="308.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M89 308.0 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="120" y="302.0" font-size="17" font-weight="700" fill="#141421">Built at the source</text>
+  <text x="120" y="326.0" font-size="13" fill="#70706F">With T-SQL in the database, for example a view.</text>
+  <rect x="60" y="360" width="480" height="76" fill="#FFFFFF"/>
+  <rect x="60" y="360" width="4" height="76" fill="#F39454"/>
+  <circle cx="94" cy="398.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M89 398.0 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="120" y="392.0" font-size="17" font-weight="700" fill="#141421">Or in Power Query</text>
+  <text x="120" y="416.0" font-size="13" fill="#70706F">Group By on the fact table, in Power BI.</text>
+  <rect x="60" y="450" width="480" height="76" fill="#FFFFFF"/>
+  <rect x="60" y="450" width="4" height="76" fill="#F39454"/>
+  <circle cx="94" cy="488.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M89 488.0 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="120" y="482.0" font-size="17" font-weight="700" fill="#141421">Or anywhere else</text>
+  <text x="120" y="506.0" font-size="13" fill="#70706F">Any tool that can create grouped tables.</text>
+  <rect x="580" y="170" width="560" height="380" fill="#FFFFFF"/>
+  <text x="600" y="200" font-size="17" fill="#141421" font-weight="700" text-anchor="start">In the model</text>
+  <text x="600" y="220" font-size="13" fill="#70706F" text-anchor="start">Dimensions related to Sales (Agg) are in Dual mode</text>
+  <rect x="600" y="240" width="200" height="46" fill="#FFFFFF" stroke="#F39454" stroke-width="2" stroke-dasharray="6 4" filter="url(#card)"/>
+  <text x="612" y="260" font-size="14" fill="#141421" font-weight="700" text-anchor="start">DimCustomer</text>
+  <text x="612" y="278" font-size="12" fill="#70706F" text-anchor="start">Dual</text>
+  <rect x="600" y="300" width="200" height="46" fill="#FFFFFF" stroke="#F39454" stroke-width="2" stroke-dasharray="6 4" filter="url(#card)"/>
+  <text x="612" y="320" font-size="14" fill="#141421" font-weight="700" text-anchor="start">DimDate</text>
+  <text x="612" y="338" font-size="12" fill="#70706F" text-anchor="start">Dual</text>
+  <rect x="600" y="360" width="200" height="46" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="612" y="380" font-size="14" fill="#141421" font-weight="700" text-anchor="start">DimProductCategory</text>
+  <text x="612" y="398" font-size="12" fill="#70706F" text-anchor="start">DirectQuery</text>
+  <rect x="600" y="420" width="200" height="46" fill="#FFFFFF" stroke="#F39454" stroke-width="2" stroke-dasharray="6 4" filter="url(#card)"/>
+  <text x="612" y="440" font-size="14" fill="#141421" font-weight="700" text-anchor="start">DimProductSubcategory</text>
+  <text x="612" y="458" font-size="12" fill="#70706F" text-anchor="start">Dual</text>
+  <rect x="600" y="480" width="200" height="46" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="612" y="500" font-size="14" fill="#141421" font-weight="700" text-anchor="start">DimProduct</text>
+  <text x="612" y="518" font-size="12" fill="#70706F" text-anchor="start">DirectQuery</text>
+  <line x1="804" y1="263" x2="914" y2="293" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <line x1="804" y1="263" x2="914" y2="443" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <line x1="804" y1="323" x2="914" y2="293" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <line x1="804" y1="323" x2="914" y2="443" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <line x1="804" y1="443" x2="914" y2="443" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <line x1="804" y1="503" x2="914" y2="293" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <line x1="700" y1="406" x2="700" y2="420" stroke="#70706F" stroke-width="2"/>
+  <line x1="700" y1="466" x2="700" y2="480" stroke="#70706F" stroke-width="2"/>
+  <rect x="920" y="270" width="200" height="46" fill="#FFFFFF" stroke="#141421" stroke-width="2" filter="url(#card)"/>
+  <text x="932" y="290" font-size="14" fill="#141421" font-weight="700" text-anchor="start">FactInternetSales</text>
+  <text x="932" y="308" font-size="12" fill="#70706F" text-anchor="start">DirectQuery · detail</text>
+  <rect x="920" y="420" width="200" height="46" fill="#FDE9DC" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <text x="932" y="440" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Sales (Agg)</text>
+  <text x="932" y="458" font-size="12" fill="#70706F" text-anchor="start">Import · aggregated</text>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="606" x2="1140" y2="606" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="642" font-size="20" fill="#141421">Fewer rows, <tspan font-weight="700">same answers for summary queries.</tspan></text>
+  <text x="1140" y="641" font-size="14" fill="#70706F" text-anchor="end">Category → Subcategory → Product is a snowflake</text>
+</svg>

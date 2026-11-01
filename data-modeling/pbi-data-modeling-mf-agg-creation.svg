@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="760" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Model features · Aggregations</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="539" lengthAdjust="spacing">Creation of an aggregated table</text>
+  <rect x="607" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Four steps. The data types must match the detail table exactly, or the aggregation is never used.</text>
+  <circle cx="72" cy="190" r="12" fill="#F39454"/><text x="72" y="195" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <rect x="60" y="214" width="252" height="126" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="214" width="252" height="36" fill="#141421"/>
+  <text x="74" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Group by</text>
+  <text x="74" y="276" font-size="14" fill="#141421">OrderDateKey</text>
+  <text x="74" y="300" font-size="14" fill="#141421">CustomerKey</text>
+  <text x="74" y="324" font-size="14" fill="#141421">ProductSubcategoryKey</text>
+  <line x1="315" y1="232" x2="333" y2="232" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <circle cx="348" cy="190" r="12" fill="#F39454"/><text x="348" y="195" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <rect x="336" y="214" width="252" height="126" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="336" y="214" width="252" height="36" fill="#141421"/>
+  <text x="350" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Aggregate</text>
+  <text x="350" y="276" font-size="14" fill="#141421">Sales Amount → Sum</text>
+  <text x="350" y="300" font-size="14" fill="#141421">Order Quantity → Sum</text>
+  <text x="350" y="324" font-size="14" fill="#141421">Sales → Count rows</text>
+  <line x1="591" y1="232" x2="609" y2="232" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <circle cx="624" cy="190" r="12" fill="#F39454"/><text x="624" y="195" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <rect x="612" y="214" width="252" height="126" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <rect x="612" y="214" width="252" height="36" fill="#141421"/>
+  <text x="626" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Check data types</text>
+  <text x="626" y="276" font-size="14" fill="#141421">Identical to the detail</text>
+  <text x="626" y="300" font-size="14" fill="#141421">columns of the fact table</text>
+  <text x="626" y="324" font-size="14" fill="#141421">Count → Whole Number</text>
+  <line x1="867" y1="232" x2="885" y2="232" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <circle cx="900" cy="190" r="12" fill="#F39454"/><text x="900" y="195" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">4</text>
+  <rect x="888" y="214" width="252" height="126" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="888" y="214" width="252" height="36" fill="#141421"/>
+  <text x="902" y="238" font-size="15" font-weight="700" fill="#F6F6F6">Load in Import mode</text>
+  <text x="902" y="276" font-size="14" fill="#141421">The aggregated table</text>
+  <text x="902" y="300" font-size="14" fill="#141421">is an Import table,</text>
+  <text x="902" y="324" font-size="14" fill="#141421">the detail stays DirectQuery</text>
+  <rect x="60" y="370" width="1080" height="34" fill="#141421"/>
+  <text x="76" y="392" font-size="13" fill="#F6F6F6" font-weight="700" text-anchor="start">Sales (Agg) column</text>
+  <text x="350" y="392" font-size="13" fill="#F6F6F6" font-weight="700" text-anchor="start">Summarization</text>
+  <text x="540" y="392" font-size="13" fill="#F6F6F6" font-weight="700" text-anchor="start">Detail column · FactInternetSales</text>
+  <text x="920" y="392" font-size="13" fill="#F6F6F6" font-weight="700" text-anchor="start">Data type</text>
+  <rect x="60" y="404" width="1080" height="36" fill="#FFFFFF"/>
+  <line x1="60" y1="440" x2="1140" y2="440" stroke="#D7D8D8"/>
+  <text x="76" y="427" font-size="14" fill="#141421" font-weight="700" text-anchor="start">OrderDateKey</text>
+  <text x="350" y="427" font-size="14" fill="#141421" text-anchor="start">Group by</text>
+  <text x="540" y="427" font-size="14" fill="#141421" text-anchor="start">OrderDateKey</text>
+  <text x="920" y="427" font-size="14" fill="#141421" text-anchor="start">Whole Number</text>
+  <rect x="60" y="440" width="1080" height="36" fill="#FFFFFF"/>
+  <line x1="60" y1="476" x2="1140" y2="476" stroke="#D7D8D8"/>
+  <text x="76" y="463" font-size="14" fill="#141421" font-weight="700" text-anchor="start">CustomerKey</text>
+  <text x="350" y="463" font-size="14" fill="#141421" text-anchor="start">Group by</text>
+  <text x="540" y="463" font-size="14" fill="#141421" text-anchor="start">CustomerKey</text>
+  <text x="920" y="463" font-size="14" fill="#141421" text-anchor="start">Whole Number</text>
+  <rect x="60" y="476" width="1080" height="36" fill="#FFFFFF"/>
+  <line x1="60" y1="512" x2="1140" y2="512" stroke="#D7D8D8"/>
+  <text x="76" y="499" font-size="14" fill="#141421" font-weight="700" text-anchor="start">ProductSubcategoryKey</text>
+  <text x="350" y="499" font-size="14" fill="#141421" text-anchor="start">Group by</text>
+  <text x="540" y="499" font-size="14" fill="#141421" text-anchor="start">DimProduct › ProductSubcategoryKey</text>
+  <text x="920" y="499" font-size="14" fill="#141421" text-anchor="start">Whole Number</text>
+  <rect x="60" y="512" width="1080" height="36" fill="#FFFFFF"/>
+  <line x1="60" y1="548" x2="1140" y2="548" stroke="#D7D8D8"/>
+  <text x="76" y="535" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Sales Amount (Sum)</text>
+  <text x="350" y="535" font-size="14" fill="#141421" text-anchor="start">Sum</text>
+  <text x="540" y="535" font-size="14" fill="#141421" text-anchor="start">SalesAmount</text>
+  <text x="920" y="535" font-size="14" fill="#141421" text-anchor="start">Decimal Number</text>
+  <rect x="60" y="548" width="1080" height="36" fill="#FFFFFF"/>
+  <line x1="60" y1="584" x2="1140" y2="584" stroke="#D7D8D8"/>
+  <text x="76" y="571" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Order Quantity (Sum)</text>
+  <text x="350" y="571" font-size="14" fill="#141421" text-anchor="start">Sum</text>
+  <text x="540" y="571" font-size="14" fill="#141421" text-anchor="start">OrderQuantity</text>
+  <text x="920" y="571" font-size="14" fill="#141421" text-anchor="start">Decimal Number</text>
+  <rect x="60" y="584" width="1080" height="36" fill="#FDE9DC"/>
+  <line x1="60" y1="620" x2="1140" y2="620" stroke="#D7D8D8"/>
+  <text x="76" y="607" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Sales (Count)</text>
+  <text x="350" y="607" font-size="14" fill="#141421" text-anchor="start">Count table rows</text>
+  <text x="540" y="607" font-size="14" fill="#141421" text-anchor="start">FactInternetSales</text>
+  <text x="920" y="607" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Whole Number  !</text>
+  <text x="60" y="646" font-size="13" fill="#141421" font-weight="700" text-anchor="start">! A count aggregation only works when the column is a Whole Number.</text>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="686" x2="1140" y2="686" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="722" font-size="20" fill="#141421">Group, aggregate, <tspan font-weight="700">match the data types, import.</tspan></text>
+  <text x="1140" y="721" font-size="14" fill="#70706F" text-anchor="end">Manage aggregations maps each column</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="720" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Model features · Aggregations</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="182" lengthAdjust="spacing">Dual mode</text>
+  <rect x="250" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Set the dimensions to Dual so they can join the Import aggregation in memory and the detail in DirectQuery.</text>
+  <rect x="60" y="170" width="620" height="400" fill="#FFFFFF"/>
+  <text x="80" y="200" font-size="17" fill="#141421" font-weight="700" text-anchor="start">One Dual table, two behaviors</text>
+  <text x="80" y="220" font-size="13" fill="#70706F" text-anchor="start">DimDate adapts to the table it is combined with</text>
+  <rect x="90" y="345" width="210" height="46" fill="#FFFFFF" stroke="#F39454" stroke-width="2" stroke-dasharray="6 4" filter="url(#card)"/>
+  <text x="102" y="365" font-size="14" fill="#141421" font-weight="700" text-anchor="start">DimDate</text>
+  <text x="102" y="383" font-size="12" fill="#70706F" text-anchor="start">Dual</text>
+  <rect x="440" y="250" width="210" height="46" fill="#FDE9DC" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <text x="452" y="270" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Sales (Agg)</text>
+  <text x="452" y="288" font-size="12" fill="#70706F" text-anchor="start">Import</text>
+  <rect x="440" y="440" width="210" height="46" fill="#FFFFFF" stroke="#141421" stroke-width="2" filter="url(#card)"/>
+  <text x="452" y="460" font-size="14" fill="#141421" font-weight="700" text-anchor="start">FactInternetSales</text>
+  <text x="452" y="478" font-size="12" fill="#70706F" text-anchor="start">DirectQuery</text>
+  <path d="M304 360 C370 360 370 273 434 273" fill="none" stroke="#F39454" stroke-width="2.5" marker-end="url(#head-mango)"/>
+  <path d="M304 382 C370 382 370 463 434 463" fill="none" stroke="#141421" stroke-width="2.5" marker-end="url(#head-sand)"/>
+  <text x="90" y="290" font-size="14" fill="#141421" font-weight="700" text-anchor="start">acts like Import</text>
+  <text x="90" y="308" font-size="13" fill="#70706F" text-anchor="start">with Sales (Agg)</text>
+  <text x="90" y="438" font-size="14" fill="#141421" font-weight="700" text-anchor="start">acts like DirectQuery</text>
+  <text x="90" y="456" font-size="13" fill="#70706F" text-anchor="start">with FactInternetSales</text>
+  <text x="80" y="548" font-size="13" fill="#70706F" text-anchor="start">Power BI picks the best mode for every query</text>
+  <rect x="720" y="170" width="420" height="76" fill="#FFFFFF"/>
+  <rect x="720" y="170" width="4" height="76" fill="#F39454"/>
+  <circle cx="754" cy="208.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M749 208.0 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="780" y="202.0" font-size="17" font-weight="700" fill="#141421">A copy is loaded in memory</text>
+  <text x="780" y="226.0" font-size="13" fill="#70706F">Dual tables are also imported.</text>
+  <rect x="720" y="258" width="420" height="76" fill="#FFFFFF"/>
+  <rect x="720" y="258" width="4" height="76" fill="#F39454"/>
+  <circle cx="754" cy="296.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M749 296.0 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="780" y="290.0" font-size="17" font-weight="700" fill="#141421">Queried from memory</text>
+  <text x="780" y="314.0" font-size="13" fill="#70706F">When combined with Import tables.</text>
+  <rect x="720" y="346" width="420" height="76" fill="#FFFFFF"/>
+  <rect x="720" y="346" width="4" height="76" fill="#141421"/>
+  <circle cx="754" cy="384.0" r="11" fill="#F6F6F6" stroke="#141421" stroke-width="2"/><path d="M749.5 379.5 l9 9 m0 -9 l-9 9" stroke="#141421" stroke-width="2.5"/>
+  <text x="780" y="378.0" font-size="17" font-weight="700" fill="#141421">All related tables must be Dual</text>
+  <text x="780" y="402.0" font-size="13" fill="#70706F">Every table related to the aggregation.</text>
+  <rect x="720" y="434" width="420" height="136" fill="#FFFFFF"/>
+  <text x="740" y="462" font-size="13" fill="#141421" font-weight="700" text-anchor="start">Same visual, measured with Performance Analyzer</text>
+  <text x="740" y="520" font-size="44" font-weight="300" fill="#70706F">1,612</text>
+  <text x="740" y="548" font-size="13" fill="#70706F" text-anchor="start">ms · DirectQuery detail</text>
+  <text x="950" y="520" font-size="44" font-weight="700" fill="#F39454">174</text>
+  <text x="950" y="548" font-size="13" fill="#70706F" text-anchor="start">ms · Sales (Agg) in memory</text>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="646" x2="1140" y2="646" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="682" font-size="20" fill="#141421">Dual dimensions let the aggregation <tspan font-weight="700">answer from memory.</tspan></text>
+  <text x="1140" y="681" font-size="14" fill="#70706F" text-anchor="end">Power BI offers to set related tables to Dual</text>
+</svg>

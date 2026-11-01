@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="760" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Schemas</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="189" lengthAdjust="spacing">Granularity</text>
+  <rect x="257" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Sales and Budget have a different grain, so they live in separate fact tables that share dimensions.</text>
+  <rect x="60" y="220" width="220" height="56" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="170.0" y="245.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Product</text>
+  <text x="170.0" y="266.0" font-size="13" fill="#70706F" text-anchor="middle">product grain</text>
+  <rect x="490" y="220" width="220" height="56" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="600.0" y="245.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Date</text>
+  <text x="600.0" y="266.0" font-size="13" fill="#70706F" text-anchor="middle">day grain</text>
+  <rect x="920" y="220" width="220" height="56" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="1030.0" y="245.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Product Category</text>
+  <text x="1030.0" y="266.0" font-size="13" fill="#70706F" text-anchor="middle">category grain</text>
+  <text x="110" y="406" font-size="13" font-weight="700" fill="#141421">Fact · daily by product</text>
+  <rect x="110" y="420" width="300" height="102" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <rect x="110" y="420" width="300" height="36" fill="#141421"/>
+  <text x="124" y="444" font-size="15" font-weight="700" fill="#F6F6F6">Sales</text>
+  <text x="124" y="482" font-size="14" fill="#70706F">one row per day</text>
+  <text x="124" y="506" font-size="14" fill="#70706F">and per product</text>
+  <text x="790" y="406" font-size="13" font-weight="700" fill="#141421">Fact · monthly by category</text>
+  <rect x="790" y="420" width="300" height="102" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="790" y="420" width="300" height="36" fill="#141421"/>
+  <text x="804" y="444" font-size="15" font-weight="700" fill="#F6F6F6">Budget</text>
+  <text x="804" y="482" font-size="14" fill="#70706F">one row per month</text>
+  <text x="804" y="506" font-size="14" fill="#70706F">and per product category</text>
+  <path d="M1030 214 L1030 184 L170 184 L170 208" fill="none" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <rect x="530" y="174" width="140" height="20" fill="#F6F6F6"/>
+  <text x="600" y="189" font-size="13" fill="#70706F" text-anchor="middle">category › product</text>
+  <line x1="170" y1="282" x2="230" y2="380" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <line x1="560" y1="282" x2="360" y2="380" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <line x1="640" y1="282" x2="840" y2="380" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <rect x="709.0" y="305.0" width="142" height="26" fill="#F6F6F6"/>
+  <text x="780" y="324.0" font-size="13" fill="#70706F" text-anchor="middle">first day of month</text>
+  <line x1="1030" y1="282" x2="990" y2="380" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <rect x="60" y="560" width="520" height="76" fill="#FFFFFF"/>
+  <rect x="60" y="560" width="4" height="76" fill="#F39454"/>
+  <circle cx="94" cy="598.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M89 598.0 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="120" y="592.0" font-size="17" font-weight="700" fill="#141421">Split processes with a different grain</text>
+  <text x="120" y="616.0" font-size="13" fill="#70706F">Separate fact tables, shared dimensions.</text>
+  <rect x="620" y="560" width="520" height="76" fill="#FFFFFF"/>
+  <rect x="620" y="560" width="4" height="76" fill="#141421"/>
+  <circle cx="654" cy="598.0" r="11" fill="#F6F6F6" stroke="#141421" stroke-width="2"/><path d="M649.5 593.5 l9 9 m0 -9 l-9 9" stroke="#141421" stroke-width="2.5"/>
+  <text x="680" y="592.0" font-size="17" font-weight="700" fill="#141421">Never show a fact below its grain</text>
+  <text x="680" y="616.0" font-size="13" fill="#70706F">Budget by day or by product is wrong.</text>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="686" x2="1140" y2="686" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="722" font-size="20" fill="#141421">One row represents one <tspan font-weight="700">... ? Always know the grain.</tspan></text>
+  <text x="1140" y="721" font-size="14" fill="#70706F" text-anchor="end">Measures live on fact tables</text>
+</svg>

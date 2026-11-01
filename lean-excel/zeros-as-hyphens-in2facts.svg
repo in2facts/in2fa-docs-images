@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 720" width="1400" height="720" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>The same table with zeros and with zeros replaced by a hyphen: without the zeros the real values stand out</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <rect width="1400" height="720" fill="#F6F6F6"/>
+
+  <!-- Title -->
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#141421">Zeros or hyphens<tspan fill="#F39454">_</tspan></text>
+  <text x="60" y="118" font-size="20" fill="#70706F">Same data, same layer 1: only the zero section of the format code differs</text>
+
+  <g transform="translate(60,160)">
+    <rect x="0" y="0" width="610" height="520" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="52" height="52" fill="#141421"/>
+    <text x="50" y="59" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">With zeros</text>
+    <text x="92" y="78" font-family="Consolas, 'Courier New', monospace" font-size="17" fill="#70706F">#.##0</text>
+    <rect x="24" y="116" width="560" height="36" fill="#F6F6F6"/>
+    <text x="194" y="140" font-size="15" font-weight="700" fill="#70706F" text-anchor="end">Jan</text>
+    <text x="270" y="140" font-size="15" font-weight="700" fill="#70706F" text-anchor="end">Feb</text>
+    <text x="346" y="140" font-size="15" font-weight="700" fill="#70706F" text-anchor="end">Mar</text>
+    <text x="422" y="140" font-size="15" font-weight="700" fill="#70706F" text-anchor="end">Apr</text>
+    <text x="498" y="140" font-size="15" font-weight="700" fill="#70706F" text-anchor="end">May</text>
+    <text x="574" y="140" font-size="15" font-weight="700" fill="#70706F" text-anchor="end">Jun</text>
+    <path d="M24 152 H584" stroke="#D7D8D8" stroke-width="2"/>
+    <text x="32" y="178" font-size="15" fill="#141421">Product A</text>
+    <text x="194" y="178" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="270" y="178" font-size="17" font-weight="700" fill="#141421" text-anchor="end">1.250</text>
+    <text x="346" y="178" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="422" y="178" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="498" y="178" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="574" y="178" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <path d="M24 192 H584" stroke="#D7D8D8" stroke-width="1"/>
+    <text x="32" y="218" font-size="15" fill="#141421">Product B</text>
+    <text x="194" y="218" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="270" y="218" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="346" y="218" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="422" y="218" font-size="17" font-weight="700" fill="#141421" text-anchor="end">870</text>
+    <text x="498" y="218" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="574" y="218" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <path d="M24 232 H584" stroke="#D7D8D8" stroke-width="1"/>
+    <text x="32" y="258" font-size="15" fill="#141421">Product C</text>
+    <text x="194" y="258" font-size="17" font-weight="700" fill="#141421" text-anchor="end">3.400</text>
+    <text x="270" y="258" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="346" y="258" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="422" y="258" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="498" y="258" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="574" y="258" font-size="17" font-weight="700" fill="#141421" text-anchor="end">2.100</text>
+    <path d="M24 272 H584" stroke="#D7D8D8" stroke-width="1"/>
+    <text x="32" y="298" font-size="15" fill="#141421">Product D</text>
+    <text x="194" y="298" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="270" y="298" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="346" y="298" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="422" y="298" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="498" y="298" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="574" y="298" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <path d="M24 312 H584" stroke="#D7D8D8" stroke-width="1"/>
+    <text x="32" y="338" font-size="15" fill="#141421">Product E</text>
+    <text x="194" y="338" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="270" y="338" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="346" y="338" font-size="17" font-weight="700" fill="#141421" text-anchor="end">560</text>
+    <text x="422" y="338" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="498" y="338" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="574" y="338" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <path d="M24 352 H584" stroke="#D7D8D8" stroke-width="1"/>
+    <text x="32" y="378" font-size="15" fill="#141421">Product F</text>
+    <text x="194" y="378" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="270" y="378" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="346" y="378" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="422" y="378" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <text x="498" y="378" font-size="17" font-weight="700" fill="#141421" text-anchor="end">1.980</text>
+    <text x="574" y="378" font-size="17" font-weight="400" fill="#141421" text-anchor="end">0</text>
+    <path d="M24 392 H584" stroke="#D7D8D8" stroke-width="1"/>
+    <text x="24" y="426" font-size="16" fill="#70706F">36 cells, 30 zeros: the eye reads every single one</text>
+    <rect x="24" y="440" width="562" height="56" rx="8" fill="#F6F6F6"/>
+    <rect x="24" y="440" width="8" height="56" fill="#141421"/>
+    <text x="48" y="463" font-size="17" font-weight="700" fill="#141421">Cluttered</text>
+    <text x="48" y="486" font-size="16" fill="#141421">30 zeros blind us to the 6 real values</text>
+  </g>
+
+  <g transform="translate(730,160)">
+    <rect x="0" y="0" width="610" height="520" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="52" height="52" fill="#F39454"/>
+    <text x="50" y="59" font-size="28" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">With hyphens</text>
+    <text x="92" y="78" font-family="Consolas, 'Courier New', monospace" font-size="17" fill="#70706F">#.##0;-#.##0;<tspan fill="#F39454" font-weight="700">-</tspan></text>
+    <rect x="24" y="116" width="560" height="36" fill="#F6F6F6"/>
+    <text x="194" y="140" font-size="15" font-weight="700" fill="#70706F" text-anchor="end">Jan</text>
+    <text x="270" y="140" font-size="15" font-weight="700" fill="#70706F" text-anchor="end">Feb</text>
+    <text x="346" y="140" font-size="15" font-weight="700" fill="#70706F" text-anchor="end">Mar</text>
+    <text x="422" y="140" font-size="15" font-weight="700" fill="#70706F" text-anchor="end">Apr</text>
+    <text x="498" y="140" font-size="15" font-weight="700" fill="#70706F" text-anchor="end">May</text>
+    <text x="574" y="140" font-size="15" font-weight="700" fill="#70706F" text-anchor="end">Jun</text>
+    <path d="M24 152 H584" stroke="#D7D8D8" stroke-width="2"/>
+    <text x="32" y="178" font-size="15" fill="#141421">Product A</text>
+    <text x="194" y="178" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="270" y="178" font-size="17" font-weight="700" fill="#141421" text-anchor="end">1.250</text>
+    <text x="346" y="178" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="422" y="178" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="498" y="178" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="574" y="178" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <path d="M24 192 H584" stroke="#D7D8D8" stroke-width="1"/>
+    <text x="32" y="218" font-size="15" fill="#141421">Product B</text>
+    <text x="194" y="218" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="270" y="218" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="346" y="218" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="422" y="218" font-size="17" font-weight="700" fill="#141421" text-anchor="end">870</text>
+    <text x="498" y="218" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="574" y="218" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <path d="M24 232 H584" stroke="#D7D8D8" stroke-width="1"/>
+    <text x="32" y="258" font-size="15" fill="#141421">Product C</text>
+    <text x="194" y="258" font-size="17" font-weight="700" fill="#141421" text-anchor="end">3.400</text>
+    <text x="270" y="258" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="346" y="258" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="422" y="258" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="498" y="258" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="574" y="258" font-size="17" font-weight="700" fill="#141421" text-anchor="end">2.100</text>
+    <path d="M24 272 H584" stroke="#D7D8D8" stroke-width="1"/>
+    <text x="32" y="298" font-size="15" fill="#141421">Product D</text>
+    <text x="194" y="298" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="270" y="298" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="346" y="298" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="422" y="298" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="498" y="298" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="574" y="298" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <path d="M24 312 H584" stroke="#D7D8D8" stroke-width="1"/>
+    <text x="32" y="338" font-size="15" fill="#141421">Product E</text>
+    <text x="194" y="338" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="270" y="338" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="346" y="338" font-size="17" font-weight="700" fill="#141421" text-anchor="end">560</text>
+    <text x="422" y="338" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="498" y="338" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="574" y="338" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <path d="M24 352 H584" stroke="#D7D8D8" stroke-width="1"/>
+    <text x="32" y="378" font-size="15" fill="#141421">Product F</text>
+    <text x="194" y="378" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="270" y="378" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="346" y="378" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="422" y="378" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <text x="498" y="378" font-size="17" font-weight="700" fill="#141421" text-anchor="end">1.980</text>
+    <text x="574" y="378" font-size="17" font-weight="400" fill="#141421" text-anchor="end">-</text>
+    <path d="M24 392 H584" stroke="#D7D8D8" stroke-width="1"/>
+    <text x="24" y="426" font-size="16" fill="#70706F">Same 36 cells: the 6 real values stand out</text>
+    <rect x="24" y="440" width="562" height="56" rx="8" fill="#F6F6F6"/>
+    <rect x="24" y="440" width="8" height="56" fill="#F39454"/>
+    <text x="48" y="463" font-size="17" font-weight="700" fill="#141421">Readable</text>
+    <text x="48" y="486" font-size="16" fill="#141421">The hyphen still tells the cell is not empty</text>
+  </g>
+</svg>

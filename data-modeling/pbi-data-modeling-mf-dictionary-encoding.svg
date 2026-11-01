@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="760" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Engine internals</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="342" lengthAdjust="spacing">Dictionary encoding</text>
+  <rect x="410" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">VertiPaq replaces every value by an integer ID and stores each unique value once.</text>
+  <rect x="60" y="170" width="320" height="360" fill="#FFFFFF"/>
+  <text x="80" y="200" font-size="17" fill="#141421" font-weight="700" text-anchor="start">Source column</text>
+  <text x="80" y="220" font-size="13" fill="#70706F" text-anchor="start">Text, as loaded from the source</text>
+  <rect x="120" y="240" width="200" height="32" fill="#141421"/>
+  <text x="220.0" y="261" font-size="14" fill="#F6F6F6" font-weight="700" text-anchor="middle">Color</text>
+  <rect x="120" y="272" width="200" height="28" fill="#FDE9DC" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="220.0" y="291.0" font-size="14" fill="#141421" text-anchor="middle">Red</text>
+  <rect x="120" y="300" width="200" height="28" fill="#C9DCE7" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="220.0" y="319.0" font-size="14" fill="#141421" text-anchor="middle">Green</text>
+  <rect x="120" y="328" width="200" height="28" fill="#FDE9DC" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="220.0" y="347.0" font-size="14" fill="#141421" text-anchor="middle">Red</text>
+  <rect x="120" y="356" width="200" height="28" fill="#FDE9DC" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="220.0" y="375.0" font-size="14" fill="#141421" text-anchor="middle">Red</text>
+  <rect x="120" y="384" width="200" height="28" fill="#FDE9DC" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="220.0" y="403.0" font-size="14" fill="#141421" text-anchor="middle">Red</text>
+  <rect x="120" y="412" width="200" height="28" fill="#C9DCE7" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="220.0" y="431.0" font-size="14" fill="#141421" text-anchor="middle">Green</text>
+  <rect x="120" y="440" width="200" height="28" fill="#D7D8D8" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="220.0" y="459.0" font-size="14" fill="#141421" text-anchor="middle">Blue</text>
+  <rect x="440" y="170" width="320" height="360" fill="#FFFFFF"/>
+  <text x="460" y="200" font-size="17" fill="#141421" font-weight="700" text-anchor="start">Dictionary</text>
+  <text x="460" y="220" font-size="13" fill="#70706F" text-anchor="start">Every unique value gets an ID</text>
+  <rect x="500" y="240" width="200" height="32" fill="#141421"/>
+  <text x="550" y="261" font-size="14" fill="#F6F6F6" font-weight="700" text-anchor="middle">ID</text>
+  <text x="650" y="261" font-size="14" fill="#F6F6F6" font-weight="700" text-anchor="middle">Value</text>
+  <rect x="500" y="272" width="200" height="40" fill="#FDE9DC" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="550" y="298" font-size="16" fill="#141421" font-weight="700" text-anchor="middle">1</text>
+  <text x="650" y="298" font-size="15" fill="#141421" text-anchor="middle">Red</text>
+  <rect x="500" y="312" width="200" height="40" fill="#C9DCE7" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="550" y="338" font-size="16" fill="#141421" font-weight="700" text-anchor="middle">2</text>
+  <text x="650" y="338" font-size="15" fill="#141421" text-anchor="middle">Green</text>
+  <rect x="500" y="352" width="200" height="40" fill="#D7D8D8" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="550" y="378" font-size="16" fill="#141421" font-weight="700" text-anchor="middle">3</text>
+  <text x="650" y="378" font-size="15" fill="#141421" text-anchor="middle">Blue</text>
+  <text x="600" y="420" font-size="15" fill="#141421" font-weight="700" text-anchor="middle">3 unique values</text>
+  <text x="600" y="442" font-size="13" fill="#70706F" text-anchor="middle">stored only once</text>
+  <rect x="820" y="170" width="320" height="360" fill="#FFFFFF"/>
+  <text x="840" y="200" font-size="17" fill="#141421" font-weight="700" text-anchor="start">Encoded column</text>
+  <text x="840" y="220" font-size="13" fill="#70706F" text-anchor="start">Small integer IDs instead of text</text>
+  <rect x="880" y="240" width="200" height="32" fill="#141421"/>
+  <text x="980.0" y="261" font-size="14" fill="#F6F6F6" font-weight="700" text-anchor="middle">Color ID</text>
+  <rect x="880" y="272" width="200" height="28" fill="#FDE9DC" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="980.0" y="291.0" font-size="14" fill="#141421" text-anchor="middle">1</text>
+  <rect x="880" y="300" width="200" height="28" fill="#C9DCE7" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="980.0" y="319.0" font-size="14" fill="#141421" text-anchor="middle">2</text>
+  <rect x="880" y="328" width="200" height="28" fill="#FDE9DC" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="980.0" y="347.0" font-size="14" fill="#141421" text-anchor="middle">1</text>
+  <rect x="880" y="356" width="200" height="28" fill="#FDE9DC" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="980.0" y="375.0" font-size="14" fill="#141421" text-anchor="middle">1</text>
+  <rect x="880" y="384" width="200" height="28" fill="#FDE9DC" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="980.0" y="403.0" font-size="14" fill="#141421" text-anchor="middle">1</text>
+  <rect x="880" y="412" width="200" height="28" fill="#C9DCE7" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="980.0" y="431.0" font-size="14" fill="#141421" text-anchor="middle">2</text>
+  <rect x="880" y="440" width="200" height="28" fill="#D7D8D8" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="980.0" y="459.0" font-size="14" fill="#141421" text-anchor="middle">3</text>
+  <line x1="384" y1="360" x2="434" y2="360" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <line x1="764" y1="360" x2="814" y2="360" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="980" y="490" font-size="13" fill="#141421" font-weight="700" text-anchor="middle">3 values → 2 bits per row</text>
+  <rect x="60" y="560" width="520" height="76" fill="#FFFFFF"/>
+  <rect x="60" y="560" width="4" height="76" fill="#F39454"/>
+  <circle cx="94" cy="598.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M89 598.0 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="120" y="592.0" font-size="17" font-weight="700" fill="#141421">Low cardinality: Color</text>
+  <text x="120" y="616.0" font-size="13" fill="#70706F">3 unique values: tiny dictionary, 2-bit IDs.</text>
+  <rect x="620" y="560" width="520" height="76" fill="#FFFFFF"/>
+  <rect x="620" y="560" width="4" height="76" fill="#141421"/>
+  <circle cx="654" cy="598.0" r="11" fill="#F6F6F6" stroke="#141421" stroke-width="2"/><path d="M649.5 593.5 l9 9 m0 -9 l-9 9" stroke="#141421" stroke-width="2.5"/>
+  <text x="680" y="592.0" font-size="17" font-weight="700" fill="#141421">High cardinality: Sale Id</text>
+  <text x="680" y="616.0" font-size="13" fill="#70706F">Every value unique: dictionary as big as the column.</text>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="686" x2="1140" y2="686" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="722" font-size="20" fill="#141421">Fewer unique values, <tspan font-weight="700">smaller column.</tspan></text>
+  <text x="1140" y="721" font-size="14" fill="#70706F" text-anchor="end">Text always uses a dictionary; numbers may use value encoding</text>
+</svg>

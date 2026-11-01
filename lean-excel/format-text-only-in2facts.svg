@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 720" width="1400" height="720" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>The format code ;;;@ hides positive, negative and zero values on layer 2 and descends to layer 1, where every value becomes left-aligned text without a single quote</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="720" fill="#F6F6F6"/>
+
+  <!-- Title -->
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#141421">Everything becomes text<tspan fill="#F39454">_</tspan></text>
+  <text x="60" y="118" font-size="20" fill="#70706F">The format code ;;;@ does not stay on layer 2: it converts positives, negatives and zeroes into text on layer 1</text>
+
+  <!-- ============ Card 1: the format code ============ -->
+  <g transform="translate(60,160)">
+    <rect x="0" y="0" width="400" height="500" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="52" height="52" fill="#141421"/>
+    <text x="50" y="59" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">Format code</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">Four sections, three left empty</text>
+
+    <rect x="24" y="104" width="352" height="76" rx="8" fill="#F6F6F6"/>
+    <text x="200" y="158" font-family="Consolas, 'Courier New', monospace" font-size="48" fill="#141421" text-anchor="middle">;;;<tspan fill="#F39454" font-weight="700">@</tspan></text>
+
+    <g font-size="18">
+      <rect x="24" y="206" width="44" height="36" rx="6" fill="#F6F6F6"/><text x="46" y="231" font-weight="700" fill="#141421" text-anchor="middle">+</text>
+      <text x="82" y="231" fill="#141421">Positive</text><text x="376" y="231" fill="#70706F" text-anchor="end">empty</text>
+      <rect x="24" y="254" width="44" height="36" rx="6" fill="#F6F6F6"/><text x="46" y="279" font-weight="700" fill="#141421" text-anchor="middle">−</text>
+      <text x="82" y="279" fill="#141421">Negative</text><text x="376" y="279" fill="#70706F" text-anchor="end">empty</text>
+      <rect x="24" y="302" width="44" height="36" rx="6" fill="#F6F6F6"/><text x="46" y="327" font-weight="700" fill="#141421" text-anchor="middle">0</text>
+      <text x="82" y="327" fill="#141421">Zero</text><text x="376" y="327" fill="#70706F" text-anchor="end">empty</text>
+      <rect x="24" y="350" width="44" height="36" rx="6" fill="#F39454"/><text x="46" y="375" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#141421" text-anchor="middle">@</text>
+      <text x="82" y="375" fill="#141421">Text</text><text x="376" y="375" font-weight="700" fill="#F39454" text-anchor="end">everything</text>
+    </g>
+
+    <rect x="24" y="420" width="352" height="56" rx="8" fill="#F6F6F6"/>
+    <rect x="24" y="420" width="8" height="56" fill="#141421"/>
+    <text x="48" y="443" font-size="17" font-weight="700" fill="#141421">Never shows values</text>
+    <text x="48" y="466" font-size="16" fill="#141421">+ / − / 0 sections are empty</text>
+  </g>
+
+  <!-- ============ Card 2: descends to layer 1 ============ -->
+  <g transform="translate(490,160)">
+    <rect x="0" y="0" width="380" height="500" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="52" height="52" fill="#F39454"/>
+    <text x="50" y="59" font-size="28" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">Descends</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">From layer 2 to layer 1</text>
+
+    <!-- layer 2 -->
+    <polygon points="40,118 270,118 340,190 110,190" fill="#C9DCE7" stroke="#141421" stroke-width="2" stroke-linejoin="round"/>
+    <text x="190" y="152" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">LAYER 2 · formatting</text>
+    <text x="190" y="176" font-family="Consolas, 'Courier New', monospace" font-size="18" fill="#141421" text-anchor="middle">;;;<tspan fill="#F39454" font-weight="700">@</tspan></text>
+
+    <!-- arrow -->
+    <path d="M190 200 V296" stroke="#F39454" stroke-width="6" marker-end="url(#head-mango)"/>
+    <text x="208" y="246" font-size="15" font-weight="700" fill="#F39454">converts</text>
+    <text x="208" y="266" font-size="14" fill="#70706F">the raw value</text>
+
+    <!-- layer 1 -->
+    <polygon points="40,310 270,310 340,382 110,382" fill="#FFFFFF" stroke="#141421" stroke-width="2" stroke-linejoin="round"/>
+    <text x="190" y="344" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">LAYER 1 · raw data</text>
+    <text x="190" y="368" font-size="16" fill="#141421" text-anchor="middle">number → <tspan font-weight="700" fill="#F39454">text</tspan></text>
+
+    <rect x="24" y="420" width="332" height="56" rx="8" fill="#F6F6F6"/>
+    <rect x="24" y="420" width="8" height="56" fill="#F39454"/>
+    <text x="48" y="443" font-size="17" font-weight="700" fill="#141421">Physical change</text>
+    <text x="48" y="466" font-size="16" fill="#141421">Not an illusion: the value itself changes</text>
+  </g>
+
+  <!-- ============ Card 3: the result on layer 1 ============ -->
+  <g transform="translate(900,160)">
+    <rect x="0" y="0" width="440" height="500" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="52" height="52" fill="#141421"/>
+    <text x="50" y="59" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">Layer 1 result</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">Left aligned, without a single quote</text>
+
+    <!-- formula bar -->
+    <rect x="24" y="100" width="392" height="38" rx="4" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <text x="40" y="125" font-size="17" font-style="italic" fill="#70706F">fx</text>
+    <path d="M66 106 V132" stroke="#D7D8D8" stroke-width="2"/>
+    <text x="80" y="126" font-size="18" fill="#141421">1234</text>
+    <text x="404" y="125" font-size="13" font-weight="700" fill="#F39454" text-anchor="end">no ' added</text>
+
+    <!-- before / after -->
+    <text x="24" y="172" font-size="14" font-weight="700" fill="#70706F" letter-spacing="1">BEFORE · NUMBER</text>
+    <text x="232" y="172" font-size="14" font-weight="700" fill="#70706F" letter-spacing="1">AFTER · TEXT</text>
+    <g font-size="20">
+      <rect x="24" y="184" width="184" height="48" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+      <rect x="24" y="232" width="184" height="48" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+      <rect x="24" y="280" width="184" height="48" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+      <text x="196" y="215" fill="#141421" text-anchor="end">1234</text>
+      <text x="196" y="263" fill="#141421" text-anchor="end">-56</text>
+      <text x="196" y="311" fill="#141421" text-anchor="end">0</text>
+
+      <rect x="232" y="184" width="184" height="48" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+      <rect x="232" y="232" width="184" height="48" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+      <rect x="232" y="280" width="184" height="48" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+      <path d="M233 185 h10 l-10 10 z M233 233 h10 l-10 10 z M233 281 h10 l-10 10 z" fill="#2E8B57"/>
+      <text x="252" y="215" fill="#141421">1234</text>
+      <text x="252" y="263" fill="#141421">-56</text>
+      <text x="252" y="311" fill="#141421">0</text>
+    </g>
+    <path d="M24 342 H208 M232 342 H416" stroke="#141421" stroke-width="2"/>
+    <g font-size="18">
+      <text x="32" y="372" fill="#70706F">=SUM</text><text x="196" y="372" font-weight="700" fill="#141421" text-anchor="end">1178</text>
+      <text x="240" y="372" fill="#70706F">=SUM</text><text x="404" y="372" font-weight="700" fill="#F39454" text-anchor="end">0</text>
+    </g>
+    <path d="M233 387 h10 l-10 10 z" fill="#2E8B57"/><text x="250" y="397" font-size="13" fill="#70706F">number stored as text</text>
+
+    <rect x="24" y="420" width="392" height="56" rx="8" fill="#F6F6F6"/>
+    <rect x="24" y="420" width="8" height="56" fill="#141421"/>
+    <text x="48" y="443" font-size="17" font-weight="700" fill="#141421">Consequence</text>
+    <text x="48" y="466" font-size="16" fill="#141421">Calculations ignore the text values</text>
+  </g>
+</svg>

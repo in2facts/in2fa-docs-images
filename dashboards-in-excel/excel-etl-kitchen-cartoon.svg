@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 760" width="1200" height="760" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <filter id="card" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#141421" flood-opacity="0.22"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="8"/></filter>
+    <clipPath id="clip-e"><rect x="60" y="180" width="330" height="400" rx="18"/></clipPath>
+    <clipPath id="clip-t"><rect x="435" y="180" width="330" height="400" rx="18"/></clipPath>
+    <clipPath id="clip-l"><rect x="810" y="180" width="330" height="400" rx="18"/></clipPath>
+    <pattern id="checks" width="28" height="28" patternUnits="userSpaceOnUse">
+      <rect width="28" height="28" fill="#FFFFFF"/>
+      <rect width="14" height="14" fill="#F39454" fill-opacity="0.45"/>
+      <rect x="14" y="14" width="14" height="14" fill="#F39454" fill-opacity="0.45"/>
+    </pattern>
+
+    <!-- the chef: 100 × 150, feet at y=150 -->
+    <g id="chef" stroke="#141421" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M32 92 q-16 18 -10 42" fill="none"/>
+      <path d="M68 92 q16 18 10 42" fill="none"/>
+      <path d="M28 150 L32 92 q18 -12 36 0 L72 150 z" fill="#FFFFFF"/>
+      <path d="M38 102 h24 l4 48 h-32 z" fill="#F39454"/>
+      <circle cx="50" cy="58" r="20" fill="#F6D2B8"/>
+      <circle cx="43" cy="55" r="2.5" fill="#141421" stroke="none"/>
+      <circle cx="57" cy="55" r="2.5" fill="#141421" stroke="none"/>
+      <circle cx="37" cy="64" r="3.5" fill="#F39454" fill-opacity="0.55" stroke="none"/>
+      <circle cx="63" cy="64" r="3.5" fill="#F39454" fill-opacity="0.55" stroke="none"/>
+      <path d="M42 64 q8 7 16 0" fill="none"/>
+      <rect x="32" y="26" width="36" height="14" rx="3" fill="#FFFFFF"/>
+      <circle cx="35" cy="22" r="13" fill="#FFFFFF"/>
+      <circle cx="65" cy="22" r="13" fill="#FFFFFF"/>
+      <circle cx="50" cy="14" r="16" fill="#FFFFFF"/>
+      <path d="M33 30 h34" fill="none" stroke="#FFFFFF" stroke-width="6"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="760" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">ETL</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data shaping</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="330" lengthAdjust="spacing">ETL in the kitchen</text>
+  <rect x="398" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">From the shop to the plate: the three steps of every data recipe.</text>
+
+  <!-- ==================== Panel 1 · Extract ==================== -->
+  <rect x="62" y="188" width="330" height="400" rx="18" fill="#141421" fill-opacity="0.22" filter="url(#soft)"/>
+  <rect x="60" y="180" width="330" height="400" rx="18" fill="#FDF1E7"/>
+  <g clip-path="url(#clip-e)" stroke="#141421" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="60" y="520" width="330" height="60" fill="#E9DCCB"/>
+    <!-- shop -->
+    <line x1="250" y1="250" x2="250" y2="270"/><line x1="330" y1="250" x2="330" y2="270"/>
+    <rect x="225" y="220" width="130" height="34" rx="6" fill="#141421"/>
+    <text x="290" y="244" font-size="18" font-weight="700" fill="#FFFFFF" stroke="none" text-anchor="middle" letter-spacing="2">MARKET</text>
+    <rect x="210" y="290" width="160" height="232" fill="#FFFFFF"/>
+    <rect x="200" y="268" width="30" height="26" fill="#F39454"/><rect x="230" y="268" width="30" height="26" fill="#FFFFFF"/>
+    <rect x="260" y="268" width="30" height="26" fill="#F39454"/><rect x="290" y="268" width="30" height="26" fill="#FFFFFF"/>
+    <rect x="320" y="268" width="30" height="26" fill="#F39454"/><rect x="350" y="268" width="30" height="26" fill="#FFFFFF"/>
+    <path d="M200 294 a15 12 0 0 0 30 0 z" fill="#F39454"/><path d="M230 294 a15 12 0 0 0 30 0 z" fill="#FFFFFF"/>
+    <path d="M260 294 a15 12 0 0 0 30 0 z" fill="#F39454"/><path d="M290 294 a15 12 0 0 0 30 0 z" fill="#FFFFFF"/>
+    <path d="M320 294 a15 12 0 0 0 30 0 z" fill="#F39454"/><path d="M350 294 a15 12 0 0 0 30 0 z" fill="#FFFFFF"/>
+    <!-- shelves -->
+    <rect x="225" y="318" width="130" height="108" fill="#FDF1E7"/>
+    <line x1="225" y1="354" x2="355" y2="354"/><line x1="225" y1="390" x2="355" y2="390"/>
+    <circle cx="245" cy="342" r="9" fill="#E8604C" stroke-width="2"/><circle cx="265" cy="342" r="9" fill="#E8604C" stroke-width="2"/><circle cx="285" cy="342" r="9" fill="#E8604C" stroke-width="2"/>
+    <circle cx="328" cy="340" r="12" fill="#8BC34A" stroke-width="2"/>
+    <path d="M240 362 l6 22 l6 -22 z" fill="#F39454" stroke-width="2"/><path d="M243 362 l3 -6 l3 6" fill="none" stroke="#5E9E2E" stroke-width="2"/>
+    <path d="M258 362 l6 22 l6 -22 z" fill="#F39454" stroke-width="2"/><path d="M261 362 l3 -6 l3 6" fill="none" stroke="#5E9E2E" stroke-width="2"/>
+    <path d="M276 362 l6 22 l6 -22 z" fill="#F39454" stroke-width="2"/><path d="M279 362 l3 -6 l3 6" fill="none" stroke="#5E9E2E" stroke-width="2"/>
+    <ellipse cx="325" cy="378" rx="20" ry="9" fill="#E3B866" stroke-width="2"/>
+    <circle cx="245" cy="414" r="8" fill="#F2C94C" stroke-width="2"/><circle cx="263" cy="414" r="8" fill="#F2C94C" stroke-width="2"/>
+    <circle cx="300" cy="412" r="10" fill="#8BC34A" stroke-width="2"/><circle cx="330" cy="412" r="10" fill="#E8604C" stroke-width="2"/>
+    <!-- counter -->
+    <rect x="225" y="440" width="130" height="82" fill="#E3B866"/>
+    <line x1="225" y1="456" x2="355" y2="456"/>
+    <!-- basket -->
+    <path d="M150 474 l6 -16 l8 14 z" fill="#F39454" stroke-width="2"/>
+    <ellipse cx="182" cy="468" rx="14" ry="8" fill="#E3B866" stroke-width="2"/>
+    <path d="M158 474 q17 -30 34 0" fill="none"/>
+    <path d="M146 474 h58 l-7 36 h-44 z" fill="#C99A4E"/>
+    <line x1="152" y1="488" x2="199" y2="488" stroke-width="2"/>
+  </g>
+  <use href="#chef" xlink:href="#chef" transform="translate(64 372)"/>
+  <!-- bubble -->
+  <path d="M106 256 l10 80 l14 -80 z" fill="#FFFFFF" stroke="#141421" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="78" y="198" width="160" height="60" rx="18" fill="#FFFFFF" stroke="#141421" stroke-width="3"/>
+  <path d="M109 257 h19" stroke="#FFFFFF" stroke-width="5"/>
+  <text x="158" y="223" font-family="'Comic Sans MS', 'Comic Neue', 'Segoe Print', cursive" font-size="15" fill="#141421" text-anchor="middle">Can I have</text>
+  <text x="158" y="245" font-family="'Comic Sans MS', 'Comic Neue', 'Segoe Print', cursive" font-size="15" fill="#141421" text-anchor="middle">the groceries?</text>
+  <rect x="60" y="180" width="330" height="400" rx="18" fill="none" stroke="#141421" stroke-width="4"/>
+
+  <!-- arrow 1 → 2 -->
+  <path d="M398 380 h20" stroke="#F39454" stroke-width="8" stroke-linecap="round"/>
+  <path d="M414 366 l16 14 l-16 14 z" fill="#F39454" stroke="#141421" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- ==================== Panel 2 · Transform ==================== -->
+  <rect x="437" y="188" width="330" height="400" rx="18" fill="#141421" fill-opacity="0.22" filter="url(#soft)"/>
+  <rect x="435" y="180" width="330" height="400" rx="18" fill="#EAF2F6"/>
+  <g clip-path="url(#clip-t)" stroke="#141421" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <g stroke="#D5E3EA" stroke-width="2">
+      <line x1="435" y1="270" x2="765" y2="270"/><line x1="435" y1="300" x2="765" y2="300"/><line x1="435" y1="330" x2="765" y2="330"/>
+      <line x1="435" y1="360" x2="765" y2="360"/><line x1="435" y1="390" x2="765" y2="390"/><line x1="435" y1="420" x2="765" y2="420"/>
+      <line x1="435" y1="450" x2="765" y2="450"/>
+    </g>
+    <!-- recipe card -->
+    <g transform="rotate(4 690 260)">
+      <rect x="632" y="198" width="116" height="124" rx="6" fill="#FFFFFF"/>
+      <text x="690" y="228" font-size="14" font-weight="700" fill="#141421" stroke="none" text-anchor="middle" letter-spacing="1">RECIPE</text>
+      <line x1="646" y1="236" x2="734" y2="236" stroke="#F39454" stroke-width="2"/>
+      <text x="648" y="258" font-family="'Comic Sans MS', 'Comic Neue', 'Segoe Print', cursive" font-size="14" fill="#141421" stroke="none">1. wash</text>
+      <text x="648" y="278" font-family="'Comic Sans MS', 'Comic Neue', 'Segoe Print', cursive" font-size="14" fill="#141421" stroke="none">2. peel</text>
+      <text x="648" y="298" font-family="'Comic Sans MS', 'Comic Neue', 'Segoe Print', cursive" font-size="14" fill="#141421" stroke="none">3. cut</text>
+      <text x="648" y="318" font-family="'Comic Sans MS', 'Comic Neue', 'Segoe Print', cursive" font-size="14" fill="#141421" stroke="none">4. cook</text>
+      <circle cx="690" cy="205" r="5" fill="#F39454" stroke-width="2"/>
+    </g>
+    <!-- steam -->
+    <g fill="none" stroke="#A9AAAA" stroke-width="3">
+      <path d="M692 386 q-8 -10 0 -20 q8 -10 0 -20"/>
+      <path d="M712 384 q-8 -10 0 -20 q8 -10 0 -20"/>
+      <path d="M732 386 q-8 -10 0 -20 q8 -10 0 -20"/>
+    </g>
+    <!-- pot -->
+    <line x1="660" y1="414" x2="672" y2="414"/><line x1="748" y1="414" x2="760" y2="414"/>
+    <rect x="670" y="402" width="80" height="62" rx="8" fill="#70706F"/>
+    <ellipse cx="710" cy="402" rx="44" ry="8" fill="#A9AAAA"/>
+    <circle cx="710" cy="392" r="5" fill="#141421"/>
+  </g>
+  <use href="#chef" xlink:href="#chef" transform="translate(452 314)"/>
+  <g clip-path="url(#clip-t)" stroke="#141421" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <!-- counter -->
+    <rect x="435" y="470" width="330" height="110" fill="#E3B866"/>
+    <rect x="435" y="460" width="330" height="12" fill="#C99A4E"/>
+    <line x1="545" y1="500" x2="545" y2="580" stroke-width="2"/><line x1="655" y1="500" x2="655" y2="580" stroke-width="2"/>
+    <circle cx="530" cy="520" r="4" fill="#141421" stroke="none"/><circle cx="560" cy="520" r="4" fill="#141421" stroke="none"/><circle cx="670" cy="520" r="4" fill="#141421" stroke="none"/>
+    <!-- cutting board -->
+    <rect x="540" y="447" width="104" height="14" rx="4" fill="#F4D9A6"/>
+    <circle cx="558" cy="441" r="6" fill="#F39454" stroke-width="2"/><circle cx="574" cy="441" r="6" fill="#F39454" stroke-width="2"/><circle cx="590" cy="441" r="6" fill="#8BC34A" stroke-width="2"/>
+    <path d="M604 444 l30 -6 v7 z" fill="#D7D8D8" stroke-width="2"/>
+    <rect x="634" y="437" width="18" height="8" rx="2" fill="#141421" stroke-width="2"/>
+  </g>
+  <!-- bubble -->
+  <path d="M488 256 l6 30 l18 -30 z" fill="#FFFFFF" stroke="#141421" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="452" y="198" width="164" height="60" rx="18" fill="#FFFFFF" stroke="#141421" stroke-width="3"/>
+  <path d="M491 257 h18" stroke="#FFFFFF" stroke-width="5"/>
+  <text x="534" y="223" font-family="'Comic Sans MS', 'Comic Neue', 'Segoe Print', cursive" font-size="15" fill="#141421" text-anchor="middle">Same recipe,</text>
+  <text x="534" y="245" font-family="'Comic Sans MS', 'Comic Neue', 'Segoe Print', cursive" font-size="15" fill="#141421" text-anchor="middle">every time!</text>
+  <rect x="435" y="180" width="330" height="400" rx="18" fill="none" stroke="#141421" stroke-width="4"/>
+
+  <!-- arrow 2 → 3 -->
+  <path d="M773 380 h20" stroke="#F39454" stroke-width="8" stroke-linecap="round"/>
+  <path d="M789 366 l16 14 l-16 14 z" fill="#F39454" stroke="#141421" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- ==================== Panel 3 · Load ==================== -->
+  <rect x="812" y="188" width="330" height="400" rx="18" fill="#141421" fill-opacity="0.22" filter="url(#soft)"/>
+  <rect x="810" y="180" width="330" height="400" rx="18" fill="#FFF7E0"/>
+  <g clip-path="url(#clip-l)" stroke="#141421" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <!-- garland -->
+    <path d="M810 196 q165 30 330 0" fill="none" stroke-width="2"/>
+    <path d="M840 201 l10 22 l10 -20 z" fill="#F39454" stroke-width="2"/>
+    <path d="M880 207 l10 22 l10 -19 z" fill="#FFFFFF" stroke-width="2"/>
+    <path d="M920 210 l10 22 l10 -21 z" fill="#F39454" stroke-width="2"/>
+    <path d="M1030 210 l10 22 l10 -21 z" fill="#FFFFFF" stroke-width="2"/>
+    <path d="M1070 207 l10 22 l10 -19 z" fill="#F39454" stroke-width="2"/>
+    <path d="M1110 201 l10 22 l10 -20 z" fill="#FFFFFF" stroke-width="2"/>
+    <!-- guest A -->
+    <path d="M848 470 q0 -50 42 -50 q42 0 42 50 z" fill="#8FB8D0"/>
+    <circle cx="890" cy="388" r="26" fill="#F6D2B8"/>
+    <path d="M864 384 q4 -32 30 -30 q24 2 22 26 q-12 -14 -30 -10 q-10 4 -22 14 z" fill="#70706F"/>
+    <circle cx="882" cy="388" r="2.5" fill="#141421" stroke="none"/><circle cx="898" cy="388" r="2.5" fill="#141421" stroke="none"/>
+    <path d="M880 398 q10 12 20 0 z" fill="#E8604C" stroke-width="2"/>
+    <!-- guest B -->
+    <path d="M1018 470 q0 -50 42 -50 q42 0 42 50 z" fill="#8BC34A"/>
+    <circle cx="1060" cy="388" r="26" fill="#E9B894"/>
+    <path d="M1034 392 q-6 -40 26 -40 q32 0 26 40 q-4 -22 -26 -24 q-22 2 -26 24 z" fill="#C46A2F"/>
+    <circle cx="1052" cy="388" r="2.5" fill="#141421" stroke="none"/><circle cx="1068" cy="388" r="2.5" fill="#141421" stroke="none"/>
+    <path d="M1050 398 q10 12 20 0 z" fill="#E8604C" stroke-width="2"/>
+    <!-- steam of the dish -->
+    <g fill="none" stroke="#A9AAAA" stroke-width="3">
+      <path d="M962 404 q-6 -8 0 -16 q6 -8 0 -16"/>
+      <path d="M978 400 q-6 -8 0 -16 q6 -8 0 -16"/>
+      <path d="M994 404 q-6 -8 0 -16 q6 -8 0 -16"/>
+    </g>
+    <!-- table -->
+    <rect x="810" y="455" width="330" height="125" fill="url(#checks)"/>
+    <line x1="810" y1="455" x2="1140" y2="455"/>
+    <!-- plate and dish -->
+    <ellipse cx="978" cy="452" rx="64" ry="14" fill="#FFFFFF"/>
+    <ellipse cx="978" cy="450" rx="44" ry="8" fill="#F6F6F6" stroke-width="2"/>
+    <path d="M940 450 q38 -50 76 0 z" fill="#F39454"/>
+    <circle cx="962" cy="434" r="5" fill="#8BC34A" stroke-width="2"/><circle cx="984" cy="424" r="5" fill="#8BC34A" stroke-width="2"/>
+    <circle cx="976" cy="440" r="5" fill="#E8604C" stroke-width="2"/><circle cx="998" cy="438" r="4" fill="#E8604C" stroke-width="2"/>
+    <!-- cutlery -->
+    <line x1="896" y1="448" x2="896" y2="478"/><path d="M890 448 v8 M896 448 v8 M902 448 v8 M890 456 h12" fill="none" stroke-width="2"/>
+  </g>
+  <!-- bubble -->
+  <path d="M1060 290 l4 30 l18 -30 z" fill="#FFFFFF" stroke="#141421" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="972" y="236" width="150" height="56" rx="18" fill="#FFFFFF" stroke="#141421" stroke-width="3"/>
+  <path d="M1063 291 h17" stroke="#FFFFFF" stroke-width="5"/>
+  <text x="1047" y="260" font-family="'Comic Sans MS', 'Comic Neue', 'Segoe Print', cursive" font-size="15" fill="#141421" text-anchor="middle">Yummy, ready</text>
+  <text x="1047" y="281" font-family="'Comic Sans MS', 'Comic Neue', 'Segoe Print', cursive" font-size="15" fill="#141421" text-anchor="middle">to enjoy!</text>
+  <rect x="810" y="180" width="330" height="400" rx="18" fill="none" stroke="#141421" stroke-width="4"/>
+
+  <!-- ==================== Captions ==================== -->
+  <circle cx="82" cy="616" r="18" fill="#F39454" stroke="#141421" stroke-width="3"/>
+  <text x="82" y="623" font-size="19" font-weight="700" fill="#141421" text-anchor="middle">E</text>
+  <text x="110" y="614" font-size="18" font-weight="700" fill="#141421">Extract <tspan font-size="15" font-weight="400" fill="#70706F">· buy the groceries</tspan></text>
+  <text x="110" y="638" font-size="13" fill="#70706F"><tspan font-weight="700" fill="#141421">RAW</tspan> · the connection asks the shop.</text>
+  <text x="110" y="658" font-size="13" fill="#70706F">The shop itself never changes.</text>
+
+  <circle cx="457" cy="616" r="18" fill="#F39454" stroke="#141421" stroke-width="3"/>
+  <text x="457" y="623" font-size="19" font-weight="700" fill="#141421" text-anchor="middle">T</text>
+  <text x="485" y="614" font-size="18" font-weight="700" fill="#141421">Transform <tspan font-size="15" font-weight="400" fill="#70706F">· wash, cut and cook</tspan></text>
+  <text x="485" y="638" font-size="13" fill="#70706F"><tspan font-weight="700" fill="#141421">STANDARDIZED</tspan> · the staging query is</text>
+  <text x="485" y="658" font-size="13" fill="#70706F">the recipe, replayed on every refresh.</text>
+
+  <circle cx="832" cy="616" r="18" fill="#F39454" stroke="#141421" stroke-width="3"/>
+  <text x="832" y="623" font-size="19" font-weight="700" fill="#141421" text-anchor="middle">L</text>
+  <text x="860" y="614" font-size="18" font-weight="700" fill="#141421">Load <tspan font-size="15" font-weight="400" fill="#70706F">· serve on the plate</tspan></text>
+  <text x="860" y="638" font-size="13" fill="#70706F"><tspan font-weight="700" fill="#141421">CURATED</tspan> · only the finished dish</text>
+  <text x="860" y="658" font-size="13" fill="#70706F">reaches the table: the data model.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="690" x2="1140" y2="690" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="728" font-size="16" fill="#141421"><tspan font-weight="700">Power Query</tspan> does the shopping and the cooking. <tspan font-weight="700">Power Pivot</tspan> sets the table.</text>
+</svg>

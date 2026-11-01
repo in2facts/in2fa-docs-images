@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="780" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Model best practices</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="511" lengthAdjust="spacing">Discourage implicit measures</text>
+  <rect x="579" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">A model-level property: select the semantic model, then switch the property on in the Properties pane.</text>
+  <circle cx="72" cy="186" r="12" fill="#F39454"/><text x="72" y="191" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="92" y="191" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Data pane › Model › select the semantic model</text>
+  <rect x="60" y="206" width="460" height="460" fill="#FFFFFF" stroke="#A9AAAA" filter="url(#card)"/>
+  <text x="80" y="240" font-size="20" fill="#141421" font-weight="700" text-anchor="start">Data</text>
+  <text x="96" y="280" font-size="15" fill="#70706F" text-anchor="start">Tables</text>
+  <text x="200" y="280" font-size="15" fill="#141421" font-weight="700" text-anchor="start">Model</text>
+  <rect x="196" y="285" width="52" height="3" fill="#F39454"/>
+  <rect x="190" y="258" width="66" height="36" fill="none" stroke="#F39454" stroke-width="2" rx="2"/>
+  <rect x="80" y="314" width="420" height="34" fill="#FDE9DC" stroke="#F39454" stroke-width="2"/>
+  <rect x="80" y="314" width="4" height="34" fill="#F39454"/>
+  <path d="M96 326 l5 6 l5 -6" fill="none" stroke="#141421" stroke-width="1.6"/>
+  <text x="116" y="336" font-size="15" fill="#141421" font-weight="700" text-anchor="start">Semantic model</text>
+  <text x="136" y="376" font-size="14" fill="#141421" text-anchor="start">Calculation groups (0)</text>
+  <text x="136" y="404" font-size="14" fill="#141421" text-anchor="start">Calendars (0)</text>
+  <path d="M120 423 l5 5 l-5 5" fill="none" stroke="#141421" stroke-width="1.4"/>
+  <text x="136" y="432" font-size="14" fill="#141421" text-anchor="start">Cultures (1)</text>
+  <path d="M120 451 l5 5 l-5 5" fill="none" stroke="#141421" stroke-width="1.4"/>
+  <text x="136" y="460" font-size="14" fill="#141421" text-anchor="start">Expressions (1)</text>
+  <text x="136" y="488" font-size="14" fill="#141421" text-anchor="start">Functions (0)</text>
+  <path d="M120 507 l5 5 l-5 5" fill="none" stroke="#141421" stroke-width="1.4"/>
+  <text x="136" y="516" font-size="14" fill="#141421" text-anchor="start">Measures (2)</text>
+  <text x="136" y="544" font-size="14" fill="#141421" text-anchor="start">Perspectives (0)</text>
+  <path d="M120 563 l5 5 l-5 5" fill="none" stroke="#141421" stroke-width="1.4"/>
+  <text x="136" y="572" font-size="14" fill="#141421" text-anchor="start">Relationships (7)</text>
+  <text x="136" y="600" font-size="14" fill="#141421" text-anchor="start">Roles (0)</text>
+  <path d="M120 619 l5 5 l-5 5" fill="none" stroke="#141421" stroke-width="1.4"/>
+  <text x="136" y="628" font-size="14" fill="#141421" text-anchor="start">Tables (8)</text>
+  <circle cx="572" cy="186" r="12" fill="#F39454"/><text x="572" y="191" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="592" y="191" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Properties › General › Discourage implicit measures</text>
+  <rect x="560" y="206" width="580" height="460" fill="#FFFFFF" stroke="#A9AAAA" filter="url(#card)"/>
+  <text x="580" y="240" font-size="20" fill="#141421" font-weight="700" text-anchor="start">Properties</text>
+  <path d="M582 262 l5 5 l5 -5" fill="none" stroke="#141421" stroke-width="1.6"/>
+  <text x="602" y="270" font-size="16" fill="#141421" text-anchor="start">General</text>
+  <line x1="560" y1="284" x2="1140" y2="284" stroke="#D7D8D8"/>
+  <text x="580" y="310" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Name</text>
+  <text x="580" y="334" font-size="14" fill="#70706F" text-anchor="start">Semantic model</text>
+  <text x="580" y="372" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Compatibility Level</text>
+  <text x="580" y="396" font-size="14" fill="#70706F" text-anchor="start">1606</text>
+  <text x="580" y="434" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Cultures</text>
+  <text x="580" y="458" font-size="14" fill="#70706F" text-anchor="start">•  en-US</text>
+  <rect x="572" y="482" width="320" height="86" fill="#FDE9DC" stroke="#F39454" stroke-width="2"/>
+  <text x="588" y="510" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Discourage implicit measures</text>
+  <rect x="590" y="530" width="44" height="22" rx="11" fill="#F39454"/>
+  <circle cx="622" cy="541" r="7" fill="#FFFFFF"/>
+  <text x="648" y="547" font-size="15" fill="#141421" font-weight="700" text-anchor="start">Yes</text>
+  <text x="580" y="600" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Value filter behavior</text>
+  <rect x="580" y="612" width="300" height="34" fill="#FFFFFF" stroke="#A9AAAA"/>
+  <text x="594" y="634" font-size="14" fill="#141421" text-anchor="start">Automatic</text>
+  <path d="M860 625 l5 5 l5 -5" fill="none" stroke="#141421" stroke-width="1.4"/>
+  <rect x="920" y="466" width="200" height="52" fill="#F6F6F6"/>
+  <rect x="920" y="466" width="4" height="52" fill="#F39454"/>
+  <text x="934" y="488" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Σ disappears</text>
+  <text x="934" y="507" font-size="12" fill="#70706F" text-anchor="start">next to numeric columns</text>
+  <rect x="920" y="528" width="200" height="52" fill="#F6F6F6"/>
+  <rect x="920" y="528" width="4" height="52" fill="#F39454"/>
+  <text x="934" y="550" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Values need measures</text>
+  <text x="934" y="569" font-size="12" fill="#70706F" text-anchor="start">columns can't be aggregated</text>
+  <rect x="920" y="590" width="200" height="52" fill="#F6F6F6"/>
+  <rect x="920" y="590" width="4" height="52" fill="#F39454"/>
+  <text x="934" y="612" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Calculation groups</text>
+  <text x="934" y="631" font-size="12" fill="#70706F" text-anchor="start">require this setting</text>
+  <line x1="894" y1="524" x2="914" y2="524" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="920" y="452" font-size="13" fill="#141421" font-weight="700" text-anchor="start">Effect</text>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="706" x2="1140" y2="706" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="742" font-size="20" fill="#141421">Turn it on once, <tspan font-weight="700">for the whole model.</tspan></text>
+  <text x="1140" y="741" font-size="14" fill="#70706F" text-anchor="end">Existing implicit measures keep working</text>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="640" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Engine internals</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="332" lengthAdjust="spacing">Columnar database</text>
+  <rect x="400" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">The same table stored per row and per column. Analytics reads few columns of many rows.</text>
+  <rect x="60" y="170" width="520" height="340" fill="#FFFFFF"/>
+  <text x="80" y="200" font-size="17" fill="#141421" font-weight="700" text-anchor="start">Row store</text>
+  <text x="80" y="220" font-size="13" fill="#70706F" text-anchor="start">1 block per row: every block is read</text>
+  <rect x="150" y="240" width="120" height="32" fill="#141421"/>
+  <text x="210" y="261" font-size="14" fill="#F6F6F6" font-weight="700" text-anchor="middle">First Name</text>
+  <rect x="270" y="240" width="120" height="32" fill="#141421"/>
+  <text x="330" y="261" font-size="14" fill="#F6F6F6" font-weight="700" text-anchor="middle">Last Name</text>
+  <rect x="390" y="240" width="120" height="32" fill="#141421"/>
+  <text x="450" y="261" font-size="14" fill="#F6F6F6" font-weight="700" text-anchor="middle">Sales</text>
+  <text x="80" y="305" font-size="12" fill="#70706F" text-anchor="start">block 1</text>
+  <rect x="150" y="284" width="120" height="32" fill="#FFFFFF" stroke="#F39454" stroke-width="1.5"/>
+  <text x="210" y="305" font-size="14" fill="#141421" text-anchor="middle">John</text>
+  <rect x="270" y="284" width="120" height="32" fill="#FFFFFF" stroke="#F39454" stroke-width="1.5"/>
+  <text x="330" y="305" font-size="14" fill="#141421" text-anchor="middle">Smith</text>
+  <rect x="390" y="284" width="120" height="32" fill="#FDE9DC" stroke="#F39454" stroke-width="1.5"/>
+  <text x="450" y="305" font-size="14" fill="#141421" text-anchor="middle">$10</text>
+  <text x="80" y="357" font-size="12" fill="#70706F" text-anchor="start">block 2</text>
+  <rect x="150" y="336" width="120" height="32" fill="#FFFFFF" stroke="#F39454" stroke-width="1.5"/>
+  <text x="210" y="357" font-size="14" fill="#141421" text-anchor="middle">Jane</text>
+  <rect x="270" y="336" width="120" height="32" fill="#FFFFFF" stroke="#F39454" stroke-width="1.5"/>
+  <text x="330" y="357" font-size="14" fill="#141421" text-anchor="middle">Doe</text>
+  <rect x="390" y="336" width="120" height="32" fill="#FDE9DC" stroke="#F39454" stroke-width="1.5"/>
+  <text x="450" y="357" font-size="14" fill="#141421" text-anchor="middle">$25</text>
+  <text x="80" y="409" font-size="12" fill="#70706F" text-anchor="start">block 3</text>
+  <rect x="150" y="388" width="120" height="32" fill="#FFFFFF" stroke="#F39454" stroke-width="1.5"/>
+  <text x="210" y="409" font-size="14" fill="#141421" text-anchor="middle">Hardy</text>
+  <rect x="270" y="388" width="120" height="32" fill="#FFFFFF" stroke="#F39454" stroke-width="1.5"/>
+  <text x="330" y="409" font-size="14" fill="#141421" text-anchor="middle">B</text>
+  <rect x="390" y="388" width="120" height="32" fill="#FDE9DC" stroke="#F39454" stroke-width="1.5"/>
+  <text x="450" y="409" font-size="14" fill="#141421" text-anchor="middle">$35</text>
+  <text x="80" y="470" font-size="14" fill="#141421" font-weight="700" text-anchor="start">SUM ( Sales ) reads 3 blocks × 3 columns = 9 values</text>
+  <rect x="620" y="170" width="520" height="340" fill="#FFFFFF"/>
+  <text x="640" y="200" font-size="17" fill="#141421" font-weight="700" text-anchor="start">Column store (VertiPaq)</text>
+  <text x="640" y="220" font-size="13" fill="#70706F" text-anchor="start">1 block per column: only Sales is read</text>
+  <rect x="660" y="240" width="140" height="32" fill="#141421"/>
+  <text x="730" y="261" font-size="14" fill="#F6F6F6" font-weight="700" text-anchor="middle">First Name</text>
+  <rect x="660" y="272" width="140" height="32" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1.5"/>
+  <text x="730" y="293" font-size="14" fill="#A9AAAA" text-anchor="middle">John</text>
+  <rect x="660" y="304" width="140" height="32" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1.5"/>
+  <text x="730" y="325" font-size="14" fill="#A9AAAA" text-anchor="middle">Jane</text>
+  <rect x="660" y="336" width="140" height="32" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1.5"/>
+  <text x="730" y="357" font-size="14" fill="#A9AAAA" text-anchor="middle">Hardy</text>
+  <text x="730" y="392" font-size="12" fill="#70706F" text-anchor="middle">block 1</text>
+  <rect x="815" y="240" width="140" height="32" fill="#141421"/>
+  <text x="885" y="261" font-size="14" fill="#F6F6F6" font-weight="700" text-anchor="middle">Last Name</text>
+  <rect x="815" y="272" width="140" height="32" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1.5"/>
+  <text x="885" y="293" font-size="14" fill="#A9AAAA" text-anchor="middle">Smith</text>
+  <rect x="815" y="304" width="140" height="32" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1.5"/>
+  <text x="885" y="325" font-size="14" fill="#A9AAAA" text-anchor="middle">Doe</text>
+  <rect x="815" y="336" width="140" height="32" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1.5"/>
+  <text x="885" y="357" font-size="14" fill="#A9AAAA" text-anchor="middle">B</text>
+  <text x="885" y="392" font-size="12" fill="#70706F" text-anchor="middle">block 2</text>
+  <rect x="970" y="240" width="140" height="32" fill="#141421"/>
+  <text x="1040" y="261" font-size="14" fill="#F6F6F6" font-weight="700" text-anchor="middle">Sales</text>
+  <rect x="970" y="272" width="140" height="32" fill="#FDE9DC" stroke="#F39454" stroke-width="1.5"/>
+  <text x="1040" y="293" font-size="14" fill="#141421" text-anchor="middle">$10</text>
+  <rect x="970" y="304" width="140" height="32" fill="#FDE9DC" stroke="#F39454" stroke-width="1.5"/>
+  <text x="1040" y="325" font-size="14" fill="#141421" text-anchor="middle">$25</text>
+  <rect x="970" y="336" width="140" height="32" fill="#FDE9DC" stroke="#F39454" stroke-width="1.5"/>
+  <text x="1040" y="357" font-size="14" fill="#141421" text-anchor="middle">$35</text>
+  <text x="1040" y="392" font-size="12" fill="#70706F" text-anchor="middle">block 3</text>
+  <text x="640" y="470" font-size="14" fill="#141421" font-weight="700" text-anchor="start">SUM ( Sales ) reads 1 column = 3 values</text>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="566" x2="1140" y2="566" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="602" font-size="20" fill="#141421">SUM ( Sales ) reads <tspan font-weight="700">one column, not every row.</tspan></text>
+  <text x="1140" y="601" font-size="14" fill="#70706F" text-anchor="end">Similar values per column compress well</text>
+</svg>

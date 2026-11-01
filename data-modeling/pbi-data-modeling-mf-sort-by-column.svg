@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="780" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Model features</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="259" lengthAdjust="spacing">Sort by column</text>
+  <rect x="327" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Sort a text column by another column of the same table, usually a numeric one.</text>
+  <rect x="60" y="170" width="340" height="380" fill="#FFFFFF"/>
+  <text x="80" y="200" font-size="17" fill="#141421" font-weight="700" text-anchor="start">Default: alphabetical</text>
+  <text x="80" y="220" font-size="13" fill="#70706F" text-anchor="start">Text columns sort A → Z</text>
+  <rect x="100" y="250" width="260" height="32" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1"/>
+  <text x="116" y="271" font-size="14" fill="#141421" text-anchor="start">April</text>
+  <rect x="100" y="290" width="260" height="32" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1"/>
+  <text x="116" y="311" font-size="14" fill="#141421" text-anchor="start">August</text>
+  <rect x="100" y="330" width="260" height="32" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1"/>
+  <text x="116" y="351" font-size="14" fill="#141421" text-anchor="start">December</text>
+  <rect x="100" y="370" width="260" height="32" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1"/>
+  <text x="116" y="391" font-size="14" fill="#141421" text-anchor="start">February</text>
+  <rect x="100" y="410" width="260" height="32" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1"/>
+  <text x="116" y="431" font-size="14" fill="#141421" text-anchor="start">January</text>
+  <rect x="100" y="450" width="260" height="32" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1"/>
+  <text x="116" y="471" font-size="14" fill="#141421" text-anchor="start">July</text>
+  <circle cx="112" cy="518" r="11" fill="#F6F6F6" stroke="#141421" stroke-width="2"/><path d="M107.5 513.5 l9 9 m0 -9 l-9 9" stroke="#141421" stroke-width="2.5"/>
+  <text x="134" y="523" font-size="13" fill="#141421" font-weight="700" text-anchor="start">not the order users expect</text>
+  <rect x="430" y="170" width="340" height="380" fill="#FFFFFF"/>
+  <text x="450" y="200" font-size="17" fill="#141421" font-weight="700" text-anchor="start">Sort by column</text>
+  <text x="450" y="220" font-size="13" fill="#70706F" text-anchor="start">Month Name sorted by Month Number</text>
+  <rect x="470" y="250" width="150" height="32" fill="#141421"/>
+  <text x="545" y="271" font-size="14" fill="#F6F6F6" font-weight="700" text-anchor="middle">Month Name</text>
+  <rect x="620" y="250" width="110" height="32" fill="#141421"/>
+  <text x="675" y="271" font-size="13" fill="#F6F6F6" font-weight="700" text-anchor="middle">Month Number</text>
+  <rect x="470" y="282" width="150" height="34" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="486" y="304" font-size="14" fill="#141421" text-anchor="start">January</text>
+  <rect x="620" y="282" width="110" height="34" fill="#FDE9DC" stroke="#D7D8D8"/>
+  <text x="675" y="304" font-size="14" fill="#141421" font-weight="700" text-anchor="middle">1</text>
+  <rect x="470" y="316" width="150" height="34" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="486" y="338" font-size="14" fill="#141421" text-anchor="start">February</text>
+  <rect x="620" y="316" width="110" height="34" fill="#FDE9DC" stroke="#D7D8D8"/>
+  <text x="675" y="338" font-size="14" fill="#141421" font-weight="700" text-anchor="middle">2</text>
+  <rect x="470" y="350" width="150" height="34" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="486" y="372" font-size="14" fill="#141421" text-anchor="start">March</text>
+  <rect x="620" y="350" width="110" height="34" fill="#FDE9DC" stroke="#D7D8D8"/>
+  <text x="675" y="372" font-size="14" fill="#141421" font-weight="700" text-anchor="middle">3</text>
+  <rect x="470" y="384" width="150" height="34" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="486" y="406" font-size="14" fill="#141421" text-anchor="start">April</text>
+  <rect x="620" y="384" width="110" height="34" fill="#FDE9DC" stroke="#D7D8D8"/>
+  <text x="675" y="406" font-size="14" fill="#141421" font-weight="700" text-anchor="middle">4</text>
+  <rect x="470" y="418" width="150" height="34" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="486" y="440" font-size="14" fill="#141421" text-anchor="start">May</text>
+  <rect x="620" y="418" width="110" height="34" fill="#FDE9DC" stroke="#D7D8D8"/>
+  <text x="675" y="440" font-size="14" fill="#141421" font-weight="700" text-anchor="middle">5</text>
+  <rect x="470" y="452" width="150" height="34" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <text x="486" y="474" font-size="14" fill="#141421" text-anchor="start">June</text>
+  <rect x="620" y="452" width="110" height="34" fill="#FDE9DC" stroke="#D7D8D8"/>
+  <text x="675" y="474" font-size="14" fill="#141421" font-weight="700" text-anchor="middle">6</text>
+  <path d="M675 246 L675 236 L545 236 L545 244" fill="none" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="684" y="241" font-size="12" fill="#70706F" text-anchor="start">sort by</text>
+  <text x="600" y="512" font-size="13" fill="#141421" font-weight="700" text-anchor="middle">Column tools › Sort by column</text>
+  <rect x="800" y="170" width="340" height="380" fill="#FFFFFF"/>
+  <text x="820" y="200" font-size="17" fill="#141421" font-weight="700" text-anchor="start">Result: calendar order</text>
+  <text x="820" y="220" font-size="13" fill="#70706F" text-anchor="start">In every visual, slicer and filter</text>
+  <rect x="840" y="250" width="260" height="32" fill="#FDE9DC" stroke="#F39454" stroke-width="1"/>
+  <text x="856" y="271" font-size="14" fill="#141421" text-anchor="start">January</text>
+  <rect x="840" y="290" width="260" height="32" fill="#FDE9DC" stroke="#F39454" stroke-width="1"/>
+  <text x="856" y="311" font-size="14" fill="#141421" text-anchor="start">February</text>
+  <rect x="840" y="330" width="260" height="32" fill="#FDE9DC" stroke="#F39454" stroke-width="1"/>
+  <text x="856" y="351" font-size="14" fill="#141421" text-anchor="start">March</text>
+  <rect x="840" y="370" width="260" height="32" fill="#FDE9DC" stroke="#F39454" stroke-width="1"/>
+  <text x="856" y="391" font-size="14" fill="#141421" text-anchor="start">April</text>
+  <rect x="840" y="410" width="260" height="32" fill="#FDE9DC" stroke="#F39454" stroke-width="1"/>
+  <text x="856" y="431" font-size="14" fill="#141421" text-anchor="start">May</text>
+  <rect x="840" y="450" width="260" height="32" fill="#FDE9DC" stroke="#F39454" stroke-width="1"/>
+  <text x="856" y="471" font-size="14" fill="#141421" text-anchor="start">June</text>
+  <circle cx="852" cy="518" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M847 518 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="874" y="523" font-size="13" fill="#141421" font-weight="700" text-anchor="start">the order users expect</text>
+  <rect x="60" y="580" width="520" height="76" fill="#FFFFFF"/>
+  <rect x="60" y="580" width="4" height="76" fill="#F39454"/>
+  <circle cx="94" cy="618.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M89 618.0 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="120" y="612.0" font-size="17" font-weight="700" fill="#141421">One value → one sort value</text>
+  <text x="120" y="636.0" font-size="13" fill="#70706F">January is always 1: accepted.</text>
+  <rect x="620" y="580" width="520" height="76" fill="#FFFFFF"/>
+  <rect x="620" y="580" width="4" height="76" fill="#141421"/>
+  <circle cx="654" cy="618.0" r="11" fill="#F6F6F6" stroke="#141421" stroke-width="2"/><path d="M649.5 613.5 l9 9 m0 -9 l-9 9" stroke="#141421" stroke-width="2.5"/>
+  <text x="680" y="612.0" font-size="17" font-weight="700" fill="#141421">One value → many sort values</text>
+  <text x="680" y="636.0" font-size="13" fill="#70706F">Month Name by Date (31 dates): refused.</text>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="706" x2="1140" y2="706" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="742" font-size="20" fill="#141421">Sort text by <tspan font-weight="700">a numeric column.</tspan></text>
+  <text x="1140" y="741" font-size="14" fill="#70706F" text-anchor="end">Hide the sort column · Summarize by: None</text>
+</svg>

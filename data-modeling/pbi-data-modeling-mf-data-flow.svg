@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="640" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Power BI Desktop</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="166" lengthAdjust="spacing">Data flow</text>
+  <rect x="234" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Three layers, each with its own language: Power Query (M), the semantic model (DAX) and the report.</text>
+  <circle cx="72" cy="200" r="12" fill="#F39454"/><text x="72" y="205" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="94" y="205" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Sources</text>
+  <rect x="60" y="230" width="210" height="150" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="230" width="210" height="36" fill="#141421"/>
+  <text x="74" y="254" font-size="15" font-weight="700" fill="#F6F6F6">Data sources</text>
+  <text x="74" y="292" font-size="14" fill="#141421">Excel, SQL, SharePoint</text>
+  <text x="74" y="316" font-size="14" fill="#141421">OneLake, web, ...</text>
+  <circle cx="362" cy="200" r="12" fill="#F39454"/><text x="362" y="205" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="384" y="205" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Prepare</text>
+  <rect x="350" y="230" width="210" height="150" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="350" y="230" width="210" height="36" fill="#141421"/>
+  <text x="364" y="254" font-size="15" font-weight="700" fill="#F6F6F6">Power Query</text>
+  <text x="364" y="292" font-size="14" fill="#141421">Language: M</text>
+  <text x="364" y="316" font-size="14" fill="#141421">Transform data</text>
+  <circle cx="652" cy="200" r="12" fill="#F39454"/><text x="652" y="205" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="674" y="205" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Model</text>
+  <rect x="640" y="230" width="210" height="150" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <rect x="640" y="230" width="210" height="36" fill="#141421"/>
+  <text x="654" y="254" font-size="15" font-weight="700" fill="#F6F6F6">Semantic model</text>
+  <text x="654" y="292" font-size="14" fill="#141421">Language: DAX</text>
+  <text x="654" y="316" font-size="14" fill="#141421">Engine: VertiPaq</text>
+  <circle cx="942" cy="200" r="12" fill="#F39454"/><text x="942" y="205" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">4</text>
+  <text x="964" y="205" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Visualize</text>
+  <rect x="930" y="230" width="210" height="150" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="930" y="230" width="210" height="36" fill="#141421"/>
+  <text x="944" y="254" font-size="15" font-weight="700" fill="#F6F6F6">Report</text>
+  <text x="944" y="292" font-size="14" fill="#141421">Visuals</text>
+  <text x="944" y="316" font-size="14" fill="#141421">Report pages</text>
+  <line x1="274" y1="305" x2="346" y2="305" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="310.0" y="332" font-size="13" fill="#70706F" text-anchor="middle">connect</text>
+  <line x1="564" y1="305" x2="636" y2="305" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="600.0" y="332" font-size="13" fill="#70706F" text-anchor="middle">load</text>
+  <line x1="854" y1="305" x2="926" y2="305" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="890.0" y="332" font-size="13" fill="#70706F" text-anchor="middle">DAX queries</text>
+  <text x="60" y="450" font-size="13" fill="#141421" font-weight="700" text-anchor="start">Views in Power BI Desktop</text>
+  <rect x="60" y="466" width="200" height="56" fill="#FFFFFF"/>
+  <text x="76" y="490" font-size="15" fill="#141421" font-weight="700" text-anchor="start">Report view</text>
+  <text x="76" y="510" font-size="13" fill="#70706F" text-anchor="start">build visuals</text>
+  <rect x="280" y="466" width="200" height="56" fill="#FFFFFF"/>
+  <text x="296" y="490" font-size="15" fill="#141421" font-weight="700" text-anchor="start">Table view</text>
+  <text x="296" y="510" font-size="13" fill="#70706F" text-anchor="start">inspect rows</text>
+  <rect x="500" y="466" width="200" height="56" fill="#FFFFFF"/>
+  <text x="516" y="490" font-size="15" fill="#141421" font-weight="700" text-anchor="start">Model view</text>
+  <text x="516" y="510" font-size="13" fill="#70706F" text-anchor="start">relationships</text>
+  <rect x="720" y="466" width="200" height="56" fill="#FFFFFF"/>
+  <text x="736" y="490" font-size="15" fill="#141421" font-weight="700" text-anchor="start">DAX query view</text>
+  <text x="736" y="510" font-size="13" fill="#70706F" text-anchor="start">run queries</text>
+  <rect x="940" y="466" width="200" height="56" fill="#FFFFFF"/>
+  <text x="956" y="490" font-size="15" fill="#141421" font-weight="700" text-anchor="start">TMDL view</text>
+  <text x="956" y="510" font-size="13" fill="#70706F" text-anchor="start">model as code</text>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="566" x2="1140" y2="566" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="602" font-size="20" fill="#141421">Transform in Power Query, <tspan font-weight="700">model in DAX, visualize in the report.</tspan></text>
+  <text x="1140" y="601" font-size="14" fill="#70706F" text-anchor="end">Close &amp; Apply = close the editor + load the data</text>
+</svg>

@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#141421"/>
+    </marker>
+    <marker id="head-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Load</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data shaping</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="300" lengthAdjust="spacing">Loading explained</text>
+  <rect x="368" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Only the finished business tables are loaded into the data model: the preparation stays behind the scenes.</text>
+
+  <!-- ==================== STANDARDIZED ==================== -->
+  <rect x="60" y="190" width="280" height="370" fill="#FFFFFF" filter="url(#card)"/>
+  <rect x="60" y="190" width="280" height="38" fill="#141421"/>
+  <text x="76" y="215" font-size="16" font-weight="700" fill="#F6F6F6">STANDARDIZED <tspan font-size="13" font-weight="400" fill="#A9AAAA">· stagings</tspan></text>
+
+  <rect x="76" y="255" width="14" height="11" fill="#FFFFFF" stroke="#70706F" stroke-width="1.2"/><rect x="76" y="255" width="14" height="4" fill="#C9DCE7"/>
+  <text x="98" y="265" font-size="13" font-style="italic" fill="#70706F">stg<tspan fill="#A9AAAA"> | </tspan>dimensions<tspan fill="#A9AAAA"> | </tspan>geography</text>
+  <rect x="76" y="295" width="14" height="11" fill="#FFFFFF" stroke="#70706F" stroke-width="1.2"/><rect x="76" y="295" width="14" height="4" fill="#C9DCE7"/>
+  <text x="98" y="305" font-size="13" font-style="italic" fill="#70706F">stg<tspan fill="#A9AAAA"> | </tspan>dimensions<tspan fill="#A9AAAA"> | </tspan>manufacturer</text>
+  <rect x="76" y="335" width="14" height="11" fill="#FFFFFF" stroke="#70706F" stroke-width="1.2"/><rect x="76" y="335" width="14" height="4" fill="#C9DCE7"/>
+  <text x="98" y="345" font-size="13" font-style="italic" fill="#70706F">stg<tspan fill="#A9AAAA"> | </tspan>dimensions<tspan fill="#A9AAAA"> | </tspan>product</text>
+  <rect x="76" y="375" width="14" height="11" fill="#FFFFFF" stroke="#70706F" stroke-width="1.2"/><rect x="76" y="375" width="14" height="4" fill="#C9DCE7"/>
+  <text x="98" y="385" font-size="13" font-style="italic" fill="#70706F">stg<tspan fill="#A9AAAA"> | </tspan>facts<tspan fill="#A9AAAA"> | </tspan>sales-is</text>
+  <rect x="76" y="415" width="14" height="11" fill="#FFFFFF" stroke="#70706F" stroke-width="1.2"/><rect x="76" y="415" width="14" height="4" fill="#C9DCE7"/>
+  <text x="98" y="425" font-size="13" font-style="italic" fill="#70706F">stg<tspan fill="#A9AAAA"> | </tspan>facts<tspan fill="#A9AAAA"> | </tspan>sales-us</text>
+
+  <line x1="60" y1="460" x2="340" y2="460" stroke="#D7D8D8"/>
+  <text x="200" y="492" font-size="13" fill="#70706F" text-anchor="middle">Clean, but still preparation:</text>
+  <text x="200" y="512" font-size="13" fill="#70706F" text-anchor="middle">shown in <tspan font-style="italic">italics</tspan> and kept as</text>
+  <text x="200" y="532" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">connection only</text>
+
+  <!-- ==================== The load queries (CURATED) ==================== -->
+  <rect x="420" y="190" width="360" height="370" fill="#FFFFFF" filter="url(#card)"/>
+  <rect x="420" y="190" width="360" height="38" fill="#141421"/>
+  <text x="436" y="215" font-size="16" font-weight="700" fill="#F6F6F6">CURATED <tspan font-size="13" font-weight="400" fill="#A9AAAA">· load queries</tspan></text>
+
+  <!-- feeds: stagings → curated -->
+  <path d="M296 261 C380 261 400 263 466 263" fill="none" stroke="#F39454" stroke-width="1.5" marker-end="url(#head-orange)"/>
+  <path d="M322 301 C380 301 400 303 466 303" fill="none" stroke="#F39454" stroke-width="1.5" marker-end="url(#head-orange)"/>
+  <path d="M286 341 C380 341 400 343 466 343" fill="none" stroke="#F39454" stroke-width="1.5" marker-end="url(#head-orange)"/>
+  <path d="M244 381 C380 381 400 383 466 383" fill="none" stroke="#F39454" stroke-width="1.5" marker-end="url(#head-orange)"/>
+  <path d="M248 421 C380 421 400 385 466 385" fill="none" stroke="#F39454" stroke-width="1.5" marker-end="url(#head-orange)"/>
+
+  <rect x="470" y="248" width="280" height="30" fill="#F6F6F6" stroke="#D7D8D8"/>
+  <rect x="482" y="257" width="16" height="12" fill="#FFFFFF" stroke="#141421" stroke-width="1.2"/><rect x="482" y="257" width="16" height="4" fill="#F39454"/>
+  <text x="508" y="268" font-size="14" font-weight="700" fill="#141421">Geography</text><text x="738" y="268" font-size="12" fill="#70706F" text-anchor="end">dimension</text>
+  <rect x="470" y="288" width="280" height="30" fill="#F6F6F6" stroke="#D7D8D8"/>
+  <rect x="482" y="297" width="16" height="12" fill="#FFFFFF" stroke="#141421" stroke-width="1.2"/><rect x="482" y="297" width="16" height="4" fill="#F39454"/>
+  <text x="508" y="308" font-size="14" font-weight="700" fill="#141421">Manufacturer</text><text x="738" y="308" font-size="12" fill="#70706F" text-anchor="end">dimension</text>
+  <rect x="470" y="328" width="280" height="30" fill="#F6F6F6" stroke="#D7D8D8"/>
+  <rect x="482" y="337" width="16" height="12" fill="#FFFFFF" stroke="#141421" stroke-width="1.2"/><rect x="482" y="337" width="16" height="4" fill="#F39454"/>
+  <text x="508" y="348" font-size="14" font-weight="700" fill="#141421">Product</text><text x="738" y="348" font-size="12" fill="#70706F" text-anchor="end">dimension</text>
+  <rect x="470" y="368" width="280" height="30" fill="#F6F6F6" stroke="#D7D8D8"/>
+  <rect x="482" y="377" width="16" height="12" fill="#FFFFFF" stroke="#141421" stroke-width="1.2"/><rect x="482" y="377" width="16" height="4" fill="#F39454"/>
+  <text x="508" y="388" font-size="14" font-weight="700" fill="#141421">Sales</text><text x="738" y="388" font-size="12" fill="#70706F" text-anchor="end">fact · IS + US</text>
+
+  <!-- mini Import Data dialog -->
+  <rect x="440" y="418" width="320" height="124" fill="#FFFFFF" stroke="#A9AAAA"/>
+  <rect x="440" y="418" width="320" height="24" fill="#D7D8D8"/>
+  <text x="452" y="435" font-size="12" font-weight="700" fill="#141421">Load To… <tspan font-weight="400" fill="#70706F">· Import Data</tspan></text>
+  <circle cx="460" cy="460" r="5" fill="#FFFFFF" stroke="#70706F" stroke-width="1.2"/><text x="472" y="464" font-size="12" fill="#A9AAAA">Table</text>
+  <circle cx="530" cy="460" r="5" fill="#FFFFFF" stroke="#70706F" stroke-width="1.2"/><text x="542" y="464" font-size="12" fill="#A9AAAA">PivotTable Report</text>
+  <circle cx="660" cy="460" r="5" fill="#FFFFFF" stroke="#70706F" stroke-width="1.2"/><text x="672" y="464" font-size="12" fill="#A9AAAA">PivotChart</text>
+  <circle cx="460" cy="486" r="5" fill="#FFFFFF" stroke="#141421" stroke-width="1.2"/><circle cx="460" cy="486" r="2.5" fill="#141421"/><text x="472" y="490" font-size="12" fill="#141421">Only Create Connection</text>
+  <rect x="448" y="502" width="304" height="28" fill="#FDE5D4"/>
+  <rect x="455" y="511" width="11" height="11" fill="#F39454" stroke="#141421" stroke-width="1"/><path d="M457 517 l2.5 2.5 l5 -5.5" fill="none" stroke="#141421" stroke-width="1.5"/>
+  <text x="472" y="521" font-size="12" font-weight="700" fill="#141421">Add this data to the Data Model</text>
+
+  <!-- arrow: curated → data model -->
+  <line x1="784" y1="330" x2="854" y2="330" stroke="#141421" stroke-width="2.5" marker-end="url(#head)"/>
+
+  <!-- ==================== Data model ==================== -->
+  <rect x="860" y="190" width="280" height="370" fill="#FFFFFF" filter="url(#card)"/>
+  <rect x="860" y="190" width="280" height="38" fill="#141421"/>
+  <text x="876" y="215" font-size="16" font-weight="700" fill="#F6F6F6">Data model <tspan font-size="13" font-weight="400" fill="#A9AAAA">· Power Pivot</tspan></text>
+
+  <!-- relationships -->
+  <line x1="935" y1="286" x2="935" y2="336" stroke="#70706F" stroke-width="1.5"/>
+  <line x1="990" y1="351" x2="1010" y2="351" stroke="#70706F" stroke-width="1.5"/>
+  <line x1="1065" y1="286" x2="1065" y2="336" stroke="#70706F" stroke-width="1.5"/>
+  <!-- tables -->
+  <rect x="880" y="256" width="110" height="30" fill="#FFFFFF" stroke="#141421" stroke-width="1.5"/><text x="935" y="276" font-size="13" fill="#141421" text-anchor="middle">Manufacturer</text>
+  <rect x="880" y="336" width="110" height="30" fill="#FFFFFF" stroke="#141421" stroke-width="1.5"/><text x="935" y="356" font-size="13" fill="#141421" text-anchor="middle">Product</text>
+  <rect x="1010" y="256" width="110" height="30" fill="#FFFFFF" stroke="#141421" stroke-width="1.5"/><text x="1065" y="276" font-size="13" fill="#141421" text-anchor="middle">Geography</text>
+  <rect x="1010" y="336" width="110" height="30" fill="#141421"/><text x="1065" y="356" font-size="13" font-weight="700" fill="#F6F6F6" text-anchor="middle">Sales</text>
+
+  <!-- check -->
+  <circle cx="1000" cy="412" r="18" fill="#F39454"/>
+  <path d="M991 412 l6 6 12 -13" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <line x1="860" y1="450" x2="1140" y2="450" stroke="#D7D8D8"/>
+  <text x="1000" y="482" font-size="13" fill="#70706F" text-anchor="middle">Dimensions and facts, linked by</text>
+  <text x="1000" y="502" font-size="13" fill="#70706F" text-anchor="middle">relationships, ready for</text>
+  <text x="1000" y="532" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">PivotTables · Cube Formulas</text>
+
+  <!-- ==================== Three things to remember ==================== -->
+  <rect x="60" y="592" width="340" height="66" fill="#FFFFFF" filter="url(#card)"/>
+  <circle cx="86" cy="615" r="12" fill="#F39454"/><text x="86" y="620" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="108" y="620" font-size="16" font-weight="700" fill="#141421">Only the final tables</text>
+  <text x="108" y="643" font-size="13" fill="#70706F">Only curated queries reach the data model.</text>
+
+  <rect x="430" y="592" width="340" height="66" fill="#FFFFFF" filter="url(#card)"/>
+  <circle cx="456" cy="615" r="12" fill="#F39454"/><text x="456" y="620" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="478" y="620" font-size="16" font-weight="700" fill="#141421">Business names</text>
+  <text x="478" y="643" font-size="13" fill="#70706F">Plain names your report users understand.</text>
+
+  <rect x="800" y="592" width="340" height="66" fill="#FFFFFF" filter="url(#card)"/>
+  <circle cx="826" cy="615" r="12" fill="#F39454"/><text x="826" y="620" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="848" y="620" font-size="16" font-weight="700" fill="#141421">One switch</text>
+  <text x="848" y="643" font-size="13" fill="#70706F">Load To… › Add this data to the Data Model.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="686" x2="1140" y2="686" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="720" font-size="16" fill="#141421"><tspan font-weight="700">In daily life:</tspan> only the finished dish goes to the table. The chopping and the pots stay in the kitchen.</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="720" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Model features · Aggregations</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="454" lengthAdjust="spacing">Manage aggregated tables</text>
+  <rect x="522" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">The visual never uses Sales (Agg) directly, yet the query is redirected to it.</text>
+  <text x="60" y="176" font-size="13" font-weight="700" fill="#141421">Before</text>
+  <rect x="60" y="190" width="520" height="150" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="190" width="520" height="36" fill="#141421"/>
+  <text x="74" y="214" font-size="15" font-weight="700" fill="#F6F6F6">Setup</text>
+  <text x="74" y="252" font-size="14" fill="#141421">1  Aggregated table in Import mode</text>
+  <text x="74" y="276" font-size="14" fill="#141421">2  Related dimension tables in Dual mode</text>
+  <text x="74" y="300" font-size="14" fill="#141421">3  Fact table in DirectQuery mode</text>
+  <text x="74" y="324" font-size="14" fill="#141421">4  Identical data types in both tables</text>
+  <text x="60" y="386" font-size="13" font-weight="700" fill="#141421">Then</text>
+  <rect x="60" y="400" width="520" height="150" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <rect x="60" y="400" width="520" height="36" fill="#141421"/>
+  <text x="74" y="424" font-size="15" font-weight="700" fill="#F6F6F6">Manage aggregations</text>
+  <text x="74" y="462" font-size="14" fill="#141421">1  Same Group by logic as the fact table</text>
+  <text x="74" y="486" font-size="14" fill="#141421">2  Same aggregations on the fact table fields</text>
+  <text x="74" y="510" font-size="14" fill="#141421">3  Hide the aggregated table</text>
+  <text x="74" y="534" font-size="14" fill="#141421">4  Report only on visible tables</text>
+  <text x="620" y="176" font-size="13" fill="#141421" font-weight="700" text-anchor="start">A visual on DimDate[CalendarYear] and FactInternetSales[SalesAmount] ...</text>
+  <rect x="620" y="190" width="520" height="166" fill="#141421"/>
+  <text x="640" y="216" font-size="13" fill="#F39454" font-weight="700" text-anchor="start">DAX query from the visual</text>
+  <text x="640" y="240" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">EVALUATE</text>
+  <text x="640" y="260" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">SUMMARIZECOLUMNS (</text>
+  <text x="640" y="280" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">    'DimDate'[CalendarYear],</text>
+  <text x="640" y="300" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">    "SumSalesAmount",</text>
+  <text x="640" y="320" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">    SUM ( 'FactInternetSales'[SalesAmount] )</text>
+  <text x="640" y="340" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">)</text>
+  <rect x="620" y="430" width="520" height="146" fill="#141421"/>
+  <text x="640" y="456" font-size="13" fill="#F39454" font-weight="700" text-anchor="start">... is answered by Sales (Agg)</text>
+  <text x="640" y="480" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">SELECT 'DimDate'[CalendarYear],</text>
+  <text x="640" y="500" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">    SUM ( 'Sales Agg'[Sales Amount Sum] )</text>
+  <text x="640" y="520" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">FROM 'Sales Agg'</text>
+  <text x="640" y="540" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">LEFT OUTER JOIN 'DimDate'</text>
+  <text x="640" y="560" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">    ON 'Sales Agg'[OrderDateKey] = 'DimDate'[DateKey]</text>
+  <line x1="880" y1="376" x2="880" y2="424" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="646" x2="1140" y2="646" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="682" font-size="20" fill="#141421">Report on the detail, <tspan font-weight="700">let the aggregation answer.</tspan></text>
+  <text x="1140" y="681" font-size="14" fill="#70706F" text-anchor="end">Hidden aggregation · visible detail tables</text>
+</svg>

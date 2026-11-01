@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Model features</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="197" lengthAdjust="spacing">Hierarchies</text>
+  <rect x="265" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">An ordered set of columns from one table lets users drill down from a high level to the detail.</text>
+  <rect x="60" y="170" width="520" height="380" fill="#FFFFFF"/>
+  <text x="80" y="200" font-size="17" fill="#141421" font-weight="700" text-anchor="start">Drill down</text>
+  <text x="80" y="220" font-size="13" fill="#70706F" text-anchor="start">From a high level to a detailed level</text>
+  <text x="80" y="276" font-size="12" fill="#70706F" font-weight="700" text-anchor="start">Year</text>
+  <rect x="170" y="250" width="300" height="40" fill="#FDE9DC" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <text x="186" y="276" font-size="15" fill="#141421" font-weight="700" text-anchor="start">2026</text>
+  <text x="540" y="276" font-size="14" fill="#141421" text-anchor="end">12.4 M</text>
+  <path d="M186 294 L186 310 L204 310" fill="none" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="80" y="346" font-size="12" fill="#70706F" font-weight="700" text-anchor="start">Quarter</text>
+  <rect x="210" y="320" width="260" height="40" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="226" y="346" font-size="15" fill="#141421" font-weight="700" text-anchor="start">Q1</text>
+  <text x="540" y="346" font-size="14" fill="#141421" text-anchor="end">3.1 M</text>
+  <path d="M226 364 L226 380 L244 380" fill="none" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="80" y="416" font-size="12" fill="#70706F" font-weight="700" text-anchor="start">Month</text>
+  <rect x="250" y="390" width="220" height="40" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="266" y="416" font-size="15" fill="#141421" font-weight="700" text-anchor="start">January</text>
+  <text x="540" y="416" font-size="14" fill="#141421" text-anchor="end">1.0 M</text>
+  <path d="M266 434 L266 450 L284 450" fill="none" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="80" y="486" font-size="12" fill="#70706F" font-weight="700" text-anchor="start">Day</text>
+  <rect x="290" y="460" width="180" height="40" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="306" y="486" font-size="15" fill="#141421" font-weight="700" text-anchor="start">1 January</text>
+  <text x="540" y="486" font-size="14" fill="#141421" text-anchor="end">32 K</text>
+  <text x="310" y="532" font-size="13" fill="#70706F" text-anchor="middle">each level filters the one below it</text>
+  <rect x="620" y="170" width="520" height="380" fill="#FFFFFF"/>
+  <text x="640" y="200" font-size="17" fill="#141421" font-weight="700" text-anchor="start">Defined in one table</text>
+  <text x="640" y="220" font-size="13" fill="#70706F" text-anchor="start">As shown in the Data pane</text>
+  <rect x="660" y="240" width="440" height="36" fill="#141421"/>
+  <text x="676" y="264" font-size="15" fill="#F6F6F6" font-weight="700" text-anchor="start">Date</text>
+  <rect x="660" y="276" width="440" height="30" fill="#FDE9DC" stroke="#D7D8D8"/>
+  <rect x="680" y="284" width="12" height="3" rx="1" fill="#F39454"/>
+  <rect x="684" y="289" width="8" height="3" rx="1" fill="#F39454"/>
+  <rect x="688" y="294" width="4" height="3" rx="1" fill="#F39454"/>
+  <text x="702" y="296" font-size="14" fill="#141421" font-weight="700" text-anchor="start">Calendar</text>
+  <text x="1088" y="296" font-size="12" fill="#70706F" text-anchor="end">hierarchy</text>
+  <rect x="660" y="306" width="440" height="30" fill="#FDE9DC" stroke="#D7D8D8"/>
+  <circle cx="710" cy="321" r="3" fill="#F39454"/>
+  <text x="722" y="326" font-size="14" fill="#141421" text-anchor="start">Year</text>
+  <rect x="660" y="336" width="440" height="30" fill="#FDE9DC" stroke="#D7D8D8"/>
+  <circle cx="710" cy="351" r="3" fill="#F39454"/>
+  <text x="722" y="356" font-size="14" fill="#141421" text-anchor="start">Quarter</text>
+  <rect x="660" y="366" width="440" height="30" fill="#FDE9DC" stroke="#D7D8D8"/>
+  <circle cx="710" cy="381" r="3" fill="#F39454"/>
+  <text x="722" y="386" font-size="14" fill="#141421" text-anchor="start">Month</text>
+  <rect x="660" y="396" width="440" height="30" fill="#FDE9DC" stroke="#D7D8D8"/>
+  <circle cx="710" cy="411" r="3" fill="#F39454"/>
+  <text x="722" y="416" font-size="14" fill="#141421" text-anchor="start">Day</text>
+  <rect x="660" y="426" width="440" height="30" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <rect x="680" y="435" width="12" height="12" rx="2" fill="none" stroke="#141421" stroke-width="1.2"/>
+  <text x="702" y="446" font-size="14" fill="#70706F" text-anchor="start">Date</text>
+  <rect x="660" y="456" width="440" height="30" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <rect x="680" y="465" width="12" height="12" rx="2" fill="none" stroke="#141421" stroke-width="1.2"/>
+  <text x="702" y="476" font-size="14" fill="#70706F" text-anchor="start">Month Number</text>
+  <rect x="660" y="486" width="440" height="30" fill="#FFFFFF" stroke="#D7D8D8"/>
+  <rect x="680" y="495" width="12" height="12" rx="2" fill="none" stroke="#141421" stroke-width="1.2"/>
+  <text x="702" y="506" font-size="14" fill="#70706F" text-anchor="start">Week</text>
+  <rect x="60" y="590" width="520" height="76" fill="#FFFFFF"/>
+  <rect x="60" y="590" width="4" height="76" fill="#F39454"/>
+  <circle cx="94" cy="628.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M89 628.0 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="120" y="622.0" font-size="17" font-weight="700" fill="#141421">Build hierarchies in your Date table</text>
+  <text x="120" y="646.0" font-size="13" fill="#70706F">Year › Quarter › Month › Day, fiscal or weeks.</text>
+  <rect x="620" y="590" width="520" height="76" fill="#FFFFFF"/>
+  <rect x="620" y="590" width="4" height="76" fill="#141421"/>
+  <circle cx="654" cy="628.0" r="11" fill="#F6F6F6" stroke="#141421" stroke-width="2"/><path d="M649.5 623.5 l9 9 m0 -9 l-9 9" stroke="#141421" stroke-width="2.5"/>
+  <text x="680" y="622.0" font-size="17" font-weight="700" fill="#141421">Auto date/time hierarchies</text>
+  <text x="680" y="646.0" font-size="13" fill="#70706F">A hidden table for every date column: disable it.</text>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="726" x2="1140" y2="726" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="762" font-size="20" fill="#141421">All levels of a hierarchy <tspan font-weight="700">come from one table.</tspan></text>
+  <text x="1140" y="761" font-size="14" fill="#70706F" text-anchor="end">Flatten snowflakes to build cross-level hierarchies</text>
+</svg>

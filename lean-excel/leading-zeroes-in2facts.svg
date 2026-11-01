@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700" width="1400" height="700" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>Two use cases for leading zeroes: fixed-length SAP numbers and IBAN account numbers</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <rect width="1400" height="700" fill="#F6F6F6"/>
+
+  <!-- Title -->
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#141421">Leading zeroes<tspan fill="#F39454">_</tspan></text>
+  <text x="60" y="118" font-size="20" fill="#70706F">Two use cases for the 0 placeholder: the value on layer 1 stays a number</text>
+
+  <!-- ============ Card 1: SAP numbers ============ -->
+  <g transform="translate(60,160)">
+    <rect x="0" y="0" width="620" height="500" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="52" height="52" fill="#141421"/>
+    <text x="50" y="59" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">SAP numbers</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">A Customer Id always has 8 characters</text>
+
+    <text x="24" y="124" font-size="14" font-weight="700" fill="#70706F" letter-spacing="1">FORMAT CODE</text>
+    <rect x="24" y="136" width="572" height="70" rx="8" fill="#F6F6F6"/>
+    <text x="310" y="184" font-family="Consolas, 'Courier New', monospace" font-size="40" fill="#141421" text-anchor="middle">00000000</text>
+
+    <text x="24" y="250" font-size="14" font-weight="700" fill="#70706F" letter-spacing="1">LAYER 1 · TYPED</text>
+    <text x="596" y="250" font-size="14" font-weight="700" fill="#70706F" letter-spacing="1" text-anchor="end">LAYER 2 · DISPLAYED</text>
+    <path d="M24 262 H596" stroke="#D7D8D8" stroke-width="2"/>
+    <g font-size="26">
+      <text x="24" y="304" fill="#70706F">1234</text>
+      <text x="310" y="304" fill="#F39454" text-anchor="middle">→</text>
+      <text x="596" y="304" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#141421" text-anchor="end"><tspan fill="#F39454">0000</tspan>1234</text>
+      <text x="24" y="348" fill="#70706F">56</text>
+      <text x="310" y="348" fill="#F39454" text-anchor="middle">→</text>
+      <text x="596" y="348" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#141421" text-anchor="end"><tspan fill="#F39454">000000</tspan>56</text>
+      <text x="24" y="392" fill="#70706F">98765</text>
+      <text x="310" y="392" fill="#F39454" text-anchor="middle">→</text>
+      <text x="596" y="392" font-family="Consolas, 'Courier New', monospace" font-weight="700" fill="#141421" text-anchor="end"><tspan fill="#F39454">000</tspan>98765</text>
+    </g>
+
+    <!-- Callout -->
+    <rect x="24" y="416" width="572" height="64" rx="8" fill="#F6F6F6"/>
+    <rect x="24" y="416" width="8" height="64" fill="#141421"/>
+    <text x="50" y="442" font-size="19" font-weight="700" fill="#141421">Typical use</text>
+    <text x="50" y="466" font-size="17" fill="#141421">Match customer or article ids exported from SAP</text>
+  </g>
+
+  <!-- ============ Card 2: IBAN account numbers ============ -->
+  <g transform="translate(720,160)">
+    <rect x="0" y="0" width="620" height="500" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="52" height="52" fill="#F39454"/>
+    <text x="50" y="59" font-size="28" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">IBAN account numbers</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">Type only the digits, the mask adds the rest</text>
+
+    <text x="24" y="124" font-size="14" font-weight="700" fill="#70706F" letter-spacing="1">FORMAT CODE</text>
+    <rect x="24" y="136" width="572" height="70" rx="8" fill="#F6F6F6"/>
+    <text x="310" y="181" font-family="Consolas, 'Courier New', monospace" font-size="26" fill="#141421" text-anchor="middle"><tspan fill="#F39454">"BE"</tspan>00<tspan fill="#F39454">"."</tspan>0000<tspan fill="#F39454">"."</tspan>0000<tspan fill="#F39454">"."</tspan>0000</text>
+
+    <text x="24" y="250" font-size="14" font-weight="700" fill="#70706F" letter-spacing="1">LAYER 1 · TYPED</text>
+    <text x="596" y="250" font-size="14" font-weight="700" fill="#70706F" letter-spacing="1" text-anchor="end">LAYER 2 · DISPLAYED</text>
+    <path d="M24 262 H596" stroke="#D7D8D8" stroke-width="2"/>
+    <text x="24" y="304" font-size="22" fill="#70706F">1002345678900</text>
+    <text x="236" y="304" font-size="26" fill="#F39454" text-anchor="middle">→</text>
+    <text x="596" y="304" font-family="Consolas, 'Courier New', monospace" font-size="24" font-weight="700" fill="#141421" text-anchor="end"><tspan fill="#F39454">BE0</tspan>1<tspan fill="#F39454">.</tspan>0023<tspan fill="#F39454">.</tspan>4567<tspan fill="#F39454">.</tspan>8900</text>
+    <g font-size="16" fill="#70706F">
+      <text x="24" y="346">• 13 digits typed, 14 zero placeholders: Excel adds the leading zero</text>
+      <text x="24" y="372">• <tspan fill="#141421">"BE"</tspan> and the dots are literals between double quotes</text>
+      <text x="24" y="398">• a dot between quotes is no thousands separator</text>
+    </g>
+
+    <!-- Callout -->
+    <rect x="24" y="416" width="572" height="64" rx="8" fill="#F6F6F6"/>
+    <rect x="24" y="416" width="8" height="64" fill="#F39454"/>
+    <text x="50" y="442" font-size="19" font-weight="700" fill="#141421">Typical use</text>
+    <text x="50" y="466" font-size="17" fill="#141421">Enter complex codes faster and without typing errors</text>
+  </g>
+</svg>

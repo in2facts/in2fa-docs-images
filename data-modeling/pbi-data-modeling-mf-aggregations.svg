@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="760" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Model features</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="228" lengthAdjust="spacing">Aggregations</text>
+  <rect x="296" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Summary queries are answered from a small in-memory table; only detailed queries reach the source.</text>
+  <rect x="60" y="300" width="180" height="64" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="150.0" y="329.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">DAX query</text>
+  <text x="150.0" y="350.0" font-size="13" fill="#70706F" text-anchor="middle">from a visual</text>
+  <polygon points="440,262 560,332 440,402 320,332" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <text x="440" y="326" font-size="14" fill="#141421" font-weight="700" text-anchor="middle">Can the aggregation</text>
+  <text x="440" y="346" font-size="14" fill="#141421" font-weight="700" text-anchor="middle">answer it?</text>
+  <line x1="244" y1="332" x2="314" y2="332" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="760" y="176" font-size="13" font-weight="700" fill="#141421">yes · aggregation table</text>
+  <rect x="760" y="190" width="380" height="126" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <rect x="760" y="190" width="380" height="36" fill="#141421"/>
+  <text x="774" y="214" font-size="15" font-weight="700" fill="#F6F6F6">Sales Agg</text>
+  <text x="774" y="252" font-size="14" fill="#141421">Import, in memory</text>
+  <text x="774" y="276" font-size="14" fill="#70706F">Grouped by date, product, customer</text>
+  <text x="774" y="300" font-size="14" fill="#70706F">Answers summary queries fast</text>
+  <text x="760" y="386" font-size="13" font-weight="700" fill="#141421">no · detail table</text>
+  <rect x="760" y="400" width="380" height="126" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="760" y="400" width="380" height="36" fill="#141421"/>
+  <text x="774" y="424" font-size="15" font-weight="700" fill="#F6F6F6">Sales</text>
+  <text x="774" y="462" font-size="14" fill="#141421">DirectQuery, in the source</text>
+  <text x="774" y="486" font-size="14" fill="#70706F">Every transaction</text>
+  <text x="774" y="510" font-size="14" fill="#70706F">Answers detailed queries</text>
+  <line x1="500" y1="292" x2="752" y2="260" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <rect x="601.5" y="267.0" width="37" height="26" fill="#F6F6F6"/>
+  <text x="620" y="286.0" font-size="13" fill="#70706F" text-anchor="middle">yes</text>
+  <line x1="500" y1="372" x2="752" y2="470" stroke="#70706F" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#head-sand)"/>
+  <rect x="605.0" y="407.0" width="30" height="26" fill="#F6F6F6"/>
+  <text x="620" y="426.0" font-size="13" fill="#70706F" text-anchor="middle">no</text>
+  <rect x="60" y="560" width="520" height="70" fill="#FFFFFF"/>
+  <rect x="60" y="560" width="4" height="70" fill="#F39454"/>
+  <circle cx="94" cy="595.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M89 595.0 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="120" y="589.0" font-size="17" font-weight="700" fill="#141421">User-defined aggregations</text>
+  <text x="120" y="613.0" font-size="13" fill="#70706F">Manage aggregations; dimensions in Dual mode.</text>
+  <rect x="620" y="560" width="520" height="70" fill="#FFFFFF"/>
+  <rect x="620" y="560" width="4" height="70" fill="#F39454"/>
+  <circle cx="654" cy="595.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M649 595.0 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="680" y="589.0" font-size="17" font-weight="700" fill="#141421">Automatic aggregations</text>
+  <text x="680" y="613.0" font-size="13" fill="#70706F">Built and tuned from the query log.</text>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="686" x2="1140" y2="686" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="722" font-size="20" fill="#141421">Answer the common questions <tspan font-weight="700">from memory.</tspan></text>
+  <text x="1140" y="721" font-size="14" fill="#70706F" text-anchor="end">Typical for DirectQuery and composite models</text>
+</svg>

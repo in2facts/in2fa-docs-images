@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700" width="1400" height="700" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <title>AutoSum dropdown menu showing SUM, AVERAGE, COUNT, MAX, MIN options and the result of each on the same range</title>
+  <!-- in2Facts palette: Mirage #141421, Sandstone #70706F, Iron #D7D8D8, Smoke #F6F6F6, Nebula #C9DCE7, Mango #F39454 -->
+  <rect width="1400" height="700" fill="#F6F6F6"/>
+
+  <!-- Title -->
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#141421">AutoSum dropdown<tspan fill="#F39454">_</tspan></text>
+  <text x="60" y="118" font-size="20" fill="#70706F">AutoSum is more than SUM: the arrow next to Σ offers four more functions</text>
+
+  <!-- ============ Card 1: the menu ============ -->
+  <g transform="translate(60,160)">
+    <rect x="0" y="0" width="420" height="500" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="52" height="52" fill="#141421"/>
+    <text x="50" y="59" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">The menu</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">Home → Editing → Σ</text>
+    <rect x="40" y="110" width="150" height="64" rx="4" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <text x="56" y="154" font-size="36" font-weight="700" fill="#141421">Σ</text>
+    <text x="92" y="149" font-size="17" fill="#141421">AutoSum</text>
+    <rect x="190" y="110" width="34" height="64" rx="4" fill="#FFFFFF" stroke="#F39454" stroke-width="2.5"/>
+    <path d="M199 138 h16 l-8 9 z" fill="#141421"/>
+    <text x="238" y="147" font-size="14" font-weight="700" fill="#F39454">click the arrow</text>
+    <rect x="40" y="186" width="300" height="258" rx="4" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="44" y="192" width="292" height="38" rx="3" fill="#C9DCE7"/>
+    <text x="62" y="219" font-size="20" font-weight="700" fill="#141421">Σ</text>
+    <text x="94" y="218" font-size="17" fill="#141421">Sum</text>
+    <text x="94" y="258" font-size="17" fill="#141421">Average</text>
+    <text x="94" y="298" font-size="17" fill="#141421">Count Numbers</text>
+    <text x="94" y="338" font-size="17" fill="#141421">Max</text>
+    <text x="94" y="378" font-size="17" fill="#141421">Min</text>
+    <path d="M52 396 H328" stroke="#D7D8D8" stroke-width="1.5"/>
+    <text x="94" y="426" font-size="17" fill="#141421">More Functions…</text>
+  </g>
+
+  <!-- ============ Card 2: what each one returns ============ -->
+  <g transform="translate(520,160)">
+    <rect x="0" y="0" width="820" height="500" rx="12" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="2"/>
+    <rect x="24" y="24" width="52" height="52" fill="#F39454"/>
+    <text x="50" y="59" font-size="28" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+    <text x="92" y="54" font-size="26" font-weight="700" fill="#141421">What each one returns</text>
+    <text x="92" y="76" font-size="16" fill="#70706F">Applied on the same four values</text>
+    <rect x="24" y="110" width="40" height="30" fill="#F6F6F6"/>
+    <rect x="64" y="110" width="100" height="30" fill="#F6F6F6"/>
+    <text x="114" y="131" font-size="14" font-weight="700" fill="#70706F" text-anchor="middle">B</text>
+    <rect x="24" y="140" width="40" height="40" fill="#F6F6F6"/>
+    <text x="44" y="166" font-size="14" fill="#70706F" text-anchor="middle">2</text>
+    <rect x="64" y="140" width="100" height="40" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+    <text x="154" y="167" font-size="18" fill="#141421" text-anchor="end">12</text>
+    <rect x="24" y="180" width="40" height="40" fill="#F6F6F6"/>
+    <text x="44" y="206" font-size="14" fill="#70706F" text-anchor="middle">3</text>
+    <rect x="64" y="180" width="100" height="40" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+    <text x="154" y="207" font-size="18" fill="#141421" text-anchor="end">30</text>
+    <rect x="24" y="220" width="40" height="40" fill="#F6F6F6"/>
+    <text x="44" y="246" font-size="14" fill="#70706F" text-anchor="middle">4</text>
+    <rect x="64" y="220" width="100" height="40" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+    <text x="154" y="247" font-size="18" fill="#141421" text-anchor="end">18</text>
+    <rect x="24" y="260" width="40" height="40" fill="#F6F6F6"/>
+    <text x="44" y="286" font-size="14" fill="#70706F" text-anchor="middle">5</text>
+    <rect x="64" y="260" width="100" height="40" fill="#FFFFFF" stroke="#D7D8D8" stroke-width="1"/>
+    <text x="154" y="287" font-size="18" fill="#141421" text-anchor="end">40</text>
+    <rect x="64" y="140" width="100" height="160" fill="none" stroke="#F39454" stroke-width="2.5" stroke-dasharray="6 4"/>
+    <text x="114" y="324" font-size="14" font-weight="700" fill="#F39454" text-anchor="middle">B2:B5</text>
+    <text x="204" y="128" font-size="14" font-weight="700" fill="#70706F" letter-spacing="1">MENU ITEM</text>
+    <text x="364" y="128" font-size="14" font-weight="700" fill="#70706F" letter-spacing="1">FORMULA</text>
+    <text x="604" y="128" font-size="14" font-weight="700" fill="#70706F" letter-spacing="1" text-anchor="end">RESULT</text>
+    <text x="632" y="128" font-size="14" font-weight="700" fill="#70706F" letter-spacing="1">CALCULATES</text>
+    <path d="M204 140 H796" stroke="#D7D8D8" stroke-width="2"/>
+    <text x="204" y="172" font-size="18" fill="#141421">Sum</text>
+    <text x="364" y="172" font-family="Consolas, 'Courier New', monospace" font-size="17" fill="#141421">=<tspan fill="#F39454" font-weight="700">SUM</tspan>(B2:B5)</text>
+    <text x="604" y="172" font-size="20" font-weight="700" fill="#141421" text-anchor="end">100</text>
+    <text x="632" y="172" font-size="15" fill="#70706F">Total of the range</text>
+    <path d="M204 188 H796" stroke="#F6F6F6" stroke-width="2"/>
+    <text x="204" y="216" font-size="18" fill="#141421">Average</text>
+    <text x="364" y="216" font-family="Consolas, 'Courier New', monospace" font-size="17" fill="#141421">=<tspan fill="#F39454" font-weight="700">AVERAGE</tspan>(B2:B5)</text>
+    <text x="604" y="216" font-size="20" font-weight="700" fill="#141421" text-anchor="end">25</text>
+    <text x="632" y="216" font-size="15" fill="#70706F">Arithmetic mean</text>
+    <path d="M204 232 H796" stroke="#F6F6F6" stroke-width="2"/>
+    <text x="204" y="260" font-size="18" fill="#141421">Count Numbers</text>
+    <text x="364" y="260" font-family="Consolas, 'Courier New', monospace" font-size="17" fill="#141421">=<tspan fill="#F39454" font-weight="700">COUNT</tspan>(B2:B5)</text>
+    <text x="604" y="260" font-size="20" font-weight="700" fill="#141421" text-anchor="end">4</text>
+    <text x="632" y="260" font-size="15" fill="#70706F">Number of numeric cells</text>
+    <path d="M204 276 H796" stroke="#F6F6F6" stroke-width="2"/>
+    <text x="204" y="304" font-size="18" fill="#141421">Max</text>
+    <text x="364" y="304" font-family="Consolas, 'Courier New', monospace" font-size="17" fill="#141421">=<tspan fill="#F39454" font-weight="700">MAX</tspan>(B2:B5)</text>
+    <text x="604" y="304" font-size="20" font-weight="700" fill="#141421" text-anchor="end">40</text>
+    <text x="632" y="304" font-size="15" fill="#70706F">Largest value</text>
+    <path d="M204 320 H796" stroke="#F6F6F6" stroke-width="2"/>
+    <text x="204" y="348" font-size="18" fill="#141421">Min</text>
+    <text x="364" y="348" font-family="Consolas, 'Courier New', monospace" font-size="17" fill="#141421">=<tspan fill="#F39454" font-weight="700">MIN</tspan>(B2:B5)</text>
+    <text x="604" y="348" font-size="20" font-weight="700" fill="#141421" text-anchor="end">12</text>
+    <text x="632" y="348" font-size="15" fill="#70706F">Smallest value</text>
+
+    <!-- Callout -->
+    <rect x="24" y="420" width="772" height="56" rx="8" fill="#F6F6F6"/>
+    <rect x="24" y="420" width="8" height="56" fill="#F39454"/>
+    <rect x="48" y="433" width="46" height="30" rx="5" fill="#FFFFFF" stroke="#141421" stroke-width="1.5"/><text x="71.0" y="454" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">Alt</text><text x="104" y="454" font-size="16" font-weight="700" fill="#141421">+</text><rect x="118" y="433" width="34" height="30" rx="5" fill="#FFFFFF" stroke="#141421" stroke-width="1.5"/><text x="135.0" y="454" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">=</text>
+    <text x="168" y="454" font-size="16" fill="#141421">always inserts SUM: use the dropdown for the other functions</text>
+  </g>
+</svg>

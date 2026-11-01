@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="660" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Introduction</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data shaping</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="250" lengthAdjust="spacing">ETL explained</text>
+  <rect x="318" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Three simple steps to get data from where it lives to where you can analyse it.</text>
+
+  <!-- ==================== 1. Extract ==================== -->
+  <circle cx="72" cy="194" r="12" fill="#F39454"/><text x="72" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <text x="92" y="200" font-size="16" font-weight="700" fill="#141421">Extract <tspan font-size="13" font-weight="400" fill="#70706F">· get the data</tspan></text>
+  <rect x="60" y="214" width="300" height="260" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="214" width="300" height="36" fill="#141421"/>
+  <text x="74" y="238" font-size="15" font-weight="700" fill="#F6F6F6"><tspan fill="#F39454">E</tspan>xtract</text>
+
+  <!-- database -->
+  <path d="M94 282 v44 a26 8 0 0 0 52 0 v-44" fill="#F6F6F6" stroke="#70706F" stroke-width="1.5"/>
+  <ellipse cx="120" cy="282" rx="26" ry="8" fill="#FFFFFF" stroke="#70706F" stroke-width="1.5"/>
+  <path d="M94 304 a26 8 0 0 0 52 0" fill="none" stroke="#A9AAAA" stroke-width="1.2"/>
+  <!-- spreadsheet -->
+  <rect x="184" y="274" width="52" height="60" fill="#FFFFFF" stroke="#70706F" stroke-width="1.5"/>
+  <rect x="184" y="274" width="52" height="12" fill="#70706F"/>
+  <line x1="184" y1="298" x2="236" y2="298" stroke="#A9AAAA"/><line x1="184" y1="310" x2="236" y2="310" stroke="#A9AAAA"/><line x1="184" y1="322" x2="236" y2="322" stroke="#A9AAAA"/>
+  <line x1="201" y1="286" x2="201" y2="334" stroke="#A9AAAA"/><line x1="218" y1="286" x2="218" y2="334" stroke="#A9AAAA"/>
+  <!-- text file -->
+  <path d="M274 274 h34 l14 14 v46 h-48 z" fill="#FFFFFF" stroke="#70706F" stroke-width="1.5"/>
+  <path d="M308 274 v14 h14" fill="none" stroke="#70706F" stroke-width="1.5"/>
+  <line x1="282" y1="298" x2="314" y2="298" stroke="#A9AAAA" stroke-width="2"/><line x1="282" y1="308" x2="314" y2="308" stroke="#A9AAAA" stroke-width="2"/><line x1="282" y1="318" x2="304" y2="318" stroke="#A9AAAA" stroke-width="2"/>
+
+  <text x="120" y="356" font-size="12" fill="#70706F" text-anchor="middle">database</text>
+  <text x="210" y="356" font-size="12" fill="#70706F" text-anchor="middle">Excel</text>
+  <text x="298" y="356" font-size="12" fill="#70706F" text-anchor="middle">text / csv</text>
+
+  <text x="210" y="390" font-size="15" fill="#141421" text-anchor="middle">Pull the data from the</text>
+  <text x="210" y="410" font-size="15" fill="#141421" text-anchor="middle">places where it lives today.</text>
+  <line x1="60" y1="430" x2="360" y2="430" stroke="#D7D8D8"/>
+  <text x="210" y="457" font-size="14" font-style="italic" fill="#70706F" text-anchor="middle">In the kitchen: buy the groceries</text>
+
+  <!-- arrow 1 → 2 -->
+  <line x1="368" y1="344" x2="440" y2="344" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+
+  <!-- ==================== 2. Transform ==================== -->
+  <circle cx="462" cy="194" r="12" fill="#F39454"/><text x="462" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <text x="482" y="200" font-size="16" font-weight="700" fill="#141421">Transform <tspan font-size="13" font-weight="400" fill="#70706F">· shape the data</tspan></text>
+  <rect x="450" y="214" width="300" height="260" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="450" y="214" width="300" height="36" fill="#141421"/>
+  <text x="464" y="238" font-size="15" font-weight="700" fill="#F6F6F6"><tspan fill="#F39454">T</tspan>ransform</text>
+
+  <!-- messy rows -->
+  <rect x="494" y="276" width="58" height="10" fill="#A9AAAA" transform="rotate(-6 523 281)"/>
+  <rect x="504" y="294" width="34" height="10" fill="#D7D8D8"/>
+  <rect x="488" y="312" width="70" height="10" fill="#A9AAAA" transform="rotate(5 523 317)"/>
+  <rect x="510" y="328" width="22" height="10" fill="#D7D8D8" transform="rotate(-4 521 333)"/>
+  <!-- magic wand -->
+  <line x1="578" y1="306" x2="620" y2="306" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <path d="M598 288 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 z" fill="#F39454"/>
+  <!-- tidy rows -->
+  <rect x="640" y="276" width="70" height="10" fill="#141421"/>
+  <rect x="640" y="294" width="70" height="10" fill="#F39454"/>
+  <rect x="640" y="312" width="70" height="10" fill="#F39454"/>
+  <rect x="640" y="328" width="70" height="10" fill="#F39454"/>
+
+  <text x="523" y="356" font-size="12" fill="#70706F" text-anchor="middle">messy</text>
+  <text x="675" y="356" font-size="12" fill="#70706F" text-anchor="middle">tidy</text>
+
+  <text x="600" y="390" font-size="15" fill="#141421" text-anchor="middle">Clean, filter and reshape</text>
+  <text x="600" y="410" font-size="15" fill="#141421" text-anchor="middle">the data so it is consistent.</text>
+  <line x1="450" y1="430" x2="750" y2="430" stroke="#D7D8D8"/>
+  <text x="600" y="457" font-size="14" font-style="italic" fill="#70706F" text-anchor="middle">In the kitchen: wash, cut and cook</text>
+
+  <!-- arrow 2 → 3 -->
+  <line x1="758" y1="344" x2="830" y2="344" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+
+  <!-- ==================== 3. Load ==================== -->
+  <circle cx="852" cy="194" r="12" fill="#F39454"/><text x="852" y="199" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="872" y="200" font-size="16" font-weight="700" fill="#141421">Load <tspan font-size="13" font-weight="400" fill="#70706F">· store the data</tspan></text>
+  <rect x="840" y="214" width="300" height="260" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="840" y="214" width="300" height="36" fill="#141421"/>
+  <text x="854" y="238" font-size="15" font-weight="700" fill="#F6F6F6"><tspan fill="#F39454">L</tspan>oad</text>
+
+  <!-- target table -->
+  <rect x="924" y="274" width="120" height="64" fill="#FFFFFF" stroke="#70706F" stroke-width="1.5"/>
+  <rect x="924" y="274" width="120" height="14" fill="#141421"/>
+  <line x1="924" y1="304" x2="1044" y2="304" stroke="#D7D8D8"/><line x1="924" y1="321" x2="1044" y2="321" stroke="#D7D8D8"/>
+  <line x1="964" y1="288" x2="964" y2="338" stroke="#D7D8D8"/><line x1="1004" y1="288" x2="1004" y2="338" stroke="#D7D8D8"/>
+  <!-- check -->
+  <circle cx="1048" cy="336" r="13" fill="#F39454"/>
+  <path d="M1041 336 l5 5 9 -10" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="990" y="364" font-size="12" fill="#70706F" text-anchor="middle">ready-to-use table</text>
+
+  <text x="990" y="390" font-size="15" fill="#141421" text-anchor="middle">Put the result where your</text>
+  <text x="990" y="410" font-size="15" fill="#141421" text-anchor="middle">reports and dashboards use it.</text>
+  <line x1="840" y1="430" x2="1140" y2="430" stroke="#D7D8D8"/>
+  <text x="990" y="457" font-size="14" font-style="italic" fill="#70706F" text-anchor="middle">In the kitchen: serve on the plate</text>
+
+  <!-- ==================== Layers ==================== -->
+  <text x="60" y="500" font-size="14" font-weight="700" fill="#141421">Naming convention <tspan font-weight="400" fill="#70706F">· and its medallion architecture counterpart</tspan></text>
+  <rect x="60" y="514" width="300" height="70" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="514" width="6" height="70" fill="#C98B4F"/>
+  <text x="82" y="540" font-size="15" font-weight="700" fill="#141421">RAW <tspan font-size="13" font-weight="400" fill="#70706F">· prefix </tspan><tspan font-size="13" font-style="italic" fill="#70706F">cnn</tspan></text>
+  <circle cx="91" cy="563" r="9" fill="#C98B4F" stroke="#8C5A2B" stroke-width="1.5"/>
+  <text x="108" y="568" font-size="14" fill="#141421"><tspan font-weight="700">Bronze</tspan><tspan fill="#70706F"> · as extracted</tspan></text>
+  <rect x="450" y="514" width="300" height="70" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="450" y="514" width="6" height="70" fill="#D7D8D8"/>
+  <text x="472" y="540" font-size="15" font-weight="700" fill="#141421">STANDARDIZED <tspan font-size="13" font-weight="400" fill="#70706F">· prefix </tspan><tspan font-size="13" font-style="italic" fill="#70706F">stg</tspan></text>
+  <circle cx="481" cy="563" r="9" fill="#D7D8D8" stroke="#8A8B8B" stroke-width="1.5"/>
+  <text x="498" y="568" font-size="14" fill="#141421"><tspan font-weight="700">Silver</tspan><tspan fill="#70706F"> · cleansed and shaped</tspan></text>
+  <rect x="840" y="514" width="300" height="70" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="840" y="514" width="6" height="70" fill="#E8C14E"/>
+  <text x="862" y="540" font-size="15" font-weight="700" fill="#141421">CURATED <tspan font-size="13" font-weight="400" fill="#70706F">· groups </tspan><tspan font-size="13" font-style="italic" fill="#70706F">dimensions · facts</tspan></text>
+  <circle cx="871" cy="563" r="9" fill="#E8C14E" stroke="#A88620" stroke-width="1.5"/>
+  <text x="888" y="568" font-size="14" fill="#141421"><tspan font-weight="700">Gold</tspan><tspan fill="#70706F"> · business-ready</tspan></text>
+
+  <!-- Footer note -->
+  <rect x="60" y="604" width="4" height="34" fill="#F39454"/>
+  <text x="76" y="618" font-size="14" font-weight="700" fill="#141421">Good to know</text>
+  <text x="76" y="636" font-size="14" fill="#70706F">The original source is never changed: ETL only creates a new, shaped copy of the data. Only the curated layer is loaded into the model.</text>
+</svg>

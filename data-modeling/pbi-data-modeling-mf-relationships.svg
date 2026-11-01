@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="760" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Relationships</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="420" lengthAdjust="spacing">Cardinality and direction</text>
+  <rect x="488" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Each dimension relates to the fact table on a key column: one row on the 1-side, many rows on the <tspan font-family="Arial, sans-serif">*</tspan>-side.</text>
+  <text x="60" y="196" font-size="13" font-weight="700" fill="#141421">Dimension · one-side</text>
+  <rect x="60" y="210" width="260" height="102" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="210" width="260" height="36" fill="#141421"/>
+  <text x="74" y="234" font-size="15" font-weight="700" fill="#F6F6F6">Product</text>
+  <text x="74" y="272" font-size="14" fill="#141421">Key  PK</text>
+  <text x="74" y="296" font-size="14" fill="#70706F">Name, Category</text>
+  <text x="470" y="196" font-size="13" font-weight="700" fill="#141421">Dimension · one-side</text>
+  <rect x="470" y="210" width="260" height="102" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="470" y="210" width="260" height="36" fill="#141421"/>
+  <text x="484" y="234" font-size="15" font-weight="700" fill="#F6F6F6">Customer</text>
+  <text x="484" y="272" font-size="14" fill="#141421">Key  PK</text>
+  <text x="484" y="296" font-size="14" fill="#70706F">Name, City</text>
+  <text x="880" y="196" font-size="13" font-weight="700" fill="#141421">Dimension · one-side</text>
+  <rect x="880" y="210" width="260" height="102" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="880" y="210" width="260" height="36" fill="#141421"/>
+  <text x="894" y="234" font-size="15" font-weight="700" fill="#F6F6F6">Date</text>
+  <text x="894" y="272" font-size="14" fill="#141421">Date  PK</text>
+  <text x="894" y="296" font-size="14" fill="#70706F">Year, Month</text>
+  <text x="420" y="426" font-size="13" font-weight="700" fill="#141421">Fact · many-side</text>
+  <rect x="420" y="440" width="360" height="150" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <rect x="420" y="440" width="360" height="36" fill="#141421"/>
+  <text x="434" y="464" font-size="15" font-weight="700" fill="#F6F6F6">Sales</text>
+  <text x="434" y="502" font-size="14" fill="#141421">Product Key  FK</text>
+  <text x="434" y="526" font-size="14" fill="#141421">Customer Key  FK</text>
+  <text x="434" y="550" font-size="14" fill="#141421">Date  FK</text>
+  <text x="434" y="574" font-size="14" fill="#70706F">Sales Amount, Units</text>
+  <line x1="190" y1="324" x2="374.5" y2="432" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="204" y="348" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#141421" text-anchor="start">1</text>
+  <text x="360.5" y="424" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="end">*</text>
+  <line x1="600" y1="324" x2="600.0" y2="432" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="614" y="348" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#141421" text-anchor="start">1</text>
+  <text x="614.0" y="424" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="start">*</text>
+  <line x1="1010" y1="324" x2="825.5" y2="432" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="1024" y="348" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#141421" text-anchor="start">1</text>
+  <text x="839.5" y="424" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="start">*</text>
+  <rect x="60" y="470" width="320" height="76" fill="#FFFFFF"/>
+  <rect x="60" y="470" width="4" height="76" fill="#F39454"/>
+  <circle cx="94" cy="508.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M89 508.0 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="120" y="502.0" font-size="17" font-weight="700" fill="#141421">One-to-many (1 → <tspan font-family="Arial, sans-serif">*</tspan>)</text>
+  <text x="120" y="526.0" font-size="13" fill="#70706F">The default, recommended type.</text>
+  <rect x="820" y="470" width="320" height="76" fill="#FFFFFF"/>
+  <rect x="820" y="470" width="4" height="76" fill="#F39454"/>
+  <circle cx="854" cy="508.0" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M849 508.0 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="880" y="502.0" font-size="17" font-weight="700" fill="#141421">Single direction</text>
+  <text x="880" y="526.0" font-size="13" fill="#70706F">Filters flow from 1 to <tspan font-family="Arial, sans-serif">*</tspan>.</text>
+  <rect x="820" y="562" width="320" height="76" fill="#FFFFFF"/>
+  <rect x="820" y="562" width="4" height="76" fill="#141421"/>
+  <circle cx="854" cy="600.0" r="11" fill="#F6F6F6" stroke="#141421" stroke-width="2"/><path d="M849.5 595.5 l9 9 m0 -9 l-9 9" stroke="#141421" stroke-width="2.5"/>
+  <text x="880" y="594.0" font-size="17" font-weight="700" fill="#141421">Both directions</text>
+  <text x="880" y="618.0" font-size="13" fill="#70706F">Use with care: CROSSFILTER instead.</text>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="686" x2="1140" y2="686" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="722" font-size="20" fill="#141421">Filters flow <tspan font-weight="700">from the one-side to the many-side.</tspan></text>
+  <text x="1140" y="721" font-size="14" fill="#70706F" text-anchor="end">Inactive relationship? USERELATIONSHIP</text>
+</svg>

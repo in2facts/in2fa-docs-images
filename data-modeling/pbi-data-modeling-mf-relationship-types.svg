@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Components of a data model</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="322" lengthAdjust="spacing">Relationship types</text>
+  <rect x="390" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">A relationship connects two tables on a column from each table. Three cardinalities exist.</text>
+  <rect x="60" y="170" width="340" height="360" fill="#FFFFFF"/>
+  <text x="80" y="202" font-size="18" fill="#141421" font-weight="700" text-anchor="start">One-to-many</text>
+  <text x="80" y="224" font-size="14" fill="#70706F" text-anchor="start">1 → <tspan font-family="Arial, sans-serif">*</tspan></text>
+  <rect x="60" y="490" width="340" height="40" fill="#FFFFFF"/>
+  <rect x="60" y="490" width="4" height="40" fill="#F39454"/>
+  <text x="80" y="516" font-size="15" fill="#141421" font-weight="700" text-anchor="start">Recommended default</text>
+  <rect x="430" y="170" width="340" height="360" fill="#FFFFFF"/>
+  <text x="450" y="202" font-size="18" fill="#141421" font-weight="700" text-anchor="start">One-to-one</text>
+  <text x="450" y="224" font-size="14" fill="#70706F" text-anchor="start">1 → 1</text>
+  <rect x="430" y="490" width="340" height="40" fill="#FFFFFF"/>
+  <rect x="430" y="490" width="4" height="40" fill="#A9AAAA"/>
+  <text x="450" y="516" font-size="15" fill="#141421" font-weight="700" text-anchor="start">Rare: consider merging</text>
+  <rect x="800" y="170" width="340" height="360" fill="#FFFFFF"/>
+  <text x="820" y="202" font-size="18" fill="#141421" font-weight="700" text-anchor="start">Many-to-many</text>
+  <text x="820" y="224" font-size="14" fill="#70706F" text-anchor="start"><tspan font-family="Arial, sans-serif">*</tspan> → <tspan font-family="Arial, sans-serif">*</tspan></text>
+  <rect x="800" y="490" width="340" height="40" fill="#FFFFFF"/>
+  <rect x="800" y="490" width="4" height="40" fill="#141421"/>
+  <text x="820" y="516" font-size="15" fill="#141421" font-weight="700" text-anchor="start">Use a bridge table</text>
+  <rect x="160" y="250" width="140" height="48" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="230.0" y="271.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Product</text>
+  <text x="230.0" y="292.0" font-size="13" fill="#70706F" text-anchor="middle">unique key</text>
+  <rect x="160" y="400" width="140" height="48" fill="#141421" stroke="#141421" stroke-width="1" filter="url(#card)"/>
+  <text x="230.0" y="421.0" font-size="16" font-weight="700" fill="#F6F6F6" text-anchor="middle">Sales</text>
+  <text x="230.0" y="442.0" font-size="13" fill="#A9AAAA" text-anchor="middle">key repeats</text>
+  <line x1="230" y1="304" x2="230" y2="394" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="244" y="324" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#141421" text-anchor="start">1</text>
+  <text x="244" y="390" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="start">*</text>
+  <rect x="530" y="250" width="140" height="48" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="600.0" y="271.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Customer</text>
+  <text x="600.0" y="292.0" font-size="13" fill="#70706F" text-anchor="middle">unique key</text>
+  <rect x="530" y="400" width="140" height="48" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="600.0" y="421.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Customer Details</text>
+  <text x="600.0" y="442.0" font-size="13" fill="#70706F" text-anchor="middle">unique key</text>
+  <line x1="600" y1="304" x2="600" y2="394" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="614" y="324" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#141421" text-anchor="start">1</text>
+  <text x="614" y="390" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#141421" text-anchor="start">1</text>
+  <rect x="830" y="250" width="130" height="48" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="895.0" y="271.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Customer</text>
+  <text x="895.0" y="292.0" font-size="13" fill="#70706F" text-anchor="middle">unique key</text>
+  <rect x="980" y="250" width="130" height="48" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="1045.0" y="271.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Account</text>
+  <text x="1045.0" y="292.0" font-size="13" fill="#70706F" text-anchor="middle">unique key</text>
+  <rect x="895" y="400" width="150" height="48" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <text x="970.0" y="421.0" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Customer Account</text>
+  <text x="970.0" y="442.0" font-size="13" fill="#70706F" text-anchor="middle">bridge table</text>
+  <line x1="895" y1="304" x2="940" y2="394" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <line x1="1045" y1="304" x2="1000" y2="394" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="880" y="330" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#141421" text-anchor="start">1</text>
+  <text x="1060" y="330" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#141421" text-anchor="end">1</text>
+  <text x="926" y="392" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="end">*</text>
+  <text x="1014" y="392" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#141421" text-anchor="start">*</text>
+  <text x="970" y="470" font-size="13" fill="#70706F" text-anchor="middle">two one-to-many relationships</text>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="606" x2="1140" y2="606" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="642" font-size="20" fill="#141421">Design for <tspan font-weight="700">one-to-many relationships.</tspan></text>
+  <text x="1140" y="641" font-size="14" fill="#70706F" text-anchor="end">Cardinality ≠ cross-filter direction</text>
+</svg>

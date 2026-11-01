@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="520" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Section overview</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="317" lengthAdjust="spacing">Model foundations</text>
+  <rect x="385" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">From the building blocks of a semantic model to the internals of the VertiPaq engine.</text>
+  <circle cx="72" cy="190" r="12" fill="#F39454"/><text x="72" y="195" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">1</text>
+  <rect x="60" y="220" width="192" height="174" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="60" y="220" width="192" height="36" fill="#141421"/>
+  <text x="74" y="244" font-size="15" font-weight="700" fill="#F6F6F6">Building blocks</text>
+  <text x="74" y="282" font-size="14" fill="#141421">Data flow</text>
+  <text x="74" y="306" font-size="14" fill="#141421">Data model</text>
+  <text x="74" y="330" font-size="14" fill="#141421">Facts</text>
+  <text x="74" y="354" font-size="14" fill="#141421">Dimensions</text>
+  <text x="74" y="378" font-size="14" fill="#141421">Relationships</text>
+  <line x1="256" y1="238" x2="278" y2="238" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <circle cx="294" cy="190" r="12" fill="#F39454"/><text x="294" y="195" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">2</text>
+  <rect x="282" y="220" width="192" height="174" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="282" y="220" width="192" height="36" fill="#141421"/>
+  <text x="296" y="244" font-size="15" font-weight="700" fill="#F6F6F6">Schemas</text>
+  <text x="296" y="282" font-size="14" fill="#141421">Flat</text>
+  <text x="296" y="306" font-size="14" fill="#141421">Star</text>
+  <text x="296" y="330" font-size="14" fill="#141421">Snowflake</text>
+  <text x="296" y="354" font-size="14" fill="#141421">Granularity</text>
+  <line x1="478" y1="238" x2="500" y2="238" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <circle cx="516" cy="190" r="12" fill="#F39454"/><text x="516" y="195" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <rect x="504" y="220" width="192" height="174" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="504" y="220" width="192" height="36" fill="#141421"/>
+  <text x="518" y="244" font-size="15" font-weight="700" fill="#F6F6F6">Storage modes</text>
+  <text x="518" y="282" font-size="14" fill="#141421">Live connection</text>
+  <text x="518" y="306" font-size="14" fill="#141421">DirectQuery</text>
+  <text x="518" y="330" font-size="14" fill="#141421">Import</text>
+  <text x="518" y="354" font-size="14" fill="#141421">Direct Lake</text>
+  <line x1="700" y1="238" x2="722" y2="238" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <circle cx="738" cy="190" r="12" fill="#F39454"/><text x="738" y="195" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">4</text>
+  <rect x="726" y="220" width="192" height="174" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="726" y="220" width="192" height="36" fill="#141421"/>
+  <text x="740" y="244" font-size="15" font-weight="700" fill="#F6F6F6">Engine internals</text>
+  <text x="740" y="282" font-size="14" fill="#141421">Column store</text>
+  <text x="740" y="306" font-size="14" fill="#141421">In-memory</text>
+  <text x="740" y="330" font-size="14" fill="#141421">Encoding</text>
+  <text x="740" y="354" font-size="14" fill="#141421">Compression</text>
+  <line x1="922" y1="238" x2="944" y2="238" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <circle cx="960" cy="190" r="12" fill="#F39454"/><text x="960" y="195" font-size="14" font-weight="700" fill="#141421" text-anchor="middle">5</text>
+  <rect x="948" y="220" width="192" height="174" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <rect x="948" y="220" width="192" height="36" fill="#141421"/>
+  <text x="962" y="244" font-size="15" font-weight="700" fill="#F6F6F6">Model features</text>
+  <text x="962" y="282" font-size="14" fill="#141421">Data types</text>
+  <text x="962" y="306" font-size="14" fill="#141421">Hierarchies</text>
+  <text x="962" y="330" font-size="14" fill="#141421">Sort by column</text>
+  <text x="962" y="354" font-size="14" fill="#141421">Synonyms</text>
+  <text x="962" y="378" font-size="14" fill="#141421">Aggregations</text>
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="446" x2="1140" y2="446" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="482" font-size="20" fill="#141421">Understand the engine <tspan font-weight="700">before you write DAX.</tspan></text>
+  <text x="1140" y="481" font-size="14" fill="#70706F" text-anchor="end">29 topics · 5 parts</text>
+</svg>

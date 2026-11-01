@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" font-family="'Segoe Print', 'Bradley Hand', 'Marker Felt', 'Comic Sans MS', cursive">
+  <defs>
+    <!-- hand-drawn wobble for the line art (text stays crisp) -->
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <marker id="tip" viewBox="0 0 14 14" refX="12" refY="7" markerWidth="14" markerHeight="14" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L12 7 L1 13" fill="none" stroke="#141421" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="720" fill="#FFFFFF"/>
+
+  <!-- ==================== Title ==================== -->
+  <rect x="56" y="50" width="366" height="30" fill="#FFE94D" transform="rotate(-1 239 65)"/>
+  <text x="64" y="76" font-size="30" fill="#141421" letter-spacing="1">ETL IN THE KITCHEN</text>
+  <text x="64" y="112" font-family="Circe, 'Segoe UI', Arial, sans-serif" font-size="17" fill="#70706F">From the shop to the plate, in three steps.</text>
+
+  <!-- ==================== Line art ==================== -->
+  <g filter="url(#rough)" stroke="#141421" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" fill="none">
+
+    <!-- SHOP (external data source) -->
+    <g transform="translate(-34 -62)">
+      <rect x="168" y="248" width="150" height="128" fill="#E2DDD0" stroke="none"/>
+      <rect x="158" y="238" width="150" height="128" fill="#FFFFFF"/>
+      <path d="M150 238 h166 l-6 -26 h-154 z" fill="#F39454"/>
+      <path d="M150 238 q10.4 14 20.8 0 q10.4 14 20.8 0 q10.4 14 20.8 0 q10.4 14 20.8 0 q10.4 14 20.8 0 q10.4 14 20.8 0 q10.4 14 20.8 0 q10.4 14 20.8 0 z" fill="#FFFFFF"/>
+      <path d="M186 212 l-4 26 M216 212 l-2 26 M248 212 v26 M280 212 l2 26"/>
+      <path d="M172 270 h122 M172 304 h122"/>
+      <circle cx="186" cy="260" r="7" fill="#E8604C"/><circle cx="204" cy="260" r="7" fill="#E8604C"/><circle cx="222" cy="260" r="7" fill="#E8604C"/>
+      <circle cx="270" cy="258" r="10" fill="#7DBB4C"/>
+      <path d="M182 278 l5 18 l5 -18 z M198 278 l5 18 l5 -18 z M214 278 l5 18 l5 -18 z" fill="#F39454"/>
+      <ellipse cx="268" cy="292" rx="16" ry="7" fill="#E3B866"/>
+      <path d="M200 366 v-44 h66 v44" fill="#C9DCE7"/>
+      <path d="M233 322 v44"/>
+    </g>
+
+    <!-- 1 · extract -->
+    <path d="M300 236 H600" marker-end="url(#tip)"/>
+
+    <!-- RAW: the basket with groceries -->
+    <rect x="658" y="158" width="220" height="142" fill="#E2DDD0" stroke="none"/>
+    <rect x="650" y="150" width="220" height="142" fill="#FFFFFF"/>
+    <path d="M722 236 l-8 -30 l12 2 z M738 236 l-4 -34 l12 4 z" fill="#F39454"/>
+    <path d="M720 204 l2 -10 M736 200 l0 -10" stroke="#7DBB4C" stroke-width="3"/>
+    <circle cx="768" cy="226" r="12" fill="#E8604C"/>
+    <circle cx="792" cy="222" r="14" fill="#7DBB4C"/>
+    <ellipse cx="804" cy="212" rx="8" ry="26" fill="#E3B866" transform="rotate(30 804 212)"/>
+    <path d="M722 240 q38 -56 76 0" />
+    <path d="M708 240 h104 l-12 40 h-80 z" fill="#C99A4E"/>
+    <path d="M716 256 h88 M720 268 h80" stroke-width="2"/>
+
+    <!-- crossed out: changing the source -->
+    <path d="M948 156 L1118 252" stroke="#F26B3A" stroke-width="4.5"/>
+    <path d="M1112 152 L952 258" stroke="#F26B3A" stroke-width="4.5"/>
+
+    <!-- 2 · transform -->
+    <path d="M760 340 V432" marker-end="url(#tip)"/>
+
+    <!-- STANDARDIZED: the kitchen -->
+    <rect x="608" y="453" width="292" height="160" fill="#E2DDD0" stroke="none"/>
+    <rect x="600" y="445" width="292" height="160" fill="#FFFFFF"/>
+    <!-- recipe card -->
+    <rect x="618" y="470" width="78" height="104" fill="#FFF7E0" transform="rotate(-3 657 522)"/>
+    <!-- pot with steam -->
+    <path d="M736 494 q-6 -8 0 -16 q6 -8 0 -16 M758 490 q-6 -8 0 -16 q6 -8 0 -16 M780 494 q-6 -8 0 -16 q6 -8 0 -16" stroke="#A9AAAA"/>
+    <rect x="718" y="512" width="84" height="52" rx="6" fill="#A9AAAA"/>
+    <path d="M714 512 q44 -16 92 0" fill="#D7D8D8"/>
+    <circle cx="760" cy="500" r="4" fill="#141421"/>
+    <path d="M708 524 h10 M802 524 h10"/>
+    <!-- cutting board -->
+    <rect x="820" y="560" width="62" height="12" rx="3" fill="#E3B866"/>
+    <circle cx="834" cy="553" r="6" fill="#F39454"/><circle cx="850" cy="553" r="6" fill="#F39454"/><circle cx="866" cy="553" r="6" fill="#E8604C"/>
+    <path d="M714 586 h96" stroke-width="2"/>
+
+    <!-- every refresh: loop -->
+    <path d="M896 486 q60 -24 70 34 q6 56 -62 62" marker-end="url(#tip)"/>
+
+    <!-- 3 · load -->
+    <path d="M590 528 H392" marker-end="url(#tip)"/>
+
+    <!-- CURATED: guests at the table -->
+    <ellipse cx="225" cy="522" rx="138" ry="116" fill="#F7F4EC"/>
+    <!-- guest 1 -->
+    <path d="M160 548 V482 q0 -22 26 -22 q26 0 26 22 V548 z" fill="#CFE3F0"/>
+    <path d="M200 464 q12 6 12 20 V548 h-12 z" fill="#B5CDDD" stroke="none"/>
+    <path d="M160 548 V482 q0 -22 26 -22 q26 0 26 22 V548 z"/>
+    <path d="M186 464 l-5 6 l3 3 l-4 34 l6 9 l6 -9 l-4 -34 l3 -3 z" fill="#FFE94D" stroke-width="2"/>
+    <ellipse cx="186" cy="426" rx="17" ry="22" fill="#FFFFFF"/>
+    <path d="M160 488 q-18 -6 -16 -34"/><circle cx="144" cy="452" r="3" fill="#141421"/>
+    <!-- guest 2 -->
+    <path d="M238 548 V482 q0 -22 26 -22 q26 0 26 22 V548 z" fill="#D8EBCB"/>
+    <path d="M278 464 q12 6 12 20 V548 h-12 z" fill="#BCD9A8" stroke="none"/>
+    <path d="M238 548 V482 q0 -22 26 -22 q26 0 26 22 V548 z"/>
+    <ellipse cx="264" cy="426" rx="17" ry="22" fill="#FFFFFF"/>
+    <path d="M290 488 q18 -6 16 -34"/><circle cx="306" cy="452" r="3" fill="#141421"/>
+    <!-- table and plate -->
+    <path d="M110 560 H340"/>
+    <ellipse cx="225" cy="556" rx="46" ry="10" fill="#FFFFFF"/>
+    <path d="M196 554 q29 -40 58 0 z" fill="#F39454"/>
+    <circle cx="214" cy="540" r="4" fill="#7DBB4C"/><circle cx="232" cy="534" r="4" fill="#7DBB4C"/><circle cx="240" cy="546" r="3.5" fill="#E8604C"/>
+  </g>
+
+  <!-- ==================== Labels on the drawings ==================== -->
+  <text x="200" y="336" font-size="22" fill="#141421" text-anchor="middle">SHOP</text>
+  <text x="200" y="358" font-family="Circe, 'Segoe UI', Arial, sans-serif" font-size="15" fill="#70706F" text-anchor="middle">the external data source</text>
+
+  <rect x="728" y="140" width="64" height="20" fill="#FFFFFF"/>
+  <text x="760" y="157" font-size="19" fill="#141421" text-anchor="middle">RAW</text>
+  <text x="760" y="320" font-family="Circe, 'Segoe UI', Arial, sans-serif" font-size="15" fill="#70706F" text-anchor="middle">cnn | … · connection only</text>
+
+  <text x="1032" y="200" font-size="21" fill="#141421" text-anchor="middle">CHANGE</text>
+  <text x="1032" y="232" font-size="21" fill="#141421" text-anchor="middle">THE SHOP</text>
+  <text x="1032" y="288" font-family="Circe, 'Segoe UI', Arial, sans-serif" font-size="15" fill="#70706F" text-anchor="middle">Extracting never</text>
+  <text x="1032" y="308" font-family="Circe, 'Segoe UI', Arial, sans-serif" font-size="15" fill="#70706F" text-anchor="middle">changes the source.</text>
+
+  <rect x="676" y="435" width="168" height="20" fill="#FFFFFF"/>
+  <text x="760" y="452" font-size="19" fill="#141421" text-anchor="middle">STANDARDIZED</text>
+  <g font-family="Circe, 'Segoe UI', Arial, sans-serif" font-size="12" fill="#141421" transform="rotate(-3 657 522)">
+    <text x="628" y="494" font-weight="700">RECIPE</text>
+    <text x="628" y="514">1 wash</text><text x="628" y="530">2 peel</text>
+    <text x="628" y="546">3 cut</text><text x="628" y="562">4 cook</text>
+  </g>
+  <text x="746" y="632" font-family="Circe, 'Segoe UI', Arial, sans-serif" font-size="15" fill="#70706F" text-anchor="middle">stg | … · the recipe for clean data</text>
+  <text x="1028" y="514" font-size="17" fill="#141421">EVERY</text>
+  <text x="1028" y="540" font-size="17" fill="#141421">REFRESH</text>
+  <text x="1028" y="564" font-family="Circe, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#70706F">same steps,</text>
+  <text x="1028" y="582" font-family="Circe, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#70706F">new groceries</text>
+
+  <rect x="174" y="650" width="104" height="26" fill="#FFE94D" transform="rotate(-1 226 663)"/>
+  <text x="226" y="671" font-size="21" fill="#141421" text-anchor="middle">CURATED</text>
+  <text x="226" y="698" font-family="Circe, 'Segoe UI', Arial, sans-serif" font-size="15" fill="#70706F" text-anchor="middle">dimensions and facts in the data model</text>
+
+  <!-- ==================== Steps ==================== -->
+  <g stroke="#141421" stroke-width="2.5" fill="#FFE94D">
+    <circle cx="450" cy="150" r="17"/>
+    <circle cx="800" cy="386" r="17"/>
+    <circle cx="491" cy="440" r="17"/>
+  </g>
+  <g font-size="20" fill="#141421" text-anchor="middle">
+    <text x="450" y="158">1</text><text x="800" y="394">2</text><text x="491" y="448">3</text>
+  </g>
+  <g fill="#FFE94D">
+    <rect x="383" y="180" width="134" height="28" transform="rotate(-1.5 450 194)"/>
+    <rect x="826" y="372" width="166" height="28" transform="rotate(1 909 386)"/>
+    <rect x="451" y="470" width="80" height="28" transform="rotate(-1 491 484)"/>
+  </g>
+  <g font-size="23" fill="#141421" text-anchor="middle">
+    <text x="450" y="202">EXTRACT</text>
+    <text x="909" y="394">TRANSFORM</text>
+    <text x="491" y="492">LOAD</text>
+  </g>
+  <g font-family="Circe, 'Segoe UI', Arial, sans-serif" font-size="15" fill="#70706F" text-anchor="middle">
+    <text x="450" y="264">Power Query asks the shop</text>
+    <text x="909" y="420">Power Query follows the recipe</text>
+    <text x="491" y="556">Power Pivot sets the table</text>
+  </g>
+</svg>
