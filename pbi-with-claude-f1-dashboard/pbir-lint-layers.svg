@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 880" width="1200" height="880">
+  <title>pbir_lint: four layers, cheapest first</title>
+
+  <rect width="1200" height="880" fill="#f6f6f6"/>
+
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+
+    <!-- ── heading ─────────────────────────────────────────────── -->
+    <text x="60" y="56" font-size="30" fill="#151722">pbir_lint: four layers, cheapest first</text>
+    <text x="60" y="84" font-size="16" fill="#6e6e6e">One file. One command. Four checks that see different things, reporting into a single list.</text>
+
+    <!-- the command -->
+    <rect x="60" y="104" width="1080" height="46" rx="8" fill="#252d3b"/>
+    <text x="84" y="134" font-size="17" font-family="Consolas, monospace" fill="#ffffff">python scripts/pbir_lint.py</text>
+    <text x="372" y="133" font-size="14" fill="#9a9da6">runs all four, every time, unless a flag says otherwise</text>
+
+    <!-- ── column headings ─────────────────────────────────────── -->
+    <g font-size="14" letter-spacing="1" fill="#6e6e6e">
+      <text x="84" y="186">THE LAYER</text>
+      <text x="394" y="186">WHAT IT READS</text>
+      <text x="608" y="186">WHAT IT CATCHES — AND WHAT IT CANNOT SEE</text>
+    </g>
+
+    <!-- ══ layer 1 ══════════════════════════════════════════════ -->
+    <rect x="60" y="200" width="1080" height="110" rx="8" fill="#ffffff"/>
+    <rect x="60" y="200" width="6" height="110" rx="3" fill="#252d3b"/>
+    <circle cx="100" cy="234" r="16" fill="#252d3b"/>
+    <text x="100" y="240" font-size="15" fill="#ffffff" text-anchor="middle">1</text>
+    <text x="128" y="241" font-size="21" fill="#151722">SCHEMA</text>
+    <text x="128" y="266" font-size="13.5" fill="#6e6e6e">the official Microsoft</text>
+    <text x="128" y="285" font-size="13.5" fill="#6e6e6e">schemas, bundled in</text>
+    <text x="128" y="304" font-size="13.5" font-family="Consolas, monospace" fill="#6e6e6e">references/</text>
+
+    <text x="394" y="238" font-size="14" fill="#151722">the report JSON</text>
+    <text x="394" y="260" font-size="14" fill="#151722">the bundled schemas</text>
+
+    <text x="608" y="230" font-size="14.5" fill="#151722">Structural damage — malformed JSON, a broken projection.</text>
+    <text x="608" y="254" font-size="14.5" fill="#c0392b">Blind to field wells and object names: it types</text>
+    <text x="938" y="254" font-size="14" font-family="Consolas, monospace" fill="#c0392b">visualType</text>
+    <text x="1032" y="254" font-size="14.5" fill="#c0392b">as</text>
+    <text x="608" y="274" font-size="14.5" fill="#c0392b">"any string", so an invented property passes cleanly.</text>
+    <text x="608" y="297" font-size="13" font-family="Consolas, monospace" fill="#f2955a">schema.missing · schema.unavailable</text>
+
+    <!-- ══ layer 2 ══════════════════════════════════════════════ -->
+    <rect x="60" y="322" width="1080" height="110" rx="8" fill="#ffffff"/>
+    <rect x="60" y="322" width="6" height="110" rx="3" fill="#252d3b"/>
+    <circle cx="100" cy="356" r="16" fill="#252d3b"/>
+    <text x="100" y="362" font-size="15" fill="#ffffff" text-anchor="middle">2</text>
+    <text x="128" y="363" font-size="21" fill="#151722">RULES</text>
+    <text x="128" y="388" font-size="13.5" fill="#6e6e6e">the in2Facts field</text>
+    <text x="128" y="407" font-size="13.5" fill="#6e6e6e">notes, as executable</text>
+    <text x="128" y="426" font-size="13.5" fill="#6e6e6e">checks</text>
+
+    <text x="394" y="360" font-size="14" fill="#151722">the report JSON</text>
+
+    <text x="608" y="352" font-size="14.5" fill="#151722">Properties that do not exist, wrong field wells, invented shapes.</text>
+    <text x="608" y="376" font-size="14.5" fill="#151722">Where the expensive mistakes live — layer 1 sees none of them.</text>
+    <text x="608" y="399" font-size="13.5" fill="#5f6b7f">You watched this fire when a field well changed Values → Columns.</text>
+    <text x="608" y="420" font-size="13" font-family="Consolas, monospace" fill="#f2955a">prop.invented · prop.invalid · selector.value · grid.wrongobject</text>
+
+    <!-- ══ layer 3 ══════════════════════════════════════════════ -->
+    <rect x="60" y="444" width="1080" height="118" rx="8" fill="#ffffff"/>
+    <rect x="60" y="444" width="6" height="118" rx="3" fill="#f2955a"/>
+    <circle cx="100" cy="478" r="16" fill="#f2955a"/>
+    <text x="100" y="484" font-size="15" fill="#151722" text-anchor="middle">3</text>
+    <text x="128" y="485" font-size="21" fill="#151722">REFERENCES</text>
+    <text x="128" y="510" font-size="13.5" fill="#6e6e6e">every Entity/Property</text>
+    <text x="128" y="529" font-size="13.5" fill="#6e6e6e">resolved against your</text>
+    <text x="128" y="548" font-size="13.5" fill="#6e6e6e">model</text>
+
+    <text x="394" y="478" font-size="14" fill="#151722">the report JSON</text>
+    <text x="394" y="500" font-size="14" fill="#151722" font-weight="600">your TMDL</text>
+    <text x="394" y="522" font-size="12.5" fill="#f2955a">the only layer that</text>
+    <text x="394" y="539" font-size="12.5" fill="#f2955a">opens your model</text>
+
+    <text x="608" y="474" font-size="14.5" fill="#151722">A visual pointing at a measure that was renamed, or never existed.</text>
+    <text x="608" y="498" font-size="14.5" fill="#151722">Invisible until you look at the rendered page — it renders blank,</text>
+    <text x="608" y="518" font-size="14.5" fill="#151722">with no error.</text>
+    <text x="608" y="543" font-size="13" font-family="Consolas, monospace" fill="#f2955a">ref.object · ref.table · ref.imageurl · model.notfound · slicer.numeric</text>
+
+    <!-- ══ layer 4 ══════════════════════════════════════════════ -->
+    <rect x="60" y="574" width="1080" height="118" rx="8" fill="#ffffff"/>
+    <rect x="60" y="574" width="6" height="118" rx="3" fill="#252d3b"/>
+    <circle cx="100" cy="608" r="16" fill="#252d3b"/>
+    <text x="100" y="614" font-size="15" fill="#ffffff" text-anchor="middle">4</text>
+    <text x="128" y="615" font-size="21" fill="#151722">APPEARANCE</text>
+    <text x="128" y="640" font-size="13.5" fill="#6e6e6e">does this page belong</text>
+    <text x="128" y="659" font-size="13.5" fill="#6e6e6e">to the same report as</text>
+    <text x="128" y="678" font-size="13.5" fill="#6e6e6e">the others?</text>
+
+    <text x="394" y="608" font-size="14" fill="#151722">pages · page metadata</text>
+    <text x="394" y="630" font-size="14" fill="#151722">visuals · the model</text>
+
+    <text x="608" y="604" font-size="14.5" fill="#151722">Five rules: the canvas size · navigation on every page · visuals on</text>
+    <text x="608" y="624" font-size="14.5" fill="#151722">the grid · colours from the palette · the tab strip agreeing with the</text>
+    <text x="608" y="644" font-size="14.5" fill="#151722">folders on disk.</text>
+    <text x="608" y="668" font-size="13.5" fill="#5f6b7f">The frame, never the content — so your pages and somebody else's both pass.</text>
+    <text x="608" y="686" font-size="13" font-family="Consolas, monospace" fill="#f2955a">card.aspect · page.canvas · layout.offcanvas · theme.palette</text>
+
+    <!-- ── one report ──────────────────────────────────────────── -->
+    <rect x="60" y="706" width="1080" height="72" rx="8" fill="#e8ecf3"/>
+    <text x="84" y="733" font-size="17" fill="#151722">All four append to one findings list</text>
+    <text x="84" y="757" font-size="14" fill="#5f6b7f">sorted ERROR → WARN → INFO, printed as one report, ending in a single line —</text>
+    <text x="640" y="757" font-size="14" font-family="Consolas, monospace" fill="#151722">3 error(s), 0 warning(s)</text>
+    <text x="862" y="757" font-size="14" fill="#5f6b7f">· exit 1 if any error</text>
+
+    <!-- ── flags and decoder ───────────────────────────────────── -->
+    <g font-size="14">
+      <text x="60" y="808" font-size="13" letter-spacing="1" fill="#6e6e6e">THE ONLY WAY TO RUN FEWER</text>
+      <text x="60" y="832" font-family="Consolas, monospace" fill="#151722">--schema-only</text>
+      <text x="196" y="832" fill="#5f6b7f">stops after layer 1 — watch the schemas miss what layer 2 catches</text>
+      <text x="60" y="854" font-family="Consolas, monospace" fill="#151722">--no-appearance</text>
+      <text x="196" y="854" fill="#5f6b7f">skips layer 4 only</text>
+
+      <text x="700" y="808" font-size="13" letter-spacing="1" fill="#6e6e6e">READING A FINDING: THE PREFIX NAMES THE LAYER</text>
+      <text x="700" y="832" font-size="13" font-family="Consolas, monospace" fill="#f2955a">schema.</text>
+      <text x="760" y="832" font-size="13" fill="#5f6b7f">→ 1</text>
+      <text x="800" y="832" font-size="13" font-family="Consolas, monospace" fill="#f2955a">prop. selector. grid. proj.</text>
+      <text x="1010" y="832" font-size="13" fill="#5f6b7f">→ 2</text>
+      <text x="700" y="852" font-size="13" font-family="Consolas, monospace" fill="#f2955a">ref. model. slicer.</text>
+      <text x="845" y="852" font-size="13" fill="#5f6b7f">→ 3</text>
+      <text x="885" y="852" font-size="13" font-family="Consolas, monospace" fill="#f2955a">card. page. layout. theme.</text>
+      <text x="1085" y="852" font-size="13" fill="#5f6b7f">→ 4</text>
+    </g>
+
+    <text x="60" y="876" font-size="14.5" fill="#151722">🎓 Measured, not asserted: of seven real mistakes from the original build, the official schemas caught two.</text>
+  </g>
+</svg>
