@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <title>Why Python and not Power Query: three reasons, and the counter-argument</title>
+  <rect width="1200" height="700" fill="#f6f6f6"/>
+
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="60" y="44" font-size="15" letter-spacing="1" fill="#6e6e6e">WHY PYTHON AND NOT POWER QUERY</text>
+    <text x="60" y="76" font-size="22" font-weight="700" fill="#151722">A trade, not a rule. Three reasons it went this way here.</text>
+
+    <!-- column headers -->
+    <rect x="400" y="104" width="360" height="40" rx="8" fill="#151722"/>
+    <text x="580" y="130" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">Python  ·  <tspan font-family="Consolas, 'Courier New', monospace">export_csv.py</tspan></text>
+    <rect x="780" y="104" width="360" height="40" rx="8" fill="#d9dadb"/>
+    <text x="960" y="130" font-size="16" font-weight="700" fill="#151722" text-anchor="middle">Power Query  ·  M in the model</text>
+
+    <!-- row 1 -->
+    <circle cx="80" cy="196" r="18" fill="#f2955a"/>
+    <text x="80" y="202" font-size="17" font-weight="700" fill="#151722" text-anchor="middle">1</text>
+    <text x="110" y="191" font-size="17" font-weight="700" fill="#151722">Deeply nested data</text>
+    <text x="110" y="213" font-size="14" fill="#6e6e6e">one object per season, results inside rounds</text>
+    <rect x="400" y="160" width="360" height="76" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <text x="420" y="192" font-size="15" fill="#151722">Flattening is ordinary code: a loop per</text>
+    <text x="420" y="214" font-size="15" fill="#151722">table, still readable six months later.</text>
+    <rect x="780" y="160" width="360" height="76" rx="8" fill="#ffffff" stroke="#d9dadb" stroke-width="2"/>
+    <text x="800" y="192" font-size="15" fill="#151722">A wall of <tspan font-family="Consolas, 'Courier New', monospace" font-size="14">Table.ExpandRecordColumn</tspan></text>
+    <text x="800" y="214" font-size="15" fill="#151722">per table. Writable, not readable later.</text>
+
+    <!-- row 2 -->
+    <circle cx="80" cy="292" r="18" fill="#f2955a"/>
+    <text x="80" y="298" font-size="17" font-weight="700" fill="#151722" text-anchor="middle">2</text>
+    <text x="110" y="287" font-size="17" font-weight="700" fill="#151722">It checks its own output</text>
+    <text x="110" y="309" font-size="14" fill="#6e6e6e">the reason this chapter exists</text>
+    <rect x="400" y="256" width="360" height="76" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <text x="420" y="288" font-size="15" fill="#151722">Adds up its own rows, compares them with</text>
+    <text x="420" y="310" font-size="15" fill="#151722">the API's standings, refuses before writing.</text>
+    <rect x="780" y="256" width="360" height="76" rx="8" fill="#ffffff" stroke="#d9dadb" stroke-width="2"/>
+    <text x="800" y="288" font-size="15" fill="#151722">A refresh that succeeds says nothing</text>
+    <text x="800" y="310" font-size="15" fill="#151722">about whether the totals add up.</text>
+
+    <!-- row 3 -->
+    <circle cx="80" cy="388" r="18" fill="#f2955a"/>
+    <text x="80" y="394" font-size="17" font-weight="700" fill="#151722" text-anchor="middle">3</text>
+    <text x="110" y="383" font-size="17" font-weight="700" fill="#151722">The change stays reviewable</text>
+    <text x="110" y="405" font-size="14" fill="#6e6e6e">what moved between two versions?</text>
+    <rect x="400" y="352" width="360" height="76" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <text x="420" y="384" font-size="15" fill="#151722"><tspan font-family="Consolas, 'Courier New', monospace" font-size="14">git diff</tspan> shows, line by line, what</text>
+    <text x="420" y="406" font-size="15" fill="#151722">changed in the transformation.</text>
+    <rect x="780" y="352" width="360" height="76" rx="8" fill="#ffffff" stroke="#d9dadb" stroke-width="2"/>
+    <text x="800" y="384" font-size="15" fill="#151722">Inside a .pbix or .pbip: one line of altered</text>
+    <text x="800" y="406" font-size="15" fill="#151722">query text, no way to tell what moved.</text>
+
+    <!-- the counter-argument -->
+    <rect x="60" y="460" width="1080" height="150" rx="8" fill="#ffffff" stroke="#f2955a" stroke-width="3"/>
+    <text x="84" y="494" font-size="13" letter-spacing="1" fill="#151722">THE COUNTER-ARGUMENT IS REAL, AND WORTH STATING PROPERLY</text>
+    <rect x="84" y="512" width="500" height="74" rx="8" fill="#f6f6f6"/>
+    <text x="104" y="542" font-size="16" font-weight="700" fill="#151722">One file instead of two</text>
+    <text x="104" y="566" font-size="15" fill="#151722">The transformation lives in the model it feeds.</text>
+    <rect x="616" y="512" width="500" height="74" rx="8" fill="#f6f6f6"/>
+    <text x="636" y="542" font-size="16" font-weight="700" fill="#151722">No Python where it refreshes</text>
+    <text x="636" y="566" font-size="15" fill="#151722">Nothing extra on the machine that runs the refresh.</text>
+
+    <!-- the point -->
+    <text x="600" y="648" font-size="18" font-weight="700" fill="#151722" text-anchor="middle">If those matter more to you, the trade goes the other way, and you would be right.</text>
+    <text x="600" y="674" font-size="15" fill="#6e6e6e" text-anchor="middle">What transfers is noticing that a trade was being made at all.</text>
+  </g>
+</svg>
