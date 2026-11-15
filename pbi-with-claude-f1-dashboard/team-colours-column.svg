@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640">
+  <title>Carry the team colours onto the Team table: one copy, not a second one in DAX</title>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#9a9da6"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="640" fill="#f6f6f6"/>
+
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+
+    <!-- ============ 1. the one column the API lacks ============ -->
+    <text x="60" y="58" font-size="15" letter-spacing="1" fill="#6e6e6e">1 · THE ONE COLUMN THE API DOES NOT PUBLISH</text>
+
+    <!-- API -->
+    <rect x="60" y="86" width="300" height="96" rx="8" fill="#c8dce8"/>
+    <text x="80" y="116" font-size="16" font-weight="700" fill="#151722" font-family="Consolas, 'Courier New', monospace">constructors</text>
+    <text x="80" y="142" font-size="14" fill="#3b4150">ID · Name · Nationality</text>
+    <text x="80" y="166" font-size="14" fill="#c0392b" font-weight="700">no colour</text>
+
+    <!-- build.py -->
+    <rect x="60" y="204" width="300" height="96" rx="8" fill="#151722"/>
+    <text x="80" y="232" font-size="16" font-weight="700" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">build.py</text>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#e6e7ea">
+      <text x="80" y="256">TEAM_COLOURS = {</text>
+      <text x="96" y="274">"McLaren": <tspan fill="#f2955a">"#FF8000"</tspan>, …</text>
+      <text x="80" y="292">}</text>
+    </g>
+
+    <line x1="366" y1="134" x2="412" y2="160" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+    <line x1="366" y1="252" x2="412" y2="226" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+
+    <!-- Team.csv -->
+    <rect x="420" y="86" width="420" height="214" rx="8" fill="#ffffff" stroke="#d9dadb" stroke-width="2"/>
+    <rect x="676" y="96" width="150" height="188" rx="4" fill="#f2955a" fill-opacity="0.18"/>
+    <g font-size="14" fill="#6e6e6e">
+      <text x="440" y="118">Team</text>
+      <text x="560" y="118">Nationality</text>
+      <text x="688" y="118" fill="#151722" font-weight="700">Colour</text>
+    </g>
+    <line x1="436" y1="130" x2="824" y2="130" stroke="#d9dadb" stroke-width="1.5"/>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#151722">
+      <text x="440" y="158">McLaren</text><text x="560" y="158">British</text><text x="688" y="158">#FF8000</text>
+      <text x="440" y="190">Ferrari</text><text x="560" y="190">Italian</text><text x="688" y="190">#E8002D</text>
+      <text x="440" y="222">Mercedes</text><text x="560" y="222">German</text><text x="688" y="222">#27F4D2</text>
+      <text x="440" y="254">Red Bull</text><text x="560" y="254">Austrian</text><text x="688" y="254">#3671C6</text>
+      <text x="440" y="280" fill="#9a9da6">…</text>
+    </g>
+    <rect x="796" y="146" width="16" height="16" rx="3" fill="#FF8000"/>
+    <rect x="796" y="178" width="16" height="16" rx="3" fill="#E8002D"/>
+    <rect x="796" y="210" width="16" height="16" rx="3" fill="#27F4D2"/>
+    <rect x="796" y="242" width="16" height="16" rx="3" fill="#3671C6"/>
+    <text x="440" y="326" font-size="14" fill="#2f8f5b" font-weight="700">✓ <tspan font-family="Consolas, 'Courier New', monospace">Team.csv</tspan> carries the colour, next to the team</text>
+
+    <!-- say it -->
+    <rect x="880" y="86" width="260" height="214" rx="8" fill="#ffffff" stroke="#d9dadb" stroke-width="2"/>
+    <text x="900" y="118" font-size="17" font-weight="700" fill="#151722">Say it in the prompt</text>
+    <g font-size="15" fill="#151722" font-style="italic">
+      <text x="900" y="152">“Add a Colour column to</text>
+      <text x="900" y="174">Team, from TEAM_COLOURS</text>
+      <text x="900" y="196">in build.py.”</text>
+    </g>
+    <g font-size="14" fill="#6e6e6e">
+      <text x="900" y="240">An agent cannot propose</text>
+      <text x="900" y="260">a column it cannot see. This</text>
+      <text x="900" y="280">is the one you have to name.</text>
+    </g>
+
+    <!-- ============ 2. one copy or two ============ -->
+    <text x="60" y="378" font-size="15" letter-spacing="1" fill="#6e6e6e">2 · SKIP IT, AND THE COLOURS GET WRITTEN A SECOND TIME</text>
+
+    <!-- one copy -->
+    <rect x="60" y="396" width="520" height="180" rx="8" fill="#ffffff" stroke="#d9dadb" stroke-width="2"/>
+    <text x="84" y="428" font-size="18" font-weight="700" fill="#151722">One copy</text>
+    <text x="556" y="428" font-size="18" font-weight="700" fill="#2f8f5b" text-anchor="end">✓</text>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="14" text-anchor="middle">
+      <rect x="84" y="460" width="124" height="44" rx="6" fill="#151722"/>
+      <text x="146" y="487" fill="#ffffff">build.py</text>
+      <rect x="244" y="460" width="140" height="44" rx="6" fill="#c8dce8"/>
+      <text x="314" y="487" fill="#151722">Team[Colour]</text>
+      <rect x="420" y="460" width="136" height="44" rx="6" fill="#ffffff" stroke="#d9dadb" stroke-width="2"/>
+      <text x="488" y="487" fill="#151722">report</text>
+    </g>
+    <line x1="210" y1="482" x2="238" y2="482" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+    <line x1="386" y1="482" x2="414" y2="482" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+    <text x="84" y="552" font-size="14" fill="#2f8f5b" font-weight="700">a livery changes: edit one line, re-run the export</text>
+
+    <!-- two copies -->
+    <rect x="620" y="396" width="520" height="180" rx="8" fill="#ffffff" stroke="#d9dadb" stroke-width="2"/>
+    <text x="644" y="428" font-size="18" font-weight="700" fill="#151722">Two copies</text>
+    <text x="1116" y="428" font-size="18" font-weight="700" fill="#c0392b" text-anchor="end">✗</text>
+    <g font-size="13" fill="#6e6e6e">
+      <text x="644" y="462">build.py</text>
+      <text x="644" y="508">a DAX measure, two chapters later</text>
+    </g>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#151722">
+      <text x="644" y="484">"McLaren": <tspan fill="#f2955a">"#FF8000"</tspan>, …</text>
+      <text x="644" y="530">SWITCH ( [Team], "McLaren", <tspan fill="#f2955a">"#FF8000"</tspan>, … )</text>
+    </g>
+    <text x="644" y="560" font-size="14" fill="#c0392b" font-weight="700">two chapters apart: they drift the first time a livery changes</text>
+
+    <!-- rule -->
+    <text x="60" y="614" font-size="15" fill="#3b4150">Data that the report needs belongs in the model once, not hardcoded wherever it is first needed.</text>
+  </g>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560">
+  <title>The checkpoints as cloned, and the f1-demo worktree at after-report</title>
+  <rect width="1200" height="560" fill="#f6f6f6"/>
+
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="60" y="44" font-size="15" letter-spacing="1" fill="#6e6e6e">ONE REPOSITORY, SIX CHECKPOINTS</text>
+
+    <!-- where each folder points -->
+    <text x="120" y="82" font-size="13" fill="#6e6e6e" text-anchor="middle">your course folder</text>
+    <rect x="88" y="92" width="64" height="28" rx="14" fill="#151722"/>
+    <text x="120" y="111" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">main</text>
+    <line x1="120" y1="120" x2="120" y2="152" stroke="#151722" stroke-width="2"/>
+
+    <text x="840" y="82" font-size="13" fill="#6e6e6e" text-anchor="middle">f1-demo</text>
+    <rect x="774" y="92" width="132" height="28" rx="14" fill="#f2955a"/>
+    <text x="840" y="111" font-size="14" font-weight="700" fill="#151722" text-anchor="middle">detached HEAD</text>
+    <line x1="840" y1="120" x2="840" y2="152" stroke="#f2955a" stroke-width="2"/>
+
+    <!-- the checkpoint chain, oldest to newest -->
+    <line x1="120" y1="170" x2="1020" y2="170" stroke="#d6d7d8" stroke-width="3"/>
+    <circle cx="120"  cy="170" r="16" fill="#151722"/>
+    <circle cx="300"  cy="170" r="12" fill="#d9dadb"/>
+    <circle cx="480"  cy="170" r="12" fill="#d9dadb"/>
+    <circle cx="660"  cy="170" r="12" fill="#d9dadb"/>
+    <circle cx="840"  cy="170" r="16" fill="#f2955a"/>
+    <circle cx="1020" cy="170" r="12" fill="#ffffff" stroke="#d9dadb" stroke-width="3"/>
+
+    <g font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#151722" text-anchor="middle">
+      <text x="120"  y="214" font-weight="700">start</text>
+      <text x="300"  y="214">after-data</text>
+      <text x="480"  y="214">after-html</text>
+      <text x="660"  y="214">after-model</text>
+      <text x="840"  y="214" font-weight="700">after-report</text>
+      <text x="1020" y="214" fill="#6e6e6e">after-report-bug</text>
+    </g>
+    <g font-size="13" fill="#6e6e6e" text-anchor="middle">
+      <text x="120"  y="236">data, tooling, brief</text>
+      <text x="300"  y="236">exporter and CSVs</text>
+      <text x="480"  y="236">HTML and empty PBIP</text>
+      <text x="660"  y="236">semantic model</text>
+      <text x="840"  y="236">complete project</text>
+      <text x="1020" y="236">one measure broken</text>
+    </g>
+
+    <!-- the two folders -->
+    <rect x="60" y="282" width="520" height="132" rx="8" fill="#d9dadb"/>
+    <text x="84" y="316" font-size="13" letter-spacing="1" fill="#6e6e6e">AS CLONED</text>
+    <text x="84" y="344" font-size="17" font-weight="700" fill="#151722" font-family="Consolas, 'Courier New', monospace">C:\training\in2fa-matl-pbi-with-claude</text>
+    <text x="84" y="372" font-size="16" fill="#151722">Branch main, sitting on the start checkpoint.</text>
+    <text x="84" y="396" font-size="16" fill="#151722">Your own work happens here.</text>
+
+    <rect x="620" y="282" width="520" height="132" rx="8" fill="#f2955a"/>
+    <text x="644" y="316" font-size="13" letter-spacing="1" fill="#151722">THE THROWAWAY COPY</text>
+    <text x="644" y="344" font-size="17" font-weight="700" fill="#151722" font-family="Consolas, 'Courier New', monospace">C:\training\f1-demo</text>
+    <text x="644" y="372" font-size="15" fill="#151722" font-family="Consolas, 'Courier New', monospace">git worktree add ../f1-demo after-report</text>
+    <text x="644" y="396" font-size="16" fill="#151722">No branch of its own: a detached HEAD on after-report.</text>
+
+    <!-- takeaway -->
+    <line x1="60" y1="456" x2="1140" y2="456" stroke="#d6d7d8" stroke-width="1.5"/>
+    <text x="60" y="502" font-size="24" fill="#151722">Two folders, one repository.</text>
+    <text x="1140" y="502" font-size="24" fill="#f2955a" text-anchor="end">Removing f1-demo leaves your folder untouched.</text>
+    <text x="600" y="540" font-size="15" fill="#6e6e6e" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">git worktree remove ../f1-demo --force</text>
+  </g>
+</svg>

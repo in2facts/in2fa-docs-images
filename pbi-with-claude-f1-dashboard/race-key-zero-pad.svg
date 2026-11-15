@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640">
+  <title>A race key made of two parts, with the round zero-padded</title>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#9a9da6"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="640" fill="#f6f6f6"/>
+
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+
+    <!-- ============ 1. two parts ============ -->
+    <text x="60" y="58" font-size="15" letter-spacing="1" fill="#6e6e6e">1 · TWO PARTS, BECAUSE THE ROUND REPEATS EVERY SEASON</text>
+
+    <!-- Round alone is not unique -->
+    <rect x="60" y="86" width="330" height="170" rx="8" fill="#ffffff" stroke="#d9dadb" stroke-width="2"/>
+    <g font-size="14" fill="#6e6e6e">
+      <text x="90" y="118">Season</text>
+      <text x="210" y="118">Round</text>
+      <text x="300" y="118">Race</text>
+    </g>
+    <line x1="80" y1="130" x2="370" y2="130" stroke="#d9dadb" stroke-width="1.5"/>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="18" fill="#151722">
+      <text x="90" y="162">2025</text>
+      <text x="90" y="196">2026</text>
+    </g>
+    <rect x="200" y="142" width="50" height="62" rx="4" fill="#f2955a" fill-opacity="0.22"/>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="18" fill="#151722" font-weight="700">
+      <text x="219" y="162">1</text>
+      <text x="219" y="196">1</text>
+    </g>
+    <g font-size="15" fill="#3b4150">
+      <text x="300" y="162">Australia</text>
+      <text x="300" y="196">Australia</text>
+    </g>
+    <text x="80" y="238" font-size="14" fill="#6e6e6e">Round 1, twice: on its own it is not a key</text>
+
+    <line x1="398" y1="171" x2="452" y2="171" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+
+    <!-- Season chip -->
+    <rect x="470" y="116" width="150" height="110" rx="8" fill="#c8dce8"/>
+    <text x="545" y="146" font-size="14" fill="#3b4150" text-anchor="middle">Season</text>
+    <text x="545" y="196" font-size="32" fill="#151722" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-weight="700">2026</text>
+
+    <text x="650" y="184" font-size="28" fill="#9a9da6" text-anchor="middle">+</text>
+
+    <!-- Round chip -->
+    <rect x="680" y="116" width="170" height="110" rx="8" fill="#c8dce8"/>
+    <text x="765" y="146" font-size="14" fill="#3b4150" text-anchor="middle">Round, padded to 2</text>
+    <text x="765" y="196" font-size="32" fill="#151722" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-weight="700"><tspan fill="#f2955a">0</tspan>1</text>
+
+    <text x="880" y="184" font-size="28" fill="#9a9da6" text-anchor="middle">=</text>
+
+    <!-- Race key -->
+    <rect x="910" y="116" width="230" height="110" rx="8" fill="#151722"/>
+    <text x="1025" y="146" font-size="14" fill="#e6e7ea" text-anchor="middle">Race Key (text)</text>
+    <text x="1025" y="196" font-size="32" fill="#ffffff" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-weight="700">2026-<tspan fill="#f2955a">0</tspan>1</text>
+
+    <text x="470" y="256" font-size="14" fill="#6e6e6e">Unique across every season. And it is text, which is why the padding matters ↓</text>
+
+    <!-- ============ 2. why the zero ============ -->
+    <text x="60" y="318" font-size="15" letter-spacing="1" fill="#6e6e6e">2 · WHY THE ZERO IS LOAD-BEARING: MAX OF TEXT COMPARES CHARACTER BY CHARACTER</text>
+
+    <!-- Unpadded panel -->
+    <rect x="60" y="340" width="520" height="210" rx="8" fill="#ffffff" stroke="#d9dadb" stroke-width="2"/>
+    <text x="84" y="372" font-size="18" font-weight="700" fill="#151722">Unpadded</text>
+    <text x="190" y="372" font-size="14" fill="#6e6e6e">rounds 1, 2, 9, 14, in text sort order</text>
+
+    <rect x="76" y="494" width="488" height="34" rx="4" fill="#c0392b" fill-opacity="0.12"/>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="18" fill="#151722">
+      <text x="96" y="416">2026-1</text>
+      <text x="96" y="450">2026-<tspan font-weight="700">1</tspan>4</text>
+      <text x="96" y="484">2026-2</text>
+      <text x="96" y="518" font-weight="700">2026-<tspan fill="#c0392b">9</tspan></text>
+    </g>
+    <g font-size="14">
+      <text x="230" y="450" fill="#6e6e6e">← the latest race, but "1" sorts before "9"</text>
+      <text x="230" y="518" fill="#c0392b" font-weight="700">← MAX picks round 9  ✗</text>
+    </g>
+
+    <!-- Padded panel -->
+    <rect x="620" y="340" width="520" height="210" rx="8" fill="#ffffff" stroke="#d9dadb" stroke-width="2"/>
+    <text x="644" y="372" font-size="18" font-weight="700" fill="#151722">Zero-padded</text>
+    <text x="772" y="372" font-size="14" fill="#6e6e6e">same rounds, text sort = race order</text>
+
+    <rect x="636" y="494" width="488" height="34" rx="4" fill="#2f8f5b" fill-opacity="0.12"/>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="18" fill="#151722">
+      <text x="656" y="416">2026-<tspan fill="#f2955a">0</tspan>1</text>
+      <text x="656" y="450">2026-<tspan fill="#f2955a">0</tspan>2</text>
+      <text x="656" y="484">2026-<tspan fill="#f2955a">0</tspan>9</text>
+      <text x="656" y="518" font-weight="700">2026-<tspan fill="#2f8f5b">14</tspan></text>
+    </g>
+    <text x="800" y="518" font-size="14" fill="#2f8f5b" font-weight="700">← MAX picks round 14  ✓</text>
+
+    <!-- consequence -->
+    <text x="60" y="592" font-size="15" fill="#3b4150">Unpadded, the measures that take the MAX of the key return the wrong team on every card and standings row,</text>
+    <text x="60" y="614" font-size="15" fill="#3b4150">and nothing reports it: the export still reconciles, every gate still passes, the page still renders.</text>
+  </g>
+</svg>

@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640">
+  <title>UTF-8 with no byte-order mark, and \n line endings: the bytes at each end of a line</title>
+  <rect width="1200" height="640" fill="#f6f6f6"/>
+
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+
+    <!-- ============ 1. BOM ============ -->
+    <text x="60" y="58" font-size="15" letter-spacing="1" fill="#6e6e6e">1 · THE FIRST BYTES OF Race.csv: NO BYTE-ORDER MARK</text>
+
+    <!-- row A: with BOM -->
+    <text x="60" y="114" font-size="18" font-weight="700" fill="#151722">With a mark</text>
+    <text x="60" y="136" font-size="13" fill="#6e6e6e" font-family="Consolas, 'Courier New', monospace">encoding="utf-8-sig"</text>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="15" text-anchor="middle">
+      <g fill="#c0392b" fill-opacity="0.14">
+        <rect x="260" y="94" width="40" height="40" rx="4"/>
+        <rect x="304" y="94" width="40" height="40" rx="4"/>
+        <rect x="348" y="94" width="40" height="40" rx="4"/>
+      </g>
+      <g fill="none" stroke="#c0392b" stroke-width="1.5">
+        <rect x="260" y="94" width="40" height="40" rx="4"/>
+        <rect x="304" y="94" width="40" height="40" rx="4"/>
+        <rect x="348" y="94" width="40" height="40" rx="4"/>
+      </g>
+      <g fill="#c0392b" font-weight="700">
+        <text x="280" y="119">EF</text><text x="324" y="119">BB</text><text x="368" y="119">BF</text>
+      </g>
+      <g fill="#ffffff" stroke="#d9dadb" stroke-width="1.5">
+        <rect x="392" y="94" width="40" height="40" rx="4"/><rect x="436" y="94" width="40" height="40" rx="4"/>
+        <rect x="480" y="94" width="40" height="40" rx="4"/><rect x="524" y="94" width="40" height="40" rx="4"/>
+        <rect x="568" y="94" width="40" height="40" rx="4"/><rect x="612" y="94" width="40" height="40" rx="4"/>
+        <rect x="656" y="94" width="40" height="40" rx="4"/><rect x="700" y="94" width="40" height="40" rx="4"/>
+        <rect x="744" y="94" width="40" height="40" rx="4"/>
+      </g>
+      <g fill="#151722">
+        <text x="412" y="119">52</text><text x="456" y="119">61</text><text x="500" y="119">63</text>
+        <text x="544" y="119">65</text><text x="588" y="119">20</text><text x="632" y="119">4B</text>
+        <text x="676" y="119">65</text><text x="720" y="119">79</text><text x="764" y="119">2C</text>
+      </g>
+      <g fill="#6e6e6e" font-size="14">
+        <text x="412" y="156">R</text><text x="456" y="156">a</text><text x="500" y="156">c</text>
+        <text x="544" y="156">e</text><text x="588" y="156">␣</text><text x="632" y="156">K</text>
+        <text x="676" y="156">e</text><text x="720" y="156">y</text><text x="764" y="156">,</text>
+      </g>
+    </g>
+    <text x="324" y="156" font-size="13" fill="#c0392b" text-anchor="middle">invisible on screen</text>
+
+    <rect x="820" y="86" width="320" height="80" rx="8" fill="#ffffff" stroke="#c0392b" stroke-width="2"/>
+    <text x="840" y="112" font-size="13" fill="#6e6e6e">first column is called</text>
+    <text x="840" y="146" font-size="20" fill="#151722" font-family="Consolas, 'Courier New', monospace"><tspan fill="#c0392b" font-weight="700">•••</tspan>Race Key</text>
+    <text x="1120" y="146" font-size="14" fill="#c0392b" font-weight="700" text-anchor="end">≠ Race Key ✗</text>
+
+    <!-- row B: no BOM -->
+    <text x="60" y="214" font-size="18" font-weight="700" fill="#151722">No mark</text>
+    <text x="60" y="236" font-size="13" fill="#6e6e6e" font-family="Consolas, 'Courier New', monospace">encoding="utf-8"</text>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="15" text-anchor="middle">
+      <g fill="#ffffff" stroke="#d9dadb" stroke-width="1.5">
+        <rect x="260" y="194" width="40" height="40" rx="4"/><rect x="304" y="194" width="40" height="40" rx="4"/>
+        <rect x="348" y="194" width="40" height="40" rx="4"/><rect x="392" y="194" width="40" height="40" rx="4"/>
+        <rect x="436" y="194" width="40" height="40" rx="4"/><rect x="480" y="194" width="40" height="40" rx="4"/>
+        <rect x="524" y="194" width="40" height="40" rx="4"/><rect x="568" y="194" width="40" height="40" rx="4"/>
+        <rect x="612" y="194" width="40" height="40" rx="4"/>
+      </g>
+      <g fill="#151722">
+        <text x="280" y="219">52</text><text x="324" y="219">61</text><text x="368" y="219">63</text>
+        <text x="412" y="219">65</text><text x="456" y="219">20</text><text x="500" y="219">4B</text>
+        <text x="544" y="219">65</text><text x="588" y="219">79</text><text x="632" y="219">2C</text>
+      </g>
+      <g fill="#6e6e6e" font-size="14">
+        <text x="280" y="256">R</text><text x="324" y="256">a</text><text x="368" y="256">c</text>
+        <text x="412" y="256">e</text><text x="456" y="256">␣</text><text x="500" y="256">K</text>
+        <text x="544" y="256">e</text><text x="588" y="256">y</text><text x="632" y="256">,</text>
+      </g>
+    </g>
+
+    <rect x="820" y="186" width="320" height="80" rx="8" fill="#ffffff" stroke="#2f8f5b" stroke-width="2"/>
+    <text x="840" y="212" font-size="13" fill="#6e6e6e">first column is called</text>
+    <text x="840" y="246" font-size="20" fill="#151722" font-family="Consolas, 'Courier New', monospace">Race Key</text>
+    <text x="1120" y="246" font-size="14" fill="#2f8f5b" font-weight="700" text-anchor="end">✓</text>
+
+    <text x="60" y="304" font-size="14" fill="#3b4150">With the mark, every relationship and measure looking for <tspan font-family="Consolas, 'Courier New', monospace">Race Key</tspan> misses it, and the refresh still reports success.</text>
+
+    <!-- ============ 2. line endings ============ -->
+    <text x="60" y="366" font-size="15" letter-spacing="1" fill="#6e6e6e">2 · THE LAST BYTES OF EVERY LINE: \n, ONE BYTE, NOT TWO</text>
+
+    <rect x="60" y="386" width="620" height="190" rx="8" fill="#ffffff" stroke="#d9dadb" stroke-width="2"/>
+    <!-- CRLF -->
+    <text x="84" y="426" font-size="16" font-weight="700" fill="#151722">\r\n</text>
+    <text x="84" y="446" font-size="13" fill="#6e6e6e">Windows default</text>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="15" text-anchor="middle">
+      <text x="236" y="429" fill="#9a9da6">…</text>
+      <g fill="#ffffff" stroke="#d9dadb" stroke-width="1.5">
+        <rect x="260" y="404" width="40" height="40" rx="4"/><rect x="304" y="404" width="40" height="40" rx="4"/>
+        <rect x="348" y="404" width="40" height="40" rx="4"/>
+      </g>
+      <rect x="392" y="404" width="40" height="40" rx="4" fill="#f2955a" fill-opacity="0.22" stroke="#f2955a" stroke-width="1.5"/>
+      <rect x="436" y="404" width="40" height="40" rx="4" fill="#c8dce8"/>
+      <g fill="#151722">
+        <text x="280" y="429">2C</text><text x="324" y="429">32</text><text x="368" y="429">35</text>
+        <text x="412" y="429" fill="#c0392b" font-weight="700">0D</text><text x="456" y="429">0A</text>
+      </g>
+      <g fill="#6e6e6e" font-size="14">
+        <text x="280" y="466">,</text><text x="324" y="466">2</text><text x="368" y="466">5</text>
+        <text x="412" y="466">\r</text><text x="456" y="466">\n</text>
+      </g>
+    </g>
+    <text x="500" y="429" font-size="14" fill="#6e6e6e">two bytes</text>
+
+    <!-- LF -->
+    <text x="84" y="516" font-size="16" font-weight="700" fill="#151722">\n</text>
+    <text x="84" y="536" font-size="13" fill="#6e6e6e">what the exporter writes</text>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="15" text-anchor="middle">
+      <text x="236" y="519" fill="#9a9da6">…</text>
+      <g fill="#ffffff" stroke="#d9dadb" stroke-width="1.5">
+        <rect x="260" y="494" width="40" height="40" rx="4"/><rect x="304" y="494" width="40" height="40" rx="4"/>
+        <rect x="348" y="494" width="40" height="40" rx="4"/>
+      </g>
+      <rect x="392" y="494" width="40" height="40" rx="4" fill="#c8dce8"/>
+      <g fill="#151722">
+        <text x="280" y="519">2C</text><text x="324" y="519">32</text><text x="368" y="519">35</text>
+        <text x="412" y="519">0A</text>
+      </g>
+      <g fill="#6e6e6e" font-size="14">
+        <text x="280" y="556">,</text><text x="324" y="556">2</text><text x="368" y="556">5</text>
+        <text x="412" y="556">\n</text>
+      </g>
+    </g>
+    <text x="456" y="519" font-size="14" fill="#2f8f5b" font-weight="700">one byte ✓</text>
+
+    <!-- why -->
+    <rect x="720" y="386" width="420" height="190" rx="8" fill="#151722"/>
+    <text x="744" y="418" font-size="17" font-weight="700" fill="#ffffff">Why pin it</text>
+    <g font-size="14" fill="#e6e7ea">
+      <text x="744" y="446">Power BI reads either. Git does not leave</text>
+      <text x="744" y="466">them alone: flipped endings make every line</text>
+      <text x="744" y="486">look changed when nothing has.</text>
+    </g>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#ffffff">
+      <text x="744" y="522">newline=""</text>
+      <text x="744" y="546">lineterminator="\n"</text>
+    </g>
+    <text x="1116" y="534" font-size="13" fill="#f2955a" text-anchor="end" font-weight="700">only as a pair</text>
+
+    <!-- rule -->
+    <text x="60" y="614" font-size="15" fill="#3b4150">Neither shows up on screen. Both are a few characters in the exporter, so ask for them by name.</text>
+  </g>
+</svg>

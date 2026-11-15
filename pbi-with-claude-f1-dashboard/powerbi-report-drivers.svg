@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>Power BI F1 report - Drivers page (illustration)</title>
+<rect width="1200" height="680" fill="#f4f5f8"/>
+<rect width="200" height="680" fill="#ffffff"/><rect x="200" width="3" height="680" fill="#1f2328"/>
+<text x="20" y="44" fill="#111" font-size="15" font-weight="700">ULTIMATE <tspan fill="#e8002d">F1</tspan></text>
+<text x="20" y="86" fill="#555" font-size="10">SEASON DASHBOARD</text>
+<text x="24" y="116" fill="#333" font-size="12" font-weight="400">Schedule</text>
+<text x="24" y="146" fill="#333" font-size="12" font-weight="400">Results</text>
+<text x="24" y="176" fill="#333" font-size="12" font-weight="400">Driver Standings</text>
+<text x="24" y="206" fill="#333" font-size="12" font-weight="400">Constructor Standings</text>
+<rect x="12" y="220" width="176" height="24" rx="3" fill="#e8002d"/>
+<text x="24" y="236" fill="#fff" font-size="12" font-weight="700">Drivers</text>
+<text x="24" y="266" fill="#333" font-size="12" font-weight="400">Teams</text>
+<text x="20" y="306" fill="#555" font-size="10">FILTERS</text><text x="20" y="334" fill="#333" font-size="12">Season</text>
+<rect x="24" y="346" width="10" height="10" fill="#fff" stroke="#777"/><text x="42" y="355" fill="#333" font-size="10">2025</text>
+<rect x="24" y="364" width="10" height="10" fill="#222"/><text x="42" y="373" fill="#333" font-size="10">2026</text>
+<text x="230" y="52" fill="#111" font-size="22" font-weight="700">Drivers</text>
+<text x="230" y="74" fill="#555" font-size="11">One card per driver, in championship order · SVG cards driven by a DAX measure</text>
+<g transform="translate(230,96)">
+<rect width="230" height="140" rx="4" fill="#fff" stroke="#dde0e6"/>
+<rect x="8" y="6" width="4" height="128" rx="2" fill="#00D7B6"/>
+<text x="24" y="40" fill="#00D7B6" font-size="26" font-weight="900">ANT</text>
+<text x="216" y="40" fill="#00D7B6" font-size="24" font-weight="900" text-anchor="end">12</text>
+<text x="24" y="62" fill="#111" font-size="12" font-weight="700">Andrea Kimi Antonelli</text><text x="24" y="77" fill="#666" font-size="9.5">Mercedes</text>
+<line x1="24" y1="88" x2="216" y2="88" stroke="#e3e5ea"/>
+<text x="24" y="106" fill="#888" font-size="6.5" font-weight="700">PTS</text><text x="24" y="124" fill="#111" font-size="12" font-weight="700">242</text>
+<text x="64" y="106" fill="#888" font-size="6.5" font-weight="700">WINS</text><text x="64" y="124" fill="#111" font-size="12" font-weight="700">6</text>
+<text x="104" y="106" fill="#888" font-size="6.5" font-weight="700">PODIUMS</text><text x="104" y="124" fill="#111" font-size="12" font-weight="700">10</text>
+<text x="144" y="106" fill="#888" font-size="6.5" font-weight="700">AVG FIN</text><text x="144" y="124" fill="#111" font-size="12" font-weight="700">3.9</text>
+<text x="184" y="106" fill="#888" font-size="6.5" font-weight="700">AVG QUA</text><text x="184" y="124" fill="#111" font-size="12" font-weight="700">2.0</text>
+</g>
+<g transform="translate(472,96)">
+<rect width="230" height="140" rx="4" fill="#fff" stroke="#dde0e6"/>
+<rect x="8" y="6" width="4" height="128" rx="2" fill="#E8002D"/>
+<text x="24" y="40" fill="#E8002D" font-size="26" font-weight="900">HAM</text>
+<text x="216" y="40" fill="#E8002D" font-size="24" font-weight="900" text-anchor="end">44</text>
+<text x="24" y="62" fill="#111" font-size="12" font-weight="700">Lewis Hamilton</text><text x="24" y="77" fill="#666" font-size="9.5">Ferrari</text>
+<line x1="24" y1="88" x2="216" y2="88" stroke="#e3e5ea"/>
+<text x="24" y="106" fill="#888" font-size="6.5" font-weight="700">PTS</text><text x="24" y="124" fill="#111" font-size="12" font-weight="700">183</text>
+<text x="64" y="106" fill="#888" font-size="6.5" font-weight="700">WINS</text><text x="64" y="124" fill="#111" font-size="12" font-weight="700">1</text>
+<text x="104" y="106" fill="#888" font-size="6.5" font-weight="700">PODIUMS</text><text x="104" y="124" fill="#111" font-size="12" font-weight="700">5</text>
+<text x="144" y="106" fill="#888" font-size="6.5" font-weight="700">AVG FIN</text><text x="144" y="124" fill="#111" font-size="12" font-weight="700">4.1</text>
+<text x="184" y="106" fill="#888" font-size="6.5" font-weight="700">AVG QUA</text><text x="184" y="124" fill="#111" font-size="12" font-weight="700">4.3</text>
+</g>
+<g transform="translate(714,96)">
+<rect width="230" height="140" rx="4" fill="#fff" stroke="#dde0e6"/>
+<rect x="8" y="6" width="4" height="128" rx="2" fill="#00D7B6"/>
+<text x="24" y="40" fill="#00D7B6" font-size="26" font-weight="900">RUS</text>
+<text x="216" y="40" fill="#00D7B6" font-size="24" font-weight="900" text-anchor="end">63</text>
+<text x="24" y="62" fill="#111" font-size="12" font-weight="700">George Russell</text><text x="24" y="77" fill="#666" font-size="9.5">Mercedes</text>
+<line x1="24" y1="88" x2="216" y2="88" stroke="#e3e5ea"/>
+<text x="24" y="106" fill="#888" font-size="6.5" font-weight="700">PTS</text><text x="24" y="124" fill="#111" font-size="12" font-weight="700">183</text>
+<text x="64" y="106" fill="#888" font-size="6.5" font-weight="700">WINS</text><text x="64" y="124" fill="#111" font-size="12" font-weight="700">2</text>
+<text x="104" y="106" fill="#888" font-size="6.5" font-weight="700">PODIUMS</text><text x="104" y="124" fill="#111" font-size="12" font-weight="700">8</text>
+<text x="144" y="106" fill="#888" font-size="6.5" font-weight="700">AVG FIN</text><text x="144" y="124" fill="#111" font-size="12" font-weight="700">3.3</text>
+<text x="184" y="106" fill="#888" font-size="6.5" font-weight="700">AVG QUA</text><text x="184" y="124" fill="#111" font-size="12" font-weight="700">3.0</text>
+</g>
+<g transform="translate(956,96)">
+<rect width="230" height="140" rx="4" fill="#fff" stroke="#dde0e6"/>
+<rect x="8" y="6" width="4" height="128" rx="2" fill="#FF8000"/>
+<text x="24" y="40" fill="#FF8000" font-size="26" font-weight="900">NOR</text>
+<text x="216" y="40" fill="#FF8000" font-size="24" font-weight="900" text-anchor="end">1</text>
+<text x="24" y="62" fill="#111" font-size="12" font-weight="700">Lando Norris</text><text x="24" y="77" fill="#666" font-size="9.5">McLaren</text>
+<line x1="24" y1="88" x2="216" y2="88" stroke="#e3e5ea"/>
+<text x="24" y="106" fill="#888" font-size="6.5" font-weight="700">PTS</text><text x="24" y="124" fill="#111" font-size="12" font-weight="700">159</text>
+<text x="64" y="106" fill="#888" font-size="6.5" font-weight="700">WINS</text><text x="64" y="124" fill="#111" font-size="12" font-weight="700">2</text>
+<text x="104" y="106" fill="#888" font-size="6.5" font-weight="700">PODIUMS</text><text x="104" y="124" fill="#111" font-size="12" font-weight="700">7</text>
+<text x="144" y="106" fill="#888" font-size="6.5" font-weight="700">AVG FIN</text><text x="144" y="124" fill="#111" font-size="12" font-weight="700">3.4</text>
+<text x="184" y="106" fill="#888" font-size="6.5" font-weight="700">AVG QUA</text><text x="184" y="124" fill="#111" font-size="12" font-weight="700">4.4</text>
+</g>
+<g transform="translate(230,250)">
+<rect width="230" height="140" rx="4" fill="#fff" stroke="#dde0e6"/>
+<rect x="8" y="6" width="4" height="128" rx="2" fill="#E8002D"/>
+<text x="24" y="40" fill="#E8002D" font-size="26" font-weight="900">LEC</text>
+<text x="216" y="40" fill="#E8002D" font-size="24" font-weight="900" text-anchor="end">16</text>
+<text x="24" y="62" fill="#111" font-size="12" font-weight="700">Charles Leclerc</text><text x="24" y="77" fill="#666" font-size="9.5">Ferrari</text>
+<line x1="24" y1="88" x2="216" y2="88" stroke="#e3e5ea"/>
+<text x="24" y="106" fill="#888" font-size="6.5" font-weight="700">PTS</text><text x="24" y="124" fill="#111" font-size="12" font-weight="700">155</text>
+<text x="64" y="106" fill="#888" font-size="6.5" font-weight="700">WINS</text><text x="64" y="124" fill="#111" font-size="12" font-weight="700">1</text>
+<text x="104" y="106" fill="#888" font-size="6.5" font-weight="700">PODIUMS</text><text x="104" y="124" fill="#111" font-size="12" font-weight="700">5</text>
+<text x="144" y="106" fill="#888" font-size="6.5" font-weight="700">AVG FIN</text><text x="144" y="124" fill="#111" font-size="12" font-weight="700">4.6</text>
+<text x="184" y="106" fill="#888" font-size="6.5" font-weight="700">AVG QUA</text><text x="184" y="124" fill="#111" font-size="12" font-weight="700">4.6</text>
+</g>
+<g transform="translate(472,250)">
+<rect width="230" height="140" rx="4" fill="#fff" stroke="#dde0e6"/>
+<rect x="8" y="6" width="4" height="128" rx="2" fill="#3671C6"/>
+<text x="24" y="40" fill="#3671C6" font-size="26" font-weight="900">VER</text>
+<text x="216" y="40" fill="#3671C6" font-size="24" font-weight="900" text-anchor="end">3</text>
+<text x="24" y="62" fill="#111" font-size="12" font-weight="700">Max Verstappen</text><text x="24" y="77" fill="#666" font-size="9.5">Red Bull</text>
+<line x1="24" y1="88" x2="216" y2="88" stroke="#e3e5ea"/>
+<text x="24" y="106" fill="#888" font-size="6.5" font-weight="700">PTS</text><text x="24" y="124" fill="#111" font-size="12" font-weight="700">112</text>
+<text x="64" y="106" fill="#888" font-size="6.5" font-weight="700">WINS</text><text x="64" y="124" fill="#111" font-size="12" font-weight="700">0</text>
+<text x="104" y="106" fill="#888" font-size="6.5" font-weight="700">PODIUMS</text><text x="104" y="124" fill="#111" font-size="12" font-weight="700">7</text>
+<text x="144" y="106" fill="#888" font-size="6.5" font-weight="700">AVG FIN</text><text x="144" y="124" fill="#111" font-size="12" font-weight="700">6.1</text>
+<text x="184" y="106" fill="#888" font-size="6.5" font-weight="700">AVG QUA</text><text x="184" y="124" fill="#111" font-size="12" font-weight="700">5.5</text>
+</g>
+<g transform="translate(714,250)">
+<rect width="230" height="140" rx="4" fill="#fff" stroke="#dde0e6"/>
+<rect x="8" y="6" width="4" height="128" rx="2" fill="#FF8000"/>
+<text x="24" y="40" fill="#FF8000" font-size="26" font-weight="900">PIA</text>
+<text x="216" y="40" fill="#FF8000" font-size="24" font-weight="900" text-anchor="end">81</text>
+<text x="24" y="62" fill="#111" font-size="12" font-weight="700">Oscar Piastri</text><text x="24" y="77" fill="#666" font-size="9.5">McLaren</text>
+<line x1="24" y1="88" x2="216" y2="88" stroke="#e3e5ea"/>
+<text x="24" y="106" fill="#888" font-size="6.5" font-weight="700">PTS</text><text x="24" y="124" fill="#111" font-size="12" font-weight="700">104</text>
+<text x="64" y="106" fill="#888" font-size="6.5" font-weight="700">WINS</text><text x="64" y="124" fill="#111" font-size="12" font-weight="700">0</text>
+<text x="104" y="106" fill="#888" font-size="6.5" font-weight="700">PODIUMS</text><text x="104" y="124" fill="#111" font-size="12" font-weight="700">5</text>
+<text x="144" y="106" fill="#888" font-size="6.5" font-weight="700">AVG FIN</text><text x="144" y="124" fill="#111" font-size="12" font-weight="700">5.4</text>
+<text x="184" y="106" fill="#888" font-size="6.5" font-weight="700">AVG QUA</text><text x="184" y="124" fill="#111" font-size="12" font-weight="700">5.8</text>
+</g>
+<g transform="translate(956,250)">
+<rect width="230" height="140" rx="4" fill="#fff" stroke="#dde0e6"/>
+<rect x="8" y="6" width="4" height="128" rx="2" fill="#3671C6"/>
+<text x="24" y="40" fill="#3671C6" font-size="26" font-weight="900">HAD</text>
+<text x="216" y="40" fill="#3671C6" font-size="24" font-weight="900" text-anchor="end">6</text>
+<text x="24" y="62" fill="#111" font-size="12" font-weight="700">Isack Hadjar</text><text x="24" y="77" fill="#666" font-size="9.5">Red Bull</text>
+<line x1="24" y1="88" x2="216" y2="88" stroke="#e3e5ea"/>
+<text x="24" y="106" fill="#888" font-size="6.5" font-weight="700">PTS</text><text x="24" y="124" fill="#111" font-size="12" font-weight="700">68</text>
+<text x="64" y="106" fill="#888" font-size="6.5" font-weight="700">WINS</text><text x="64" y="124" fill="#111" font-size="12" font-weight="700">0</text>
+<text x="104" y="106" fill="#888" font-size="6.5" font-weight="700">PODIUMS</text><text x="104" y="124" fill="#111" font-size="12" font-weight="700">2</text>
+<text x="144" y="106" fill="#888" font-size="6.5" font-weight="700">AVG FIN</text><text x="144" y="124" fill="#111" font-size="12" font-weight="700">8.6</text>
+<text x="184" y="106" fill="#888" font-size="6.5" font-weight="700">AVG QUA</text><text x="184" y="124" fill="#111" font-size="12" font-weight="700">8.3</text>
+</g>
+<g opacity=".55"><rect x="230" y="404" width="230" height="140" rx="4" fill="#fff" stroke="#dde0e6"/><rect x="238" y="410" width="4" height="128" rx="2" fill="#cfd3da"/><rect x="254" y="422" width="70" height="18" rx="3" fill="#e6e8ec"/><rect x="254" y="450" width="120" height="10" rx="3" fill="#eceef1"/></g>
+<g opacity=".55"><rect x="472" y="404" width="230" height="140" rx="4" fill="#fff" stroke="#dde0e6"/><rect x="480" y="410" width="4" height="128" rx="2" fill="#cfd3da"/><rect x="496" y="422" width="70" height="18" rx="3" fill="#e6e8ec"/><rect x="496" y="450" width="120" height="10" rx="3" fill="#eceef1"/></g>
+<g opacity=".55"><rect x="714" y="404" width="230" height="140" rx="4" fill="#fff" stroke="#dde0e6"/><rect x="722" y="410" width="4" height="128" rx="2" fill="#cfd3da"/><rect x="738" y="422" width="70" height="18" rx="3" fill="#e6e8ec"/><rect x="738" y="450" width="120" height="10" rx="3" fill="#eceef1"/></g>
+<g opacity=".55"><rect x="956" y="404" width="230" height="140" rx="4" fill="#fff" stroke="#dde0e6"/><rect x="964" y="410" width="4" height="128" rx="2" fill="#cfd3da"/><rect x="980" y="422" width="70" height="18" rx="3" fill="#e6e8ec"/><rect x="980" y="450" width="120" height="10" rx="3" fill="#eceef1"/></g>
+<g opacity=".55"><rect x="230" y="558" width="230" height="140" rx="4" fill="#fff" stroke="#dde0e6"/><rect x="238" y="564" width="4" height="128" rx="2" fill="#cfd3da"/><rect x="254" y="576" width="70" height="18" rx="3" fill="#e6e8ec"/><rect x="254" y="604" width="120" height="10" rx="3" fill="#eceef1"/></g>
+<g opacity=".55"><rect x="472" y="558" width="230" height="140" rx="4" fill="#fff" stroke="#dde0e6"/><rect x="480" y="564" width="4" height="128" rx="2" fill="#cfd3da"/><rect x="496" y="576" width="70" height="18" rx="3" fill="#e6e8ec"/><rect x="496" y="604" width="120" height="10" rx="3" fill="#eceef1"/></g>
+<g opacity=".55"><rect x="714" y="558" width="230" height="140" rx="4" fill="#fff" stroke="#dde0e6"/><rect x="722" y="564" width="4" height="128" rx="2" fill="#cfd3da"/><rect x="738" y="576" width="70" height="18" rx="3" fill="#e6e8ec"/><rect x="738" y="604" width="120" height="10" rx="3" fill="#eceef1"/></g>
+<g opacity=".55"><rect x="956" y="558" width="230" height="140" rx="4" fill="#fff" stroke="#dde0e6"/><rect x="964" y="564" width="4" height="128" rx="2" fill="#cfd3da"/><rect x="980" y="576" width="70" height="18" rx="3" fill="#e6e8ec"/><rect x="980" y="604" width="120" height="10" rx="3" fill="#eceef1"/></g>
+</svg>

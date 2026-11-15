@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640">
+  <title>The exporter checks its own output: reconcile against an independent total, before writing anything</title>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#9a9da6"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="640" fill="#f6f6f6"/>
+
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+
+    <!-- ============ 1. reconcile ============ -->
+    <text x="60" y="58" font-size="15" letter-spacing="1" fill="#6e6e6e">1 · ADD UP WHAT YOU ARE ABOUT TO WRITE, COMPARE IT WITH A TOTAL PUBLISHED SEPARATELY</text>
+
+    <!-- rows about to be written -->
+    <rect x="60" y="86" width="300" height="214" rx="8" fill="#ffffff" stroke="#d9dadb" stroke-width="2"/>
+    <text x="80" y="114" font-size="14" fill="#6e6e6e">rows about to be written, one driver</text>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#151722">
+      <text x="80" y="148">2026-01</text><text x="180" y="148">Race</text><text x="320" y="148" text-anchor="end">18</text>
+      <text x="80" y="174">2026-02</text><text x="180" y="174">Sprint</text><text x="320" y="174" text-anchor="end">8</text>
+      <text x="80" y="200">2026-02</text><text x="180" y="200">Race</text><text x="320" y="200" text-anchor="end">25</text>
+      <text x="80" y="226" fill="#9a9da6">…</text>
+    </g>
+    <line x1="80" y1="244" x2="340" y2="244" stroke="#d9dadb" stroke-width="1.5"/>
+    <text x="80" y="278" font-size="17" font-weight="700" fill="#151722">Σ Points</text>
+    <text x="320" y="278" font-size="20" font-weight="700" fill="#151722" text-anchor="end" font-family="Consolas, 'Courier New', monospace">112</text>
+
+    <!-- standings -->
+    <rect x="840" y="86" width="300" height="214" rx="8" fill="#c8dce8"/>
+    <text x="860" y="114" font-size="14" fill="#3b4150">published separately by the API</text>
+    <text x="860" y="148" font-size="16" font-weight="700" fill="#151722" font-family="Consolas, 'Courier New', monospace">driver standings</text>
+    <text x="860" y="180" font-size="14" fill="#3b4150">an independent total:</text>
+    <text x="860" y="200" font-size="14" fill="#3b4150">a free test, if you pick it up</text>
+    <line x1="860" y1="244" x2="1120" y2="244" stroke="#ffffff" stroke-width="1.5"/>
+    <text x="860" y="278" font-size="17" font-weight="700" fill="#151722">Points</text>
+    <text x="1120" y="278" font-size="20" font-weight="700" fill="#151722" text-anchor="end" font-family="Consolas, 'Courier New', monospace">112</text>
+
+    <!-- compare -->
+    <line x1="366" y1="270" x2="412" y2="270" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+    <line x1="834" y1="270" x2="788" y2="270" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+    <rect x="420" y="242" width="360" height="56" rx="8" fill="#151722"/>
+    <text x="600" y="276" font-size="17" fill="#ffffff" text-anchor="middle" font-weight="700">compare, for every driver</text>
+
+    <line x1="510" y1="238" x2="510" y2="200" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+    <line x1="690" y1="238" x2="690" y2="200" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+    <rect x="420" y="96" width="176" height="96" rx="8" fill="#2f8f5b" fill-opacity="0.12" stroke="#2f8f5b" stroke-width="2"/>
+    <text x="508" y="128" font-size="18" fill="#2f8f5b" text-anchor="middle" font-weight="700" font-family="Consolas, 'Courier New', monospace">112 = 112</text>
+    <text x="508" y="156" font-size="14" fill="#151722" text-anchor="middle">write the six CSVs</text>
+    <text x="508" y="178" font-size="18" fill="#2f8f5b" text-anchor="middle" font-weight="700">✓</text>
+
+    <rect x="604" y="96" width="176" height="96" rx="8" fill="#c0392b" fill-opacity="0.10" stroke="#c0392b" stroke-width="2"/>
+    <text x="692" y="128" font-size="18" fill="#c0392b" text-anchor="middle" font-weight="700" font-family="Consolas, 'Courier New', monospace">94 ≠ 112</text>
+    <text x="692" y="156" font-size="14" fill="#151722" text-anchor="middle">fail, write nothing</text>
+    <text x="692" y="178" font-size="18" fill="#c0392b" text-anchor="middle" font-weight="700">✗</text>
+
+    <text x="60" y="330" font-size="14" fill="#3b4150">About fifteen lines. A bad join, an over-eager filter or a misread field all produce a tidy CSV; only the check notices.</text>
+
+    <!-- ============ 2. order ============ -->
+    <text x="60" y="378" font-size="15" letter-spacing="1" fill="#6e6e6e">2 · CHECK BEFORE WRITING, NOT AFTER</text>
+
+    <!-- write then check -->
+    <rect x="60" y="396" width="520" height="180" rx="8" fill="#ffffff" stroke="#d9dadb" stroke-width="2"/>
+    <text x="84" y="428" font-size="18" font-weight="700" fill="#151722">Write, then check</text>
+    <text x="556" y="428" font-size="18" font-weight="700" fill="#c0392b" text-anchor="end">✗</text>
+    <g font-size="14" text-anchor="middle">
+      <rect x="84" y="450" width="130" height="40" rx="6" fill="#151722"/>
+      <text x="149" y="475" fill="#ffffff">write CSVs</text>
+      <rect x="250" y="450" width="110" height="40" rx="6" fill="#c8dce8"/>
+      <text x="305" y="475" fill="#151722">check</text>
+      <rect x="396" y="450" width="160" height="40" rx="6" fill="#c0392b" fill-opacity="0.10" stroke="#c0392b" stroke-width="1.5"/>
+      <text x="476" y="475" fill="#c0392b" font-weight="700">fails ✗</text>
+    </g>
+    <line x1="216" y1="470" x2="244" y2="470" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+    <line x1="362" y1="470" x2="390" y2="470" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+    <text x="84" y="528" font-size="14" fill="#c0392b" font-weight="700">the good files are already overwritten:</text>
+    <text x="84" y="550" font-size="14" fill="#c0392b" font-weight="700">an error message and a ruined folder</text>
+
+    <!-- check then write -->
+    <rect x="620" y="396" width="520" height="180" rx="8" fill="#ffffff" stroke="#d9dadb" stroke-width="2"/>
+    <text x="644" y="428" font-size="18" font-weight="700" fill="#151722">Check, then write</text>
+    <text x="1116" y="428" font-size="18" font-weight="700" fill="#2f8f5b" text-anchor="end">✓</text>
+    <g font-size="14" text-anchor="middle">
+      <rect x="644" y="450" width="110" height="40" rx="6" fill="#c8dce8"/>
+      <text x="699" y="475" fill="#151722">check</text>
+      <rect x="790" y="450" width="110" height="40" rx="6" fill="#2f8f5b" fill-opacity="0.12" stroke="#2f8f5b" stroke-width="1.5"/>
+      <text x="845" y="475" fill="#2f8f5b" font-weight="700">passes ✓</text>
+      <rect x="936" y="450" width="180" height="40" rx="6" fill="#151722"/>
+      <text x="1026" y="475" fill="#ffffff">write CSVs</text>
+      <rect x="790" y="508" width="326" height="48" rx="6" fill="#c0392b" fill-opacity="0.08" stroke="#c0392b" stroke-width="1.5"/>
+      <text x="953" y="529" fill="#c0392b" font-weight="700">fails ✗ : writes nothing, and says so:</text>
+      <text x="953" y="547" fill="#151722" font-style="italic">“your files are unchanged”</text>
+    </g>
+    <line x1="756" y1="470" x2="784" y2="470" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+    <line x1="902" y1="470" x2="930" y2="470" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+    <path d="M699 492 L699 532 L784 532" fill="none" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+
+    <!-- rule -->
+    <text x="60" y="614" font-size="15" fill="#3b4150">Both versions “have a reconciliation check”. Only one of them is any use when the check fires.</text>
+  </g>
+</svg>

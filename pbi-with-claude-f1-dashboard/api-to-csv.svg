@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640">
+  <title>From API to tidy CSV: nested JSON in, a verified star of CSVs out</title>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#9a9da6"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="640" fill="#f6f6f6"/>
+
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <!-- column headings -->
+    <g font-size="15" letter-spacing="1" fill="#6e6e6e">
+      <text x="60" y="58">IN · data/</text>
+      <text x="400" y="58">THE FLATTENER YOU PROMPT FOR</text>
+      <text x="830" y="58">OUT · powerbi/data/</text>
+    </g>
+
+    <!-- IN: one nested file per season -->
+    <rect x="76" y="94" width="270" height="330" rx="8" fill="#ffffff" stroke="#c8dce8" stroke-width="2"/>
+    <text x="96" y="122" font-size="14" fill="#6e6e6e" font-family="Consolas, 'Courier New', monospace">raw-2025.json</text>
+    <rect x="60" y="134" width="270" height="330" rx="8" fill="#c8dce8"/>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#151722">
+      <text x="80" y="164" font-weight="700">raw-2026.json</text>
+      <text x="80" y="196">tables</text>
+      <g fill="#3b4150">
+        <text x="80" y="222">├ schedule</text>
+        <text x="80" y="246">├ results</text>
+        <text x="80" y="270">│  └ Races › Results</text>
+        <text x="80" y="294">├ sprint</text>
+        <text x="80" y="318">│  └ Races › SprintResults</text>
+        <text x="80" y="342">├ qualifying</text>
+        <text x="80" y="366">├ drivers · constructors</text>
+        <text x="80" y="390">└ driver/constructor standings</text>
+      </g>
+    </g>
+    <text x="80" y="446" font-size="14" fill="#6e6e6e">frozen, deeply nested</text>
+
+    <line x1="338" y1="200" x2="392" y2="200" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+
+    <!-- the flattener -->
+    <rect x="400" y="94" width="370" height="212" rx="8" fill="#151722"/>
+    <text x="424" y="130" font-size="19" fill="#ffffff" font-family="Consolas, 'Courier New', monospace" font-weight="700">export_csv.py</text>
+    <g font-size="15" fill="#e6e7ea">
+      <text x="424" y="166">• flattens every raw-*.json</text>
+      <text x="424" y="194">• race + sprint → one Session Result table</text>
+      <text x="424" y="222">• two-part race key, like <tspan font-family="Consolas, 'Courier New', monospace">2026-01</tspan></text>
+      <text x="424" y="250">• team colours from <tspan font-family="Consolas, 'Courier New', monospace">build.py</tspan></text>
+      <text x="424" y="278">• one file per table, every season in it</text>
+    </g>
+
+    <line x1="585" y1="310" x2="585" y2="338" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+
+    <!-- the gate: checked before anything is written -->
+    <rect x="400" y="344" width="370" height="90" rx="8" fill="#f2955a"/>
+    <text x="424" y="378" font-size="19" font-weight="700" fill="#151722">Verify before writing</text>
+    <text x="424" y="406" font-size="15" fill="#151722">your points = the API's published standings,</text>
+    <text x="424" y="426" font-size="15" fill="#151722">every driver, every season</text>
+
+    <line x1="776" y1="374" x2="822" y2="374" stroke="#2f8f5b" stroke-width="2" marker-end="url(#ah)"/>
+    <text x="424" y="464" font-size="15" fill="#6e6e6e" xml:space="preserve"><tspan fill="#2f8f5b" font-weight="700">✓ reconciles</tspan>  the six CSVs are written</text>
+    <text x="424" y="488" font-size="15" fill="#6e6e6e" xml:space="preserve"><tspan fill="#c0392b" font-weight="700">✗ mismatch</tspan>   export aborted, nothing written</text>
+
+    <!-- OUT: six tidy CSVs, arranged as a star -->
+    <g font-size="16">
+      <rect x="830" y="94"  width="310" height="40" rx="6" fill="#d9dadb"/>
+      <rect x="830" y="142" width="310" height="40" rx="6" fill="#d9dadb"/>
+      <rect x="830" y="190" width="310" height="40" rx="6" fill="#d9dadb"/>
+      <rect x="830" y="238" width="310" height="40" rx="6" fill="#d9dadb"/>
+      <rect x="830" y="300" width="310" height="44" rx="6" fill="#151722"/>
+      <rect x="830" y="352" width="310" height="44" rx="6" fill="#151722"/>
+      <g fill="#151722">
+        <text x="850" y="120">Race.csv</text>
+        <text x="850" y="168">Driver.csv</text>
+        <text x="850" y="216">Team.csv</text>
+        <text x="850" y="264">Session.csv</text>
+      </g>
+      <g fill="#ffffff">
+        <text x="850" y="328">Session Result.csv</text>
+        <text x="850" y="380">Qualifying Result.csv</text>
+      </g>
+      <g font-family="Consolas, 'Courier New', monospace" font-size="14" text-anchor="end">
+        <g fill="#6e6e6e">
+          <text x="1124" y="120">47 rows</text>
+          <text x="1124" y="168">24 rows</text>
+          <text x="1124" y="216">12 rows</text>
+          <text x="1124" y="264">2 rows</text>
+        </g>
+        <g fill="#b9bcc4">
+          <text x="1124" y="328">973 rows</text>
+          <text x="1124" y="380">740 rows</text>
+        </g>
+      </g>
+    </g>
+    <text x="830" y="424" font-size="14" fill="#6e6e6e">grey: dimensions · dark: facts</text>
+    <text x="830" y="446" font-size="14" fill="#6e6e6e">UTF-8, no byte-order mark, \n endings</text>
+
+    <!-- takeaway -->
+    <line x1="60" y1="520" x2="1140" y2="520" stroke="#d6d7d8" stroke-width="1.5"/>
+    <text x="60" y="564" font-size="24" fill="#151722">Nested JSON in, a star of tidy CSVs out.</text>
+    <text x="1140" y="564" font-size="24" fill="#f2955a" text-anchor="end">Nothing is written until the points reconcile.</text>
+    <text x="600" y="608" font-size="16" fill="#6e6e6e" text-anchor="middle">🎓 Your columns will differ from everyone else's. The reconciliation must not.</text>
+  </g>
+</svg>

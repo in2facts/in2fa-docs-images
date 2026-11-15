@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520">
+  <title>Supplied and yours: the input and the check are fixed, everything between is built</title>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#9a9da6"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="520" fill="#f6f6f6"/>
+
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <!-- column headings -->
+    <g font-size="15" letter-spacing="1" fill="#6e6e6e" text-anchor="middle">
+      <text x="175" y="58">SUPPLIED</text>
+      <text x="600" y="58" fill="#e07a3a" font-weight="700">YOURS TO BUILD</text>
+      <text x="1025" y="58">SUPPLIED</text>
+    </g>
+
+    <!-- the input: the same for everyone -->
+    <rect x="60" y="150" width="230" height="150" rx="8" fill="#c8dce8"/>
+    <text x="84" y="190" font-size="21" fill="#151722">The data</text>
+    <text x="84" y="222" font-size="15" fill="#151722" font-family="Consolas, 'Courier New', monospace">data/raw-*.json</text>
+    <text x="84" y="250" font-size="15" fill="#6e6e6e">frozen, so every total</text>
+    <text x="84" y="272" font-size="15" fill="#6e6e6e">can be compared</text>
+
+    <line x1="296" y1="225" x2="346" y2="225" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+
+    <!-- everything between: built with the agent -->
+    <rect x="352" y="76" width="496" height="298" rx="12" fill="none" stroke="#f2955a" stroke-width="2" stroke-dasharray="8 6"/>
+    <g fill="#d9dadb">
+      <rect x="372" y="96"  width="218" height="120" rx="8"/>
+      <rect x="610" y="96"  width="218" height="120" rx="8"/>
+      <rect x="372" y="234" width="218" height="120" rx="8"/>
+      <rect x="610" y="234" width="218" height="120" rx="8"/>
+    </g>
+    <g font-size="19" fill="#151722">
+      <text x="392" y="134">The transformation</text>
+      <text x="630" y="134">The presentation</text>
+      <text x="392" y="272">The model</text>
+      <text x="630" y="272">The report</text>
+    </g>
+    <g font-size="14" fill="#6e6e6e">
+      <text x="392" y="164" font-family="Consolas, 'Courier New', monospace" fill="#151722">export_csv.py</text>
+      <text x="392" y="186">and the CSVs</text>
+      <text x="630" y="164">the HTML dashboard</text>
+      <text x="392" y="302">the semantic model,</text>
+      <text x="392" y="324">in TMDL</text>
+      <text x="630" y="302">the report pages</text>
+    </g>
+
+    <line x1="854" y1="225" x2="904" y2="225" stroke="#9a9da6" stroke-width="2" marker-end="url(#ah)"/>
+
+    <!-- the check: the same opinion for everyone -->
+    <rect x="910" y="150" width="230" height="150" rx="8" fill="#151722"/>
+    <text x="934" y="190" font-size="21" fill="#ffffff">The checks</text>
+    <text x="934" y="222" font-size="15" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">tmdl_lint.py</text>
+    <text x="934" y="246" font-size="15" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">pbir_lint.py</text>
+    <text x="934" y="276" font-size="15" fill="#b9bcc4">an opinion you did not write</text>
+
+    <!-- takeaway -->
+    <line x1="60" y1="410" x2="1140" y2="410" stroke="#d6d7d8" stroke-width="1.5"/>
+    <text x="60" y="456" font-size="24" fill="#151722">Same input, same check, for everyone.</text>
+    <text x="1140" y="456" font-size="24" fill="#f2955a" text-anchor="end">Everything in between is yours.</text>
+    <text x="600" y="496" font-size="16" fill="#6e6e6e" text-anchor="middle">🎓 fetch.py is there to be read, not run - running it would replace the frozen data with today's.</text>
+  </g>
+</svg>

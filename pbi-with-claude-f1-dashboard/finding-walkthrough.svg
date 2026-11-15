@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 768" width="1200" height="768">
+<title>See a finding: the six steps and what each one shows</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#d6d7d8"/></marker></defs>
+<rect width="1200" height="768" fill="#f6f6f6"/>
+<g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+<text x="60" y="52" font-size="15" letter-spacing="1" fill="#6e6e6e">YOU RUN</text>
+<text x="700" y="52" font-size="15" letter-spacing="1" fill="#6e6e6e">YOU SHOULD SEE</text>
+<rect x="420" y="30" width="220" height="32" rx="16" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+<text x="530" y="52" font-size="14" font-weight="700" fill="#151722" text-anchor="middle">☝️ one line at a time</text>
+<rect x="60" y="96" width="580" height="72" rx="8" fill="#ffffff" stroke="#d9dadb"/>
+<circle cx="90" cy="132.0" r="15" fill="#151722"/>
+<text x="90" y="137.0" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<text x="120" y="125" font-size="18" fill="#151722">Make a second copy</text>
+<text x="120" y="150" font-size="14" fill="#6e6e6e" font-family="Consolas, 'Courier New', monospace" xml:space="preserve">git worktree add ../f1-demo after-report</text>
+<line x1="650" y1="132.0" x2="690" y2="132.0" stroke="#d6d7d8" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="700" y="96" width="440" height="72" rx="8" fill="#d9dadb"/>
+<text x="720" y="126" font-size="15" fill="#151722" font-family="Consolas, 'Courier New', monospace" font-weight="700" xml:space="preserve">C:\training\f1-demo appears</text>
+<text x="720" y="150" font-size="15" fill="#151722" font-family="Consolas, 'Courier New', monospace" xml:space="preserve">HEAD is now at … after-report</text>
+<rect x="60" y="188" width="580" height="72" rx="8" fill="#ffffff" stroke="#d9dadb"/>
+<circle cx="90" cy="224.0" r="15" fill="#151722"/>
+<text x="90" y="229.0" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<text x="120" y="217" font-size="18" fill="#151722">Check that copy</text>
+<text x="120" y="242" font-size="14" fill="#6e6e6e" font-family="Consolas, 'Courier New', monospace" xml:space="preserve">python scripts/pbir_lint.py ../f1-demo</text>
+<line x1="650" y1="224.0" x2="690" y2="224.0" stroke="#d6d7d8" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="700" y="188" width="440" height="72" rx="8" fill="#c8dce8"/>
+<text x="720" y="218" font-size="15" fill="#151722" font-family="Consolas, 'Courier New', monospace" xml:space="preserve">clean - nothing to fix</text>
+<text x="720" y="242" font-size="15" fill="#151722" font-family="Consolas, 'Courier New', monospace" font-weight="700" xml:space="preserve">0 error(s), 0 warning(s)</text>
+<rect x="60" y="280" width="580" height="72" rx="8" fill="#ffffff" stroke="#d9dadb"/>
+<circle cx="90" cy="316.0" r="15" fill="#151722"/>
+<text x="90" y="321.0" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<text x="120" y="309" font-size="18" fill="#151722">Break one word on purpose</text>
+<text x="120" y="334" font-size="14" fill="#6e6e6e" font-family="Consolas, 'Courier New', monospace" xml:space="preserve">visual.json:  &quot;Values&quot;: {  →  &quot;Columns&quot;: {</text>
+<line x1="650" y1="316.0" x2="690" y2="316.0" stroke="#d6d7d8" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="700" y="280" width="440" height="72" rx="8" fill="#d9dadb"/>
+<text x="720" y="310" font-size="15" fill="#151722" xml:space="preserve">Edited in Notepad or VS Code,</text>
+<text x="720" y="334" font-size="15" fill="#151722" xml:space="preserve">saved and closed - not in PowerShell</text>
+<rect x="60" y="372" width="580" height="72" rx="8" fill="#ffffff" stroke="#d9dadb"/>
+<circle cx="90" cy="408.0" r="15" fill="#151722"/>
+<text x="90" y="413.0" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<text x="120" y="401" font-size="18" fill="#151722">Check it again</text>
+<text x="120" y="426" font-size="14" fill="#6e6e6e" font-family="Consolas, 'Courier New', monospace" xml:space="preserve">python scripts/pbir_lint.py ../f1-demo</text>
+<line x1="650" y1="408.0" x2="690" y2="408.0" stroke="#d6d7d8" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="700" y="372" width="440" height="72" rx="8" fill="#f2955a"/>
+<text x="720" y="402" font-size="15" fill="#151722" font-family="Consolas, 'Courier New', monospace" font-weight="700" xml:space="preserve">WARN  well.unknown</text>
+<text x="720" y="426" font-size="15" fill="#151722" font-family="Consolas, 'Courier New', monospace" font-weight="700" xml:space="preserve">0 error(s), 1 warning(s)</text>
+<rect x="60" y="464" width="580" height="72" rx="8" fill="#ffffff" stroke="#d9dadb"/>
+<circle cx="90" cy="500.0" r="15" fill="#151722"/>
+<text x="90" y="505.0" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<text x="120" y="493" font-size="18" fill="#151722">Read what it told you</text>
+<text x="120" y="518" font-size="15" fill="#6e6e6e" xml:space="preserve">rule · location · what is wrong · hint</text>
+<line x1="650" y1="500.0" x2="690" y2="500.0" stroke="#d6d7d8" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="700.0" y="464" width="104.0" height="72" rx="8" fill="#ffffff" stroke="#f2955a" stroke-width="2"/>
+<text x="752.0" y="492" font-size="12" letter-spacing="1" fill="#6e6e6e" text-anchor="middle">RULE</text>
+<text x="752.0" y="516" font-size="13" fill="#151722" font-family="Consolas, 'Courier New', monospace" text-anchor="middle">well.unknown</text>
+<rect x="812.0" y="464" width="104.0" height="72" rx="8" fill="#ffffff" stroke="#f2955a" stroke-width="2"/>
+<text x="864.0" y="492" font-size="12" letter-spacing="1" fill="#6e6e6e" text-anchor="middle">LOCATION</text>
+<text x="864.0" y="516" font-size="13" fill="#151722" font-family="Consolas, 'Courier New', monospace" text-anchor="middle">visual.json</text>
+<rect x="924.0" y="464" width="104.0" height="72" rx="8" fill="#ffffff" stroke="#f2955a" stroke-width="2"/>
+<text x="976.0" y="492" font-size="12" letter-spacing="1" fill="#6e6e6e" text-anchor="middle">WRONG</text>
+<text x="976.0" y="516" font-size="13" fill="#151722" font-family="Consolas, 'Courier New', monospace" text-anchor="middle">&#x27;Columns&#x27;</text>
+<rect x="1036.0" y="464" width="104.0" height="72" rx="8" fill="#ffffff" stroke="#f2955a" stroke-width="2"/>
+<text x="1088.0" y="492" font-size="12" letter-spacing="1" fill="#6e6e6e" text-anchor="middle">HINT</text>
+<text x="1088.0" y="516" font-size="13" fill="#151722" font-family="Consolas, 'Courier New', monospace" text-anchor="middle">use Values</text>
+<rect x="60" y="556" width="580" height="72" rx="8" fill="#ffffff" stroke="#d9dadb"/>
+<circle cx="90" cy="592.0" r="15" fill="#151722"/>
+<text x="90" y="597.0" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+<text x="120" y="585" font-size="18" fill="#151722">Delete the copy</text>
+<text x="120" y="610" font-size="14" fill="#6e6e6e" font-family="Consolas, 'Courier New', monospace" xml:space="preserve">git worktree remove ../f1-demo --force</text>
+<line x1="650" y1="592.0" x2="690" y2="592.0" stroke="#d6d7d8" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="700" y="556" width="440" height="72" rx="8" fill="#d9dadb"/>
+<text x="720" y="586" font-size="15" fill="#151722" xml:space="preserve">No output - that is normal.</text>
+<text x="720" y="610" font-size="15" fill="#151722" xml:space="preserve">f1-demo is gone; your folder is untouched.</text>
+<line x1="60" y1="662" x2="1140" y2="662" stroke="#d6d7d8" stroke-width="1.5"/>
+<text x="60" y="708" font-size="24" fill="#151722">One changed word, and the check names it.</text>
+<text x="1140" y="708" font-size="24" fill="#f2955a" text-anchor="end">Power BI would show an empty rectangle.</text>
+<text x="600.0" y="748" font-size="15" fill="#6e6e6e" text-anchor="middle">Wrong folder? git answers "fatal: not a git repository" - cd into the course folder first.</text>
+</g>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" width="1200" height="580">
+  <title>What the agent is and is not good at</title>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#d6d7d8"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="580" fill="#f6f6f6"/>
+
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <!-- column headings -->
+    <rect x="61" y="39" width="166" height="38" rx="19" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <text x="144" y="64" font-size="16" font-weight="700" letter-spacing="1.5" fill="#151722" text-anchor="middle">VERY GOOD AT</text>
+    <rect x="1015" y="39" width="124" height="38" rx="19" fill="#ffffff" stroke="#f2955a" stroke-width="2"/>
+    <text x="1077" y="64" font-size="16" font-weight="700" letter-spacing="1.5" fill="#e07a3a" text-anchor="middle">POOR AT</text>
+
+    <!-- capability: volume and structure -->
+    <g fill="#d9dadb">
+      <rect x="60" y="96"  width="380" height="62" rx="8"/>
+      <rect x="60" y="174" width="380" height="62" rx="8"/>
+      <rect x="60" y="252" width="380" height="62" rx="8"/>
+      <rect x="60" y="330" width="380" height="62" rx="8"/>
+    </g>
+    <g font-size="21" fill="#151722">
+      <text x="84" y="134">Ninety visuals of shaped JSON</text>
+      <text x="84" y="212">Twenty measures, one convention</text>
+      <text x="84" y="290">Flattening a nested payload</text>
+      <text x="84" y="368">Tedious, documented work</text>
+    </g>
+
+    <!-- limitation: knowing whether it renders -->
+    <g fill="#f2955a">
+      <rect x="760" y="135" width="380" height="62" rx="8"/>
+      <rect x="760" y="213" width="380" height="62" rx="8"/>
+      <rect x="760" y="291" width="380" height="62" rx="8"/>
+    </g>
+    <g font-size="21" fill="#151722">
+      <text x="784" y="173">Will this visual actually render?</text>
+      <text x="784" y="251">Undocumented property names</text>
+      <text x="784" y="329">Failures that say nothing</text>
+    </g>
+
+    <!-- the gap, and what covers it -->
+    <line x1="462" y1="244" x2="738" y2="244" stroke="#d6d7d8" stroke-width="2"
+          marker-start="url(#ah)" marker-end="url(#ah)"/>
+    <rect x="497" y="226" width="206" height="36" rx="6" fill="#c8dce8"/>
+    <text x="600" y="250" font-size="15" fill="#151722" text-anchor="middle"
+          font-family="Consolas, 'Courier New', monospace">tmdl_lint · pbir_lint</text>
+
+    <!-- takeaway -->
+    <line x1="60" y1="440" x2="1140" y2="440" stroke="#d6d7d8" stroke-width="1.5"/>
+    <text x="60" y="492" font-size="24" fill="#151722">Volume and structure it handles.</text>
+    <text x="1140" y="492" font-size="24" fill="#f2955a" text-anchor="end">Whether a visual renders, it cannot know.</text>
+    <text x="600" y="540" font-size="17" fill="#6e6e6e" text-anchor="middle">🎓 That fact is written down nowhere. The checking tools exist to close the gap.</text>
+  </g>
+</svg>

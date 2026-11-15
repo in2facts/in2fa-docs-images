@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>HTML F1 dashboard - Drivers page (illustration)</title>
+<rect width="1200" height="680" fill="#0b0e13"/>
+<rect width="220" height="680" fill="#141922"/><line x1="220" y1="0" x2="220" y2="680" stroke="#252d3b"/>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8002d"/><stop offset="1" stop-color="#7a0018"/></linearGradient></defs>
+<rect x="20" y="24" width="34" height="34" rx="9" fill="url(#g)"/><text x="37" y="46" fill="#fff" font-size="14" font-weight="800" text-anchor="middle">F1</text>
+<text x="64" y="39" fill="#e8ecf3" font-size="13" font-weight="600">Ultimate F1 Dashboard</text><text x="64" y="54" fill="#5f6b7f" font-size="10">2026 season</text>
+<text x="28" y="106" fill="#95a1b5" font-size="12">Schedule</text>
+<text x="28" y="140" fill="#95a1b5" font-size="12">Results</text>
+<text x="28" y="174" fill="#95a1b5" font-size="12">Driver Standings</text>
+<text x="28" y="208" fill="#95a1b5" font-size="12">Constructor Standings</text>
+<rect x="14" y="224" width="192" height="28" rx="7" fill="#1b2230"/><rect x="14" y="224" width="2" height="28" fill="#e8002d"/>
+<text x="28" y="242" fill="#e8ecf3" font-size="12">Drivers</text>
+<text x="28" y="276" fill="#95a1b5" font-size="12">Teams</text>
+<text x="20" y="310" fill="#5f6b7f" font-size="9" letter-spacing="1">SEASON</text>
+<rect x="20" y="317" width="180" height="28" rx="6" fill="#1b2230" stroke="#252d3b"/><text x="30" y="335" fill="#e8ecf3" font-size="11">2026</text><text x="190" y="335" fill="#95a1b5" font-size="9" text-anchor="end">▼</text>
+<text x="20" y="370" fill="#5f6b7f" font-size="9" letter-spacing="1">AS OF ROUND</text>
+<rect x="20" y="377" width="180" height="28" rx="6" fill="#1b2230" stroke="#252d3b"/><text x="30" y="395" fill="#e8ecf3" font-size="11">R12 – Dutch Grand Prix</text><text x="190" y="395" fill="#95a1b5" font-size="9" text-anchor="end">▼</text>
+<text x="20" y="644" fill="#5f6b7f" font-size="10">Snapshot built 31 Aug 2026</text><text x="20" y="660" fill="#5f6b7f" font-size="10">Data: Jolpica API</text>
+<text x="250" y="52" fill="#e8ecf3" font-size="22" font-weight="600">Drivers</text>
+<text x="250" y="74" fill="#95a1b5" font-size="12">Season form after round 12 · team-coloured code badges</text>
+<g transform="translate(250,96)">
+<clipPath id="c0"><rect width="225" height="262" rx="10"/></clipPath><g clip-path="url(#c0)">
+<rect width="225" height="262" fill="#141922"/>
+<rect width="75.0" height="8" fill="#00D7B6"/><rect x="75.0" width="75.0" height="8" fill="#11151d"/><rect x="150.0" width="76.0" height="8" fill="#00D7B6"/>
+<rect x="14" y="22" width="46" height="46" rx="11" fill="#00D7B6"/><text x="37" y="50" fill="#0b0e13" font-size="14" font-weight="800" text-anchor="middle">ANT</text>
+<text x="70" y="42" fill="#e8ecf3" font-size="13" font-weight="600">Andrea Kimi Antonelli</text><text x="70" y="58" fill="#95a1b5" font-size="10">Mercedes</text>
+<text x="213" y="28" fill="#5f6b7f" font-size="15" font-weight="800" text-anchor="end">12</text>
+<line x1="0" y1="82" x2="225" y2="82" stroke="#252d3b"/>
+<line x1="112.5" y1="82" x2="112.5" y2="142" stroke="#252d3b"/>
+<text x="14.0" y="104" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">POINTS</text><text x="14.0" y="126" fill="#e8ecf3" font-size="14" font-weight="600">242</text>
+<line x1="0" y1="82" x2="225" y2="82" stroke="#252d3b"/>
+<text x="126.5" y="104" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">CHAMPIONSHIP</text><text x="126.5" y="126" fill="#e8ecf3" font-size="14" font-weight="600">P1</text>
+<line x1="0" y1="142" x2="225" y2="142" stroke="#252d3b"/>
+<line x1="112.5" y1="142" x2="112.5" y2="202" stroke="#252d3b"/>
+<text x="14.0" y="164" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">AVG QUALIFYING</text><text x="14.0" y="186" fill="#e8ecf3" font-size="14" font-weight="600">P2.0</text>
+<line x1="0" y1="142" x2="225" y2="142" stroke="#252d3b"/>
+<text x="126.5" y="164" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">AVG FINISH</text><text x="126.5" y="186" fill="#e8ecf3" font-size="14" font-weight="600">P3.9</text>
+<line x1="0" y1="202" x2="225" y2="202" stroke="#252d3b"/>
+<line x1="112.5" y1="202" x2="112.5" y2="262" stroke="#252d3b"/>
+<text x="14.0" y="224" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">WINS</text><text x="14.0" y="246" fill="#e8ecf3" font-size="14" font-weight="600">6</text>
+<line x1="0" y1="202" x2="225" y2="202" stroke="#252d3b"/>
+<text x="126.5" y="224" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">PODIUMS</text><text x="126.5" y="246" fill="#e8ecf3" font-size="14" font-weight="600">10</text>
+</g>
+<rect x=".5" y=".5" width="224" height="261" rx="10" fill="none" stroke="#252d3b"/></g>
+<g transform="translate(487,96)">
+<clipPath id="c1"><rect width="225" height="262" rx="10"/></clipPath><g clip-path="url(#c1)">
+<rect width="225" height="262" fill="#141922"/>
+<rect width="75.0" height="8" fill="#E8002D"/><rect x="75.0" width="75.0" height="8" fill="#11151d"/><rect x="150.0" width="76.0" height="8" fill="#E8002D"/>
+<rect x="14" y="22" width="46" height="46" rx="11" fill="#E8002D"/><text x="37" y="50" fill="#fff" font-size="14" font-weight="800" text-anchor="middle">HAM</text>
+<text x="70" y="42" fill="#e8ecf3" font-size="13" font-weight="600">Lewis Hamilton</text><text x="70" y="58" fill="#95a1b5" font-size="10">Ferrari</text>
+<text x="213" y="28" fill="#5f6b7f" font-size="15" font-weight="800" text-anchor="end">44</text>
+<line x1="0" y1="82" x2="225" y2="82" stroke="#252d3b"/>
+<line x1="112.5" y1="82" x2="112.5" y2="142" stroke="#252d3b"/>
+<text x="14.0" y="104" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">POINTS</text><text x="14.0" y="126" fill="#e8ecf3" font-size="14" font-weight="600">183</text>
+<line x1="0" y1="82" x2="225" y2="82" stroke="#252d3b"/>
+<text x="126.5" y="104" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">CHAMPIONSHIP</text><text x="126.5" y="126" fill="#e8ecf3" font-size="14" font-weight="600">P2</text>
+<line x1="0" y1="142" x2="225" y2="142" stroke="#252d3b"/>
+<line x1="112.5" y1="142" x2="112.5" y2="202" stroke="#252d3b"/>
+<text x="14.0" y="164" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">AVG QUALIFYING</text><text x="14.0" y="186" fill="#e8ecf3" font-size="14" font-weight="600">P4.3</text>
+<line x1="0" y1="142" x2="225" y2="142" stroke="#252d3b"/>
+<text x="126.5" y="164" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">AVG FINISH</text><text x="126.5" y="186" fill="#e8ecf3" font-size="14" font-weight="600">P4.1</text>
+<line x1="0" y1="202" x2="225" y2="202" stroke="#252d3b"/>
+<line x1="112.5" y1="202" x2="112.5" y2="262" stroke="#252d3b"/>
+<text x="14.0" y="224" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">WINS</text><text x="14.0" y="246" fill="#e8ecf3" font-size="14" font-weight="600">1</text>
+<line x1="0" y1="202" x2="225" y2="202" stroke="#252d3b"/>
+<text x="126.5" y="224" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">PODIUMS</text><text x="126.5" y="246" fill="#e8ecf3" font-size="14" font-weight="600">5</text>
+</g>
+<rect x=".5" y=".5" width="224" height="261" rx="10" fill="none" stroke="#252d3b"/></g>
+<g transform="translate(724,96)">
+<clipPath id="c2"><rect width="225" height="262" rx="10"/></clipPath><g clip-path="url(#c2)">
+<rect width="225" height="262" fill="#141922"/>
+<rect width="75.0" height="8" fill="#00D7B6"/><rect x="75.0" width="75.0" height="8" fill="#11151d"/><rect x="150.0" width="76.0" height="8" fill="#00D7B6"/>
+<rect x="14" y="22" width="46" height="46" rx="11" fill="#00D7B6"/><text x="37" y="50" fill="#0b0e13" font-size="14" font-weight="800" text-anchor="middle">RUS</text>
+<text x="70" y="42" fill="#e8ecf3" font-size="13" font-weight="600">George Russell</text><text x="70" y="58" fill="#95a1b5" font-size="10">Mercedes</text>
+<text x="213" y="28" fill="#5f6b7f" font-size="15" font-weight="800" text-anchor="end">63</text>
+<line x1="0" y1="82" x2="225" y2="82" stroke="#252d3b"/>
+<line x1="112.5" y1="82" x2="112.5" y2="142" stroke="#252d3b"/>
+<text x="14.0" y="104" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">POINTS</text><text x="14.0" y="126" fill="#e8ecf3" font-size="14" font-weight="600">183</text>
+<line x1="0" y1="82" x2="225" y2="82" stroke="#252d3b"/>
+<text x="126.5" y="104" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">CHAMPIONSHIP</text><text x="126.5" y="126" fill="#e8ecf3" font-size="14" font-weight="600">P3</text>
+<line x1="0" y1="142" x2="225" y2="142" stroke="#252d3b"/>
+<line x1="112.5" y1="142" x2="112.5" y2="202" stroke="#252d3b"/>
+<text x="14.0" y="164" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">AVG QUALIFYING</text><text x="14.0" y="186" fill="#e8ecf3" font-size="14" font-weight="600">P3.0</text>
+<line x1="0" y1="142" x2="225" y2="142" stroke="#252d3b"/>
+<text x="126.5" y="164" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">AVG FINISH</text><text x="126.5" y="186" fill="#e8ecf3" font-size="14" font-weight="600">P3.3</text>
+<line x1="0" y1="202" x2="225" y2="202" stroke="#252d3b"/>
+<line x1="112.5" y1="202" x2="112.5" y2="262" stroke="#252d3b"/>
+<text x="14.0" y="224" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">WINS</text><text x="14.0" y="246" fill="#e8ecf3" font-size="14" font-weight="600">2</text>
+<line x1="0" y1="202" x2="225" y2="202" stroke="#252d3b"/>
+<text x="126.5" y="224" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">PODIUMS</text><text x="126.5" y="246" fill="#e8ecf3" font-size="14" font-weight="600">8</text>
+</g>
+<rect x=".5" y=".5" width="224" height="261" rx="10" fill="none" stroke="#252d3b"/></g>
+<g transform="translate(961,96)">
+<clipPath id="c3"><rect width="225" height="262" rx="10"/></clipPath><g clip-path="url(#c3)">
+<rect width="225" height="262" fill="#141922"/>
+<rect width="75.0" height="8" fill="#FF8000"/><rect x="75.0" width="75.0" height="8" fill="#11151d"/><rect x="150.0" width="76.0" height="8" fill="#FF8000"/>
+<rect x="14" y="22" width="46" height="46" rx="11" fill="#FF8000"/><text x="37" y="50" fill="#fff" font-size="14" font-weight="800" text-anchor="middle">NOR</text>
+<text x="70" y="42" fill="#e8ecf3" font-size="13" font-weight="600">Lando Norris</text><text x="70" y="58" fill="#95a1b5" font-size="10">McLaren</text>
+<text x="213" y="28" fill="#5f6b7f" font-size="15" font-weight="800" text-anchor="end">1</text>
+<line x1="0" y1="82" x2="225" y2="82" stroke="#252d3b"/>
+<line x1="112.5" y1="82" x2="112.5" y2="142" stroke="#252d3b"/>
+<text x="14.0" y="104" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">POINTS</text><text x="14.0" y="126" fill="#e8ecf3" font-size="14" font-weight="600">159</text>
+<line x1="0" y1="82" x2="225" y2="82" stroke="#252d3b"/>
+<text x="126.5" y="104" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">CHAMPIONSHIP</text><text x="126.5" y="126" fill="#e8ecf3" font-size="14" font-weight="600">P4</text>
+<line x1="0" y1="142" x2="225" y2="142" stroke="#252d3b"/>
+<line x1="112.5" y1="142" x2="112.5" y2="202" stroke="#252d3b"/>
+<text x="14.0" y="164" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">AVG QUALIFYING</text><text x="14.0" y="186" fill="#e8ecf3" font-size="14" font-weight="600">P4.4</text>
+<line x1="0" y1="142" x2="225" y2="142" stroke="#252d3b"/>
+<text x="126.5" y="164" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">AVG FINISH</text><text x="126.5" y="186" fill="#e8ecf3" font-size="14" font-weight="600">P3.4</text>
+<line x1="0" y1="202" x2="225" y2="202" stroke="#252d3b"/>
+<line x1="112.5" y1="202" x2="112.5" y2="262" stroke="#252d3b"/>
+<text x="14.0" y="224" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">WINS</text><text x="14.0" y="246" fill="#e8ecf3" font-size="14" font-weight="600">2</text>
+<line x1="0" y1="202" x2="225" y2="202" stroke="#252d3b"/>
+<text x="126.5" y="224" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">PODIUMS</text><text x="126.5" y="246" fill="#e8ecf3" font-size="14" font-weight="600">7</text>
+</g>
+<rect x=".5" y=".5" width="224" height="261" rx="10" fill="none" stroke="#252d3b"/></g>
+<g transform="translate(250,372)">
+<clipPath id="c4"><rect width="225" height="262" rx="10"/></clipPath><g clip-path="url(#c4)">
+<rect width="225" height="262" fill="#141922"/>
+<rect width="75.0" height="8" fill="#E8002D"/><rect x="75.0" width="75.0" height="8" fill="#11151d"/><rect x="150.0" width="76.0" height="8" fill="#E8002D"/>
+<rect x="14" y="22" width="46" height="46" rx="11" fill="#E8002D"/><text x="37" y="50" fill="#fff" font-size="14" font-weight="800" text-anchor="middle">LEC</text>
+<text x="70" y="42" fill="#e8ecf3" font-size="13" font-weight="600">Charles Leclerc</text><text x="70" y="58" fill="#95a1b5" font-size="10">Ferrari</text>
+<text x="213" y="28" fill="#5f6b7f" font-size="15" font-weight="800" text-anchor="end">16</text>
+<line x1="0" y1="82" x2="225" y2="82" stroke="#252d3b"/>
+<line x1="112.5" y1="82" x2="112.5" y2="142" stroke="#252d3b"/>
+<text x="14.0" y="104" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">POINTS</text><text x="14.0" y="126" fill="#e8ecf3" font-size="14" font-weight="600">155</text>
+<line x1="0" y1="82" x2="225" y2="82" stroke="#252d3b"/>
+<text x="126.5" y="104" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">CHAMPIONSHIP</text><text x="126.5" y="126" fill="#e8ecf3" font-size="14" font-weight="600">P5</text>
+<line x1="0" y1="142" x2="225" y2="142" stroke="#252d3b"/>
+<line x1="112.5" y1="142" x2="112.5" y2="202" stroke="#252d3b"/>
+<text x="14.0" y="164" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">AVG QUALIFYING</text><text x="14.0" y="186" fill="#e8ecf3" font-size="14" font-weight="600">P4.6</text>
+<line x1="0" y1="142" x2="225" y2="142" stroke="#252d3b"/>
+<text x="126.5" y="164" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">AVG FINISH</text><text x="126.5" y="186" fill="#e8ecf3" font-size="14" font-weight="600">P4.6</text>
+<line x1="0" y1="202" x2="225" y2="202" stroke="#252d3b"/>
+<line x1="112.5" y1="202" x2="112.5" y2="262" stroke="#252d3b"/>
+<text x="14.0" y="224" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">WINS</text><text x="14.0" y="246" fill="#e8ecf3" font-size="14" font-weight="600">1</text>
+<line x1="0" y1="202" x2="225" y2="202" stroke="#252d3b"/>
+<text x="126.5" y="224" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">PODIUMS</text><text x="126.5" y="246" fill="#e8ecf3" font-size="14" font-weight="600">5</text>
+</g>
+<rect x=".5" y=".5" width="224" height="261" rx="10" fill="none" stroke="#252d3b"/></g>
+<g transform="translate(487,372)">
+<clipPath id="c5"><rect width="225" height="262" rx="10"/></clipPath><g clip-path="url(#c5)">
+<rect width="225" height="262" fill="#141922"/>
+<rect width="75.0" height="8" fill="#3671C6"/><rect x="75.0" width="75.0" height="8" fill="#11151d"/><rect x="150.0" width="76.0" height="8" fill="#3671C6"/>
+<rect x="14" y="22" width="46" height="46" rx="11" fill="#3671C6"/><text x="37" y="50" fill="#fff" font-size="14" font-weight="800" text-anchor="middle">VER</text>
+<text x="70" y="42" fill="#e8ecf3" font-size="13" font-weight="600">Max Verstappen</text><text x="70" y="58" fill="#95a1b5" font-size="10">Red Bull</text>
+<text x="213" y="28" fill="#5f6b7f" font-size="15" font-weight="800" text-anchor="end">3</text>
+<line x1="0" y1="82" x2="225" y2="82" stroke="#252d3b"/>
+<line x1="112.5" y1="82" x2="112.5" y2="142" stroke="#252d3b"/>
+<text x="14.0" y="104" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">POINTS</text><text x="14.0" y="126" fill="#e8ecf3" font-size="14" font-weight="600">112</text>
+<line x1="0" y1="82" x2="225" y2="82" stroke="#252d3b"/>
+<text x="126.5" y="104" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">CHAMPIONSHIP</text><text x="126.5" y="126" fill="#e8ecf3" font-size="14" font-weight="600">P6</text>
+<line x1="0" y1="142" x2="225" y2="142" stroke="#252d3b"/>
+<line x1="112.5" y1="142" x2="112.5" y2="202" stroke="#252d3b"/>
+<text x="14.0" y="164" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">AVG QUALIFYING</text><text x="14.0" y="186" fill="#e8ecf3" font-size="14" font-weight="600">P5.5</text>
+<line x1="0" y1="142" x2="225" y2="142" stroke="#252d3b"/>
+<text x="126.5" y="164" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">AVG FINISH</text><text x="126.5" y="186" fill="#e8ecf3" font-size="14" font-weight="600">P6.1</text>
+<line x1="0" y1="202" x2="225" y2="202" stroke="#252d3b"/>
+<line x1="112.5" y1="202" x2="112.5" y2="262" stroke="#252d3b"/>
+<text x="14.0" y="224" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">WINS</text><text x="14.0" y="246" fill="#e8ecf3" font-size="14" font-weight="600">0</text>
+<line x1="0" y1="202" x2="225" y2="202" stroke="#252d3b"/>
+<text x="126.5" y="224" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">PODIUMS</text><text x="126.5" y="246" fill="#e8ecf3" font-size="14" font-weight="600">7</text>
+</g>
+<rect x=".5" y=".5" width="224" height="261" rx="10" fill="none" stroke="#252d3b"/></g>
+<g transform="translate(724,372)">
+<clipPath id="c6"><rect width="225" height="262" rx="10"/></clipPath><g clip-path="url(#c6)">
+<rect width="225" height="262" fill="#141922"/>
+<rect width="75.0" height="8" fill="#FF8000"/><rect x="75.0" width="75.0" height="8" fill="#11151d"/><rect x="150.0" width="76.0" height="8" fill="#FF8000"/>
+<rect x="14" y="22" width="46" height="46" rx="11" fill="#FF8000"/><text x="37" y="50" fill="#fff" font-size="14" font-weight="800" text-anchor="middle">PIA</text>
+<text x="70" y="42" fill="#e8ecf3" font-size="13" font-weight="600">Oscar Piastri</text><text x="70" y="58" fill="#95a1b5" font-size="10">McLaren</text>
+<text x="213" y="28" fill="#5f6b7f" font-size="15" font-weight="800" text-anchor="end">81</text>
+<line x1="0" y1="82" x2="225" y2="82" stroke="#252d3b"/>
+<line x1="112.5" y1="82" x2="112.5" y2="142" stroke="#252d3b"/>
+<text x="14.0" y="104" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">POINTS</text><text x="14.0" y="126" fill="#e8ecf3" font-size="14" font-weight="600">104</text>
+<line x1="0" y1="82" x2="225" y2="82" stroke="#252d3b"/>
+<text x="126.5" y="104" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">CHAMPIONSHIP</text><text x="126.5" y="126" fill="#e8ecf3" font-size="14" font-weight="600">P7</text>
+<line x1="0" y1="142" x2="225" y2="142" stroke="#252d3b"/>
+<line x1="112.5" y1="142" x2="112.5" y2="202" stroke="#252d3b"/>
+<text x="14.0" y="164" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">AVG QUALIFYING</text><text x="14.0" y="186" fill="#e8ecf3" font-size="14" font-weight="600">P5.8</text>
+<line x1="0" y1="142" x2="225" y2="142" stroke="#252d3b"/>
+<text x="126.5" y="164" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">AVG FINISH</text><text x="126.5" y="186" fill="#e8ecf3" font-size="14" font-weight="600">P5.4</text>
+<line x1="0" y1="202" x2="225" y2="202" stroke="#252d3b"/>
+<line x1="112.5" y1="202" x2="112.5" y2="262" stroke="#252d3b"/>
+<text x="14.0" y="224" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">WINS</text><text x="14.0" y="246" fill="#e8ecf3" font-size="14" font-weight="600">0</text>
+<line x1="0" y1="202" x2="225" y2="202" stroke="#252d3b"/>
+<text x="126.5" y="224" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">PODIUMS</text><text x="126.5" y="246" fill="#e8ecf3" font-size="14" font-weight="600">5</text>
+</g>
+<rect x=".5" y=".5" width="224" height="261" rx="10" fill="none" stroke="#252d3b"/></g>
+<g transform="translate(961,372)">
+<clipPath id="c7"><rect width="225" height="262" rx="10"/></clipPath><g clip-path="url(#c7)">
+<rect width="225" height="262" fill="#141922"/>
+<rect width="75.0" height="8" fill="#3671C6"/><rect x="75.0" width="75.0" height="8" fill="#11151d"/><rect x="150.0" width="76.0" height="8" fill="#3671C6"/>
+<rect x="14" y="22" width="46" height="46" rx="11" fill="#3671C6"/><text x="37" y="50" fill="#fff" font-size="14" font-weight="800" text-anchor="middle">HAD</text>
+<text x="70" y="42" fill="#e8ecf3" font-size="13" font-weight="600">Isack Hadjar</text><text x="70" y="58" fill="#95a1b5" font-size="10">Red Bull</text>
+<text x="213" y="28" fill="#5f6b7f" font-size="15" font-weight="800" text-anchor="end">6</text>
+<line x1="0" y1="82" x2="225" y2="82" stroke="#252d3b"/>
+<line x1="112.5" y1="82" x2="112.5" y2="142" stroke="#252d3b"/>
+<text x="14.0" y="104" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">POINTS</text><text x="14.0" y="126" fill="#e8ecf3" font-size="14" font-weight="600">68</text>
+<line x1="0" y1="82" x2="225" y2="82" stroke="#252d3b"/>
+<text x="126.5" y="104" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">CHAMPIONSHIP</text><text x="126.5" y="126" fill="#e8ecf3" font-size="14" font-weight="600">P8</text>
+<line x1="0" y1="142" x2="225" y2="142" stroke="#252d3b"/>
+<line x1="112.5" y1="142" x2="112.5" y2="202" stroke="#252d3b"/>
+<text x="14.0" y="164" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">AVG QUALIFYING</text><text x="14.0" y="186" fill="#e8ecf3" font-size="14" font-weight="600">P8.3</text>
+<line x1="0" y1="142" x2="225" y2="142" stroke="#252d3b"/>
+<text x="126.5" y="164" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">AVG FINISH</text><text x="126.5" y="186" fill="#e8ecf3" font-size="14" font-weight="600">P8.6</text>
+<line x1="0" y1="202" x2="225" y2="202" stroke="#252d3b"/>
+<line x1="112.5" y1="202" x2="112.5" y2="262" stroke="#252d3b"/>
+<text x="14.0" y="224" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">WINS</text><text x="14.0" y="246" fill="#e8ecf3" font-size="14" font-weight="600">0</text>
+<line x1="0" y1="202" x2="225" y2="202" stroke="#252d3b"/>
+<text x="126.5" y="224" fill="#5f6b7f" font-size="8.5" letter-spacing=".6">PODIUMS</text><text x="126.5" y="246" fill="#e8ecf3" font-size="14" font-weight="600">2</text>
+</g>
+<rect x=".5" y=".5" width="224" height="261" rx="10" fill="none" stroke="#252d3b"/></g>
+</svg>

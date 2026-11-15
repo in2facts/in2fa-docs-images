@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 600" width="840" height="600">
+  <title>/mcp in the Claude Code terminal - powerbi-modeling-mcp connected</title>
+  <rect width="840" height="600" fill="#f6f6f6"/>
+  <rect width="5" height="600" fill="#f39454"/>
+
+  <!-- terminal tab bar: this runs inside Claude Code, in the terminal -->
+  <rect x="5" y="0" width="835" height="44" fill="#ffffff"/>
+  <line x1="5" y1="44" x2="840" y2="44" stroke="#d6d7d8" stroke-width="1.5"/>
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15">
+    <text x="28" y="28" fill="#151722">Terminal</text>
+    <text x="96" y="28" fill="#6e6e6e">claude</text>
+    <text x="160" y="29" fill="#151722" font-size="20">+</text>
+  </g>
+
+  <!-- Claude Code banner -->
+  <g transform="translate(40,70)" fill="#d97757">
+    <rect x="6" y="0" width="40" height="22"/>
+    <rect x="0" y="8" width="52" height="8"/>
+    <rect x="10" y="22" width="4" height="10"/><rect x="18" y="22" width="4" height="10"/>
+    <rect x="30" y="22" width="4" height="10"/><rect x="38" y="22" width="4" height="10"/>
+    <rect x="14" y="6" width="4" height="6" fill="#151722"/><rect x="34" y="6" width="4" height="6" fill="#151722"/>
+  </g>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#151722" xml:space="preserve">
+    <text x="112" y="80"><tspan font-weight="700">Claude Code</tspan><tspan fill="#6e6e6e"> v2.1.311</tspan></text>
+    <text x="112" y="101" fill="#6e6e6e">Opus 5.5 · Claude Team</text>
+    <text x="112" y="122" fill="#6e6e6e">C:\training\in2fa-matl-pbi-with-claude</text>
+
+    <!-- what you type, and the reply -->
+    <rect x="5" y="148" width="835" height="28" fill="#ececec"/>
+    <text x="22" y="167"><tspan fill="#6e6e6e">❯ </tspan><tspan font-weight="700">/mcp</tspan></text>
+    <text x="40" y="196" fill="#6e6e6e">└ <tspan fill="#151722">Reconnected to powerbi-modeling-mcp.</tspan></text>
+
+    <line x1="40" y1="222" x2="800" y2="222" stroke="#d6d7d8" stroke-width="1.5"/>
+
+    <!-- the server list -->
+    <text x="40" y="258" font-weight="700">Project MCPs <tspan font-weight="400" fill="#6e6e6e">(C:\training\in2fa-matl-pbi-with-claude\.mcp.json)</tspan></text>
+    <rect x="34" y="268" width="560" height="28" rx="5" fill="#c8dce8"/>
+    <text x="40" y="287"><tspan fill="#6e6e6e">❯ </tspan><tspan fill="#2f8f5b" font-weight="700">✓</tspan> powerbi-modeling-mcp</text>
+    <text x="586" y="287" fill="#6e6e6e" text-anchor="end">21 tools</text>
+    <text x="40" y="320" font-size="13" fill="#6e6e6e">press Enter on the server to see its details</text>
+
+    <line x1="40" y1="346" x2="800" y2="346" stroke="#d6d7d8" stroke-width="1.5"/>
+
+    <!-- the details -->
+    <text x="40" y="382" font-weight="700" fill="#e07a3a">Powerbi-modeling-mcp MCP Server</text>
+    <g font-weight="700">
+      <text x="40" y="422">Status:</text>
+      <text x="40" y="446">Command:</text>
+      <text x="40" y="470">Config location:</text>
+      <text x="40" y="494">Capabilities:</text>
+      <text x="40" y="518">Tools:</text>
+    </g>
+    <text x="200" y="422" fill="#2f8f5b" font-weight="700">✓ connected</text>
+    <text x="200" y="446" fill="#6e6e6e">npx -y @microsoft/powerbi-modeling-mcp@0.5.0-beta.13 --start</text>
+    <text x="200" y="470" fill="#6e6e6e">C:\training\in2fa-matl-pbi-with-claude\.mcp.json</text>
+    <text x="200" y="494" fill="#6e6e6e">tools · prompts</text>
+    <text x="200" y="518" fill="#6e6e6e">21 tools</text>
+
+    <line x1="40" y1="546" x2="800" y2="546" stroke="#d6d7d8" stroke-width="1.5"/>
+    <text x="40" y="576" font-size="13" fill="#6e6e6e">Not connected yet? Choose <tspan fill="#151722" font-weight="700">Authenticate</tspan> and finish the sign-in in the browser. Then /exit.</text>
+  </g>
+</svg>
