@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" width="960" height="500" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Naming branches</title>
+  <desc id="d">A branch name has a type prefix and a short description in lowercase with hyphens. Four types: feature for new content, fix for corrections, docs for documentation, and experiment for trials that may be thrown away.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <g id="no"><circle r="9" fill="#FEE2E2"/><path d="M-3.5 -3.5 L3.5 3.5 M3.5 -3.5 L-3.5 3.5" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/></g>
+    <g id="yes"><circle r="9" fill="#DCFCE7"/><path d="M-4 0 L-1.3 3 L4 -3" fill="none" stroke="#16A34A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+  </defs>
+  <rect width="960" height="500" rx="18" fill="#F8FAFC"/>
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">Naming branches</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">A good name tells everyone what you are doing, before they open anything</text>
+
+  <!-- anatomy -->
+  <g font-family="Consolas, monospace" font-size="30">
+    <rect x="230" y="98" width="150" height="54" rx="10" fill="#EDE9FE"/><text x="248" y="135" fill="#6D28D9" font-weight="700">feature</text>
+    <text x="388" y="135" fill="#9CA3AF">/</text>
+    <rect x="412" y="98" width="320" height="54" rx="10" fill="#F0FDF4"/><text x="428" y="135" fill="#1F2937">q3-sales-report</text>
+  </g>
+  <g font-size="13" text-anchor="middle">
+    <text x="305" y="176" font-weight="700" fill="#6D28D9">type</text>
+    <text x="572" y="176" font-weight="700" fill="#15803D">short description</text>
+    <text x="572" y="194" fill="#6B7280">lowercase, words joined by hyphens</text>
+  </g>
+
+  <!-- types -->
+  <g filter="url(#s)" fill="#FFFFFF" stroke="#E5E7EB">
+    <rect x="30" y="218" width="210" height="140" rx="14"/>
+    <rect x="256" y="218" width="210" height="140" rx="14"/>
+    <rect x="482" y="218" width="210" height="140" rx="14"/>
+    <rect x="708" y="218" width="222" height="140" rx="14"/>
+  </g>
+  <g font-size="13" fill="#4B5563">
+    <rect x="30" y="218" width="210" height="8" rx="4" fill="#7C3AED"/>
+    <text x="48" y="254" font-family="Consolas, monospace" font-size="17" font-weight="700" fill="#6D28D9">feature/</text>
+    <text x="48" y="278">New content or capability</text>
+    <text x="48" y="320" font-family="Consolas, monospace" font-size="12" fill="#374151">feature/customer-chapter</text>
+    <text x="48" y="340" font-family="Consolas, monospace" font-size="12" fill="#374151">feature/kpi-dashboard</text>
+
+    <rect x="256" y="218" width="210" height="8" rx="4" fill="#DC2626"/>
+    <text x="274" y="254" font-family="Consolas, monospace" font-size="17" font-weight="700" fill="#DC2626">fix/</text>
+    <text x="274" y="278">Correct something wrong</text>
+    <text x="274" y="320" font-family="Consolas, monospace" font-size="12" fill="#374151">fix/wrong-vat-rate</text>
+    <text x="274" y="340" font-family="Consolas, monospace" font-size="12" fill="#374151">fix/broken-links</text>
+
+    <rect x="482" y="218" width="210" height="8" rx="4" fill="#2563EB"/>
+    <text x="500" y="254" font-family="Consolas, monospace" font-size="17" font-weight="700" fill="#2563EB">docs/</text>
+    <text x="500" y="278">Documentation, readme, notes</text>
+    <text x="500" y="320" font-family="Consolas, monospace" font-size="12" fill="#374151">docs/onboarding-guide</text>
+    <text x="500" y="340" font-family="Consolas, monospace" font-size="12" fill="#374151">docs/update-faq</text>
+
+    <rect x="708" y="218" width="222" height="8" rx="4" fill="#D97757"/>
+    <text x="726" y="254" font-family="Consolas, monospace" font-size="17" font-weight="700" fill="#B4532F">experiment/</text>
+    <text x="726" y="278">A trial that may be thrown away</text>
+    <text x="726" y="320" font-family="Consolas, monospace" font-size="12" fill="#374151">experiment/new-layout</text>
+    <text x="726" y="340" font-family="Consolas, monospace" font-size="12" fill="#374151">experiment/claude-rewrite</text>
+  </g>
+
+  <!-- do/don't -->
+  <rect x="30" y="378" width="900" height="100" rx="14" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <g font-family="Consolas, monospace" font-size="13.5" fill="#374151">
+    <use href="#yes" x="58" y="410"/><text x="76" y="415">fix/invoice-total</text>
+    <use href="#yes" x="58" y="446"/><text x="76" y="451">feature/2026-budget</text>
+    <use href="#no" x="328" y="410"/><text x="346" y="415">test</text>
+    <use href="#no" x="328" y="446"/><text x="346" y="451">Alain's stuff (NEW)</text>
+  </g>
+  <g font-size="13" fill="#4B5563">
+    <text x="610" y="408" font-weight="700" fill="#1F2937">Avoid</text>
+    <text x="610" y="430">• spaces, capitals, special characters</text>
+    <text x="610" y="452">• personal names or vague words</text>
+    <text x="610" y="470" fill="#6B7280" font-size="12">Claude can suggest a name for you.</text>
+  </g>
+</svg>

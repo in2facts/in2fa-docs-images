@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" width="960" height="500" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">How a branch works</title>
+  <desc id="d">The main line holds the approved version. A branch splits off, receives three commits while main stays unchanged, and is merged back after review. Main then contains the new work.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="960" height="500" rx="18" fill="#F8FAFC"/>
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">How a branch works</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">Work on a copy, keep the original safe, combine when it's ready</text>
+
+  <!-- phase bands -->
+  <rect x="210" y="96" width="210" height="300" rx="10" fill="#F5F3FF"/>
+  <rect x="430" y="96" width="250" height="300" rx="10" fill="#F5F3FF"/>
+  <rect x="690" y="96" width="120" height="300" rx="10" fill="#F0FDF4"/>
+  <g font-size="12" font-weight="700" fill="#6D28D9" text-anchor="middle">
+    <text x="315" y="118">① CREATE BRANCH</text>
+    <text x="555" y="118">② WORK SAFELY</text>
+    <text x="750" y="118" fill="#15803D">③ MERGE</text>
+  </g>
+
+  <!-- main line -->
+  <line x1="60" y1="330" x2="900" y2="330" stroke="#1E3A5F" stroke-width="6" stroke-linecap="round"/>
+  <rect x="44" y="350" width="64" height="24" rx="12" fill="#1E3A5F"/>
+  <text x="76" y="367" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">main</text>
+
+  <!-- branch line -->
+  <path d="M240 330 C290 330 290 200 340 200 L620 200 C690 200 690 330 750 330" fill="none" stroke="#7C3AED" stroke-width="6" stroke-linecap="round"/>
+  <rect x="340" y="150" width="170" height="24" rx="12" fill="#7C3AED"/>
+  <text x="425" y="167" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">feature/q3-report</text>
+
+  <!-- main commits -->
+  <g filter="url(#s)" fill="#FFFFFF" stroke="#1E3A5F" stroke-width="4">
+    <circle cx="120" cy="330" r="13"/><circle cx="240" cy="330" r="13"/>
+  </g>
+  <!-- branch commits -->
+  <g filter="url(#s)" fill="#FFFFFF" stroke="#7C3AED" stroke-width="4">
+    <circle cx="390" cy="200" r="13"/><circle cx="480" cy="200" r="13"/><circle cx="570" cy="200" r="13"/>
+  </g>
+  <!-- merge commit -->
+  <g filter="url(#s)"><circle cx="750" cy="330" r="17" fill="#16A34A" stroke="#FFFFFF" stroke-width="4"/></g>
+  <path d="M742 330 l6 6 l10 -11" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g filter="url(#s)" fill="#FFFFFF" stroke="#1E3A5F" stroke-width="4"><circle cx="860" cy="330" r="13"/></g>
+
+  <!-- labels -->
+  <g font-size="12.5" fill="#4B5563" text-anchor="middle">
+    <text x="390" y="236">Draft text</text>
+    <text x="480" y="236">Add table</text>
+    <text x="570" y="236">Fix review</text>
+    <text x="570" y="252">comments</text>
+    <text x="750" y="368" font-weight="700" fill="#15803D">Merged!</text>
+    <text x="860" y="368">next task</text>
+  </g>
+
+  <!-- main unchanged note -->
+  <rect x="440" y="300" width="230" height="56" rx="10" fill="#FFFFFF" stroke="#BFDBFE"/>
+  <text x="555" y="323" text-anchor="middle" font-size="13" font-weight="700" fill="#1E3A5F">main stays untouched</text>
+  <text x="555" y="342" text-anchor="middle" font-size="12.5" fill="#4B5563">colleagues keep using it safely</text>
+
+  <!-- footer explanations -->
+  <g font-size="13.5" fill="#374151">
+    <circle cx="70" cy="438" r="7" fill="#1E3A5F"/>
+    <text x="86" y="443"><tspan font-weight="700">main</tspan> = the approved, shared version</text>
+    <circle cx="390" cy="438" r="7" fill="#7C3AED"/>
+    <text x="406" y="443"><tspan font-weight="700">branch</tspan> = your private workspace</text>
+    <circle cx="690" cy="438" r="7" fill="#16A34A"/>
+    <text x="706" y="443"><tspan font-weight="700">merge</tspan> = combine after review</text>
+  </g>
+  <text x="480" y="478" text-anchor="middle" font-size="13" fill="#6B7280">A branch costs nothing to create and can be deleted after merging. Create one for every task.</text>
+</svg>

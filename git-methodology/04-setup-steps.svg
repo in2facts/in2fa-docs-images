@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">One-time setup in six steps</title>
+  <desc id="d">Install Git, install VS Code, create a GitHub account, add the Claude Code extension, sign in to GitHub from VS Code, and clone your first repository. About 30 minutes, once.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10z" fill="#9CA3AF"/>
+    </marker>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect width="960" height="540" rx="18" fill="#F8FAFC"/>
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">One-time setup in six steps</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">About 30 minutes, and you only do it once</text>
+
+  <g filter="url(#s)" fill="#FFFFFF" stroke="#E5E7EB">
+    <rect x="40" y="100" width="260" height="180" rx="14"/>
+    <rect x="350" y="100" width="260" height="180" rx="14"/>
+    <rect x="660" y="100" width="260" height="180" rx="14"/>
+    <rect x="40" y="320" width="260" height="180" rx="14"/>
+    <rect x="350" y="320" width="260" height="180" rx="14"/>
+    <rect x="660" y="320" width="260" height="180" rx="14"/>
+  </g>
+
+  <g stroke="#9CA3AF" stroke-width="2" fill="none">
+    <line x1="304" y1="190" x2="344" y2="190" marker-end="url(#a)"/>
+    <line x1="614" y1="190" x2="654" y2="190" marker-end="url(#a)"/>
+    <path d="M790 284 v16 h-620 v14" marker-end="url(#a)"/>
+    <line x1="304" y1="410" x2="344" y2="410" marker-end="url(#a)"/>
+    <line x1="614" y1="410" x2="654" y2="410" marker-end="url(#a)"/>
+  </g>
+
+  <g font-size="13.5" fill="#4B5563">
+    <!-- 1 -->
+    <circle cx="80" cy="140" r="20" fill="#F05033"/><text x="80" y="147" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">1</text>
+    <text x="112" y="147" font-size="18" font-weight="700" fill="#1F2937">Install Git</text>
+    <text x="62" y="190">git-scm.com → Download for</text>
+    <text x="62" y="212">Windows. Accept the defaults.</text>
+    <text x="62" y="246" font-size="12.5" fill="#6B7280">The engine that tracks versions.</text>
+
+    <!-- 2 -->
+    <circle cx="390" cy="140" r="20" fill="#2563EB"/><text x="390" y="147" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">2</text>
+    <text x="422" y="147" font-size="18" font-weight="700" fill="#1F2937">Install VS Code</text>
+    <text x="372" y="190">code.visualstudio.com →</text>
+    <text x="372" y="212">Download. Accept the defaults.</text>
+    <text x="372" y="246" font-size="12.5" fill="#6B7280">Free editor with Git built in.</text>
+
+    <!-- 3 -->
+    <circle cx="700" cy="140" r="20" fill="#24292F"/><text x="700" y="147" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">3</text>
+    <text x="732" y="147" font-size="18" font-weight="700" fill="#1F2937">GitHub account</text>
+    <text x="682" y="190">github.com → Sign up, or ask</text>
+    <text x="682" y="212">IT to add you to the company</text>
+    <text x="682" y="234">organisation.</text>
+
+    <!-- 4 -->
+    <circle cx="80" cy="360" r="20" fill="#D97757"/><text x="80" y="367" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">4</text>
+    <text x="112" y="367" font-size="18" font-weight="700" fill="#1F2937">Add Claude</text>
+    <text x="62" y="410">VS Code → Extensions → search</text>
+    <text x="62" y="432">"Claude Code" → Install, then</text>
+    <text x="62" y="454">sign in with your Claude account.</text>
+
+    <!-- 5 -->
+    <circle cx="390" cy="360" r="20" fill="#7C3AED"/><text x="390" y="367" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">5</text>
+    <text x="422" y="367" font-size="18" font-weight="700" fill="#1F2937">Connect GitHub</text>
+    <text x="372" y="410">VS Code → Accounts icon (bottom</text>
+    <text x="372" y="432">left) → Sign in with GitHub.</text>
+    <text x="372" y="466" font-size="12.5" fill="#6B7280">No passwords to type again later.</text>
+
+    <!-- 6 -->
+    <circle cx="700" cy="360" r="20" fill="#16A34A"/><text x="700" y="367" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">6</text>
+    <text x="732" y="367" font-size="18" font-weight="700" fill="#1F2937">Clone a project</text>
+    <text x="682" y="410">Source Control → Clone</text>
+    <text x="682" y="432">Repository → pick it from the</text>
+    <text x="682" y="454">list → choose C:\repos.</text>
+    <rect x="682" y="468" width="96" height="20" rx="10" fill="#DCFCE7"/>
+    <text x="730" y="482" text-anchor="middle" font-size="11.5" font-weight="700" fill="#15803D">you're ready</text>
+  </g>
+</svg>

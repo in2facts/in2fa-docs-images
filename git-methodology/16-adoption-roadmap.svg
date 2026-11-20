@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Your first four weeks</title>
+  <desc id="d">A gradual adoption path. Week 1: set up and practise in a sandbox repository. Week 2: use the daily workflow on real work, alone. Week 3: open pull requests and review a colleague's work. Week 4: make it the team standard.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect width="960" height="520" rx="18" fill="#F8FAFC"/>
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">Your first four weeks</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">Small steps. Nobody is expected to know everything on day one.</text>
+
+  <!-- staircase -->
+  <g filter="url(#s)">
+    <rect x="40" y="330" width="210" height="150" rx="14" fill="#DBEAFE"/>
+    <rect x="265" y="270" width="210" height="210" rx="14" fill="#C7D2FE"/>
+    <rect x="490" y="210" width="210" height="270" rx="14" fill="#DDD6FE"/>
+    <rect x="715" y="150" width="210" height="330" rx="14" fill="#BBF7D0"/>
+  </g>
+  <g font-size="12" font-weight="700" fill="#FFFFFF">
+    <rect x="58" y="346" width="70" height="24" rx="12" fill="#2563EB"/><text x="93" y="363" text-anchor="middle">WEEK 1</text>
+    <rect x="283" y="286" width="70" height="24" rx="12" fill="#4F46E5"/><text x="318" y="303" text-anchor="middle">WEEK 2</text>
+    <rect x="508" y="226" width="70" height="24" rx="12" fill="#7C3AED"/><text x="543" y="243" text-anchor="middle">WEEK 3</text>
+    <rect x="733" y="166" width="70" height="24" rx="12" fill="#16A34A"/><text x="768" y="183" text-anchor="middle">WEEK 4</text>
+  </g>
+  <g font-size="13" fill="#1F2937">
+    <text x="58" y="398" font-size="17" font-weight="700">Try it safely</text>
+    <text x="58" y="422">Do the setup. Practise in a</text>
+    <text x="58" y="440">sandbox repo: branch, commit,</text>
+    <text x="58" y="458">push, break things, undo.</text>
+
+    <text x="283" y="338" font-size="17" font-weight="700">Use it for real</text>
+    <text x="283" y="362">Do one real task a day with</text>
+    <text x="283" y="380">the seven-step workflow.</text>
+    <text x="283" y="398">Let Claude explain anything</text>
+    <text x="283" y="416">unclear and write your</text>
+    <text x="283" y="434">commit messages.</text>
+
+    <text x="508" y="278" font-size="17" font-weight="700">Review together</text>
+    <text x="508" y="302">Open your first pull request.</text>
+    <text x="508" y="320">Review one from a colleague.</text>
+    <text x="508" y="338">Resolve a (practice) conflict.</text>
+    <text x="508" y="372" font-size="12.5" fill="#4C1D95">Pair up: two people learn</text>
+    <text x="508" y="390" font-size="12.5" fill="#4C1D95">faster than one.</text>
+
+    <text x="733" y="218" font-size="17" font-weight="700">Make it the standard</text>
+    <text x="733" y="242">Protect main on GitHub so</text>
+    <text x="733" y="260">every change needs a PR.</text>
+    <text x="733" y="278">Agree on naming and review</text>
+    <text x="733" y="296">rules as a team.</text>
+    <text x="733" y="330" font-size="12.5" fill="#14532D">No more "final_v3" files.</text>
+    <text x="733" y="348" font-size="12.5" fill="#14532D">Ever.</text>
+  </g>
+  <!-- trophy -->
+  <g transform="translate(870 112)">
+    <path d="M-14 -16 h28 v10 a14 14 0 0 1 -28 0z" fill="#F59E0B"/>
+    <path d="M-14 -12 h-6 a6 6 0 0 0 6 10 M14 -12 h6 a6 6 0 0 1 -6 10" fill="none" stroke="#F59E0B" stroke-width="3"/>
+    <rect x="-3" y="7" width="6" height="8" fill="#F59E0B"/><rect x="-10" y="15" width="20" height="5" rx="2" fill="#B45309"/>
+  </g>
+</svg>

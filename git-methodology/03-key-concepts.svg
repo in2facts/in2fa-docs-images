@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Six words you need to know</title>
+  <desc id="d">Repository, commit, branch, merge, push and pull, and pull request, each explained with an everyday analogy.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect width="960" height="560" rx="18" fill="#F8FAFC"/>
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">Six words you need to know</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">That's all the vocabulary for 90% of daily work</text>
+
+  <g filter="url(#s)" fill="#FFFFFF" stroke="#E5E7EB">
+    <rect x="40" y="100" width="280" height="200" rx="14"/>
+    <rect x="340" y="100" width="280" height="200" rx="14"/>
+    <rect x="640" y="100" width="280" height="200" rx="14"/>
+    <rect x="40" y="320" width="280" height="200" rx="14"/>
+    <rect x="340" y="320" width="280" height="200" rx="14"/>
+    <rect x="640" y="320" width="280" height="200" rx="14"/>
+  </g>
+
+  <!-- 1 Repository -->
+  <circle cx="86" cy="150" r="28" fill="#1E3A5F"/>
+  <path d="M72 142 h10 l4 4 h14 v16 h-28z" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linejoin="round"/>
+  <text x="128" y="158" font-size="21" font-weight="700" fill="#1F2937">Repository</text>
+  <text x="64" y="204" font-size="14" font-style="italic" fill="#1E3A5F">"a project folder with a memory"</text>
+  <g font-size="13.5" fill="#4B5563"><text x="64" y="234">All files of a project plus the</text><text x="64" y="256">complete history of every change.</text><text x="64" y="278">Lives on your PC and on GitHub.</text></g>
+
+  <!-- 2 Commit -->
+  <circle cx="386" cy="150" r="28" fill="#0D9488"/>
+  <path d="M368 150 h36" stroke="#FFFFFF" stroke-width="2.5"/>
+  <circle cx="386" cy="150" r="7" fill="#0D9488" stroke="#FFFFFF" stroke-width="2.5"/>
+  <text x="428" y="158" font-size="21" font-weight="700" fill="#1F2937">Commit</text>
+  <text x="364" y="204" font-size="14" font-style="italic" fill="#0F766E">"a saved snapshot with a note"</text>
+  <g font-size="13.5" fill="#4B5563"><text x="364" y="234">A snapshot of your files at a</text><text x="364" y="256">moment in time, with a short</text><text x="364" y="278">message saying what and why.</text></g>
+
+  <!-- 3 Branch -->
+  <circle cx="686" cy="150" r="28" fill="#7C3AED"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="2.2">
+    <path d="M678 138 v24"/><path d="M678 154 C678 146 694 148 694 140"/>
+    <circle cx="678" cy="164" r="3.5" fill="#7C3AED"/><circle cx="678" cy="136" r="3.5" fill="#7C3AED"/><circle cx="694" cy="137" r="3.5" fill="#7C3AED"/>
+  </g>
+  <text x="728" y="158" font-size="21" font-weight="700" fill="#1F2937">Branch</text>
+  <text x="664" y="204" font-size="14" font-style="italic" fill="#6D28D9">"a safe parallel workspace"</text>
+  <g font-size="13.5" fill="#4B5563"><text x="664" y="234">A separate line of work. Change</text><text x="664" y="256">anything without touching the</text><text x="664" y="278">approved version, called main.</text></g>
+
+  <!-- 4 Merge -->
+  <circle cx="86" cy="370" r="28" fill="#16A34A"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round">
+    <path d="M70 358 C80 358 82 370 90 370"/><path d="M70 382 C80 382 82 370 90 370"/><path d="M90 370 h12"/>
+  </g>
+  <text x="128" y="378" font-size="21" font-weight="700" fill="#1F2937">Merge</text>
+  <text x="64" y="424" font-size="14" font-style="italic" fill="#15803D">"bringing the work back together"</text>
+  <g font-size="13.5" fill="#4B5563"><text x="64" y="454">Combines a branch into main</text><text x="64" y="476">once it is approved. Git does</text><text x="64" y="498">most of the work automatically.</text></g>
+
+  <!-- 5 Push & Pull -->
+  <circle cx="386" cy="370" r="28" fill="#2563EB"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M379 384 v-26 M372 365 l7 -7 l7 7"/><path d="M393 356 v26 M386 375 l7 7 l7 -7"/>
+  </g>
+  <text x="428" y="378" font-size="21" font-weight="700" fill="#1F2937">Push &amp; Pull</text>
+  <text x="364" y="424" font-size="14" font-style="italic" fill="#1D4ED8">"upload and download"</text>
+  <g font-size="13.5" fill="#4B5563"><text x="364" y="454">Push sends your commits to</text><text x="364" y="476">GitHub. Pull brings in what your</text><text x="364" y="498">colleagues have shared.</text></g>
+
+  <!-- 6 Pull Request -->
+  <circle cx="686" cy="370" r="28" fill="#EA580C"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M675 356 h16 l6 6 v22 h-22z"/><path d="M680 371 l4 4 l8 -8"/>
+  </g>
+  <text x="728" y="378" font-size="21" font-weight="700" fill="#1F2937">Pull Request</text>
+  <text x="664" y="424" font-size="14" font-style="italic" fill="#C2410C">"please review my changes"</text>
+  <g font-size="13.5" fill="#4B5563"><text x="664" y="454">A proposal to merge a branch.</text><text x="664" y="476">Colleagues comment and approve,</text><text x="664" y="498">then it is merged into main.</text></g>
+</svg>

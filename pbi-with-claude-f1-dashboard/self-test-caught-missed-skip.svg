@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660">
+  <title>The linter's self-test: plant one mistake in a copy, and read caught, missed or SKIP</title>
+  <rect width="1200" height="660" fill="#f6f6f6"/>
+
+  <defs>
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#151722"/>
+    </marker>
+    <marker id="arrowGrey" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6e6e6e"/>
+    </marker>
+  </defs>
+
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="60" y="44" font-size="15" letter-spacing="1" fill="#6e6e6e">THE LINTER'S SELF-TEST</text>
+    <text x="60" y="76" font-size="22" font-weight="700" fill="#151722">Break a copy on purpose, one mistake at a time, and see whether the linter notices.</text>
+
+    <!-- the pipeline -->
+    <rect x="60" y="112" width="220" height="96" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <text x="170" y="150" font-size="17" font-weight="700" fill="#151722" text-anchor="middle">Your model</text>
+    <text x="170" y="176" font-size="14" fill="#6e6e6e" text-anchor="middle">never touched</text>
+
+    <line x1="284" y1="160" x2="336" y2="160" stroke="#151722" stroke-width="3" marker-end="url(#arrowDark)"/>
+
+    <rect x="340" y="112" width="220" height="96" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="450" y="150" font-size="17" font-weight="700" fill="#151722" text-anchor="middle">A copy</text>
+    <text x="450" y="176" font-size="14" fill="#6e6e6e" text-anchor="middle">in a temporary folder</text>
+
+    <line x1="564" y1="160" x2="616" y2="160" stroke="#151722" stroke-width="3" marker-end="url(#arrowDark)"/>
+
+    <rect x="620" y="112" width="240" height="96" rx="8" fill="#f2955a"/>
+    <text x="740" y="150" font-size="17" font-weight="700" fill="#151722" text-anchor="middle">Plant one mistake</text>
+    <text x="740" y="176" font-size="14" fill="#151722" text-anchor="middle">e.g. a <tspan font-family="Consolas, 'Courier New', monospace">Total</tspan> prefix</text>
+
+    <line x1="864" y1="160" x2="916" y2="160" stroke="#151722" stroke-width="3" marker-end="url(#arrowDark)"/>
+
+    <rect x="920" y="112" width="220" height="96" rx="8" fill="#151722"/>
+    <text x="1030" y="150" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">Run tmdl_lint</text>
+    <text x="1030" y="176" font-size="14" fill="#d9dadb" text-anchor="middle">does the right rule fire?</text>
+
+    <!-- branches -->
+    <path d="M1030,212 L1030,240 L200,240 L200,268" fill="none" stroke="#6e6e6e" stroke-width="2" marker-end="url(#arrowGrey)"/>
+    <path d="M600,240 L600,268" fill="none" stroke="#6e6e6e" stroke-width="2" marker-end="url(#arrowGrey)"/>
+    <path d="M1000,240 L1000,268" fill="none" stroke="#6e6e6e" stroke-width="2" marker-end="url(#arrowGrey)"/>
+
+    <!-- caught -->
+    <rect x="60" y="272" width="340" height="170" rx="8" fill="#ffffff" stroke="#151722" stroke-width="3"/>
+    <text x="84" y="310" font-size="22" font-weight="700" fill="#151722" font-family="Consolas, 'Courier New', monospace">caught</text>
+    <text x="84" y="342" font-size="15" fill="#151722">The mistake was planted, and</text>
+    <text x="84" y="364" font-size="15" fill="#151722">the linter reported it.</text>
+    <text x="84" y="410" font-size="15" font-weight="700" fill="#151722">The rule works.</text>
+
+    <!-- missed -->
+    <rect x="430" y="272" width="340" height="170" rx="8" fill="#ffffff" stroke="#f2955a" stroke-width="3"/>
+    <text x="454" y="310" font-size="22" font-weight="700" fill="#151722" font-family="Consolas, 'Courier New', monospace">missed</text>
+    <text x="454" y="342" font-size="15" fill="#151722">The mistake was planted, and</text>
+    <text x="454" y="364" font-size="15" fill="#151722">the linter said nothing.</text>
+    <text x="454" y="410" font-size="15" font-weight="700" fill="#151722">A bug in the linter. Report it.</text>
+
+    <!-- skip -->
+    <rect x="800" y="272" width="340" height="170" rx="8" fill="#ffffff" stroke="#d9dadb" stroke-width="3"/>
+    <text x="824" y="310" font-size="22" font-weight="700" fill="#151722" font-family="Consolas, 'Courier New', monospace">SKIP</text>
+    <text x="824" y="342" font-size="15" fill="#151722">Your model has nothing to plant</text>
+    <text x="824" y="364" font-size="15" fill="#151722">it in, e.g. no measure with a <tspan font-family="Consolas, 'Courier New', monospace">VAR</tspan>.</text>
+    <text x="824" y="410" font-size="15" font-weight="700" fill="#151722">Not a failure.</text>
+
+    <!-- the summary line -->
+    <rect x="60" y="474" width="1080" height="110" rx="8" fill="#151722"/>
+    <text x="84" y="506" font-size="13" letter-spacing="1" fill="#f2955a">THE LAST LINE ADDS THEM UP</text>
+    <text x="84" y="550" font-size="22" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">11 caught, <tspan fill="#f2955a" font-weight="700">0 missed</tspan>, <tspan fill="#f2955a" font-weight="700">baseline clean</tspan></text>
+    <text x="700" y="512" font-size="15" fill="#ffffff">baseline clean: your model, unchanged,</text>
+    <text x="700" y="534" font-size="15" fill="#ffffff">passes every rule. The rules are not</text>
+    <text x="700" y="556" font-size="15" fill="#ffffff">simply shouting at everything.</text>
+
+    <!-- the point -->
+    <text x="600" y="622" font-size="18" font-weight="700" fill="#151722" text-anchor="middle">What matters is 0 missed and baseline clean. Your caught count may be below 12.</text>
+    <text x="600" y="646" font-size="15" fill="#6e6e6e" text-anchor="middle">The 12 is the course's own model. Each SKIP takes one off it.</text>
+  </g>
+</svg>

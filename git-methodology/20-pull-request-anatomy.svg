@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 664" width="960" height="664" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Pull requests in one picture</title>
+  <desc id="d">On your PC you commit to your own branch and send it online with git push. Online, you open a pull request that asks to merge your branch into main. The pull request requests a review from a colleague, who comments or approves. If changes are requested, you fix, commit and push again to the same branch. Once approved, the pull request is merged into main, and the whole team gets the update with git pull. A panel lists what makes a pull request easy to review.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="m-navy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#1E3A5F"/></marker>
+    <marker id="m-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#EA580C"/></marker>
+    <marker id="m-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#16A34A"/></marker>
+  </defs>
+  <rect width="960" height="664" rx="18" fill="#F8FAFC"/>
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">Pull requests in one picture</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">From your branch to the team: push, ask, review, merge, pull</text>
+
+  <!-- location frames -->
+  <g fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="6 5">
+    <rect x="18" y="102" width="236" height="270" rx="16"/>
+    <rect x="352" y="102" width="590" height="270" rx="16"/>
+    <rect x="352" y="430" width="590" height="212" rx="16"/>
+  </g>
+  <rect x="36" y="92" width="82" height="20" fill="#F8FAFC"/>
+  <text x="42" y="107" font-size="12" font-weight="700" letter-spacing="1.2" fill="#6B7280">YOUR PC</text>
+  <rect x="370" y="92" width="72" height="20" fill="#F8FAFC"/>
+  <text x="376" y="107" font-size="12" font-weight="700" letter-spacing="1.2" fill="#6B7280">ONLINE</text>
+  <rect x="612" y="420" width="106" height="20" fill="#F8FAFC"/>
+  <text x="618" y="435" font-size="12" font-weight="700" letter-spacing="1.2" fill="#6B7280">TEAMMATES</text>
+
+  <!-- cards -->
+  <g filter="url(#s)" fill="#FFFFFF" stroke="#E5E7EB">
+    <rect x="32" y="126" width="190" height="226" rx="14"/>
+    <rect x="370" y="126" width="220" height="226" rx="14"/>
+    <rect x="738" y="126" width="190" height="226" rx="14"/>
+    <rect x="370" y="454" width="220" height="172" rx="14"/>
+    <rect x="738" y="454" width="190" height="172" rx="14"/>
+  </g>
+
+  <!-- 1 Your branch -->
+  <circle cx="68" cy="164" r="22" fill="#7C3AED"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round">
+    <path d="M62 154 v20 M62 168 c0 -6 12 -6 12 -12"/>
+  </g>
+  <g fill="#7C3AED" stroke="#FFFFFF" stroke-width="2">
+    <circle cx="62" cy="153" r="3"/><circle cx="62" cy="175" r="3"/><circle cx="74" cy="153" r="3"/>
+  </g>
+  <text x="98" y="163" font-size="17" font-weight="700" fill="#1F2937">Your branch</text>
+  <text x="98" y="181" font-size="12" fill="#6B7280">local repo</text>
+  <text x="48" y="212" font-size="13" font-style="italic" fill="#6D28D9">"your draft"</text>
+  <!-- mini graph -->
+  <path d="M50 290 H206" stroke="#1E3A5F" stroke-width="4" stroke-linecap="round"/>
+  <path d="M78 290 C100 290 96 250 118 250 H196" fill="none" stroke="#7C3AED" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#FFFFFF" stroke-width="3">
+    <circle cx="60" cy="290" r="7" stroke="#1E3A5F"/><circle cx="78" cy="290" r="7" stroke="#1E3A5F"/>
+    <circle cx="128" cy="250" r="7" stroke="#7C3AED"/><circle cx="157" cy="250" r="7" stroke="#7C3AED"/><circle cx="186" cy="250" r="7" stroke="#7C3AED"/>
+  </g>
+  <text x="157" y="236" text-anchor="middle" font-size="11" font-family="Cascadia Code, Consolas, Menlo, monospace" fill="#6D28D9">feature/q3-report</text>
+  <text x="196" y="306" text-anchor="end" font-size="11" font-family="Cascadia Code, Consolas, Menlo, monospace" fill="#1E3A5F">main</text>
+  <rect x="44" y="316" width="166" height="24" rx="12" fill="#F5F3FF"/>
+  <text x="127" y="332" text-anchor="middle" font-size="11.5" fill="#6D28D9">VS Code: Source Control</text>
+
+  <!-- 2 Pull request -->
+  <circle cx="406" cy="164" r="22" fill="#EA580C"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M399 157 v14"/>
+    <path d="M413 171 v-9 a4 4 0 0 0 -4 -4 h-5"/>
+    <path d="M407 155 l-3 3 l3 3"/>
+  </g>
+  <g fill="#EA580C" stroke="#FFFFFF" stroke-width="2">
+    <circle cx="399" cy="154" r="3"/><circle cx="399" cy="174" r="3"/><circle cx="413" cy="174" r="3"/>
+  </g>
+  <text x="436" y="163" font-size="17" font-weight="700" fill="#1F2937">Pull request</text>
+  <text x="436" y="181" font-size="12" fill="#6B7280">#42 · GitHub / GitLab</text>
+  <text x="386" y="212" font-size="13" font-style="italic" fill="#C2410C">"please check my work"</text>
+  <rect x="386" y="224" width="120" height="22" rx="11" fill="#7C3AED"/>
+  <text x="446" y="239" text-anchor="middle" font-size="11.5" font-weight="700" fill="#FFFFFF">feature/q3-report</text>
+  <path d="M512 235 H528 M524 231 L529 235 L524 239" fill="none" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="534" y="224" width="44" height="22" rx="11" fill="#1E3A5F"/>
+  <text x="556" y="239" text-anchor="middle" font-size="11.5" font-weight="700" fill="#FFFFFF">main</text>
+  <g font-size="12.5" fill="#374151">
+    <text x="388" y="270"><tspan fill="#16A34A" font-weight="700">✓</tspan>  Title and description</text>
+    <text x="388" y="289"><tspan fill="#16A34A" font-weight="700">✓</tspan>  3 commits · 2 files changed</text>
+    <text x="388" y="308"><tspan fill="#EA580C" font-weight="700">●</tspan>  Review requested</text>
+  </g>
+  <rect x="397" y="316" width="166" height="24" rx="12" fill="#FFF7ED"/>
+  <text x="480" y="332" text-anchor="middle" font-size="11.5" fill="#C2410C">Web: Create pull request</text>
+
+  <!-- 3 main -->
+  <circle cx="774" cy="164" r="22" fill="#1E3A5F"/>
+  <path d="M764 172 h20 a6 6 0 0 0 0 -12 a8 8 0 0 0 -15 -2 a5.5 5.5 0 0 0 -5 14z" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+  <text x="804" y="163" font-size="17" font-weight="700" fill="#1F2937">main</text>
+  <text x="804" y="181" font-size="12" fill="#6B7280">remote, shared online</text>
+  <text x="754" y="212" font-size="13" font-style="italic" fill="#1E3A5F">"the approved version"</text>
+  <!-- mini graph with merge -->
+  <path d="M752 290 H912" stroke="#1E3A5F" stroke-width="4" stroke-linecap="round"/>
+  <path d="M776 290 C796 290 792 250 812 250 H850 C870 250 866 290 880 290" fill="none" stroke="#7C3AED" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#FFFFFF" stroke-width="3">
+    <circle cx="762" cy="290" r="7" stroke="#1E3A5F"/><circle cx="776" cy="290" r="7" stroke="#1E3A5F"/>
+    <circle cx="818" cy="250" r="7" stroke="#7C3AED"/><circle cx="846" cy="250" r="7" stroke="#7C3AED"/>
+  </g>
+  <circle cx="882" cy="290" r="11" fill="#16A34A" stroke="#FFFFFF" stroke-width="3"/>
+  <path d="M877 290 l4 4 l6 -7" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="882" y="314" text-anchor="middle" font-size="11.5" font-weight="700" fill="#15803D">merged</text>
+  <rect x="750" y="318" width="96" height="24" rx="12" fill="#E8EEF5"/>
+  <text x="798" y="334" text-anchor="middle" font-size="11.5" fill="#1E3A5F">origin/main</text>
+
+  <!-- 4 Reviewer -->
+  <circle cx="406" cy="490" r="22" fill="#EA580C"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round">
+    <circle cx="406" cy="484" r="5"/><path d="M396 500 a10 9 0 0 1 20 0"/>
+  </g>
+  <text x="436" y="489" font-size="17" font-weight="700" fill="#1F2937">Reviewer</text>
+  <text x="436" y="507" font-size="12" fill="#6B7280">a colleague</text>
+  <text x="386" y="536" font-size="13" font-style="italic" fill="#C2410C">"a second pair of eyes"</text>
+  <rect x="386" y="548" width="188" height="28" rx="8" fill="#FFF7ED" stroke="#FED7AA"/>
+  <text x="396" y="566" font-size="12" font-style="italic" fill="#9A3412">"Can you add the source?"</text>
+  <rect x="397" y="588" width="166" height="24" rx="12" fill="#F0FDF4"/>
+  <text x="480" y="604" text-anchor="middle" font-size="11.5" font-weight="700" fill="#15803D">✓ Approve · Comment</text>
+
+  <!-- 5 Your team -->
+  <circle cx="774" cy="490" r="22" fill="#16A34A"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round">
+    <circle cx="774" cy="484" r="4.5"/><path d="M765 499 a9 8 0 0 1 18 0"/>
+    <circle cx="764" cy="487" r="3"/><circle cx="784" cy="487" r="3"/>
+  </g>
+  <text x="804" y="489" font-size="17" font-weight="700" fill="#1F2937">Your team</text>
+  <text x="804" y="507" font-size="12" fill="#6B7280">every colleague's PC</text>
+  <text x="754" y="536" font-size="13" font-style="italic" fill="#15803D">"everyone up to date"</text>
+  <g font-size="10.5" font-weight="700" text-anchor="middle">
+    <circle cx="776" cy="562" r="13" fill="#DBEAFE" stroke="#FFFFFF" stroke-width="2"/><text x="776" y="566" fill="#1D4ED8">SV</text>
+    <circle cx="798" cy="562" r="13" fill="#FFEDD5" stroke="#FFFFFF" stroke-width="2"/><text x="798" y="566" fill="#C2410C">LP</text>
+    <circle cx="820" cy="562" r="13" fill="#F5F3FF" stroke="#FFFFFF" stroke-width="2"/><text x="820" y="566" fill="#6D28D9">JD</text>
+  </g>
+  <text x="842" y="566" font-size="12" fill="#4B5563">+ you</text>
+  <rect x="750" y="588" width="166" height="24" rx="12" fill="#F0FDF4"/>
+  <text x="833" y="604" text-anchor="middle" font-size="11.5" fill="#15803D">VS Code: Sync Changes</text>
+
+  <!-- arrows -->
+  <g fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 222 H360" stroke="#1E3A5F" marker-end="url(#m-navy)"/>
+    <path d="M362 298 H232" stroke="#EA580C" stroke-dasharray="7 5" marker-end="url(#m-orange)"/>
+    <path d="M598 222 H728" stroke="#16A34A" marker-end="url(#m-green)"/>
+    <path d="M462 360 V444" stroke="#EA580C" marker-end="url(#m-orange)"/>
+    <path d="M498 446 V362" stroke="#EA580C" marker-end="url(#m-orange)"/>
+    <path d="M833 360 V444" stroke="#16A34A" marker-end="url(#m-green)"/>
+  </g>
+
+  <!-- arrow labels: bold = step, grey = where you click -->
+  <g font-size="14.5" font-weight="700">
+    <text x="295" y="210" text-anchor="middle" fill="#1E3A5F" font-family="Cascadia Code, Consolas, Menlo, monospace">git push</text>
+    <text x="295" y="270" text-anchor="middle" fill="#C2410C">changes</text>
+    <text x="295" y="287" text-anchor="middle" fill="#C2410C">requested</text>
+    <text x="663" y="210" text-anchor="middle" fill="#15803D">merge</text>
+    <text x="450" y="396" text-anchor="end" fill="#C2410C">ask review</text>
+    <text x="510" y="396" fill="#C2410C">approve</text>
+    <text x="845" y="396" fill="#15803D" font-family="Cascadia Code, Consolas, Menlo, monospace">git pull</text>
+  </g>
+  <g font-size="12" fill="#6B7280">
+    <text x="295" y="242" text-anchor="middle">Publish Branch</text>
+    <text x="295" y="318" text-anchor="middle">fix · commit · push</text>
+    <text x="663" y="242" text-anchor="middle">Merge pull request</text>
+    <text x="450" y="414" text-anchor="end">Reviewers field</text>
+    <text x="510" y="414">or comment</text>
+    <text x="845" y="414">Sync Changes</text>
+  </g>
+
+  <!-- tips panel -->
+  <rect x="32" y="454" width="300" height="172" rx="12" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="50" y="480" font-size="14" font-weight="700" fill="#1F2937">What makes a PR easy to review?</text>
+  <g font-size="13" fill="#374151">
+    <circle cx="56" cy="504" r="4.5" fill="#7C3AED"/><text x="68" y="509"><tspan font-weight="700">Small:</tspan> one task, not a week of work</text>
+    <circle cx="56" cy="528" r="4.5" fill="#EA580C"/><text x="68" y="533"><tspan font-weight="700">Explained:</tspan> what, why, how to check</text>
+    <circle cx="56" cy="552" r="4.5" fill="#1E3A5F"/><text x="68" y="557"><tspan font-weight="700">Tidy:</tspan> clear commits, no stray files</text>
+    <circle cx="56" cy="576" r="4.5" fill="#16A34A"/><text x="68" y="581"><tspan font-weight="700">Kind:</tspan> reviewers ask, don't order</text>
+  </g>
+  <line x1="50" y1="596" x2="314" y2="596" stroke="#E5E7EB"/>
+  <circle cx="56" cy="611" r="4.5" fill="#D97757"/>
+  <text x="68" y="615" font-size="12" fill="#6B7280">Tip: Claude can draft the PR description.</text>
+</svg>

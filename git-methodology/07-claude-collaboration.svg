@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Working with Claude: you stay in charge</title>
+  <desc id="d">Four steps. You ask in plain language. Claude proposes a change and shows it. You review and accept or reject. Git records the accepted change in a commit, so any change can be undone.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10z" fill="#9CA3AF"/>
+    </marker>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect width="960" height="560" rx="18" fill="#F8FAFC"/>
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">Working with Claude: you stay in charge</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">Claude proposes, you decide, Git remembers</text>
+
+  <g filter="url(#s)" fill="#FFFFFF" stroke="#E5E7EB">
+    <rect x="30" y="104" width="205" height="270" rx="14"/>
+    <rect x="265" y="104" width="205" height="270" rx="14"/>
+    <rect x="500" y="104" width="205" height="270" rx="14"/>
+    <rect x="735" y="104" width="195" height="270" rx="14"/>
+  </g>
+  <g stroke="#9CA3AF" stroke-width="2.5">
+    <line x1="238" y1="239" x2="260" y2="239" marker-end="url(#a)"/>
+    <line x1="473" y1="239" x2="495" y2="239" marker-end="url(#a)"/>
+    <line x1="708" y1="239" x2="730" y2="239" marker-end="url(#a)"/>
+  </g>
+
+  <g font-size="13" fill="#4B5563">
+    <!-- 1 You ask -->
+    <rect x="30" y="104" width="205" height="8" rx="4" fill="#1E3A5F"/>
+    <text x="50" y="144" font-size="12" font-weight="700" fill="#1E3A5F">STEP 1 · YOU</text>
+    <text x="50" y="170" font-size="19" font-weight="700" fill="#1F2937">Ask</text>
+    <rect x="48" y="186" width="170" height="74" rx="10" fill="#EFF6FF" stroke="#BFDBFE"/>
+    <text x="60" y="208" font-size="12.5" font-style="italic" fill="#1E3A8A">"Make the summary</text>
+    <text x="60" y="226" font-size="12.5" font-style="italic" fill="#1E3A8A">shorter and add the</text>
+    <text x="60" y="244" font-size="12.5" font-style="italic" fill="#1E3A8A">Q3 numbers."</text>
+    <text x="50" y="292">Plain language. Mention</text>
+    <text x="50" y="310">the file and what "good"</text>
+    <text x="50" y="328">looks like.</text>
+
+    <!-- 2 Claude proposes -->
+    <rect x="265" y="104" width="205" height="8" rx="4" fill="#D97757"/>
+    <text x="285" y="144" font-size="12" font-weight="700" fill="#B4532F">STEP 2 · CLAUDE</text>
+    <text x="285" y="170" font-size="19" font-weight="700" fill="#1F2937">Proposes</text>
+    <rect x="283" y="186" width="170" height="74" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+    <rect x="283" y="196" width="170" height="18" fill="#FEE2E2"/><text x="292" y="209" font-family="Consolas, monospace" font-size="11" fill="#991B1B">− Sales were good.</text>
+    <rect x="283" y="216" width="170" height="18" fill="#DCFCE7"/><text x="292" y="229" font-family="Consolas, monospace" font-size="11" fill="#166534">+ Q3 sales: €1.2M</text>
+    <rect x="283" y="236" width="170" height="18" fill="#DCFCE7"/><text x="292" y="249" font-family="Consolas, monospace" font-size="11" fill="#166534">+ (+8% vs Q2).</text>
+    <text x="285" y="292">Claude reads your files</text>
+    <text x="285" y="310">and shows exactly what</text>
+    <text x="285" y="328">it wants to change.</text>
+
+    <!-- 3 You review -->
+    <rect x="500" y="104" width="205" height="8" rx="4" fill="#1E3A5F"/>
+    <text x="520" y="144" font-size="12" font-weight="700" fill="#1E3A5F">STEP 3 · YOU</text>
+    <text x="520" y="170" font-size="19" font-weight="700" fill="#1F2937">Review</text>
+    <rect x="520" y="192" width="78" height="30" rx="8" fill="#16A34A"/><text x="559" y="212" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Accept</text>
+    <rect x="606" y="192" width="78" height="30" rx="8" fill="#FFFFFF" stroke="#D1D5DB"/><text x="645" y="212" text-anchor="middle" font-size="13" font-weight="600" fill="#374151">Reject</text>
+    <text x="520" y="248" font-size="12.5" fill="#6B7280">or type: "keep it formal"</text>
+    <text x="520" y="292">Nothing is saved until</text>
+    <text x="520" y="310">you agree. Ask for a new</text>
+    <text x="520" y="328">version as often as you like.</text>
+
+    <!-- 4 Git remembers -->
+    <rect x="735" y="104" width="195" height="8" rx="4" fill="#0D9488"/>
+    <text x="755" y="144" font-size="12" font-weight="700" fill="#0F766E">STEP 4 · GIT</text>
+    <text x="755" y="170" font-size="19" font-weight="700" fill="#1F2937">Remembers</text>
+    <line x1="770" y1="196" x2="770" y2="252" stroke="#0D9488" stroke-width="3"/>
+    <circle cx="770" cy="196" r="7" fill="#0D9488"/><text x="786" y="201" font-size="12.5" font-weight="600" fill="#1F2937">Shorten summary</text>
+    <circle cx="770" cy="224" r="7" fill="#FFFFFF" stroke="#0D9488" stroke-width="3"/><text x="786" y="229" font-size="12.5" fill="#6B7280">Add Q3 figures</text>
+    <circle cx="770" cy="252" r="7" fill="#FFFFFF" stroke="#0D9488" stroke-width="3"/><text x="786" y="257" font-size="12.5" fill="#6B7280">…</text>
+    <text x="755" y="292">You commit the result.</text>
+    <text x="755" y="310">Every change can be</text>
+    <text x="755" y="328">undone later.</text>
+  </g>
+
+  <!-- bottom: three guarantees -->
+  <rect x="30" y="400" width="900" height="130" rx="14" fill="#1E3A5F"/>
+  <text x="480" y="432" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">Why this is safe, even if Claude gets something wrong</text>
+  <g font-size="13.5" fill="#DBEAFE">
+    <circle cx="70" cy="470" r="14" fill="#2563EB"/><text x="70" y="475" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">1</text>
+    <text x="94" y="466" font-weight="700" fill="#FFFFFF">You see every change</text>
+    <text x="94" y="486">Claude asks before it edits.</text>
+    <circle cx="370" cy="470" r="14" fill="#7C3AED"/><text x="370" y="475" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">2</text>
+    <text x="394" y="466" font-weight="700" fill="#FFFFFF">You work on a branch</text>
+    <text x="394" y="486">main is never touched directly.</text>
+    <circle cx="670" cy="470" r="14" fill="#0D9488"/><text x="670" y="475" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">3</text>
+    <text x="694" y="466" font-weight="700" fill="#FFFFFF">Git keeps every version</text>
+    <text x="694" y="486">Any mistake is one click away.</text>
+  </g>
+  <text x="480" y="515" text-anchor="middle" font-size="12.5" fill="#93C5FD">Claude is a capable assistant, not the author of record. You are responsible for what you commit.</text>
+</svg>

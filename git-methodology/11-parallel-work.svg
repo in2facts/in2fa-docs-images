@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" width="960" height="500" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Three people, three branches, one main</title>
+  <desc id="d">Anna, Ben and Claire each work on their own branch at the same time. Each branch is merged into main when its review is approved, in any order. Main grows steadily with approved work only.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="960" height="500" rx="18" fill="#F8FAFC"/>
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">Three people, three branches, one main</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">Everyone works at the same time without getting in each other's way</text>
+
+  <!-- branches -->
+  <g fill="none" stroke-width="5" stroke-linecap="round">
+    <path d="M170 380 C210 380 210 140 250 140 L740 140 C790 140 790 380 830 380" stroke="#7C3AED"/>
+    <path d="M230 380 C270 380 270 220 310 220 L600 220 C650 220 650 380 690 380" stroke="#D97757"/>
+    <path d="M290 380 C330 380 330 300 370 300 L470 300 C520 300 520 380 560 380" stroke="#0D9488"/>
+  </g>
+  <line x1="60" y1="380" x2="910" y2="380" stroke="#1E3A5F" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- avatars + labels -->
+  <g font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+    <circle cx="96" cy="140" r="22" fill="#7C3AED"/><text x="96" y="145">A</text>
+    <circle cx="96" cy="220" r="22" fill="#D97757"/><text x="96" y="225">B</text>
+    <circle cx="96" cy="300" r="22" fill="#0D9488"/><text x="96" y="305">C</text>
+  </g>
+  <g font-size="13" fill="#374151">
+    <text x="126" y="137" font-weight="700">Anna</text><text x="126" y="153" font-size="11.5" fill="#6B7280">sales chapter</text>
+    <text x="126" y="217" font-weight="700">Ben</text><text x="126" y="233" font-size="11.5" fill="#6B7280">fix appendix</text>
+    <text x="126" y="297" font-weight="700">Claire</text><text x="126" y="313" font-size="11.5" fill="#6B7280">new chart</text>
+  </g>
+
+  <!-- branch name tags -->
+  <g font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+    <rect x="290" y="112" width="140" height="20" rx="10" fill="#7C3AED"/><text x="360" y="126">feature/sales</text>
+    <rect x="400" y="192" width="140" height="20" rx="10" fill="#D97757"/><text x="470" y="206">fix/appendix</text>
+    <rect x="340" y="266" width="120" height="20" rx="10" fill="#0D9488"/><text x="400" y="280">feature/chart</text>
+  </g>
+
+  <!-- commits -->
+  <g filter="url(#s)" stroke-width="3.5" fill="#FFFFFF">
+    <g stroke="#7C3AED"><circle cx="280" cy="140" r="9"/><circle cx="650" cy="140" r="9"/></g>
+    <g stroke="#D97757"><circle cx="350" cy="220" r="9"/><circle cx="570" cy="220" r="9"/></g>
+    <g stroke="#0D9488"><circle cx="400" cy="300" r="9"/><circle cx="440" cy="300" r="9"/></g>
+    <g stroke="#1E3A5F"><circle cx="110" cy="380" r="10"/></g>
+  </g>
+
+  <!-- merges -->
+  <g filter="url(#s)" fill="#16A34A" stroke="#FFFFFF" stroke-width="3">
+    <circle cx="560" cy="380" r="14"/><circle cx="690" cy="380" r="14"/><circle cx="830" cy="380" r="14"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M554 380 l4 5 l8 -9"/><path d="M684 380 l4 5 l8 -9"/><path d="M824 380 l4 5 l8 -9"/>
+  </g>
+  <g font-size="12" fill="#15803D" font-weight="600" text-anchor="middle">
+    <text x="560" y="412">Claire's chart</text><text x="690" y="412">Ben's fix</text><text x="830" y="412">Anna's work</text>
+  </g>
+  <rect x="60" y="398" width="56" height="22" rx="11" fill="#1E3A5F"/>
+  <text x="88" y="414" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">main</text>
+
+  <text x="480" y="456" text-anchor="middle" font-size="14" fill="#374151">Branches are merged <tspan font-weight="700">when they are approved</tspan>, in whatever order they finish.</text>
+  <text x="480" y="478" text-anchor="middle" font-size="13" fill="#6B7280">GitHub checks each pull request against the newest main and warns you if two changes clash.</text>
+</svg>

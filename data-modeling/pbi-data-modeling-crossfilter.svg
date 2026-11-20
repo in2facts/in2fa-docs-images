@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#A9AAAA"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Components of a data model</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="380" lengthAdjust="spacing">Cross-filter direction</text>
+  <rect x="448" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Keep relationships single-direction and switch to Both only inside the measure that needs it.</text>
+
+  <!-- ==================== Left panel: single direction ==================== -->
+  <rect x="60" y="170" width="520" height="400" fill="#FFFFFF"/>
+  <text x="80" y="202" font-size="18" fill="#141421" font-weight="700">Single direction (default)</text>
+  <text x="80" y="224" font-size="14" fill="#70706F">Filters flow from the one-side to the many-side only</text>
+
+  <rect x="80" y="260" width="120" height="48" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="140" y="289" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">Product</text>
+  <rect x="260" y="260" width="120" height="48" fill="#141421" stroke="#141421" stroke-width="1" filter="url(#card)"/>
+  <text x="320" y="289" font-size="15" font-weight="700" fill="#F6F6F6" text-anchor="middle">Sales</text>
+  <rect x="440" y="260" width="120" height="48" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="500" y="289" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">Customer</text>
+
+  <line x1="204" y1="284" x2="256" y2="284" stroke="#F39454" stroke-width="2"/>
+  <polygon points="256,284 247,279 247,289" fill="#F39454"/>
+  <text x="230" y="274" font-size="12" fill="#70706F" text-anchor="middle">Single</text>
+  <line x1="436" y1="284" x2="384" y2="284" stroke="#F39454" stroke-width="2"/>
+  <polygon points="384,284 393,279 393,289" fill="#F39454"/>
+  <text x="410" y="274" font-size="12" fill="#70706F" text-anchor="middle">Single</text>
+
+  <!-- Filter path -->
+  <path d="M140 312 C140 360 316 360 316 318" fill="none" stroke="#F39454" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#head-mango)"/>
+  <path d="M326 312 C326 360 500 360 500 318" fill="none" stroke="#A9AAAA" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#head-sand)"/>
+  <circle cx="413" cy="348" r="11" fill="#F6F6F6" stroke="#141421" stroke-width="2"/><path d="M408.5 343.5 l9 9 m0 -9 l-9 9" stroke="#141421" stroke-width="2.5"/>
+  <text x="228" y="382" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">reaches Sales</text>
+  <text x="413" y="382" font-size="13" font-weight="700" fill="#70706F" text-anchor="middle">stops at Sales</text>
+
+  <!-- Result -->
+  <rect x="80" y="410" width="220" height="28" fill="#141421"/>
+  <text x="92" y="429" font-size="13" font-weight="700" fill="#F6F6F6">Product</text>
+  <text x="288" y="429" font-size="13" font-weight="700" fill="#F6F6F6" text-anchor="end">Customers</text>
+  <text x="92" y="459" font-size="13" fill="#141421">Bikes</text>
+  <text x="288" y="459" font-size="13" fill="#141421" text-anchor="end">1,000</text>
+  <line x1="80" y1="468" x2="300" y2="468" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="92" y="489" font-size="13" fill="#141421">Clothing</text>
+  <text x="288" y="489" font-size="13" fill="#141421" text-anchor="end">1,000</text>
+  <line x1="80" y1="498" x2="300" y2="498" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="92" y="519" font-size="13" fill="#141421">Accessories</text>
+  <text x="288" y="519" font-size="13" fill="#141421" text-anchor="end">1,000</text>
+  <line x1="80" y1="528" x2="300" y2="528" stroke="#A9AAAA" stroke-width="1"/>
+
+  <circle cx="334" cy="446" r="11" fill="#F6F6F6" stroke="#141421" stroke-width="2"/><path d="M329.5 441.5 l9 9 m0 -9 l-9 9" stroke="#141421" stroke-width="2.5"/>
+  <text x="356" y="443" font-size="14" font-weight="700" fill="#141421">Same number on every row</text>
+  <text x="356" y="463" font-size="13" fill="#70706F">Every customer is counted,</text>
+  <text x="356" y="481" font-size="13" fill="#70706F">whatever the product.</text>
+
+  <!-- ==================== Right panel: CROSSFILTER in a measure ==================== -->
+  <rect x="620" y="170" width="520" height="400" fill="#FFFFFF"/>
+  <text x="640" y="202" font-size="18" fill="#141421" font-weight="700">CROSSFILTER in a measure</text>
+  <text x="640" y="224" font-size="14" fill="#70706F">Both directions for this one calculation only</text>
+
+  <rect x="640" y="260" width="120" height="48" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="700" y="289" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">Product</text>
+  <rect x="820" y="260" width="120" height="48" fill="#141421" stroke="#141421" stroke-width="1" filter="url(#card)"/>
+  <text x="880" y="289" font-size="15" font-weight="700" fill="#F6F6F6" text-anchor="middle">Sales</text>
+  <rect x="1000" y="260" width="120" height="48" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <text x="1060" y="289" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">Customer</text>
+
+  <line x1="764" y1="284" x2="816" y2="284" stroke="#F39454" stroke-width="2"/>
+  <polygon points="816,284 807,279 807,289" fill="#F39454"/>
+  <text x="790" y="274" font-size="12" fill="#70706F" text-anchor="middle">Single</text>
+  <line x1="944" y1="284" x2="996" y2="284" stroke="#F39454" stroke-width="2"/>
+  <polygon points="996,284 987,279 987,289" fill="#F39454"/>
+  <polygon points="944,284 953,279 953,289" fill="#F39454"/>
+  <text x="970" y="274" font-size="12" font-weight="700" fill="#F39454" text-anchor="middle">Both</text>
+
+  <!-- Filter path -->
+  <path d="M700 312 C700 360 876 360 876 318" fill="none" stroke="#F39454" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#head-mango)"/>
+  <path d="M886 312 C886 360 1060 360 1060 318" fill="none" stroke="#F39454" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#head-mango)"/>
+  <text x="788" y="382" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">reaches Sales</text>
+  <text x="973" y="382" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">reaches Customer</text>
+
+  <!-- Code -->
+  <rect x="640" y="404" width="480" height="124" fill="#141421"/>
+  <text x="656" y="428" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F39454" xml:space="preserve">Customers with Sales =</text>
+  <text x="656" y="447" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">CALCULATE (</text>
+  <text x="656" y="466" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">    DISTINCTCOUNT ( Customer[Customer Key] ),</text>
+  <text x="656" y="485" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">    <tspan fill="#F39454" font-weight="700">CROSSFILTER</tspan> ( Sales[Customer Key],</text>
+  <text x="656" y="504" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">        Customer[Customer Key], <tspan fill="#F39454" font-weight="700">BOTH</tspan> )</text>
+  <text x="656" y="523" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">)</text>
+
+  <circle cx="654" cy="548" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M649 548 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="676" y="553" font-size="14" font-weight="700" fill="#141421">Each product counts only its own customers</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="626" x2="1140" y2="626" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="662" font-size="20" fill="#141421">Single in the model, <tspan font-weight="700">CROSSFILTER in the measure.</tspan></text>
+  <text x="1140" y="661" font-size="14" fill="#70706F" text-anchor="end">Direction ≠ cardinality</text>
+</svg>

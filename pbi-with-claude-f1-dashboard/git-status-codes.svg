@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640">
+  <title>git status --short: what ??, A, M and D mean, and what a clean folder looks like</title>
+  <rect width="1200" height="640" fill="#f6f6f6"/>
+
+  <defs>
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#151722"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#f2955a"/>
+    </marker>
+  </defs>
+
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="60" y="44" font-size="15" letter-spacing="1" fill="#6e6e6e">READING git status --short</text>
+    <text x="60" y="76" font-size="22" font-weight="700" fill="#151722">One line per file, a code in front. The code says where the file stands with git.</text>
+
+    <!-- lifecycle row -->
+    <text x="60" y="124" font-size="13" letter-spacing="1" fill="#6e6e6e">A FILE'S LIFE, FROM NEW TO COMMITTED AND BACK</text>
+
+    <!-- ?? -->
+    <rect x="60" y="140" width="230" height="150" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <rect x="80" y="158" width="64" height="40" rx="6" fill="#151722"/>
+    <text x="112" y="186" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">??</text>
+    <text x="158" y="185" font-size="18" font-weight="700" fill="#151722">untracked</text>
+    <text x="80" y="230" font-size="15" fill="#151722">New to git, in no</text>
+    <text x="80" y="252" font-size="15" fill="#151722">commit yet. Often a file</text>
+    <text x="80" y="274" font-size="15" fill="#151722">the agent just made.</text>
+
+    <line x1="294" y1="215" x2="346" y2="215" stroke="#151722" stroke-width="3" marker-end="url(#arrowDark)"/>
+    <text x="320" y="204" font-size="13" fill="#6e6e6e" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" dy="-6">git add</text>
+
+    <!-- A -->
+    <rect x="350" y="140" width="230" height="150" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <rect x="370" y="158" width="64" height="40" rx="6" fill="#151722"/>
+    <text x="402" y="186" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">A</text>
+    <text x="448" y="185" font-size="18" font-weight="700" fill="#151722">added</text>
+    <text x="370" y="230" font-size="15" fill="#151722">Staged by git add,</text>
+    <text x="370" y="252" font-size="15" fill="#151722">waiting for the next</text>
+    <text x="370" y="274" font-size="15" fill="#151722">commit.</text>
+
+    <line x1="584" y1="215" x2="636" y2="215" stroke="#151722" stroke-width="3" marker-end="url(#arrowDark)"/>
+    <text x="610" y="204" font-size="13" fill="#6e6e6e" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" dy="-6">commit</text>
+
+    <!-- clean -->
+    <rect x="640" y="140" width="230" height="150" rx="8" fill="#f2955a"/>
+    <rect x="660" y="158" width="64" height="40" rx="6" fill="#ffffff"/>
+    <text x="692" y="186" font-size="18" fill="#6e6e6e" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">(none)</text>
+    <text x="738" y="185" font-size="18" font-weight="700" fill="#151722">clean</text>
+    <text x="660" y="230" font-size="15" fill="#151722">Committed and unchanged.</text>
+    <text x="660" y="252" font-size="15" fill="#151722">git lists nothing for it.</text>
+    <text x="660" y="274" font-size="15" font-weight="700" fill="#151722">Every chapter ends here.</text>
+
+    <line x1="874" y1="215" x2="926" y2="215" stroke="#151722" stroke-width="3" marker-end="url(#arrowDark)"/>
+    <text x="900" y="204" font-size="13" fill="#6e6e6e" text-anchor="middle" dy="-6">edit</text>
+
+    <!-- M and D stacked -->
+    <rect x="930" y="140" width="210" height="70" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <rect x="946" y="155" width="48" height="40" rx="6" fill="#151722"/>
+    <text x="970" y="183" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">M</text>
+    <text x="1006" y="172" font-size="16" font-weight="700" fill="#151722">modified</text>
+    <text x="1006" y="194" font-size="13" fill="#6e6e6e">changed after commit</text>
+
+    <rect x="930" y="220" width="210" height="70" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <rect x="946" y="235" width="48" height="40" rx="6" fill="#151722"/>
+    <text x="970" y="263" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">D</text>
+    <text x="1006" y="252" font-size="16" font-weight="700" fill="#151722">deleted</text>
+    <text x="1006" y="274" font-size="13" fill="#6e6e6e">gone from the folder</text>
+
+    <!-- back to clean -->
+    <path d="M1035,294 C1035,340 900,340 755,340 L755,296" fill="none" stroke="#f2955a" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#arrowOrange)"/>
+    <text x="900" y="362" font-size="14" fill="#151722" text-anchor="middle">commit again, and it is clean</text>
+
+    <!-- terminal sample -->
+    <rect x="60" y="390" width="620" height="186" rx="8" fill="#151722"/>
+    <text x="84" y="422" font-size="13" letter-spacing="1" fill="#f2955a">AFTER DESKTOP OPENS AN UNCOMMITTED MODEL</text>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#ffffff">
+      <text x="84" y="456">PS&gt; git status --short</text>
+      <text x="84" y="484"><tspan fill="#f2955a"> M</tspan> .../definition/database.tmdl</text>
+      <text x="84" y="508"><tspan fill="#f2955a"> M</tspan> .../definition/model.tmdl</text>
+      <text x="84" y="532"><tspan fill="#f2955a">??</tspan> .../definition/relationships.tmdl</text>
+      <text x="84" y="556"><tspan fill="#f2955a">??</tspan> .../definition/tables/</text>
+    </g>
+
+    <!-- reading it -->
+    <rect x="710" y="390" width="430" height="186" rx="8" fill="#ffffff" stroke="#f2955a" stroke-width="3"/>
+    <text x="734" y="422" font-size="13" letter-spacing="1" fill="#151722">HOW TO READ IT</text>
+    <text x="734" y="456" font-size="15" fill="#151722"><tspan font-weight="700">M</tspan>: files git already knew, now changed.</text>
+    <text x="734" y="478" font-size="15" fill="#151722">Desktop rewrites some on open. Normal.</text>
+    <text x="734" y="512" font-size="15" fill="#151722"><tspan font-weight="700">??</tspan>: files never committed, usually</text>
+    <text x="734" y="534" font-size="15" fill="#151722">the agent's new work. Commit them at</text>
+    <text x="734" y="556" font-size="15" fill="#151722">the end of the chapter.</text>
+
+    <!-- the point -->
+    <text x="600" y="612" font-size="18" font-weight="700" fill="#151722" text-anchor="middle">Right after a commit, git status --short prints nothing. That empty answer is a clean folder.</text>
+  </g>
+</svg>

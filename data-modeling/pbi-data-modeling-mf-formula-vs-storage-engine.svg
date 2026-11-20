@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Query execution</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="470" lengthAdjust="spacing">Formula vs storage engine</text>
+  <rect x="538" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Every DAX query is split between two engines: one that thinks and one that scans.</text>
+
+  <!-- ==================== Flow ==================== -->
+  <rect x="60" y="170" width="1080" height="160" fill="#FFFFFF"/>
+  <text x="80" y="196" font-size="12" font-weight="700" fill="#70706F">ONE QUERY, TWO ENGINES</text>
+
+  <!-- Visual -->
+  <rect x="90" y="222" width="140" height="56" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="160" y="246" font-size="16" font-weight="700" fill="#141421" text-anchor="middle">Visual</text>
+  <text x="160" y="266" font-size="12" fill="#70706F" text-anchor="middle">asks a question</text>
+
+  <!-- Formula Engine -->
+  <rect x="340" y="222" width="240" height="56" fill="#141421" stroke="#141421" stroke-width="1" filter="url(#card)"/>
+  <text x="460" y="246" font-size="17" font-weight="700" fill="#F6F6F6" text-anchor="middle">Formula Engine</text>
+  <text x="460" y="266" font-size="12" fill="#A9AAAA" text-anchor="middle">the brain</text>
+
+  <!-- Storage Engine -->
+  <rect x="690" y="222" width="240" height="56" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <text x="810" y="246" font-size="17" font-weight="700" fill="#141421" text-anchor="middle">Storage Engine</text>
+  <text x="810" y="266" font-size="12" fill="#70706F" text-anchor="middle">the muscle (VertiPaq)</text>
+
+  <!-- Compressed columns -->
+  <rect x="1012" y="226" width="14" height="48" fill="#D7D8D8"/>
+  <rect x="1032" y="226" width="14" height="48" fill="#A9AAAA"/>
+  <rect x="1052" y="226" width="14" height="48" fill="#F39454"/>
+  <rect x="1072" y="226" width="14" height="48" fill="#D7D8D8"/>
+  <rect x="1092" y="226" width="14" height="48" fill="#A9AAAA"/>
+  <text x="1059" y="298" font-size="12" fill="#70706F" text-anchor="middle">compressed columns</text>
+
+  <!-- Arrows: Visual <-> FE -->
+  <line x1="234" y1="240" x2="334" y2="240" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="284" y="232" font-size="12" font-weight="700" fill="#141421" text-anchor="middle">DAX query</text>
+  <line x1="336" y1="262" x2="238" y2="262" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="284" y="284" font-size="12" fill="#70706F" text-anchor="middle">result</text>
+
+  <!-- Arrows: FE <-> SE -->
+  <line x1="584" y1="240" x2="684" y2="240" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="634" y="232" font-size="12" font-weight="700" fill="#141421" text-anchor="middle">xmSQL request</text>
+  <line x1="686" y1="262" x2="588" y2="262" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="634" y="284" font-size="12" fill="#70706F" text-anchor="middle">datacache</text>
+
+  <!-- Arrow: SE -> data -->
+  <line x1="934" y1="250" x2="1002" y2="250" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="966" y="242" font-size="12" font-weight="700" fill="#141421" text-anchor="middle">scan</text>
+
+  <!-- ==================== Formula Engine panel ==================== -->
+  <rect x="60" y="360" width="520" height="230" fill="#FFFFFF"/>
+  <rect x="60" y="360" width="4" height="230" fill="#141421"/>
+  <text x="84" y="392" font-size="18" font-weight="700" fill="#141421">Formula Engine</text>
+  <text x="84" y="414" font-size="14" fill="#70706F">Interprets the DAX and assembles the result</text>
+
+  <line x1="84" y1="432" x2="560" y2="432" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="84" y="455" font-size="13" font-weight="700" fill="#70706F">Language</text>
+  <text x="194" y="455" font-size="14" fill="#141421">DAX</text>
+  <line x1="84" y1="466" x2="560" y2="466" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="84" y="489" font-size="13" font-weight="700" fill="#70706F">Threads</text>
+  <text x="194" y="489" font-size="14" fill="#141421"><tspan font-weight="700">Single-threaded</tspan></text>
+  <line x1="84" y1="500" x2="560" y2="500" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="84" y="523" font-size="13" font-weight="700" fill="#70706F">Cache</text>
+  <text x="194" y="523" font-size="14" fill="#141421">None: recomputes on every query</text>
+  <line x1="84" y1="534" x2="560" y2="534" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="84" y="557" font-size="13" font-weight="700" fill="#70706F">Best for</text>
+  <text x="194" y="557" font-size="14" fill="#141421">Complex logic the storage engine cannot do</text>
+  <line x1="84" y1="568" x2="560" y2="568" stroke="#A9AAAA" stroke-width="1"/>
+
+  <!-- ==================== Storage Engine panel ==================== -->
+  <rect x="620" y="360" width="520" height="230" fill="#FFFFFF"/>
+  <rect x="620" y="360" width="4" height="230" fill="#F39454"/>
+  <text x="644" y="392" font-size="18" font-weight="700" fill="#141421">Storage Engine</text>
+  <text x="644" y="414" font-size="14" fill="#70706F">Reads the compressed data and returns datacaches</text>
+
+  <line x1="644" y1="432" x2="1120" y2="432" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="644" y="455" font-size="13" font-weight="700" fill="#70706F">Language</text>
+  <text x="754" y="455" font-size="14" fill="#141421">xmSQL (a simplified SQL)</text>
+  <line x1="644" y1="466" x2="1120" y2="466" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="644" y="489" font-size="13" font-weight="700" fill="#70706F">Threads</text>
+  <text x="754" y="489" font-size="14" fill="#141421"><tspan font-weight="700">Multi-threaded</tspan>, one core per segment</text>
+  <line x1="644" y1="500" x2="1120" y2="500" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="644" y="523" font-size="13" font-weight="700" fill="#70706F">Cache</text>
+  <text x="754" y="523" font-size="14" fill="#141421">Results are cached and reused</text>
+  <line x1="644" y1="534" x2="1120" y2="534" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="644" y="557" font-size="13" font-weight="700" fill="#70706F">Best for</text>
+  <text x="754" y="557" font-size="14" fill="#141421">Scans, filters, joins and simple aggregations</text>
+  <line x1="644" y1="568" x2="1120" y2="568" stroke="#A9AAAA" stroke-width="1"/>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="626" x2="1140" y2="626" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="662" font-size="20" fill="#141421">Push the work to the <tspan font-weight="700">storage engine</tspan>, keep the formula engine light.</text>
+  <text x="1140" y="661" font-size="14" fill="#70706F" text-anchor="end">Measure both in DAX Studio: Server Timings</text>
+</svg>

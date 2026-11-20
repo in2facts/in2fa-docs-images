@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 772" width="960" height="772" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Where your changes live</title>
+  <desc id="d">The four stages of Git: the VS Code workspace, the staging area and the local repository on your PC, and the remote repository on GitHub. Arrows show the Git commands and VS Code actions that move changes between them: add, commit, push, fetch, pull, unstage, switch and restore, plus clone, which copies the remote repository to your PC once at the start.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="m-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#7C3AED"/></marker>
+    <marker id="m-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#0D9488"/></marker>
+    <marker id="m-navy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#1E3A5F"/></marker>
+    <marker id="m-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#2563EB"/></marker>
+    <marker id="m-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#16A34A"/></marker>
+    <marker id="m-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#EA580C"/></marker>
+  </defs>
+  <rect width="960" height="772" rx="18" fill="#F8FAFC"/>
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">Where your changes live</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">Think of it as taking photos: compose, frame, snap, then share</text>
+
+  <!-- location frames -->
+  <g fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="6 5">
+    <rect x="18" y="102" width="690" height="244" rx="16"/>
+    <rect x="718" y="102" width="224" height="244" rx="16"/>
+  </g>
+  <rect x="36" y="92" width="82" height="20" fill="#F8FAFC"/>
+  <text x="42" y="107" font-size="12" font-weight="700" letter-spacing="1.2" fill="#6B7280">YOUR PC</text>
+  <rect x="736" y="92" width="122" height="20" fill="#F8FAFC"/>
+  <text x="742" y="107" font-size="12" font-weight="700" letter-spacing="1.2" fill="#6B7280">ONLINE · GITHUB</text>
+
+  <!-- cards -->
+  <g filter="url(#s)" fill="#FFFFFF" stroke="#E5E7EB">
+    <rect x="32" y="126" width="200" height="206" rx="14"/>
+    <rect x="262" y="126" width="200" height="206" rx="14"/>
+    <rect x="492" y="126" width="200" height="206" rx="14"/>
+    <rect x="732" y="126" width="196" height="206" rx="14"/>
+  </g>
+
+  <!-- 1 Workspace -->
+  <circle cx="68" cy="164" r="22" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="2"/>
+  <path transform="translate(55.4 151.4) scale(1.05)" fill="#007ACC" d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/>
+  <text x="98" y="163" font-size="17" font-weight="700" fill="#1F2937">Workspace</text>
+  <text x="98" y="181" font-size="12" fill="#6B7280">working directory</text>
+  <text x="48" y="214" font-size="13.5" font-style="italic" fill="#1D4ED8">"the scene in front of you"</text>
+  <g font-size="12.5" fill="#4B5563"><text x="48" y="240">Files you open and edit</text><text x="48" y="259">in VS Code. Edits show as</text><text x="48" y="278">M (modified) or U (new).</text></g>
+  <rect x="44" y="296" width="176" height="24" rx="12" fill="#EFF6FF"/>
+  <text x="132" y="312" text-anchor="middle" font-size="11.5" fill="#1D4ED8">VS Code: Changes</text>
+
+  <!-- 2 Staging area -->
+  <circle cx="298" cy="164" r="22" fill="#7C3AED"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M286 159 l12 -6 l12 6 v12 l-12 6 l-12 -6z"/><path d="M286 159 l12 6 l12 -6 M298 165 v12"/>
+  </g>
+  <text x="328" y="163" font-size="17" font-weight="700" fill="#1F2937">Staging area</text>
+  <text x="328" y="181" font-size="12" fill="#6B7280">index</text>
+  <text x="278" y="214" font-size="13.5" font-style="italic" fill="#6D28D9">"framing the shot"</text>
+  <g font-size="12.5" fill="#4B5563"><text x="278" y="240">Changes you picked for the</text><text x="278" y="259">next commit. Only what</text><text x="278" y="278">belongs in this shot.</text></g>
+  <rect x="274" y="296" width="176" height="24" rx="12" fill="#F5F3FF"/>
+  <text x="362" y="312" text-anchor="middle" font-size="11.5" fill="#6D28D9">VS Code: Staged Changes</text>
+
+  <!-- 3 Local repository -->
+  <circle cx="528" cy="164" r="22" fill="#0D9488"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="517" y="153" width="22" height="15" rx="2"/>
+    <path d="M513 171 h30 l-2.5 3.5 h-25z"/>
+    <path d="M522 160.5 h12" stroke-width="1.6"/>
+  </g>
+  <g fill="#0D9488" stroke="#FFFFFF" stroke-width="1.6">
+    <circle cx="522" cy="160.5" r="2.2"/><circle cx="528" cy="160.5" r="2.2"/><circle cx="534" cy="160.5" r="2.2"/>
+  </g>
+  <text x="558" y="163" font-size="17" font-weight="700" fill="#1F2937">Local repo</text>
+  <text x="558" y="181" font-size="12" fill="#6B7280">.git folder on your PC</text>
+  <text x="508" y="214" font-size="13.5" font-style="italic" fill="#0F766E">"your camera roll"</text>
+  <g font-size="12.5" fill="#4B5563"><text x="508" y="240">Every snapshot (commit).</text><text x="508" y="259">Works offline, but nobody</text><text x="508" y="278">else can see it yet.</text></g>
+  <rect x="504" y="296" width="176" height="24" rx="12" fill="#F0FDFA"/>
+  <text x="592" y="312" text-anchor="middle" font-size="11.5" fill="#0F766E">VS Code: Graph · Timeline</text>
+
+  <!-- 4 Remote repository -->
+  <circle cx="768" cy="164" r="22" fill="#1E3A5F"/>
+  <path transform="translate(754 150) scale(1.75)" fill="#FFFFFF" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+  <text x="798" y="163" font-size="17" font-weight="700" fill="#1F2937">Remote repo</text>
+  <text x="798" y="181" font-size="12" fill="#6B7280">origin on GitHub</text>
+  <text x="748" y="214" font-size="13.5" font-style="italic" fill="#1E3A5F">"the shared family album"</text>
+  <g font-size="12.5" fill="#4B5563"><text x="748" y="240">The team's copy online.</text><text x="748" y="259">Push to share your work,</text><text x="748" y="278">pull to get theirs.</text></g>
+  <rect x="742" y="296" width="176" height="24" rx="12" fill="#E8EEF5"/>
+  <text x="830" y="312" text-anchor="middle" font-size="11.5" fill="#1E3A5F">VS Code: Sync Changes</text>
+
+  <!-- lane lines -->
+  <g stroke="#CBD5E1" stroke-width="2" stroke-dasharray="3 6">
+    <path d="M132 332 v360"/><path d="M362 332 v360"/><path d="M592 332 v360"/><path d="M830 332 v360"/>
+  </g>
+
+  <!-- arrows -->
+  <g fill="none" stroke-width="3" stroke-linecap="round">
+    <!-- row 1: add, commit, push -->
+    <path d="M140 392 H352" stroke="#7C3AED" marker-end="url(#m-purple)"/>
+    <path d="M370 392 H582" stroke="#0D9488" marker-end="url(#m-teal)"/>
+    <path d="M600 392 H820" stroke="#1E3A5F" marker-end="url(#m-navy)"/>
+    <!-- row 2: unstage, fetch -->
+    <path d="M354 462 H142" stroke="#7C3AED" stroke-dasharray="7 5" marker-end="url(#m-purple)"/>
+    <path d="M822 462 H602" stroke="#2563EB" marker-end="url(#m-blue)"/>
+    <!-- row 3: pull -->
+    <path d="M822 532 H142" stroke="#16A34A" marker-end="url(#m-green)"/>
+    <!-- row 4: switch / restore -->
+    <path d="M584 602 H142" stroke="#EA580C" marker-end="url(#m-orange)"/>
+    <!-- row 5: clone (once) -->
+    <path d="M822 672 H142" stroke="#1E3A5F" stroke-width="5" stroke-opacity="0.18"/>
+    <path d="M822 672 H142" stroke="#1E3A5F" marker-end="url(#m-navy)"/>
+  </g>
+  <g>
+    <circle cx="132" cy="392" r="5" fill="#7C3AED"/><circle cx="362" cy="392" r="5" fill="#0D9488"/><circle cx="592" cy="392" r="5" fill="#1E3A5F"/>
+    <circle cx="362" cy="462" r="5" fill="#7C3AED"/><circle cx="830" cy="462" r="5" fill="#2563EB"/>
+    <circle cx="830" cy="532" r="5" fill="#16A34A"/>
+    <circle cx="592" cy="602" r="5" fill="#EA580C"/>
+    <circle cx="830" cy="672" r="5" fill="#1E3A5F"/>
+    <circle cx="592" cy="672" r="5" fill="#FFFFFF" stroke="#1E3A5F" stroke-width="2.5"/>
+  </g>
+
+  <rect x="246" y="574" width="232" height="22" fill="#F8FAFC"/>
+  <rect x="232" y="609" width="260" height="18" fill="#F8FAFC"/>
+  <rect x="400" y="644" width="160" height="22" fill="#F8FAFC"/>
+  <rect x="270" y="679" width="420" height="18" fill="#F8FAFC"/>
+  <!-- arrow labels: bold = Git command, grey = VS Code action -->
+  <g font-size="14.5" font-weight="700" text-anchor="middle" font-family="Cascadia Code, Consolas, Menlo, monospace">
+    <text x="247" y="380" fill="#6D28D9">git add</text>
+    <text x="477" y="380" fill="#0F766E">git commit</text>
+    <text x="711" y="380" fill="#1E3A5F">git push</text>
+    <text x="247" y="450" fill="#6D28D9">git restore --staged</text>
+    <text x="711" y="450" fill="#1D4ED8">git fetch</text>
+    <text x="480" y="520" fill="#15803D">git pull</text>
+    <text x="362" y="590" fill="#C2410C">git switch · git restore</text>
+    <text x="480" y="660" fill="#1E3A5F">git clone</text>
+  </g>
+  <g font-size="12" text-anchor="middle" fill="#6B7280">
+    <text x="247" y="412">+ Stage Changes</text>
+    <text x="477" y="412">✓ Commit</text>
+    <text x="711" y="412">Sync Changes · Push</text>
+    <text x="247" y="482">− Unstage Changes</text>
+    <text x="711" y="482">Fetch (… menu)</text>
+    <text x="480" y="552">Sync Changes · Pull   =   fetch + merge into your files</text>
+    <text x="362" y="622">Switch branch (status bar) · ↶ Discard Changes</text>
+    <text x="480" y="692">Clone Repository · once, at the start: creates local repo + workspace</text>
+  </g>
+
+  <!-- footer -->
+  <rect x="32" y="720" width="896" height="34" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <g font-size="12.5" fill="#4B5563">
+    <text x="48" y="742" font-weight="700" fill="#1F2937" font-family="Cascadia Code, Consolas, Menlo, monospace">git command</text>
+    <text x="138" y="742" fill="#6B7280">· grey = VS Code action</text>
+    <text x="290" y="742" fill="#CBD5E1">|</text>
+    <text x="304" y="742">Tip: Sync Changes in VS Code does a pull and a push in one click.</text>
+  </g>
+</svg>

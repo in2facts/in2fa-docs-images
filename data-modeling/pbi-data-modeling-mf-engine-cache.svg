@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+    <marker id="head-sand" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#70706F"/>
+    </marker>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Query execution</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="370" lengthAdjust="spacing">Storage engine cache</text>
+  <rect x="438" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Run the same query twice: the storage engine reuses its results, the formula engine starts all over again.</text>
+
+  <!-- ==================== Left panel: same query twice ==================== -->
+  <rect x="60" y="170" width="520" height="430" fill="#FFFFFF"/>
+  <text x="84" y="202" font-size="18" font-weight="700" fill="#141421">Running the same query twice</text>
+  <text x="84" y="224" font-size="14" fill="#70706F">The storage engine remembers, the formula engine does not</text>
+
+  <!-- Run 1 -->
+  <text x="84" y="272" font-size="14" font-weight="700" fill="#141421">Run 1</text>
+  <text x="84" y="290" font-size="12" fill="#70706F">cold cache</text>
+  <rect x="170" y="256" width="390" height="40" fill="#F6F6F6"/>
+  <rect x="170" y="256" width="240" height="40" fill="#F39454"/>
+  <text x="290" y="281" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">storage engine: scan</text>
+  <rect x="410" y="256" width="120" height="40" fill="#141421"/>
+  <text x="470" y="281" font-size="13" font-weight="700" fill="#F6F6F6" text-anchor="middle">formula engine</text>
+
+  <!-- Run 2 -->
+  <text x="84" y="342" font-size="14" font-weight="700" fill="#141421">Run 2</text>
+  <text x="84" y="360" font-size="12" fill="#70706F">warm cache</text>
+  <rect x="170" y="326" width="390" height="40" fill="#F6F6F6"/>
+  <rect x="170" y="326" width="16" height="40" fill="#F39454"/>
+  <rect x="186" y="326" width="120" height="40" fill="#141421"/>
+  <text x="246" y="351" font-size="13" font-weight="700" fill="#F6F6F6" text-anchor="middle">formula engine</text>
+  <rect x="307" y="327" width="222" height="38" fill="none" stroke="#A9AAAA" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="418" y="351" font-size="13" fill="#70706F" text-anchor="middle">saved by the cache</text>
+  <path d="M178 370 V384" stroke="#F39454" stroke-width="1.5"/>
+  <text x="172" y="398" font-size="12" font-weight="700" fill="#F39454">cache hit</text>
+
+  <!-- Time axis -->
+  <line x1="170" y1="414" x2="574" y2="414" stroke="#70706F" stroke-width="1.5" marker-end="url(#head-sand)"/>
+  <text x="560" y="432" font-size="12" fill="#70706F" text-anchor="end">time →</text>
+
+  <!-- Legend -->
+  <rect x="84" y="458" width="14" height="14" fill="#F39454"/>
+  <text x="108" y="470" font-size="13" font-weight="700" fill="#141421">Storage engine</text>
+  <text x="212" y="470" font-size="13" fill="#70706F">results are cached and reused</text>
+  <rect x="84" y="484" width="14" height="14" fill="#141421"/>
+  <text x="108" y="496" font-size="13" font-weight="700" fill="#141421">Formula engine</text>
+  <text x="212" y="496" font-size="13" fill="#70706F">no cache: same time on every run</text>
+
+  <line x1="84" y1="522" x2="560" y2="522" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="84" y="554" font-size="16" font-weight="700" fill="#141421">Run 2 is faster, the formula engine part is not.</text>
+  <text x="84" y="574" font-size="13" fill="#70706F">Only work pushed to the storage engine benefits from the cache.</text>
+
+  <!-- ==================== Right panel: how the cache works ==================== -->
+  <rect x="620" y="170" width="520" height="430" fill="#FFFFFF"/>
+  <rect x="620" y="170" width="4" height="430" fill="#F39454"/>
+  <text x="644" y="202" font-size="18" font-weight="700" fill="#141421">How the cache works</text>
+  <text x="644" y="224" font-size="14" fill="#70706F">Every storage engine request is checked against the cache first</text>
+
+  <!-- Flow -->
+  <rect x="644" y="262" width="120" height="40" fill="#FFFFFF" stroke="#A9AAAA" stroke-width="1" filter="url(#card)"/>
+  <text x="704" y="287" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">xmSQL request</text>
+  <line x1="768" y1="282" x2="786" y2="282" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <polygon points="790,282 840,252 890,282 840,312" fill="#141421"/>
+  <text x="840" y="287" font-size="12" font-weight="700" fill="#F6F6F6" text-anchor="middle">in cache?</text>
+
+  <line x1="894" y1="282" x2="998" y2="282" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="946" y="274" font-size="12" font-weight="700" fill="#F39454" text-anchor="middle">yes: instant</text>
+  <rect x="1004" y="262" width="116" height="40" fill="#FFFFFF" stroke="#F39454" stroke-width="2" filter="url(#card)"/>
+  <text x="1062" y="287" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">datacache</text>
+
+  <line x1="840" y1="316" x2="840" y2="348" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="850" y="336" font-size="12" font-weight="700" fill="#70706F">no</text>
+  <rect x="780" y="352" width="120" height="40" fill="#F39454"/>
+  <text x="840" y="377" font-size="13" font-weight="700" fill="#141421" text-anchor="middle">scan columns</text>
+  <path d="M904 372 H1062 V308" fill="none" stroke="#70706F" stroke-width="2" marker-end="url(#head-sand)"/>
+  <text x="982" y="364" font-size="12" fill="#70706F" text-anchor="middle">store in cache</text>
+
+  <!-- Rules -->
+  <line x1="644" y1="420" x2="1120" y2="420" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="644" y="443" font-size="13" font-weight="700" fill="#70706F">Cached</text>
+  <text x="754" y="443" font-size="14" fill="#141421">Identical storage engine requests</text>
+  <line x1="644" y1="454" x2="1120" y2="454" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="644" y="477" font-size="13" font-weight="700" fill="#70706F">Not cached</text>
+  <text x="754" y="477" font-size="14" fill="#141421">Formula engine work and <tspan font-weight="700">CallbackDataID</tspan> scans</text>
+  <line x1="644" y1="488" x2="1120" y2="488" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="644" y="511" font-size="13" font-weight="700" fill="#70706F">Cleared</text>
+  <text x="754" y="511" font-size="14" fill="#141421">On data refresh, model change or Clear Cache</text>
+  <line x1="644" y1="522" x2="1120" y2="522" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="644" y="545" font-size="13" font-weight="700" fill="#70706F">Testing</text>
+  <text x="754" y="545" font-size="14" fill="#141421">Always measure with a <tspan font-weight="700">cold cache</tspan></text>
+  <line x1="644" y1="556" x2="1120" y2="556" stroke="#A9AAAA" stroke-width="1"/>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="636" x2="1140" y2="636" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="672" font-size="20" fill="#141421">Only <tspan font-weight="700">storage engine</tspan> work is cached.</text>
+  <text x="1140" y="671" font-size="14" fill="#70706F" text-anchor="end">Clear the cache before you measure</text>
+</svg>

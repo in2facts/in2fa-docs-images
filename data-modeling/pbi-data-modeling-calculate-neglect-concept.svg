@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" width="1200" height="720" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="head-mango" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#F39454"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="720" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Calculate measures</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="440" lengthAdjust="spacing">Neglecting report filters</text>
+  <rect x="508" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">The report filters every measure. CALCULATE can neglect one of those filters, for this one calculation only.</text>
+
+  <!-- ==================== Step 1 ==================== -->
+  <rect x="60" y="170" width="255" height="236" fill="#FFFFFF"/>
+  <circle cx="90" cy="202" r="14" fill="#141421"/>
+  <text x="90" y="207.4" font-size="15" font-weight="700" fill="#F6F6F6" text-anchor="middle">1</text>
+  <text x="112" y="207" font-size="16" font-weight="700" fill="#141421">The report filters</text>
+  <text x="76" y="370" font-size="13" font-weight="700" fill="#141421">Rows, columns and slicers</text>
+  <text x="76" y="388" font-size="12" fill="#70706F">filter the whole model.</text>
+  <line x1="317" y1="288" x2="331" y2="288" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="76" y="240" font-size="10.5" font-weight="700" fill="#A9AAAA">MATRIX ROWS</text>
+  <rect x="76" y="248" width="110" height="22" fill="#141421"/>
+  <text x="86" y="263" font-size="12" font-weight="700" fill="#F6F6F6">Bikes</text>
+  <rect x="76" y="274" width="110" height="22" fill="#F6F6F6"/>
+  <text x="86" y="289" font-size="12" font-weight="400" fill="#70706F">Clothing</text>
+  <rect x="76" y="300" width="110" height="22" fill="#F6F6F6"/>
+  <text x="86" y="315" font-size="12" font-weight="400" fill="#70706F">Accessories</text>
+  <text x="202" y="240" font-size="10.5" font-weight="700" fill="#A9AAAA">SLICER</text>
+  <rect x="202" y="248" width="97" height="22" fill="#141421"/>
+  <text x="212" y="263" font-size="12" font-weight="700" fill="#F6F6F6">Year 2025</text>
+  <text x="76" y="342" font-size="11" fill="#70706F">one cell: the row Bikes in 2025</text>
+
+  <!-- ==================== Step 2 ==================== -->
+  <rect x="335" y="170" width="255" height="236" fill="#FFFFFF"/>
+  <circle cx="365" cy="202" r="14" fill="#141421"/>
+  <text x="365" y="207.4" font-size="15" font-weight="700" fill="#F6F6F6" text-anchor="middle">2</text>
+  <text x="387" y="207" font-size="16" font-weight="700" fill="#141421">Initial filter context</text>
+  <text x="351" y="370" font-size="13" font-weight="700" fill="#141421">Every measure in the cell</text>
+  <text x="351" y="388" font-size="12" fill="#70706F">sees exactly these filters.</text>
+  <line x1="592" y1="288" x2="606" y2="288" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="351" y="240" font-size="10.5" font-weight="700" fill="#A9AAAA">FILTERS SET BY THE REPORT</text>
+  <rect x="351" y="248" width="170" height="24" fill="#FBD3B8"/>
+  <path d="M358 255 h10 l-4 5 v5 l-2 1.5 v-6.5 z" fill="#141421"/>
+  <text x="374" y="264" font-size="12" font-weight="700" fill="#141421">Category = Bikes</text>
+  <rect x="351" y="278" width="130" height="24" fill="#FBD3B8"/>
+  <path d="M358 285 h10 l-4 5 v5 l-2 1.5 v-6.5 z" fill="#141421"/>
+  <text x="374" y="294" font-size="12" font-weight="700" fill="#141421">Year = 2025</text>
+  <text x="351" y="330" font-size="12" fill="#141421"><tspan font-family="Consolas, 'Courier New', monospace">[Revenue]</tspan> = revenue of Bikes</text>
+
+  <!-- ==================== Step 3 ==================== -->
+  <rect x="610" y="170" width="255" height="236" fill="#FFFFFF"/>
+  <circle cx="640" cy="202" r="14" fill="#F39454"/>
+  <text x="640" y="207.4" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">3</text>
+  <text x="662" y="207" font-size="16" font-weight="700" fill="#141421">Neglect</text>
+  <text x="626" y="370" font-size="13" font-weight="700" fill="#141421">CALCULATE removes the filter</text>
+  <text x="626" y="388" font-size="12" fill="#70706F">on one column, the others stay.</text>
+  <line x1="867" y1="288" x2="881" y2="288" stroke="#F39454" stroke-width="2" marker-end="url(#head-mango)"/>
+  <text x="626" y="240" font-size="10.5" font-weight="700" fill="#A9AAAA">ALL ( Categories[ProductCategoryName] )</text>
+  <rect x="626" y="248" width="170" height="24" fill="#F6F6F6"/>
+  <path d="M633 255 h10 l-4 5 v5 l-2 1.5 v-6.5 z" fill="#A9AAAA"/>
+  <text x="649" y="264" font-size="12" font-weight="700" fill="#A9AAAA">Category = Bikes</text>
+  <line x1="630" y1="260" x2="792" y2="260" stroke="#141421" stroke-width="1.5"/>
+  <circle cx="818" cy="260" r="10" fill="#F6F6F6" stroke="#141421" stroke-width="2"/><path d="M814 256 l8 8 m0 -8 l-8 8" stroke="#141421" stroke-width="2.2"/>
+  <rect x="626" y="278" width="130" height="24" fill="#FBD3B8"/>
+  <path d="M633 285 h10 l-4 5 v5 l-2 1.5 v-6.5 z" fill="#141421"/>
+  <text x="649" y="294" font-size="12" font-weight="700" fill="#141421">Year = 2025</text>
+  <text x="766" y="294" font-size="11" font-weight="700" fill="#70706F">respected</text>
+  <text x="806" y="282" font-size="11" font-weight="700" fill="#141421" text-anchor="middle"></text>
+
+  <!-- ==================== Step 4 ==================== -->
+  <rect x="885" y="170" width="255" height="236" fill="#FFFFFF"/>
+  <circle cx="915" cy="202" r="14" fill="#F39454"/>
+  <text x="915" y="207.4" font-size="15" font-weight="700" fill="#141421" text-anchor="middle">4</text>
+  <text x="937" y="207" font-size="16" font-weight="700" fill="#141421">Calculate</text>
+  <text x="901" y="370" font-size="13" font-weight="700" fill="#141421">Same measure, fewer filters:</text>
+  <text x="901" y="388" font-size="12" fill="#70706F">the total of all categories.</text>
+  <text x="901" y="240" font-size="10.5" font-weight="700" fill="#A9AAAA">FILTERS FOR THE CALCULATION</text>
+  <rect x="901" y="248" width="170" height="24" fill="#F39454"/>
+  <path d="M908 255 h10 l-4 5 v5 l-2 1.5 v-6.5 z" fill="#141421"/>
+  <text x="924" y="264" font-size="12" font-weight="700" fill="#141421">Category = all</text>
+  <rect x="901" y="278" width="130" height="24" fill="#FBD3B8"/>
+  <path d="M908 285 h10 l-4 5 v5 l-2 1.5 v-6.5 z" fill="#141421"/>
+  <text x="924" y="294" font-size="12" font-weight="700" fill="#141421">Year = 2025</text>
+  <text x="901" y="330" font-size="12" fill="#141421"><tspan font-family="Consolas, 'Courier New', monospace">[Revenue]</tspan> = revenue of <tspan font-weight="700">all</tspan> categories</text>
+
+  <!-- ==================== Result ==================== -->
+  <rect x="60" y="426" width="620" height="200" fill="#FFFFFF"/>
+  <text x="84" y="456" font-size="16" font-weight="700" fill="#141421">The result in the matrix</text>
+  <rect x="84" y="474" width="572" height="26" fill="#141421"/>
+  <text x="94" y="492" font-size="12" font-weight="700" fill="#F6F6F6" text-anchor="start">Category</text>
+  <text x="320" y="492" font-size="12" font-weight="700" fill="#F6F6F6" text-anchor="end">Revenue</text>
+  <text x="490" y="492" font-size="12" font-weight="700" fill="#F6F6F6" text-anchor="end">Total (all PCN)</text>
+  <text x="646" y="492" font-size="12" font-weight="700" fill="#F6F6F6" text-anchor="end">% of Total</text>
+  <rect x="342" y="500" width="158" height="112" fill="#FBD3B8"/>
+  <text x="94" y="519" font-size="13" font-weight="400" fill="#141421" text-anchor="start">Bikes</text>
+  <text x="320" y="519" font-size="13" font-weight="400" fill="#141421" text-anchor="end">800</text>
+  <text x="490" y="519" font-size="13" font-weight="400" fill="#141421" text-anchor="end">1.000</text>
+  <text x="646" y="519" font-size="13" font-weight="400" fill="#141421" text-anchor="end">80%</text>
+  <line x1="84" y1="528" x2="656" y2="528" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="94" y="547" font-size="13" font-weight="400" fill="#141421" text-anchor="start">Clothing</text>
+  <text x="320" y="547" font-size="13" font-weight="400" fill="#141421" text-anchor="end">150</text>
+  <text x="490" y="547" font-size="13" font-weight="400" fill="#141421" text-anchor="end">1.000</text>
+  <text x="646" y="547" font-size="13" font-weight="400" fill="#141421" text-anchor="end">15%</text>
+  <line x1="84" y1="556" x2="656" y2="556" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="94" y="575" font-size="13" font-weight="400" fill="#141421" text-anchor="start">Accessories</text>
+  <text x="320" y="575" font-size="13" font-weight="400" fill="#141421" text-anchor="end">50</text>
+  <text x="490" y="575" font-size="13" font-weight="400" fill="#141421" text-anchor="end">1.000</text>
+  <text x="646" y="575" font-size="13" font-weight="400" fill="#141421" text-anchor="end">5%</text>
+  <line x1="84" y1="584" x2="656" y2="584" stroke="#A9AAAA" stroke-width="1"/>
+  <text x="94" y="603" font-size="13" font-weight="700" fill="#141421" text-anchor="start">Total</text>
+  <text x="320" y="603" font-size="13" font-weight="700" fill="#141421" text-anchor="end">1.000</text>
+  <text x="490" y="603" font-size="13" font-weight="700" fill="#141421" text-anchor="end">1.000</text>
+  <text x="646" y="603" font-size="13" font-weight="700" fill="#141421" text-anchor="end">100%</text>
+  <line x1="84" y1="612" x2="656" y2="612" stroke="#A9AAAA" stroke-width="1"/>
+  <text x="421" y="620" font-size="11" fill="#70706F" text-anchor="middle">same value on every row</text>
+
+  <!-- ==================== Code ==================== -->
+  <rect x="700" y="426" width="440" height="200" fill="#FFFFFF"/>
+  <rect x="700" y="426" width="4" height="200" fill="#F39454"/>
+  <text x="724" y="456" font-size="16" font-weight="700" fill="#141421">The measure</text>
+  <rect x="724" y="474" width="392" height="104" fill="#141421"/>
+  <text x="738" y="496" font-family="Consolas, 'Courier New', monospace" font-size="12.5" fill="#F6F6F6" xml:space="preserve"><tspan fill="#F39454">Total Revenue (all PCN) =</tspan></text>
+  <text x="738" y="514" font-family="Consolas, 'Courier New', monospace" font-size="12.5" fill="#F6F6F6" xml:space="preserve">CALCULATE (</text>
+  <text x="738" y="532" font-family="Consolas, 'Courier New', monospace" font-size="12.5" fill="#F6F6F6" xml:space="preserve">    [Revenue],</text>
+  <text x="738" y="550" font-family="Consolas, 'Courier New', monospace" font-size="12.5" fill="#F6F6F6" xml:space="preserve">    <tspan fill="#F39454" font-weight="700">ALL</tspan> ( Categories[ProductCategoryName] )</text>
+  <text x="738" y="568" font-family="Consolas, 'Courier New', monospace" font-size="12.5" fill="#F6F6F6" xml:space="preserve">)</text>
+  <text x="724" y="602" font-size="13" fill="#141421"><tspan font-weight="700">% of Total</tspan> = DIVIDE ( [Revenue], [Total Revenue (all PCN)] )</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="656" x2="1140" y2="656" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="692" font-size="20" fill="#141421">Neglect a report filter to get <tspan font-weight="700">the total for the denominator.</tspan></text>
+  <text x="1140" y="691" font-size="14" fill="#70706F" text-anchor="end">ALL or REMOVEFILTERS</text>
+</svg>

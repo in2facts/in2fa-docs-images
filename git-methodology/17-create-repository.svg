@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Creating a repository on GitHub</title>
+  <desc id="d">Left: why every project deserves its own GitHub repository: backup, one shared truth, full history, access control and review. Right: the five fields of the New repository form on github.com, followed by cloning it in VS Code. Bottom: the alternative of publishing an existing folder from VS Code.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <g id="yes"><circle r="10" fill="#DCFCE7"/><path d="M-4.5 0 L-1.5 3.5 L4.5 -3.5" fill="none" stroke="#16A34A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+  </defs>
+  <rect width="960" height="600" rx="18" fill="#F8FAFC"/>
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">Creating a repository on GitHub</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">One project = one repository. Two minutes to create, years of peace of mind.</text>
+
+  <!-- WHY -->
+  <g filter="url(#s)"><rect x="30" y="96" width="380" height="390" rx="14" fill="#FFFFFF" stroke="#E5E7EB"/></g>
+  <path d="M44 96 h352 a14 14 0 0 1 14 14 v26 h-380 v-26 a14 14 0 0 1 14 -14z" fill="#1E3A5F"/>
+  <text x="220" y="123" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">Why?</text>
+  <g font-size="13" fill="#4B5563">
+    <use href="#yes" x="58" y="168"/><text x="78" y="166" font-size="14.5" font-weight="700" fill="#1F2937">Safe backup</text>
+    <text x="78" y="186">Your laptop is no longer the only copy.</text>
+    <use href="#yes" x="58" y="228"/><text x="78" y="226" font-size="14.5" font-weight="700" fill="#1F2937">One shared truth</text>
+    <text x="78" y="246">Everyone works from the same files.</text>
+    <use href="#yes" x="58" y="288"/><text x="78" y="286" font-size="14.5" font-weight="700" fill="#1F2937">Full history, forever</text>
+    <text x="78" y="306">Every version, who changed it and why.</text>
+    <use href="#yes" x="58" y="348"/><text x="78" y="346" font-size="14.5" font-weight="700" fill="#1F2937">You decide who has access</text>
+    <text x="78" y="366">Make it private; invite people per project.</text>
+    <use href="#yes" x="58" y="408"/><text x="78" y="406" font-size="14.5" font-weight="700" fill="#1F2937">Branches and review</text>
+    <text x="78" y="426">Pull requests and reviews happen on GitHub.</text>
+    <text x="58" y="466" font-size="12.5" font-style="italic" fill="#6B7280">Without it, Git works only on your own PC.</text>
+  </g>
+
+  <!-- HOW -->
+  <g filter="url(#s)"><rect x="430" y="96" width="500" height="390" rx="14" fill="#FFFFFF" stroke="#E5E7EB"/></g>
+  <path d="M444 96 h472 a14 14 0 0 1 14 14 v26 h-500 v-26 a14 14 0 0 1 14 -14z" fill="#24292F"/>
+  <text x="680" y="123" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">How? On github.com: + → New repository</text>
+
+  <!-- mock form -->
+  <rect x="450" y="150" width="270" height="270" rx="10" fill="#F6F8FA" stroke="#D0D7DE"/>
+  <g font-size="11.5" fill="#24292F">
+    <text x="464" y="174" font-weight="700">Owner / Repository name *</text>
+    <rect x="464" y="182" width="242" height="26" rx="6" fill="#FFFFFF" stroke="#D0D7DE"/>
+    <text x="472" y="200" font-family="Consolas, monospace" fill="#24292F">in2facts / sales-report</text>
+    <text x="464" y="228" font-weight="700">Description</text>
+    <rect x="464" y="236" width="242" height="26" rx="6" fill="#FFFFFF" stroke="#D0D7DE"/>
+    <text x="472" y="254" fill="#57606A">Quarterly sales report 2026</text>
+    <circle cx="472" cy="282" r="5" fill="#FFFFFF" stroke="#8C959F"/><text x="484" y="286" fill="#57606A">Public</text>
+    <circle cx="548" cy="282" r="5" fill="#FFFFFF" stroke="#0969DA" stroke-width="4"/><text x="560" y="286" font-weight="700">Private</text>
+    <rect x="466" y="302" width="11" height="11" rx="2" fill="#0969DA"/><path d="M468 308 l2.5 2.5 l4.5 -5" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
+    <text x="484" y="312">Add a README file</text>
+    <text x="464" y="338" font-weight="700">.gitignore</text>
+    <rect x="530" y="326" width="120" height="20" rx="5" fill="#FFFFFF" stroke="#D0D7DE"/><text x="538" y="340" fill="#57606A">None ▾</text>
+    <rect x="464" y="372" width="150" height="30" rx="6" fill="#1F883D"/>
+    <text x="539" y="392" text-anchor="middle" font-size="12.5" font-weight="700" fill="#FFFFFF">Create repository</text>
+  </g>
+
+  <!-- callouts -->
+  <g font-size="12.5" fill="#4B5563">
+    <g font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+      <circle cx="744" cy="195" r="11" fill="#2563EB"/><text x="744" y="199">1</text>
+      <circle cx="744" cy="249" r="11" fill="#2563EB"/><text x="744" y="253">2</text>
+      <circle cx="744" cy="282" r="11" fill="#2563EB"/><text x="744" y="286">3</text>
+      <circle cx="744" cy="314" r="11" fill="#2563EB"/><text x="744" y="318">4</text>
+      <circle cx="744" cy="387" r="11" fill="#16A34A"/><text x="744" y="391">5</text>
+    </g>
+    <text x="762" y="192" font-weight="700" fill="#1F2937">Short, clear name</text>
+    <text x="762" y="208">lowercase-with-hyphens</text>
+    <text x="762" y="253" font-weight="700" fill="#1F2937">One line: what is it?</text>
+    <text x="762" y="286" font-weight="700" fill="#1F2937">Private, unless public</text>
+    <text x="762" y="318" font-weight="700" fill="#1F2937">Tick README: a home</text>
+    <text x="762" y="334">page for the project</text>
+    <text x="762" y="384" font-weight="700" fill="#1F2937">Create, then in VS Code:</text>
+    <text x="762" y="400">Source Control → Clone</text>
+    <text x="762" y="416">Repository → pick it</text>
+  </g>
+  <text x="450" y="458" font-size="12.5" fill="#6B7280">Company projects: create them under the organisation, not your personal account,</text>
+  <text x="450" y="474" font-size="12.5" fill="#6B7280">so access survives when people change roles.</text>
+
+  <!-- alternative -->
+  <rect x="30" y="506" width="900" height="70" rx="14" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="54" y="534" font-size="14" font-weight="700" fill="#1E3A8A">Already have a folder with files?</text>
+  <text x="54" y="556" font-size="13.5" fill="#1E3A5F">Open it in VS Code → Source Control → <tspan font-weight="700">Publish to GitHub</tspan> → choose private. Or ask Claude: "Put this folder on GitHub as a private repository."</text>
+</svg>

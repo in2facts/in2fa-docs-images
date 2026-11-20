@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Query execution</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="490" lengthAdjust="spacing">Table scan vs column filter</text>
+  <rect x="558" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">A table filter reads every column of every row. A column filter reads only the distinct values of one column.</text>
+
+
+  <!-- ==================== Table filter ==================== -->
+  <rect x="60" y="170" width="520" height="430" fill="#FFFFFF"/>
+  <rect x="60" y="170" width="4" height="430" fill="#141421"/>
+  <text x="84" y="202" font-size="18" font-weight="700" fill="#141421">Filter a table: table scan</text>
+  <rect x="84" y="218" width="472" height="32" fill="#141421"/>
+  <text x="98" y="239" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">FILTER ( Product, Product[Color] = &quot;Red&quot; )</text>
+  <rect x="85" y="272" width="62" height="22" fill="#141421"/>
+  <text x="116.0" y="287" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle">Key</text>
+  <rect x="85" y="298" width="62" height="17" fill="#F39454"/>
+  <rect x="85" y="318" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="85" y="338" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="85" y="358" width="62" height="17" fill="#F39454"/>
+  <rect x="85" y="378" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="85" y="398" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="85" y="418" width="62" height="17" fill="#F39454"/>
+  <rect x="85" y="438" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="149" y="272" width="62" height="22" fill="#141421"/>
+  <text x="180.0" y="287" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle">Name</text>
+  <rect x="149" y="298" width="62" height="17" fill="#F39454"/>
+  <rect x="149" y="318" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="149" y="338" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="149" y="358" width="62" height="17" fill="#F39454"/>
+  <rect x="149" y="378" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="149" y="398" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="149" y="418" width="62" height="17" fill="#F39454"/>
+  <rect x="149" y="438" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="213" y="272" width="62" height="22" fill="#141421"/>
+  <text x="244.0" y="287" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle">Color</text>
+  <rect x="213" y="298" width="62" height="17" fill="#F39454"/>
+  <text x="244.0" y="311" font-size="11" fill="#141421" text-anchor="middle">Red</text>
+  <rect x="213" y="318" width="62" height="17" fill="#FBD3B8"/>
+  <text x="244.0" y="331" font-size="11" fill="#141421" text-anchor="middle">Blue</text>
+  <rect x="213" y="338" width="62" height="17" fill="#FBD3B8"/>
+  <text x="244.0" y="351" font-size="11" fill="#141421" text-anchor="middle">Black</text>
+  <rect x="213" y="358" width="62" height="17" fill="#F39454"/>
+  <text x="244.0" y="371" font-size="11" fill="#141421" text-anchor="middle">Red</text>
+  <rect x="213" y="378" width="62" height="17" fill="#FBD3B8"/>
+  <text x="244.0" y="391" font-size="11" fill="#141421" text-anchor="middle">Silver</text>
+  <rect x="213" y="398" width="62" height="17" fill="#FBD3B8"/>
+  <text x="244.0" y="411" font-size="11" fill="#141421" text-anchor="middle">White</text>
+  <rect x="213" y="418" width="62" height="17" fill="#F39454"/>
+  <text x="244.0" y="431" font-size="11" fill="#141421" text-anchor="middle">Red</text>
+  <rect x="213" y="438" width="62" height="17" fill="#FBD3B8"/>
+  <text x="244.0" y="451" font-size="11" fill="#141421" text-anchor="middle">Black</text>
+  <rect x="277" y="272" width="62" height="22" fill="#141421"/>
+  <text x="308.0" y="287" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle">Category</text>
+  <rect x="277" y="298" width="62" height="17" fill="#F39454"/>
+  <rect x="277" y="318" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="277" y="338" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="277" y="358" width="62" height="17" fill="#F39454"/>
+  <rect x="277" y="378" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="277" y="398" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="277" y="418" width="62" height="17" fill="#F39454"/>
+  <rect x="277" y="438" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="341" y="272" width="62" height="22" fill="#141421"/>
+  <text x="372.0" y="287" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle">Subcat.</text>
+  <rect x="341" y="298" width="62" height="17" fill="#F39454"/>
+  <rect x="341" y="318" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="341" y="338" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="341" y="358" width="62" height="17" fill="#F39454"/>
+  <rect x="341" y="378" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="341" y="398" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="341" y="418" width="62" height="17" fill="#F39454"/>
+  <rect x="341" y="438" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="405" y="272" width="62" height="22" fill="#141421"/>
+  <text x="436.0" y="287" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle">Brand</text>
+  <rect x="405" y="298" width="62" height="17" fill="#F39454"/>
+  <rect x="405" y="318" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="405" y="338" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="405" y="358" width="62" height="17" fill="#F39454"/>
+  <rect x="405" y="378" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="405" y="398" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="405" y="418" width="62" height="17" fill="#F39454"/>
+  <rect x="405" y="438" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="469" y="272" width="62" height="22" fill="#141421"/>
+  <text x="500.0" y="287" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle">Price</text>
+  <rect x="469" y="298" width="62" height="17" fill="#F39454"/>
+  <rect x="469" y="318" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="469" y="338" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="469" y="358" width="62" height="17" fill="#F39454"/>
+  <rect x="469" y="378" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="469" y="398" width="62" height="17" fill="#FBD3B8"/>
+  <rect x="469" y="418" width="62" height="17" fill="#F39454"/>
+  <rect x="469" y="438" width="62" height="17" fill="#FBD3B8"/>
+  <text x="308.0" y="472" font-size="12" fill="#70706F" text-anchor="middle">⋮  2,500 rows</text>
+  <line x1="84" y1="486" x2="556" y2="486" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="84" y="509" font-size="13" font-weight="700" fill="#70706F">Reads</text>
+  <text x="164" y="509" font-size="14" fill="#141421"><tspan font-weight="700">every column</tspan> of every row: 7 × 2,500 values</text>
+  <line x1="84" y1="520" x2="556" y2="520" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="84" y="543" font-size="13" font-weight="700" fill="#70706F">Engine</text>
+  <text x="164" y="543" font-size="14" fill="#141421">rows iterated one by one, also expanded columns</text>
+  <line x1="84" y1="554" x2="556" y2="554" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="84" y="577" font-size="13" font-weight="700" fill="#70706F">Returns</text>
+  <text x="164" y="577" font-size="14" fill="#141421">a table with <tspan font-weight="700">all</tspan> Product columns</text>
+  <line x1="84" y1="588" x2="556" y2="588" stroke="#A9AAAA" stroke-width="1"/>
+
+  <!-- ==================== Column filter ==================== -->
+  <rect x="620" y="170" width="520" height="430" fill="#FFFFFF"/>
+  <rect x="620" y="170" width="4" height="430" fill="#F39454"/>
+  <text x="644" y="202" font-size="18" font-weight="700" fill="#141421">Filter a column</text>
+  <rect x="644" y="218" width="472" height="32" fill="#141421"/>
+  <text x="658" y="239" font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#F6F6F6" xml:space="preserve">Product[Color] = &quot;Red&quot;</text>
+  <rect x="645" y="272" width="62" height="22" fill="#F6F6F6"/>
+  <text x="676.0" y="287" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="middle">Key</text>
+  <rect x="645" y="298" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="645" y="318" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="645" y="338" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="645" y="358" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="645" y="378" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="645" y="398" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="645" y="418" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="645" y="438" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="709" y="272" width="62" height="22" fill="#F6F6F6"/>
+  <text x="740.0" y="287" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="middle">Name</text>
+  <rect x="709" y="298" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="709" y="318" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="709" y="338" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="709" y="358" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="709" y="378" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="709" y="398" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="709" y="418" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="709" y="438" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="773" y="272" width="62" height="22" fill="#141421"/>
+  <text x="804.0" y="287" font-size="11" font-weight="700" fill="#F6F6F6" text-anchor="middle">Color</text>
+  <rect x="773" y="298" width="62" height="17" fill="#F39454"/>
+  <text x="804.0" y="311" font-size="11" fill="#141421" text-anchor="middle">Red</text>
+  <rect x="773" y="318" width="62" height="17" fill="#FBD3B8"/>
+  <text x="804.0" y="331" font-size="11" fill="#141421" text-anchor="middle">Blue</text>
+  <rect x="773" y="338" width="62" height="17" fill="#FBD3B8"/>
+  <text x="804.0" y="351" font-size="11" fill="#141421" text-anchor="middle">Black</text>
+  <rect x="773" y="358" width="62" height="17" fill="#F39454"/>
+  <text x="804.0" y="371" font-size="11" fill="#141421" text-anchor="middle">Red</text>
+  <rect x="773" y="378" width="62" height="17" fill="#FBD3B8"/>
+  <text x="804.0" y="391" font-size="11" fill="#141421" text-anchor="middle">Silver</text>
+  <rect x="773" y="398" width="62" height="17" fill="#FBD3B8"/>
+  <text x="804.0" y="411" font-size="11" fill="#141421" text-anchor="middle">White</text>
+  <rect x="773" y="418" width="62" height="17" fill="#F39454"/>
+  <text x="804.0" y="431" font-size="11" fill="#141421" text-anchor="middle">Red</text>
+  <rect x="773" y="438" width="62" height="17" fill="#FBD3B8"/>
+  <text x="804.0" y="451" font-size="11" fill="#141421" text-anchor="middle">Black</text>
+  <rect x="837" y="272" width="62" height="22" fill="#F6F6F6"/>
+  <text x="868.0" y="287" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="middle">Category</text>
+  <rect x="837" y="298" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="837" y="318" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="837" y="338" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="837" y="358" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="837" y="378" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="837" y="398" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="837" y="418" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="837" y="438" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="901" y="272" width="62" height="22" fill="#F6F6F6"/>
+  <text x="932.0" y="287" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="middle">Subcat.</text>
+  <rect x="901" y="298" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="901" y="318" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="901" y="338" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="901" y="358" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="901" y="378" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="901" y="398" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="901" y="418" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="901" y="438" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="965" y="272" width="62" height="22" fill="#F6F6F6"/>
+  <text x="996.0" y="287" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="middle">Brand</text>
+  <rect x="965" y="298" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="965" y="318" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="965" y="338" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="965" y="358" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="965" y="378" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="965" y="398" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="965" y="418" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="965" y="438" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="1029" y="272" width="62" height="22" fill="#F6F6F6"/>
+  <text x="1060.0" y="287" font-size="11" font-weight="700" fill="#A9AAAA" text-anchor="middle">Price</text>
+  <rect x="1029" y="298" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="1029" y="318" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="1029" y="338" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="1029" y="358" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="1029" y="378" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="1029" y="398" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="1029" y="418" width="62" height="17" fill="#F6F6F6"/>
+  <rect x="1029" y="438" width="62" height="17" fill="#F6F6F6"/>
+  <text x="868.0" y="472" font-size="12" fill="#70706F" text-anchor="middle">⋮  2,500 rows</text>
+  <line x1="644" y1="486" x2="1116" y2="486" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="644" y="509" font-size="13" font-weight="700" fill="#70706F">Reads</text>
+  <text x="724" y="509" font-size="14" fill="#141421"><tspan font-weight="700">one column</tspan>: 10 distinct colors, not 17,500 values</text>
+  <line x1="644" y1="520" x2="1116" y2="520" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="644" y="543" font-size="13" font-weight="700" fill="#70706F">Engine</text>
+  <text x="724" y="543" font-size="14" fill="#141421">a simple filter pushed to the storage engine</text>
+  <line x1="644" y1="554" x2="1116" y2="554" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="644" y="577" font-size="13" font-weight="700" fill="#70706F">Returns</text>
+  <text x="724" y="577" font-size="14" fill="#141421">one column with one value: Red</text>
+  <line x1="644" y1="588" x2="1116" y2="588" stroke="#A9AAAA" stroke-width="1"/>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="636" x2="1140" y2="636" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="672" font-size="20" fill="#141421">Filter <tspan font-weight="700">columns</tspan>, not tables.</text>
+  <g font-size="13" fill="#70706F">
+    <rect x="828" y="660" width="12" height="12" fill="#FBD3B8"/><text x="846" y="671">value read</text>
+    <rect x="928" y="660" width="12" height="12" fill="#F39454"/><text x="946" y="671">value kept</text>
+    <rect x="1024" y="660" width="12" height="12" fill="#F6F6F6" stroke="#D7D8D8"/><text x="1042" y="671">not read</text>
+  </g>
+</svg>

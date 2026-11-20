@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">The daily workflow</title>
+  <desc id="d">A loop of seven steps: pull the latest version, create a branch, make changes with Claude, commit, push, open a pull request, and merge after review. Then start again.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10z" fill="#9CA3AF"/>
+    </marker>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect width="960" height="600" rx="18" fill="#F8FAFC"/>
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">The daily workflow</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">Seven steps, the same every time. After a week it becomes a habit.</text>
+
+  <!-- loop ring -->
+  <circle cx="480" cy="335" r="190" fill="none" stroke="#E5E7EB" stroke-width="26"/>
+  <circle cx="480" cy="335" r="190" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 8"/>
+
+  <!-- centre -->
+  <circle cx="480" cy="335" r="92" fill="#1E3A5F" filter="url(#s)"/>
+  <text x="480" y="318" text-anchor="middle" font-size="15" fill="#BFDBFE">one task =</text>
+  <text x="480" y="346" text-anchor="middle" font-size="24" font-weight="700" fill="#FFFFFF">one branch</text>
+  <text x="480" y="372" text-anchor="middle" font-size="13" fill="#BFDBFE">then repeat</text>
+
+  <!-- 7 step nodes on the ring: angles -90, -38.6, 12.9, 64.3, 115.7, 167.1, 218.6 -->
+  <g filter="url(#s)">
+    <rect x="390" y="118" width="180" height="58" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+    <rect x="569" y="186" width="180" height="58" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2"/>
+    <rect x="583" y="348" width="200" height="58" rx="12" fill="#FFFFFF" stroke="#D97757" stroke-width="2"/>
+    <rect x="495" y="474" width="180" height="58" rx="12" fill="#FFFFFF" stroke="#0D9488" stroke-width="2"/>
+    <rect x="285" y="474" width="180" height="58" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+    <rect x="177" y="348" width="200" height="58" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2"/>
+    <rect x="211" y="186" width="180" height="58" rx="12" fill="#FFFFFF" stroke="#16A34A" stroke-width="2"/>
+  </g>
+
+  <g font-size="12.5" fill="#6B7280">
+    <circle cx="414" cy="147" r="14" fill="#2563EB"/><text x="414" y="152" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">1</text>
+    <text x="436" y="143" font-size="16" font-weight="700" fill="#1F2937">Pull</text>
+    <text x="436" y="163">get the latest main</text>
+
+    <circle cx="593" cy="215" r="14" fill="#7C3AED"/><text x="593" y="220" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">2</text>
+    <text x="615" y="211" font-size="16" font-weight="700" fill="#1F2937">Branch</text>
+    <text x="615" y="231">a new workspace</text>
+
+    <circle cx="607" cy="377" r="14" fill="#D97757"/><text x="607" y="382" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">3</text>
+    <text x="629" y="373" font-size="16" font-weight="700" fill="#1F2937">Change</text>
+    <text x="629" y="393">edit, with Claude's help</text>
+
+    <circle cx="519" cy="503" r="14" fill="#0D9488"/><text x="519" y="508" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">4</text>
+    <text x="541" y="499" font-size="16" font-weight="700" fill="#1F2937">Commit</text>
+    <text x="541" y="519">save with a message</text>
+
+    <circle cx="309" cy="503" r="14" fill="#2563EB"/><text x="309" y="508" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">5</text>
+    <text x="331" y="499" font-size="16" font-weight="700" fill="#1F2937">Push</text>
+    <text x="331" y="519">upload to GitHub</text>
+
+    <circle cx="201" cy="377" r="14" fill="#EA580C"/><text x="201" y="382" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">6</text>
+    <text x="223" y="373" font-size="16" font-weight="700" fill="#1F2937">Pull request</text>
+    <text x="223" y="393">ask for a review</text>
+
+    <circle cx="235" cy="215" r="14" fill="#16A34A"/><text x="235" y="220" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">7</text>
+    <text x="257" y="211" font-size="16" font-weight="700" fill="#1F2937">Merge</text>
+    <text x="257" y="231">into main, done!</text>
+  </g>
+
+  <!-- direction arrows on the ring -->
+  <g fill="none" stroke="#9CA3AF" stroke-width="2.5">
+    <path d="M578 152 A190 190 0 0 1 612 170" marker-end="url(#a)"/>
+    <path d="M668 262 A190 190 0 0 1 680 330" marker-end="url(#a)"/>
+    <path d="M640 438 A190 190 0 0 1 618 462" marker-end="url(#a)"/>
+    <line x1="492" y1="503" x2="470" y2="503" marker-end="url(#a)"/>
+    <path d="M322 462 A190 190 0 0 1 300 438" marker-end="url(#a)"/>
+    <path d="M280 330 A190 190 0 0 1 292 262" marker-end="url(#a)"/>
+    <path d="M348 170 A190 190 0 0 1 382 152" marker-end="url(#a)"/>
+  </g>
+
+  <!-- tip -->
+  <text x="480" y="572" text-anchor="middle" font-size="13" fill="#6B7280">Small task? Steps 2–7 can take ten minutes. Bigger task? Commit several times before step 5.</text>
+</svg>

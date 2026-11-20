@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Merge conflicts: nothing to fear</title>
+  <desc id="d">A conflict happens only when two people change the same line differently. Git cannot guess which version is right, so it asks you. VS Code shows both versions side by side with buttons to accept either, both, or edit by hand. Claude can help decide.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10z" fill="#9CA3AF"/>
+    </marker>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect width="960" height="560" rx="18" fill="#F8FAFC"/>
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">Merge conflicts: nothing to fear</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">Git simply asks you to choose when two people changed the same line</text>
+
+  <!-- left: how it happens -->
+  <rect x="30" y="96" width="420" height="290" rx="14" fill="#FFFFFF" stroke="#E5E7EB" filter="url(#s)"/>
+  <text x="50" y="128" font-size="15" font-weight="700" fill="#1F2937">How it happens</text>
+  <rect x="140" y="146" width="200" height="34" rx="8" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="240" y="168" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#1E3A8A">Deadline: 1 March</text>
+  <g stroke="#9CA3AF" stroke-width="2" fill="none">
+    <path d="M200 182 L130 222" marker-end="url(#a)"/><path d="M280 182 L350 222" marker-end="url(#a)"/>
+  </g>
+  <rect x="48" y="226" width="170" height="52" rx="8" fill="#F5F3FF" stroke="#C4B5FD"/>
+  <text x="62" y="246" font-size="11.5" font-weight="700" fill="#6D28D9">Anna's branch</text>
+  <text x="62" y="266" font-family="Consolas, monospace" font-size="12.5" fill="#1F2937">Deadline: 15 March</text>
+  <rect x="262" y="226" width="170" height="52" rx="8" fill="#FFF7ED" stroke="#FDBA74"/>
+  <text x="276" y="246" font-size="11.5" font-weight="700" fill="#C2410C">Ben's branch</text>
+  <text x="276" y="266" font-family="Consolas, monospace" font-size="12.5" fill="#1F2937">Deadline: 1 April</text>
+  <g stroke="#DC2626" stroke-width="2" fill="none">
+    <path d="M133 282 L222 318" marker-end="url(#a)"/><path d="M347 282 L258 318" marker-end="url(#a)"/>
+  </g>
+  <circle cx="240" cy="334" r="18" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+  <text x="240" y="341" text-anchor="middle" font-size="20" font-weight="700" fill="#DC2626">?</text>
+  <text x="240" y="372" text-anchor="middle" font-size="12.5" fill="#6B7280">Same line, two answers: Git asks you</text>
+
+  <!-- right: VS Code resolve -->
+  <rect x="480" y="96" width="450" height="290" rx="14" fill="#FFFFFF" stroke="#E5E7EB" filter="url(#s)"/>
+  <text x="500" y="128" font-size="15" font-weight="700" fill="#1F2937">How you solve it in VS Code</text>
+  <rect x="500" y="144" width="410" height="168" rx="8" fill="#1E1E1E"/>
+  <text x="512" y="164" font-size="11" fill="#9D9D9D">Accept Current  |  Accept Incoming  |  Accept Both  |  Compare</text>
+  <rect x="500" y="172" width="410" height="22" fill="#1E3A2E"/>
+  <text x="512" y="187" font-family="Consolas, monospace" font-size="11.5" fill="#73C991">&lt;&lt;&lt;&lt;&lt;&lt;&lt; Current (your branch)</text>
+  <text x="512" y="210" font-family="Consolas, monospace" font-size="12" fill="#D4D4D4">Deadline: 15 March</text>
+  <text x="512" y="232" font-family="Consolas, monospace" font-size="11.5" fill="#858585">=======</text>
+  <text x="512" y="254" font-family="Consolas, monospace" font-size="12" fill="#D4D4D4">Deadline: 1 April</text>
+  <rect x="500" y="262" width="410" height="22" fill="#1E2A3E"/>
+  <text x="512" y="277" font-family="Consolas, monospace" font-size="11.5" fill="#75BEFF">&gt;&gt;&gt;&gt;&gt;&gt;&gt; Incoming (main)</text>
+  <text x="512" y="302" font-size="11" fill="#9D9D9D">Click a choice above, or edit the text and delete the marker lines.</text>
+  <g font-size="13" fill="#374151">
+    <text x="500" y="338">Then save, commit and push as usual.</text>
+    <text x="500" y="360"><tspan fill="#B4532F" font-weight="700">Unsure?</tspan> Ask Claude: "Explain this conflict</text>
+    <text x="500" y="378">and suggest how to resolve it."</text>
+  </g>
+
+  <!-- bottom: prevent -->
+  <rect x="30" y="406" width="900" height="130" rx="14" fill="#1E3A5F"/>
+  <text x="50" y="436" font-size="16" font-weight="700" fill="#FFFFFF">Prevent most conflicts with four habits</text>
+  <g font-size="13.5" fill="#DBEAFE">
+    <text x="50" y="468"><tspan font-weight="700" fill="#FFFFFF">Pull every morning</tspan> before you start</text>
+    <text x="50" y="496"><tspan font-weight="700" fill="#FFFFFF">Keep branches short-lived:</tspan> merge within days</text>
+    <text x="500" y="468"><tspan font-weight="700" fill="#FFFFFF">Split big files</tspan> into chapters or sections</text>
+    <text x="500" y="496"><tspan font-weight="700" fill="#FFFFFF">Tell your team</tspan> what you are working on</text>
+  </g>
+  <text x="50" y="524" font-size="12.5" fill="#93C5FD">A conflict never loses work: both versions are kept until you decide.</text>
+</svg>

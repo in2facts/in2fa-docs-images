@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" font-family="Circe, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#141421" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#F6F6F6"/>
+
+  <!-- Header -->
+  <text x="60" y="56" font-size="14" font-weight="700" fill="#141421">Components of a data model</text>
+  <text x="1140" y="56" font-size="14" fill="#141421" text-anchor="end">Data modeling</text>
+  <text x="60" y="112" font-size="40" font-weight="300" fill="#141421" textLength="390" lengthAdjust="spacing">The AutoExists problem</text>
+  <rect x="458" y="106" width="22" height="6" fill="#F39454"/>
+  <text x="60" y="140" font-size="16" fill="#70706F">Filters on columns of the same table are merged into one filter that keeps only the combinations that exist.</text>
+
+  <!-- ==================== Left panel: flat table ==================== -->
+  <rect x="60" y="170" width="520" height="410" fill="#FFFFFF"/>
+  <text x="80" y="202" font-size="18" fill="#141421" font-weight="700">Flat table</text>
+  <text x="80" y="224" font-size="14" fill="#70706F">Category and City are both columns of Sales</text>
+
+  <!-- 1 Slicers -->
+  <text x="80" y="256" font-size="12" font-weight="700" fill="#70706F">1 · SLICERS</text>
+  <rect x="80" y="266" width="230" height="44" fill="#F6F6F6"/>
+  <rect x="80" y="266" width="4" height="44" fill="#F39454"/>
+  <text x="96" y="283" font-size="12" fill="#70706F">Sales[Category]</text>
+  <text x="96" y="301" font-size="14" font-weight="700" fill="#141421">Bikes, Accessories</text>
+  <rect x="330" y="266" width="230" height="44" fill="#F6F6F6"/>
+  <rect x="330" y="266" width="4" height="44" fill="#F39454"/>
+  <text x="346" y="283" font-size="12" fill="#70706F">Sales[City]</text>
+  <text x="346" y="301" font-size="14" font-weight="700" fill="#141421">Ghent</text>
+
+  <!-- 2 Filter -->
+  <text x="80" y="342" font-size="12" font-weight="700" fill="#70706F">2 · ONE COMBINED FILTER (AUTOEXISTS)</text>
+  <rect x="80" y="352" width="480" height="26" fill="#141421"/>
+  <text x="92" y="370" font-size="13" font-weight="700" fill="#F6F6F6">Category</text>
+  <text x="240" y="370" font-size="13" font-weight="700" fill="#F6F6F6">City</text>
+  <text x="548" y="370" font-size="13" font-weight="700" fill="#F6F6F6" text-anchor="end">Exists in Sales?</text>
+  <text x="92" y="397" font-size="13" fill="#141421">Bikes</text>
+  <text x="240" y="397" font-size="13" fill="#141421">Ghent</text>
+  <text x="548" y="397" font-size="13" font-weight="700" fill="#F39454" text-anchor="end">yes: kept</text>
+  <line x1="80" y1="406" x2="560" y2="406" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="92" y="425" font-size="13" fill="#A9AAAA">Accessories</text>
+  <text x="240" y="425" font-size="13" fill="#A9AAAA">Ghent</text>
+  <line x1="90" y1="421" x2="282" y2="421" stroke="#A9AAAA" stroke-width="1.5"/>
+  <text x="548" y="425" font-size="13" font-weight="700" fill="#70706F" text-anchor="end">no sale: dropped</text>
+  <line x1="80" y1="434" x2="560" y2="434" stroke="#A9AAAA" stroke-width="1"/>
+
+  <!-- 3 Measure -->
+  <text x="80" y="464" font-size="12" font-weight="700" fill="#70706F">3 · MEASURE REMOVES THE CITY FILTER</text>
+  <rect x="80" y="474" width="480" height="32" fill="#141421"/>
+  <text x="94" y="495" font-family="Consolas, 'Courier New', monospace" font-size="12.5" fill="#F6F6F6" xml:space="preserve">CALCULATE ( [Sales], <tspan fill="#F39454" font-weight="700">REMOVEFILTERS</tspan> ( Sales[City] ) )</text>
+
+  <!-- 4 Result -->
+  <circle cx="94" cy="546" r="11" fill="#F6F6F6" stroke="#141421" stroke-width="2"/><path d="M89.5 541.5 l9 9 m0 -9 l-9 9" stroke="#141421" stroke-width="2.5"/>
+  <text x="116" y="542" font-size="15" font-weight="700" fill="#141421">Sales All Cities = 2,400</text>
+  <text x="116" y="561" font-size="13" fill="#70706F">Only Bikes is left: Accessories vanished with the City filter.</text>
+
+  <!-- ==================== Right panel: star schema ==================== -->
+  <rect x="620" y="170" width="520" height="410" fill="#FFFFFF"/>
+  <text x="640" y="202" font-size="18" fill="#141421" font-weight="700">Star schema</text>
+  <text x="640" y="224" font-size="14" fill="#70706F">Category lives in Product, City lives in Customer</text>
+
+  <!-- 1 Slicers -->
+  <text x="640" y="256" font-size="12" font-weight="700" fill="#70706F">1 · SLICERS</text>
+  <rect x="640" y="266" width="230" height="44" fill="#F6F6F6"/>
+  <rect x="640" y="266" width="4" height="44" fill="#F39454"/>
+  <text x="656" y="283" font-size="12" fill="#70706F">Product[Category]</text>
+  <text x="656" y="301" font-size="14" font-weight="700" fill="#141421">Bikes, Accessories</text>
+  <rect x="890" y="266" width="230" height="44" fill="#F6F6F6"/>
+  <rect x="890" y="266" width="4" height="44" fill="#F39454"/>
+  <text x="906" y="283" font-size="12" fill="#70706F">Customer[City]</text>
+  <text x="906" y="301" font-size="14" font-weight="700" fill="#141421">Ghent</text>
+
+  <!-- 2 Filters -->
+  <text x="640" y="342" font-size="12" font-weight="700" fill="#70706F">2 · TWO INDEPENDENT FILTERS</text>
+  <rect x="640" y="352" width="230" height="26" fill="#141421"/>
+  <text x="652" y="370" font-size="13" font-weight="700" fill="#F6F6F6">Category</text>
+  <text x="652" y="397" font-size="13" fill="#141421">Bikes</text>
+  <line x1="640" y1="406" x2="870" y2="406" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="652" y="425" font-size="13" fill="#141421">Accessories</text>
+  <line x1="640" y1="434" x2="870" y2="434" stroke="#A9AAAA" stroke-width="1"/>
+  <rect x="890" y="352" width="230" height="26" fill="#141421"/>
+  <text x="902" y="370" font-size="13" font-weight="700" fill="#F6F6F6">City</text>
+  <text x="902" y="397" font-size="13" fill="#141421">Ghent</text>
+  <line x1="890" y1="406" x2="1120" y2="406" stroke="#A9AAAA" stroke-width="1"/>
+
+  <!-- 3 Measure -->
+  <text x="640" y="464" font-size="12" font-weight="700" fill="#70706F">3 · MEASURE REMOVES THE CITY FILTER</text>
+  <rect x="640" y="474" width="480" height="32" fill="#141421"/>
+  <text x="654" y="495" font-family="Consolas, 'Courier New', monospace" font-size="12.5" fill="#F6F6F6" xml:space="preserve">CALCULATE ( [Sales], <tspan fill="#F39454" font-weight="700">REMOVEFILTERS</tspan> ( Customer[City] ) )</text>
+
+  <!-- 4 Result -->
+  <circle cx="654" cy="546" r="11" fill="#F6F6F6" stroke="#F39454" stroke-width="2"/><path d="M649 546 l3.5 4 l6.5 -8" fill="none" stroke="#F39454" stroke-width="2.5"/>
+  <text x="676" y="542" font-size="15" font-weight="700" fill="#141421">Sales All Cities = 2,445</text>
+  <text x="676" y="561" font-size="13" fill="#70706F">Bikes and Accessories, in every city.</text>
+
+  <!-- ==================== Key message ==================== -->
+  <line x1="60" y1="626" x2="1140" y2="626" stroke="#D7D8D8" stroke-width="1"/>
+  <text x="60" y="662" font-size="20" fill="#141421">Filter from <tspan font-weight="700">dimension tables, not from a flat table.</tspan></text>
+  <text x="1140" y="661" font-size="14" fill="#70706F" text-anchor="end">AutoExists works within one table</text>
+</svg>
