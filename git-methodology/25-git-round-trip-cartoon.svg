@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 632" width="960" height="632" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Git in one picture, the office version</title>
+  <desc id="d">Git explained as office post. On your PC: the workspace is your desk with papers spread out. The staging area is an open envelope: git add puts a paper in, git restore --staged takes it back out. The local repository is your own filing cabinet of sealed, dated envelopes: git commit seals the envelope and files it. Online, the remote repository on GitHub is the shared archive: git push sends your envelopes there by courier, and git fetch brings new envelopes from the archive into your cabinet without opening them. git pull is fetch plus merge: the courier brings the envelopes and opens them onto your desk. Sync Changes pulls and pushes in one trip.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="m-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#374151"/></marker>
+    <marker id="m-grey" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#9CA3AF"/></marker>
+    <marker id="m-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#EA580C"/></marker>
+    <g id="env">
+      <rect x="0" y="0" width="20" height="14" rx="2" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.3"/>
+      <path d="M0 1 L10 8 L20 1" fill="none" stroke="#0D9488" stroke-width="1.3"/>
+      <circle cx="10" cy="8" r="2.6" fill="#DC2626"/>
+    </g>
+  </defs>
+  <rect width="960" height="632" rx="18" fill="#F8FAFC"/>
+
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">Git in one picture, the office version</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">Your desk, an envelope, your filing cabinet and the shared archive</text>
+
+  <!-- zones -->
+  <rect x="18" y="90" width="680" height="324" rx="16" fill="#EEF2FF"/>
+  <rect x="747" y="90" width="195" height="324" rx="16" fill="#E2E8F0"/>
+  <text x="358" y="110" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="2" fill="#6366F1">YOUR PC</text>
+  <text x="844" y="110" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="2" fill="#475569">ONLINE</text>
+
+  <!-- cards -->
+  <g filter="url(#s)" fill="#FFFFFF" stroke="#E5E7EB">
+    <rect x="30" y="120" width="170" height="280" rx="14"/>
+    <rect x="273" y="120" width="170" height="280" rx="14"/>
+    <rect x="516" y="120" width="170" height="280" rx="14"/>
+    <rect x="759" y="120" width="170" height="280" rx="14"/>
+  </g>
+  <g fill="#FFFFFF">
+    <rect x="30" y="120" width="170" height="52" rx="14" fill="#2563EB"/><rect x="30" y="152" width="170" height="20" fill="#2563EB"/>
+    <text x="46" y="143" font-size="16" font-weight="700">Workspace</text>
+    <text x="46" y="162" font-size="12" opacity="0.9">= your desk</text>
+    <rect x="273" y="120" width="170" height="52" rx="14" fill="#7C3AED"/><rect x="273" y="152" width="170" height="20" fill="#7C3AED"/>
+    <text x="289" y="143" font-size="16" font-weight="700">Staging area</text>
+    <text x="289" y="162" font-size="12" opacity="0.9">= the open envelope</text>
+    <rect x="516" y="120" width="170" height="52" rx="14" fill="#0D9488"/><rect x="516" y="152" width="170" height="20" fill="#0D9488"/>
+    <text x="532" y="143" font-size="16" font-weight="700">Local repo</text>
+    <text x="532" y="162" font-size="12" opacity="0.9">= your filing cabinet</text>
+    <rect x="759" y="120" width="170" height="52" rx="14" fill="#1F2937"/><rect x="759" y="152" width="170" height="20" fill="#1F2937"/>
+    <text x="775" y="143" font-size="16" font-weight="700">Remote repo</text>
+    <text x="775" y="162" font-size="12" opacity="0.9">= the shared archive</text>
+  </g>
+
+  <!-- 1 desk with papers -->
+  <g transform="rotate(20 133 206)">
+    <rect x="120" y="190" width="26" height="32" rx="2" fill="#FFFFFF" stroke="#93C5FD" stroke-width="1.5"/>
+    <rect x="125" y="198" width="16" height="3" fill="#94A3B8"/><rect x="125" y="205" width="12" height="3" fill="#94A3B8"/>
+  </g>
+  <path d="M106 196 q-6 4 -4 10 M110 210 q-6 2 -6 8" fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/>
+  <g transform="rotate(-12 74 248)">
+    <rect x="58" y="232" width="32" height="30" rx="2" fill="#FFFFFF" stroke="#93C5FD" stroke-width="1.5"/>
+    <rect x="63" y="239" width="20" height="3" fill="#2563EB"/><rect x="63" y="246" width="16" height="3" fill="#94A3B8"/>
+  </g>
+  <g transform="rotate(8 112 250)">
+    <rect x="98" y="236" width="30" height="28" rx="2" fill="#FFFFFF" stroke="#93C5FD" stroke-width="1.5"/>
+    <rect x="102" y="243" width="20" height="3" fill="#94A3B8"/><rect x="102" y="250" width="14" height="3" fill="#16A34A"/>
+  </g>
+  <g transform="rotate(-4 150 246)">
+    <rect x="136" y="230" width="28" height="32" rx="2" fill="#FFFFFF" stroke="#93C5FD" stroke-width="1.5"/>
+    <rect x="140" y="237" width="18" height="3" fill="#94A3B8"/><rect x="140" y="244" width="12" height="3" fill="#D97757"/>
+  </g>
+  <rect x="166" y="244" width="14" height="16" rx="3" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+  <rect x="44" y="262" width="142" height="8" rx="3" fill="#A16207"/>
+  <rect x="52" y="270" width="8" height="28" fill="#854D0E"/>
+  <rect x="170" y="270" width="8" height="28" fill="#854D0E"/>
+  <text x="46" y="324" font-size="12" fill="#374151">The files you're working</text>
+  <text x="46" y="340" font-size="12" fill="#374151">on right now. A bit messy.</text>
+  <rect x="44" y="362" width="104" height="22" rx="11" fill="#F1F5F9"/>
+  <text x="96" y="377" text-anchor="middle" font-size="10.5" fill="#6B7280">VS Code: Changes</text>
+
+  <!-- 2 envelope -->
+  <path d="M318 214 L358 186 L398 214z" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5" stroke-linejoin="round"/>
+  <rect x="318" y="214" width="80" height="56" rx="3" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <g transform="rotate(-6 343 214)">
+    <rect x="330" y="196" width="26" height="36" rx="2" fill="#FFFFFF" stroke="#C4B5FD" stroke-width="1.2"/>
+    <rect x="334" y="203" width="16" height="3" fill="#2563EB"/><rect x="334" y="210" width="12" height="3" fill="#94A3B8"/>
+  </g>
+  <g transform="rotate(5 367 210)">
+    <rect x="354" y="192" width="26" height="36" rx="2" fill="#FFFFFF" stroke="#C4B5FD" stroke-width="1.2"/>
+    <rect x="358" y="199" width="16" height="3" fill="#16A34A"/><rect x="358" y="206" width="12" height="3" fill="#94A3B8"/>
+  </g>
+  <path d="M318 228 L358 252 L398 228 V270 H318z" fill="#DDD6FE" stroke="#7C3AED" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- the paper that stays out -->
+  <g transform="rotate(-14 298 268)">
+    <rect x="286" y="252" width="22" height="30" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+    <rect x="290" y="259" width="14" height="3" fill="#94A3B8"/>
+  </g>
+  <text x="284" y="296" font-size="10" font-style="italic" fill="#6B7280">not yet</text>
+  <text x="289" y="324" font-size="12" fill="#374151">You pick which changes</text>
+  <text x="289" y="340" font-size="12" fill="#374151">go into the next commit.</text>
+  <rect x="287" y="362" width="128" height="22" rx="11" fill="#F1F5F9"/>
+  <text x="351" y="377" text-anchor="middle" font-size="10.5" fill="#6B7280">VS Code: Staged Changes</text>
+
+  <!-- 3 filing cabinet -->
+  <rect x="556" y="184" width="90" height="114" rx="5" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.5"/>
+  <g fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.2">
+    <rect x="564" y="192" width="74" height="30" rx="3"/>
+    <rect x="564" y="228" width="74" height="30" rx="3"/>
+    <rect x="564" y="264" width="74" height="28" rx="3"/>
+  </g>
+  <use href="#env" x="570" y="200"/>
+  <use href="#env" x="570" y="236"/>
+  <use href="#env" x="570" y="271"/>
+  <g font-size="10" font-weight="700" fill="#134E4A">
+    <text x="596" y="211">Mon</text>
+    <text x="596" y="247">Tue</text>
+    <text x="596" y="282">Wed</text>
+  </g>
+  <text x="532" y="324" font-size="12" fill="#374151">Sealed, dated envelopes.</text>
+  <text x="532" y="340" font-size="12" fill="#374151">Only on your PC, for now.</text>
+  <rect x="530" y="362" width="118" height="22" rx="11" fill="#F1F5F9"/>
+  <text x="589" y="377" text-anchor="middle" font-size="10.5" fill="#6B7280">VS Code: Graph · Timeline</text>
+
+  <!-- 4 archive building -->
+  <path d="M786 208 L844 178 L902 208z" fill="#475569"/>
+  <text x="844" y="202" text-anchor="middle" font-size="9" font-weight="700" letter-spacing="1" fill="#FFFFFF">GITHUB</text>
+  <rect x="790" y="208" width="108" height="10" fill="#334155"/>
+  <g fill="#CBD5E1">
+    <rect x="796" y="218" width="10" height="56"/>
+    <rect x="816" y="218" width="10" height="56"/>
+    <rect x="862" y="218" width="10" height="56"/>
+    <rect x="882" y="218" width="10" height="56"/>
+  </g>
+  <rect x="834" y="240" width="20" height="34" rx="10" fill="#1F2937"/>
+  <rect x="784" y="274" width="120" height="10" fill="#334155"/>
+  <rect x="778" y="284" width="132" height="8" fill="#475569"/>
+  <text x="775" y="324" font-size="12" fill="#374151">Everyone's envelopes,</text>
+  <text x="775" y="340" font-size="12" fill="#374151">safe and shared online.</text>
+  <rect x="773" y="362" width="104" height="22" rx="11" fill="#F1F5F9"/>
+  <text x="825" y="377" text-anchor="middle" font-size="10.5" fill="#6B7280">VS Code: Sync</text>
+
+  <!-- arrows between cards -->
+  <g font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="middle" fill="#1F2937">
+    <text x="236" y="224">git add</text>
+    <text x="236" y="256">git restore</text>
+    <text x="236" y="282" font-weight="400" fill="#6B7280">--staged</text>
+    <text x="479" y="224">git commit</text>
+    <text x="722" y="224">git push</text>
+    <text x="722" y="256">git fetch</text>
+  </g>
+  <g stroke-width="2.2">
+    <line x1="203" y1="232" x2="268" y2="232" stroke="#374151" marker-end="url(#m-dark)"/>
+    <line x1="270" y1="264" x2="205" y2="264" stroke="#9CA3AF" marker-end="url(#m-grey)"/>
+    <line x1="446" y1="232" x2="511" y2="232" stroke="#374151" marker-end="url(#m-dark)"/>
+    <line x1="689" y1="232" x2="754" y2="232" stroke="#374151" marker-end="url(#m-dark)"/>
+    <line x1="756" y1="264" x2="691" y2="264" stroke="#374151" marker-end="url(#m-dark)"/>
+  </g>
+  <g font-size="10" font-style="italic" text-anchor="middle" fill="#6B7280">
+    <text x="236" y="210">put it in</text>
+    <text x="479" y="210">seal &amp; file</text>
+    <text x="722" y="210">courier out</text>
+    <text x="722" y="282">courier in</text>
+  </g>
+
+  <!-- pull: all the way back to the desk -->
+  <path d="M844 400 V434 Q844 446 832 446 H127 Q115 446 115 434 V405" fill="none" stroke="#EA580C" stroke-width="2.5" marker-end="url(#m-orange)"/>
+  <rect x="300" y="433" width="360" height="26" rx="13" fill="#FFF7ED" stroke="#EA580C" stroke-width="1.5"/>
+  <text x="480" y="451" text-anchor="middle" font-size="12.5" fill="#C2410C"><tspan font-family="Consolas, Menlo, monospace" font-weight="700">git pull</tspan> = fetch + open the envelopes on your desk</text>
+
+  <!-- fetch or pull? -->
+  <g filter="url(#s)">
+    <rect x="30" y="478" width="900" height="136" rx="16" fill="#FFFFFF" stroke="#E5E7EB"/>
+  </g>
+  <text x="54" y="506" font-size="15" font-weight="700" fill="#1F2937">Fetch or pull? Ask the courier.</text>
+  <use href="#env" x="56" y="522"/>
+  <text x="86" y="534" font-size="13" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#0F766E">git fetch</text>
+  <text x="86" y="554" font-size="12.5" fill="#374151">New envelopes go into your cabinet, still sealed.</text>
+  <text x="86" y="571" font-size="12.5" fill="#374151">Your desk stays exactly as it was.</text>
+  <g transform="translate(498 522)">
+    <rect x="0" y="0" width="20" height="14" rx="2" fill="#FFFFFF" stroke="#EA580C" stroke-width="1.3"/>
+    <path d="M0 0 L10 -8 L20 0" fill="none" stroke="#EA580C" stroke-width="1.3"/>
+  </g>
+  <text x="528" y="534" font-size="13" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#C2410C">git pull</text>
+  <text x="528" y="554" font-size="12.5" fill="#374151">Fetch, then the envelopes are opened on your desk.</text>
+  <text x="528" y="571" font-size="12.5" fill="#374151">Your files now include your colleagues' work.</text>
+  <line x1="54" y1="583" x2="906" y2="583" stroke="#F1F5F9" stroke-width="2"/>
+  <text x="480" y="603" text-anchor="middle" font-size="12.5" fill="#6B7280"><tspan font-weight="700" fill="#1F2937">Sync Changes</tspan> = pull + push: the courier delivers and collects in one trip.</text>
+</svg>

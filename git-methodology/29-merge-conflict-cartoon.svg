@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 556" width="960" height="556" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Merge conflicts, the office version</title>
+  <desc id="d">Merge conflicts in three office scenes. 1, no clash: Anna edits chapter 1 and Ben edits chapter 3; different lines, so Git combines both into main by itself. Git just staples it together. 2, clash: Anna and Ben both changed line 12, the deadline, to 15 March and 1 April. Git blows the whistle: same line, your call. No work is lost; both versions wait. 3, you decide: VS Code shows yours and theirs with four buttons, accept current, accept incoming, accept both, or edit by hand; then save, commit and push. Claude asks "Which date? Ask Ben!": Claude explains, Ben knows the date. Below, fewer clashes the easy way: pull every morning, keep branches short, split big files, tell your team. A conflict never loses work: both versions wait until you decide.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="m-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#16A34A"/></marker>
+    <g id="anna">
+      <rect x="-13" y="-44" width="9" height="40" rx="4" fill="#334155"/>
+      <rect x="3" y="-44" width="9" height="40" rx="4" fill="#334155"/>
+      <ellipse cx="-9" cy="-3" rx="9" ry="4" fill="#1F2937"/>
+      <ellipse cx="8" cy="-3" rx="9" ry="4" fill="#1F2937"/>
+      <rect x="-18" y="-90" width="36" height="50" rx="12" fill="#16A34A"/>
+      <circle cx="0" cy="-124" r="8" fill="#92400E"/>
+      <circle cx="0" cy="-104" r="15" fill="#E8B98F"/>
+      <path d="M-15 -104 a15 15 0 0 1 30 0 q-15 -10 -30 0z" fill="#92400E"/>
+      <circle cx="0" cy="-104" r="1.8" fill="#1F2937"/>
+      <circle cx="8" cy="-104" r="1.8" fill="#1F2937"/>
+      <path d="M0 -97 q4 -2 8 0" fill="none" stroke="#1F2937" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+    <g id="ben">
+      <rect x="-13" y="-44" width="9" height="40" rx="4" fill="#1F2937"/>
+      <rect x="3" y="-44" width="9" height="40" rx="4" fill="#1F2937"/>
+      <ellipse cx="-9" cy="-3" rx="9" ry="4" fill="#111827"/>
+      <ellipse cx="8" cy="-3" rx="9" ry="4" fill="#111827"/>
+      <rect x="-18" y="-90" width="36" height="50" rx="12" fill="#2563EB"/>
+      <circle cx="0" cy="-104" r="15" fill="#8D5524"/>
+      <path d="M-15 -106 a15 15 0 0 1 30 0 q-15 -6 -30 0z" fill="#111827"/>
+      <circle cx="-8" cy="-104" r="1.8" fill="#111827"/>
+      <circle cx="0" cy="-104" r="1.8" fill="#111827"/>
+      <path d="M-8 -97 q4 -2 8 0" fill="none" stroke="#111827" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <rect width="960" height="556" rx="18" fill="#F8FAFC"/>
+
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">Merge conflicts, the office version</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">Two colleagues, one sentence, two opinions. Git doesn't pick a winner.</text>
+
+  <g filter="url(#s)" fill="#FFFFFF" stroke="#E5E7EB">
+    <rect x="30" y="96" width="290" height="280" rx="14"/>
+    <rect x="335" y="96" width="290" height="280" rx="14"/>
+    <rect x="640" y="96" width="290" height="280" rx="14"/>
+  </g>
+
+  <!-- ============ 1 NO CLASH ============ -->
+  <g transform="translate(30 96)">
+    <rect width="290" height="50" rx="14" fill="#16A34A"/><rect y="30" width="290" height="20" fill="#16A34A"/>
+    <circle cx="22" cy="25" r="13" fill="#FFFFFF"/><text x="22" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#16A34A">1</text>
+    <text x="42" y="22" font-size="15" font-weight="700" fill="#FFFFFF">No clash</text>
+    <text x="42" y="40" font-size="12" fill="#FFFFFF" opacity="0.9">Different lines: Git merges by itself</text>
+    <!-- Anna's doc -->
+    <rect x="22" y="78" width="60" height="78" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <text x="52" y="94" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1F2937">Ch. 1</text>
+    <rect x="27" y="100" width="50" height="8" rx="2" fill="#DCFCE7"/>
+    <rect x="30" y="102.5" width="38" height="3" fill="#16A34A"/>
+    <rect x="30" y="114" width="44" height="3" fill="#94A3B8"/><rect x="30" y="122" width="36" height="3" fill="#94A3B8"/><rect x="30" y="130" width="42" height="3" fill="#94A3B8"/>
+    <circle cx="24" cy="80" r="11" fill="#E8B98F" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M14 78 a10 10 0 0 1 20 0 q-10 -6 -20 0z" fill="#92400E"/>
+    <circle cx="24" cy="67" r="5" fill="#92400E"/>
+    <text x="52" y="172" text-anchor="middle" font-size="10.5" font-weight="700" fill="#15803D">Anna</text>
+    <!-- Ben's doc -->
+    <rect x="94" y="78" width="60" height="78" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <text x="124" y="94" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1F2937">Ch. 3</text>
+    <rect x="102" y="102" width="44" height="3" fill="#94A3B8"/><rect x="102" y="110" width="36" height="3" fill="#94A3B8"/>
+    <rect x="99" y="118" width="50" height="8" rx="2" fill="#DBEAFE"/>
+    <rect x="102" y="120.5" width="38" height="3" fill="#2563EB"/>
+    <rect x="102" y="132" width="40" height="3" fill="#94A3B8"/>
+    <circle cx="96" cy="80" r="11" fill="#8D5524" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M86 78 a10 10 0 0 1 20 0 q-10 -4 -20 0z" fill="#111827"/>
+    <text x="124" y="172" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1D4ED8">Ben</text>
+    <!-- arrow and merged -->
+    <line x1="160" y1="117" x2="190" y2="117" stroke="#16A34A" stroke-width="2.5" marker-end="url(#m-green)"/>
+    <rect x="196" y="70" width="76" height="94" rx="2" fill="#FFFFFF" stroke="#86EFAC" stroke-width="2"/>
+    <text x="234" y="87" text-anchor="middle" font-size="9" font-weight="700" fill="#1F2937">main</text>
+    <rect x="201" y="94" width="66" height="8" rx="2" fill="#DCFCE7"/><rect x="204" y="96.5" width="44" height="3" fill="#16A34A"/>
+    <rect x="204" y="108" width="54" height="3" fill="#94A3B8"/><rect x="204" y="116" width="48" height="3" fill="#94A3B8"/>
+    <rect x="201" y="123" width="66" height="8" rx="2" fill="#DBEAFE"/><rect x="204" y="125.5" width="44" height="3" fill="#2563EB"/>
+    <rect x="204" y="137" width="52" height="3" fill="#94A3B8"/><rect x="204" y="145" width="40" height="3" fill="#94A3B8"/>
+    <!-- staple -->
+    <path d="M206 68 h16" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="270" cy="72" r="12" fill="#16A34A" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M264.5 72 l3.5 3.5 l7 -7" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="16" y="208" font-size="12.5" fill="#374151">Anna edits chapter 1, Ben edits</text>
+    <text x="16" y="225" font-size="12.5" fill="#374151">chapter 3. Git combines both.</text>
+    <text x="16" y="252" font-size="12.5" font-style="italic" font-weight="600" fill="#15803D">Git just staples it together.</text>
+  </g>
+
+  <!-- ============ 2 CLASH ============ -->
+  <g transform="translate(335 96)">
+    <rect width="290" height="50" rx="14" fill="#EA580C"/><rect y="30" width="290" height="20" fill="#EA580C"/>
+    <circle cx="22" cy="25" r="13" fill="#FFFFFF"/><text x="22" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#EA580C">2</text>
+    <text x="42" y="22" font-size="15" font-weight="700" fill="#FFFFFF">Clash!</text>
+    <text x="42" y="40" font-size="12" fill="#FFFFFF" opacity="0.9">Same line, changed two ways</text>
+    <!-- Git's whistle bubble -->
+    <rect x="72" y="56" width="146" height="24" rx="12" fill="#1F2937"/>
+    <text x="145" y="72" text-anchor="middle" font-size="11.5" font-weight="700" fill="#FFFFFF">Git: “Same line. Your call!”</text>
+    <g transform="translate(228 60)">
+      <path d="M0 8 a7 7 0 1 0 7 -7 h14 v7z" fill="#94A3B8"/>
+      <circle cx="7" cy="8" r="3" fill="#475569"/>
+      <path d="M24 0 l6 -4 M25 6 h7 M24 11 l6 4" stroke="#475569" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+    <!-- shared document -->
+    <rect x="100" y="90" width="90" height="94" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <rect x="108" y="99" width="50" height="3.5" fill="#1F2937"/>
+    <rect x="108" y="109" width="70" height="3" fill="#94A3B8"/>
+    <rect x="104" y="117" width="82" height="12" rx="2" fill="#FEE2E2"/>
+    <text x="106" y="126" font-size="7.5" font-weight="700" fill="#B91C1C">12</text>
+    <rect x="118" y="121.5" width="60" height="3" fill="#DC2626"/>
+    <rect x="108" y="136" width="66" height="3" fill="#94A3B8"/><rect x="108" y="144" width="58" height="3" fill="#94A3B8"/><rect x="108" y="152" width="70" height="3" fill="#94A3B8"/>
+    <!-- stickies colliding -->
+    <g transform="rotate(-10 104 140)">
+      <rect x="72" y="128" width="60" height="26" rx="2" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.2"/>
+      <text x="102" y="138" text-anchor="middle" font-size="7" fill="#15803D">Deadline:</text>
+      <text x="102" y="149" text-anchor="middle" font-size="9.5" font-weight="800" fill="#15803D">15 March</text>
+    </g>
+    <g transform="rotate(10 188 140)">
+      <rect x="158" y="128" width="60" height="26" rx="2" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.2"/>
+      <text x="188" y="138" text-anchor="middle" font-size="7" fill="#1D4ED8">Deadline:</text>
+      <text x="188" y="149" text-anchor="middle" font-size="9.5" font-weight="800" fill="#1D4ED8">1 April</text>
+    </g>
+    <path d="M146 158 l-8 12 h8 l-6 12 l14 -16 h-8 l6 -8z" fill="#FBBF24" stroke="#F59E0B" stroke-width="1"/>
+    <use href="#anna" xlink:href="#anna" transform="translate(44 192) scale(0.7)"/>
+    <path d="M54 128 q10 4 22 10" fill="none" stroke="#16A34A" stroke-width="6" stroke-linecap="round"/>
+    <use href="#ben" xlink:href="#ben" transform="translate(250 192) scale(0.7)"/>
+    <path d="M238 128 q-8 4 -18 10" fill="none" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/>
+    <text x="16" y="208" font-size="12.5" fill="#374151">Both changed line 12. Git</text>
+    <text x="16" y="225" font-size="12.5" fill="#374151">can't guess who's right, so it asks.</text>
+    <text x="16" y="252" font-size="12.5" font-style="italic" font-weight="600" fill="#C2410C">No work is lost. Both wait.</text>
+  </g>
+
+  <!-- ============ 3 YOU DECIDE ============ -->
+  <g transform="translate(640 96)">
+    <rect width="290" height="50" rx="14" fill="#2563EB"/><rect y="30" width="290" height="20" fill="#2563EB"/>
+    <circle cx="22" cy="25" r="13" fill="#FFFFFF"/><text x="22" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#2563EB">3</text>
+    <text x="42" y="22" font-size="15" font-weight="700" fill="#FFFFFF">You decide</text>
+    <text x="42" y="40" font-size="12" fill="#FFFFFF" opacity="0.9">VS Code offers four buttons</text>
+    <!-- editor -->
+    <rect x="14" y="62" width="184" height="80" rx="6" fill="#1E293B"/>
+    <circle cx="24" cy="71" r="2.5" fill="#F87171"/><circle cx="32" cy="71" r="2.5" fill="#FBBF24"/><circle cx="40" cy="71" r="2.5" fill="#4ADE80"/>
+    <rect x="18" y="80" width="176" height="58" rx="3" fill="#FFFFFF"/>
+    <rect x="18" y="86" width="176" height="22" fill="#DCFCE7"/>
+    <text x="24" y="95" font-size="7.5" fill="#15803D">Current change (yours)</text>
+    <text x="24" y="105" font-size="9.5" font-weight="700" fill="#14532D">Deadline: 15 March</text>
+    <rect x="18" y="112" width="176" height="22" fill="#DBEAFE"/>
+    <text x="24" y="121" font-size="7.5" fill="#1D4ED8">Incoming change (main)</text>
+    <text x="24" y="131" font-size="9.5" font-weight="700" fill="#1E3A8A">Deadline: 1 April</text>
+    <!-- four buttons -->
+    <g font-size="10.5" font-weight="700" text-anchor="middle">
+      <rect x="14" y="150" width="88" height="18" rx="9" fill="#DCFCE7"/><text x="58" y="163" fill="#15803D">✓ Current</text>
+      <rect x="110" y="150" width="88" height="18" rx="9" fill="#DBEAFE"/><text x="154" y="163" fill="#1D4ED8">✓ Incoming</text>
+      <rect x="14" y="172" width="88" height="18" rx="9" fill="#EDE9FE"/><text x="58" y="185" fill="#6D28D9">✓ Both</text>
+      <rect x="110" y="172" width="88" height="18" rx="9" fill="#F1F5F9"/><text x="154" y="185" fill="#374151">✎ By hand</text>
+    </g>
+    <!-- Claude -->
+    <rect x="206" y="56" width="78" height="38" rx="10" fill="#FFF7ED" stroke="#F3B79B" stroke-width="1.5"/>
+    <path d="M238 93 L244 104 L252 93" fill="#FFF7ED" stroke="#F3B79B" stroke-width="1.5" stroke-linejoin="round"/>
+    <rect x="236" y="90" width="18" height="4" fill="#FFF7ED"/>
+    <text x="245" y="71" text-anchor="middle" font-size="10" fill="#7C2D12">Which date?</text>
+    <text x="245" y="85" text-anchor="middle" font-size="10" font-weight="700" fill="#7C2D12">Ask Ben!</text>
+    <ellipse cx="246" cy="142" rx="24" ry="30" fill="#D97757"/>
+    <path d="M272 106 l3 6 l6 3 l-6 3 l-3 6 l-3 -6 l-6 -3 l6 -3z" fill="#FBBF24"/>
+    <circle cx="237" cy="134" r="6" fill="#FFFFFF"/><circle cx="255" cy="134" r="6" fill="#FFFFFF"/>
+    <circle cx="236" cy="135" r="3" fill="#1F2937"/><circle cx="254" cy="135" r="3" fill="#1F2937"/>
+    <path d="M238 150 q8 7 16 0" fill="none" stroke="#7C2D12" stroke-width="2.4" stroke-linecap="round"/>
+    <ellipse cx="236" cy="174" rx="8" ry="4" fill="#B4532F"/><ellipse cx="256" cy="174" rx="8" ry="4" fill="#B4532F"/>
+    <text x="16" y="208" font-size="12.5" fill="#374151">Pick yours, theirs, both or edit.</text>
+    <text x="16" y="225" font-size="12.5" fill="#374151">Then save, commit and push.</text>
+    <text x="16" y="252" font-size="12.5" font-style="italic" font-weight="600" fill="#1D4ED8">Claude explains; Ben knows the date.</text>
+  </g>
+
+  <!-- ============ fewer clashes ============ -->
+  <g filter="url(#s)">
+    <rect x="30" y="394" width="900" height="110" rx="16" fill="#FFFFFF" stroke="#E5E7EB"/>
+  </g>
+  <text x="54" y="422" font-size="15" font-weight="700" fill="#1F2937">Fewer clashes, the easy way</text>
+
+  <circle cx="74" cy="460" r="20" fill="#DBEAFE"/>
+  <rect x="64" y="452" width="16" height="17" rx="3" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.4"/>
+  <path d="M80 456 q6 0 6 4.5 q0 4.5 -6 4.5" fill="none" stroke="#2563EB" stroke-width="1.4"/>
+  <path d="M69 447 q-2 -4 0 -7 M75 447 q2 -4 0 -7" fill="none" stroke="#93C5FD" stroke-width="1.4" stroke-linecap="round"/>
+  <text x="104" y="456" font-size="13.5" font-weight="700" fill="#1F2937">Pull every morning</text>
+  <text x="104" y="474" font-size="12.5" fill="#4B5563">Start from today's main.</text>
+
+  <circle cx="292" cy="460" r="20" fill="#DCFCE7"/>
+  <circle cx="292" cy="460" r="11" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.6"/>
+  <path d="M292 453 v7 l5 3" fill="none" stroke="#16A34A" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="322" y="456" font-size="13.5" font-weight="700" fill="#1F2937">Short branches</text>
+  <text x="322" y="474" font-size="12.5" fill="#4B5563">Merge within days, not weeks.</text>
+
+  <circle cx="510" cy="460" r="20" fill="#FFEDD5"/>
+  <rect x="499" y="448" width="18" height="24" rx="2" fill="#FFFFFF" stroke="#EA580C" stroke-width="1.4"/>
+  <rect x="517" y="451" width="5" height="5" fill="#EA580C"/><rect x="517" y="458" width="5" height="5" fill="#FDBA74"/><rect x="517" y="465" width="5" height="5" fill="#EA580C"/>
+  <text x="540" y="456" font-size="13.5" font-weight="700" fill="#1F2937">Split big files</text>
+  <text x="540" y="474" font-size="12.5" fill="#4B5563">One chapter per file.</text>
+
+  <circle cx="728" cy="460" r="20" fill="#EDE9FE"/>
+  <path d="M716 450 h24 a4 4 0 0 1 4 4 v10 a4 4 0 0 1 -4 4 h-14 l-6 5 v-5 h-4 a4 4 0 0 1 -4 -4 v-10 a4 4 0 0 1 4 -4z" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.3"/>
+  <rect x="721" y="456" width="16" height="2" fill="#7C3AED"/><rect x="721" y="461" width="11" height="2" fill="#7C3AED"/>
+  <text x="758" y="456" font-size="13.5" font-weight="700" fill="#1F2937">Tell your team</text>
+  <text x="758" y="474" font-size="12.5" fill="#4B5563">"I'm on chapter 3 today."</text>
+
+  <text x="480" y="534" text-anchor="middle" font-size="14" font-weight="700" fill="#1F2937">A conflict never loses work: both versions wait until you decide.</text>
+</svg>

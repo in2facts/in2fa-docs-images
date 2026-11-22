@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660">
+  <title>Exit codes: every command ends with a number, and PowerShell keeps the last one in $LASTEXITCODE</title>
+  <rect width="1200" height="660" fill="#f6f6f6"/>
+
+  <defs>
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#151722"/>
+    </marker>
+    <marker id="arrowGrey" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d9dadb"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#f2955a"/>
+    </marker>
+  </defs>
+
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="60" y="44" font-size="15" letter-spacing="1" fill="#6e6e6e">EXIT CODES</text>
+    <text x="60" y="76" font-size="22" font-weight="700" fill="#151722">Every command ends with a number. PowerShell keeps the last one in $LASTEXITCODE.</text>
+
+    <!-- terminal -->
+    <rect x="60" y="108" width="640" height="250" rx="8" fill="#151722"/>
+    <text x="84" y="140" font-size="13" letter-spacing="1" fill="#f2955a">ONE COMMAND, TWO ANSWERS</text>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#ffffff">
+      <text x="84" y="176">PS&gt; python scripts/tmdl_lint.py; "exit=$LASTEXITCODE"</text>
+      <text x="84" y="208" fill="#d9dadb">ERROR dim.hasmeasures</text>
+      <text x="84" y="230" fill="#d9dadb">      Driver (dimension)</text>
+      <text x="84" y="252" fill="#d9dadb">      1 measure(s) on a dimension table</text>
+      <text x="84" y="290">1 error(s), 0 warning(s)</text>
+      <text x="84" y="330" font-size="20" font-weight="700" fill="#f2955a">exit=1</text>
+    </g>
+
+    <!-- text answer callout -->
+    <rect x="740" y="250" width="400" height="76" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <text x="760" y="280" font-size="16" font-weight="700" fill="#151722">The text: for you to read</text>
+    <text x="760" y="304" font-size="15" fill="#151722">Which rule, which table, what to do.</text>
+    <path d="M738,288 L612,288 L612,232 L566,232" fill="none" stroke="#d9dadb" stroke-width="2" marker-end="url(#arrowGrey)"/>
+
+    <!-- number answer callout -->
+    <rect x="740" y="108" width="400" height="120" rx="8" fill="#f2955a"/>
+    <text x="760" y="140" font-size="16" font-weight="700" fill="#151722">The number: for a program to check</text>
+    <text x="760" y="166" font-size="15" fill="#151722">No reading, no interpretation.</text>
+    <text x="760" y="190" font-size="15" fill="#151722">This is what the agent checks with</text>
+    <text x="760" y="212" font-size="15" fill="#151722"><tspan font-family="Consolas, 'Courier New', monospace">echo "exit=$?"</tspan> after every run.</text>
+    <path d="M740,180 C700,180 700,326 172,326" fill="none" stroke="#f2955a" stroke-width="3" marker-end="url(#arrowOrange)"/>
+
+    <!-- the two values -->
+    <rect x="60" y="390" width="530" height="150" rx="8" fill="#ffffff" stroke="#151722" stroke-width="3"/>
+    <text x="84" y="452" font-size="56" font-weight="700" fill="#151722" font-family="Consolas, 'Courier New', monospace">0</text>
+    <text x="150" y="430" font-size="18" font-weight="700" fill="#151722">No errors. The check passed.</text>
+    <text x="150" y="456" font-size="15" fill="#151722">Warnings are still allowed: a warning</text>
+    <text x="150" y="478" font-size="15" fill="#151722">alone exits 0.</text>
+    <text x="150" y="514" font-size="14" fill="#6e6e6e">e.g. 0 error(s), 1 warning(s)</text>
+
+    <rect x="610" y="390" width="530" height="150" rx="8" fill="#ffffff" stroke="#f2955a" stroke-width="3"/>
+    <text x="634" y="452" font-size="56" font-weight="700" fill="#f2955a" font-family="Consolas, 'Courier New', monospace">1</text>
+    <text x="700" y="430" font-size="18" font-weight="700" fill="#151722">At least one ERROR. It failed.</text>
+    <text x="700" y="456" font-size="15" fill="#151722">Fix what the error names, then run</text>
+    <text x="700" y="478" font-size="15" fill="#151722">the check again.</text>
+    <text x="700" y="514" font-size="14" fill="#6e6e6e">e.g. 1 error(s), 0 warning(s)</text>
+
+    <!-- the catch -->
+    <rect x="60" y="562" width="1080" height="48" rx="8" fill="#151722"/>
+    <text x="84" y="592" font-size="15" fill="#ffffff"><tspan fill="#f2955a" font-weight="700">Read it straight away.</tspan>  The next program you run overwrites <tspan font-family="Consolas, 'Courier New', monospace">$LASTEXITCODE</tspan>, so check it before you run anything else.</text>
+
+    <text x="600" y="642" font-size="15" fill="#6e6e6e" text-anchor="middle">The number and the "N error(s)" line always agree. The number is the one a program can trust without reading.</text>
+  </g>
+</svg>

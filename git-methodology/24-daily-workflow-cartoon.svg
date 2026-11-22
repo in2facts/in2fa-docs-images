@@ -1,0 +1,306 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 720" width="960" height="720" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">A day at the office, the Git way</title>
+  <desc id="d">A comic strip of the seven daily steps as an office day. 1, 08:55, pull main: with a coffee in hand, you take today's edition of main from the GitHub cloud. 2, 09:00, create a branch: a smiling photocopier makes your own copy, named feature/q3-sales. 3, 09:05, make changes: you work at your desk while Claude floats nearby asking "Need a hand?". 4, 11:30, commit: a camera snaps the document with its red and green changes and a sticky note saying "Update Q3 figures", and you click Commit. 5, 17:00, push: you wave goodbye while your work flies up to GitHub; laptop lost, work isn't. 6, day 2, pull request: you hand the document with a "Please review" sticky note to a colleague at the review desk. 7, merge: an approved stamp, the work goes into the main binder and the old copy goes into a happy shredder, which is deleting the branch. 8, repeat: back on main with a fresh coffee, ready for the next task.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="m-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#2563EB"/></marker>
+    <marker id="m-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#EA580C"/></marker>
+    <marker id="m-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#475569"/></marker>
+    <!-- you: feet on y=0, centred on x=0 -->
+    <g id="you">
+      <rect x="-13" y="-44" width="9" height="40" rx="4" fill="#1E3A8A"/>
+      <rect x="3" y="-44" width="9" height="40" rx="4" fill="#1E3A8A"/>
+      <ellipse cx="-9" cy="-3" rx="9" ry="4" fill="#1F2937"/>
+      <ellipse cx="8" cy="-3" rx="9" ry="4" fill="#1F2937"/>
+      <rect x="-18" y="-90" width="36" height="50" rx="12" fill="#7C3AED"/>
+      <circle cx="0" cy="-104" r="15" fill="#FCD9B6"/>
+      <path d="M-15 -106 a15 15 0 0 1 29 -5 q-9 -5 -17 -2 q-7 3 -12 7z" fill="#3F2A1D"/>
+      <circle cx="-5" cy="-104" r="1.8" fill="#1F2937"/>
+      <circle cx="5" cy="-104" r="1.8" fill="#1F2937"/>
+      <path d="M-5 -97 q5 4 10 0" fill="none" stroke="#1F2937" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+    <g id="cloud">
+      <g fill="#E2E8F0">
+        <circle cx="-18" cy="6" r="14"/>
+        <circle cx="0" cy="-2" r="18"/>
+        <circle cx="18" cy="8" r="13"/>
+        <rect x="-30" y="6" width="60" height="16" rx="8"/>
+      </g>
+      <text x="0" y="17" text-anchor="middle" font-size="10" font-weight="700" fill="#1F2937">GitHub</text>
+    </g>
+  </defs>
+  <rect width="960" height="720" rx="18" fill="#F8FAFC"/>
+
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">A day at the office, the Git way</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">Seven steps, the same for every task. Coffee optional.</text>
+
+  <!-- cards -->
+  <g filter="url(#s)" fill="#FFFFFF" stroke="#E5E7EB">
+    <rect x="30" y="100" width="213" height="290" rx="14"/>
+    <rect x="259" y="100" width="213" height="290" rx="14"/>
+    <rect x="488" y="100" width="213" height="290" rx="14"/>
+    <rect x="717" y="100" width="213" height="290" rx="14"/>
+    <rect x="30" y="410" width="213" height="290" rx="14"/>
+    <rect x="259" y="410" width="213" height="290" rx="14"/>
+    <rect x="488" y="410" width="213" height="290" rx="14"/>
+    <rect x="717" y="410" width="213" height="290" rx="14"/>
+  </g>
+
+  <!-- ============ 1 PULL MAIN ============ -->
+  <g transform="translate(30 100)">
+    <rect width="213" height="44" rx="14" fill="#2563EB"/><rect y="24" width="213" height="20" fill="#2563EB"/>
+    <circle cx="24" cy="22" r="13" fill="#FFFFFF"/><text x="24" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#2563EB">1</text>
+    <text x="44" y="28" font-size="14.5" font-weight="700" fill="#FFFFFF">Pull main</text>
+    <text x="200" y="28" text-anchor="end" font-size="11" fill="#FFFFFF" opacity="0.85">08:55</text>
+    <use href="#cloud" xlink:href="#cloud" x="168" y="74"/>
+    <path d="M166 100 Q168 114 158 124" fill="none" stroke="#2563EB" stroke-width="2" marker-end="url(#m-blue)"/>
+    <use href="#you" xlink:href="#you" x="70" y="196"/>
+    <path d="M57 118 q-14 12 -10 28" fill="none" stroke="#7C3AED" stroke-width="8" stroke-linecap="round"/>
+    <rect x="36" y="140" width="16" height="18" rx="3" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+    <path d="M36 145 q-6 0 -6 5 q0 5 6 5" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+    <path d="M41 134 q-3 -5 0 -10 M48 134 q3 -5 0 -10" fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M83 118 q16 2 30 6" fill="none" stroke="#7C3AED" stroke-width="8" stroke-linecap="round"/>
+    <rect x="116" y="112" width="40" height="50" rx="2" fill="#FFFFFF" stroke="#93C5FD" stroke-width="1.5"/>
+    <text x="136" y="126" text-anchor="middle" font-size="9" font-weight="700" fill="#2563EB">main</text>
+    <rect x="122" y="132" width="28" height="3" rx="1.5" fill="#94A3B8"/>
+    <rect x="122" y="140" width="22" height="3" rx="1.5" fill="#94A3B8"/>
+    <rect x="122" y="148" width="26" height="3" rx="1.5" fill="#94A3B8"/>
+    <circle cx="115" cy="125" r="5" fill="#FCD9B6"/>
+    <text x="14" y="222" font-size="12.5" fill="#374151">Switch to main, click</text>
+    <text x="14" y="239" font-size="12.5" fill="#374151">Sync Changes.</text>
+    <text x="14" y="264" font-size="12.5" font-style="italic" font-weight="600" fill="#2563EB">Fresh coffee, fresh copy.</text>
+  </g>
+
+  <!-- ============ 2 CREATE A BRANCH ============ -->
+  <g transform="translate(259 100)">
+    <rect width="213" height="44" rx="14" fill="#7C3AED"/><rect y="24" width="213" height="20" fill="#7C3AED"/>
+    <circle cx="24" cy="22" r="13" fill="#FFFFFF"/><text x="24" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#7C3AED">2</text>
+    <text x="44" y="28" font-size="14.5" font-weight="700" fill="#FFFFFF">Create a branch</text>
+    <text x="200" y="28" text-anchor="end" font-size="11" fill="#FFFFFF" opacity="0.85">09:00</text>
+    <!-- bubble -->
+    <rect x="20" y="56" width="138" height="28" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <path d="M78 83 L84 96 L92 83" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" stroke-linejoin="round"/>
+    <rect x="76" y="80" width="18" height="4" fill="#FFFFFF"/>
+    <text x="89" y="74" text-anchor="middle" font-size="11.5" fill="#1F2937">One copy, coming up!</text>
+    <!-- copier -->
+    <rect x="34" y="100" width="118" height="12" rx="3" fill="#94A3B8"/>
+    <rect x="40" y="110" width="106" height="80" rx="6" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.5"/>
+    <rect x="114" y="118" width="24" height="12" rx="2" fill="#334155"/>
+    <circle cx="132" cy="124" r="2.5" fill="#22C55E"/>
+    <circle cx="70" cy="146" r="5" fill="#FFFFFF"/><circle cx="96" cy="146" r="5" fill="#FFFFFF"/>
+    <circle cx="71" cy="147" r="2.5" fill="#1F2937"/><circle cx="97" cy="147" r="2.5" fill="#1F2937"/>
+    <path d="M72 160 q11 9 22 0" fill="none" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="48" y="190" width="10" height="8" fill="#64748B"/><rect x="128" y="190" width="10" height="8" fill="#64748B"/>
+    <!-- copy coming out -->
+    <g transform="rotate(8 172 158)">
+      <rect x="148" y="128" width="48" height="58" rx="2" fill="#FFFBEB" stroke="#C4B5FD" stroke-width="1.5"/>
+      <text x="172" y="146" text-anchor="middle" font-size="8.5" font-weight="700" fill="#7C3AED">feature/</text>
+      <text x="172" y="158" text-anchor="middle" font-size="8.5" font-weight="700" fill="#7C3AED">q3-sales</text>
+      <rect x="154" y="166" width="34" height="3" rx="1.5" fill="#94A3B8"/>
+      <rect x="154" y="174" width="26" height="3" rx="1.5" fill="#94A3B8"/>
+    </g>
+    <path d="M200 132 h8 M202 144 h8 M200 156 h8" stroke="#C4B5FD" stroke-width="2" stroke-linecap="round"/>
+    <text x="14" y="222" font-size="12.5" fill="#374151">Create a branch with a</text>
+    <text x="14" y="239" font-size="12.5" fill="#374151">clear name for the task.</text>
+    <text x="14" y="264" font-size="12.5" font-style="italic" font-weight="600" fill="#6D28D9">The copier that never jams.</text>
+  </g>
+
+  <!-- ============ 3 MAKE CHANGES ============ -->
+  <g transform="translate(488 100)">
+    <rect width="213" height="44" rx="14" fill="#D97757"/><rect y="24" width="213" height="20" fill="#D97757"/>
+    <circle cx="24" cy="22" r="13" fill="#FFFFFF"/><text x="24" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#D97757">3</text>
+    <text x="44" y="28" font-size="14.5" font-weight="700" fill="#FFFFFF">Make changes</text>
+    <text x="200" y="28" text-anchor="end" font-size="11" fill="#FFFFFF" opacity="0.85">09:05</text>
+    <!-- Claude bubble -->
+    <rect x="104" y="54" width="96" height="26" rx="12" fill="#FFF7ED" stroke="#F3B79B" stroke-width="1.5"/>
+    <text x="152" y="71" text-anchor="middle" font-size="11.5" fill="#7C2D12">Need a hand?</text>
+    <!-- you behind the desk -->
+    <use href="#you" xlink:href="#you" x="62" y="200"/>
+    <!-- monitor -->
+    <rect x="98" y="98" width="72" height="50" rx="5" fill="#1E293B"/>
+    <rect x="103" y="103" width="62" height="38" rx="2" fill="#EFF6FF"/>
+    <rect x="108" y="108" width="30" height="3" rx="1.5" fill="#2563EB"/>
+    <rect x="108" y="115" width="46" height="3" rx="1.5" fill="#94A3B8"/>
+    <rect x="114" y="122" width="38" height="3" rx="1.5" fill="#16A34A"/>
+    <rect x="108" y="129" width="34" height="3" rx="1.5" fill="#D97757"/>
+    <rect x="130" y="148" width="8" height="4" fill="#334155"/>
+    <path d="M74 120 q12 12 22 30" fill="none" stroke="#7C3AED" stroke-width="8" stroke-linecap="round"/>
+    <!-- desk -->
+    <rect x="16" y="152" width="184" height="10" rx="3" fill="#A16207"/>
+    <rect x="24" y="162" width="9" height="36" fill="#854D0E"/>
+    <rect x="184" y="162" width="9" height="36" fill="#854D0E"/>
+    <rect x="86" y="148" width="36" height="4" rx="2" fill="#CBD5E1"/>
+    <!-- Claude -->
+    <path d="M186 84 l3 6 l6 3 l-6 3 l-3 6 l-3 -6 l-6 -3 l6 -3z" fill="#FBBF24"/>
+    <ellipse cx="186" cy="124" rx="17" ry="21" fill="#D97757"/>
+    <circle cx="180" cy="118" r="4.5" fill="#FFFFFF"/><circle cx="192" cy="118" r="4.5" fill="#FFFFFF"/>
+    <circle cx="179" cy="119" r="2.2" fill="#1F2937"/><circle cx="191" cy="119" r="2.2" fill="#1F2937"/>
+    <path d="M180 129 q6 6 12 0" fill="none" stroke="#7C2D12" stroke-width="2" stroke-linecap="round"/>
+    <text x="14" y="222" font-size="12.5" fill="#374151">Edit as usual, alone or</text>
+    <text x="14" y="239" font-size="12.5" fill="#374151">with Claude. Save often.</text>
+    <text x="14" y="264" font-size="12.5" font-style="italic" font-weight="600" fill="#B4532F">The actual job. Finally.</text>
+  </g>
+
+  <!-- ============ 4 COMMIT ============ -->
+  <g transform="translate(717 100)">
+    <rect width="213" height="44" rx="14" fill="#0D9488"/><rect y="24" width="213" height="20" fill="#0D9488"/>
+    <circle cx="24" cy="22" r="13" fill="#FFFFFF"/><text x="24" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#0D9488">4</text>
+    <text x="44" y="28" font-size="14.5" font-weight="700" fill="#FFFFFF">Commit</text>
+    <text x="200" y="28" text-anchor="end" font-size="11" fill="#FFFFFF" opacity="0.85">11:30</text>
+    <!-- document with changes -->
+    <rect x="24" y="66" width="74" height="96" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <rect x="31" y="75" width="40" height="4" rx="2" fill="#0D9488"/>
+    <rect x="31" y="86" width="56" height="3" rx="1.5" fill="#94A3B8"/>
+    <rect x="29" y="93" width="64" height="9" rx="2" fill="#FEE2E2"/>
+    <rect x="33" y="96" width="44" height="3" rx="1.5" fill="#DC2626"/>
+    <rect x="29" y="104" width="64" height="9" rx="2" fill="#DCFCE7"/>
+    <rect x="33" y="107" width="50" height="3" rx="1.5" fill="#16A34A"/>
+    <rect x="31" y="119" width="52" height="3" rx="1.5" fill="#94A3B8"/>
+    <g transform="rotate(-6 92 152)">
+      <rect x="62" y="134" width="62" height="38" rx="2" fill="#FDE68A"/>
+      <text x="93" y="150" text-anchor="middle" font-size="9.5" font-weight="700" fill="#92400E">Update Q3</text>
+      <text x="93" y="163" text-anchor="middle" font-size="9.5" font-weight="700" fill="#92400E">figures</text>
+    </g>
+    <!-- camera -->
+    <g stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round">
+      <path d="M128 98 l-8 -6 M124 110 h-10 M132 90 l-4 -9"/>
+    </g>
+    <rect x="138" y="96" width="16" height="8" rx="2" fill="#475569"/>
+    <rect x="132" y="102" width="62" height="40" rx="7" fill="#334155"/>
+    <circle cx="163" cy="122" r="12" fill="#0D9488" stroke="#FFFFFF" stroke-width="3"/>
+    <circle cx="159" cy="118" r="3" fill="#FFFFFF" opacity="0.7"/>
+    <text x="163" y="162" text-anchor="middle" font-size="13" font-weight="700" fill="#0F766E">Click!</text>
+    <rect x="126" y="174" width="74" height="22" rx="11" fill="#0D9488"/>
+    <text x="163" y="189" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Commit ✓</text>
+    <text x="14" y="222" font-size="12.5" fill="#374151">Check the red and green,</text>
+    <text x="14" y="239" font-size="12.5" fill="#374151">add a note, click Commit.</text>
+    <text x="14" y="264" font-size="12.5" font-style="italic" font-weight="600" fill="#0F766E">Say cheese, table 2!</text>
+  </g>
+
+  <!-- ============ 5 PUSH ============ -->
+  <g transform="translate(30 410)">
+    <rect width="213" height="44" rx="14" fill="#EA580C"/><rect y="24" width="213" height="20" fill="#EA580C"/>
+    <circle cx="24" cy="22" r="13" fill="#FFFFFF"/><text x="24" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#EA580C">5</text>
+    <text x="44" y="28" font-size="14.5" font-weight="700" fill="#FFFFFF">Push</text>
+    <text x="200" y="28" text-anchor="end" font-size="11" fill="#FFFFFF" opacity="0.85">17:00</text>
+    <!-- sunset -->
+    <circle cx="40" cy="72" r="12" fill="#FDBA74"/>
+    <rect x="22" y="72" width="36" height="14" fill="#FFFFFF"/>
+    <use href="#cloud" xlink:href="#cloud" x="162" y="72"/>
+    <path d="M150 180 Q146 136 160 100" fill="none" stroke="#EA580C" stroke-width="2.5" marker-end="url(#m-orange)"/>
+    <g transform="rotate(-12 142 140)">
+      <rect x="128" y="122" width="28" height="34" rx="2" fill="#FFFFFF" stroke="#FDBA74" stroke-width="1.5"/>
+      <rect x="133" y="130" width="18" height="3" fill="#94A3B8"/><rect x="133" y="137" width="14" height="3" fill="#94A3B8"/>
+    </g>
+    <path d="M136 168 v8 M144 166 v6" stroke="#FDBA74" stroke-width="2" stroke-linecap="round"/>
+    <use href="#you" xlink:href="#you" x="66" y="196"/>
+    <path d="M80 116 q14 -10 12 -30" fill="none" stroke="#7C3AED" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="92" cy="84" r="5" fill="#FCD9B6"/>
+    <path d="M100 78 q4 -4 2 -10 M104 88 q6 -2 6 -8" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M53 118 q-8 12 -6 26" fill="none" stroke="#7C3AED" stroke-width="8" stroke-linecap="round"/>
+    <rect x="30" y="146" width="28" height="22" rx="3" fill="#92400E"/>
+    <path d="M38 146 v-4 h12 v4" fill="none" stroke="#92400E" stroke-width="2"/>
+    <text x="14" y="222" font-size="12.5" fill="#374151">Send your commits to GitHub,</text>
+    <text x="14" y="239" font-size="12.5" fill="#374151">at least every evening.</text>
+    <text x="14" y="264" font-size="12.5" font-style="italic" font-weight="600" fill="#C2410C">Laptop lost? Work isn't.</text>
+  </g>
+
+  <!-- ============ 6 PULL REQUEST ============ -->
+  <g transform="translate(259 410)">
+    <rect width="213" height="44" rx="14" fill="#DB2777"/><rect y="24" width="213" height="20" fill="#DB2777"/>
+    <circle cx="24" cy="22" r="13" fill="#FFFFFF"/><text x="24" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#DB2777">6</text>
+    <text x="44" y="28" font-size="14.5" font-weight="700" fill="#FFFFFF">Pull request</text>
+    <text x="200" y="28" text-anchor="end" font-size="11" fill="#FFFFFF" opacity="0.85">Day 2</text>
+    <!-- reviewer bubble -->
+    <rect x="134" y="56" width="66" height="26" rx="12" fill="#FDF2F8" stroke="#F9A8D4" stroke-width="1.5"/>
+    <text x="167" y="73" text-anchor="middle" font-size="11.5" font-weight="700" fill="#831843">On it!</text>
+    <use href="#you" xlink:href="#you" x="46" y="196"/>
+    <path d="M60 118 q10 4 20 4" fill="none" stroke="#7C3AED" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="82" cy="122" r="5" fill="#FCD9B6"/>
+    <rect x="84" y="104" width="44" height="58" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <text x="106" y="118" text-anchor="middle" font-size="7.5" font-weight="700" fill="#7C3AED">q3-sales</text>
+    <rect x="90" y="124" width="32" height="3" rx="1.5" fill="#94A3B8"/>
+    <rect x="90" y="131" width="26" height="3" rx="1.5" fill="#94A3B8"/>
+    <g transform="rotate(-8 118 156)">
+      <rect x="96" y="142" width="48" height="28" rx="2" fill="#FCE7F3" stroke="#DB2777" stroke-width="1.2"/>
+      <text x="120" y="154" text-anchor="middle" font-size="8.5" font-weight="700" fill="#BE185D">Please</text>
+      <text x="120" y="165" text-anchor="middle" font-size="8.5" font-weight="700" fill="#BE185D">review!</text>
+    </g>
+    <!-- reviewer -->
+    <circle cx="172" cy="104" r="14" fill="#C68642"/>
+    <path d="M158 102 a14 14 0 0 1 28 0 q-6 -8 -14 -8 q-8 0 -14 8z" fill="#1F2937"/>
+    <circle cx="167" cy="105" r="1.8" fill="#1F2937"/><circle cx="175" cy="105" r="1.8" fill="#1F2937"/>
+    <path d="M167 111 q5 3 9 0" fill="none" stroke="#1F2937" stroke-width="1.5" stroke-linecap="round"/>
+    <rect x="156" y="118" width="32" height="38" rx="11" fill="#DB2777"/>
+    <rect x="136" y="154" width="70" height="8" rx="2" fill="#334155"/>
+    <rect x="142" y="162" width="58" height="34" fill="#475569"/>
+    <text x="171" y="183" text-anchor="middle" font-size="8.5" font-weight="700" letter-spacing="1" fill="#E2E8F0">REVIEW</text>
+    <text x="14" y="222" font-size="12.5" fill="#374151">Open a pull request and</text>
+    <text x="14" y="239" font-size="12.5" fill="#374151">pick a reviewer.</text>
+    <text x="14" y="264" font-size="12.5" font-style="italic" font-weight="600" fill="#BE185D">Better than "see attached".</text>
+  </g>
+
+  <!-- ============ 7 MERGE ============ -->
+  <g transform="translate(488 410)">
+    <rect width="213" height="44" rx="14" fill="#16A34A"/><rect y="24" width="213" height="20" fill="#16A34A"/>
+    <circle cx="24" cy="22" r="13" fill="#FFFFFF"/><text x="24" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#16A34A">7</text>
+    <text x="44" y="28" font-size="14.5" font-weight="700" fill="#FFFFFF">Merge</text>
+    <text x="200" y="28" text-anchor="end" font-size="11" fill="#FFFFFF" opacity="0.85">Day 2</text>
+    <!-- stamp -->
+    <g transform="rotate(-10 106 68)">
+      <rect x="62" y="56" width="88" height="24" rx="4" fill="#FFFFFF" stroke="#DC2626" stroke-width="2"/>
+      <text x="106" y="73" text-anchor="middle" font-size="12" font-weight="700" letter-spacing="1" fill="#DC2626">APPROVED</text>
+    </g>
+    <!-- binder main -->
+    <rect x="38" y="86" width="40" height="28" rx="2" fill="#FFFFFF" stroke="#86EFAC" stroke-width="1.5"/>
+    <rect x="44" y="92" width="26" height="3" rx="1.5" fill="#16A34A"/>
+    <rect x="26" y="102" width="64" height="94" rx="5" fill="#2563EB"/>
+    <rect x="36" y="116" width="44" height="20" rx="3" fill="#FFFFFF"/>
+    <text x="58" y="130" text-anchor="middle" font-size="11" font-weight="700" fill="#1E3A8A">main</text>
+    <circle cx="58" cy="172" r="7" fill="#FFFFFF"/>
+    <circle cx="88" cy="104" r="13" fill="#16A34A" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M82 104 l4 4 l8 -8" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- shredder deletes the branch -->
+    <g transform="rotate(4 160 112)">
+      <rect x="140" y="92" width="40" height="44" rx="2" fill="#FFFBEB" stroke="#C4B5FD" stroke-width="1.5"/>
+      <text x="160" y="108" text-anchor="middle" font-size="7.5" font-weight="700" fill="#7C3AED">q3-sales</text>
+      <rect x="146" y="114" width="28" height="3" rx="1.5" fill="#94A3B8"/>
+    </g>
+    <g fill="#FFFBEB" stroke="#C4B5FD" stroke-width="1">
+      <rect x="138" y="168" width="5" height="22"/><rect x="146" y="168" width="5" height="26"/><rect x="154" y="168" width="5" height="20"/>
+      <rect x="162" y="168" width="5" height="25"/><rect x="170" y="168" width="5" height="21"/><rect x="178" y="168" width="5" height="24"/>
+    </g>
+    <rect x="128" y="128" width="64" height="42" rx="6" fill="#475569"/>
+    <rect x="136" y="128" width="48" height="4" fill="#1F2937"/>
+    <circle cx="149" cy="146" r="4" fill="#FFFFFF"/><circle cx="171" cy="146" r="4" fill="#FFFFFF"/>
+    <circle cx="150" cy="147" r="2" fill="#1F2937"/><circle cx="172" cy="147" r="2" fill="#1F2937"/>
+    <path d="M152 156 q8 6 16 0" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    <text x="14" y="222" font-size="12.5" fill="#374151">Approved? Merge, then</text>
+    <text x="14" y="239" font-size="12.5" fill="#374151">delete the branch.</text>
+    <text x="14" y="264" font-size="12.5" font-style="italic" font-weight="600" fill="#15803D">The copy retires happily.</text>
+  </g>
+
+  <!-- ============ 8 REPEAT ============ -->
+  <g transform="translate(717 410)">
+    <rect width="213" height="44" rx="14" fill="#1F2937"/><rect y="24" width="213" height="20" fill="#1F2937"/>
+    <circle cx="24" cy="22" r="13" fill="#FFFFFF"/>
+    <path d="M30 18 a7 7 0 1 0 1 7" fill="none" stroke="#1F2937" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M31 13 v6 h-6" fill="none" stroke="#1F2937" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="44" y="28" font-size="14.5" font-weight="700" fill="#FFFFFF">Repeat</text>
+    <text x="200" y="28" text-anchor="end" font-size="11" fill="#FFFFFF" opacity="0.85">next task</text>
+    <path d="M70 96 A54 54 0 1 0 142 96" fill="none" stroke="#475569" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#m-dark)"/>
+    <rect x="134" y="54" width="70" height="26" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <text x="169" y="71" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1F2937">Next task!</text>
+    <use href="#you" xlink:href="#you" x="106" y="184"/>
+    <path d="M120 106 q12 8 10 24" fill="none" stroke="#7C3AED" stroke-width="8" stroke-linecap="round"/>
+    <rect x="124" y="128" width="16" height="18" rx="3" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+    <path d="M140 133 q6 0 6 5 q0 5 -6 5" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+    <path d="M129 122 q-3 -5 0 -10 M136 122 q3 -5 0 -10" fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M92 106 q-10 10 -8 24" fill="none" stroke="#7C3AED" stroke-width="8" stroke-linecap="round"/>
+    <text x="14" y="222" font-size="12.5" fill="#374151">Back on main, synced and</text>
+    <text x="14" y="239" font-size="12.5" fill="#374151">ready for the next one.</text>
+    <text x="14" y="264" font-size="12.5" font-style="italic" font-weight="600" fill="#1F2937">One task, one branch. Always.</text>
+  </g>
+</svg>
