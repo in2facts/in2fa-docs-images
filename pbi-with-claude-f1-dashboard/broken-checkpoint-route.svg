@@ -40,7 +40,7 @@
       <text x="740" y="236">1.6</text>
     </g>
     <circle cx="900" cy="205" r="15" fill="#151722"/>
-    <text x="900" y="244" font-size="13" font-weight="700" fill="#151722" text-anchor="middle">1.7  45785d0</text>
+    <text x="900" y="244" font-size="13" font-weight="700" fill="#151722" text-anchor="middle">1.7</text>
     <!-- labels on your last commit -->
     <rect x="935" y="160" width="74" height="26" rx="13" fill="#151722"/>
     <text x="972" y="178" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">main</text>
@@ -64,7 +64,6 @@
     </g>
     <circle cx="900" cy="375" r="15" fill="#f2955a"/>
     <text x="900" y="408" font-size="13" font-weight="700" fill="#151722" text-anchor="middle">after-report-bug</text>
-    <text x="900" y="426" font-size="13" font-weight="700" fill="#151722" text-anchor="middle">86a79b8</text>
 
     <!-- HEAD -->
     <rect x="1010" y="360" width="80" height="30" rx="6" fill="#f2955a"/>
@@ -87,7 +86,7 @@
     <rect x="76" y="556" width="223" height="52" rx="4" fill="#151722"/>
     <text x="86" y="577" font-size="12" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">git add -A; git commit</text>
     <text x="86" y="596" font-size="12" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">-m "chapter 1.7: …"</text>
-    <text x="76" y="634" font-size="14" fill="#151722">Saves 1.7 as 45785d0.</text>
+    <text x="76" y="634" font-size="14" fill="#151722">Saves 1.7 as a commit.</text>
     <text x="76" y="656" font-size="14" fill="#151722">Already done at the end</text>
     <text x="76" y="678" font-size="14" fill="#151722">of 1.7? Then it just says</text>
     <text x="76" y="700" font-size="14" fill="#151722">so. Not a failure.</text>
@@ -115,7 +114,7 @@
     <text x="626" y="634" font-size="14" fill="#151722">Your folder becomes the</text>
     <text x="626" y="656" font-size="14" fill="#151722">course's broken commit.</text>
     <text x="626" y="678" font-size="14" fill="#151722">No branch follows you here.</text>
-    <text x="626" y="712" font-size="13" fill="#6e6e6e" font-family="Consolas, 'Courier New', monospace">HEAD is now at 86a79b8</text>
+    <text x="626" y="712" font-size="13" fill="#6e6e6e" font-family="Consolas, 'Courier New', monospace">HEAD is now at … after-report-bug</text>
 
     <!-- step 4 -->
     <rect x="885" y="500" width="255" height="230" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
@@ -138,7 +137,7 @@
     <!-- where you are now -->
     <rect x="60" y="756" width="1080" height="84" rx="8" fill="#151722"/>
     <text x="84" y="788" font-size="13" letter-spacing="1" fill="#f2955a">WHERE YOU ARE NOW</text>
-    <text x="84" y="818" font-size="16" fill="#ffffff">HEAD is on <tspan font-weight="700" fill="#f2955a">after-report-bug</tspan>, the course's broken report. <tspan font-weight="700">my-work</tspan> still points at 45785d0, your 1.7.</text>
+    <text x="84" y="818" font-size="16" fill="#ffffff">HEAD is on <tspan font-weight="700" fill="#f2955a">after-report-bug</tspan>, the course's broken report. <tspan font-weight="700">my-work</tspan> still points at your 1.7 commit.</text>
 
     <text x="600" y="866" font-size="14" fill="#6e6e6e" text-anchor="middle">Nothing you built is lost or changed: the jump only changes which commit your folder shows.</text>
   </g>
