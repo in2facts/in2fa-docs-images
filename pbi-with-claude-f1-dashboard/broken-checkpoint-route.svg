@@ -64,7 +64,7 @@
     </g>
     <circle cx="900" cy="375" r="15" fill="#f2955a"/>
     <text x="900" y="408" font-size="13" font-weight="700" fill="#151722" text-anchor="middle">after-report-bug</text>
-    <text x="900" y="426" font-size="13" font-weight="700" fill="#151722" text-anchor="middle">8821289</text>
+    <text x="900" y="426" font-size="13" font-weight="700" fill="#151722" text-anchor="middle">86a79b8</text>
 
     <!-- HEAD -->
     <rect x="1010" y="360" width="80" height="30" rx="6" fill="#f2955a"/>
@@ -115,7 +115,7 @@
     <text x="626" y="634" font-size="14" fill="#151722">Your folder becomes the</text>
     <text x="626" y="656" font-size="14" fill="#151722">course's broken commit.</text>
     <text x="626" y="678" font-size="14" fill="#151722">No branch follows you here.</text>
-    <text x="626" y="712" font-size="13" fill="#6e6e6e" font-family="Consolas, 'Courier New', monospace">HEAD is now at 8821289</text>
+    <text x="626" y="712" font-size="13" fill="#6e6e6e" font-family="Consolas, 'Courier New', monospace">HEAD is now at 86a79b8</text>
 
     <!-- step 4 -->
     <rect x="885" y="500" width="255" height="230" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
