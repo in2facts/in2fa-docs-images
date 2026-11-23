@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 764" width="960" height="764" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">The daily loop, without GitHub</title>
+  <desc id="d">A comic strip of working with Git on your own PC, in eight steps. 1, 08:55, where am I: git status says you're on main with a clean working tree. Clean desk, clear head. 2, 09:00, side track: for a bigger task, git switch -c task/q3 gives it its own branch; for a small fix, skip this step. 3, 09:05, edit and save: work as usual in Word, Notepad or Power BI and press Ctrl+S; Git doesn't mind which program. 4, 11:25, check: git status and git diff show what changed, red out and green in. Look before you seal. 5, 11:30, commit: git add -A and git commit -m put the changes in the envelope and seal it with a note. Repeat steps 3 to 5 all day long. 6, next morning, review yourself: no pull request, so be your own reviewer with git diff main task/q3. Fresh eyes work best. 7, merge: on main, git merge --no-ff, then delete the branch. Your own Merge button. 8, Friday 17:00, back up: git push --all backup gives your history a second home. Laptop lost? Work isn't. Footer: steps 3 to 5 repeat all day; steps 1, 2, 6 and 7 once per task; step 8 once a week.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="ma" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#475569"/></marker>
+    <marker id="mg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#9CA3AF"/></marker>
+    <g id="you">
+      <rect x="-13" y="-44" width="9" height="40" rx="4" fill="#1E3A8A"/>
+      <rect x="3" y="-44" width="9" height="40" rx="4" fill="#1E3A8A"/>
+      <ellipse cx="-9" cy="-3" rx="9" ry="4" fill="#1F2937"/>
+      <ellipse cx="8" cy="-3" rx="9" ry="4" fill="#1F2937"/>
+      <rect x="-18" y="-90" width="36" height="50" rx="12" fill="#7C3AED"/>
+      <circle cx="0" cy="-104" r="15" fill="#FCD9B6"/>
+      <path d="M-15 -106 a15 15 0 0 1 29 -5 q-9 -5 -17 -2 q-7 3 -12 7z" fill="#3F2A1D"/>
+      <circle cx="-1" cy="-104" r="1.8" fill="#1F2937"/>
+      <circle cx="8" cy="-104" r="1.8" fill="#1F2937"/>
+      <path d="M-1 -97 q5 4 10 0" fill="none" stroke="#1F2937" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+    <g id="env">
+      <rect x="0" y="0" width="30" height="21" rx="2" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.5"/>
+      <path d="M0 1 L15 12 L30 1" fill="none" stroke="#0D9488" stroke-width="1.5"/>
+      <circle cx="15" cy="12" r="3.4" fill="#DC2626"/>
+    </g>
+    <g id="cab">
+      <rect x="0" y="0" width="28" height="38" rx="3" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.2"/>
+      <rect x="3" y="3" width="22" height="9" rx="1.5" fill="#F8FAFC" stroke="#94A3B8" stroke-width="0.8"/>
+      <rect x="3" y="14.5" width="22" height="9" rx="1.5" fill="#F8FAFC" stroke="#94A3B8" stroke-width="0.8"/>
+      <rect x="3" y="26" width="22" height="9" rx="1.5" fill="#F8FAFC" stroke="#94A3B8" stroke-width="0.8"/>
+    </g>
+  </defs>
+  <rect width="960" height="764" rx="18" fill="#F8FAFC"/>
+
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">The daily loop, without GitHub</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">Same rhythm as the team version. You're the author, the reviewer and the archivist.</text>
+
+  <g filter="url(#s)" fill="#FFFFFF" stroke="#E5E7EB">
+    <rect x="30" y="96" width="213" height="290" rx="14"/><rect x="259" y="96" width="213" height="290" rx="14"/>
+    <rect x="488" y="96" width="213" height="290" rx="14"/><rect x="717" y="96" width="213" height="290" rx="14"/>
+    <rect x="30" y="402" width="213" height="290" rx="14"/><rect x="259" y="402" width="213" height="290" rx="14"/>
+    <rect x="488" y="402" width="213" height="290" rx="14"/><rect x="717" y="402" width="213" height="290" rx="14"/>
+  </g>
+
+  <!-- 1 WHERE AM I -->
+  <g transform="translate(30 96)">
+    <rect width="213" height="44" rx="14" fill="#2563EB"/><rect y="24" width="213" height="20" fill="#2563EB"/>
+    <circle cx="24" cy="22" r="13" fill="#FFFFFF"/><text x="24" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#2563EB">1</text>
+    <text x="44" y="28" font-size="14.5" font-weight="700" fill="#FFFFFF">Where am I?</text>
+    <text x="200" y="28" text-anchor="end" font-size="11" fill="#FFFFFF" opacity="0.85">08:55</text>
+    <use href="#you" transform="translate(40 176) scale(0.75)"/>
+    <path d="M30 100 q-10 10 -8 22" fill="none" stroke="#7C3AED" stroke-width="6" stroke-linecap="round"/>
+    <rect x="12" y="120" width="14" height="15" rx="3" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.4"/>
+    <path d="M16 115 q-2 -4 0 -7 M21 115 q2 -4 0 -7" fill="none" stroke="#CBD5E1" stroke-width="1.4" stroke-linecap="round"/>
+    <rect x="76" y="62" width="128" height="84" rx="6" fill="#1E293B"/>
+    <g font-family="Consolas, Menlo, monospace" font-size="9">
+      <text x="84" y="80" fill="#FFFFFF">$ git status</text>
+      <text x="84" y="96" fill="#E2E8F0">On branch <tspan fill="#38BDF8" font-weight="700">main</tspan></text>
+      <text x="84" y="112" fill="#4ADE80">nothing to commit,</text>
+      <text x="84" y="125" fill="#4ADE80">working tree clean</text>
+    </g>
+    <rect x="12" y="186" width="189" height="22" rx="11" fill="#1E293B"/>
+    <text x="106" y="201" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git status</text>
+    <text x="14" y="232" font-size="12.5" fill="#374151">Start on main, with nothing</text>
+    <text x="14" y="249" font-size="12.5" fill="#374151">left to commit.</text>
+    <text x="14" y="274" font-size="12.5" font-style="italic" font-weight="600" fill="#2563EB">Clean desk, clear head.</text>
+  </g>
+
+  <!-- 2 SIDE TRACK -->
+  <g transform="translate(259 96)">
+    <rect width="213" height="44" rx="14" fill="#7C3AED"/><rect y="24" width="213" height="20" fill="#7C3AED"/>
+    <circle cx="24" cy="22" r="13" fill="#FFFFFF"/><text x="24" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#7C3AED">2</text>
+    <text x="44" y="28" font-size="14.5" font-weight="700" fill="#FFFFFF">Side track</text>
+    <text x="200" y="28" text-anchor="end" font-size="11" fill="#FFFFFF" opacity="0.85">09:00</text>
+    <path d="M16 86 h182" stroke="#2563EB" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="40" cy="86" r="6" fill="#2563EB" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="76" cy="86" r="6" fill="#2563EB" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M150 64 h44 l6 9 l-6 9 h-44z" fill="#2563EB"/>
+    <text x="172" y="77" text-anchor="middle" font-size="9.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#FFFFFF">main</text>
+    <path d="M76 86 C100 86 100 134 128 134 H150" fill="none" stroke="#7C3AED" stroke-width="5" stroke-linecap="round" stroke-dasharray="9 6"/>
+    <path d="M140 124 h56 l6 10 l-6 10 h-56z" fill="#7C3AED"/>
+    <text x="168" y="138" text-anchor="middle" font-size="9.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#FFFFFF">task/q3</text>
+    <text x="36" y="160" font-size="10" font-style="italic" fill="#6B7280">no files change yet</text>
+    <rect x="12" y="186" width="189" height="22" rx="11" fill="#1E293B"/>
+    <text x="106" y="201" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git switch -c task/q3</text>
+    <text x="14" y="232" font-size="12.5" fill="#374151">A bigger task gets its own</text>
+    <text x="14" y="249" font-size="12.5" fill="#374151">branch. Main stays safe.</text>
+    <text x="14" y="274" font-size="12.5" font-style="italic" font-weight="600" fill="#6D28D9">Small fix? Skip this step.</text>
+  </g>
+
+  <!-- 3 EDIT AND SAVE -->
+  <g transform="translate(488 96)">
+    <rect width="213" height="44" rx="14" fill="#D97757"/><rect y="24" width="213" height="20" fill="#D97757"/>
+    <circle cx="24" cy="22" r="13" fill="#FFFFFF"/><text x="24" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#D97757">3</text>
+    <text x="44" y="28" font-size="14.5" font-weight="700" fill="#FFFFFF">Edit &amp; save</text>
+    <text x="200" y="28" text-anchor="end" font-size="11" fill="#FFFFFF" opacity="0.85">09:05</text>
+    <use href="#you" transform="translate(52 178) scale(0.8)"/>
+    <rect x="94" y="70" width="96" height="62" rx="5" fill="#1E293B"/>
+    <rect x="99" y="75" width="86" height="50" rx="2" fill="#EFF6FF"/>
+    <rect x="104" y="80" width="16" height="16" rx="3" fill="#2563EB"/><text x="112" y="92" text-anchor="middle" font-size="10" font-weight="800" fill="#FFFFFF">W</text>
+    <rect x="124" y="80" width="16" height="16" rx="3" fill="#0EA5E9"/><path d="M128 85 h8 M128 89 h8 M128 93 h5" stroke="#FFFFFF" stroke-width="1.4"/>
+    <rect x="144" y="80" width="16" height="16" rx="3" fill="#F2C811"/><path d="M148 93 v-4 M152 93 v-7 M156 93 v-10" stroke="#1F2937" stroke-width="2"/>
+    <rect x="104" y="102" width="70" height="3" rx="1.5" fill="#94A3B8"/><rect x="104" y="109" width="58" height="3" rx="1.5" fill="#16A34A"/><rect x="104" y="116" width="64" height="3" rx="1.5" fill="#94A3B8"/>
+    <rect x="136" y="132" width="10" height="5" fill="#334155"/>
+    <path d="M64 112 q12 10 26 26" fill="none" stroke="#7C3AED" stroke-width="7" stroke-linecap="round"/>
+    <rect x="8" y="138" width="196" height="9" rx="3" fill="#A16207"/>
+    <rect x="16" y="147" width="8" height="30" fill="#854D0E"/><rect x="188" y="147" width="8" height="30" fill="#854D0E"/>
+    <rect x="12" y="186" width="189" height="22" rx="11" fill="#FFF7ED" stroke="#F3B79B"/>
+    <text x="106" y="201" text-anchor="middle" font-size="10.5" font-weight="700" fill="#B4532F">Ctrl+S, in any program</text>
+    <text x="14" y="232" font-size="12.5" fill="#374151">Work as usual in Word,</text>
+    <text x="14" y="249" font-size="12.5" fill="#374151">Notepad, Power BI…</text>
+    <text x="14" y="274" font-size="12.5" font-style="italic" font-weight="600" fill="#B4532F">Git doesn't mind which.</text>
+  </g>
+
+  <!-- 4 CHECK -->
+  <g transform="translate(717 96)">
+    <rect width="213" height="44" rx="14" fill="#CA8A04"/><rect y="24" width="213" height="20" fill="#CA8A04"/>
+    <circle cx="24" cy="22" r="13" fill="#FFFFFF"/><text x="24" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#CA8A04">4</text>
+    <text x="44" y="28" font-size="14.5" font-weight="700" fill="#FFFFFF">Check</text>
+    <text x="200" y="28" text-anchor="end" font-size="11" fill="#FFFFFF" opacity="0.85">11:25</text>
+    <rect x="20" y="66" width="150" height="96" rx="5" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.4"/>
+    <rect x="28" y="74" width="60" height="4" rx="2" fill="#1F2937"/>
+    <rect x="28" y="84" width="110" height="3" rx="1.5" fill="#94A3B8"/>
+    <rect x="24" y="92" width="142" height="16" rx="2" fill="#FEE2E2"/>
+    <text x="30" y="104" font-size="9.5" font-family="Consolas, Menlo, monospace" fill="#B91C1C">- Revenue: 1.2 M</text>
+    <rect x="24" y="110" width="142" height="16" rx="2" fill="#DCFCE7"/>
+    <text x="30" y="122" font-size="9.5" font-family="Consolas, Menlo, monospace" fill="#15803D">+ Revenue: 1.35 M</text>
+    <rect x="28" y="134" width="98" height="3" rx="1.5" fill="#94A3B8"/><rect x="28" y="142" width="80" height="3" rx="1.5" fill="#94A3B8"/>
+    <circle cx="164" cy="128" r="20" fill="#DBEAFE" fill-opacity="0.55" stroke="#475569" stroke-width="3.5"/>
+    <line x1="178" y1="143" x2="194" y2="160" stroke="#475569" stroke-width="5" stroke-linecap="round"/>
+    <rect x="12" y="186" width="189" height="22" rx="11" fill="#1E293B"/>
+    <text x="106" y="201" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git status · git diff</text>
+    <text x="14" y="232" font-size="12.5" fill="#374151">What changed? Red out,</text>
+    <text x="14" y="249" font-size="12.5" fill="#374151">green in. q to leave.</text>
+    <text x="14" y="274" font-size="12.5" font-style="italic" font-weight="600" fill="#A16207">Look before you seal.</text>
+  </g>
+
+  <!-- 5 COMMIT -->
+  <g transform="translate(30 402)">
+    <rect width="213" height="44" rx="14" fill="#16A34A"/><rect y="24" width="213" height="20" fill="#16A34A"/>
+    <circle cx="24" cy="22" r="13" fill="#FFFFFF"/><text x="24" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#16A34A">5</text>
+    <text x="44" y="28" font-size="14.5" font-weight="700" fill="#FFFFFF">Commit</text>
+    <text x="200" y="28" text-anchor="end" font-size="11" fill="#FFFFFF" opacity="0.85">11:30</text>
+    <use href="#env" transform="translate(22 78) scale(2)"/>
+    <rect x="22" y="128" width="72" height="16" rx="3" fill="#FEF9C3"/>
+    <text x="58" y="140" text-anchor="middle" font-size="8.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#14532D">UPDATE Q3</text>
+    <line x1="96" y1="100" x2="132" y2="100" stroke="#475569" stroke-width="2.4" marker-end="url(#ma)"/>
+    <use href="#cab" transform="translate(142 70) scale(1.5)"/>
+    <path d="M30 70 l-6 -6 M44 66 l-1 -8 M58 70 l5 -6" stroke="#FBBF24" stroke-width="2.4" stroke-linecap="round"/>
+    <rect x="12" y="186" width="189" height="22" rx="11" fill="#1E293B"/>
+    <text x="106" y="201" text-anchor="middle" font-size="9.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git add -A · git commit -m "…"</text>
+    <text x="14" y="232" font-size="12.5" fill="#374151">Into the envelope, then seal</text>
+    <text x="14" y="249" font-size="12.5" fill="#374151">it with a note.</text>
+    <text x="14" y="274" font-size="12.5" font-style="italic" font-weight="600" fill="#15803D">Repeat 3 to 5 all day long.</text>
+  </g>
+
+  <!-- 6 REVIEW YOURSELF -->
+  <g transform="translate(259 402)">
+    <rect width="213" height="44" rx="14" fill="#DB2777"/><rect y="24" width="213" height="20" fill="#DB2777"/>
+    <circle cx="24" cy="22" r="13" fill="#FFFFFF"/><text x="24" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#DB2777">6</text>
+    <text x="44" y="28" font-size="14.5" font-weight="700" fill="#FFFFFF">Review yourself</text>
+    <text x="200" y="28" text-anchor="end" font-size="11" fill="#FFFFFF" opacity="0.85">day 2</text>
+    <!-- sunrise -->
+    <circle cx="186" cy="74" r="12" fill="#FDE68A"/>
+    <path d="M186 54 v-4 M170 62 l-3 -3 M202 62 l3 -3" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
+    <use href="#you" transform="translate(44 178) scale(0.8)"/>
+    <rect x="72" y="80" width="56" height="70" rx="2" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.4"/>
+    <rect x="78" y="88" width="34" height="3.5" rx="1.5" fill="#7C3AED"/>
+    <rect x="76" y="97" width="48" height="8" rx="2" fill="#FEE2E2"/><rect x="76" y="108" width="48" height="8" rx="2" fill="#DCFCE7"/>
+    <rect x="78" y="122" width="40" height="3" fill="#94A3B8"/><rect x="78" y="130" width="34" height="3" fill="#94A3B8"/>
+    <path d="M56 104 q10 4 18 4" fill="none" stroke="#7C3AED" stroke-width="7" stroke-linecap="round"/>
+    <g font-size="11" fill="#15803D" font-weight="700">
+      <text x="138" y="108">✓ files</text>
+      <text x="138" y="126">✓ TODOs</text>
+      <text x="138" y="144">✓ notes</text>
+    </g>
+    <rect x="12" y="186" width="189" height="22" rx="11" fill="#1E293B"/>
+    <text x="106" y="201" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git diff main task/q3</text>
+    <text x="14" y="232" font-size="12.5" fill="#374151">No pull request? Be your</text>
+    <text x="14" y="249" font-size="12.5" fill="#374151">own reviewer.</text>
+    <text x="14" y="274" font-size="12.5" font-style="italic" font-weight="600" fill="#BE185D">Fresh eyes work best.</text>
+  </g>
+
+  <!-- 7 MERGE -->
+  <g transform="translate(488 402)">
+    <rect width="213" height="44" rx="14" fill="#0D9488"/><rect y="24" width="213" height="20" fill="#0D9488"/>
+    <circle cx="24" cy="22" r="13" fill="#FFFFFF"/><text x="24" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#0D9488">7</text>
+    <text x="44" y="28" font-size="14.5" font-weight="700" fill="#FFFFFF">Merge</text>
+    <text x="200" y="28" text-anchor="end" font-size="11" fill="#FFFFFF" opacity="0.85">day 2</text>
+    <path d="M14 82 h186" stroke="#2563EB" stroke-width="5" stroke-linecap="round"/>
+    <path d="M36 82 C58 82 58 132 82 132 H122 C146 132 146 82 168 82" fill="none" stroke="#7C3AED" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="36" cy="82" r="6" fill="#2563EB" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="90" cy="132" r="6" fill="#7C3AED" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="116" cy="132" r="6" fill="#7C3AED" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="168" cy="82" r="12" fill="#16A34A" stroke="#FFFFFF" stroke-width="2.5"/>
+    <path d="M162 82 l4 4 l7.5 -8" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="168" y="62" text-anchor="middle" font-size="9.5" font-weight="700" fill="#15803D">merge commit</text>
+    <text x="104" y="160" text-anchor="middle" font-size="10" font-style="italic" fill="#6B7280">the task stays visible as one loop</text>
+    <rect x="12" y="186" width="189" height="22" rx="11" fill="#1E293B"/>
+    <text x="106" y="201" text-anchor="middle" font-size="8.6" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git merge --no-ff --no-edit task/q3</text>
+    <text x="14" y="232" font-size="12.5" fill="#374151">On main: merge, then delete</text>
+    <text x="14" y="249" font-size="12.5" fill="#374151">the branch with <tspan font-family="Consolas, Menlo, monospace" font-size="11.5">git branch -d</tspan>.</text>
+    <text x="14" y="274" font-size="12.5" font-style="italic" font-weight="600" fill="#0F766E">Your own Merge button.</text>
+  </g>
+
+  <!-- 8 BACK UP -->
+  <g transform="translate(717 402)">
+    <rect width="213" height="44" rx="14" fill="#1F2937"/><rect y="24" width="213" height="20" fill="#1F2937"/>
+    <circle cx="24" cy="22" r="13" fill="#FFFFFF"/><text x="24" y="27" text-anchor="middle" font-size="14" font-weight="700" fill="#1F2937">8</text>
+    <text x="44" y="28" font-size="14.5" font-weight="700" fill="#FFFFFF">Back up</text>
+    <text x="200" y="28" text-anchor="end" font-size="11" fill="#FFFFFF" opacity="0.85">Fri 17:00</text>
+    <use href="#cab" transform="translate(22 76) scale(1.4)"/>
+    <path d="M70 90 Q106 58 142 90" fill="none" stroke="#0D9488" stroke-width="2.6" marker-end="url(#ma)"/>
+    <use href="#env" transform="translate(94 70) scale(0.8)"/>
+    <use href="#cab" transform="translate(150 76) scale(1.4)"/>
+    <rect x="142" y="132" width="56" height="12" rx="3" fill="#475569"/>
+    <text x="170" y="141" text-anchor="middle" font-size="8" font-weight="700" fill="#FFFFFF">D: / network</text>
+    <g transform="translate(80 112)">
+      <rect width="34" height="32" rx="4" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5"/>
+      <rect width="34" height="10" rx="4" fill="#2563EB"/>
+      <text x="17" y="26" text-anchor="middle" font-size="10" font-weight="800" fill="#1E3A8A">FRI</text>
+    </g>
+    <rect x="12" y="186" width="189" height="22" rx="11" fill="#1E293B"/>
+    <text x="106" y="201" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git push --all backup</text>
+    <text x="14" y="232" font-size="12.5" fill="#374151">Every week, give your history</text>
+    <text x="14" y="249" font-size="12.5" fill="#374151">a second home (step 9).</text>
+    <text x="14" y="274" font-size="12.5" font-style="italic" font-weight="600" fill="#1F2937">Laptop lost? Work isn't.</text>
+  </g>
+
+  <!-- footer: rhythm -->
+  <g filter="url(#s)"><rect x="30" y="706" width="900" height="44" rx="14" fill="#FFFFFF" stroke="#E5E7EB"/></g>
+  <g font-size="12.5" font-weight="700" text-anchor="middle">
+    <rect x="46" y="716" width="200" height="24" rx="12" fill="#DCFCE7"/><text x="146" y="732" fill="#15803D">Steps 3 to 5: all day long</text>
+    <rect x="262" y="716" width="252" height="24" rx="12" fill="#EDE9FE"/><text x="388" y="732" fill="#6D28D9">Steps 1, 2, 6 and 7: once per task</text>
+    <rect x="530" y="716" width="180" height="24" rx="12" fill="#E2E8F0"/><text x="620" y="732" fill="#1F2937">Step 8: once a week</text>
+  </g>
+  <text x="726" y="732" font-size="12.5" font-style="italic" fill="#6B7280">…then the next task.</text>
+</svg>

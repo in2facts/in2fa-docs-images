@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1030" width="1200" height="1030">
+  <title>card.aspect: a 417 x 163 card in a 278 x 244 tile is scaled to fill and cropped centred, so its left and right edges disappear</title>
+  <rect width="1200" height="1030" fill="#f6f6f6"/>
+
+  <defs>
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#151722"/>
+    </marker>
+    <!-- the driver card, drawn in its own 417 x 163 units -->
+    <symbol id="card" viewBox="0 0 417 163">
+      <rect x="0" y="0" width="417" height="163" rx="7" fill="#00D7B6"/>
+      <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#ffffff" font-weight="700">
+        <text x="22" y="46" font-size="26">P1</text>
+        <text x="22" y="128" font-size="56">ANT</text>
+        <text x="395" y="40" font-size="12" font-weight="400" text-anchor="end">POINTS</text>
+        <text x="395" y="86" font-size="40" text-anchor="end">242</text>
+        <text x="395" y="134" font-size="14" font-weight="400" text-anchor="end">WINS 6  PODIUMS 10</text>
+      </g>
+    </symbol>
+    <clipPath id="tileWindow">
+      <rect x="843" y="170" width="167" height="146"/>
+    </clipPath>
+    <!-- first tile of the 6 x 4 grid, drawn at 0.2 scale: 55.6 x 48.8 -->
+    <clipPath id="smallTile">
+      <rect x="642" y="482" width="55.6" height="48.8"/>
+    </clipPath>
+  </defs>
+
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="60" y="44" font-size="15" letter-spacing="1" fill="#6e6e6e">CARD.ASPECT</text>
+    <text x="60" y="76" font-size="22" font-weight="700" fill="#151722">A wide card in a near-square tile: the grid fills the tile, then cuts off the sides.</text>
+
+    <!-- panel 1: the card -->
+    <text x="60" y="130" font-size="13" letter-spacing="1" fill="#6e6e6e">1  THE CARD THE MEASURE DRAWS</text>
+    <use href="#card" x="60" y="194" width="250" height="98"/>
+    <text x="60" y="318" font-size="16" font-weight="700" fill="#151722">417 x 163</text>
+    <text x="60" y="340" font-size="15" fill="#151722">aspect 417 / 163 = <tspan font-weight="700">2.56</tspan></text>
+    <text x="60" y="362" font-size="14" fill="#6e6e6e">wide: built for the 4 x 6 grid</text>
+
+    <!-- panel 2: the tile -->
+    <text x="420" y="130" font-size="13" letter-spacing="1" fill="#6e6e6e">2  THE TILE IN A 6 x 4 GRID</text>
+    <rect x="460" y="170" width="167" height="146" rx="4" fill="#ffffff" stroke="#151722" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="543" y="248" font-size="14" fill="#6e6e6e" text-anchor="middle">tile</text>
+    <text x="420" y="342" font-size="16" font-weight="700" fill="#151722">278 x 244</text>
+    <text x="420" y="364" font-size="15" fill="#151722">1668 / 6 wide, 976 / 4 high</text>
+    <text x="420" y="386" font-size="15" fill="#151722">aspect 278 / 244 = <tspan font-weight="700">1.14</tspan></text>
+
+    <!-- panel 3: what the grid does -->
+    <text x="740" y="130" font-size="13" letter-spacing="1" fill="#6e6e6e">3  WHAT THE GRID DOES WITH IT</text>
+    <use href="#card" x="740" y="170" width="374" height="146" opacity="0.22"/>
+    <g clip-path="url(#tileWindow)"><use href="#card" x="740" y="170" width="374" height="146"/></g>
+    <rect x="843" y="170" width="167" height="146" fill="none" stroke="#151722" stroke-width="3"/>
+    <rect x="740" y="170" width="103" height="146" fill="none" stroke="#f2955a" stroke-width="2" stroke-dasharray="5 4"/>
+    <rect x="1010" y="170" width="104" height="146" fill="none" stroke="#f2955a" stroke-width="2" stroke-dasharray="5 4"/>
+    <text x="791" y="336" font-size="13" font-weight="700" fill="#f2955a" text-anchor="middle">cut off</text>
+    <text x="1062" y="336" font-size="13" font-weight="700" fill="#f2955a" text-anchor="middle">cut off</text>
+    <text x="926" y="336" font-size="13" font-weight="700" fill="#151722" text-anchor="middle">what you see</text>
+    <text x="740" y="366" font-size="15" fill="#151722">Scaled 1.5 x to fill the tile's height,</text>
+    <text x="740" y="388" font-size="15" fill="#151722">centred, overflow cropped: only the</text>
+    <text x="740" y="410" font-size="15" fill="#151722">middle <tspan font-weight="700">45%</tspan> survives. P1, ANT and 242 go.</text>
+
+    <line x1="330" y1="243" x2="440" y2="243" stroke="#151722" stroke-width="3" marker-end="url(#arrowDark)"/>
+    <line x1="650" y1="243" x2="728" y2="243" stroke="#151722" stroke-width="3" marker-end="url(#arrowDark)"/>
+
+    <!-- the two grids, same 1668 x 976 area, drawn at 0.2 scale -->
+    <text x="60" y="458" font-size="13" letter-spacing="1" fill="#6e6e6e">THE SAME 1668 x 976 AREA, SPLIT TWO WAYS</text>
+
+    <!-- 4 x 6: 4 columns, 6 rows, tiles 83.4 x 32.5 -->
+    <rect x="80" y="482" width="333.6" height="195.2" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <g stroke="#d9dadb" stroke-width="1.5">
+      <line x1="163.4" y1="482" x2="163.4" y2="677.2"/>
+      <line x1="246.8" y1="482" x2="246.8" y2="677.2"/>
+      <line x1="330.2" y1="482" x2="330.2" y2="677.2"/>
+      <line x1="80" y1="514.5" x2="413.6" y2="514.5"/>
+      <line x1="80" y1="547.1" x2="413.6" y2="547.1"/>
+      <line x1="80" y1="579.6" x2="413.6" y2="579.6"/>
+      <line x1="80" y1="612.1" x2="413.6" y2="612.1"/>
+      <line x1="80" y1="644.7" x2="413.6" y2="644.7"/>
+    </g>
+    <use href="#card" x="80" y="482" width="83.4" height="32.5"/>
+    <rect x="80" y="482" width="83.4" height="32.5" fill="none" stroke="#151722" stroke-width="2"/>
+    <text x="440" y="506" font-size="18" font-weight="700" fill="#151722">4 x 6</text>
+    <text x="440" y="530" font-size="14" fill="#6e6e6e">as shipped</text>
+    <text x="440" y="566" font-size="15" fill="#151722">4 columns, 6 rows</text>
+    <text x="440" y="588" font-size="15" fill="#151722">tile 417 x 163</text>
+    <text x="440" y="610" font-size="15" fill="#151722">aspect 2.56</text>
+    <text x="440" y="646" font-size="15" font-weight="700" fill="#151722">= the card. 0% off.</text>
+
+    <!-- 6 x 4: 6 columns, 4 rows, tiles 55.6 x 48.8 -->
+    <rect x="642" y="482" width="333.6" height="195.2" fill="#ffffff" stroke="#f2955a" stroke-width="2"/>
+    <g stroke="#d9dadb" stroke-width="1.5">
+      <line x1="697.6" y1="482" x2="697.6" y2="677.2"/>
+      <line x1="753.2" y1="482" x2="753.2" y2="677.2"/>
+      <line x1="808.8" y1="482" x2="808.8" y2="677.2"/>
+      <line x1="864.4" y1="482" x2="864.4" y2="677.2"/>
+      <line x1="920" y1="482" x2="920" y2="677.2"/>
+      <line x1="642" y1="530.8" x2="975.6" y2="530.8"/>
+      <line x1="642" y1="579.6" x2="975.6" y2="579.6"/>
+      <line x1="642" y1="628.4" x2="975.6" y2="628.4"/>
+    </g>
+    <!-- the card scaled to the tile's height (124.7 x 48.8), centred on the tile, clipped -->
+    <g clip-path="url(#smallTile)"><use href="#card" x="607.4" y="482" width="124.8" height="48.8"/></g>
+    <rect x="642" y="482" width="55.6" height="48.8" fill="none" stroke="#151722" stroke-width="2"/>
+    <text x="1000" y="506" font-size="18" font-weight="700" fill="#151722">6 x 4</text>
+    <text x="1000" y="530" font-size="14" fill="#6e6e6e">exercise 1</text>
+    <text x="1000" y="566" font-size="15" fill="#151722">6 columns, 4 rows</text>
+    <text x="1000" y="588" font-size="15" fill="#151722">tile 278 x 244</text>
+    <text x="1000" y="610" font-size="15" fill="#151722">aspect 1.14</text>
+    <text x="1000" y="646" font-size="15" font-weight="700" fill="#f2955a">125% off. Cropped.</text>
+
+    <text x="80" y="706" font-size="14" fill="#6e6e6e">Columns first, rows second: card_grid(…, 4, 6) in build_report.py. Swapping the two numbers keeps the area</text>
+    <text x="80" y="726" font-size="14" fill="#6e6e6e">and the card count (24), but turns every tile from wide to nearly square.</text>
+
+    <!-- the arithmetic -->
+    <rect x="60" y="770" width="1080" height="118" rx="8" fill="#151722"/>
+    <text x="84" y="802" font-size="13" letter-spacing="1" fill="#f2955a">HOW THE LINTER GETS 125% OFF</text>
+    <text x="84" y="848" font-size="24" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">2.56 / 1.14 = 2.25</text>
+    <text x="84" y="874" font-size="15" fill="#d9dadb">the card is 2.25 times as wide-for-its-height as the tile</text>
+    <text x="640" y="848" font-size="24" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">2.25 - 1 = <tspan fill="#f2955a" font-weight="700">125% off</tspan></text>
+    <text x="640" y="874" font-size="15" fill="#d9dadb">0% means the shapes match; no crop at all</text>
+
+    <!-- the fix -->
+    <rect x="60" y="908" width="1080" height="66" rx="8" fill="#ffffff" stroke="#f2955a" stroke-width="3"/>
+    <text x="84" y="938" font-size="16" font-weight="700" fill="#151722">Two ways out: change the grid to suit the card, or the card to suit the tile.</text>
+    <text x="84" y="962" font-size="15" fill="#151722">Back to 4 x 6, the tile is 417 x 163 and the gap is 0%. Or size the SVG to 278 x 244. A viewBox will not save you.</text>
+
+    <text x="600" y="1008" font-size="14" fill="#6e6e6e" text-anchor="middle">Nothing renders blank, so nothing else warns you. card.aspect is the only check that compares the two shapes.</text>
+  </g>
+</svg>

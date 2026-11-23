@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 690" width="960" height="690" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Your first local repository in six steps</title>
+  <desc id="d">Six cartoon steps to set up Git on your own PC. 1, install Git: unpack the engine from git-scm.com; the defaults are fine, just name the first branch main. Click Next, then Next, then Next. 2, open Git Bash: right-click your folder and choose Open Git Bash here; type a command and press Enter. A black window, friendly inside. 3, tell Git who you are: a name badge with your name and email goes on every commit, set once with git config. 4, start the repository: in Git Bash, inside the folder, type git init; a hidden .git filing cabinet appears inside; delete .git and you delete your history. 5, first commit: git add -A puts all changes in the envelope and git commit -m "ADD first version" seals it with a note. Future you says thank you. 6, .gitignore is the bouncer: report.md gets in, but lock files, caches and passwords are not on the list. Bottom: then every day, edit in any program, check with git status and git diff, then git add and git commit, and repeat.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="m-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#374151"/></marker>
+    <marker id="m-grey" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#9CA3AF"/></marker>
+    <g id="you">
+      <rect x="-13" y="-44" width="9" height="40" rx="4" fill="#1E3A8A"/>
+      <rect x="3" y="-44" width="9" height="40" rx="4" fill="#1E3A8A"/>
+      <ellipse cx="-9" cy="-3" rx="9" ry="4" fill="#1F2937"/>
+      <ellipse cx="8" cy="-3" rx="9" ry="4" fill="#1F2937"/>
+      <rect x="-18" y="-90" width="36" height="50" rx="12" fill="#7C3AED"/>
+      <circle cx="0" cy="-104" r="15" fill="#FCD9B6"/>
+      <path d="M-15 -106 a15 15 0 0 1 29 -5 q-9 -5 -17 -2 q-7 3 -12 7z" fill="#3F2A1D"/>
+      <circle cx="-1" cy="-104" r="1.8" fill="#1F2937"/>
+      <circle cx="8" cy="-104" r="1.8" fill="#1F2937"/>
+      <path d="M-1 -97 q5 4 10 0" fill="none" stroke="#1F2937" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+    <g id="env">
+      <rect x="0" y="0" width="20" height="14" rx="2" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.3"/>
+      <path d="M0 1 L10 8 L20 1" fill="none" stroke="#0D9488" stroke-width="1.3"/>
+      <circle cx="10" cy="8" r="2.6" fill="#DC2626"/>
+    </g>
+  </defs>
+  <rect width="960" height="690" rx="18" fill="#F8FAFC"/>
+
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">Your first local repository in six steps</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">About 20 minutes, once. No account, no cloud.</text>
+
+  <g filter="url(#s)" fill="#FFFFFF" stroke="#E5E7EB">
+    <rect x="30" y="96" width="290" height="244" rx="14"/>
+    <rect x="335" y="96" width="290" height="244" rx="14"/>
+    <rect x="640" y="96" width="290" height="244" rx="14"/>
+    <rect x="30" y="356" width="290" height="244" rx="14"/>
+    <rect x="335" y="356" width="290" height="244" rx="14"/>
+    <rect x="640" y="356" width="290" height="244" rx="14"/>
+  </g>
+
+  <!-- ============ 1 INSTALL GIT ============ -->
+  <g transform="translate(30 96)">
+    <rect width="290" height="50" rx="14" fill="#DC2626"/><rect y="30" width="290" height="20" fill="#DC2626"/>
+    <circle cx="22" cy="25" r="13" fill="#FFFFFF"/><text x="22" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#DC2626">1</text>
+    <text x="42" y="22" font-size="15" font-weight="700" fill="#FFFFFF">Install Git</text>
+    <text x="42" y="40" font-size="12" fill="#FFFFFF" opacity="0.9">The engine that records versions</text>
+    <!-- box -->
+    <path d="M60 120 h100 v46 h-100z" fill="#D6A76B"/>
+    <path d="M60 120 l-14 -18 h100 l14 18z" fill="#E9C48F"/>
+    <path d="M160 120 l18 -20 l0 0 l-18 -0z" fill="#C08A4A"/>
+    <path d="M160 120 l16 -22 v6 l-16 20z" fill="#C08A4A"/>
+    <text x="110" y="148" text-anchor="middle" font-size="12" font-weight="800" fill="#7C2D12">GIT</text>
+    <!-- gear popping out -->
+    <g transform="translate(104 84)">
+      <circle r="16" fill="#F05033"/>
+      <g fill="#F05033">
+        <rect x="-4" y="-22" width="8" height="10" rx="2"/><rect x="-4" y="12" width="8" height="10" rx="2"/>
+        <rect x="-22" y="-4" width="10" height="8" rx="2"/><rect x="12" y="-4" width="10" height="8" rx="2"/>
+        <rect x="-4" y="-22" width="8" height="10" rx="2" transform="rotate(45)"/><rect x="-4" y="12" width="8" height="10" rx="2" transform="rotate(45)"/>
+        <rect x="-22" y="-4" width="10" height="8" rx="2" transform="rotate(45)"/><rect x="12" y="-4" width="10" height="8" rx="2" transform="rotate(45)"/>
+      </g>
+      <circle r="6" fill="#FFFFFF"/>
+    </g>
+    <path d="M78 74 l-6 -6 M132 74 l6 -6 M104 58 v-6" stroke="#FBBF24" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- installer window -->
+    <rect x="184" y="78" width="92" height="74" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <rect x="184" y="78" width="92" height="14" rx="6" fill="#E2E8F0"/>
+    <rect x="190" y="98" width="60" height="3" fill="#94A3B8"/>
+    <rect x="190" y="106" width="70" height="3" fill="#94A3B8"/>
+    <rect x="190" y="114" width="50" height="10" rx="2" fill="#DCFCE7" stroke="#16A34A"/>
+    <text x="215" y="122" text-anchor="middle" font-size="7.5" font-weight="700" fill="#15803D">main</text>
+    <rect x="232" y="132" width="38" height="14" rx="4" fill="#2563EB"/>
+    <text x="251" y="142" text-anchor="middle" font-size="8.5" font-weight="700" fill="#FFFFFF">Next &gt;</text>
+    <text x="16" y="182" font-size="12.5" fill="#374151">Download from git-scm.com.</text>
+    <text x="16" y="199" font-size="12.5" fill="#374151">Defaults are fine. First branch: <tspan font-weight="700">main</tspan>.</text>
+    <text x="16" y="225" font-size="12.5" font-style="italic" font-weight="600" fill="#B91C1C">Next. Next. Next. Finish. Done.</text>
+  </g>
+
+  <!-- ============ 2 OPEN GIT BASH ============ -->
+  <g transform="translate(335 96)">
+    <rect width="290" height="50" rx="14" fill="#2563EB"/><rect y="30" width="290" height="20" fill="#2563EB"/>
+    <circle cx="22" cy="25" r="13" fill="#FFFFFF"/><text x="22" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#2563EB">2</text>
+    <text x="42" y="22" font-size="15" font-weight="700" fill="#FFFFFF">Open Git Bash</text>
+    <text x="42" y="40" font-size="12" fill="#FFFFFF" opacity="0.9">Your command window, installed with Git</text>
+    <path d="M18 70 h22 l5 6 h30 v42 h-57z" fill="#FCD34D"/>
+    <path d="M18 82 h57 v36 h-57z" fill="#FBBF24"/>
+    <rect x="60" y="100" width="92" height="44" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+    <text x="68" y="114" font-size="8.5" fill="#6B7280">Open</text>
+    <rect x="62" y="119" width="88" height="13" rx="2" fill="#DBEAFE"/>
+    <text x="68" y="129" font-size="8.5" font-weight="700" fill="#1D4ED8">Open Git Bash here</text>
+    <text x="68" y="140" font-size="8.5" fill="#6B7280">Properties</text>
+    <path d="M118 126 l10 10 l-4 1 l3 6 l-3 1 l-3 -6 l-3 3z" fill="#1F2937" stroke="#FFFFFF" stroke-width="0.8"/>
+    <rect x="160" y="66" width="118" height="92" rx="6" fill="#1E293B"/>
+    <circle cx="170" cy="75" r="2.5" fill="#F87171"/><circle cx="178" cy="75" r="2.5" fill="#FBBF24"/><circle cx="186" cy="75" r="2.5" fill="#4ADE80"/>
+    <g font-family="Consolas, Menlo, monospace" font-size="8.5">
+      <text x="168" y="96" fill="#4ADE80">you@pc</text><text x="202" y="96" fill="#C084FC">~/sales-report</text>
+      <text x="168" y="110" fill="#FFFFFF">$ git --version</text>
+      <text x="168" y="123" fill="#94A3B8">git version 2.x</text>
+      <text x="168" y="140" fill="#FFFFFF">$</text>
+    </g>
+    <rect x="177" y="132" width="6" height="10" fill="#4ADE80"/>
+    <text x="16" y="182" font-size="12.5" fill="#374151">Right-click your folder →</text>
+    <text x="16" y="199" font-size="12.5" fill="#374151"><tspan font-weight="700">Open Git Bash here</tspan>. Type, press Enter.</text>
+    <text x="16" y="225" font-size="12.5" font-style="italic" font-weight="600" fill="#1D4ED8">Black window, friendly inside.</text>
+  </g>
+
+  <!-- ============ 3 WHO YOU ARE ============ -->
+  <g transform="translate(640 96)">
+    <rect width="290" height="50" rx="14" fill="#7C3AED"/><rect y="30" width="290" height="20" fill="#7C3AED"/>
+    <circle cx="22" cy="25" r="13" fill="#FFFFFF"/><text x="22" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#7C3AED">3</text>
+    <text x="42" y="22" font-size="15" font-weight="700" fill="#FFFFFF">Tell Git who you are</text>
+    <text x="42" y="40" font-size="12" fill="#FFFFFF" opacity="0.9">Once, in the terminal</text>
+    <use href="#you" xlink:href="#you" transform="translate(60 166) scale(0.9)"/>
+    <!-- name badge on chest -->
+    <rect x="44" y="100" width="32" height="20" rx="3" fill="#FFFFFF" stroke="#DC2626" stroke-width="1"/>
+    <rect x="44" y="100" width="32" height="7" rx="2" fill="#DC2626"/>
+    <!-- big badge -->
+    <g transform="rotate(-4 190 104)">
+      <rect x="112" y="64" width="160" height="82" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="2"/>
+      <path d="M112 72 a8 8 0 0 1 8 -8 h144 a8 8 0 0 1 8 8 v18 h-160z" fill="#DC2626"/>
+      <text x="192" y="81" text-anchor="middle" font-size="11" font-weight="800" fill="#FFFFFF">HELLO</text>
+      <text x="192" y="89" text-anchor="middle" font-size="6.5" fill="#FFFFFF">my name is</text>
+      <text x="192" y="114" text-anchor="middle" font-size="15" font-weight="700" font-style="italic" fill="#1F2937">Your Name</text>
+      <text x="192" y="132" text-anchor="middle" font-size="9.5" fill="#6B7280">you@company.com</text>
+    </g>
+    <path d="M82 104 L110 104" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <text x="16" y="182" font-size="12.5" fill="#374151"><tspan font-family="Consolas, Menlo, monospace" font-size="11.5">git config --global user.name</tspan></text>
+    <text x="16" y="199" font-size="12.5" fill="#374151">…and <tspan font-family="Consolas, Menlo, monospace" font-size="11.5">user.email</tspan>. On every commit.</text>
+    <text x="16" y="225" font-size="12.5" font-style="italic" font-weight="600" fill="#6D28D9">A name badge on every envelope.</text>
+  </g>
+
+  <!-- ============ 4 GIT INIT ============ -->
+  <g transform="translate(30 356)">
+    <rect width="290" height="50" rx="14" fill="#0D9488"/><rect y="30" width="290" height="20" fill="#0D9488"/>
+    <circle cx="22" cy="25" r="13" fill="#FFFFFF"/><text x="22" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#0D9488">4</text>
+    <text x="42" y="22" font-size="15" font-weight="700" fill="#FFFFFF">Start the repository</text>
+    <text x="42" y="40" font-size="12" fill="#FFFFFF" opacity="0.9">A folder becomes a repository</text>
+    <path d="M20 82 h28 l6 8 h40 v58 h-74z" fill="#FCD34D"/>
+    <path d="M20 96 h74 v52 h-74z" fill="#FBBF24"/>
+    <text x="57" y="128" text-anchor="middle" font-size="9" font-weight="700" fill="#78350F">sales-report</text>
+    <line x1="100" y1="116" x2="150" y2="116" stroke="#374151" stroke-width="2.2" marker-end="url(#m-dark)"/>
+    <rect x="96" y="128" width="60" height="24" rx="6" fill="#1E293B"/>
+    <text x="126" y="144" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git init</text>
+    <path d="M160 70 h34 l7 9 h70 v80 h-111z" fill="#FCD34D"/>
+    <path d="M160 86 h111 v73 h-111z" fill="#FBBF24"/>
+    <rect x="196" y="96" width="44" height="56" rx="3" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.2"/>
+    <rect x="200" y="100" width="36" height="14" rx="2" fill="#F8FAFC" stroke="#94A3B8"/>
+    <rect x="200" y="117" width="36" height="14" rx="2" fill="#F8FAFC" stroke="#94A3B8"/>
+    <rect x="200" y="134" width="36" height="14" rx="2" fill="#F8FAFC" stroke="#94A3B8"/>
+    <use href="#env" xlink:href="#env" transform="translate(208 102) scale(0.5)"/>
+    <rect x="198" y="74" width="40" height="14" rx="3" fill="#1F2937"/>
+    <text x="218" y="84" text-anchor="middle" font-size="8.5" font-weight="700" fill="#FFFFFF">.git</text>
+    <text x="16" y="182" font-size="12.5" fill="#374151">In Git Bash, inside the folder, type</text>
+    <text x="16" y="199" font-size="12.5" fill="#374151"><tspan font-family="Consolas, Menlo, monospace" font-weight="700">git init</tspan>. A hidden <tspan font-weight="700">.git</tspan> cabinet appears.</text>
+    <text x="16" y="225" font-size="12.5" font-style="italic" font-weight="600" fill="#0F766E">Delete .git = delete your history.</text>
+  </g>
+
+  <!-- ============ 5 FIRST COMMIT ============ -->
+  <g transform="translate(335 356)">
+    <rect width="290" height="50" rx="14" fill="#16A34A"/><rect y="30" width="290" height="20" fill="#16A34A"/>
+    <circle cx="22" cy="25" r="13" fill="#FFFFFF"/><text x="22" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#16A34A">5</text>
+    <text x="42" y="22" font-size="15" font-weight="700" fill="#FFFFFF">First commit</text>
+    <text x="42" y="40" font-size="12" fill="#FFFFFF" opacity="0.9">Your first snapshot, with a note</text>
+    <g transform="rotate(-5 90 112)">
+      <rect x="22" y="76" width="130" height="74" rx="4" fill="#FFFFFF" stroke="#16A34A" stroke-width="2"/>
+      <path d="M22 78 L87 116 L152 78" fill="none" stroke="#16A34A" stroke-width="1.8"/>
+      <circle cx="87" cy="116" r="10" fill="#DC2626"/>
+      <circle cx="87" cy="116" r="5" fill="none" stroke="#FCA5A5" stroke-width="1.5"/>
+      <rect x="32" y="126" width="110" height="18" rx="3" fill="#FEF9C3"/>
+      <text x="87" y="139" text-anchor="middle" font-size="9.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#14532D">ADD first version</text>
+    </g>
+    <rect x="160" y="72" width="120" height="80" rx="6" fill="#1E293B"/>
+    <g font-family="Consolas, Menlo, monospace" font-size="8.5">
+      <text x="167" y="89" fill="#94A3B8"># into the envelope</text>
+      <text x="167" y="102" fill="#FFFFFF">$ git add -A</text>
+      <text x="167" y="120" fill="#94A3B8"># seal it with a note</text>
+      <text x="167" y="133" fill="#FFFFFF">$ git commit -m</text>
+      <text x="175" y="145" fill="#FDE68A">"ADD first version"</text>
+    </g>
+    <text x="16" y="182" font-size="12.5" fill="#374151">Put all changes in the envelope,</text>
+    <text x="16" y="199" font-size="12.5" fill="#374151">then seal it with a short note.</text>
+    <text x="16" y="225" font-size="12.5" font-style="italic" font-weight="600" fill="#15803D">Future you says thank you.</text>
+  </g>
+
+  <!-- ============ 6 GITIGNORE BOUNCER ============ -->
+  <g transform="translate(640 356)">
+    <rect width="290" height="50" rx="14" fill="#1F2937"/><rect y="30" width="290" height="20" fill="#1F2937"/>
+    <circle cx="22" cy="25" r="13" fill="#FFFFFF"/><text x="22" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#1F2937">6</text>
+    <text x="42" y="22" font-size="15" font-weight="700" fill="#FFFFFF">.gitignore, the bouncer</text>
+    <text x="42" y="40" font-size="12" fill="#FFFFFF" opacity="0.9">Files Git should skip</text>
+    <!-- door -->
+    <rect x="18" y="64" width="64" height="104" rx="4" fill="#475569"/>
+    <rect x="24" y="70" width="52" height="98" rx="2" fill="#0D9488"/>
+    <circle cx="68" cy="120" r="3" fill="#FBBF24"/>
+    <text x="50" y="92" text-anchor="middle" font-size="8.5" font-weight="700" fill="#FFFFFF">.git</text>
+    <!-- bouncer -->
+    <rect x="100" y="166" width="0" height="0"/>
+    <g transform="translate(112 168) scale(0.85)">
+      <rect x="-15" y="-44" width="11" height="40" rx="4" fill="#111827"/>
+      <rect x="4" y="-44" width="11" height="40" rx="4" fill="#111827"/>
+      <rect x="-24" y="-92" width="48" height="52" rx="14" fill="#111827"/>
+      <circle cx="0" cy="-106" r="15" fill="#A16207"/>
+      <rect x="-12" y="-110" width="24" height="6" rx="3" fill="#111827"/>
+      <path d="M-5 -97 h10" stroke="#111827" stroke-width="2" stroke-linecap="round"/>
+      <text x="0" y="-62" text-anchor="middle" font-size="8" font-weight="800" fill="#FBBF24">STAFF</text>
+    </g>
+    <!-- clipboard -->
+    <rect x="128" y="104" width="30" height="38" rx="3" fill="#FFFFFF" stroke="#475569" stroke-width="1.5"/>
+    <rect x="137" y="100" width="12" height="6" rx="2" fill="#475569"/>
+    <path d="M133 114 h18 M133 121 h14 M133 128 h18 M133 135 h12" stroke="#94A3B8" stroke-width="2"/>
+    <!-- queue -->
+    <g font-size="9.5" font-weight="700">
+      <rect x="174" y="66" width="98" height="20" rx="4" fill="#DCFCE7" stroke="#16A34A"/>
+      <text x="223" y="80" text-anchor="middle" fill="#15803D">✓ report.md</text>
+      <rect x="174" y="92" width="98" height="20" rx="4" fill="#FEE2E2" stroke="#DC2626"/>
+      <text x="223" y="106" text-anchor="middle" fill="#B91C1C">✕ ~$report.docx</text>
+      <rect x="174" y="118" width="98" height="20" rx="4" fill="#FEE2E2" stroke="#DC2626"/>
+      <text x="223" y="132" text-anchor="middle" fill="#B91C1C">✕ cache.abf</text>
+      <rect x="174" y="144" width="98" height="20" rx="4" fill="#FEE2E2" stroke="#DC2626"/>
+      <text x="223" y="158" text-anchor="middle" fill="#B91C1C">✕ passwords.env</text>
+    </g>
+    <path d="M170 76 Q120 70 86 84" fill="none" stroke="#16A34A" stroke-width="1.8" stroke-dasharray="4 3"/>
+    <text x="16" y="182" font-size="12.5" fill="#374151">Skip lock files, caches and secrets.</text>
+    <text x="16" y="199" font-size="12.5" fill="#374151">Commit the .gitignore too.</text>
+    <text x="16" y="225" font-size="12.5" font-style="italic" font-weight="600" fill="#1F2937">Not on the list? Not getting in.</text>
+  </g>
+
+  <!-- ============ every day ============ -->
+  <g filter="url(#s)"><rect x="30" y="616" width="900" height="56" rx="16" fill="#FFFFFF" stroke="#E5E7EB"/></g>
+  <text x="54" y="649" font-size="14" font-weight="700" fill="#1F2937">Then, every day:</text>
+  <g font-size="12" font-weight="700" text-anchor="middle">
+    <rect x="182" y="630" width="168" height="28" rx="14" fill="#DBEAFE"/><text x="266" y="649" fill="#1D4ED8">✎ Edit in any program</text>
+    <rect x="374" y="630" width="166" height="28" rx="14" fill="#FEF9C3"/><text x="457" y="649" fill="#854D0E" font-family="Consolas, Menlo, monospace">git status · git diff</text>
+    <rect x="564" y="630" width="200" height="28" rx="14" fill="#DCFCE7"/><text x="664" y="649" fill="#15803D" font-family="Consolas, Menlo, monospace">git add -A · git commit</text>
+  </g>
+  <g stroke="#9CA3AF" stroke-width="2" marker-end="url(#m-grey)">
+    <line x1="352" y1="644" x2="370" y2="644"/>
+    <line x1="542" y1="644" x2="560" y2="644"/>
+    <line x1="766" y1="644" x2="784" y2="644"/>
+  </g>
+  <text x="792" y="649" font-size="12.5" font-style="italic" fill="#6B7280">…and repeat.</text>
+</svg>

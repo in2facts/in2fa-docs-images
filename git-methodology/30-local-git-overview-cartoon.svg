@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 548" width="960" height="548" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Git on your own PC: a one-person office</title>
+  <desc id="d">Local Git as a one-person office. On the left, your office: you at your desk, which is the workspace; git add puts papers in an envelope, the staging area; commit seals the envelope and files it in your own filing cabinet, the local repository, labelled .git, hidden, do not delete. Through the window, the GitHub cloud is far away with a sign saying not needed today. You say "Everything stays right here." On the right, what's not included and the workaround: online backup, because laptop gone means history gone, so make a backup (step 9); team sharing, because colleagues can't sync, so use a network drive (step 10); pull requests, because nobody checks your work, so review yourself (step 6). Bottom: no account, no cloud, no internet needed; moving to GitHub later, git push takes the whole history along.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="m-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#374151"/></marker>
+    <g id="you">
+      <rect x="-13" y="-44" width="9" height="40" rx="4" fill="#1E3A8A"/>
+      <rect x="3" y="-44" width="9" height="40" rx="4" fill="#1E3A8A"/>
+      <ellipse cx="-9" cy="-3" rx="9" ry="4" fill="#1F2937"/>
+      <ellipse cx="8" cy="-3" rx="9" ry="4" fill="#1F2937"/>
+      <rect x="-18" y="-90" width="36" height="50" rx="12" fill="#7C3AED"/>
+      <circle cx="0" cy="-104" r="15" fill="#FCD9B6"/>
+      <path d="M-15 -106 a15 15 0 0 1 29 -5 q-9 -5 -17 -2 q-7 3 -12 7z" fill="#3F2A1D"/>
+      <circle cx="-1" cy="-104" r="1.8" fill="#1F2937"/>
+      <circle cx="8" cy="-104" r="1.8" fill="#1F2937"/>
+      <path d="M-1 -97 q5 4 10 0" fill="none" stroke="#1F2937" stroke-width="1.6" stroke-linecap="round"/>
+    </g>
+    <g id="env">
+      <rect x="0" y="0" width="20" height="14" rx="2" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.3"/>
+      <path d="M0 1 L10 8 L20 1" fill="none" stroke="#0D9488" stroke-width="1.3"/>
+      <circle cx="10" cy="8" r="2.6" fill="#DC2626"/>
+    </g>
+  </defs>
+  <rect width="960" height="548" rx="18" fill="#F8FAFC"/>
+
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">Git on your own PC: a one-person office</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">Your desk, an envelope and your own filing cabinet. No courier, no shared archive.</text>
+
+  <!-- ============ the office ============ -->
+  <g filter="url(#s)"><rect x="30" y="96" width="572" height="338" rx="14" fill="#FFFFFF" stroke="#E5E7EB"/></g>
+  <rect x="30" y="96" width="572" height="44" rx="14" fill="#2563EB"/><rect x="30" y="120" width="572" height="20" fill="#2563EB"/>
+  <text x="50" y="124" font-size="16" font-weight="700" fill="#FFFFFF">Your office = your PC</text>
+  <text x="582" y="124" text-anchor="end" font-size="12" fill="#FFFFFF" opacity="0.9">everything stays inside</text>
+  <!-- wall and floor -->
+  <rect x="31" y="140" width="570" height="236" fill="#F8FAFC"/>
+  <line x1="44" y1="376" x2="588" y2="376" stroke="#E2E8F0" stroke-width="2"/>
+  <!-- window with far-away GitHub -->
+  <rect x="300" y="152" width="120" height="78" rx="4" fill="#E0F2FE" stroke="#94A3B8" stroke-width="3"/>
+  <line x1="360" y1="152" x2="360" y2="230" stroke="#94A3B8" stroke-width="2"/>
+  <line x1="300" y1="191" x2="420" y2="191" stroke="#94A3B8" stroke-width="2"/>
+  <g fill="#FFFFFF">
+    <circle cx="378" cy="176" r="8"/><circle cx="390" cy="171" r="10"/><circle cx="402" cy="177" r="7"/>
+    <rect x="372" y="176" width="36" height="9" rx="4.5"/>
+  </g>
+  <text x="390" y="183" text-anchor="middle" font-size="6.5" font-weight="700" fill="#64748B">GitHub</text>
+  <g transform="rotate(-6 360 238)">
+    <rect x="310" y="228" width="100" height="20" rx="3" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.2"/>
+    <text x="360" y="242" text-anchor="middle" font-size="10" font-weight="700" fill="#92400E">not needed today</text>
+  </g>
+  <!-- bubble -->
+  <rect x="140" y="152" width="140" height="26" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <path d="M152 177 L146 190 L166 177" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" stroke-linejoin="round"/>
+  <rect x="150" y="174" width="18" height="4" fill="#FFFFFF"/>
+  <text x="210" y="169" text-anchor="middle" font-size="11.5" font-weight="600" fill="#1F2937">Everything stays right here.</text>
+  <!-- you behind desk -->
+  <use href="#you" xlink:href="#you" transform="translate(120 376) scale(1)"/>
+  <path d="M134 296 q16 10 26 22" fill="none" stroke="#7C3AED" stroke-width="8" stroke-linecap="round"/>
+  <!-- papers on desk -->
+  <g transform="rotate(-10 176 306)">
+    <rect x="162" y="292" width="26" height="28" rx="2" fill="#FFFFFF" stroke="#93C5FD" stroke-width="1.5"/>
+    <rect x="166" y="299" width="16" height="3" fill="#2563EB"/><rect x="166" y="306" width="12" height="3" fill="#94A3B8"/>
+  </g>
+  <g transform="rotate(8 212 306)">
+    <rect x="198" y="292" width="26" height="28" rx="2" fill="#FFFFFF" stroke="#93C5FD" stroke-width="1.5"/>
+    <rect x="202" y="299" width="16" height="3" fill="#16A34A"/><rect x="202" y="306" width="12" height="3" fill="#94A3B8"/>
+  </g>
+  <rect x="232" y="302" width="14" height="16" rx="3" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+  <rect x="60" y="318" width="200" height="10" rx="3" fill="#A16207"/>
+  <rect x="70" y="328" width="9" height="48" fill="#854D0E"/>
+  <rect x="242" y="328" width="9" height="48" fill="#854D0E"/>
+  <!-- envelope -->
+  <path d="M300 300 L335 276 L370 300z" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5" stroke-linejoin="round"/>
+  <rect x="300" y="300" width="70" height="46" rx="3" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+  <rect x="314" y="284" width="22" height="30" rx="2" fill="#FFFFFF" stroke="#C4B5FD" transform="rotate(-6 325 299)"/>
+  <rect x="334" y="282" width="22" height="30" rx="2" fill="#FFFFFF" stroke="#C4B5FD" transform="rotate(5 345 297)"/>
+  <path d="M300 312 L335 332 L370 312 V346 H300z" fill="#DDD6FE" stroke="#7C3AED" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- filing cabinet -->
+  <rect x="444" y="246" width="110" height="130" rx="6" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.5"/>
+  <g fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.2">
+    <rect x="452" y="254" width="94" height="34" rx="3"/>
+    <rect x="452" y="294" width="94" height="34" rx="3"/>
+    <rect x="452" y="334" width="94" height="34" rx="3"/>
+  </g>
+  <use href="#env" xlink:href="#env" x="460" y="264"/>
+  <use href="#env" xlink:href="#env" x="460" y="304"/>
+  <use href="#env" xlink:href="#env" x="460" y="344"/>
+  <g font-size="10" font-weight="700" fill="#134E4A">
+    <text x="488" y="275">Mon</text><text x="488" y="315">Tue</text><text x="488" y="355">Wed</text>
+  </g>
+  <rect x="460" y="226" width="78" height="20" rx="4" fill="#1F2937"/>
+  <text x="499" y="240" text-anchor="middle" font-size="10.5" font-weight="700" fill="#FFFFFF">.git (hidden)</text>
+  <g transform="rotate(8 560 300)">
+    <rect x="530" y="286" width="58" height="30" rx="2" fill="#FDE68A"/>
+    <text x="559" y="299" text-anchor="middle" font-size="8.5" font-weight="800" fill="#B91C1C">DO NOT</text>
+    <text x="559" y="310" text-anchor="middle" font-size="8.5" font-weight="800" fill="#B91C1C">DELETE</text>
+  </g>
+  <!-- arrows -->
+  <g font-family="Consolas, Menlo, monospace" font-size="11" font-weight="700" text-anchor="middle" fill="#1F2937">
+    <text x="280" y="270">add</text>
+    <text x="406" y="270">commit</text>
+  </g>
+  <line x1="262" y1="280" x2="296" y2="290" stroke="#374151" stroke-width="2.2" marker-end="url(#m-dark)"/>
+  <line x1="374" y1="290" x2="438" y2="280" stroke="#374151" stroke-width="2.2" marker-end="url(#m-dark)"/>
+  <!-- labels -->
+  <g font-size="11.5" text-anchor="middle">
+    <rect x="70" y="390" width="150" height="26" rx="13" fill="#DBEAFE"/>
+    <text x="145" y="407" fill="#1E3A8A"><tspan font-weight="700">Workspace</tspan> = your desk</text>
+    <rect x="252" y="390" width="168" height="26" rx="13" fill="#EDE9FE"/>
+    <text x="336" y="407" fill="#5B21B6"><tspan font-weight="700">Staging</tspan> = the envelope</text>
+    <rect x="432" y="390" width="156" height="26" rx="13" fill="#CCFBF1"/>
+    <text x="510" y="407" fill="#134E4A"><tspan font-weight="700">Repo</tspan> = your cabinet</text>
+  </g>
+
+  <!-- ============ not included ============ -->
+  <g filter="url(#s)"><rect x="618" y="96" width="312" height="338" rx="14" fill="#FFFFFF" stroke="#E5E7EB"/></g>
+  <rect x="618" y="96" width="312" height="44" rx="14" fill="#1F2937"/><rect x="618" y="120" width="312" height="20" fill="#1F2937"/>
+  <text x="638" y="124" font-size="16" font-weight="700" fill="#FFFFFF">Not included</text>
+  <text x="910" y="124" text-anchor="end" font-size="12" fill="#FFFFFF" opacity="0.9">and the workaround</text>
+
+  <!-- backup -->
+  <circle cx="660" cy="182" r="24" fill="#FEE2E2"/>
+  <g fill="#FFFFFF" stroke="#DC2626" stroke-width="1.4">
+    <path d="M648 190 a7 7 0 0 1 2 -13 a9 9 0 0 1 17 -2 a6 6 0 0 1 4 11 z"/>
+  </g>
+  <path d="M652 194 l16 -16 M668 194 l-16 -16" stroke="#DC2626" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="696" y="176" font-size="14" font-weight="700" fill="#1F2937">Online backup</text>
+  <text x="696" y="194" font-size="12" fill="#4B5563">Laptop gone = history gone.</text>
+  <text x="696" y="212" font-size="12" font-weight="700" fill="#2563EB">→ Make a backup (step 9)</text>
+
+  <line x1="638" y1="234" x2="910" y2="234" stroke="#F1F5F9" stroke-width="2"/>
+  <!-- sharing -->
+  <circle cx="660" cy="276" r="24" fill="#FEE2E2"/>
+  <circle cx="653" cy="270" r="6" fill="#E8B98F"/><path d="M644 288 a9 9 0 0 1 18 0z" fill="#16A34A"/>
+  <circle cx="668" cy="270" r="6" fill="#8D5524"/><path d="M659 288 a9 9 0 0 1 18 0z" fill="#2563EB"/>
+  <path d="M650 286 l20 -20 M670 286 l-20 -20" stroke="#DC2626" stroke-width="2.4" stroke-linecap="round" opacity="0.85"/>
+  <text x="696" y="270" font-size="14" font-weight="700" fill="#1F2937">Team sharing</text>
+  <text x="696" y="288" font-size="12" fill="#4B5563">Colleagues can't sync your work.</text>
+  <text x="696" y="306" font-size="12" font-weight="700" fill="#2563EB">→ Use a network drive (step 10)</text>
+
+  <line x1="638" y1="328" x2="910" y2="328" stroke="#F1F5F9" stroke-width="2"/>
+  <!-- review -->
+  <circle cx="660" cy="370" r="24" fill="#FEE2E2"/>
+  <circle cx="656" cy="366" r="8" fill="#FFFFFF" stroke="#475569" stroke-width="2.4"/>
+  <line x1="662" y1="372" x2="670" y2="380" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+  <path d="M648 380 l20 -20 M668 380 l-20 -20" stroke="#DC2626" stroke-width="2.4" stroke-linecap="round" opacity="0.85"/>
+  <text x="696" y="364" font-size="14" font-weight="700" fill="#1F2937">Pull requests</text>
+  <text x="696" y="382" font-size="12" fill="#4B5563">Nobody checks your work.</text>
+  <text x="696" y="400" font-size="12" font-weight="700" fill="#2563EB">→ Review yourself (step 6)</text>
+
+  <!-- ============ bottom ============ -->
+  <g filter="url(#s)"><rect x="30" y="452" width="900" height="72" rx="16" fill="#FFFFFF" stroke="#E5E7EB"/></g>
+  <g transform="translate(54 470)">
+    <rect x="0" y="4" width="36" height="24" rx="3" fill="#1E293B"/>
+    <rect x="3" y="7" width="30" height="18" rx="1" fill="#DBEAFE"/>
+    <rect x="-4" y="28" width="44" height="4" rx="2" fill="#475569"/>
+    <circle cx="18" cy="16" r="5" fill="#16A34A"/>
+    <path d="M15.5 16 l2 2 l3.5 -4" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+  <text x="112" y="483" font-size="15" font-weight="700" fill="#1F2937">No account, no cloud, no internet needed.</text>
+  <text x="112" y="506" font-size="13" fill="#4B5563">Moving to GitHub later? <tspan font-weight="700" fill="#1F2937">git push</tspan> takes the whole history along. Nothing is wasted.</text>
+</svg>

@@ -1,0 +1,399 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 990" width="960" height="990" role="img" aria-labelledby="t d" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title id="t">Local Git cheat sheet, illustrated</title>
+  <desc id="d">Twenty-four illustrated cards, colour-coded by group. Start and check: git init turns a folder into a repository with a hidden .git; git status shows what changed; git diff shows removed lines in red and added lines in green, press q to leave. Commit: git add -A puts all changes in the envelope; git commit -m with a note seals it and files it in the cabinet. Branches: git switch -c experiment/x starts a side track; git switch main moves you back to main; git branch lists the branches, with a star where you are; git merge --no-edit experiment/x brings a branch into main; git branch -d experiment/x deletes a merged branch. History: git log --oneline --graph --all shows the whole history; git log --oneline -- report.md shows a file's history; git restore --source with an id brings an old version of a file back. Undo: git restore report.md throws away edits, with no undo; git restore --staged report.md takes a file out of the envelope; git reset --soft HEAD~1 unseals the last commit and keeps your edits; git revert --no-edit with an id adds a commit that cancels an old one. Backup: git bundle create x.bundle --all packs everything into one file; git push --all backup tops up the spare cabinet. Windows: gitk --all draws the history; git gui commits with buttons. Tips: the daily loop is edit, status, add, commit; survival keys are q to leave and right-click to paste; golden rule: no reset --hard and no force push.</desc>
+  <defs>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="ma" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#475569"/></marker>
+    <g id="env">
+      <rect x="0" y="0" width="30" height="21" rx="2" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.5"/>
+      <path d="M0 1 L15 12 L30 1" fill="none" stroke="#0D9488" stroke-width="1.5"/>
+      <circle cx="15" cy="12" r="3.4" fill="#DC2626"/>
+    </g>
+    <g id="envOpen">
+      <path d="M0 10 L15 0 L30 10z" fill="#CCFBF1" stroke="#0D9488" stroke-width="1.4" stroke-linejoin="round"/>
+      <rect x="0" y="10" width="30" height="21" rx="2" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.4"/>
+      <path d="M0 15 L15 24 L30 15" fill="none" stroke="#0D9488" stroke-width="1.2"/>
+    </g>
+    <g id="doc">
+      <path d="M0 0 h14 l6 6 v22 h-20z" fill="#FFFFFF" stroke="#64748B" stroke-width="1.3"/>
+      <path d="M14 0 v6 h6" fill="none" stroke="#64748B" stroke-width="1.3"/>
+      <path d="M4 12 h12 M4 17 h10 M4 22 h12" stroke="#94A3B8" stroke-width="1.6"/>
+    </g>
+    <g id="folder">
+      <path d="M0 0 h13 l4 5 h19 v27 h-36z" fill="#FCD34D"/>
+      <path d="M0 8 h36 v24 h-36z" fill="#FBBF24"/>
+    </g>
+    <g id="cab">
+      <rect x="0" y="0" width="28" height="38" rx="3" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.2"/>
+      <rect x="3" y="3" width="22" height="9" rx="1.5" fill="#F8FAFC" stroke="#94A3B8" stroke-width="0.8"/>
+      <rect x="3" y="14.5" width="22" height="9" rx="1.5" fill="#F8FAFC" stroke="#94A3B8" stroke-width="0.8"/>
+      <rect x="3" y="26" width="22" height="9" rx="1.5" fill="#F8FAFC" stroke="#94A3B8" stroke-width="0.8"/>
+    </g>
+    <g id="bin">
+      <path d="M0 6 h26 l-3 26 h-20z" fill="#64748B"/>
+      <rect x="-3" y="1" width="32" height="6" rx="2" fill="#475569"/>
+      <path d="M8 11 v17 M13 11 v17 M18 11 v17" stroke="#94A3B8" stroke-width="1.5"/>
+    </g>
+    <g id="card">
+      <rect width="216" height="128" rx="12" fill="#FFFFFF" stroke="#E5E7EB"/>
+    </g>
+  </defs>
+  <rect width="960" height="990" rx="18" fill="#F8FAFC"/>
+
+  <text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">Local Git cheat sheet, illustrated</text>
+  <text x="480" y="72" text-anchor="middle" font-size="15" fill="#6B7280">Every command from this guide, in one picture. Copy them from the table below it.</text>
+
+  <!-- legend -->
+  <g font-size="11.5" font-weight="700" text-anchor="middle" fill="#FFFFFF">
+    <rect x="72" y="94" width="104" height="24" rx="12" fill="#2563EB"/><text x="124" y="110">Start &amp; check</text>
+    <rect x="184" y="94" width="72" height="24" rx="12" fill="#16A34A"/><text x="220" y="110">Commit</text>
+    <rect x="264" y="94" width="82" height="24" rx="12" fill="#7C3AED"/><text x="305" y="110">Branches</text>
+    <rect x="354" y="94" width="72" height="24" rx="12" fill="#0D9488"/><text x="390" y="110">History</text>
+    <rect x="434" y="94" width="64" height="24" rx="12" fill="#EA580C"/><text x="466" y="110">Undo</text>
+    <rect x="506" y="94" width="72" height="24" rx="12" fill="#1F2937"/><text x="542" y="110">Backup</text>
+    <rect x="586" y="94" width="82" height="24" rx="12" fill="#DB2777"/><text x="627" y="110">Windows</text>
+    <rect x="676" y="94" width="64" height="24" rx="12" fill="#64748B"/><text x="708" y="110">Tips</text>
+  </g>
+  <text x="752" y="110" font-size="11.5" fill="#6B7280">· q = leave long lists</text>
+
+  <g filter="url(#s)">
+    <use href="#card" x="30" y="140"/><use href="#card" x="258" y="140"/><use href="#card" x="486" y="140"/><use href="#card" x="714" y="140"/>
+    <use href="#card" x="30" y="280"/><use href="#card" x="258" y="280"/><use href="#card" x="486" y="280"/><use href="#card" x="714" y="280"/>
+    <use href="#card" x="30" y="420"/><use href="#card" x="258" y="420"/><use href="#card" x="486" y="420"/><use href="#card" x="714" y="420"/>
+    <use href="#card" x="30" y="560"/><use href="#card" x="258" y="560"/><use href="#card" x="486" y="560"/><use href="#card" x="714" y="560"/>
+    <use href="#card" x="30" y="700"/><use href="#card" x="258" y="700"/><use href="#card" x="486" y="700"/><use href="#card" x="714" y="700"/>
+    <use href="#card" x="30" y="840"/><use href="#card" x="258" y="840"/><use href="#card" x="486" y="840"/><use href="#card" x="714" y="840"/>
+  </g>
+
+  <!-- ===== ROW 1 ===== -->
+  <!-- 1 init -->
+  <g transform="translate(30 140)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#2563EB"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Start tracking a folder</text>
+    <use href="#folder" x="40" y="44"/>
+    <line x1="84" y1="60" x2="122" y2="60" stroke="#475569" stroke-width="2" marker-end="url(#ma)"/>
+    <use href="#folder" x="132" y="44"/>
+    <rect x="140" y="38" width="28" height="12" rx="3" fill="#1F2937"/>
+    <text x="154" y="47" text-anchor="middle" font-size="8" font-weight="700" fill="#FFFFFF">.git</text>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git init</text>
+  </g>
+  <!-- 2 status -->
+  <g transform="translate(258 140)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#2563EB"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Where am I? What changed?</text>
+    <rect x="44" y="38" width="98" height="46" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+    <circle cx="54" cy="51" r="3.5" fill="#DC2626"/><rect x="62" y="49" width="56" height="4" rx="2" fill="#FCA5A5"/>
+    <circle cx="54" cy="64" r="3.5" fill="#DC2626"/><rect x="62" y="62" width="44" height="4" rx="2" fill="#FCA5A5"/>
+    <circle cx="54" cy="77" r="3.5" fill="#16A34A"/><rect x="62" y="75" width="50" height="4" rx="2" fill="#86EFAC"/>
+    <circle cx="152" cy="58" r="13" fill="#DBEAFE" fill-opacity="0.6" stroke="#475569" stroke-width="3"/>
+    <line x1="161" y1="68" x2="172" y2="80" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git status</text>
+  </g>
+  <!-- 3 diff -->
+  <g transform="translate(486 140)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#2563EB"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">See the changed lines</text>
+    <rect x="40" y="38" width="136" height="46" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+    <rect x="44" y="44" width="128" height="15" rx="2" fill="#FEE2E2"/>
+    <text x="50" y="55" font-size="9.5" font-family="Consolas, Menlo, monospace" fill="#B91C1C">- Revenue: 1.2 M</text>
+    <rect x="44" y="63" width="128" height="15" rx="2" fill="#DCFCE7"/>
+    <text x="50" y="74" font-size="9.5" font-family="Consolas, Menlo, monospace" fill="#15803D">+ Revenue: 1.35 M</text>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git diff <tspan fill="#94A3B8" font-weight="400">· q to leave</tspan></text>
+  </g>
+  <!-- 4 add -->
+  <g transform="translate(714 140)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#16A34A"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">All changes in the envelope</text>
+    <g transform="rotate(-14 70 50)"><use href="#doc" x="60" y="36"/></g>
+    <g transform="rotate(12 146 50)"><use href="#doc" x="136" y="36"/></g>
+    <path d="M84 52 l14 10 M134 52 l-14 10" stroke="#16A34A" stroke-width="2" stroke-linecap="round" marker-end="url(#ma)"/>
+    <use href="#envOpen" transform="translate(92 56) scale(1.1)"/>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git add -A</text>
+  </g>
+
+  <!-- ===== ROW 2 ===== -->
+  <!-- 5 commit -->
+  <g transform="translate(30 280)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#16A34A"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Seal it with a note</text>
+    <use href="#env" transform="translate(36 42) scale(1.4)"/>
+    <rect x="34" y="74" width="50" height="12" rx="2" fill="#FEF9C3"/>
+    <text x="59" y="83" text-anchor="middle" font-size="7.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#14532D">UPDATE…</text>
+    <line x1="96" y1="60" x2="134" y2="60" stroke="#475569" stroke-width="2" marker-end="url(#ma)"/>
+    <use href="#cab" x="144" y="40"/>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git commit -m "UPDATE …"</text>
+  </g>
+  <!-- 6 switch -c -->
+  <g transform="translate(258 280)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#7C3AED"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Start a side track</text>
+    <line x1="24" y1="50" x2="192" y2="50" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="44" cy="50" r="5" fill="#2563EB" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="80" cy="50" r="5" fill="#2563EB" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M80 50 C100 50 100 76 124 76 H150" fill="none" stroke="#7C3AED" stroke-width="4" stroke-linecap="round" stroke-dasharray="7 5"/>
+    <path d="M152 68 h44 l5 8 l-5 8 h-44z" fill="#7C3AED"/>
+    <text x="176" y="80" text-anchor="middle" font-size="8" font-weight="700" fill="#FFFFFF">new!</text>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git switch -c experiment/x</text>
+  </g>
+  <!-- 7 switch main -->
+  <g transform="translate(486 280)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#7C3AED"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Go back to main</text>
+    <path d="M48 38 h50 l6 9 l-6 9 h-50z" fill="#2563EB"/>
+    <text x="73" y="51" text-anchor="middle" font-size="9.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#FFFFFF">main</text>
+    <path d="M48 64 h86 l6 9 l-6 9 h-86z" fill="#C4B5FD"/>
+    <text x="91" y="77" text-anchor="middle" font-size="9.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#5B21B6">experiment/x</text>
+    <path d="M150 73 C176 73 176 47 116 47" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#ma)"/>
+    <path d="M168 34 l2.5 5 l5.5 0.8 l-4 3.9 l1 5.5 l-5 -2.6 l-5 2.6 l1 -5.5 l-4 -3.9 l5.5 -0.8z" fill="#FBBF24"/>
+    <text x="180" y="62" font-size="9" font-weight="700" fill="#475569">you</text>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git switch main</text>
+  </g>
+  <!-- 8 branch list -->
+  <g transform="translate(714 280)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#7C3AED"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">List branches</text>
+    <rect x="40" y="38" width="136" height="48" rx="5" fill="#1E293B"/>
+    <text x="50" y="57" font-size="10" font-family="Consolas, Menlo, monospace" fill="#4ADE80">* main</text>
+    <text x="50" y="74" font-size="10" font-family="Consolas, Menlo, monospace" fill="#E2E8F0">  experiment/x</text>
+    <text x="150" y="57" font-size="9" font-style="italic" fill="#FDE68A">← you</text>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git branch</text>
+  </g>
+
+  <!-- ===== ROW 3 ===== -->
+  <!-- 9 merge -->
+  <g transform="translate(30 420)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#7C3AED"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Bring a branch into main</text>
+    <line x1="24" y1="48" x2="192" y2="48" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+    <path d="M44 48 C64 48 64 76 84 76 H118 C140 76 140 48 160 48" fill="none" stroke="#7C3AED" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="96" cy="76" r="5" fill="#7C3AED" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="162" cy="48" r="10" fill="#16A34A" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M157 48 l3.5 3.5 l6 -6.5" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="9.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git merge --no-edit experiment/x</text>
+  </g>
+  <!-- 10 branch -d -->
+  <g transform="translate(258 420)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#7C3AED"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Delete a merged branch</text>
+    <g transform="rotate(-8 80 60)">
+      <path d="M34 50 h86 l6 9 l-6 9 h-86z" fill="#C4B5FD"/>
+      <text x="77" y="63" text-anchor="middle" font-size="9.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#5B21B6">experiment/x</text>
+    </g>
+    <line x1="132" y1="58" x2="148" y2="62" stroke="#475569" stroke-width="2" marker-end="url(#ma)"/>
+    <use href="#bin" x="156" y="48"/>
+    <text x="108" y="88" text-anchor="middle" font-size="9" font-style="italic" fill="#6B7280">work is safe in main</text>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git branch -d experiment/x</text>
+  </g>
+  <!-- 11 log -->
+  <g transform="translate(486 420)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#0D9488"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">See the history</text>
+    <rect x="28" y="36" width="160" height="52" rx="5" fill="#1E293B"/>
+    <g font-size="9" font-family="Consolas, Menlo, monospace">
+      <text x="36" y="51" fill="#FDE68A">*</text><text x="48" y="51" fill="#FBBF24">3b1bff3</text><text x="96" y="51" fill="#E2E8F0">UPDATE Q3</text>
+      <text x="36" y="65" fill="#FDE68A">*</text><text x="48" y="65" fill="#FBBF24">a91c2d4</text><text x="96" y="65" fill="#E2E8F0">FIX typo</text>
+      <text x="36" y="79" fill="#FDE68A">*</text><text x="48" y="79" fill="#FBBF24">7f7ea0d</text><text x="96" y="79" fill="#E2E8F0">ADD first</text>
+    </g>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="9.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git log --oneline --graph --all</text>
+  </g>
+  <!-- 12 log file -->
+  <g transform="translate(714 420)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#0D9488"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">See a file's history</text>
+    <use href="#doc" transform="translate(44 42) scale(1.4)"/>
+    <text x="58" y="90" text-anchor="middle" font-size="8" fill="#6B7280">report.md</text>
+    <line x1="108" y1="40" x2="108" y2="84" stroke="#0D9488" stroke-width="2"/>
+    <g fill="#0D9488"><circle cx="108" cy="44" r="4"/><circle cx="108" cy="62" r="4"/><circle cx="108" cy="80" r="4"/></g>
+    <g font-size="9" fill="#374151">
+      <text x="118" y="47"><tspan font-weight="700">Wed</tspan> UPDATE</text>
+      <text x="118" y="65"><tspan font-weight="700">Tue</tspan> FIX</text>
+      <text x="118" y="83"><tspan font-weight="700">Mon</tspan> ADD</text>
+    </g>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="9.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git log --oneline -- report.md</text>
+  </g>
+
+  <!-- ===== ROW 4 ===== -->
+  <!-- 13 restore source -->
+  <g transform="translate(30 560)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#0D9488"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Get an old version back</text>
+    <circle cx="74" cy="62" r="20" fill="#CCFBF1" stroke="#0D9488" stroke-width="2"/>
+    <path d="M74 50 v12 l-8 6" fill="none" stroke="#0F766E" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M52 48 a24 24 0 0 1 16 -10" fill="none" stroke="#0D9488" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M48 42 l3 9 l8 -4" fill="none" stroke="#0D9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="102" y1="62" x2="126" y2="62" stroke="#475569" stroke-width="2" marker-end="url(#ma)"/>
+    <use href="#doc" transform="translate(134 40) scale(1.4)"/>
+    <text x="148" y="90" text-anchor="middle" font-size="8" fill="#6B7280">Mon's version</text>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="9" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git restore --source=&lt;id&gt; report.md</text>
+  </g>
+  <!-- 14 restore file -->
+  <g transform="translate(258 560)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#EA580C"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Throw away edits</text>
+    <path d="M60 46 l10 -5 l9 4 l4 9 l-5 9 l-10 3 l-9 -5 l-3 -8z" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.3"/>
+    <path d="M86 52 Q112 36 128 52" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#ma)"/>
+    <use href="#bin" x="134" y="48"/>
+    <rect x="40" y="74" width="66" height="14" rx="7" fill="#FEE2E2"/>
+    <text x="73" y="84.5" text-anchor="middle" font-size="8.5" font-weight="700" fill="#B91C1C">no undo!</text>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git restore report.md</text>
+  </g>
+  <!-- 15 restore staged -->
+  <g transform="translate(486 560)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#EA580C"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Out of the envelope</text>
+    <use href="#envOpen" transform="translate(80 56) scale(1.1)"/>
+    <g transform="rotate(10 128 46)"><use href="#doc" x="118" y="34"/></g>
+    <path d="M110 62 Q114 44 120 40" fill="none" stroke="#EA580C" stroke-width="2" marker-end="url(#ma)"/>
+    <text x="164" y="58" font-size="9" font-style="italic" fill="#6B7280">not yet</text>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="9.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git restore --staged report.md</text>
+  </g>
+  <!-- 16 reset soft -->
+  <g transform="translate(714 560)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#EA580C"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Undo last commit, keep edits</text>
+    <use href="#cab" x="40" y="44"/>
+    <line x1="74" y1="62" x2="98" y2="62" stroke="#475569" stroke-width="2" marker-end="url(#ma)"/>
+    <g transform="translate(106 46) scale(1.3)">
+      <use href="#envOpen"/>
+      <rect x="8" y="4" width="14" height="14" rx="1" fill="#FFFFFF" stroke="#94A3B8"/>
+    </g>
+    <path d="M160 46 l3 -3 l2 4 M166 44 l3 3 l-4 2" stroke="#DC2626" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <text x="170" y="74" font-size="9" font-style="italic" fill="#6B7280">unsealed</text>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git reset --soft HEAD~1</text>
+  </g>
+
+  <!-- ===== ROW 5 ===== -->
+  <!-- 17 revert -->
+  <g transform="translate(30 700)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#EA580C"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Cancel an old commit</text>
+    <use href="#env" transform="translate(34 44) scale(1.3)"/>
+    <text x="54" y="84" text-anchor="middle" font-size="8.5" fill="#374151">UPDATE</text>
+    <text x="96" y="64" text-anchor="middle" font-size="16" font-weight="700" fill="#475569">+</text>
+    <use href="#env" transform="translate(118 44) scale(1.3)"/>
+    <circle cx="164" cy="44" r="9" fill="#EA580C"/>
+    <path d="M168 42 a5 5 0 1 0 0.5 4" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="138" y="84" text-anchor="middle" font-size="8.5" fill="#374151">REVERT</text>
+    <text x="186" y="64" font-size="9" font-style="italic" fill="#6B7280">= 0</text>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git revert --no-edit &lt;id&gt;</text>
+  </g>
+  <!-- 18 bundle -->
+  <g transform="translate(258 700)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#1F2937"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Back up to one file</text>
+    <use href="#cab" x="30" y="42"/>
+    <line x1="64" y1="62" x2="84" y2="62" stroke="#475569" stroke-width="2" marker-end="url(#ma)"/>
+    <path d="M102 46 v-5 a3 3 0 0 1 3 -3 h10 a3 3 0 0 1 3 3 v5" fill="none" stroke="#1E3A8A" stroke-width="2.4"/>
+    <rect x="90" y="46" width="40" height="34" rx="5" fill="#2563EB"/>
+    <text x="110" y="67" text-anchor="middle" font-size="7" font-weight="700" fill="#FFFFFF">.bundle</text>
+    <line x1="136" y1="62" x2="152" y2="62" stroke="#475569" stroke-width="2" marker-end="url(#ma)"/>
+    <rect x="158" y="52" width="26" height="20" rx="3" fill="#475569"/>
+    <rect x="184" y="56" width="7" height="12" fill="#CBD5E1"/>
+    <text x="171" y="66" text-anchor="middle" font-size="8.5" font-weight="700" fill="#FFFFFF">D:</text>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="9.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git bundle create x.bundle --all</text>
+  </g>
+  <!-- 19 push backup -->
+  <g transform="translate(486 700)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#1F2937"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Top up the spare cabinet</text>
+    <use href="#cab" x="40" y="42"/>
+    <path d="M76 56 Q108 34 140 56" fill="none" stroke="#0D9488" stroke-width="2.2" marker-end="url(#ma)"/>
+    <use href="#env" transform="translate(98 50) scale(0.7)"/>
+    <use href="#cab" x="148" y="42"/>
+    <rect x="142" y="80" width="40" height="8" rx="2" fill="#475569"/>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git push --all backup</text>
+  </g>
+  <!-- 20 gitk -->
+  <g transform="translate(714 700)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#DB2777"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">History in a window</text>
+    <rect x="40" y="36" width="136" height="52" rx="5" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+    <rect x="40" y="36" width="136" height="9" rx="4" fill="#E2E8F0"/>
+    <line x1="56" y1="50" x2="56" y2="84" stroke="#2563EB" stroke-width="2.4"/>
+    <path d="M56 78 C70 78 70 64 70 58 V52" fill="none" stroke="#7C3AED" stroke-width="2.4"/>
+    <g><circle cx="56" cy="54" r="3.4" fill="#2563EB"/><circle cx="56" cy="66" r="3.4" fill="#2563EB"/><circle cx="56" cy="80" r="3.4" fill="#2563EB"/><circle cx="70" cy="56" r="3.4" fill="#7C3AED"/></g>
+    <g fill="#94A3B8"><rect x="84" y="52" width="70" height="3"/><rect x="84" y="64" width="56" height="3"/><rect x="84" y="78" width="64" height="3"/></g>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">gitk --all</text>
+  </g>
+
+  <!-- ===== ROW 6 ===== -->
+  <!-- 21 git gui -->
+  <g transform="translate(30 840)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#DB2777"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Commit with buttons</text>
+    <rect x="40" y="36" width="136" height="52" rx="5" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+    <rect x="40" y="36" width="136" height="9" rx="4" fill="#E2E8F0"/>
+    <rect x="44" y="48" width="40" height="7" fill="#FEE2E2"/><rect x="44" y="68" width="40" height="7" fill="#DCFCE7"/>
+    <rect x="90" y="48" width="82" height="16" fill="#F8FAFC" stroke="#E5E7EB"/>
+    <rect x="92" y="51" width="40" height="3" fill="#DC2626"/><rect x="92" y="57" width="46" height="3" fill="#16A34A"/>
+    <g fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.8"><rect x="90" y="68" width="24" height="7" rx="1"/><rect x="90" y="78" width="24" height="7" rx="1" fill="#DCFCE7" stroke="#16A34A"/></g>
+    <rect x="118" y="68" width="54" height="17" fill="#F8FAFC" stroke="#E5E7EB"/>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#1E293B"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10.5" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#4ADE80">git gui</text>
+  </g>
+  <!-- 22 daily loop -->
+  <g transform="translate(258 840)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#64748B"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">The daily loop</text>
+    <g font-size="9.5" font-weight="700" text-anchor="middle">
+      <rect x="14" y="46" width="40" height="22" rx="11" fill="#DBEAFE"/><text x="34" y="61" fill="#1D4ED8">edit</text>
+      <rect x="64" y="46" width="44" height="22" rx="11" fill="#FEF9C3"/><text x="86" y="61" fill="#854D0E">status</text>
+      <rect x="118" y="46" width="34" height="22" rx="11" fill="#DCFCE7"/><text x="135" y="61" fill="#15803D">add</text>
+      <rect x="162" y="46" width="44" height="22" rx="11" fill="#DCFCE7"/><text x="184" y="61" fill="#15803D">commit</text>
+    </g>
+    <g fill="#9CA3AF"><path d="M55 57 l6 0 l-2 -3 M61 57 l-2 3"/></g>
+    <g stroke="#9CA3AF" stroke-width="1.6" fill="none" stroke-linecap="round"><path d="M55 57 h6 M58 54 l3 3 l-3 3"/><path d="M109 57 h6 M112 54 l3 3 l-3 3"/><path d="M153 57 h6 M156 54 l3 3 l-3 3"/></g>
+    <path d="M184 70 C184 86 34 86 34 72" fill="none" stroke="#9CA3AF" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#ma)"/>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#F1F5F9"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10.5" font-weight="700" fill="#475569">…and repeat, every day</text>
+  </g>
+  <!-- 23 survival keys -->
+  <g transform="translate(486 840)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#64748B"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Survival keys</text>
+    <rect x="40" y="42" width="38" height="36" rx="6" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.6"/>
+    <rect x="40" y="72" width="38" height="6" rx="3" fill="#CBD5E1"/>
+    <text x="59" y="66" text-anchor="middle" font-size="17" font-weight="700" fill="#1F2937">q</text>
+    <path d="M138 40 a16 16 0 0 1 16 16 v14 a16 16 0 0 1 -32 0 v-14 a16 16 0 0 1 16 -16z" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.6"/>
+    <path d="M138 40 v18 h16 v-2 a16 16 0 0 0 -16 -16z" fill="#4ADE80"/>
+    <line x1="138" y1="40" x2="138" y2="58" stroke="#94A3B8" stroke-width="1.4"/>
+    <line x1="122" y1="58" x2="154" y2="58" stroke="#94A3B8" stroke-width="1.4"/>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#F1F5F9"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10" font-weight="700" fill="#475569">q = leave · right-click = paste</text>
+  </g>
+  <!-- 24 golden rule -->
+  <g transform="translate(714 840)">
+    <path d="M12 0 h192 a12 12 0 0 1 12 12 v16 h-216 v-16 a12 12 0 0 1 12 -12z" fill="#DC2626"/>
+    <text x="12" y="19" font-size="12.5" font-weight="700" fill="#FFFFFF">Golden rule</text>
+    <path d="M50 82 L70 44 L90 82z" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2" stroke-linejoin="round"/>
+    <text x="70" y="77" text-anchor="middle" font-size="18" font-weight="800" fill="#B45309">!</text>
+    <rect x="102" y="46" width="94" height="16" rx="3" fill="#1E293B"/>
+    <text x="110" y="58" font-size="9" font-weight="800" fill="#F87171">✕</text><text x="154" y="58" text-anchor="middle" font-size="8.5" font-family="Consolas, Menlo, monospace" fill="#FFFFFF">reset --hard</text>
+    <rect x="102" y="66" width="94" height="16" rx="3" fill="#1E293B"/>
+    <text x="110" y="78" font-size="9" font-weight="800" fill="#F87171">✕</text><text x="154" y="78" text-anchor="middle" font-size="8.5" font-family="Consolas, Menlo, monospace" fill="#FFFFFF">push --force</text>
+    <rect x="10" y="94" width="196" height="24" rx="12" fill="#FEE2E2"/>
+    <text x="108" y="110" text-anchor="middle" font-size="10" font-weight="700" fill="#B91C1C">they really delete: avoid them</text>
+  </g>
+</svg>

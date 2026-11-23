@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <title>When it goes blank: three causes look identical, so the method starts with a mechanical check, and the 34 known traps are written down where your agent can read them</title>
+  <rect width="1200" height="900" fill="#f6f6f6"/>
+
+  <defs>
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#151722"/>
+    </marker>
+    <marker id="arrowGrey" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6e6e6e"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#f2955a"/>
+    </marker>
+  </defs>
+
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="60" y="44" font-size="15" letter-spacing="1" fill="#6e6e6e">1.8 WHEN IT GOES BLANK: THE METHOD</text>
+    <text x="60" y="76" font-size="22" font-weight="700" fill="#151722">Three causes, one symptom. So the first move is a mechanical check, not a look.</text>
+
+    <!-- three causes -> one blank -->
+    <text x="60" y="122" font-size="13" letter-spacing="1" fill="#6e6e6e">WHY LOOKING DOES NOT HELP</text>
+    <g font-size="15" fill="#151722">
+      <rect x="60" y="138" width="300" height="44" rx="6" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+      <text x="80" y="166">a wrong property name</text>
+      <rect x="60" y="194" width="300" height="44" rx="6" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+      <text x="80" y="222">a wrong field-well name</text>
+      <rect x="60" y="250" width="300" height="44" rx="6" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+      <text x="80" y="278">a measure that no longer exists</text>
+    </g>
+    <path d="M362,160 C410,160 410,216 448,216" fill="none" stroke="#6e6e6e" stroke-width="2" marker-end="url(#arrowGrey)"/>
+    <line x1="362" y1="216" x2="448" y2="216" stroke="#6e6e6e" stroke-width="2" marker-end="url(#arrowGrey)"/>
+    <path d="M362,272 C410,272 410,216 448,216" fill="none" stroke="#6e6e6e" stroke-width="2" marker-end="url(#arrowGrey)"/>
+    <rect x="452" y="150" width="200" height="132" rx="6" fill="#ffffff" stroke="#d9dadb" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="552" y="212" font-size="15" fill="#6e6e6e" text-anchor="middle">a blank visual</text>
+    <text x="552" y="234" font-size="15" fill="#6e6e6e" text-anchor="middle">no error anywhere</text>
+
+    <rect x="700" y="150" width="440" height="132" rx="8" fill="#151722"/>
+    <text x="724" y="182" font-size="13" letter-spacing="1" fill="#f2955a">THE RULE TO WRITE DOWN</text>
+    <text x="724" y="216" font-size="17" fill="#ffffff">When something renders blank, the first</text>
+    <text x="724" y="240" font-size="17" fill="#ffffff">move is a <tspan font-weight="700" fill="#f2955a">mechanical check</tspan>, not a</text>
+    <text x="724" y="264" font-size="17" fill="#ffffff">visual inspection.</text>
+
+    <!-- the five steps -->
+    <text x="60" y="336" font-size="13" letter-spacing="1" fill="#6e6e6e">THE METHOD, IN ORDER</text>
+
+    <rect x="60" y="352" width="200" height="200" rx="8" fill="#f2955a"/>
+    <text x="80" y="390" font-size="30" font-weight="700" fill="#151722">0</text>
+    <text x="80" y="420" font-size="16" font-weight="700" fill="#151722">Say it first</text>
+    <text x="80" y="448" font-size="14" fill="#151722">One sentence: which</text>
+    <text x="80" y="468" font-size="14" fill="#151722">cause, and why. Before</text>
+    <text x="80" y="488" font-size="14" fill="#151722">any prompt or check.</text>
+    <text x="80" y="528" font-size="13" font-weight="700" fill="#151722">10 seconds, no tools</text>
+
+    <rect x="280" y="352" width="200" height="200" rx="8" fill="#151722"/>
+    <text x="300" y="390" font-size="30" font-weight="700" fill="#ffffff">1</text>
+    <text x="300" y="420" font-size="16" font-weight="700" fill="#ffffff">Run the checks</text>
+    <text x="300" y="448" font-size="14" fill="#d9dadb">Before opening</text>
+    <text x="300" y="468" font-size="14" fill="#d9dadb">Desktop. Seconds,</text>
+    <text x="300" y="488" font-size="14" fill="#d9dadb">not minutes.</text>
+    <text x="300" y="528" font-size="12" fill="#f2955a" font-family="Consolas, 'Courier New', monospace">pbir_lint · tmdl_lint</text>
+
+    <rect x="500" y="352" width="200" height="200" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <text x="520" y="390" font-size="30" font-weight="700" fill="#151722">2</text>
+    <text x="520" y="420" font-size="16" font-weight="700" fill="#151722">Read the finding</text>
+    <text x="520" y="448" font-size="14" fill="#151722">Rule, location, hint.</text>
+    <text x="520" y="468" font-size="14" fill="#151722">It names a file and</text>
+    <text x="520" y="488" font-size="14" fill="#151722">an object.</text>
+
+    <rect x="720" y="352" width="200" height="200" rx="8" fill="#ffffff" stroke="#f2955a" stroke-width="3"/>
+    <text x="740" y="390" font-size="30" font-weight="700" fill="#151722">3</text>
+    <text x="740" y="420" font-size="16" font-weight="700" fill="#151722">Confirm the side</text>
+    <text x="740" y="448" font-size="14" fill="#151722">Which side is wrong,</text>
+    <text x="740" y="468" font-size="14" fill="#151722">before any edit.</text>
+    <text x="740" y="500" font-size="13" fill="#6e6e6e">Fix the wrong side and the</text>
+    <text x="740" y="518" font-size="13" fill="#6e6e6e">finding goes, the bug stays.</text>
+
+    <rect x="940" y="352" width="200" height="200" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <text x="960" y="390" font-size="30" font-weight="700" fill="#151722">4</text>
+    <text x="960" y="420" font-size="16" font-weight="700" fill="#151722">Fix, re-check,</text>
+    <text x="960" y="440" font-size="16" font-weight="700" fill="#151722">then Desktop</text>
+    <text x="960" y="468" font-size="14" fill="#151722">Open Desktop once,</text>
+    <text x="960" y="488" font-size="14" fill="#151722">at the end, to see it.</text>
+
+    <line x1="262" y1="452" x2="278" y2="452" stroke="#151722" stroke-width="3" marker-end="url(#arrowDark)"/>
+    <line x1="482" y1="452" x2="498" y2="452" stroke="#151722" stroke-width="3" marker-end="url(#arrowDark)"/>
+    <line x1="702" y1="452" x2="718" y2="452" stroke="#151722" stroke-width="3" marker-end="url(#arrowDark)"/>
+    <line x1="922" y1="452" x2="938" y2="452" stroke="#151722" stroke-width="3" marker-end="url(#arrowDark)"/>
+
+    <text x="60" y="584" font-size="14" fill="#6e6e6e">An agent finds this fault in about half a minute. Prompt first and think afterwards, and the lesson is gone: step 0 is the exercise.</text>
+
+    <!-- where the knowledge lives -->
+    <text x="60" y="634" font-size="13" letter-spacing="1" fill="#6e6e6e">WHERE THE KNOWLEDGE LIVES: 34 TRAPS, WRITTEN DOWN AND SEARCHABLE</text>
+
+    <rect x="60" y="652" width="340" height="150" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <text x="84" y="684" font-size="13" letter-spacing="1" fill="#6e6e6e">SKILL</text>
+    <text x="84" y="712" font-size="16" font-weight="700" fill="#151722" font-family="Consolas, 'Courier New', monospace">power-bi-dax-pitfalls</text>
+    <text x="84" y="744" font-size="14" fill="#151722">DAX traps that fail silently</text>
+    <text x="84" y="780" font-size="13" fill="#6e6e6e" font-family="Consolas, 'Courier New', monospace">.claude/skills/</text>
+
+    <rect x="430" y="652" width="340" height="150" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <text x="454" y="684" font-size="13" letter-spacing="1" fill="#6e6e6e">SKILL</text>
+    <text x="454" y="712" font-size="16" font-weight="700" fill="#151722" font-family="Consolas, 'Courier New', monospace">power-bi-pbip-pitfalls</text>
+    <text x="454" y="744" font-size="14" fill="#151722">PBIP, TMDL and Desktop traps</text>
+    <text x="454" y="780" font-size="13" fill="#6e6e6e" font-family="Consolas, 'Courier New', monospace">.claude/skills/</text>
+
+    <rect x="800" y="652" width="340" height="150" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <text x="824" y="684" font-size="13" letter-spacing="1" fill="#6e6e6e">LONG FORM</text>
+    <text x="824" y="712" font-size="16" font-weight="700" fill="#151722" font-family="Consolas, 'Courier New', monospace">docs/lessons-learned.md</text>
+    <text x="824" y="744" font-size="14" fill="#151722">The same traps, arranged</text>
+    <text x="824" y="764" font-size="14" fill="#151722">by symptom</text>
+
+    <rect x="60" y="822" width="1080" height="48" rx="8" fill="#151722"/>
+    <text x="84" y="852" font-size="15" fill="#ffffff">Your agent can read the skills. <tspan fill="#f2955a" font-weight="700">Do not read them now:</tspan> know they exist next month, when something goes blank.</text>
+  </g>
+</svg>

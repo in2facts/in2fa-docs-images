@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 920" width="1200" height="920">
+  <title>Getting your own work back: git switch my-work refuses because of uncommitted changes; discard them with -f, or keep the repair on its own branch; then dry-run git clean</title>
+  <rect width="1200" height="920" fill="#f6f6f6"/>
+
+  <defs>
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#151722"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#f2955a"/>
+    </marker>
+  </defs>
+
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="60" y="44" font-size="15" letter-spacing="1" fill="#6e6e6e">1.8 WHEN IT GOES BLANK: GETTING YOUR OWN WORK BACK</text>
+    <text x="60" y="76" font-size="22" font-weight="700" fill="#151722">The way back refuses the first time. That is git protecting changes, not an error.</text>
+
+    <!-- the refusal -->
+    <rect x="60" y="104" width="640" height="128" rx="8" fill="#151722"/>
+    <text x="84" y="134" font-size="13" letter-spacing="1" fill="#f2955a">THE FIRST TRY</text>
+    <g font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#ffffff">
+      <text x="84" y="166">PS&gt; git switch my-work</text>
+      <text x="84" y="192" fill="#f2955a">error: Your local changes to the following files</text>
+      <text x="84" y="212" fill="#f2955a">would be overwritten by checkout</text>
+    </g>
+
+    <!-- why: three kinds of uncommitted change -->
+    <rect x="730" y="104" width="410" height="128" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <text x="754" y="134" font-size="13" letter-spacing="1" fill="#6e6e6e">WHY: THREE CHANGES, NONE COMMITTED</text>
+    <text x="754" y="164" font-size="15" fill="#151722">1  your repair</text>
+    <text x="754" y="188" font-size="15" fill="#151722">2  the data folder path set_data_folder wrote</text>
+    <text x="754" y="212" font-size="15" fill="#151722">3  Desktop's rewrites: schema, z, tabOrder</text>
+
+    <text x="60" y="276" font-size="13" letter-spacing="1" fill="#6e6e6e">TWO REASONABLE ANSWERS. THEY DIFFER IN WHAT YOU KEEP.</text>
+
+    <!-- answer A -->
+    <rect x="60" y="294" width="520" height="300" rx="8" fill="#ffffff" stroke="#151722" stroke-width="3"/>
+    <rect x="80" y="314" width="34" height="34" rx="17" fill="#151722"/>
+    <text x="97" y="337" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+    <text x="128" y="338" font-size="18" font-weight="700" fill="#151722">Throw the changes away</text>
+    <rect x="80" y="366" width="480" height="44" rx="4" fill="#151722"/>
+    <text x="96" y="394" font-size="15" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">git switch -f my-work</text>
+    <text x="80" y="442" font-size="15" fill="#151722">Back at once. The repair was to the course's</text>
+    <text x="80" y="464" font-size="15" fill="#151722">reference project, not to yours, so this is</text>
+    <text x="80" y="486" font-size="15" fill="#151722">usually what you want.</text>
+    <text x="80" y="526" font-size="15" font-weight="700" fill="#f2955a">Permanent: the changes are gone.</text>
+    <text x="80" y="550" font-size="14" fill="#6e6e6e">Untracked files survive it: tidy those after.</text>
+
+    <!-- answer B -->
+    <rect x="620" y="294" width="520" height="300" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <rect x="640" y="314" width="34" height="34" rx="17" fill="#151722"/>
+    <text x="657" y="337" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+    <text x="688" y="338" font-size="18" font-weight="700" fill="#151722">Keep the repair, then go back</text>
+    <rect x="640" y="366" width="480" height="104" rx="4" fill="#151722"/>
+    <g font-size="14" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">
+      <text x="656" y="390">git switch -c report-bug-fixed</text>
+      <text x="656" y="412">git add -u</text>
+      <text x="656" y="434">git commit -m "the repair"</text>
+      <text x="656" y="456">git switch my-work</text>
+    </g>
+    <text x="640" y="500" font-size="15" fill="#151722">The repair lives on its own branch.</text>
+    <text x="640" y="530" font-size="15" fill="#151722"><tspan font-family="Consolas, 'Courier New', monospace" font-weight="700">-u</tspan>, not <tspan font-family="Consolas, 'Courier New', monospace">-A</tspan>: only files git already</text>
+    <text x="640" y="552" font-size="15" fill="#151722">tracks, so Desktop's leftovers (auto-date</text>
+    <text x="640" y="574" font-size="15" fill="#151722">tables, a TMDLScripts folder) stay out.</text>
+
+    <!-- both lead to my-work -->
+    <path d="M320,598 C320,640 520,650 560,650" fill="none" stroke="#151722" stroke-width="3" marker-end="url(#arrowDark)"/>
+    <path d="M880,598 C880,640 680,650 640,650" fill="none" stroke="#151722" stroke-width="3" marker-end="url(#arrowDark)"/>
+    <rect x="530" y="630" width="140" height="40" rx="20" fill="#151722"/>
+    <text x="600" y="656" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">my-work</text>
+
+    <!-- tidy up -->
+    <text x="60" y="712" font-size="13" letter-spacing="1" fill="#6e6e6e">EITHER WAY, TIDY UP AFTER. LOOK BEFORE YOU DELETE.</text>
+    <rect x="60" y="730" width="520" height="120" rx="8" fill="#ffffff" stroke="#151722" stroke-width="2"/>
+    <text x="80" y="760" font-size="13" letter-spacing="1" fill="#6e6e6e">FIRST: LIST, TOUCH NOTHING</text>
+    <rect x="80" y="774" width="480" height="40" rx="4" fill="#151722"/>
+    <text x="96" y="800" font-size="15" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">git clean -nd -- powerbi/</text>
+    <text x="80" y="838" font-size="14" fill="#151722">-n is a dry run: read the list.</text>
+
+    <line x1="584" y1="790" x2="616" y2="790" stroke="#f2955a" stroke-width="3" marker-end="url(#arrowOrange)"/>
+
+    <rect x="620" y="730" width="520" height="120" rx="8" fill="#ffffff" stroke="#f2955a" stroke-width="3"/>
+    <text x="640" y="760" font-size="13" letter-spacing="1" fill="#6e6e6e">THEN: DELETE WHAT YOU READ</text>
+    <rect x="640" y="774" width="480" height="40" rx="4" fill="#151722"/>
+    <text x="656" y="800" font-size="15" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">git clean -fd -- powerbi/</text>
+    <text x="640" y="838" font-size="14" font-weight="700" fill="#f2955a">Untracked files were never committed: no recovery.</text>
+
+    <text x="600" y="890" font-size="14" fill="#6e6e6e" text-anchor="middle">The dry run first is a habit worth keeping well past this course.</text>
+  </g>
+</svg>
