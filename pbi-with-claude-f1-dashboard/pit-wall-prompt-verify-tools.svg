@@ -1,0 +1,291 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1040" width="1400" height="1040">
+  <title>The pit wall: every tool on the prompt-verify loop, grouped by sector</title>
+  <defs>
+    <linearGradient id="bgg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b1b26"/><stop offset="1" stop-color="#0d0d14"/></linearGradient>
+    <linearGradient id="cardg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity="0.08"/><stop offset="1" stop-color="#ffffff" stop-opacity="0.03"/></linearGradient>
+    <pattern id="chk" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#ffffff"/><rect width="4" height="4" fill="#15151e"/><rect x="4" y="4" width="4" height="4" fill="#15151e"/></pattern>
+    <pattern id="carbon" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#16181f"/><rect width="3" height="3" fill="#23262f"/><rect x="3" y="3" width="3" height="3" fill="#23262f"/></pattern>
+    <symbol id="i-headset" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/><path d="M19 19c0 2-2 3-5 3"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 10l3 2.5-3 2.5"/><path d="M11 15.5h6"/></symbol>
+    <symbol id="i-helmet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16a9 8.5 0 0 1 18-3v5H5a2 2 0 0 1-2-2z"/><path d="M11 10h10v3.5h-8z"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/><path d="M9 12h6M9 16h6"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H3z"/><path d="M21 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/></symbol>
+    <symbol id="i-antenna" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M8 8a6 6 0 0 0 0 8M16 8a6 6 0 0 1 0 8M5 5a10 10 0 0 0 0 14M19 5a10 10 0 0 1 0 14"/></symbol>
+    <symbol id="i-flatten" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v11M7 9l5 5 5-5M4 17v3h16v-3"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0zM12 18v4"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-magnifier" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5M8 11l2 2 4-4"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 9v12"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/><path d="M7.5 15h9"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 9h18M3 14h18M9 4v16M15 4v16"/></symbol>
+    <symbol id="i-bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="M7 20v-6M12 20V8M17 20V4" stroke-width="3"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-commit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.5"/><path d="M2 12h6.5M15.5 12H22"/></symbol>
+    <symbol id="i-rewind" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 6l-7 6 7 6zM20 6l-7 6 7 6z"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="1.5"/><path d="M8 21h8M12 17v4M6 9h5M6 12h3M14 9h4M14 12h4"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  </defs>
+  <rect width="1400" height="1040" fill="url(#bgg)"/>
+  <rect width="1400" height="1040" fill="url(#carbon)" opacity="0.25"/>
+  <g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <rect x="50" y="40" width="6" height="96" fill="#e10600"/>
+    <text x="72" y="60" font-size="14" letter-spacing="3" fill="#e10600" font-weight="700">PIT WALL · THE PROMPT–VERIFY LOOP</text>
+    <text x="72" y="102" font-size="38" font-weight="700" fill="#ffffff">Every tool on the lap</text>
+    <text x="72" y="132" font-size="17" fill="#9a9da6">Prompt, build, verify, commit — then go round again.</text>
+    <g transform="translate(1110 44)">
+      <rect width="240" height="90" rx="6" fill="#0b0b11" stroke="#2c2e3a"/>
+      <path d="M6 0h228a6 6 0 0 1 6 6v18H0V6a6 6 0 0 1 6-6z" fill="#e10600"/>
+      <text x="120" y="17" font-size="12" letter-spacing="2.5" fill="#ffffff" font-weight="700" text-anchor="middle">LAP COUNTER</text>
+      <text x="22" y="68" font-size="30" font-weight="700" fill="#ffffff">LAP <tspan fill="#ffd12a">∞</tspan></text>
+      <text x="222" y="54" font-size="12" fill="#9a9da6" text-anchor="end">until</text>
+      <text x="222" y="74" font-size="15" fill="#2bd96b" text-anchor="end" font-family="Consolas, 'Courier New', monospace">0 error(s)</text>
+    </g>
+    <rect x="25" y="200" width="1350" height="732" rx="42" fill="none" stroke="#2a2c38" stroke-width="16"/>
+    <rect x="25" y="200" width="1350" height="732" rx="42" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.5" stroke-dasharray="14 12"/>
+    <rect x="50" y="197" width="300" height="6" fill="#ff3d2e"/>
+    <rect x="385" y="197" width="300" height="6" fill="#ffd12a"/>
+    <rect x="720" y="197" width="300" height="6" fill="#2bd96b"/>
+    <rect x="1055" y="197" width="300" height="6" fill="#b06cff"/>
+    <path d="M363 194 l8 6 -8 6" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M698 194 l8 6 -8 6" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1033 194 l8 6 -8 6" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M224 926 l-8 6 8 6" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M384 926 l-8 6 8 6" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1024 926 l-8 6 8 6" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1184 926 l-8 6 8 6" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M19 424 l6 -8 6 8" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1369 416 l6 8 6 -8" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M19 704 l6 -8 6 8" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1369 696 l6 8 6 -8" fill="none" stroke="#ffffff" stroke-opacity="0.6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="70" y="192" width="12" height="16" fill="url(#chk)"/>
+    <g transform="translate(560 200)">
+      <rect x="-22" y="-10" width="9" height="5" rx="1" fill="#0b0b11"/><rect x="-22" y="5" width="9" height="5" rx="1" fill="#0b0b11"/>
+      <rect x="10" y="-10" width="8" height="5" rx="1" fill="#0b0b11"/><rect x="10" y="5" width="8" height="5" rx="1" fill="#0b0b11"/>
+      <rect x="-28" y="-7" width="5" height="14" rx="1" fill="#e10600"/>
+      <path d="M-24 -4 L4 -5 L22 -2 L28 0 L22 2 L4 5 L-24 4 Z" fill="#e10600"/>
+      <rect x="25" y="-8" width="4" height="16" rx="1" fill="#e10600"/>
+      <circle cx="-4" cy="0" r="2.6" fill="#ffffff"/>
+    </g>
+    <rect x="440" y="914" width="520" height="36" rx="18" fill="#0d0d14" stroke="#2c2e3a"/>
+    <text x="700" y="938" font-size="15" fill="#d6d7d8" text-anchor="middle"><tspan font-weight="700" letter-spacing="2" fill="#ffffff">NEXT LAP</tspan>  ·  the diff you read becomes the next prompt</text>
+    <rect x="50" y="226" width="42" height="28" rx="4" fill="#ff3d2e"/>
+    <text x="71" y="246" font-size="16" font-weight="700" fill="#0d0d14" text-anchor="middle">S1</text>
+    <text x="104" y="247" font-size="20" font-weight="700" letter-spacing="2" fill="#ffffff">PROMPT</text>
+    <text x="50" y="276" font-size="14" fill="#9a9da6">you call it, Claude drives</text>
+    <g transform="translate(50 290)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#ff3d2e"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#ff3d2e">THE RACE ENGINEER</text>
+      <text x="18" y="54" font-size="20" font-weight="700" fill="#ffffff">You</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Write the prompt, read the diff,</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">make the call.</text>
+      <circle cx="268" cy="34" r="20" fill="#ff3d2e" fill-opacity="0.14" stroke="#ff3d2e" stroke-opacity="0.55"/>
+      <use href="#i-headset" x="257" y="23" width="22" height="22" color="#ff3d2e"/>
+    </g>
+    <g transform="translate(50 414)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#ff3d2e"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#ff3d2e">THE COCKPIT</text>
+      <text x="18" y="54" font-size="20" font-weight="700" fill="#ffffff">Claude terminal</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">PowerShell: you prompt, Claude</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">runs the commands.</text>
+      <circle cx="268" cy="34" r="20" fill="#ff3d2e" fill-opacity="0.14" stroke="#ff3d2e" stroke-opacity="0.55"/>
+      <use href="#i-terminal" x="257" y="23" width="22" height="22" color="#ff3d2e"/>
+    </g>
+    <g transform="translate(50 538)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#ff3d2e"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#ff3d2e">THE DRIVER</text>
+      <text x="18" y="54" font-size="20" font-weight="700" fill="#ffffff">Claude Code</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Reads, edits and runs every</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">tool on this wall.</text>
+      <circle cx="268" cy="34" r="20" fill="#ff3d2e" fill-opacity="0.14" stroke="#ff3d2e" stroke-opacity="0.55"/>
+      <use href="#i-helmet" x="257" y="23" width="22" height="22" color="#ff3d2e"/>
+    </g>
+    <g transform="translate(50 662)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#ff3d2e"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#ff3d2e">THE TEAM BRIEFING</text>
+      <text x="18" y="53" font-size="16" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">CLAUDE.md</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Project rules, loaded at the</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">start of every session.</text>
+      <circle cx="268" cy="34" r="20" fill="#ff3d2e" fill-opacity="0.14" stroke="#ff3d2e" stroke-opacity="0.55"/>
+      <use href="#i-doc" x="257" y="23" width="22" height="22" color="#ff3d2e"/>
+    </g>
+    <g transform="translate(50 786)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#ff3d2e"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#ff3d2e">THE SETUP SHEETS</text>
+      <text x="18" y="54" font-size="20" font-weight="700" fill="#ffffff">Skills</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">House conventions: naming,</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">folders, DAX and PBIP pitfalls.</text>
+      <circle cx="268" cy="34" r="20" fill="#ff3d2e" fill-opacity="0.14" stroke="#ff3d2e" stroke-opacity="0.55"/>
+      <use href="#i-book" x="257" y="23" width="22" height="22" color="#ff3d2e"/>
+    </g>
+    <rect x="385" y="226" width="42" height="28" rx="4" fill="#ffd12a"/>
+    <text x="406" y="246" font-size="16" font-weight="700" fill="#0d0d14" text-anchor="middle">S2</text>
+    <text x="439" y="247" font-size="20" font-weight="700" letter-spacing="2" fill="#ffffff">BUILD</text>
+    <text x="385" y="276" font-size="14" fill="#9a9da6">data in, model and report out</text>
+    <g transform="translate(385 290)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#ffd12a"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#ffd12a">THE TIMING FEED</text>
+      <text x="18" y="54" font-size="20" font-weight="700" fill="#ffffff">F1 results API</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Raw race data as JSON,</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">season by season.</text>
+      <circle cx="268" cy="34" r="20" fill="#ffd12a" fill-opacity="0.14" stroke="#ffd12a" stroke-opacity="0.55"/>
+      <use href="#i-antenna" x="257" y="23" width="22" height="22" color="#ffd12a"/>
+    </g>
+    <g transform="translate(385 414)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#ffd12a"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#ffd12a">THE FUEL RIG</text>
+      <text x="18" y="53" font-size="14.5" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">fetch.py · export_csv.py</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Fetch the JSON, flatten it</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">into clean UTF-8 CSVs.</text>
+      <circle cx="268" cy="34" r="20" fill="#ffd12a" fill-opacity="0.14" stroke="#ffd12a" stroke-opacity="0.55"/>
+      <use href="#i-flatten" x="257" y="23" width="22" height="22" color="#ffd12a"/>
+    </g>
+    <g transform="translate(385 538)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#ffd12a"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#ffd12a">THE MECHANICS</text>
+      <text x="18" y="53" font-size="14.5" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">build.py · build_report.py</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Generate the model (TMDL)</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">and the report (PBIR).</text>
+      <circle cx="268" cy="34" r="20" fill="#ffd12a" fill-opacity="0.14" stroke="#ffd12a" stroke-opacity="0.55"/>
+      <use href="#i-wrench" x="257" y="23" width="22" height="22" color="#ffd12a"/>
+    </g>
+    <g transform="translate(385 662)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#ffd12a"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#ffd12a">THE PIT RADIO</text>
+      <text x="18" y="53" font-size="14.5" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">powerbi-modeling-mcp</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">MCP server: Claude talks to the</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">model — tables, measures, DAX.</text>
+      <circle cx="268" cy="34" r="20" fill="#ffd12a" fill-opacity="0.14" stroke="#ffd12a" stroke-opacity="0.55"/>
+      <use href="#i-plug" x="257" y="23" width="22" height="22" color="#ffd12a"/>
+    </g>
+    <g transform="translate(385 786)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#ffd12a"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#ffd12a">THE SIMULATOR</text>
+      <text x="18" y="53" font-size="16" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">ConnectFolder</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Loads the PBIP from disk, no</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">Desktop. Export writes it back.</text>
+      <circle cx="268" cy="34" r="20" fill="#ffd12a" fill-opacity="0.14" stroke="#ffd12a" stroke-opacity="0.55"/>
+      <use href="#i-folder" x="257" y="23" width="22" height="22" color="#ffd12a"/>
+    </g>
+    <rect x="720" y="226" width="42" height="28" rx="4" fill="#2bd96b"/>
+    <text x="741" y="246" font-size="16" font-weight="700" fill="#0d0d14" text-anchor="middle">S3</text>
+    <text x="774" y="247" font-size="20" font-weight="700" letter-spacing="2" fill="#ffffff">VERIFY</text>
+    <text x="720" y="276" font-size="14" fill="#9a9da6">nothing counts until it passes</text>
+    <g transform="translate(720 290)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#2bd96b"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#2bd96b">SCRUTINEERING · MODEL</text>
+      <text x="18" y="53" font-size="16" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">tmdl_lint.py</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Tables, relationships, DAX,</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">naming. Pass mark: 0 error(s).</text>
+      <circle cx="268" cy="34" r="20" fill="#2bd96b" fill-opacity="0.14" stroke="#2bd96b" stroke-opacity="0.55"/>
+      <use href="#i-magnifier" x="257" y="23" width="22" height="22" color="#2bd96b"/>
+    </g>
+    <g transform="translate(720 414)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#2bd96b"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#2bd96b">SCRUTINEERING · REPORT</text>
+      <text x="18" y="53" font-size="16" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">pbir_lint.py</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Schema, bindings, visual frame.</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">Pass mark: 0 error(s).</text>
+      <circle cx="268" cy="34" r="20" fill="#2bd96b" fill-opacity="0.14" stroke="#2bd96b" stroke-opacity="0.55"/>
+      <use href="#i-layout" x="257" y="23" width="22" height="22" color="#2bd96b"/>
+    </g>
+    <g transform="translate(720 538)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#2bd96b"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#2bd96b">THE STEWARDS</text>
+      <text x="18" y="53" font-size="16" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">test_*_lint.py</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Tests that prove the linters</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">catch what they claim to.</text>
+      <circle cx="268" cy="34" r="20" fill="#2bd96b" fill-opacity="0.14" stroke="#2bd96b" stroke-opacity="0.55"/>
+      <use href="#i-flask" x="257" y="23" width="22" height="22" color="#2bd96b"/>
+    </g>
+    <g transform="translate(720 662)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#2bd96b"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#2bd96b">TIMING &amp; SCORING</text>
+      <text x="18" y="54" font-size="20" font-weight="700" fill="#ffffff">Excel</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Recount from the CSVs: checksums</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">the model has to match.</text>
+      <circle cx="268" cy="34" r="20" fill="#2bd96b" fill-opacity="0.14" stroke="#2bd96b" stroke-opacity="0.55"/>
+      <use href="#i-grid" x="257" y="23" width="22" height="22" color="#2bd96b"/>
+    </g>
+    <g transform="translate(720 786)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#2bd96b"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#2bd96b">RACE DAY</text>
+      <text x="18" y="54" font-size="20" font-weight="700" fill="#ffffff">Power BI Desktop</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Opens the PBIP and renders</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">every visual. The eye test.</text>
+      <circle cx="268" cy="34" r="20" fill="#2bd96b" fill-opacity="0.14" stroke="#2bd96b" stroke-opacity="0.55"/>
+      <use href="#i-bars" x="257" y="23" width="22" height="22" color="#2bd96b"/>
+    </g>
+    <rect x="1055" y="226" width="42" height="28" rx="4" fill="#b06cff"/>
+    <text x="1076" y="246" font-size="16" font-weight="700" fill="#0d0d14" text-anchor="middle">S4</text>
+    <text x="1109" y="247" font-size="20" font-weight="700" letter-spacing="2" fill="#ffffff">COMMIT</text>
+    <text x="1055" y="276" font-size="14" fill="#9a9da6">lock the lap, or roll it back</text>
+    <g transform="translate(1055 290)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#b06cff"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#b06cff">THE REPLAY</text>
+      <text x="18" y="53" font-size="14.5" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">git status · git diff</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Read every change before</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">you accept it.</text>
+      <circle cx="268" cy="34" r="20" fill="#b06cff" fill-opacity="0.14" stroke="#b06cff" stroke-opacity="0.55"/>
+      <use href="#i-eye" x="257" y="23" width="22" height="22" color="#b06cff"/>
+    </g>
+    <g transform="translate(1055 414)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#b06cff"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#b06cff">PARC FERMÉ</text>
+      <text x="18" y="53" font-size="14.5" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">git add · git commit</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Lock a clean lap in. Small</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">commits, clear messages.</text>
+      <circle cx="268" cy="34" r="20" fill="#b06cff" fill-opacity="0.14" stroke="#b06cff" stroke-opacity="0.55"/>
+      <use href="#i-commit" x="257" y="23" width="22" height="22" color="#b06cff"/>
+    </g>
+    <g transform="translate(1055 538)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#b06cff"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#b06cff">RED FLAG</text>
+      <text x="18" y="53" font-size="14.5" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">git restore · /rewind</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Undo a bad lap: back to the</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">last clean checkpoint.</text>
+      <circle cx="268" cy="34" r="20" fill="#b06cff" fill-opacity="0.14" stroke="#b06cff" stroke-opacity="0.55"/>
+      <use href="#i-rewind" x="257" y="23" width="22" height="22" color="#b06cff"/>
+    </g>
+    <g transform="translate(1055 662)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#b06cff"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#b06cff">THE TV SCREENS</text>
+      <text x="18" y="54" font-size="20" font-weight="700" fill="#ffffff">VS Code</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Diff view and explorer,</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">right next to the terminal.</text>
+      <circle cx="268" cy="34" r="20" fill="#b06cff" fill-opacity="0.14" stroke="#b06cff" stroke-opacity="0.55"/>
+      <use href="#i-monitor" x="257" y="23" width="22" height="22" color="#b06cff"/>
+    </g>
+    <g transform="translate(1055 786)">
+      <rect width="300" height="112" rx="6" fill="url(#cardg)" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect width="4" height="112" fill="#b06cff"/>
+      <text x="18" y="27" font-size="11" letter-spacing="1.8" font-weight="700" fill="#b06cff">THE LAP CHART</text>
+      <text x="18" y="53" font-size="16" fill="#ffffff" font-family="Consolas, 'Courier New', monospace">git log</text>
+      <text x="18" y="79" font-size="13.5" fill="#b9bcc4">Every lap on record: who</text>
+      <text x="18" y="97" font-size="13.5" fill="#b9bcc4">changed what, and why.</text>
+      <circle cx="268" cy="34" r="20" fill="#b06cff" fill-opacity="0.14" stroke="#b06cff" stroke-opacity="0.55"/>
+      <use href="#i-history" x="257" y="23" width="22" height="22" color="#b06cff"/>
+    </g>
+    <text x="50" y="996" font-size="20" fill="#ffffff">A lap only counts when scrutineering says <tspan font-family="Consolas, 'Courier New', monospace" fill="#2bd96b">0 error(s)</tspan></text>
+    <text x="1350" y="996" font-size="20" fill="#ff3d2e" text-anchor="end">and the numbers match Excel.</text>
+  </g>
+</svg>
