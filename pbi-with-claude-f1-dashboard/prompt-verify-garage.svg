@@ -1,0 +1,356 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+<title>The prompt-verify garage: the car in its box, and every tool in its F1 job</title>
+<defs>
+<linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2f42"/><stop offset="1" stop-color="#3a4058"/></linearGradient>
+<linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4b5169"/><stop offset="1" stop-color="#2b2f40"/></linearGradient>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff5a48"/><stop offset="0.55" stop-color="#e10600"/><stop offset="1" stop-color="#9a0400"/></linearGradient>
+<linearGradient id="tank" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c9a100"/><stop offset="0.4" stop-color="#ffd12a"/><stop offset="1" stop-color="#b38f00"/></linearGradient>
+<pattern id="haz" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="28" height="28" fill="#ffd12a"/><rect width="14" height="28" fill="#151722"/></pattern>
+<pattern id="chk" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#ffffff"/><rect width="6" height="6" fill="#151722"/><rect x="6" y="6" width="6" height="6" fill="#151722"/></pattern>
+<radialGradient id="lamp" cx="0.5" cy="0" r="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+<marker id="ar" viewBox="0 0 10 10" refX="3" refY="5" markerWidth="26" markerHeight="26" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="context-stroke"/></marker>
+</defs>
+<g font-family="Gilroy, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect width="1600" height="620" fill="url(#wall)"/>
+<line x1="100" y1="70" x2="100" y2="610" stroke="#ffffff" stroke-opacity="0.04" stroke-width="2"/>
+<line x1="240" y1="70" x2="240" y2="610" stroke="#ffffff" stroke-opacity="0.04" stroke-width="2"/>
+<line x1="380" y1="70" x2="380" y2="610" stroke="#ffffff" stroke-opacity="0.04" stroke-width="2"/>
+<line x1="520" y1="70" x2="520" y2="610" stroke="#ffffff" stroke-opacity="0.04" stroke-width="2"/>
+<line x1="660" y1="70" x2="660" y2="610" stroke="#ffffff" stroke-opacity="0.04" stroke-width="2"/>
+<line x1="800" y1="70" x2="800" y2="610" stroke="#ffffff" stroke-opacity="0.04" stroke-width="2"/>
+<line x1="940" y1="70" x2="940" y2="610" stroke="#ffffff" stroke-opacity="0.04" stroke-width="2"/>
+<line x1="1080" y1="70" x2="1080" y2="610" stroke="#ffffff" stroke-opacity="0.04" stroke-width="2"/>
+<line x1="1220" y1="70" x2="1220" y2="610" stroke="#ffffff" stroke-opacity="0.04" stroke-width="2"/>
+<line x1="1360" y1="70" x2="1360" y2="610" stroke="#ffffff" stroke-opacity="0.04" stroke-width="2"/>
+<line x1="1500" y1="70" x2="1500" y2="610" stroke="#ffffff" stroke-opacity="0.04" stroke-width="2"/>
+<rect y="600" width="1600" height="400" fill="url(#floor)"/>
+<rect y="596" width="1600" height="10" fill="#e10600"/>
+<line x1="0" y1="606" x2="-120" y2="1000" stroke="#ffffff" stroke-opacity="0.05" stroke-width="2"/>
+<line x1="160" y1="606" x2="40" y2="1000" stroke="#ffffff" stroke-opacity="0.05" stroke-width="2"/>
+<line x1="320" y1="606" x2="200" y2="1000" stroke="#ffffff" stroke-opacity="0.05" stroke-width="2"/>
+<line x1="480" y1="606" x2="360" y2="1000" stroke="#ffffff" stroke-opacity="0.05" stroke-width="2"/>
+<line x1="640" y1="606" x2="520" y2="1000" stroke="#ffffff" stroke-opacity="0.05" stroke-width="2"/>
+<line x1="800" y1="606" x2="680" y2="1000" stroke="#ffffff" stroke-opacity="0.05" stroke-width="2"/>
+<line x1="960" y1="606" x2="840" y2="1000" stroke="#ffffff" stroke-opacity="0.05" stroke-width="2"/>
+<line x1="1120" y1="606" x2="1000" y2="1000" stroke="#ffffff" stroke-opacity="0.05" stroke-width="2"/>
+<line x1="1280" y1="606" x2="1160" y2="1000" stroke="#ffffff" stroke-opacity="0.05" stroke-width="2"/>
+<line x1="1440" y1="606" x2="1320" y2="1000" stroke="#ffffff" stroke-opacity="0.05" stroke-width="2"/>
+<rect y="988" width="1600" height="12" fill="#e9e9ee" opacity="0.85"/>
+<ellipse cx="300" cy="70" rx="260" ry="300" fill="url(#lamp)"/>
+<rect x="210" y="62" width="180" height="10" rx="5" fill="#f4f6ff" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="800" cy="70" rx="260" ry="300" fill="url(#lamp)"/>
+<rect x="710" y="62" width="180" height="10" rx="5" fill="#f4f6ff" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="1300" cy="70" rx="260" ry="300" fill="url(#lamp)"/>
+<rect x="1210" y="62" width="180" height="10" rx="5" fill="#f4f6ff" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect width="1600" height="58" fill="#0d0e14"/>
+<rect y="52" width="1600" height="10" fill="url(#haz)"/>
+<text x="800.0" y="38" font-size="26" font-weight="700" letter-spacing="4" fill="#ffffff" text-anchor="middle">THE PROMPT–VERIFY GARAGE</text>
+<rect x="40" y="16" width="36" height="24" fill="url(#chk)" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1524" y="16" width="36" height="24" fill="url(#chk)" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="48" y="92" width="210" height="160" rx="6" fill="#d9dadb" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="58" y="102" width="190" height="140" fill="#ffffff"/>
+<text x="70" y="130" font-size="20" font-weight="700" fill="#151722" font-family="Consolas, 'Courier New', monospace">CLAUDE.md</text>
+<circle cx="74" cy="152" r="3" fill="#2f6fd6"/>
+<path d="M84 152 q37.5 -5 75.0 0 t75.0 0" fill="none" stroke="#2f6fd6" stroke-width="3" stroke-linecap="round"/>
+<circle cx="74" cy="174" r="3" fill="#2f6fd6"/>
+<path d="M84 174 q30.0 -5 60.0 0 t60.0 0" fill="none" stroke="#2f6fd6" stroke-width="3" stroke-linecap="round"/>
+<circle cx="74" cy="196" r="3" fill="#2f6fd6"/>
+<path d="M84 196 q40.0 -5 80.0 0 t80.0 0" fill="none" stroke="#2f6fd6" stroke-width="3" stroke-linecap="round"/>
+<circle cx="74" cy="218" r="3" fill="#e10600"/>
+<path d="M84 218 q25.0 -5 50.0 0 t50.0 0" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round"/>
+<rect x="88" y="250" width="130" height="6" rx="3" fill="#9a9da6"/>
+<g transform="translate(84 266)"><rect width="139" height="44" rx="7" fill="#11131a" stroke="#ff3d2e" stroke-opacity="0.7" stroke-width="1.5"/><rect x="0" y="0" width="6" height="44" rx="3" fill="#ff3d2e"/><text x="16" y="19" font-size="14" font-family="Consolas, 'Courier New', monospace" fill="#ffffff">CLAUDE.md</text><text x="16" y="36" font-size="12" fill="#b9bcc4">the team briefing</text></g>
+<rect x="282" y="92" width="176" height="160" rx="6" fill="#5b4636" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="370" y="114" font-size="11" letter-spacing="2" font-weight="700" fill="#f1e6d8" text-anchor="middle">SETUP SHEETS</text>
+<rect x="300" y="128" width="44" height="108" rx="4" fill="#c79a62" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="304" y="138" width="36" height="92" fill="#ffffff"/>
+<rect x="312" y="124" width="20" height="10" rx="2" fill="#9a9da6" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="322" y="152" font-size="9" font-weight="700" fill="#151722" text-anchor="middle">naming</text>
+<line x1="309" y1="164" x2="335" y2="164" stroke="#9a9da6" stroke-width="2"/>
+<line x1="309" y1="176" x2="327" y2="176" stroke="#9a9da6" stroke-width="2"/>
+<line x1="309" y1="188" x2="335" y2="188" stroke="#9a9da6" stroke-width="2"/>
+<line x1="309" y1="200" x2="327" y2="200" stroke="#9a9da6" stroke-width="2"/>
+<line x1="309" y1="212" x2="335" y2="212" stroke="#9a9da6" stroke-width="2"/>
+<rect x="352" y="128" width="44" height="108" rx="4" fill="#c79a62" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="356" y="138" width="36" height="92" fill="#ffffff"/>
+<rect x="364" y="124" width="20" height="10" rx="2" fill="#9a9da6" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="374" y="152" font-size="9" font-weight="700" fill="#151722" text-anchor="middle">folders</text>
+<line x1="361" y1="164" x2="387" y2="164" stroke="#9a9da6" stroke-width="2"/>
+<line x1="361" y1="176" x2="379" y2="176" stroke="#9a9da6" stroke-width="2"/>
+<line x1="361" y1="188" x2="387" y2="188" stroke="#9a9da6" stroke-width="2"/>
+<line x1="361" y1="200" x2="379" y2="200" stroke="#9a9da6" stroke-width="2"/>
+<line x1="361" y1="212" x2="387" y2="212" stroke="#9a9da6" stroke-width="2"/>
+<rect x="404" y="128" width="44" height="108" rx="4" fill="#c79a62" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="408" y="138" width="36" height="92" fill="#ffffff"/>
+<rect x="416" y="124" width="20" height="10" rx="2" fill="#9a9da6" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="426" y="152" font-size="9" font-weight="700" fill="#151722" text-anchor="middle">pitfalls</text>
+<line x1="413" y1="164" x2="439" y2="164" stroke="#9a9da6" stroke-width="2"/>
+<line x1="413" y1="176" x2="431" y2="176" stroke="#9a9da6" stroke-width="2"/>
+<line x1="413" y1="188" x2="439" y2="188" stroke="#9a9da6" stroke-width="2"/>
+<line x1="413" y1="200" x2="431" y2="200" stroke="#9a9da6" stroke-width="2"/>
+<line x1="413" y1="212" x2="439" y2="212" stroke="#9a9da6" stroke-width="2"/>
+<g transform="translate(304 266)"><rect width="132" height="44" rx="7" fill="#11131a" stroke="#ff3d2e" stroke-opacity="0.7" stroke-width="1.5"/><rect x="0" y="0" width="6" height="44" rx="3" fill="#ff3d2e"/><text x="16" y="19" font-size="14" font-weight="700" fill="#ffffff">Skills</text><text x="16" y="36" font-size="12" fill="#b9bcc4">the setup sheets</text></g>
+<rect x="676" y="80" width="28" height="16" fill="#151722"/>
+<rect x="500" y="92" width="380" height="200" rx="10" fill="#0b0b11" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="512" y="104" width="356" height="176" fill="#f6f6f6"/>
+<rect x="512" y="104" width="356" height="22" fill="#252d3b"/>
+<text x="522" y="120" font-size="12" font-weight="700" fill="#ffffff">Drivers</text>
+<rect x="840" y="109" width="20" height="12" rx="2" fill="#ffd12a"/>
+<rect x="522" y="134" width="64" height="44" rx="4" fill="#ffffff" stroke="#d6d7d8"/>
+<text x="554" y="158" font-size="16" font-weight="700" fill="#151722" text-anchor="middle">575</text>
+<text x="554" y="172" font-size="9" fill="#6e6e6e" text-anchor="middle">points</text>
+<rect x="594" y="134" width="64" height="44" rx="4" fill="#ffffff" stroke="#d6d7d8"/>
+<text x="626" y="158" font-size="16" font-weight="700" fill="#151722" text-anchor="middle">19</text>
+<text x="626" y="172" font-size="9" fill="#6e6e6e" text-anchor="middle">wins</text>
+<rect x="666" y="134" width="64" height="44" rx="4" fill="#ffffff" stroke="#d6d7d8"/>
+<text x="698" y="158" font-size="16" font-weight="700" fill="#151722" text-anchor="middle">1st</text>
+<text x="698" y="172" font-size="9" fill="#6e6e6e" text-anchor="middle">rank</text>
+<rect x="522" y="188" width="204" height="9" rx="2" fill="#e10600"/>
+<rect x="522" y="202" width="170" height="9" rx="2" fill="#9a9da6"/>
+<rect x="522" y="216" width="143" height="9" rx="2" fill="#9a9da6"/>
+<rect x="522" y="230" width="116" height="9" rx="2" fill="#9a9da6"/>
+<rect x="522" y="244" width="95" height="9" rx="2" fill="#9a9da6"/>
+<rect x="522" y="258" width="75" height="9" rx="2" fill="#9a9da6"/>
+<rect x="744" y="136" width="116" height="18" fill="#ffffff"/>
+<rect x="750" y="142" width="60" height="6" rx="2" fill="#6e6e6e"/>
+<rect x="830" y="142" width="22" height="6" rx="2" fill="#151722"/>
+<rect x="744" y="158" width="116" height="18" fill="#e6e7ea"/>
+<rect x="750" y="164" width="54" height="6" rx="2" fill="#6e6e6e"/>
+<rect x="830" y="164" width="22" height="6" rx="2" fill="#151722"/>
+<rect x="744" y="180" width="116" height="18" fill="#ffffff"/>
+<rect x="750" y="186" width="48" height="6" rx="2" fill="#6e6e6e"/>
+<rect x="830" y="186" width="22" height="6" rx="2" fill="#151722"/>
+<rect x="744" y="202" width="116" height="18" fill="#e6e7ea"/>
+<rect x="750" y="208" width="42" height="6" rx="2" fill="#6e6e6e"/>
+<rect x="830" y="208" width="22" height="6" rx="2" fill="#151722"/>
+<rect x="744" y="224" width="116" height="18" fill="#ffffff"/>
+<rect x="750" y="230" width="36" height="6" rx="2" fill="#6e6e6e"/>
+<rect x="830" y="230" width="22" height="6" rx="2" fill="#151722"/>
+<rect x="744" y="246" width="116" height="18" fill="#e6e7ea"/>
+<rect x="750" y="252" width="30" height="6" rx="2" fill="#6e6e6e"/>
+<rect x="830" y="252" width="22" height="6" rx="2" fill="#151722"/>
+<circle cx="690" cy="287" r="2.5" fill="#2bd96b"/>
+<g transform="translate(563 300)"><rect width="254" height="44" rx="7" fill="#11131a" stroke="#2bd96b" stroke-opacity="0.7" stroke-width="1.5"/><rect x="0" y="0" width="6" height="44" rx="3" fill="#2bd96b"/><text x="16" y="19" font-size="14" font-weight="700" fill="#ffffff">Power BI Desktop</text><text x="16" y="36" font-size="12" fill="#b9bcc4">race day: does every visual render?</text></g>
+<rect x="922" y="92" width="196" height="160" rx="8" fill="#0b0b11" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="932" y="102" width="176" height="20" fill="#1d6f42"/>
+<text x="942" y="117" font-size="12" font-weight="700" fill="#ffffff">TIMING &amp; SCORING</text>
+<rect x="932" y="124" width="58" height="19" fill="#ffffff"/>
+<rect x="991" y="124" width="58" height="19" fill="#ffffff"/>
+<rect x="1050" y="124" width="58" height="19" fill="#ffffff"/>
+<rect x="932" y="144" width="58" height="19" fill="#ffffff"/>
+<rect x="991" y="144" width="58" height="19" fill="#ffffff"/>
+<rect x="1050" y="144" width="58" height="19" fill="#ffffff"/>
+<rect x="932" y="164" width="58" height="19" fill="#ffffff"/>
+<rect x="991" y="164" width="58" height="19" fill="#ffffff"/>
+<rect x="1050" y="164" width="58" height="19" fill="#ffffff"/>
+<rect x="932" y="184" width="58" height="19" fill="#ffffff"/>
+<rect x="991" y="184" width="58" height="19" fill="#ffffff"/>
+<rect x="1050" y="184" width="58" height="19" fill="#ffffff"/>
+<rect x="932" y="204" width="58" height="19" fill="#eaf4ef"/>
+<rect x="991" y="204" width="58" height="19" fill="#eaf4ef"/>
+<rect x="1050" y="204" width="58" height="19" fill="#eaf4ef"/>
+<text x="984" y="138" font-size="11" font-family="Consolas, 'Courier New', monospace" fill="#151722" text-anchor="end" font-weight="700">season</text>
+<text x="1043" y="138" font-size="11" font-family="Consolas, 'Courier New', monospace" fill="#151722" text-anchor="end" font-weight="700">rows</text>
+<text x="1102" y="138" font-size="11" font-family="Consolas, 'Courier New', monospace" fill="#151722" text-anchor="end" font-weight="700">pts</text>
+<text x="984" y="158" font-size="11" font-family="Consolas, 'Courier New', monospace" fill="#151722" text-anchor="end">2023</text>
+<text x="1043" y="158" font-size="11" font-family="Consolas, 'Courier New', monospace" fill="#151722" text-anchor="end">440</text>
+<text x="1102" y="158" font-size="11" font-family="Consolas, 'Courier New', monospace" fill="#151722" text-anchor="end">2,260</text>
+<text x="984" y="178" font-size="11" font-family="Consolas, 'Courier New', monospace" fill="#151722" text-anchor="end">2024</text>
+<text x="1043" y="178" font-size="11" font-family="Consolas, 'Courier New', monospace" fill="#151722" text-anchor="end">479</text>
+<text x="1102" y="178" font-size="11" font-family="Consolas, 'Courier New', monospace" fill="#151722" text-anchor="end">2,402</text>
+<text x="984" y="198" font-size="11" font-family="Consolas, 'Courier New', monospace" fill="#151722" text-anchor="end">2025</text>
+<text x="1043" y="198" font-size="11" font-family="Consolas, 'Courier New', monospace" fill="#151722" text-anchor="end">479</text>
+<text x="1102" y="198" font-size="11" font-family="Consolas, 'Courier New', monospace" fill="#151722" text-anchor="end">2,410</text>
+<text x="984" y="218" font-size="11" font-family="Consolas, 'Courier New', monospace" fill="#151722" text-anchor="end" font-weight="700">Σ</text>
+<text x="1043" y="218" font-size="11" font-family="Consolas, 'Courier New', monospace" fill="#151722" text-anchor="end" font-weight="700">1,398</text>
+<text x="1102" y="218" font-size="11" font-family="Consolas, 'Courier New', monospace" fill="#151722" text-anchor="end" font-weight="700">7,072</text>
+<text x="1020" y="244" font-size="12" font-weight="700" fill="#2bd96b" text-anchor="middle">checksum ✓ model matches</text>
+<g transform="translate(912 266)"><rect width="216" height="44" rx="7" fill="#11131a" stroke="#2bd96b" stroke-opacity="0.7" stroke-width="1.5"/><rect x="0" y="0" width="6" height="44" rx="3" fill="#2bd96b"/><text x="16" y="19" font-size="14" font-weight="700" fill="#ffffff">Excel</text><text x="16" y="36" font-size="12" fill="#b9bcc4">timing &amp; scoring: the recount</text></g>
+<rect x="1152" y="86" width="300" height="172" rx="8" fill="#1a1530" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1170" y="112" font-size="13" font-weight="700" letter-spacing="2" fill="#b06cff">LAP CHART</text>
+<text x="1434" y="112" font-size="12" fill="#b9bcc4" text-anchor="end" font-family="Consolas, 'Courier New', monospace">git log</text>
+<line x1="1176" y1="132" x2="1176" y2="236" stroke="#b06cff" stroke-width="3"/>
+<circle cx="1176" cy="134" r="7" fill="#ffd12a" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1192" y="138" font-size="12" font-family="Consolas, 'Courier New', monospace" fill="#ffd12a">d0cd9d8</text>
+<text x="1256" y="138" font-size="12" fill="#ffffff">report: drivers page</text>
+<circle cx="1176" cy="168" r="7" fill="#b06cff" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1192" y="172" font-size="12" font-family="Consolas, 'Courier New', monospace" fill="#ffd12a">2c341c2</text>
+<text x="1256" y="172" font-size="12" fill="#ffffff">model: six measures</text>
+<circle cx="1176" cy="202" r="7" fill="#b06cff" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1192" y="206" font-size="12" font-family="Consolas, 'Courier New', monospace" fill="#ffd12a">ab8b66d</text>
+<text x="1256" y="206" font-size="12" fill="#ffffff">html: six sections</text>
+<circle cx="1176" cy="236" r="7" fill="#b06cff" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1192" y="240" font-size="12" font-family="Consolas, 'Courier New', monospace" fill="#ffd12a">09efa10</text>
+<text x="1256" y="240" font-size="12" fill="#ffffff">data: tidy CSVs</text>
+<g transform="translate(1178 272)"><rect width="248" height="44" rx="7" fill="#11131a" stroke="#b06cff" stroke-opacity="0.7" stroke-width="1.5"/><rect x="0" y="0" width="6" height="44" rx="3" fill="#b06cff"/><text x="16" y="19" font-size="14" font-family="Consolas, 'Courier New', monospace" fill="#ffffff">git log</text><text x="16" y="36" font-size="12" fill="#b9bcc4">the lap chart: every lap on record</text></g>
+<rect x="30" y="650" width="240" height="16" rx="3" fill="#5a5f6e" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="46" y="666" width="12" height="150" fill="#3a3d4c" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="242" y="666" width="12" height="150" fill="#3a3d4c" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="84" y="630" width="12" height="20" fill="#151722"/>
+<rect x="36" y="552" width="110" height="80" rx="5" fill="#0b0b11" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="43" y="559" width="96" height="66" fill="#012456"/>
+<text x="48" y="576" font-size="10" font-family="Consolas, 'Courier New', monospace" fill="#ffffff">PS&gt; claude</text>
+<text x="48" y="592" font-size="10" font-family="Consolas, 'Courier New', monospace" fill="#ffd12a">&gt; add the</text>
+<text x="48" y="606" font-size="10" font-family="Consolas, 'Courier New', monospace" fill="#ffd12a">  drivers page</text>
+<rect x="48" y="613" width="7" height="9" fill="#ffffff"/>
+<rect x="204" y="630" width="12" height="20" fill="#151722"/>
+<rect x="156" y="552" width="110" height="80" rx="5" fill="#0b0b11" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="163" y="559" width="96" height="66" fill="#1e1e1e"/>
+<rect x="163" y="559" width="14" height="66" fill="#333842"/>
+<rect x="181" y="563" width="70" height="6" rx="1" fill="#3a3d4c"/>
+<rect x="181" y="572" width="63" height="6" rx="1" fill="#6b2a2a"/>
+<rect x="181" y="581" width="56" height="6" rx="1" fill="#6b2a2a"/>
+<rect x="181" y="590" width="49" height="6" rx="1" fill="#1f5a3a"/>
+<rect x="181" y="599" width="42" height="6" rx="1" fill="#1f5a3a"/>
+<rect x="181" y="608" width="65" height="6" rx="1" fill="#1f5a3a"/>
+<rect x="181" y="617" width="58" height="6" rx="1" fill="#3a3d4c"/>
+<g transform="translate(36 690)"><rect width="177" height="44" rx="7" fill="#11131a" stroke="#ff3d2e" stroke-opacity="0.7" stroke-width="1.5"/><rect x="0" y="0" width="6" height="44" rx="3" fill="#ff3d2e"/><text x="16" y="19" font-size="14" font-weight="700" fill="#ffffff">Claude terminal</text><text x="16" y="36" font-size="12" fill="#b9bcc4">team radio (PowerShell)</text></g>
+<g transform="translate(36 742)"><rect width="216" height="44" rx="7" fill="#11131a" stroke="#b06cff" stroke-opacity="0.7" stroke-width="1.5"/><rect x="0" y="0" width="6" height="44" rx="3" fill="#b06cff"/><text x="16" y="19" font-size="14" font-weight="700" fill="#ffffff">VS Code · git diff</text><text x="16" y="36" font-size="12" fill="#b9bcc4">the replay: read every change</text></g>
+<rect x="313" y="736" width="14" height="88" rx="5" fill="#2a2d3a" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="333" y="736" width="14" height="88" rx="5" fill="#2a2d3a" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="318" cy="825" rx="13" ry="6" fill="#151722"/>
+<ellipse cx="342" cy="825" rx="13" ry="6" fill="#151722"/>
+<rect x="299" y="636" width="62" height="108" rx="16" fill="#e10600" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="330" cy="610" r="27" fill="#f2c6a0" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="321" cy="607" r="2.8" fill="#151722"/><circle cx="339" cy="607" r="2.8" fill="#151722"/>
+<path d="M321 619 Q330 626 339 619" fill="none" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M303 606 Q306 578 330 579 Q354 578 357 606 Q342 590 303 606 Z" fill="#4a3426" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M300 612 Q300 570 330 570 Q360 570 360 612" fill="none" stroke="#151722" stroke-width="5"/>
+<rect x="292" y="600" width="13" height="24" rx="5" fill="#151722"/>
+<rect x="355" y="600" width="13" height="24" rx="5" fill="#151722"/>
+<path d="M298 622 Q304 636 320 632" fill="none" stroke="#151722" stroke-width="3"/>
+<circle cx="321" cy="632" r="4" fill="#ff3d2e"/>
+<path d="M300 650 Q280 700 300 728" fill="none" stroke="#e10600" stroke-width="16" stroke-linecap="round"/>
+<circle cx="300" cy="732" r="9" fill="#f2c6a0" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M358 650 L410 618" stroke="#e10600" stroke-width="16" stroke-linecap="round"/>
+<circle cx="414" cy="615" r="9" fill="#f2c6a0" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M232 462 h268 a14 14 0 0 1 14 14 v50 a14 14 0 0 1 -14 14 h-150 l-22 26 l2 -26 h-98 a14 14 0 0 1 -14 -14 v-50 a14 14 0 0 1 14 -14 z" fill="#ffffff" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="246" y="490" font-size="15" font-weight="700" fill="#151722">“Box, box: add a Drivers page,</text>
+<text x="246" y="512" font-size="15" font-weight="700" fill="#151722">then run both linters.”</text>
+<text x="246" y="530" font-size="11" fill="#6e6e6e">the prompt</text>
+<g transform="translate(232 404)"><rect width="280" height="44" rx="7" fill="#11131a" stroke="#ff3d2e" stroke-opacity="0.7" stroke-width="1.5"/><rect x="0" y="0" width="6" height="44" rx="3" fill="#ff3d2e"/><text x="16" y="19" font-size="14" font-weight="700" fill="#ffffff">You</text><text x="16" y="36" font-size="12" fill="#b9bcc4">the race engineer: prompt, read, decide</text></g>
+<ellipse cx="750" cy="842" rx="330" ry="44" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.25" stroke-width="10" stroke-dasharray="2 14" stroke-linecap="round"/>
+<path d="M439.9 827.0 L435.4 828.7 L431.5 830.5 L428.1 832.3 L425.4 834.1 L423.1 835.9 L421.5 837.8 L420.5 839.6 L420.0 841.5 L420.2 843.3 L420.9 845.2 L422.2 847.0 L424.1 848.9 L426.5 850.7 L429.6 852.5 L433.2 854.3 L437.4 856.1 L442.1 857.8 L447.4 859.5 L453.2 861.2 L459.5 862.9 L466.4 864.5 L473.8 866.1 L481.6 867.6 L490.0 869.1" fill="none" stroke="#ff3d2e" stroke-width="10" stroke-linecap="round" marker-end="url(#ar)"/>
+<path d="M512.6 872.6 L519.4 873.5 L526.3 874.4 L533.5 875.2 L540.8 876.0 L548.3 876.8 L556.0 877.6 L563.9 878.3 L571.9 879.0 L580.0 879.7 L588.3 880.4 L596.8 881.0 L605.3 881.5 L614.0 882.1 L622.8 882.6 L631.7 883.1 L640.7 883.5 L649.9 883.9 L659.0 884.3 L668.3 884.6 L677.6 884.9 L687.0 885.2 L696.5 885.4 L706.0 885.6 L715.5 885.8" fill="none" stroke="#ffd12a" stroke-width="10" stroke-linecap="round" marker-end="url(#ar)"/>
+<path d="M784.5 885.8 L794.0 885.6 L803.5 885.4 L813.0 885.2 L822.4 884.9 L831.7 884.6 L841.0 884.3 L850.1 883.9 L859.3 883.5 L868.3 883.1 L877.2 882.6 L886.0 882.1 L894.7 881.5 L903.2 881.0 L911.7 880.4 L920.0 879.7 L928.1 879.0 L936.1 878.3 L944.0 877.6 L951.7 876.8 L959.2 876.0 L966.5 875.2 L973.7 874.4 L980.6 873.5 L987.4 872.6" fill="none" stroke="#2bd96b" stroke-width="10" stroke-linecap="round" marker-end="url(#ar)"/>
+<path d="M1010.0 869.1 L1018.1 867.7 L1025.7 866.2 L1032.9 864.7 L1039.6 863.1 L1045.8 861.5 L1051.5 859.9 L1056.7 858.2 L1061.4 856.6 L1065.6 854.9 L1069.2 853.1 L1072.4 851.4 L1075.0 849.6 L1077.1 847.9 L1078.6 846.1 L1079.5 844.3 L1080.0 842.5 L1079.9 840.7 L1079.2 838.9 L1078.0 837.1 L1076.2 835.4 L1073.9 833.6 L1071.1 831.9 L1067.7 830.1 L1063.8 828.4" fill="none" stroke="#b06cff" stroke-width="10" stroke-linecap="round" marker-end="url(#ar)"/>
+<rect x="360" y="840" width="76" height="22" rx="11" fill="#ff3d2e" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="398" y="856" font-size="12" font-weight="700" letter-spacing="1.5" fill="#151722" text-anchor="middle">PROMPT</text>
+<rect x="565" y="889" width="76" height="22" rx="11" fill="#ffd12a" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="603" y="905" font-size="12" font-weight="700" letter-spacing="1.5" fill="#151722" text-anchor="middle">BUILD</text>
+<rect x="859" y="889" width="76" height="22" rx="11" fill="#2bd96b" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="897" y="905" font-size="12" font-weight="700" letter-spacing="1.5" fill="#151722" text-anchor="middle">VERIFY</text>
+<rect x="1067" y="841" width="76" height="22" rx="11" fill="#b06cff" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1105" y="857" font-size="12" font-weight="700" letter-spacing="1.5" fill="#151722" text-anchor="middle">COMMIT</text>
+<rect x="1112" y="540" width="74" height="220" rx="22" fill="url(#tank)" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1104" y="756" width="90" height="20" rx="4" fill="#3a3d4c" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="1149" cy="584" r="18" fill="#ffffff" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M1149 584 L1160 574" stroke="#151722" stroke-width="3" stroke-linecap="round"/>
+<text x="1149" y="640" font-size="15" font-weight="700" fill="#151722" text-anchor="middle">API</text>
+<text x="1149" y="660" font-size="11" fill="#151722" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">JSON</text>
+<rect x="1124" y="680" width="50" height="40" rx="4" fill="#ffffff" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1149" y="705" font-size="11" font-weight="700" fill="#151722" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">→CSV</text>
+<g transform="translate(1090 486)"><rect width="286" height="44" rx="7" fill="#11131a" stroke="#ffd12a" stroke-opacity="0.7" stroke-width="1.5"/><rect x="0" y="0" width="6" height="44" rx="3" fill="#ffd12a"/><text x="16" y="19" font-size="14" font-family="Consolas, 'Courier New', monospace" fill="#ffffff">fetch.py · export_csv.py</text><text x="16" y="36" font-size="12" fill="#b9bcc4">the fuel rig: API JSON in, clean CSV out</text></g>
+<rect x="1278" y="680" width="10" height="132" fill="#3a3d4c" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M1244 822 L1322 822" stroke="#151722" stroke-width="8" stroke-linecap="round"/>
+<rect x="1226" y="602" width="114" height="72" rx="5" fill="#0b0b11" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1233" y="609" width="100" height="58" fill="#252d3b"/>
+<text x="1240" y="625" font-size="10" font-family="Consolas, 'Courier New', monospace" fill="#ffd12a">ConnectFolder</text>
+<text x="1240" y="640" font-size="10" font-family="Consolas, 'Courier New', monospace" fill="#ffffff">7 tables</text>
+<text x="1240" y="655" font-size="10" font-family="Consolas, 'Courier New', monospace" fill="#ffffff">21 measures ✓</text>
+<path d="M1216 674 L1350 674 L1340 686 L1226 686 Z" fill="#5a5f6e" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1401" y="736" width="14" height="88" rx="5" fill="#2a2d3a" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1421" y="736" width="14" height="88" rx="5" fill="#2a2d3a" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="1406" cy="825" rx="13" ry="6" fill="#151722"/>
+<ellipse cx="1430" cy="825" rx="13" ry="6" fill="#151722"/>
+<rect x="1387" y="636" width="62" height="108" rx="16" fill="#1d8a52" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="1418" cy="610" r="27" fill="#f2c6a0" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="1409" cy="607" r="2.8" fill="#151722"/><circle cx="1427" cy="607" r="2.8" fill="#151722"/>
+<path d="M1409 619 Q1418 626 1427 619" fill="none" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M1390 604 Q1392 576 1418 576 Q1444 576 1446 604 Z" fill="#2bd96b" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M1438 602 L1464 606" stroke="#2bd96b" stroke-width="7" stroke-linecap="round"/>
+<path d="M1392 652 Q1370 680 1380 704" stroke="#1d8a52" stroke-width="16" stroke-linecap="round" fill="none"/>
+<rect x="1350" y="676" width="46" height="62" rx="4" fill="#c79a62" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1355" y="684" width="36" height="50" fill="#ffffff"/>
+<path d="M1359 697 l4 4 7 -8" fill="none" stroke="#1d8a52" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1374" y1="697" x2="1387" y2="697" stroke="#9a9da6" stroke-width="2"/>
+<path d="M1359 711 l4 4 7 -8" fill="none" stroke="#1d8a52" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1374" y1="711" x2="1387" y2="711" stroke="#9a9da6" stroke-width="2"/>
+<path d="M1359 725 l4 4 7 -8" fill="none" stroke="#1d8a52" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1374" y1="725" x2="1387" y2="725" stroke="#9a9da6" stroke-width="2"/>
+<path d="M1444 652 L1456 600" stroke="#1d8a52" stroke-width="16" stroke-linecap="round"/>
+<circle cx="1468" cy="566" r="17" fill="#c8e6ff" fill-opacity="0.6" stroke="#151722" stroke-width="5"/>
+<path d="M1460 582 L1456 598" stroke="#151722" stroke-width="7" stroke-linecap="round"/>
+<rect x="1513" y="736" width="14" height="88" rx="5" fill="#2a2d3a" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1533" y="736" width="14" height="88" rx="5" fill="#2a2d3a" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="1518" cy="825" rx="13" ry="6" fill="#151722"/>
+<ellipse cx="1542" cy="825" rx="13" ry="6" fill="#151722"/>
+<rect x="1499" y="636" width="62" height="108" rx="16" fill="#ff8c1a" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="1530" cy="610" r="27" fill="#f2c6a0" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="1521" cy="607" r="2.8" fill="#151722"/><circle cx="1539" cy="607" r="2.8" fill="#151722"/>
+<path d="M1521 619 Q1530 626 1539 619" fill="none" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M1503 606 Q1506 578 1530 579 Q1554 578 1557 606 Q1542 590 1503 606 Z" fill="#4a3426" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M1552 650 L1566 610" stroke="#ff8c1a" stroke-width="16" stroke-linecap="round"/>
+<line x1="1568" y1="640" x2="1580" y2="470" stroke="#9a9da6" stroke-width="6" stroke-linecap="round"/>
+<path d="M1579 474 Q1540 460 1505 482 Q1470 500 1440 486 L1446 548 Q1478 562 1508 544 Q1540 526 1576 540 Z" fill="#e10600" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="1567" cy="610" r="9" fill="#f2c6a0" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<g transform="translate(1316 410)"><rect width="260" height="44" rx="7" fill="#11131a" stroke="#b06cff" stroke-opacity="0.7" stroke-width="1.5"/><rect x="0" y="0" width="6" height="44" rx="3" fill="#b06cff"/><text x="16" y="19" font-size="14" font-family="Consolas, 'Courier New', monospace" fill="#ffffff">git restore · /rewind</text><text x="16" y="36" font-size="12" fill="#b9bcc4">red flag: back to the last clean lap</text></g>
+<ellipse cx="760" cy="842" rx="300" ry="14" fill="#000" opacity="0.35"/>
+<path d="M1228 682 C1180 740 1120 760 1040 740" fill="none" stroke="#151722" stroke-width="9" stroke-linecap="round"/>
+<path d="M1228 682 C1180 740 1120 760 1040 740" fill="none" stroke="#ffd12a" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 8"/>
+<path d="M1150 776 C1150 830 1010 800 930 762" fill="none" stroke="#151722" stroke-width="12" stroke-linecap="round"/>
+<path d="M1150 776 C1150 830 1010 800 930 762" fill="none" stroke="#3a3d4c" stroke-width="6" stroke-linecap="round"/>
+<circle cx="738" cy="694" r="24" fill="#ffffff" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M716 688 Q738 676 760 688 L760 700 Q738 696 716 700 Z" fill="#2b6fb8" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M716 704 Q740 712 762 704" fill="none" stroke="#ff3d2e" stroke-width="4"/>
+<path d="M436 778 L452 760 L560 744 L650 730 L702 708 L782 704 L806 684 L846 664 L884 664 L902 694 L1000 714 L1044 722 L1044 784 L470 790 Z" fill="url(#body)" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M704 748 Q770 716 884 720 L968 738 L968 774 L704 776 Z" fill="#a80500" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M470 788 L1040 784 L1040 796 L480 800 Z" fill="#1b1b22" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M560 744 L700 712" stroke="#ffffff" stroke-opacity="0.5" stroke-width="3" stroke-linecap="round"/>
+<path d="M812 680 L842 668 L846 684 L816 690 Z" fill="#151722"/>
+<path d="M694 708 Q722 664 806 690" fill="none" stroke="#151722" stroke-width="8" stroke-linecap="round"/>
+<circle cx="830" cy="744" r="22" fill="#ffffff" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="830" y="752" font-size="22" font-weight="700" fill="#151722" text-anchor="middle">∞</text>
+<rect x="420" y="778" width="120" height="12" rx="3" fill="#1b1b22" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="418" y="752" width="16" height="40" rx="3" fill="#e10600" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1024" y="652" width="12" height="74" fill="#1b1b22" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="996" y="640" width="96" height="20" rx="3" fill="#1b1b22" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1080" y="626" width="16" height="104" rx="3" fill="#e10600" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1044" y="655" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">CLAUDE</text>
+<circle cx="562" cy="792" r="52" fill="#1b1b22" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="562" cy="792" r="42" fill="none" stroke="#ffd12a" stroke-width="3"/>
+<circle cx="562" cy="792" r="28" fill="#6b7080" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="562" cy="792" r="9" fill="#d6d7d8" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="948" cy="792" r="52" fill="#1b1b22" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="948" cy="792" r="42" fill="none" stroke="#ffd12a" stroke-width="3"/>
+<circle cx="948" cy="792" r="28" fill="#6b7080" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="948" cy="792" r="9" fill="#d6d7d8" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M694 667 a14 14 0 0 1 -3 -14" fill="none" stroke="#ffffff" stroke-opacity="0.0"/>
+<path d="M682 665 a26 26 0 0 1 -5 -26" fill="none" stroke="#ffffff" stroke-opacity="0.0"/>
+<path d="M710 666 A40 40 0 0 1 766 666" fill="none" stroke="#ffffff" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round"/>
+<path d="M699 655 A56 56 0 0 1 777 655" fill="none" stroke="#ffffff" stroke-opacity="0.39999999999999997" stroke-width="3" stroke-linecap="round"/>
+<line x1="738" y1="616" x2="738" y2="632" stroke="#ffffff" stroke-width="2"/>
+<g transform="translate(592 572)"><rect width="292" height="44" rx="7" fill="#11131a" stroke="#ff3d2e" stroke-opacity="0.7" stroke-width="1.5"/><rect x="0" y="0" width="6" height="44" rx="3" fill="#ff3d2e"/><text x="16" y="19" font-size="14" font-weight="700" fill="#ffffff">Claude Code</text><text x="16" y="36" font-size="12" fill="#b9bcc4">the driver: reads, edits, runs every tool</text></g>
+<rect x="30" y="866" width="200" height="98" rx="6" fill="#e10600" stroke="#151722" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="40" y="874" width="180" height="24" rx="3" fill="#b30500" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="50" y="891" font-size="12" font-family="Consolas, 'Courier New', monospace" fill="#ffffff">build.py</text>
+<rect x="186" y="882" width="24" height="6" rx="3" fill="#d6d7d8"/>
+<rect x="40" y="902" width="180" height="24" rx="3" fill="#b30500" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="50" y="919" font-size="12" font-family="Consolas, 'Courier New', monospace" fill="#ffffff">build_report.py</text>
+<rect x="186" y="910" width="24" height="6" rx="3" fill="#d6d7d8"/>
+<rect x="40" y="930" width="180" height="24" rx="3" fill="#b30500" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="50" y="947" font-size="12" font-family="Consolas, 'Courier New', monospace" fill="#ffffff">tmdl / pbir out</text>
+<rect x="186" y="938" width="24" height="6" rx="3" fill="#d6d7d8"/>
+<circle cx="52" cy="972" r="9" fill="#151722"/>
+<circle cx="208" cy="972" r="9" fill="#151722"/>
+<path d="M60 860 L150 846" stroke="#9a9da6" stroke-width="8" stroke-linecap="round"/>
+<circle cx="156" cy="845" r="10" fill="none" stroke="#9a9da6" stroke-width="6"/>
+<rect x="168" y="840" width="44" height="18" rx="3" fill="#3a3d4c" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<g transform="translate(30 794)"><rect width="254" height="44" rx="7" fill="#11131a" stroke="#ffd12a" stroke-opacity="0.7" stroke-width="1.5"/><rect x="0" y="0" width="6" height="44" rx="3" fill="#ffd12a"/><text x="16" y="19" font-size="14" font-family="Consolas, 'Courier New', monospace" fill="#ffffff">build.py · build_report.py</text><text x="16" y="36" font-size="12" fill="#b9bcc4">the mechanics: model and report</text></g>
+<g transform="translate(1196 836)"><rect width="216" height="44" rx="7" fill="#11131a" stroke="#ffd12a" stroke-opacity="0.7" stroke-width="1.5"/><rect x="0" y="0" width="6" height="44" rx="3" fill="#ffd12a"/><text x="16" y="19" font-size="14" font-family="Consolas, 'Courier New', monospace" fill="#ffffff">powerbi-modeling-mcp</text><text x="16" y="36" font-size="12" fill="#b9bcc4">umbilical: talks to the model</text></g>
+<g transform="translate(1316 892)"><rect width="279" height="44" rx="7" fill="#11131a" stroke="#2bd96b" stroke-opacity="0.7" stroke-width="1.5"/><rect x="0" y="0" width="6" height="44" rx="3" fill="#2bd96b"/><text x="16" y="19" font-size="14" font-family="Consolas, 'Courier New', monospace" fill="#ffffff">tmdl_lint · pbir_lint · tests</text><text x="16" y="36" font-size="12" fill="#b9bcc4">scrutineering: 0 error(s), 0 missed</text></g>
+<rect x="586" y="922" width="328" height="46" rx="6" fill="none" stroke="#ffffff" stroke-opacity="0.55" stroke-width="3" stroke-dasharray="12 8"/>
+<g transform="translate(606 930)"><rect x="0" y="12" width="24" height="18" rx="3" fill="#b06cff" stroke="#151722" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><path d="M5 12 v-5 a7 7 0 0 1 14 0 v5" fill="none" stroke="#151722" stroke-width="3"/></g>
+<text x="642" y="946" font-size="14" font-weight="700" letter-spacing="2" fill="#ffffff">PARC FERMÉ</text>
+<text x="642" y="962" font-size="12" fill="#d6d7d8" font-family="Consolas, 'Courier New', monospace">git add · git commit</text>
+</g></svg>
